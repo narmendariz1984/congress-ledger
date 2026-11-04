@@ -1,14 +1,14 @@
 {
-  "bills": [
-    "119-s675",
-    "119-hr2316",
-    "119-hr5334",
-    "119-s1071",
-    "119-hr3937"
-  ],
-  "lastDiscovery": "2026-11-04T22:31:08+00:00",
-  "senateBackoff": {
-    "failures": 0,
-    "nextTry": null
-  }
+ "bills": [
+  "119-s675",
+  "119-hr2316",
+  "119-hr5334",
+  "119-s1071",
+  "119-hr3937"
+ ],
+ "lastDiscovery": "2026-11-04T22:31:08+00:00",
+ "senateBackoff": {
+  "failures": 0,
+  "nextTry": null
+ }
 }
