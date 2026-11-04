@@ -60,7 +60,9 @@ def _get(url: str, timeout: int = 30) -> bytes:
         except urllib.error.HTTPError as e:
             last = e
             if e.code in (429, 500, 502, 503, 504):
-                time.sleep(2 * (attempt + 1))
+                ra = e.headers.get("Retry-After", "") if e.headers else ""
+                wait = int(ra) if ra.isdigit() else 2 * (attempt + 1)
+                time.sleep(min(wait, 60))
                 continue
             raise
         except (urllib.error.URLError, TimeoutError) as e:
@@ -306,14 +308,14 @@ def discover(congress: int, since: dt.datetime) -> list[tuple[str, int]]:
 
 # ---------------------------------------------------------------- votes
 
-def senate_votes(congress: int, session: int) -> list[dict]:
+def senate_votes(congress: int, session: int) -> list[dict] | None:
     url = f"https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_{congress}_{session}.xml"
     try:
         root = ET.fromstring(_get(url))
     except Exception as e:  # noqa: BLE001
         code = getattr(e, "code", "")
         warn(f"Senate vote list unavailable ({e.__class__.__name__} {code})".strip())
-        return []
+        return None
     year = (root.findtext("congress_year") or str(dt.date.today().year)).strip()
     out = []
     for v in root.iter("vote"):
@@ -364,6 +366,27 @@ def house_votes(congress: int, session: int) -> list[dict]:
         })
     out.sort(key=lambda x: (x["d"], x["n"] or 0), reverse=True)
     return out[:60]
+
+
+def senate_with_backoff(congress: int, session: int, now: dt.datetime, state: dict, previous: list) -> list:
+    """Ask senate.gov at most once per backoff window after a failure.
+
+    1st failure waits 1h, then 2h, 4h, 8h, 16h, capped at 24h. One success resets it.
+    While waiting, the last good list is kept.
+    """
+    b = state.setdefault("senateBackoff", {"failures": 0, "nextTry": None})
+    if b.get("nextTry") and now < dt.datetime.fromisoformat(b["nextTry"]):
+        print(f"senate.gov: backing off until {b['nextTry']}")
+        return previous
+    got = senate_votes(congress, session)
+    if got is None:
+        b["failures"] = int(b.get("failures") or 0) + 1
+        wait = min(2 ** (b["failures"] - 1), 24)
+        b["nextTry"] = (now + dt.timedelta(hours=wait)).isoformat(timespec="seconds")
+        print(f"senate.gov: failure {b['failures']}, next try in {wait}h")
+        return previous
+    b["failures"], b["nextTry"] = 0, None
+    return got
 
 
 # ---------------------------------------------------------------- calendar
@@ -493,7 +516,8 @@ def main() -> int:
 
     votes = prev.get("votes") or {"senate": [], "house": []}
     if do_votes:
-        votes = {"senate": senate_votes(congress, session), "house": house_votes(congress, session)}
+        votes = {"senate": senate_with_backoff(congress, session, now, tracked, votes.get("senate") or []),
+                 "house": house_votes(congress, session)}
 
     ledger = {
         "generatedAt": now.isoformat(timespec="seconds") if (do_bills or do_votes) else prev.get("generatedAt") or now.isoformat(timespec="seconds"),
@@ -513,7 +537,7 @@ def main() -> int:
         print(f"wrote {OUT.relative_to(ROOT)}: {len(bills)} bills, {len(votes.get('senate', []))} Senate and {len(votes.get('house', []))} House votes")
     else:
         print("no data changes")
-    if do_bills:
+    if do_bills or do_votes:
         TRACKED.write_text(json.dumps(tracked, indent=1) + "\n", encoding="utf-8")
     return 0
 
