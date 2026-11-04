@@ -172,9 +172,9 @@ VETO = re.compile(r"vetoed by president", re.I)
 # both chambers, and bills that died or were fought over on the floor are always kept.
 # A bill that passed only one chamber is kept only if that passage was a recorded vote,
 # which drops the hundreds of voice-vote / unanimous-consent bills that never move again.
-KEEP_RULE = "recorded-vote-v1"
+KEEP_RULE = "recorded-vote-v2"  # v2: committee "discharged" is housekeeping, not a fight
 ALWAYS_KEEP = re.compile(r"became public law|signed by president|presented to president|vetoed|"
-                         r"cloture|not invoked|discharge|failed of passage|failed by", re.I)
+                         r"cloture|not invoked|motion to discharge|discharge petition|failed of passage|failed by", re.I)
 PASSAGE = re.compile(r"\bpass(ed)?\b|on passage|agreed to", re.I)
 RECORDED = re.compile(r"record vote|roll no\.|yeas and nays|yea-nay|\b\d{1,3}\s*-\s*\d{1,3}\b", re.I)
 VOICE = re.compile(r"voice vote|unanimous consent|without objection", re.I)
