@@ -10,10 +10,14 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "full = bills and votes now, votes = votes only, auto = follow the schedule rules"
+        description: "full = bills and votes now, votes = votes only, auto = follow the schedule rules, backfill-dry = count a backfill, backfill = queue it"
         type: choice
         default: full
-        options: [full, votes, auto]
+        options: [full, votes, auto, backfill-dry, backfill]
+      since:
+        description: "Backfill start date (YYYY-MM-DD). Blank = first day of the current Congress."
+        type: string
+        default: ""
 
 # The token can only read and write this repo's contents. Nothing else.
 permissions:
@@ -38,6 +42,7 @@ jobs:
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
           MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'auto' }}
+          BACKFILL_SINCE: ${{ github.event_name == 'workflow_dispatch' && inputs.since || '' }}
         run: python scripts/fetch.py
 
       - name: Commit only if data changed

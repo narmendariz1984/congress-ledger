@@ -13,6 +13,10 @@ Modes (MODE env var)
   auto   decide from the clock and the session calendar (used by the schedule)
   full   refresh bills and votes now
   votes  refresh votes only
+  backfill      queue every qualifying bill of the current Congress (since
+                BACKFILL_SINCE, default the Congress's first day); later runs
+                work through the queue in batches
+  backfill-dry  count what a backfill would queue; writes nothing
   offline  no network; rebuild from curated + last ledger (for testing)
 
 Standard library only, so the workflow needs no installs.
@@ -38,6 +42,8 @@ TRACKED = ROOT / "data" / "tracked.json"          # bills found by discovery
 OUT = ROOT / "site" / "data" / "ledger.json"
 
 API = "https://api.congress.gov/v3"
+BACKFILL_BATCH = 100   # bills fetched per hourly run while a backfill queue exists
+STALE_PER_RUN = 25     # safety-net re-downloads of bills untouched for a week
 UA = "congress-ledger/1.0 (+https://github.com/narmendariz1984/congress-ledger)"
 CT = dt.timezone(dt.timedelta(hours=-6))          # display only; logic uses UTC dates
 
@@ -164,6 +170,8 @@ COMMITTEE = re.compile(r"reported|ordered to be reported|markup|committee consid
 VETO = re.compile(r"vetoed by president", re.I)
 # Auto-tracking bar: a recorded floor event, not just committee work
 MATURE_HINT = re.compile(r"passed|agreed to|on passage|cloture|discharge|presented to president|became public law|vetoed|failed of passage|not invoked", re.I)
+# Looser net for discovery: fetch_bill() still has to find a STRONG action before a bill is kept.
+CANDIDATE = re.compile(MATURE_HINT.pattern + r"|received in the|held at the desk|veto|failed|signed by", re.I)
 STRONG = re.compile(r"passed/agreed to in (house|senate)|passed senate|on passage|cloture|motion to discharge|discharge petition|presented to president|became public law|vetoed|failed of passage", re.I)
 
 
@@ -285,26 +293,35 @@ def fetch_bill(congress: int, btype: str, number: int) -> dict:
     return out
 
 
-def discover(congress: int, since: dt.datetime) -> list[tuple[str, int]]:
-    """Bills in this Congress updated since `since` whose latest action looks mature."""
-    found = []
+LAW_TYPES = ("hr", "s", "hjres", "sjres")  # simple/concurrent resolutions don't become law
+
+
+def list_updated(congress: int, since: dt.datetime | None, cap: int = 3000) -> list[dict] | None:
+    """Bills in this Congress updated since `since` (all of them if None). None on failure."""
+    params = {"sort": "updateDate desc"}
+    if since:
+        params["fromDateTime"] = since.strftime("%Y-%m-%dT%H:%M:%SZ")
     try:
-        items = api_all(f"bill/{congress}", "bills", cap=3000, sort="updateDate desc",
-                        fromDateTime=since.strftime("%Y-%m-%dT%H:%M:%SZ"))
+        return api_all(f"bill/{congress}", "bills", cap=cap, **params)
     except Exception as e:  # noqa: BLE001
-        warn(f"discovery failed: {e}")
-        return found
-    for it in items:
-        text = ((it.get("latestAction") or {}).get("text") or "")
-        btype = (it.get("type") or "").lower()
-        if btype in ("hres", "sres", "hconres", "sconres"):
-            continue  # simple/concurrent resolutions don't become law
-        if MATURE_HINT.search(text) and not re.search(r"referred to", text, re.I):
-            try:
-                found.append((btype, int(it.get("number"))))
-            except (TypeError, ValueError):
-                pass
-    return found
+        warn(f"bill listing failed: {e}")
+        return None
+
+
+def is_candidate(item: dict) -> bool:
+    text = ((item.get("latestAction") or {}).get("text") or "")
+    if (item.get("type") or "").lower() not in LAW_TYPES:
+        return False
+    if re.search(r"referred to", text, re.I) and not re.search(r"received in the", text, re.I):
+        return False  # sitting in its first committee
+    return bool(CANDIDATE.search(text))
+
+
+def item_id(congress: int, item: dict) -> str | None:
+    try:
+        return bill_id(congress, item.get("type") or "", int(item.get("number")))
+    except (TypeError, ValueError):
+        return None
 
 
 # ---------------------------------------------------------------- votes
@@ -457,21 +474,71 @@ def main() -> int:
     prev = load_json(OUT, {})
     tracked = load_json(TRACKED, {"bills": [], "lastDiscovery": None})
 
-    do_bills, do_votes = plan(mode, now, meta.get("calendar") or {})
-    print(f"mode={mode} bills={do_bills} votes={do_votes}")
-
     congress, session = current_congress(now.astimezone(CT).date())
+    first_day = dt.datetime(1789 + 2 * (congress - 1), 1, 3, tzinfo=dt.timezone.utc)
+
+    if mode in ("backfill", "backfill-dry"):
+        raw = os.environ.get("BACKFILL_SINCE", "").strip()
+        since = dt.datetime.fromisoformat(raw).replace(tzinfo=dt.timezone.utc) if raw else first_day
+        items = list_updated(congress, since, cap=40000)
+        if items is None:
+            return 1
+        picks = [i for i in items if is_candidate(i)]
+        cats = {}
+        for i in picks:
+            t = ((i.get("latestAction") or {}).get("text") or "").lower()
+            k = ("became law" if "public law" in t or "signed by" in t else
+                 "vetoed" if "veto" in t else
+                 "sent to president" if "presented to" in t else
+                 "failed / cloture" if re.search(r"failed|cloture|not invoked", t) else
+                 "passed one chamber, waiting on the other" if re.search(r"received in the|held at the desk", t) else
+                 "passed or agreed to" if re.search(r"passed|agreed to", t) else "other floor action")
+            cats[k] = cats.get(k, 0) + 1
+        new = [x for x in (item_id(congress, i) for i in picks) if x and x not in tracked["bills"]]
+        print(f"backfill since {since.date()}: {len(items)} bills listed, {len(picks)} candidates, {len(new)} not yet tracked")
+        for k, v in sorted(cats.items(), key=lambda kv: -kv[1]):
+            print(f"  {v:5}  {k}")
+        print(f"  ~{len(new) * 3} API calls, about {-(-len(new) // BACKFILL_BATCH)} hourly batches of {BACKFILL_BATCH}")
+        if mode == "backfill-dry":
+            return 0
+        q = tracked.setdefault("backfill", {"queue": []})
+        q["queue"] = sorted(set(q.get("queue") or []) | set(new))
+        q["since"], q["queued"] = since.date().isoformat(), now.isoformat(timespec="seconds")
+        mode = "full"
+
+    do_bills, do_votes = plan(mode, now, meta.get("calendar") or {})
+    queue = (tracked.get("backfill") or {}).get("queue") or []
+    if queue:
+        do_bills = True
+    print(f"mode={mode} bills={do_bills} votes={do_votes} backfill_queue={len(queue)}")
     auto_by_id = {b["id"]: b for b in prev.get("bills", []) if isinstance(b, dict) and b.get("id")}
 
     if do_bills:
         last = tracked.get("lastDiscovery")
         since = dt.datetime.fromisoformat(last) if last else now - dt.timedelta(days=2)
         since -= dt.timedelta(hours=1)
-        for btype, num in discover(congress, since):
-            bid = bill_id(congress, btype, num)
+        items = list_updated(congress, since)
+        updated = set()
+        for it in items or []:
+            bid = item_id(congress, it)
+            if not bid:
+                continue
+            updated.add(bid)
+            if is_candidate(it) and bid not in tracked["bills"]:
+                tracked["bills"].append(bid)
+        if items is not None:
+            tracked["lastDiscovery"] = now.isoformat(timespec="seconds")
+
+        # this run's slice of the backfill queue
+        batch = queue[:BACKFILL_BATCH]
+        for bid in batch:
             if bid not in tracked["bills"]:
                 tracked["bills"].append(bid)
-        tracked["lastDiscovery"] = now.isoformat(timespec="seconds")
+        if queue:
+            tracked["backfill"]["queue"] = queue[BACKFILL_BATCH:]
+            print(f"backfill: {len(batch)} this run, {len(queue) - len(batch)} left")
+            if not tracked["backfill"]["queue"]:
+                tracked["backfill"]["finished"] = now.isoformat(timespec="seconds")
 
         wanted = {}
         for bid, c in (curated.get("bills") or {}).items():
@@ -484,7 +551,22 @@ def main() -> int:
             if m and bid not in wanted:
                 wanted[bid] = (int(m.group(1)), m.group(2), int(m.group(3)))
         curated_ids = set((curated.get("bills") or {}).keys())
+
+        # Only re-download what could have changed: curated bills, anything Congress.gov
+        # updated since the last check, new or never-fetched bills, and a few of the
+        # stalest as a safety net. Everything else keeps its last good data.
+        def age(bid: str) -> float:
+            f = (auto_by_id.get(bid) or {}).get("fetched")
+            try:
+                return (now - dt.datetime.fromisoformat(f)).total_seconds()
+            except (TypeError, ValueError):
+                return float("inf")
+        stale = sorted((b for b in wanted if age(b) > 7 * 86400), key=age, reverse=True)[:STALE_PER_RUN]
+        refetch = curated_ids | updated | set(stale) | {b for b in wanted if b not in auto_by_id}
+        print(f"bills: {len(wanted)} tracked, re-downloading {len(refetch & set(wanted))}")
         for bid, (c, t, n) in sorted(wanted.items()):
+            if bid not in refetch:
+                continue
             try:
                 fresh = fetch_bill(c, t, n)
             except Exception as e:  # noqa: BLE001
