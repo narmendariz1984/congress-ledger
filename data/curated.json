@@ -1,0 +1,638 @@
+{
+  "_readme": "Hand-curated layer. Fields here override what fetch.py pulls from Congress.gov. Bill keys are <congress>-<type><number>. Add a bill by giving it congress, type and number; everything else is optional.",
+  "meta": {
+    "calendar": {
+      "after": "2027 schedule not posted",
+      "funding": {
+        "through": "2026-12-11"
+      },
+      "house": [
+        {
+          "f": "2026-11-09",
+          "t": "2026-11-12"
+        },
+        {
+          "f": "2026-11-17",
+          "t": "2026-11-20"
+        },
+        {
+          "f": "2026-11-30",
+          "t": "2026-12-03"
+        },
+        {
+          "f": "2026-12-08",
+          "t": "2026-12-17"
+        }
+      ],
+      "phases": [
+        {
+          "f": "2026-11-04",
+          "l": "Lame duck",
+          "s": "119th Congress, Republican control",
+          "t": "2027-01-02"
+        },
+        {
+          "f": "2027-01-03",
+          "l": "120th Congress",
+          "s": "Democratic majorities",
+          "t": "2028-12-31"
+        }
+      ],
+      "senate": [
+        {
+          "f": "2026-11-09",
+          "t": "2026-11-10"
+        },
+        {
+          "f": "2026-11-16",
+          "t": "2026-11-20"
+        },
+        {
+          "f": "2026-11-30",
+          "t": "2026-12-18"
+        }
+      ],
+      "src": {
+        "house": "https://www.congresscountdown.com/info/congressional-calendar",
+        "senate": "https://www.senate.gov/legislative/2026_schedule.htm"
+      }
+    },
+    "house": {
+      "d": "~258",
+      "note": "NBC est. · AP called 229–139",
+      "r": "~177"
+    },
+    "next": [
+      {
+        "d": "2026-12-11",
+        "e": "Federal funding runs out · Republican lame-duck Congress",
+        "u": "https://www.statnews.com/2026/11/04/lame-duck-session-congress-health-policy-aca-subsidies-medicaid-funding/"
+      },
+      {
+        "d": "2026-12",
+        "e": "Watch: GOP may try a lame-duck debt limit hike via reconciliation, removing Democrats' leverage",
+        "u": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html"
+      },
+      {
+        "d": "2027-01-03",
+        "e": "120th Congress convenes · Speaker vote",
+        "u": "https://time.com/article/2026/11/04/democrats-power-midterms/"
+      },
+      {
+        "d": "2027-01",
+        "e": "House first 100 hours: ACA credits, reverse Medicaid cuts, tariffs, Iran war",
+        "u": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html"
+      },
+      {
+        "d": "2027-02",
+        "e": "Oversight probes could begin (Raskin, Garcia)",
+        "u": "https://lufkindailynews.com/news_reuters/national/what-a-democratic-congress-would-mean-in-spite-of-trumps-veto-pen/article_3bf30203-1c10-52cb-9aab-1957e09fe856.html"
+      },
+      {
+        "d": "2027-07",
+        "e": "Treasury hits $41.1T debt limit (Bipartisan Policy Center est.)",
+        "u": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html"
+      },
+      {
+        "d": "2027-10",
+        "e": "Debt limit X-date, est. Q4 2027",
+        "u": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html"
+      }
+    ],
+    "senate": {
+      "d": "54",
+      "note": "AK, MS uncalled",
+      "r": "44"
+    }
+  },
+  "bills": {
+    "119-hr1": {
+      "area": "Taxation",
+      "congress": 119,
+      "crossovers": [
+        {
+          "on": "House concurrence, Jul 3",
+          "p": "R",
+          "s": "KY",
+          "vote": "Nay",
+          "who": "Thomas Massie"
+        },
+        {
+          "on": "House concurrence, Jul 3",
+          "p": "R",
+          "s": "PA",
+          "vote": "Nay",
+          "who": "Brian Fitzpatrick"
+        },
+        {
+          "on": "Senate passage, Jul 1",
+          "p": "R",
+          "s": "KY",
+          "vote": "Nay",
+          "who": "Rand Paul"
+        },
+        {
+          "on": "Senate passage, Jul 1",
+          "p": "R",
+          "s": "NC",
+          "vote": "Nay",
+          "who": "Thom Tillis"
+        },
+        {
+          "on": "Senate passage, Jul 1",
+          "p": "R",
+          "s": "ME",
+          "vote": "Nay",
+          "who": "Susan Collins"
+        }
+      ],
+      "fns": {
+        "a": {
+          "src": "House Budget Committee",
+          "t": "House passage, May 22, 2025; Budget Chair Arrington's release.",
+          "u": "https://budget.house.gov/press-release/chairman-arrington-celebrates-house-passage-of-one-big-beautiful-bill-act"
+        },
+        "b": {
+          "src": "Daily Signal",
+          "t": "Senate 51–50 with Vance tiebreak; Paul, Tillis, Collins voted no.",
+          "u": "https://www.dailysignal.com/2025/07/01/senate-passes-big-beautiful-bill-in-tie-breaking-vote/"
+        },
+        "c": {
+          "src": "House Clerk",
+          "t": "Roll Call 190: 218–214; R 218–2 (Massie, Fitzpatrick), D 0–212.",
+          "u": "https://clerk.house.gov/Votes/2025190?BillNum=HR1&Page=2"
+        },
+        "d": {
+          "src": "National Archives",
+          "t": "Pub. L. 119-21, approved Jul 4, 2025.",
+          "u": "https://www.archives.gov/federal-register/laws/119-first-session"
+        }
+      },
+      "num": "H.R. 1",
+      "outcome": {
+        "by": "Party-line reconciliation; VP tiebreak",
+        "d": "2025-07-04",
+        "fn": "d",
+        "v": "218–214 · 51–50",
+        "where": "Signed into law"
+      },
+      "path": "Reconciliation · 51 votes",
+      "reached": 6,
+      "reference": true,
+      "sponsor": {
+        "n": "Jodey Arrington",
+        "p": "R",
+        "s": "TX-19"
+      },
+      "status": "law",
+      "timeline": [
+        {
+          "ch": "H",
+          "d": "2025-05-22",
+          "e": "Passed House",
+          "fn": "a"
+        },
+        {
+          "ch": "S",
+          "d": "2025-07-01",
+          "e": "Passed Senate as amended; VP Vance broke tie",
+          "fn": "b",
+          "v": "51–50"
+        },
+        {
+          "ch": "H",
+          "d": "2025-07-03",
+          "e": "House concurred in Senate amendment",
+          "fn": "c",
+          "v": "218–214"
+        },
+        {
+          "ch": "—",
+          "d": "2025-07-04",
+          "e": "Signed · Pub. L. 119-21",
+          "fn": "d",
+          "k": "win"
+        }
+      ],
+      "title": "One Big Beautiful Bill Act",
+      "type": "hr",
+      "number": 1
+    },
+    "119-hr4405": {
+      "area": "Accountability & oversight",
+      "blockers": [
+        {
+          "act": "Delayed Grijalva's swearing-in for weeks during the shutdown; AZ AG sued Oct 21. Johnson said it had nothing to do with Epstein",
+          "att": "rep",
+          "d": "2025-10",
+          "fn": "a",
+          "kind": "procedural",
+          "p": "R",
+          "role": "Speaker",
+          "who": "Mike Johnson"
+        }
+      ],
+      "congress": 119,
+      "crossovers": [
+        {
+          "on": "House passage, lone no",
+          "p": "R",
+          "s": "LA",
+          "vote": "Nay",
+          "who": "Clay Higgins"
+        }
+      ],
+      "fns": {
+        "a": {
+          "src": "Wikipedia",
+          "t": "Sponsor, petition timeline, 218th signer, Johnson delay and lawsuit.",
+          "u": "https://en.wikipedia.org/wiki/Epstein_Files_Transparency_Act"
+        },
+        "b": {
+          "src": "Fortune",
+          "t": "House 427–1; Higgins the lone no.",
+          "u": "https://fortune.com/2025/11/18/house-votes-to-release-epstein-files-emails-427-1/"
+        },
+        "c": {
+          "src": "Washington Times",
+          "t": "Senate passed by UC right after the House vote, no amendments.",
+          "u": "https://m.washingtontimes.com/news/2025/nov/18/senate-passes-epstein-files-bill-unanimous-consent-overwhelming-house/"
+        },
+        "d": {
+          "src": "National Archives",
+          "t": "Pub. L. 119-38, approved Nov 19, 2025.",
+          "u": "https://www.archives.gov/federal-register/laws/119-first-session"
+        }
+      },
+      "introduced": "2025-07-15",
+      "lead": [
+        {
+          "n": "Thomas Massie",
+          "p": "R",
+          "r": "Led discharge petition",
+          "s": "KY"
+        },
+        {
+          "n": "Adelita Grijalva",
+          "p": "D",
+          "r": "218th petition signature",
+          "s": "AZ"
+        }
+      ],
+      "num": "H.R. 4405",
+      "outcome": {
+        "by": "Discharge petition forced the floor vote",
+        "d": "2025-11-19",
+        "fn": "d",
+        "v": "427–1 · UC",
+        "where": "Signed into law"
+      },
+      "path": "Discharge petition → suspension",
+      "reached": 6,
+      "reference": true,
+      "sponsor": {
+        "n": "Ro Khanna",
+        "p": "D",
+        "s": "CA"
+      },
+      "status": "law",
+      "timeline": [
+        {
+          "ch": "H",
+          "d": "2025-07-15",
+          "e": "Introduced",
+          "fn": "a"
+        },
+        {
+          "ch": "H",
+          "d": "2025-09",
+          "e": "Massie files discharge petition",
+          "fn": "a"
+        },
+        {
+          "ch": "H",
+          "d": "2025-11-12",
+          "e": "Petition hits 218 as newly sworn Rep. Grijalva signs",
+          "fn": "a"
+        },
+        {
+          "ch": "H",
+          "d": "2025-11-18",
+          "e": "Passed House under suspension",
+          "fn": "b",
+          "v": "427–1"
+        },
+        {
+          "ch": "S",
+          "d": "2025-11-18",
+          "e": "Passed Senate by unanimous consent; sources list Nov 18 or 19",
+          "fn": "c"
+        },
+        {
+          "ch": "—",
+          "d": "2025-11-19",
+          "e": "Signed · Pub. L. 119-38",
+          "fn": "d",
+          "k": "win"
+        }
+      ],
+      "title": "Epstein Files Transparency Act",
+      "type": "hr",
+      "number": 4405
+    },
+    "119-hr5371": {
+      "area": "Budget & appropriations",
+      "blockers": [
+        {
+          "act": "Withheld cloture 14 times",
+          "att": "rec",
+          "d": "2025-10",
+          "fn": "a",
+          "kind": "cloture",
+          "p": "D",
+          "role": "Minority",
+          "who": "Senate Democratic caucus"
+        }
+      ],
+      "congress": 119,
+      "crossovers": [
+        {
+          "on": "Cloture, Nov 9",
+          "p": "D",
+          "s": "IL",
+          "vote": "Yea",
+          "who": "Dick Durbin"
+        },
+        {
+          "on": "Cloture, Nov 9",
+          "p": "D",
+          "s": "NH",
+          "vote": "Yea",
+          "who": "Jeanne Shaheen"
+        },
+        {
+          "on": "Cloture, Nov 9",
+          "p": "D",
+          "s": "NH",
+          "vote": "Yea",
+          "who": "Maggie Hassan"
+        },
+        {
+          "on": "Cloture, Nov 9",
+          "p": "D",
+          "s": "VA",
+          "vote": "Yea",
+          "who": "Tim Kaine"
+        },
+        {
+          "on": "Cloture, Nov 9",
+          "p": "D",
+          "s": "NV",
+          "vote": "Yea",
+          "who": "Jacky Rosen"
+        },
+        {
+          "on": "Cloture, Nov 9",
+          "p": "D",
+          "s": "NV",
+          "vote": "Yea",
+          "who": "Catherine Cortez Masto"
+        },
+        {
+          "on": "Cloture, Nov 9",
+          "p": "D",
+          "s": "PA",
+          "vote": "Yea",
+          "who": "John Fetterman"
+        },
+        {
+          "on": "Cloture, Nov 9",
+          "p": "I",
+          "s": "ME",
+          "vote": "Yea",
+          "who": "Angus King"
+        }
+      ],
+      "fns": {
+        "a": {
+          "src": "Washington Times",
+          "t": "14 failed attempts; shutdown at 41 days; the 8 senators named.",
+          "u": "https://m.washingtontimes.com/news/2025/nov/10/8-senate-democrats-voting-reopen-government/"
+        },
+        "b": {
+          "src": "Axios",
+          "t": "60–40 Sunday-night vote; same 8 senators.",
+          "u": "https://www.axios.com/2025/11/10/government-shutdown-senate-deal-democrats"
+        },
+        "c": {
+          "src": "National Archives",
+          "t": "Pub. L. 119-37, approved Nov 12, 2025.",
+          "u": "https://www.archives.gov/federal-register/laws/119-first-session"
+        }
+      },
+      "num": "H.R. 5371",
+      "outcome": {
+        "by": "8 Dem-caucus senators supplied cloture",
+        "d": "2025-11-12",
+        "fn": "c",
+        "v": "60–40 cloture",
+        "where": "Signed into law"
+      },
+      "path": "Regular order · cloture",
+      "reached": 6,
+      "reference": true,
+      "status": "law",
+      "timeline": [
+        {
+          "ch": "S",
+          "d": "2025-10",
+          "e": "Cloture fails 14 times on the House-passed stopgap during the shutdown",
+          "fn": "a",
+          "k": "kill"
+        },
+        {
+          "ch": "S",
+          "d": "2025-11-09",
+          "e": "Cloture invoked after 8 Democratic-caucus senators switch",
+          "fn": "b",
+          "v": "60–40"
+        },
+        {
+          "ch": "—",
+          "d": "2025-11-12",
+          "e": "Signed · Pub. L. 119-37; shutdown ends",
+          "fn": "c",
+          "k": "win"
+        }
+      ],
+      "title": "Continuing Appropriations and Extensions Act, 2026 (shutdown stopgap)",
+      "type": "hr",
+      "number": 5371
+    },
+    "119-s3385": {
+      "area": "Health care",
+      "blockers": [
+        {
+          "act": "48 nays on cloture",
+          "att": "rec",
+          "d": "2025-12-11",
+          "fn": "a",
+          "kind": "cloture",
+          "p": "R",
+          "role": "Majority",
+          "who": "Senate Republican conference"
+        }
+      ],
+      "congress": 119,
+      "crossovers": [
+        {
+          "on": "Cloture, Dec 11",
+          "p": "R",
+          "s": "ME",
+          "vote": "Yea",
+          "who": "Susan Collins"
+        },
+        {
+          "on": "Cloture, Dec 11",
+          "p": "R",
+          "s": "MO",
+          "vote": "Yea",
+          "who": "Josh Hawley"
+        },
+        {
+          "on": "Cloture, Dec 11",
+          "p": "R",
+          "s": "AK",
+          "vote": "Yea",
+          "who": "Lisa Murkowski"
+        },
+        {
+          "on": "Cloture, Dec 11",
+          "p": "R",
+          "s": "AK",
+          "vote": "Yea",
+          "who": "Dan Sullivan"
+        }
+      ],
+      "fns": {
+        "a": {
+          "src": "Senate Democrats floor wrap-up",
+          "t": "Dec 11 votes: S. 3385 (Schumer) and S. 3386 (Crapo/Cassidy) both 51–48, cloture not invoked.",
+          "u": "https://www.democrats.senate.gov/2025/12/11/wrap-up-for-thursday-december-11-2025"
+        },
+        "b": {
+          "src": "Axios",
+          "t": "Four Republicans voted yes on the Democratic bill; Paul voted no on the GOP plan.",
+          "u": "https://www.axios.com/2025/12/11/senate-aca-subsidies-vote-obamacare"
+        }
+      },
+      "killedStage": 2,
+      "num": "S. 3385",
+      "outcome": {
+        "by": "Senate Republicans, 48 nays",
+        "d": "2025-12-11",
+        "fn": "a",
+        "v": "51–48 (60 needed)",
+        "where": "Senate floor · cloture"
+      },
+      "path": "Cloture on motion to proceed",
+      "reached": 2,
+      "reference": true,
+      "sponsor": {
+        "n": "Chuck Schumer",
+        "p": "D",
+        "s": "NY"
+      },
+      "status": "killed",
+      "timeline": [
+        {
+          "ch": "S",
+          "d": "2025-12-11",
+          "e": "Cloture on motion to proceed not invoked; 60 needed",
+          "fn": "a",
+          "k": "kill",
+          "v": "51–48"
+        }
+      ],
+      "title": "Extend enhanced ACA premium tax credits (3 years)",
+      "type": "s",
+      "number": 3385
+    },
+    "119-s3386": {
+      "area": "Health care",
+      "blockers": [
+        {
+          "act": "47 nays on cloture, joined by Paul",
+          "att": "rec",
+          "d": "2025-12-11",
+          "fn": "a",
+          "kind": "cloture",
+          "p": "D",
+          "role": "Minority",
+          "who": "Senate Democratic caucus"
+        }
+      ],
+      "congress": 119,
+      "crossovers": [
+        {
+          "on": "Cloture, Dec 11",
+          "p": "R",
+          "s": "KY",
+          "vote": "Nay",
+          "who": "Rand Paul"
+        }
+      ],
+      "fns": {
+        "a": {
+          "src": "Senate Democrats floor wrap-up",
+          "t": "Dec 11 roll call: cloture on S. 3386 not invoked, 51–48.",
+          "u": "https://www.democrats.senate.gov/2025/12/11/wrap-up-for-thursday-december-11-2025"
+        },
+        "b": {
+          "src": "Axios",
+          "t": "Paul voted against the GOP alternative; Cassidy and Crapo championed it.",
+          "u": "https://www.axios.com/2025/12/11/senate-aca-subsidies-vote-obamacare"
+        }
+      },
+      "killedStage": 2,
+      "lead": [
+        {
+          "n": "Bill Cassidy",
+          "p": "R",
+          "r": "Co-author, HELP Chair",
+          "s": "LA"
+        }
+      ],
+      "num": "S. 3386",
+      "outcome": {
+        "by": "Senate Democrats + Rand Paul",
+        "d": "2025-12-11",
+        "fn": "a",
+        "v": "51–48 (60 needed)",
+        "where": "Senate floor · cloture"
+      },
+      "path": "Cloture on motion to proceed",
+      "reached": 2,
+      "reference": true,
+      "sponsor": {
+        "n": "Mike Crapo",
+        "p": "R",
+        "s": "ID"
+      },
+      "status": "killed",
+      "timeline": [
+        {
+          "ch": "S",
+          "d": "2025-12-11",
+          "e": "Cloture on motion to proceed not invoked; 60 needed",
+          "fn": "a",
+          "k": "kill",
+          "v": "51–48"
+        }
+      ],
+      "title": "HSA deposits for ACA enrollees in place of enhanced credits",
+      "type": "s",
+      "number": 3386
+    }
+  }
+}

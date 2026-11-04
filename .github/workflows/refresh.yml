@@ -1,0 +1,58 @@
+name: Refresh ledger data
+
+# Runs every hour at :17 (off the top of the hour, when GitHub queues are busiest).
+# scripts/fetch.py decides what to do from the session calendar in data/curated.json:
+#   session days: votes hourly 8am-11pm CT, bills 4x a day
+#   recess days:  bills once a day at 6am CT, nothing else
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "full = bills and votes now, votes = votes only, auto = follow the schedule rules"
+        type: choice
+        default: full
+        options: [full, votes, auto]
+
+# The token can only read and write this repo's contents. Nothing else.
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch data
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'auto' }}
+        run: python scripts/fetch.py
+
+      - name: Commit only if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site/data data
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          # Changes outside site/ don't need a Cloudflare build (saves the 500/month budget)
+          if git diff --cached --quiet -- site; then
+            git commit -m "[CF-Pages-Skip] Update discovery state"
+          else
+            git commit -m "Refresh ledger data"
+          fi
+          git push

@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Congress Bill Ledger</title>
+<meta name="description" content="Mature House and Senate bills: who wrote them, who blocked them, and what passed or died.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Public+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: docket header with session numbers, sticky section index, stacked collapsible sections; bills are expandable dockets */
+:root{
+  --paper:#F3F5F9; --card:#FFFFFF; --ink:#17202E; --muted:#5A6678; --rule:#D6DDE7; --wash:#E9EEF5;
+  --accent:#0F6670;
+  --dem:#2C5AA0; --rep:#B23A3A; --ind:#6B5B95;
+  --law:#1E7A46; --passed1:#24798A; --moving:#3866A8; --stalled:#9A6500; --killed:#7A2638; --vetoed:#64398F;
+  --f-display:"Merriweather",Georgia,"Times New Roman",serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0F141C; --card:#171F2A; --ink:#E5EAF1; --muted:#97A3B4; --rule:#2A3443; --wash:#1D2734;
+  --accent:#4DB0B7; --dem:#80A7E8; --rep:#E8897F; --ind:#B6A5DC;
+  --law:#5CC08B; --passed1:#62B8C7; --moving:#86A9E2; --stalled:#E2B14F; --killed:#E0899B; --vetoed:#B999E6;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0F141C; --card:#171F2A; --ink:#E5EAF1; --muted:#97A3B4; --rule:#2A3443; --wash:#1D2734;
+  --accent:#4DB0B7; --dem:#80A7E8; --rep:#E8897F; --ind:#B6A5DC;
+  --law:#5CC08B; --passed1:#62B8C7; --moving:#86A9E2; --stalled:#E2B14F; --killed:#E0899B; --vetoed:#B999E6;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+html{color-scheme:light}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+h1,h2,h3{text-wrap:balance;margin:0}
+
+/* header */
+header.top{background:var(--card);border-bottom:1px solid var(--rule)}
+header.top .wrap{padding-block:22px 18px;display:grid;gap:16px}
+.eyebrow{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:900;font-size:clamp(26px,4.4vw,38px);letter-spacing:-.01em;line-height:1.1}
+.session{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.session>div{background:var(--card);padding:10px 12px;display:grid;gap:2px;min-width:0}
+.session .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.session .v{font-family:var(--f-mono);font-size:17px;font-weight:500}
+.session .s{font-size:12px;color:var(--muted)}
+.d{color:var(--dem)} .r{color:var(--rep)} .i{color:var(--ind)}
+
+nav.index{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.index .wrap{display:flex;gap:4px;overflow-x:auto;padding-block:8px;scrollbar-width:none}
+nav.index a{flex:none;font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:5px 10px;border-radius:4px}
+nav.index a:hover{color:var(--ink);background:var(--wash)}
+
+main .wrap{display:grid;gap:18px;padding-block:20px 48px}
+details.sec{background:var(--card);border:1px solid var(--rule);border-radius:8px}
+details.sec>summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary h2{font-family:var(--f-display);font-weight:700;font-size:19px}
+details.sec>summary .count{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+details.sec>summary::after{content:"−";margin-left:auto;font-family:var(--f-mono);color:var(--muted)}
+details.sec:not([open])>summary::after{content:"+"}
+.sec-body{padding:0 16px 16px;display:grid;gap:14px;min-width:0}
+
+/* legend */
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.legend .grp{display:grid;gap:6px;align-content:start;min-width:0}
+.legend h3{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.legend ul{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:13px}
+.legend li{display:flex;gap:8px;align-items:baseline}
+.legend li .key{flex:none;min-width:88px}
+.thr{font-family:var(--f-mono);font-weight:500}
+
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;letter-spacing:.02em;padding:2px 8px;border-radius:3px;white-space:nowrap;
+  color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent);border:1px solid color-mix(in srgb,var(--c) 38%,transparent)}
+.chip.killed,.chip.vetoed{text-decoration:line-through;text-decoration-thickness:1px}
+.pb{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:3px;font:600 11px var(--f-mono);color:var(--card);background:var(--c)}
+.att{font-family:var(--f-mono);font-size:12px}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:5px;overflow:hidden}
+.seg button{font:600 12.5px var(--f-body);background:var(--card);color:var(--muted);border:0;padding:6px 10px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--card)}
+select,input[type=search]{font:500 13px var(--f-body);color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:5px;padding:6px 8px}
+input[type=search]{flex:1 1 180px;min-width:0}
+
+/* bill dockets */
+.bills{display:grid;gap:10px}
+details.bill{border:1px solid var(--rule);border-radius:6px;background:var(--card)}
+details.bill>summary{list-style:none;cursor:pointer;padding:12px 14px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:center}
+details.bill>summary::-webkit-details-marker{display:none}
+details.bill[open]>summary{border-bottom:1px solid var(--rule)}
+.bnum{font-family:var(--f-mono);font-weight:500;font-size:14px;white-space:nowrap}
+.btitle{font-weight:600;min-width:0}
+.bmeta{grid-column:2/4;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12.5px;color:var(--muted)}
+.pipe{grid-column:1/4;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:6px}
+.pipe span{height:6px;border-radius:2px;background:var(--wash);position:relative}
+.pipe span.on{background:var(--c)}
+.pipe span.x{background:repeating-linear-gradient(135deg,var(--c) 0 3px,transparent 3px 6px)}
+.pipe-l{grid-column:1/4;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font:10px var(--f-mono);color:var(--muted);letter-spacing:.02em}
+.pipe-l span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ref{font:600 10.5px var(--f-mono);letter-spacing:.06em;color:var(--muted);border:1px dashed var(--rule);padding:1px 5px;border-radius:3px}
+.bbody{padding:12px 14px 14px;display:grid;gap:14px;min-width:0}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;font-size:13.5px}
+.people .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.split{display:flex;height:8px;border-radius:2px;overflow:hidden;background:var(--wash);margin-top:4px;max-width:220px}
+.split i{display:block;height:100%}
+h4{margin:0 0 6px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--rule);margin-left:4px}
+.tl li{position:relative;padding:4px 0 8px 14px;display:grid;grid-template-columns:96px 34px 1fr;gap:8px;font-size:13.5px;align-items:baseline}
+.tl li::before{content:"";position:absolute;left:-5px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--card);border:2px solid var(--muted)}
+.tl li.kill::before{background:var(--killed);border-color:var(--killed)}
+.tl li.win::before{background:var(--law);border-color:var(--law)}
+.tl .dt{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.tl .ch{font:600 11px var(--f-mono);color:var(--muted)}
+.tally{font-family:var(--f-mono);font-size:12.5px;font-weight:500;white-space:nowrap}
+sup.fn a{font:600 10.5px var(--f-mono);text-decoration:none;padding:0 1px}
+
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--wash);white-space:nowrap;position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+th button{all:unset;cursor:pointer}
+th button:focus-visible{outline:2px solid var(--accent)}
+th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending"] button::after{content:" ▼"}
+
+/* agenda */
+.agenda{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.ag{border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;gap:6px;align-content:start;min-width:0}
+.ag .t{font-weight:600;font-size:14px}
+.ag .s{font-size:12px;color:var(--muted)}
+.ag .pipe{grid-column:auto;margin:0}
+.ag ul{margin:0;padding:0;list-style:none;font-size:12.5px;display:grid;gap:2px}
+.ag.empty{border-style:dashed}
+.links{font-size:12.5px}
+
+.notes{margin:0;padding-left:0;list-style:none;display:grid;gap:6px;font-size:13px;counter-reset:none}
+.notes li{display:grid;grid-template-columns:40px 72px 1fr;gap:8px;align-items:baseline}
+.notes li:target{background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:4px}
+.notes .no{font-family:var(--f-mono);font-weight:500;color:var(--accent)}
+.notes .bn{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+
+/* season line */
+.season{display:flex;flex-wrap:wrap;gap:6px}
+.sz{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:4px;overflow:hidden;font-size:12.5px;min-width:0}
+.sk{padding:4px 8px;background:var(--wash);color:var(--muted);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.sv{padding:4px 9px;font-weight:600}
+.sv .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--c);margin-right:6px;vertical-align:1px}
+.sv .sub{font-weight:400;color:var(--muted)}
+.season-key{font-size:12px;color:var(--muted)}
+.season-key b{color:var(--ink);font-weight:600}
+/* glance */
+.glance{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr) minmax(0,1fr);gap:18px}
+.gcol{min-width:0}
+.score{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px}
+.sc{display:flex;align-items:baseline;gap:8px;font-size:12.5px;color:var(--muted)}
+.sc .num{font-size:22px;font-weight:500;min-width:1.4em}
+.feed{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13px}
+.feed li{display:grid;grid-template-columns:88px 1fr;gap:8px;align-items:baseline;padding-left:8px;border-left:2px solid var(--rule)}
+.feed li.kill{border-left-color:var(--killed)} .feed li.win{border-left-color:var(--law)}
+.feed .dt{font-size:11.5px;color:var(--muted)}
+.last{grid-column:1/4;font-size:12.5px;color:var(--muted);margin-top:2px}
+.last .mono{font-size:11.5px}
+.stages-head{padding:0 15px;display:grid}
+@media (max-width:820px){.glance{grid-template-columns:1fr}}
+.empty-state{border:1px dashed var(--rule);border-radius:6px;padding:16px;font-size:13.5px;color:var(--muted)}
+.status-line{font-size:12.5px;color:var(--muted);font-family:var(--f-mono)}
+.status-line.warn{color:var(--stalled)}
+
+@media (max-width:620px){
+  details.bill>summary{grid-template-columns:1fr auto}
+  .bnum{grid-column:1/2} .btitle{grid-column:1/3;order:3} .bmeta{grid-column:1/3;order:4}
+  .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
+  .tl li{grid-template-columns:78px 1fr} .tl .ch{display:none}
+  .notes li{grid-template-columns:34px 1fr} .notes .bn{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow" id="cong-label">120th Congress · House &amp; Senate</div>
+    <h1>Congress Bill Ledger</h1>
+    <div class="session" id="session">
+      <div><span class="k">Convenes</span><span class="v">Jan 3, 2027</span><span class="s"><span id="days-to"></span> · a Sunday, may shift</span></div>
+      <div><span class="k">House</span><span class="v" id="house-v">—</span><span class="s" id="house-s">results counting</span></div>
+      <div><span class="k">Senate</span><span class="v" id="senate-v">—</span><span class="s" id="senate-s">results counting</span></div>
+      <div><span class="k">President</span><span class="v r">Trump (R)</span><span class="s">veto through Jan 20, 2029</span></div>
+      <div><span class="k">Tracked bills</span><span class="v" id="tracked-v">0</span><span class="s" id="tracked-s">—</span></div>
+    </div>
+    <div class="season" id="season" aria-label="Session status today">
+      <span class="sz"><span class="sk">Today</span><span class="sv mono" id="sz-today">—</span></span>
+      <span class="sz"><span class="sk">Government</span><span class="sv" id="sz-gov">—</span></span>
+      <span class="sz"><span class="sk">House</span><span class="sv" id="sz-house">—</span></span>
+      <span class="sz"><span class="sk">Senate</span><span class="sv" id="sz-senate">—</span></span>
+      <span class="sz"><span class="sk">Phase</span><span class="sv" id="sz-phase">—</span></span>
+    </div>
+    <div class="season-key"><b>Recess</b> members home, government runs normally · <b>Shutdown</b> funding lapsed, agencies close · <b>Lame duck</b> outgoing Congress serves until Jan 3</div>
+    <div class="status-line" id="status-line">Loading records…</div>
+  </div>
+</header>
+
+<nav class="index" aria-label="Sections">
+  <div class="wrap">
+    <a href="#glance">Glance</a><a href="#bills">Bills</a><a href="#outcomes">Passed &amp; killed</a><a href="#votes">Votes</a><a href="#agenda">Agenda</a><a href="#names">Names</a><a href="#paths">Paths to law</a><a href="#key">Key</a><a href="#notes">Notes</a><a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+<details class="sec" id="glance" open>
+  <summary><h2>At a glance</h2><span class="count" id="glance-count"></span></summary>
+  <div class="sec-body glance">
+    <div class="gcol"><h4>Scoreboard</h4><div class="score" id="g-score"></div></div>
+    <div class="gcol"><h4>Latest actions</h4><ol class="feed" id="g-latest"></ol></div>
+    <div class="gcol"><h4>Coming up</h4><ol class="feed" id="g-next"></ol></div>
+  </div>
+</details>
+
+<details class="sec" id="key">
+  <summary><h2>Key</h2></summary>
+  <div class="sec-body legend">
+    <div class="grp"><h3>Tracked when</h3><ul>
+      <li><span class="key mono">Reported</span>out of committee</li>
+      <li><span class="key mono">Floor</span>floor or cloture vote held</li>
+      <li><span class="key mono">Discharge</span>petition filed in the House</li>
+      <li><span class="key mono">Passed</span>either chamber</li>
+    </ul></div>
+    <div class="grp"><h3>Status</h3><ul id="legend-status"></ul></div>
+    <div class="grp"><h3>Kill points</h3><ul id="legend-kill"></ul></div>
+    <div class="grp"><h3>Attribution</h3><ul>
+      <li><span class="key att">● Recorded</span>names on a roll call</li>
+      <li><span class="key att">◐ By role</span>chair or leader controls the step</li>
+      <li><span class="key att">○ Reported</span>press accounts, not on the record</li>
+    </ul>
+    <h3 style="margin-top:8px">Thresholds</h3><ul>
+      <li><span class="key thr">218</span>House majority · discharge signatures</li>
+      <li><span class="key thr">60</span>Senate cloture</li>
+      <li><span class="key thr">51</span>Senate reconciliation (VP breaks ties)</li>
+      <li><span class="key thr">2/3</span>suspension · veto override (290 / 67)</li>
+    </ul></div>
+    <div class="grp"><h3>Party</h3><ul>
+      <li><span class="pb" style="--c:var(--dem)">D</span>Democrat</li>
+      <li><span class="pb" style="--c:var(--rep)">R</span>Republican</li>
+      <li><span class="pb" style="--c:var(--ind)">I</span>Independent</li>
+      <li><span class="key ref">119 REF</span>119th Congress reference record</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="sec" id="bills" open>
+  <summary><h2>Bills</h2><span class="count" id="bills-count"></span></summary>
+  <div class="sec-body">
+    <div class="filters">
+      <div class="seg" role="group" aria-label="Congress" id="f-cong">
+        <button type="button" data-v="all" aria-pressed="true">All</button>
+        <button type="button" data-v="120" aria-pressed="false">120th</button>
+        <button type="button" data-v="119" aria-pressed="false">119th</button>
+      </div>
+      <select id="f-status" aria-label="Status"><option value="all">Any status</option></select>
+      <select id="f-area" aria-label="Issue area"><option value="all">Any area</option></select>
+      <input type="search" id="f-q" placeholder="Bill, title or member" aria-label="Search bills">
+    </div>
+    <div class="pipe-l stages-head" aria-hidden="true"><span>Intro</span><span>Cmte</span><span>Floor</span><span>Ch. 1</span><span>Ch. 2</span><span>Pres.</span><span>Law</span></div>
+    <div class="bills" id="bill-list"></div>
+  </div>
+</details>
+
+<details class="sec" id="votes">
+  <summary><h2>Floor votes</h2><span class="count" id="votes-count"></span></summary>
+  <div class="sec-body">
+    <div class="tbl"><table id="t-votes"><thead><tr><th>Chamber</th><th>Date</th><th>Roll</th><th>Question</th><th>Result</th><th>Tally</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</details>
+
+<details class="sec" id="agenda" open>
+  <summary><h2>Agenda</h2><span class="count">furthest stage reached per area</span></summary>
+  <div class="sec-body"><div class="agenda" id="agenda-grid"></div></div>
+</details>
+
+<details class="sec" id="names">
+  <summary><h2>Names</h2></summary>
+  <div class="sec-body">
+    <div><h4>Who stopped or slowed bills</h4><div class="tbl"><table id="t-block"><thead><tr><th>Member or bloc</th><th>Role</th><th>Action</th><th>Bill</th><th>Date</th><th>Attribution</th></tr></thead><tbody></tbody></table></div></div>
+    <div><h4>Crossover votes</h4><div class="tbl"><table id="t-cross"><thead><tr><th>Member</th><th>Party</th><th>Vote</th><th>Bill</th><th>On</th></tr></thead><tbody></tbody></table></div></div>
+    <div><h4>Sponsors and lead authors</h4><div class="tbl"><table id="t-spon"><thead><tr><th>Member</th><th>Party</th><th>Role</th><th>Bill</th><th>Status</th></tr></thead><tbody></tbody></table></div></div>
+  </div>
+</details>
+
+<details class="sec" id="outcomes" open>
+  <summary><h2>Passed &amp; killed</h2><span class="count" id="out-count"></span></summary>
+  <div class="sec-body">
+    <div class="tbl"><table id="t-out"><thead><tr>
+      <th aria-sort="none"><button type="button" data-k="num">Bill</button></th>
+      <th aria-sort="none"><button type="button" data-k="title">Title</button></th>
+      <th aria-sort="none"><button type="button" data-k="status">Outcome</button></th>
+      <th aria-sort="none"><button type="button" data-k="where">Where</button></th>
+      <th>By whom</th>
+      <th aria-sort="descending"><button type="button" data-k="date">Date</button></th>
+      <th>Vote</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</details>
+
+<details class="sec" id="paths" open>
+  <summary><h2>Paths to law</h2><span class="count">Trump (R) holds the veto through Jan 20, 2029</span></summary>
+  <div class="sec-body">
+    <div class="tbl"><table><thead><tr><th>Path</th><th>Needs</th><th>Veto applies</th><th>Used for</th></tr></thead><tbody>
+      <tr><td>Regular bill</td><td class="n">218 + 60 cloture</td><td><span class="chip" style="--c:var(--killed)">Yes · 290 / 67 to override</span></td><td>Bipartisan deals</td></tr>
+      <tr><td>Reconciliation</td><td class="n">218 + 51</td><td><span class="chip" style="--c:var(--killed)">Yes</span></td><td>Taxes, spending, Medicaid, ACA credits</td></tr>
+      <tr><td>Must-pass funding</td><td class="n">218 + 60</td><td><span class="chip" style="--c:var(--stalled)">Yes · shutdown risk both ways</span></td><td>Riders, spending limits</td></tr>
+      <tr><td>Debt limit increase</td><td class="n">218 + 60, or reconciliation</td><td><span class="chip" style="--c:var(--stalled)">Yes · default risk both ways</span></td><td>Main leverage: Medicaid, tariffs, Iran</td></tr>
+      <tr><td>War powers resolution</td><td class="n">Majority each chamber</td><td><span class="chip" style="--c:var(--killed)">Yes</span></td><td>On-record votes</td></tr>
+      <tr><td>Discharge petition</td><td class="n">218 signatures</td><td><span class="chip" style="--c:var(--muted)">Forces a House vote only</span></td><td>Bypass the Speaker</td></tr>
+      <tr><td>Oversight</td><td class="n">Committee majority</td><td><span class="chip" style="--c:var(--law)">No</span></td><td>Subpoenas, hearings, reports</td></tr>
+      <tr><td>Confirmations</td><td class="n">51 Senate</td><td><span class="chip" style="--c:var(--law)">No</span></td><td>Block or approve nominees, judges</td></tr>
+      <tr><td>Impeachment</td><td class="n">218 impeach · 67 convict</td><td><span class="chip" style="--c:var(--law)">No</span></td><td>Removal</td></tr>
+    </tbody></table></div>
+  </div>
+</details>
+
+<details class="sec" id="notes">
+  <summary><h2>Notes</h2><span class="count" id="notes-count"></span></summary>
+  <div class="sec-body"><ol class="notes" id="note-list"></ol></div>
+</details>
+
+<details class="sec" id="sources">
+  <summary><h2>Sources</h2><span class="count">checked Nov 4, 2026</span></summary>
+  <div class="sec-body">
+    <div class="tbl"><table><thead><tr><th>Source</th><th>Gives</th><th>Check</th></tr></thead><tbody>
+      <tr><td><a href="https://www.congress.gov/" target="_blank" rel="noopener">Congress.gov</a></td><td>Text, actions, sponsor, cosponsors, committees, related bills</td><td><span class="chip" style="--c:var(--stalled)">Official · blocks automated fetch</span></td></tr>
+      <tr><td><a href="https://api.congress.gov/sign-up/" target="_blank" rel="noopener">Congress.gov API</a> · <a href="https://github.com/LibraryOfCongress/api.congress.gov" target="_blank" rel="noopener">docs</a></td><td>Same data as JSON; free key, 5,000 req/hr</td><td><span class="chip" style="--c:var(--law)">Verified</span></td></tr>
+      <tr><td><a href="https://clerk.house.gov/Votes" target="_blank" rel="noopener">House Clerk roll calls</a></td><td>Every House recorded vote, member by member</td><td><span class="chip" style="--c:var(--law)">Verified</span></td></tr>
+      <tr><td><a href="https://clerk.house.gov/DischargePetition" target="_blank" rel="noopener">House Clerk discharge petitions</a></td><td>Petitions and who signed</td><td><span class="chip" style="--c:var(--law)">Verified</span></td></tr>
+      <tr><td><a href="https://www.senate.gov/legislative/votes_new.htm" target="_blank" rel="noopener">Senate roll calls</a></td><td>Every Senate recorded vote incl. cloture</td><td><span class="chip" style="--c:var(--law)">Verified</span></td></tr>
+      <tr><td><a href="https://www.cbo.gov/cost-estimates" target="_blank" rel="noopener">CBO cost estimates</a></td><td>10-year cost of reported bills</td><td><span class="chip" style="--c:var(--law)">Verified</span></td></tr>
+      <tr><td><a href="https://voteview.com/" target="_blank" rel="noopener">Voteview</a></td><td>All roll calls with ideology scores</td><td><span class="chip" style="--c:var(--law)">Verified</span></td></tr>
+      <tr><td><a href="https://github.com/unitedstates" target="_blank" rel="noopener">unitedstates (GitHub)</a></td><td>Bulk scrapers, legislator and committee files</td><td><span class="chip" style="--c:var(--law)">Verified · updated Oct 2026</span></td></tr>
+      <tr><td><a href="https://lda.senate.gov/api/" target="_blank" rel="noopener">Senate lobbying disclosures</a></td><td>Who lobbied, by issue code and client</td><td><span class="chip" style="--c:var(--stalled)">Confirmed via docs only</span></td></tr>
+      <tr><td><a href="https://www.archives.gov/federal-register/laws/119-first-session" target="_blank" rel="noopener">Archives public laws</a></td><td>Public law numbers and signing dates</td><td><span class="chip" style="--c:var(--law)">Verified</span></td></tr>
+      <tr><td><a href="https://www.govtrack.us/" target="_blank" rel="noopener">GovTrack</a></td><td>Alerts, plain-language bill pages</td><td><span class="chip" style="--c:var(--stalled)">Fetch returned stale copy</span></td></tr>
+      <tr><td><a href="https://projects.propublica.org/api-docs/congress-api/" target="_blank" rel="noopener">ProPublica Congress API</a></td><td>—</td><td><span class="chip killed" style="--c:var(--killed)">Discontinued</span></td></tr>
+    </tbody></table></div>
+  </div>
+</details>
+
+</div>
+</main>
+
+<script>
+(function(){
+const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
+const STATUS={
+  law:{l:"Became law",c:"--law"},
+  passed1:{l:"Passed one chamber",c:"--passed1"},
+  moving:{l:"In motion",c:"--moving"},
+  stalled:{l:"Stalled",c:"--stalled"},
+  killed:{l:"Killed",c:"--killed"},
+  vetoed:{l:"Vetoed",c:"--vetoed"}
+};
+const KIND={
+  committee:"Committee — no markup, tabled or voted down",
+  schedule:"Floor schedule — leader won't bring it up",
+  rules:"Rules Committee — no rule granted",
+  cloture:"Cloture — under 60 in the Senate",
+  vote:"Failed floor vote",
+  hold:"Hold or objection to unanimous consent",
+  procedural:"Procedural delay",
+  veto:"Presidential veto",
+  sustain:"Veto override fails"
+};
+const ATT={rec:"● Recorded",role:"◐ By role",rep:"○ Reported"};
+const AREAS=["Housing","Health care","Child care","Taxation","Accountability & oversight","Voting & democracy","Labor & wages","Budget & appropriations","Civil rights","Immigration","Climate & energy","Courts & justice"];
+
+let bills=[], meta=null, loaded=false;
+const F={cong:"all",status:"all",area:"all",q:""};
+let sortK="date", sortDir="desc";
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtD=d=>{if(!d)return"—";const m=/^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(d);if(!m)return esc(d);const mo=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m[2]-1];return m[3]?`${mo} ${+m[3]}, ${m[1]}`:`${mo} ${m[1]}`};
+const pb=p=>p?`<span class="pb" style="--c:var(${p==="D"?"--dem":p==="R"?"--rep":"--ind"})" title="${p==="D"?"Democrat":p==="R"?"Republican":"Independent"}">${esc(p)}</span>`:"";
+const chip=s=>{const o=STATUS[s]||{l:s,c:"--muted"};return`<span class="chip ${esc(s)}" style="--c:var(${o.c})">${esc(o.l)}</span>`};
+
+/* legend */
+$("#legend-status").innerHTML=Object.keys(STATUS).map(k=>`<li>${chip(k)}</li>`).join("");
+$("#legend-kill").innerHTML=Object.entries(KIND).map(([k,v])=>{const [a,b]=v.split(" — ");return`<li><span class="key mono" style="min-width:72px">${esc(a)}</span>${esc(b||"")}</li>`}).join("");
+
+/* days to convene */
+(function(){const t=new Date("2027-01-03T12:00:00-05:00"),n=new Date(),d=Math.ceil((t-n)/864e5);$("#days-to").textContent=d>0?`${d} days out`:"in session";})();
+
+/* footnotes: stable global numbering across the whole session */
+function sortedAll(){return bills.slice().sort((a,b)=>(b.congress||0)-(a.congress||0)||String(a.introduced||"").localeCompare(String(b.introduced||""))||String(a.id).localeCompare(String(b.id)))}
+let FN={}, FNLIST=[];
+function buildNotes(){
+  FN={};FNLIST=[];let n=0;
+  for(const b of sortedAll()){
+    const fns=b.fns||{};
+    const order=[];
+    const push=k=>{if(k&&fns[k]&&!order.includes(k))order.push(k)};
+    (b.timeline||[]).forEach(t=>push(t.fn));(b.blockers||[]).forEach(t=>push(t.fn));(b.outcome&&push(b.outcome.fn));
+    Object.keys(fns).forEach(push);
+    for(const k of order){n++;FN[b.id+"|"+k]=n;FNLIST.push({n,bill:b,f:fns[k]})}
+  }
+}
+const sup=(b,k)=>{const n=FN[b.id+"|"+k];return n?`<sup class="fn"><a href="#fn-${n}" aria-label="Note ${n}">${n}</a></sup>`:""};
+
+function pipe(b){
+  const c=(STATUS[b.status]||{}).c||"--muted";
+  const reach=b.reached==null?0:b.reached;
+  return STAGES.map((_,i)=>{
+    if((b.status==="killed"||b.status==="vetoed")&&b.killedStage===i)return`<span class="x" style="--c:var(${c})" title="Stopped at ${STAGES[i]}"></span>`;
+    return`<span class="${i<=reach?"on":""}" style="--c:var(${c})"></span>`}).join("");
+}
+function splitBar(c){if(!c||!c.t)return"";const t=c.t;const w=x=>((x||0)/t*100).toFixed(1)+"%";return`<div class="split" title="${c.d||0} D · ${c.r||0} R · ${c.i||0} I"><i style="width:${w(c.d)};background:var(--dem)"></i><i style="width:${w(c.i)};background:var(--ind)"></i><i style="width:${w(c.r)};background:var(--rep)"></i></div>`}
+
+function matches(b){
+  if(F.cong!=="all"&&String(b.congress)!==F.cong)return false;
+  if(F.status!=="all"&&b.status!==F.status)return false;
+  if(F.area!=="all"&&b.area!==F.area)return false;
+  if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,b.area,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
+  return true;
+}
+
+function billCard(b){
+  const sp=b.sponsor||{};
+  const cs=b.cosponsors;
+  const tl=(b.timeline||[]).map(t=>`<li class="${t.k||""}"><span class="dt">${fmtD(t.d)}</span><span class="ch">${esc(t.ch||"")}</span><span>${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}${sup(b,t.fn)}</span></li>`).join("");
+  const bl=(b.blockers||[]).length?`<div><h4>Blocked or slowed by</h4><div class="tbl"><table><thead><tr><th>Who</th><th>Role</th><th>Action</th><th>Kill point</th><th>Date</th><th>Attribution</th></tr></thead><tbody>${b.blockers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc(x.act||"")}${sup(b,x.fn)}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
+  const cr=(b.crossovers||[]).length?`<div><h4>Crossed party lines</h4><div class="tbl"><table><thead><tr><th>Member</th><th>Vote</th><th>On</th></tr></thead><tbody>${b.crossovers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td class="n">${esc(x.vote)}</td><td>${esc(x.on||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
+  const lead=(b.lead||[]).length?`<div><div class="k">Co-authors &amp; drivers</div>${b.lead.map(x=>`<div>${pb(x.p)} ${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}${x.r?` <span class="muted">· ${esc(x.r)}</span>`:""}</div>`).join("")}</div>`:"";
+  return`<details class="bill" id="b-${esc(b.id)}">
+  <summary>
+    <span class="bnum">${esc(b.num)}</span>
+    <span class="btitle">${esc(b.title)}</span>
+    <span>${chip(b.status)}</span>
+    <span class="bmeta">${b.reference?`<span class="ref">${esc(b.congress)} REF</span>`:""}${b.auto?`<span class="ref" title="Facts from Congress.gov, not yet reviewed">AUTO</span>`:""}<span>${esc(b.area||"")}</span><span>${pb(sp.p)} ${esc(sp.n||"Sponsor —")}</span>${b.path?`<span>${esc(b.path)}</span>`:""}</span>
+    <span class="pipe" aria-label="Stage reached: ${esc(STAGES[b.reached||0])}">${pipe(b)}</span>
+    ${lastAct(b)}
+  </summary>
+  <div class="bbody">
+    <div class="people">
+      <div><div class="k">Sponsor</div><div>${pb(sp.p)} ${esc(sp.n||"—")}${sp.s?` <span class="muted">(${esc(sp.s)})</span>`:""}</div></div>
+      ${lead}
+      <div><div class="k">Cosponsors</div>${cs&&cs.t!=null?`<div class="mono">${cs.t} · <span class="d">${cs.d||0} D</span> · <span class="r">${cs.r||0} R</span>${cs.i?` · <span class="i">${cs.i} I</span>`:""}</div>${splitBar(cs)}`:`<div class="muted">not recorded</div>`}</div>
+      <div><div class="k">Introduced</div><div class="mono">${fmtD(b.introduced)}</div></div>
+    </div>
+    ${b.url?`<div class="links"><a href="${esc(b.url)}" target="_blank" rel="noopener">Congress.gov</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`:""}
+    ${tl?`<div><h4>Timeline</h4><ol class="tl">${tl}</ol></div>`:""}
+    ${bl}${cr}
+  </div></details>`;
+}
+
+function lastEv(b){const t=(b.timeline||[]).slice().sort((x,y)=>String(y.d||"").localeCompare(String(x.d||"")));return t[0]}
+function lastAct(b){const t=lastEv(b)||(b.latest&&b.latest.text?{d:b.latest.actionDate,e:b.latest.text}:null);return t?`<span class="last"><span class="mono">${fmtD(t.d)}</span> ${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span>`:""}
+
+function renderGlance(){
+  const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
+  const n=k=>pool.filter(b=>b.status===k).length;
+  $("#g-score").innerHTML=["law","passed1","moving","stalled","killed","vetoed"].map(k=>`<div class="sc"><span class="num mono" style="color:var(${STATUS[k].c})">${n(k)}</span><span>${esc(STATUS[k].l)}</span></div>`).join("");
+  const ev=[];pool.forEach(b=>(b.timeline||[]).forEach(t=>ev.push({b,t})));
+  ev.sort((x,y)=>String(y.t.d||"").localeCompare(String(x.t.d||"")));
+  $("#g-latest").innerHTML=ev.slice(0,6).map(({b,t})=>`<li class="${t.k||""}"><span class="dt mono">${fmtD(t.d)}</span><span><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}" class="mono">${esc(b.num)}</a> ${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span></li>`).join("")||`<li class="muted">${loaded?"No actions yet":"Loading…"}</li>`;
+  const nx=(meta&&Array.isArray(meta.next)?meta.next:[]);
+  $("#g-next").innerHTML=nx.map(x=>`<li><span class="dt mono">${fmtD(x.d)}</span><span>${esc(x.e)}${x.u?` <a href="${esc(x.u)}" target="_blank" rel="noopener">src</a>`:""}</span></li>`).join("")||`<li class="muted">${loaded?"Nothing scheduled":"Loading…"}</li>`;
+  $("#glance-count").textContent=meta&&meta.asOf?`as of ${meta.asOf}`:"";
+}
+
+function renderBills(){
+  const list=sortedAll().filter(matches);
+  $("#bills-count").textContent=`${list.length} of ${bills.length}`;
+  if(!loaded){$("#bill-list").innerHTML=`<div class="empty-state">Loading bill records…</div>`;return}
+  if(!bills.length){$("#bill-list").innerHTML=`<div class="empty-state">No bills on the ledger yet. Ask Claude to add one by number, e.g. “add H.R. 1234 to the ledger.”</div>`;return}
+  if(!list.length){$("#bill-list").innerHTML=`<div class="empty-state">${F.cong==="120"?"No 120th Congress bills have reached committee or floor action yet. The 120th convenes Jan 3, 2027.":"No bills match these filters."}</div>`;return}
+  $("#bill-list").innerHTML=list.map(billCard).join("");
+}
+
+function renderAgenda(){
+  const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
+  const areas=AREAS.slice();pool.forEach(b=>{if(b.area&&!areas.includes(b.area))areas.push(b.area)});
+  $("#agenda-grid").innerHTML=areas.map(a=>{
+    const bs=pool.filter(b=>b.area===a);
+    if(!bs.length)return`<div class="ag empty"><span class="t">${esc(a)}</span><span class="s">No mature bill</span></div>`;
+    const best=bs.slice().sort((x,y)=>(y.reached||0)-(x.reached||0))[0];
+    const law=bs.filter(b=>b.status==="law").length, dead=bs.filter(b=>b.status==="killed"||b.status==="vetoed").length;
+    return`<div class="ag"><span class="t">${esc(a)}</span><span class="pipe">${pipe(best)}</span><span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul>${bs.map(b=>`<li><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a> ${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</li>`).join("")}</ul></div>`;
+  }).join("");
+}
+
+function renderNames(){
+  const pool=sortedAll().filter(b=>F.cong==="all"||String(b.congress)===F.cong);
+  const rowsB=[],rowsC=[],rowsS=[];
+  for(const b of pool){
+    (b.blockers||[]).forEach(x=>rowsB.push(`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}${sup(b,x.fn)}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`));
+    (b.crossovers||[]).forEach(x=>rowsC.push(`<tr><td>${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td class="n">${esc(x.vote)}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${esc(x.on||"")}</td></tr>`));
+    if(b.sponsor&&b.sponsor.n)rowsS.push(`<tr><td>${esc(b.sponsor.n)}${b.sponsor.s?` <span class="muted">(${esc(b.sponsor.s)})</span>`:""}</td><td>${pb(b.sponsor.p)}</td><td>Sponsor</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${chip(b.status)}</td></tr>`);
+    (b.lead||[]).forEach(x=>rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${chip(b.status)}</td></tr>`));
+  }
+  const none=c=>`<tr><td colspan="${c}" class="muted">${loaded?"None yet":"Loading…"}</td></tr>`;
+  $("#t-block tbody").innerHTML=rowsB.join("")||none(6);
+  $("#t-cross tbody").innerHTML=rowsC.join("")||none(5);
+  $("#t-spon tbody").innerHTML=rowsS.join("")||none(5);
+}
+
+function renderOutcomes(){
+  const done=bills.filter(b=>["law","killed","vetoed"].includes(b.status)&&(F.cong==="all"||String(b.congress)===F.cong));
+  const val=(b,k)=>k==="date"?(b.outcome&&b.outcome.d||""):k==="where"?(b.outcome&&b.outcome.where||""):k==="status"?(STATUS[b.status]||{}).l:String(b[k]||"");
+  done.sort((a,b)=>{const r=String(val(a,sortK)).localeCompare(String(val(b,sortK)),undefined,{numeric:true});return sortDir==="asc"?r:-r});
+  const law=done.filter(b=>b.status==="law").length;
+  $("#out-count").textContent=`${law} passed · ${done.length-law} killed`;
+  $("#t-out tbody").innerHTML=done.map(b=>{const o=b.outcome||{};return`<tr><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a>${b.reference?` <span class="ref">REF</span>`:""}</td><td>${esc(b.title)}</td><td>${chip(b.status)}</td><td>${esc(o.where||"")}</td><td>${esc(o.by||"")}</td><td class="n">${fmtD(o.d)}</td><td class="n">${esc(o.v||"")}</td><td class="n">${sup(b,o.fn)}</td></tr>`}).join("")||`<tr><td colspan="8" class="muted">${loaded?"Nothing resolved yet":"Loading…"}</td></tr>`;
+  document.querySelectorAll("#t-out th").forEach(th=>{const k=th.querySelector("button")?.dataset.k;if(k)th.setAttribute("aria-sort",k===sortK?(sortDir==="asc"?"ascending":"descending"):"none")});
+}
+
+function renderNotesList(){
+  $("#notes-count").textContent=FNLIST.length?`${FNLIST.length} notes`:"";
+  $("#note-list").innerHTML=FNLIST.map(x=>`<li id="fn-${x.n}"><span class="no">${x.n}</span><span class="bn">${esc(x.bill.num)}</span><span>${esc(x.f.t||"")}${x.f.u?` <a href="${esc(x.f.u)}" target="_blank" rel="noopener">${esc(x.f.src||"Source")}</a>`:x.f.src?` ${esc(x.f.src)}`:""}</span></li>`).join("")||`<li class="muted">${loaded?"No notes yet":"Loading…"}</li>`;
+}
+
+function renderMeta(){
+  if(meta){
+    if(meta.house){$("#house-v").innerHTML=`<span class="d">${esc(meta.house.d)} D</span> · <span class="r">${esc(meta.house.r)} R</span>`;$("#house-s").textContent=meta.house.note||""}
+    if(meta.senate){$("#senate-v").innerHTML=`<span class="d">${esc(meta.senate.d)} D</span> · <span class="r">${esc(meta.senate.r)} R</span>`;$("#senate-s").textContent=meta.senate.note||""}
+  }
+  const cur=bills.filter(b=>!b.reference).length, ref=bills.filter(b=>b.reference).length;
+  $("#tracked-v").textContent=String(cur);
+  $("#tracked-s").textContent=`${CONGRESS?CONGRESS+"th":"current"} · plus ${ref} reference`;
+}
+
+/* season line: computed from meta.calendar */
+const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+const wk=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
+function sessionDays(ranges){const out=[];(ranges||[]).forEach(r=>{for(let d=wk(r.f);iso(d)<=r.t;d.setDate(d.getDate()+1)){const w=d.getDay();if(w!==0&&w!==6)out.push(iso(d))}});return out.sort()}
+const short=s=>{const d=wk(s);return d.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})};
+const daysBetween=(a,b)=>Math.round((wk(b)-wk(a))/864e5);
+function chamberStatus(ranges,today,last){
+  const days=sessionDays(ranges);
+  if(!days.length)return`<span class="dot" style="--c:var(--muted)"></span>No schedule posted`;
+  if(days.includes(today))return`<span class="dot" style="--c:var(--law)"></span>In session`;
+  const nx=days.find(d=>d>today);
+  if(nx)return`<span class="dot" style="--c:var(--stalled)"></span>Out <span class="sub">· back ${short(nx)}</span>`;
+  return`<span class="dot" style="--c:var(--muted)"></span>Done for the year <span class="sub">· ${esc(last||"next schedule not posted")}</span>`;
+}
+function renderSeason(){
+  const today=iso(new Date());
+  $("#sz-today").textContent=short(today);
+  const cal=meta&&meta.calendar;
+  if(!cal){return}
+  const f=cal.funding;
+  if(f&&f.through){const n=daysBetween(today,f.through);
+    $("#sz-gov").innerHTML=n>=0?`<span class="dot" style="--c:var(--law)"></span>Open <span class="sub">· funded through ${fmtD(f.through)} · ${n} day${n===1?"":"s"}</span>`:`<span class="dot" style="--c:var(--killed)"></span>Funding deadline passed <span class="sub">· ${fmtD(f.through)}</span>`}
+  $("#sz-house").innerHTML=chamberStatus(cal.house,today,cal.after);
+  $("#sz-senate").innerHTML=chamberStatus(cal.senate,today,cal.after);
+  const ph=(cal.phases||[]).find(p=>today>=p.f&&today<=p.t);
+  $("#sz-phase").innerHTML=ph?`${esc(ph.l)}${ph.s?` <span class="sub">· ${esc(ph.s)}</span>`:""}`:"—";
+}
+
+let VOTES={senate:[],house:[]}, CONGRESS=null;
+function renderVotes(){
+  const all=[...(VOTES.senate||[]),...(VOTES.house||[])].filter(v=>v&&v.d).sort((a,b)=>String(b.d).localeCompare(String(a.d))||((+b.n||0)-(+a.n||0))).slice(0,30);
+  $("#votes-count").textContent=all.length?`latest ${all.length}`:"";
+  $("#t-votes tbody").innerHTML=all.map(v=>{
+    const res=String(v.result||"");const ok=/agreed|passed|confirmed|invoked(?! not)/i.test(res)&&!/not|rejected|failed/i.test(res);
+    const q=[v.measure,v.q].filter(Boolean).join(" · ");
+    return`<tr><td class="n">${v.ch==="S"?"Senate":"House"}</td><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(q).slice(0,220)}</td><td><span class="chip" style="--c:var(${ok?"--law":"--killed"})">${esc(res||"—")}</span></td><td class="n">${v.y||v.n_?`${esc(v.y)}–${esc(v.n_)}`:""}</td></tr>`}).join("")||`<tr><td colspan="6" class="muted">${loaded?"No recorded votes yet this session":"Loading…"}</td></tr>`;
+}
+
+function renderAll(){
+  renderVotes();buildNotes();renderMeta();renderSeason();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();renderNotesList();
+  // populate filters once data present
+  const st=$("#f-status");if(st.options.length===1)Object.keys(STATUS).forEach(k=>st.add(new Option(STATUS[k].l,k)));
+  const ar=$("#f-area");const have=new Set([...ar.options].map(o=>o.value));
+  [...AREAS,...bills.map(b=>b.area).filter(Boolean)].forEach(a=>{if(!have.has(a)){ar.add(new Option(a,a));have.add(a)}});
+}
+
+/* interactions */
+$("#f-cong").addEventListener("click",e=>{const btn=e.target.closest("button");if(!btn)return;F.cong=btn.dataset.v;$("#f-cong").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===btn)));renderAll()});
+$("#f-status").addEventListener("change",e=>{F.status=e.target.value;renderBills()});
+$("#f-area").addEventListener("change",e=>{F.area=e.target.value;renderBills()});
+let qt;$("#f-q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{F.q=e.target.value.trim();renderBills()},150)});
+$("#t-out thead").addEventListener("click",e=>{const btn=e.target.closest("button");if(!btn)return;const k=btn.dataset.k;if(sortK===k)sortDir=sortDir==="asc"?"desc":"asc";else{sortK=k;sortDir=k==="date"?"desc":"asc"}renderOutcomes()});
+document.addEventListener("click",e=>{
+  const a=e.target.closest("a[data-open]");
+  if(a){const d=document.getElementById("b-"+a.dataset.open);if(d){if(!matches(bills.find(b=>b.id===a.dataset.open)||{})){F.cong="all";F.status="all";F.area="all";F.q="";$("#f-q").value="";$("#f-status").value="all";$("#f-area").value="all";$("#f-cong").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.v==="all")));renderBills()}const el=document.getElementById("b-"+a.dataset.open);if(el){el.open=true;$("#bills").open=true}}}
+  const f=e.target.closest('sup.fn a');if(f)$("#notes").open=true;
+});
+
+renderAll();
+
+/* data: site/data/ledger.json, refreshed by the GitHub Actions schedule */
+const statusLine=$("#status-line");
+const fmtStamp=s=>{try{return new Date(s).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/Chicago",timeZoneName:"short"})}catch(e){return String(s)}};
+async function load(){
+  try{
+    const r=await fetch("data/ledger.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    const L=await r.json();
+    bills=(L.bills||[]).filter(b=>b&&b.id);meta=L.meta||{};VOTES=L.votes||{senate:[],house:[]};CONGRESS=L.congress||null;
+    loaded=true;statusLine.classList.remove("warn");
+    statusLine.textContent=L.generatedAt?`Data updated ${fmtStamp(L.generatedAt)}`:"";
+    if(L.warnings&&L.warnings.length)console.warn("ledger warnings",L.warnings);
+  }catch(e){
+    loaded=true;statusLine.textContent="Data couldn't load. Refresh to try again.";statusLine.classList.add("warn");
+  }
+  renderAll();
+}
+load();
+setInterval(()=>{if(!document.hidden)load()},15*60*1000);
+})();
+</script>
+</body>
+</html>
