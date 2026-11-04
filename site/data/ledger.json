@@ -4,6 +4,12 @@
    "area": "Taxation",
    "auto": false,
    "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
    "crossovers": [
     {
      "on": "House concurrence, Jul 3",
@@ -41,6 +47,7 @@
      "who": "Susan Collins"
     }
    ],
+   "fetched": "2026-11-04T21:53:29+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -57,6 +64,11 @@
      "t": "Roll Call 190: 218–214; R 218–2 (Massie, Fitzpatrick), D 0–212.",
      "u": "https://clerk.house.gov/Votes/2025190?BillNum=HR1&Page=2"
     },
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1"
+    },
     "d": {
      "src": "National Archives",
      "t": "Pub. L. 119-21, approved Jul 4, 2025.",
@@ -64,6 +76,12 @@
     }
    },
    "id": "119-hr1",
+   "introduced": "2025-05-20",
+   "latest": {
+    "actionDate": "2025-07-04",
+    "text": "Became Public Law No: 119-21."
+   },
+   "law": "Pub. L. 119-21",
    "num": "H.R. 1",
    "number": 1,
    "outcome": {
@@ -112,7 +130,911 @@
     }
    ],
    "title": "One Big Beautiful Bill Act",
-   "type": "hr"
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/1"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 2,
+    "t": 3
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10238"
+    }
+   },
+   "id": "119-hr10238",
+   "introduced": "2026-09-02",
+   "latest": {
+    "actionDate": "2026-10-13",
+    "text": "Placed on the Union Calendar, Calendar No. 748."
+   },
+   "num": "H.R. 10238",
+   "number": 10238,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tony Wied",
+    "p": "R",
+    "s": "WI-8"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-02",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 23 - 0.",
+     "fn": "cg",
+     "v": "23–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-13",
+     "e": "Reported (Amended) by the Committee on Small Business. H. Rept. 119-851.",
+     "fn": "cg",
+     "v": "119–851"
+    }
+   ],
+   "title": "Cybersecurity for Small Businesses Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10238"
+  },
+  {
+   "area": "Native Americans",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10306"
+    }
+   },
+   "id": "119-hr10306",
+   "introduced": "2026-09-08",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 762."
+   },
+   "num": "H.R. 10306",
+   "number": 10306,
+   "reached": 2,
+   "sponsor": {
+    "n": "Mark E. Amodei",
+    "p": "R",
+    "s": "NV-2"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-08",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-865.",
+     "fn": "cg",
+     "v": "119–865"
+    }
+   ],
+   "title": "Technical Correction to the Shoshone-Paiute Tribes of the Duck Valley Reservation Water Rights Settlement Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10306"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10329"
+    }
+   },
+   "id": "119-hr10329",
+   "introduced": "2026-09-10",
+   "latest": {
+    "actionDate": "2026-10-09",
+    "text": "Placed on the Union Calendar, Calendar No. 741."
+   },
+   "num": "H.R. 10329",
+   "number": 10329,
+   "reached": 2,
+   "sponsor": {
+    "n": "Roger Williams",
+    "p": "R",
+    "s": "TX-25"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-10",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 22 - 0.",
+     "fn": "cg",
+     "v": "22–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-09",
+     "e": "Reported by the Committee on Small Business. H. Rept. 119-844.",
+     "fn": "cg",
+     "v": "119–844"
+    }
+   ],
+   "title": "Combating Foreign Threats to Main Street Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10329"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 1,
+    "t": 2
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10352"
+    }
+   },
+   "id": "119-hr10352",
+   "introduced": "2026-09-14",
+   "latest": {
+    "actionDate": "2026-10-09",
+    "text": "Placed on the Union Calendar, Calendar No. 747."
+   },
+   "num": "H.R. 10352",
+   "number": 10352,
+   "reached": 2,
+   "sponsor": {
+    "n": "Lateefah Simon",
+    "p": "D",
+    "s": "CA-12"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 23 - 0.",
+     "fn": "cg",
+     "v": "23–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-09",
+     "e": "Reported by the Committee on Small Business. H. Rept. 119-850.",
+     "fn": "cg",
+     "v": "119–850"
+    }
+   ],
+   "title": "504 Program Level Flexibility Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10352"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10353"
+    }
+   },
+   "id": "119-hr10353",
+   "introduced": "2026-09-14",
+   "latest": {
+    "actionDate": "2026-10-09",
+    "text": "Placed on the Union Calendar, Calendar No. 742."
+   },
+   "num": "H.R. 10353",
+   "number": 10353,
+   "reached": 2,
+   "sponsor": {
+    "n": "Brad Finstad",
+    "p": "R",
+    "s": "MN-1"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 23 - 0.",
+     "fn": "cg",
+     "v": "23–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-09",
+     "e": "Reported by the Committee on Small Business. H. Rept. 119-845.",
+     "fn": "cg",
+     "v": "119–845"
+    }
+   ],
+   "title": "SBIC Reporting Modernization Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10353"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 1,
+    "t": 2
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10355"
+    }
+   },
+   "id": "119-hr10355",
+   "introduced": "2026-09-14",
+   "latest": {
+    "actionDate": "2026-10-09",
+    "text": "Placed on the Union Calendar, Calendar No. 743."
+   },
+   "num": "H.R. 10355",
+   "number": 10355,
+   "reached": 2,
+   "sponsor": {
+    "n": "Analilia Mejia",
+    "p": "D",
+    "s": "NJ-11"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 23 - 0.",
+     "fn": "cg",
+     "v": "23–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-09",
+     "e": "Reported by the Committee on Small Business. H. Rept. 119-846.",
+     "fn": "cg",
+     "v": "119–846"
+    }
+   ],
+   "title": "Disaster Loan Outreach Consistency Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10355"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 0,
+    "t": 2
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10371"
+    }
+   },
+   "id": "119-hr10371",
+   "introduced": "2026-09-14",
+   "latest": {
+    "actionDate": "2026-10-09",
+    "text": "Placed on the Union Calendar, Calendar No. 744."
+   },
+   "num": "H.R. 10371",
+   "number": 10371,
+   "reached": 2,
+   "sponsor": {
+    "n": "LaMonica McIver",
+    "p": "D",
+    "s": "NJ-10"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 22 - 0.",
+     "fn": "cg",
+     "v": "22–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-09",
+     "e": "Reported by the Committee on Small Business. H. Rept. 119-847.",
+     "fn": "cg",
+     "v": "119–847"
+    }
+   ],
+   "title": "Ensuring SBA Implementation of GAO Recommendations Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10371"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 1,
+    "t": 3
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10375"
+    }
+   },
+   "id": "119-hr10375",
+   "introduced": "2026-09-14",
+   "latest": {
+    "actionDate": "2026-10-09",
+    "text": "Placed on the Union Calendar, Calendar No. 745."
+   },
+   "num": "H.R. 10375",
+   "number": 10375,
+   "reached": 2,
+   "sponsor": {
+    "n": "Nydia M. Velázquez",
+    "p": "D",
+    "s": "NY-7"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 23 - 0.",
+     "fn": "cg",
+     "v": "23–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-09",
+     "e": "Reported by the Committee on Small Business. H. Rept. 119-848.",
+     "fn": "cg",
+     "v": "119–848"
+    }
+   ],
+   "title": "504 Modernization and Small Manufacturer Enhancement Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10375"
+  },
+  {
+   "area": "Accountability & oversight",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 137,
+    "i": 0,
+    "r": 21,
+    "t": 158
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1522"
+    }
+   },
+   "id": "119-hr1522",
+   "introduced": "2025-02-24",
+   "latest": {
+    "actionDate": "2025-07-22",
+    "actionTime": "16:59:01",
+    "text": "ASSUMING FIRST SPONSORSHIP - Ms. Randall asked unanimous consent that she may hereafter be considered as the first sponsor of H.R. 1522, a bill originally introduced by Representative Connolly, for the purpose of adding cosponsors and requesting reprintings pursuant to clause 7 of rule XII. Agreed to without objection."
+   },
+   "num": "H.R. 1522",
+   "number": 1522,
+   "reached": 0,
+   "sponsor": {
+    "n": "Gerald E. Connolly",
+    "p": "D",
+    "s": "VA-11"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-02-24",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-22",
+     "e": "ASSUMING FIRST SPONSORSHIP - Ms. Randall asked unanimous consent that she may hereafter be considered as the first sponsor of H.R. 1522, a bill originally intro",
+     "fn": "cg"
+    }
+   ],
+   "title": "Federal Retirement Fairness Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/1522"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 5,
+    "i": 0,
+    "r": 5,
+    "t": 10
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1809"
+    }
+   },
+   "id": "119-hr1809",
+   "introduced": "2025-03-03",
+   "latest": {
+    "actionDate": "2025-09-15",
+    "text": "Placed on the Union Calendar, Calendar No. 239."
+   },
+   "num": "H.R. 1809",
+   "number": 1809,
+   "reached": 2,
+   "sponsor": {
+    "n": "Mike Quigley",
+    "p": "D",
+    "s": "IL-5"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-03-03",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-15",
+     "e": "Ordered to be Reported by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-15",
+     "e": "Subcommittee on Water, Wildlife and Fisheries Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-09-15",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-283.",
+     "fn": "cg",
+     "v": "119–283"
+    }
+   ],
+   "title": "Great Lakes Fishery Research Reauthorization Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/1809"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 0,
+    "t": 3
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2316"
+    }
+   },
+   "id": "119-hr2316",
+   "introduced": "2025-03-25",
+   "latest": {
+    "actionDate": "2025-11-25",
+    "text": "Became Public Law No: 119-40."
+   },
+   "law": "Pub. L. 119-40",
+   "num": "H.R. 2316",
+   "number": 2316,
+   "outcome": {
+    "by": "",
+    "d": "2025-11-25",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Jeff Hurd",
+    "p": "R",
+    "s": "CO-3"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-06-25",
+     "e": "Subcommittee on Water, Wildlife and Fisheries Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-10",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-191.",
+     "fn": "cg",
+     "v": "119–191"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-14",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-23",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S7734)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-23",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-23",
+     "e": "Senate Committee on Environment and Public Works discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-11-25",
+     "e": "Became Public Law No: 119-40.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–40"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-25",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Wetlands Conservation and Access Improvement Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/2316"
+  },
+  {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 64,
+    "i": 0,
+    "r": 80,
+    "t": 144
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3164"
+    }
+   },
+   "id": "119-hr3164",
+   "introduced": "2025-05-01",
+   "latest": {
+    "actionDate": "2026-05-21",
+    "text": "Ordered to be Reported in the Nature of a Substitute by Voice Vote."
+   },
+   "num": "H.R. 3164",
+   "number": 3164,
+   "reached": 1,
+   "sponsor": {
+    "n": "Adrian Smith",
+    "p": "R",
+    "s": "NE-3"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-05-01",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-21",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Voice Vote.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Ensuring Community Access to Pharmacist Services Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/3164"
+  },
+  {
+   "area": "Transportation and Public Works",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 2,
+    "t": 2
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3331"
+    }
+   },
+   "id": "119-hr3331",
+   "introduced": "2025-05-13",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 750."
+   },
+   "num": "H.R. 3331",
+   "number": 3331,
+   "reached": 2,
+   "sponsor": {
+    "n": "Salud O. Carbajal",
+    "p": "D",
+    "s": "CA-24"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-05-13",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-11",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 52 - 12.",
+     "fn": "cg",
+     "v": "52–12"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-11",
+     "e": "Subcommittee on Coast Guard and Maritime Transportation Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Transportation and Infrastructure. H. Rept. 119-853.",
+     "fn": "cg",
+     "v": "119–853"
+    }
+   ],
+   "title": "Mariner Exam Modernization Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/3331"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3937"
+    }
+   },
+   "id": "119-hr3937",
+   "introduced": "2025-06-11",
+   "latest": {
+    "actionDate": "2026-07-23",
+    "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 494."
+   },
+   "num": "H.R. 3937",
+   "number": 3937,
+   "reached": 3,
+   "sponsor": {
+    "n": "Thomas P. Tiffany",
+    "p": "R",
+    "s": "WI-7"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-06-11",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-25",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-21",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-211, Part I.",
+     "fn": "cg",
+     "v": "119–211"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-22",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-22",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 410 - 1 (Roll no. 215). (text: CR H3541)",
+     "fn": "cg",
+     "v": "410–1"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-22",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 410 - 1 (Roll no. 215). ",
+     "fn": "cg",
+     "v": "410–1"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-10",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-23",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee without amendment. Without written report.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Wabeno Economic Development Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/3937"
   },
   {
    "area": "Accountability & oversight",
@@ -130,6 +1052,12 @@
     }
    ],
    "congress": 119,
+   "cosponsors": {
+    "d": 23,
+    "i": 0,
+    "r": 1,
+    "t": 24
+   },
    "crossovers": [
     {
      "on": "House passage, lone no",
@@ -139,6 +1067,7 @@
      "who": "Clay Higgins"
     }
    ],
+   "fetched": "2026-11-04T21:53:29+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -155,6 +1084,11 @@
      "t": "Senate passed by UC right after the House vote, no amendments.",
      "u": "https://m.washingtontimes.com/news/2025/nov/18/senate-passes-epstein-files-bill-unanimous-consent-overwhelming-house/"
     },
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4405"
+    },
     "d": {
      "src": "National Archives",
      "t": "Pub. L. 119-38, approved Nov 19, 2025.",
@@ -163,6 +1097,11 @@
    },
    "id": "119-hr4405",
    "introduced": "2025-07-15",
+   "latest": {
+    "actionDate": "2025-11-19",
+    "text": "Became Public Law No: 119-38."
+   },
+   "law": "Pub. L. 119-38",
    "lead": [
     {
      "n": "Thomas Massie",
@@ -236,7 +1175,233 @@
     }
    ],
    "title": "Epstein Files Transparency Act",
-   "type": "hr"
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/4405"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 8,
+    "i": 0,
+    "r": 16,
+    "t": 24
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4464"
+    }
+   },
+   "id": "119-hr4464",
+   "introduced": "2025-07-16",
+   "latest": {
+    "actionDate": "2026-09-16",
+    "text": "Ordered to be Reported by the Yeas and Nays: 29 - 0."
+   },
+   "num": "H.R. 4464",
+   "number": 4464,
+   "reached": 1,
+   "sponsor": {
+    "n": "Jay Obernolte",
+    "p": "R",
+    "s": "CA-23"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-07-16",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 29 - 0.",
+     "fn": "cg",
+     "v": "29–0"
+    }
+   ],
+   "title": "Preventive Health Savings Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/4464"
+  },
+  {
+   "area": "Native Americans",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4598"
+    }
+   },
+   "id": "119-hr4598",
+   "introduced": "2025-07-22",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 751."
+   },
+   "num": "H.R. 4598",
+   "number": 4598,
+   "reached": 2,
+   "sponsor": {
+    "n": "Teresa Leger Fernandez",
+    "p": "D",
+    "s": "NM-3"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-07-22",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-854.",
+     "fn": "cg",
+     "v": "119–854"
+    }
+   ],
+   "title": "Technical Corrections to the Northwestern New Mexico Rural Water Projects Act, Taos Pueblo Indian Water Rights Settlement Act, and Aamodt Litigation Settlement Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/4598"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 18,
+    "i": 0,
+    "r": 5,
+    "t": 23
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/5334"
+    }
+   },
+   "id": "119-hr5334",
+   "introduced": "2025-09-11",
+   "latest": {
+    "actionDate": "2026-09-18",
+    "text": "Became Public Law No: 119-111."
+   },
+   "law": "Pub. L. 119-111",
+   "num": "H.R. 5334",
+   "number": 5334,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-18",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Jimmy Panetta",
+    "p": "D",
+    "s": "CA-19"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-07-28",
+     "e": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 86 - 12. Record Vote Number: 212. (CR S4292)",
+     "fn": "cg",
+     "v": "86–12"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-29",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 84 - 12. Record Vote Number: 213.",
+     "fn": "cg",
+     "v": "84–12"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-29",
+     "e": "Motion to proceed to measure considered in Senate. (CR S4301)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-07",
+     "e": "Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 86 - 11. Record Vote Number: 224.",
+     "fn": "cg",
+     "v": "86–11"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-07",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 86 - 11. Record Vote Number: 224.",
+     "fn": "cg",
+     "v": "86–11"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "On motion that the House agree to the Senate amendments Agreed to by the Yeas and Nays: 262 - 159 (Roll no. 308).",
+     "fn": "cg",
+     "v": "262–159"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Resolving differences -- House actions: On motion that the House agree to the Senate amendments Agreed to by the Yeas and Nays: 262 - 159 (Roll no. 308).",
+     "fn": "cg",
+     "v": "262–159"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-17",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-18",
+     "e": "Became Public Law No: 119-111.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–111"
+    }
+   ],
+   "title": "Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/5334"
   },
   {
    "area": "Budget & appropriations",
@@ -254,6 +1419,12 @@
     }
    ],
    "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
    "crossovers": [
     {
      "on": "Cloture, Nov 9",
@@ -312,6 +1483,7 @@
      "who": "Angus King"
     }
    ],
+   "fetched": "2026-11-04T21:53:29+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -327,9 +1499,20 @@
      "src": "National Archives",
      "t": "Pub. L. 119-37, approved Nov 12, 2025.",
      "u": "https://www.archives.gov/federal-register/laws/119-first-session"
+    },
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/5371"
     }
    },
    "id": "119-hr5371",
+   "introduced": "2025-09-16",
+   "latest": {
+    "actionDate": "2025-11-12",
+    "text": "Became Public Law No: 119-37."
+   },
+   "law": "Pub. L. 119-37",
    "num": "H.R. 5371",
    "number": 5371,
    "outcome": {
@@ -342,6 +1525,11 @@
    "path": "Regular order · cloture",
    "reached": 6,
    "reference": true,
+   "sponsor": {
+    "n": "Tom Cole",
+    "p": "R",
+    "s": "OK-4"
+   },
    "status": "law",
    "timeline": [
     {
@@ -367,7 +1555,1350 @@
     }
    ],
    "title": "Continuing Appropriations and Extensions Act, 2026 (shutdown stopgap)",
-   "type": "hr"
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/5371"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 8,
+    "t": 9
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6470"
+    }
+   },
+   "id": "119-hr6470",
+   "introduced": "2025-12-04",
+   "latest": {
+    "actionDate": "2026-09-16",
+    "text": "Ordered to be Reported by the Yeas and Nays: 26 - 0."
+   },
+   "num": "H.R. 6470",
+   "number": 6470,
+   "reached": 1,
+   "sponsor": {
+    "n": "Blake D. Moore",
+    "p": "R",
+    "s": "UT-1"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-04",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported by the Yeas and Nays: 26 - 0.",
+     "fn": "cg",
+     "v": "26–0"
+    }
+   ],
+   "title": "Increasing Baseline Updates Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6470"
+  },
+  {
+   "area": "Labor & wages",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 2,
+    "t": 3
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8183"
+    }
+   },
+   "id": "119-hr8183",
+   "introduced": "2026-04-02",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 758."
+   },
+   "num": "H.R. 8183",
+   "number": 8183,
+   "reached": 2,
+   "sponsor": {
+    "n": "Burgess Owens",
+    "p": "R",
+    "s": "UT-4"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-02",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 33 - 0.",
+     "fn": "cg",
+     "v": "33–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Education and Workforce. H. Rept. 119-861.",
+     "fn": "cg",
+     "v": "119–861"
+    }
+   ],
+   "title": "MATCH Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8183"
+  },
+  {
+   "area": "Animals",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 6,
+    "t": 6
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8195"
+    }
+   },
+   "id": "119-hr8195",
+   "introduced": "2026-04-02",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 754."
+   },
+   "num": "H.R. 8195",
+   "number": 8195,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Walberg",
+    "p": "R",
+    "s": "MI-5"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-02",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Water, Wildlife and Fisheries Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-857.",
+     "fn": "cg",
+     "v": "119–857"
+    }
+   ],
+   "title": "Responsible Cormorant Management and Control Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8195"
+  },
+  {
+   "area": "Labor & wages",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8347"
+    }
+   },
+   "id": "119-hr8347",
+   "introduced": "2026-04-16",
+   "latest": {
+    "actionDate": "2026-11-02",
+    "text": "Placed on the Union Calendar, Calendar No. 764."
+   },
+   "num": "H.R. 8347",
+   "number": 8347,
+   "reached": 2,
+   "sponsor": {
+    "n": "Burgess Owens",
+    "p": "R",
+    "s": "UT-4"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 18 - 15.",
+     "fn": "cg",
+     "v": "18–15"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-02",
+     "e": "Reported (Amended) by the Committee on Education and Workforce. H. Rept. 119-867.",
+     "fn": "cg",
+     "v": "119–867"
+    }
+   ],
+   "title": "RURAL Healthcare Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8347"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/839"
+    }
+   },
+   "id": "119-hr839",
+   "introduced": "2025-01-31",
+   "latest": {
+    "actionDate": "2026-01-08",
+    "text": "Placed on the Union Calendar, Calendar No. 374."
+   },
+   "num": "H.R. 839",
+   "number": 839,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jodey C. Arrington",
+    "p": "R",
+    "s": "TX-19"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-31",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-23",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 23 - 16.",
+     "fn": "cg",
+     "v": "23–16"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-23",
+     "e": "Subcommittee on Water, Wildlife and Fisheries Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-08",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-435.",
+     "fn": "cg",
+     "v": "119–435"
+    }
+   ],
+   "title": "No FED in West Texas Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/839"
+  },
+  {
+   "area": "Native Americans",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8483"
+    }
+   },
+   "id": "119-hr8483",
+   "introduced": "2026-04-23",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 755."
+   },
+   "num": "H.R. 8483",
+   "number": 8483,
+   "reached": 2,
+   "sponsor": {
+    "n": "Darrell Issa",
+    "p": "R",
+    "s": "CA-48"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-23",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Indian and Insular Affairs Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-858.",
+     "fn": "cg",
+     "v": "119–858"
+    }
+   ],
+   "title": "Barona Group of Capitan Grande Band of Mission Indians Land Transfer Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8483"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 4,
+    "i": 0,
+    "r": 3,
+    "t": 7
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8562"
+    }
+   },
+   "id": "119-hr8562",
+   "introduced": "2026-04-28",
+   "latest": {
+    "actionDate": "2026-05-13",
+    "text": "Ordered to be Reported by the Yeas and Nays: 39 - 7."
+   },
+   "num": "H.R. 8562",
+   "number": 8562,
+   "reached": 1,
+   "sponsor": {
+    "n": "Ritchie Torres",
+    "p": "D",
+    "s": "NY-15"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-13",
+     "e": "Ordered to be Reported by the Yeas and Nays: 39 - 7.",
+     "fn": "cg",
+     "v": "39–7"
+    }
+   ],
+   "title": "To designate a building of the Chancery of the United States in Pristina, Kosovo, as the \"Eliot L. Engel Building\".",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8562"
+  },
+  {
+   "area": "Labor & wages",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8660"
+    }
+   },
+   "id": "119-hr8660",
+   "introduced": "2026-05-04",
+   "latest": {
+    "actionDate": "2026-11-02",
+    "text": "Placed on the Union Calendar, Calendar No. 765."
+   },
+   "num": "H.R. 8660",
+   "number": 8660,
+   "reached": 2,
+   "sponsor": {
+    "n": "Ryan Mackenzie",
+    "p": "R",
+    "s": "PA-7"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-05-04",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 18 - 15.",
+     "fn": "cg",
+     "v": "18–15"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-02",
+     "e": "Reported (Amended) by the Committee on Education and Workforce. H. Rept. 119-868.",
+     "fn": "cg",
+     "v": "119–868"
+    }
+   ],
+   "title": "VEST Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8660"
+  },
+  {
+   "area": "Science, Technology, Communications",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 2,
+    "t": 5
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8981"
+    }
+   },
+   "id": "119-hr8981",
+   "introduced": "2026-05-21",
+   "latest": {
+    "actionDate": "2026-07-21",
+    "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by Voice Vote."
+   },
+   "num": "H.R. 8981",
+   "number": 8981,
+   "reached": 1,
+   "sponsor": {
+    "n": "April McClain Delaney",
+    "p": "D",
+    "s": "MD-6"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-05-21",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "Ordered to be Reported in the Nature of a Substitute (Amended) by Voice Vote.",
+     "fn": "cg"
+    }
+   ],
+   "title": "SCALE Biology Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8981"
+  },
+  {
+   "area": "Civil rights",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 5,
+    "i": 0,
+    "r": 5,
+    "t": 10
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9269"
+    }
+   },
+   "id": "119-hr9269",
+   "introduced": "2026-06-11",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 756."
+   },
+   "num": "H.R. 9269",
+   "number": 9269,
+   "reached": 2,
+   "sponsor": {
+    "n": "James E. Clyburn",
+    "p": "D",
+    "s": "SC-6"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-06-11",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported (Amended) by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Federal Lands Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-859.",
+     "fn": "cg",
+     "v": "119–859"
+    }
+   ],
+   "title": "Renewing the African American Civil Rights Network Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9269"
+  },
+  {
+   "area": "Science, Technology, Communications",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9326"
+    }
+   },
+   "id": "119-hr9326",
+   "introduced": "2026-06-15",
+   "latest": {
+    "actionDate": "2026-07-21",
+    "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by Voice Vote."
+   },
+   "num": "H.R. 9326",
+   "number": 9326,
+   "reached": 1,
+   "sponsor": {
+    "n": "Daniel Webster",
+    "p": "R",
+    "s": "FL-11"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-06-15",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "Ordered to be Reported in the Nature of a Substitute (Amended) by Voice Vote.",
+     "fn": "cg"
+    }
+   ],
+   "title": "USA Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9326"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 1,
+    "t": 3
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9331"
+    }
+   },
+   "id": "119-hr9331",
+   "introduced": "2026-06-18",
+   "latest": {
+    "actionDate": "2026-09-01",
+    "text": "Placed on the Union Calendar, Calendar No. 692."
+   },
+   "num": "H.R. 9331",
+   "number": 9331,
+   "reached": 2,
+   "sponsor": {
+    "n": "Young Kim",
+    "p": "R",
+    "s": "CA-40"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-06-18",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-30",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 51 - 0.",
+     "fn": "cg",
+     "v": "51–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-01",
+     "e": "Reported (Amended) by the Committee on Financial Services. H. Rept. 119-792.",
+     "fn": "cg",
+     "v": "119–792"
+    }
+   ],
+   "title": "STOP Payments Fraud Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9331"
+  },
+  {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 5,
+    "t": 5
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9468"
+    }
+   },
+   "id": "119-hr9468",
+   "introduced": "2026-06-25",
+   "latest": {
+    "actionDate": "2026-07-15",
+    "text": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 40 - 0."
+   },
+   "num": "H.R. 9468",
+   "number": 9468,
+   "reached": 1,
+   "sponsor": {
+    "n": "Kevin Hern",
+    "p": "R",
+    "s": "OK-1"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-06-25",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 40 - 0.",
+     "fn": "cg",
+     "v": "40–0"
+    }
+   ],
+   "title": "STAR Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9468"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9600"
+    }
+   },
+   "id": "119-hr9600",
+   "introduced": "2026-07-06",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 757."
+   },
+   "num": "H.R. 9600",
+   "number": 9600,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jamie Raskin",
+    "p": "D",
+    "s": "MD-8"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-07-06",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Federal Lands Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-860.",
+     "fn": "cg",
+     "v": "119–860"
+    }
+   ],
+   "title": "Common Sense 250 Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9600"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 4,
+    "i": 0,
+    "r": 4,
+    "t": 8
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9640"
+    }
+   },
+   "id": "119-hr9640",
+   "introduced": "2026-07-09",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 759."
+   },
+   "num": "H.R. 9640",
+   "number": 9640,
+   "reached": 2,
+   "sponsor": {
+    "n": "Robert J. Wittman",
+    "p": "R",
+    "s": "VA-1"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-07-09",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Energy and Mineral Resources Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-862.",
+     "fn": "cg",
+     "v": "119–862"
+    }
+   ],
+   "title": "Earth MRI Reauthorization Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9640"
+  },
+  {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 45,
+    "i": 0,
+    "r": 45,
+    "t": 90
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9641"
+    }
+   },
+   "id": "119-hr9641",
+   "introduced": "2026-07-13",
+   "latest": {
+    "actionDate": "2026-07-15",
+    "text": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 38 - 0."
+   },
+   "num": "H.R. 9641",
+   "number": 9641,
+   "reached": 1,
+   "sponsor": {
+    "n": "Claudia Tenney",
+    "p": "R",
+    "s": "NY-24"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-07-13",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 38 - 0.",
+     "fn": "cg",
+     "v": "38–0"
+    }
+   ],
+   "title": "Essential Caregivers Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9641"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 5,
+    "t": 6
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9718"
+    }
+   },
+   "id": "119-hr9718",
+   "introduced": "2026-07-15",
+   "latest": {
+    "actionDate": "2026-10-09",
+    "text": "Placed on the Union Calendar, Calendar No. 740."
+   },
+   "num": "H.R. 9718",
+   "number": 9718,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tony Wied",
+    "p": "R",
+    "s": "WI-8"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-07-15",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 23 - 0.",
+     "fn": "cg",
+     "v": "23–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-09",
+     "e": "Reported (Amended) by the Committee on Small Business. H. Rept. 119-843.",
+     "fn": "cg",
+     "v": "119–843"
+    }
+   ],
+   "title": "Reshoring American Manufacturing Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9718"
+  },
+  {
+   "area": "Water Resources Development",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9785"
+    }
+   },
+   "id": "119-hr9785",
+   "introduced": "2026-07-20",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 760."
+   },
+   "num": "H.R. 9785",
+   "number": 9785,
+   "reached": 2,
+   "sponsor": {
+    "n": "Dusty Johnson",
+    "p": "R",
+    "s": "SD"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-07-20",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-863.",
+     "fn": "cg",
+     "v": "119–863"
+    }
+   ],
+   "title": "South Dakota Water Feasibility Studies Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9785"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/1071"
+    }
+   },
+   "id": "119-s1071",
+   "introduced": "2025-03-14",
+   "latest": {
+    "actionDate": "2025-12-18",
+    "text": "Became Public Law No: 119-60."
+   },
+   "law": "Pub. L. 119-60",
+   "num": "S. 1071",
+   "number": 1071,
+   "outcome": {
+    "by": "",
+    "d": "2025-12-18",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "John Cornyn",
+    "p": "R",
+    "s": "TX"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-10",
+     "e": "On motion to commit Failed by the Yeas and Nays: 209 - 216 (Roll no. 319).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "209–216"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-10",
+     "e": "Rule H. Res. 936 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-11",
+     "e": "Cloture motion on the motion to concur in the House amendment to S. 1071 presented in Senate. (CR S8655-8656)",
+     "fn": "cg",
+     "v": "655–865"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-11",
+     "e": "Motion to proceed to consideration of the House message to accompany S. 1071 agreed to in Senate by Yea-Nay Vote. 75 - 22. Record Vote Number: 646. (CR S8655)",
+     "fn": "cg",
+     "v": "75–22"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-15",
+     "e": "Motion by Senator Thune to refer to Senate Committee on Armed Services the House message to accompany S. 1071 with instructions to report back forthwith with th",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-15",
+     "e": "Cloture on the motion to concur in the House amendment to S. 1071 invoked in Senate by Yea-Nay Vote. 76 - 20. Record Vote Number: 647. (CR S8707)",
+     "fn": "cg",
+     "v": "76–20"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-17",
+     "e": "Senate agreed to the House amendment to S. 1071 by Yea-Nay Vote. 77 - 20. Record Vote Number: 648.",
+     "fn": "cg",
+     "v": "77–20"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-17",
+     "e": "Resolving differences -- Senate actions: Senate agreed to the House amendment to S. 1071 by Yea-Nay Vote. 77 - 20. Record Vote Number: 648.",
+     "fn": "cg",
+     "v": "77–20"
+    },
+    {
+     "ch": "—",
+     "d": "2025-12-18",
+     "e": "Became Public Law No: 119-60.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–60"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-18",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "National Defense Authorization Act for Fiscal Year 2026",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1071"
+  },
+  {
+   "area": "Education",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/1602"
+    }
+   },
+   "id": "119-s1602",
+   "introduced": "2025-05-05",
+   "latest": {
+    "actionDate": "2026-03-20",
+    "text": "Referred sequentially to the Committee on Commerce, Science, and Transportation, pursuant to the order of March 3, 1988, for 30 calendar days excluding any day on which the Senate is not in session, and if not reported by that day, the Committee be discharged from further consideration thereof, and the bill be placed on the calendar."
+   },
+   "num": "S. 1602",
+   "number": 1602,
+   "reached": 2,
+   "sponsor": {
+    "n": "Margaret Wood Hassan",
+    "p": "D",
+    "s": "NH"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-05-05",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-02-26",
+     "e": "Committee on Health, Education, Labor, and Pensions. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-11",
+     "e": "Committee on Health, Education, Labor, and Pensions. Reported by Senator Cassidy without amendment. Without written report.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-20",
+     "e": "Referred sequentially to the Committee on Commerce, Science, and Transportation, pursuant to the order of March 3, 1988, for 30 calendar days excluding any day ",
+     "fn": "cg"
+    }
+   ],
+   "title": "Mathematical and Statistical Modeling Education Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1602"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/2082"
+    }
+   },
+   "id": "119-s2082",
+   "introduced": "2025-06-12",
+   "latest": {
+    "actionDate": "2025-10-29",
+    "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 224."
+   },
+   "num": "S. 2082",
+   "number": 2082,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jon Husted",
+    "p": "R",
+    "s": "OH"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-06-12",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-29",
+     "e": "Committee on Environment and Public Works. Reported by Senator Capito without amendment. Without written report.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-29",
+     "e": "Committee on Environment and Public Works. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Nuclear REFUEL Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2082"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 3,
+    "t": 4
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/2357"
+    }
+   },
+   "id": "119-s2357",
+   "introduced": "2025-07-17",
+   "latest": {
+    "actionDate": "2026-03-11",
+    "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 351."
+   },
+   "num": "S. 2357",
+   "number": 2357,
+   "reached": 2,
+   "sponsor": {
+    "n": "Dan Sullivan",
+    "p": "R",
+    "s": "AK"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-07-17",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-21",
+     "e": "Committee on Commerce, Science, and Transportation. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-11",
+     "e": "Committee on Commerce, Science, and Transportation. Reported by Senator Cruz with an amendment in the nature of a substitute. With written report No. 119-115.",
+     "fn": "cg",
+     "v": "119–115"
+    }
+   ],
+   "title": "Young Fishermen’s Development Program Reauthorization Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2357"
   },
   {
    "area": "Health care",
@@ -385,6 +2916,12 @@
     }
    ],
    "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
    "crossovers": [
     {
      "on": "Cloture, Dec 11",
@@ -415,6 +2952,7 @@
      "who": "Dan Sullivan"
     }
    ],
+   "fetched": "2026-11-04T21:53:29+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -425,10 +2963,20 @@
      "src": "Axios",
      "t": "Four Republicans voted yes on the Democratic bill; Paul voted no on the GOP plan.",
      "u": "https://www.axios.com/2025/12/11/senate-aca-subsidies-vote-obamacare"
+    },
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3385"
     }
    },
    "id": "119-s3385",
+   "introduced": "2025-12-08",
    "killedStage": 2,
+   "latest": {
+    "actionDate": "2025-12-11",
+    "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 51 - 48. Record Vote Number: 644. (CR S8654-8655)"
+   },
    "num": "S. 3385",
    "number": 3385,
    "outcome": {
@@ -458,7 +3006,8 @@
     }
    ],
    "title": "Extend enhanced ACA premium tax credits (3 years)",
-   "type": "s"
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3385"
   },
   {
    "area": "Health care",
@@ -476,6 +3025,12 @@
     }
    ],
    "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
    "crossovers": [
     {
      "on": "Cloture, Dec 11",
@@ -485,6 +3040,7 @@
      "who": "Rand Paul"
     }
    ],
+   "fetched": "2026-11-04T21:53:29+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -495,10 +3051,20 @@
      "src": "Axios",
      "t": "Paul voted against the GOP alternative; Cassidy and Crapo championed it.",
      "u": "https://www.axios.com/2025/12/11/senate-aca-subsidies-vote-obamacare"
+    },
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3386"
     }
    },
    "id": "119-s3386",
+   "introduced": "2025-12-08",
    "killedStage": 2,
+   "latest": {
+    "actionDate": "2025-12-11",
+    "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 51 - 48. Record Vote Number: 643. (CR S8654)"
+   },
    "lead": [
     {
      "n": "Bill Cassidy",
@@ -536,11 +3102,368 @@
     }
    ],
    "title": "HSA deposits for ACA enrollees in place of enhanced credits",
-   "type": "s"
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3386"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 10,
+    "i": 0,
+    "r": 12,
+    "t": 22
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3524"
+    }
+   },
+   "id": "119-s3524",
+   "introduced": "2025-12-17",
+   "latest": {
+    "actionDate": "2026-09-30",
+    "text": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably."
+   },
+   "num": "S. 3524",
+   "number": 3524,
+   "reached": 1,
+   "sponsor": {
+    "n": "David McCormick",
+    "p": "R",
+    "s": "PA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-12-17",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    }
+   ],
+   "title": "American Battlefield Protection Program Amendments Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3524"
+  },
+  {
+   "area": "Water Resources Development",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3723"
+    }
+   },
+   "id": "119-s3723",
+   "introduced": "2026-01-29",
+   "latest": {
+    "actionDate": "2026-09-17",
+    "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 648."
+   },
+   "num": "S. 3723",
+   "number": 3723,
+   "reached": 2,
+   "sponsor": {
+    "n": "John Thune",
+    "p": "R",
+    "s": "SD"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-29",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-10",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee with an amendment in the nature of a substitute. Without written report.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Western South Dakota Water Supply Project Feasibility Study Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3723"
+  },
+  {
+   "area": "Water Resources Development",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 3,
+    "t": 5
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3725"
+    }
+   },
+   "id": "119-s3725",
+   "introduced": "2026-01-29",
+   "latest": {
+    "actionDate": "2026-09-17",
+    "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 649."
+   },
+   "num": "S. 3725",
+   "number": 3725,
+   "reached": 2,
+   "sponsor": {
+    "n": "John Thune",
+    "p": "R",
+    "s": "SD"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-29",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-16",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee with an amendment in the nature of a substitute. Without written report.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Lewis and Clark Regional Water System Expansion Feasibility Study Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3725"
+  },
+  {
+   "area": "Water Resources Development",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3736"
+    }
+   },
+   "id": "119-s3736",
+   "introduced": "2026-01-29",
+   "latest": {
+    "actionDate": "2026-09-17",
+    "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 651."
+   },
+   "num": "S. 3736",
+   "number": 3736,
+   "reached": 2,
+   "sponsor": {
+    "n": "Mike Rounds",
+    "p": "R",
+    "s": "SD"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-29",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-10",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee with an amendment in the nature of a substitute. Without written report.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Dakota Mainstem Water Supply Project Feasibility Study Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3736"
+  },
+  {
+   "area": "Transportation and Public Works",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 4,
+    "i": 0,
+    "r": 7,
+    "t": 11
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3885"
+    }
+   },
+   "id": "119-s3885",
+   "introduced": "2026-02-12",
+   "latest": {
+    "actionDate": "2026-07-22",
+    "text": "Committee on Commerce, Science, and Transportation. Ordered to be reported with an amendment in the nature of a substitute favorably."
+   },
+   "num": "S. 3885",
+   "number": 3885,
+   "reached": 1,
+   "sponsor": {
+    "n": "Peter Welch",
+    "p": "D",
+    "s": "VT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-02-12",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-22",
+     "e": "Committee on Commerce, Science, and Transportation. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Aviation Innovation and Global Competitiveness Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3885"
+  },
+  {
+   "area": "Arts, Culture, Religion",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 1,
+    "t": 2
+   },
+   "fetched": "2026-11-04T21:53:29+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/675"
+    }
+   },
+   "id": "119-s675",
+   "introduced": "2025-02-20",
+   "latest": {
+    "actionDate": "2026-10-29",
+    "text": "Placed on the Union Calendar, Calendar No. 763."
+   },
+   "num": "S. 675",
+   "number": 675,
+   "reached": 3,
+   "sponsor": {
+    "n": "John Hoeven",
+    "p": "R",
+    "s": "ND"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-20",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-22",
+     "e": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S2981-2982)",
+     "fn": "cg",
+     "v": "981–298"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-22",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-22",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Federal Lands Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-866.",
+     "fn": "cg",
+     "v": "119–866"
+    }
+   ],
+   "title": "Theodore Roosevelt Presidential Library Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/675"
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-04T21:20:17+00:00",
+ "generatedAt": "2026-11-04T21:53:29+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -648,8 +3571,731 @@
  },
  "session": 2,
  "votes": {
-  "house": [],
+  "house": [
+   {
+    "ch": "H",
+    "d": "2026-09-15",
+    "measure": "HJRES 210",
+    "n": 306,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026306",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-09-15",
+    "measure": "HR 9500",
+    "n": 305,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026305",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-09-15",
+    "measure": "HR 8278",
+    "n": 302,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026302",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-09-01",
+    "measure": "HRES 1498",
+    "n": 292,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026292",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-09-01",
+    "measure": "HRES 1499",
+    "n": 288,
+    "n_": "",
+    "q": "Recorded Vote",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026288",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-09-01",
+    "measure": "HRES 1499",
+    "n": 287,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026287",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-09-01",
+    "measure": "HR 6500",
+    "n": 286,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026286",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-08-31",
+    "measure": "S 32",
+    "n": 285,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026285",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-08-31",
+    "measure": "S 307",
+    "n": 284,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026284",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-21",
+    "measure": "S 1020",
+    "n": 129,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026129",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-21",
+    "measure": "HR 5201",
+    "n": 127,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026127",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-20",
+    "measure": "HR 5200",
+    "n": 126,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026126",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-17",
+    "measure": "HRES 1175",
+    "n": 124,
+    "n_": "",
+    "q": "Recorded Vote",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026124",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-17",
+    "measure": "",
+    "n": 123,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026123",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-17",
+    "measure": "",
+    "n": 122,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026122",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HRES 1156",
+    "n": 121,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026121",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HR 1689",
+    "n": 120,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026120",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HRES 965",
+    "n": 119,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026119",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HR 6398",
+    "n": 118,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026118",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HR 6398",
+    "n": 117,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026117",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HR 6409",
+    "n": 116,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026116",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HR 6409",
+    "n": 115,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026115",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-16",
+    "measure": "HCONRES 40",
+    "n": 114,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026114",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-15",
+    "measure": "HRES 965",
+    "n": 113,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026113",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-15",
+    "measure": "HRES 1174",
+    "n": 112,
+    "n_": "",
+    "q": "Recorded Vote",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026112",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-15",
+    "measure": "HRES 1174",
+    "n": 111,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026111",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-14",
+    "measure": "HR 7613",
+    "n": 110,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026110",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-04-14",
+    "measure": "HR 1011",
+    "n": 109,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/2026109",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-05",
+    "measure": "HR 7744",
+    "n": 87,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202687",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-05",
+    "measure": "HR 7744",
+    "n": 86,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202686",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-05",
+    "measure": "HCONRES 38",
+    "n": 85,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202685",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-05",
+    "measure": "HRES 1099",
+    "n": 84,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202684",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-04",
+    "measure": "HRES 1100",
+    "n": 83,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202683",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-04",
+    "measure": "HR 6472",
+    "n": 82,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202682",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-04",
+    "measure": "S 723",
+    "n": 81,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202681",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-04",
+    "measure": "HRES 1095",
+    "n": 80,
+    "n_": "",
+    "q": "Recorded Vote",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202680",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-03-04",
+    "measure": "HRES 1095",
+    "n": 79,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202679",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-25",
+    "measure": "HR 4758",
+    "n": 78,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202678",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-25",
+    "measure": "HR 4758",
+    "n": 77,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202677",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-24",
+    "measure": "HR 4626",
+    "n": 76,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202676",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-24",
+    "measure": "HR 4626",
+    "n": 75,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202675",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-24",
+    "measure": "HRES 1075",
+    "n": 74,
+    "n_": "",
+    "q": "Recorded Vote",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202674",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-24",
+    "measure": "HRES 1075",
+    "n": 73,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202673",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-24",
+    "measure": "S 2503",
+    "n": 72,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202672",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-02-24",
+    "measure": "HR 6329",
+    "n": 71,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202671",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-12",
+    "measure": "HR 6504",
+    "n": 15,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202615",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-12",
+    "measure": "HR 6500",
+    "n": 14,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202614",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-12",
+    "measure": "HR 2683",
+    "n": 13,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202613",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-09",
+    "measure": "HR 5184",
+    "n": 12,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202612",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-08",
+    "measure": "HR 1834",
+    "n": 11,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202611",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-08",
+    "measure": "HRES 780",
+    "n": 10,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/202610",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-08",
+    "measure": "HR 131",
+    "n": 9,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20269",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-08",
+    "measure": "HR 504",
+    "n": 8,
+    "n_": "",
+    "q": "2/3 Yea-And-Nay",
+    "result": "Failed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20268",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-08",
+    "measure": "HR 6938",
+    "n": 7,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20267",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-08",
+    "measure": "HR 6938",
+    "n": 6,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20266",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-08",
+    "measure": "HR 6938",
+    "n": 5,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20265",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-07",
+    "measure": "HRES 780",
+    "n": 4,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20264",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-07",
+    "measure": "HRES 977",
+    "n": 3,
+    "n_": "",
+    "q": "Recorded Vote",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20263",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-07",
+    "measure": "HRES 977",
+    "n": 2,
+    "n_": "",
+    "q": "Yea-and-Nay",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20262",
+    "y": ""
+   },
+   {
+    "ch": "H",
+    "d": "2026-01-06",
+    "measure": "",
+    "n": 1,
+    "n_": "",
+    "q": "Quorum",
+    "result": "Passed",
+    "title": "",
+    "u": "https://clerk.house.gov/Votes/20261",
+    "y": ""
+   }
+  ],
   "senate": []
  },
- "warnings": []
+ "warnings": [
+  "Senate vote list unavailable (HTTPError)"
+ ]
 }
