@@ -156,10 +156,12 @@ STAGE_RULES = [
 ]
 PASSED_H = re.compile(r"passed/agreed to in house|on passage passed|on motion to suspend the rules and pass the bill.*agreed", re.I)
 PASSED_S = re.compile(r"passed/agreed to in senate|passed senate", re.I)
-FLOOR = re.compile(r"cloture|placed on (the )?(union|house|senate legislative) calendar|motion to proceed|considered under|rule h\. ?res|discharge", re.I)
-COMMITTEE = re.compile(r"reported|ordered to be reported|markup|committee consideration", re.I)
+FLOOR = re.compile(r"cloture|motion to proceed|considered under|considered by senate|rule h\. ?res|discharge|failed of passage|on passage", re.I)
+COMMITTEE = re.compile(r"reported|ordered to be reported|markup|committee consideration|placed on (the )?(union|house|senate legislative) calendar", re.I)
 VETO = re.compile(r"vetoed by president", re.I)
-MATURE_HINT = re.compile(r"reported|passed|agreed to|cloture|placed on|discharge|presented to president|became public law|vetoed", re.I)
+# Auto-tracking bar: a recorded floor event, not just committee work
+MATURE_HINT = re.compile(r"passed|agreed to|on passage|cloture|discharge|presented to president|became public law|vetoed|failed of passage|not invoked", re.I)
+STRONG = re.compile(r"passed/agreed to in (house|senate)|passed senate|on passage|cloture|motion to discharge|discharge petition|presented to president|became public law|vetoed|failed of passage", re.I)
 
 
 def derive(actions: list[dict], laws: list) -> dict:
@@ -188,11 +190,11 @@ def derive(actions: list[dict], laws: list) -> dict:
         status = "passed1"
     else:
         status = "moving"
-    return {"reached": stage, "status": status}
+    return {"reached": stage, "status": status, "strong": bool(STRONG.search(all_text) or laws)}
 
 
 MILESTONE = re.compile(
-    r"introduced|reported|passed|agreed to|cloture|presented to president|became public law|vetoed|"
+    r"^introduced in|reported|passed|agreed to|cloture|presented to president|became public law|vetoed|"
     r"discharge|failed|not invoked|motion to proceed", re.I)
 
 
@@ -309,7 +311,8 @@ def senate_votes(congress: int, session: int) -> list[dict]:
     try:
         root = ET.fromstring(_get(url))
     except Exception as e:  # noqa: BLE001
-        warn(f"Senate vote list unavailable ({e.__class__.__name__})")
+        code = getattr(e, "code", "")
+        warn(f"Senate vote list unavailable ({e.__class__.__name__} {code})".strip())
         return []
     year = (root.findtext("congress_year") or str(dt.date.today().year)).strip()
     out = []
@@ -454,22 +457,34 @@ def main() -> int:
             m = re.match(r"^(\d+)-([a-z]+)(\d+)$", bid)
             if m and bid not in wanted:
                 wanted[bid] = (int(m.group(1)), m.group(2), int(m.group(3)))
+        curated_ids = set((curated.get("bills") or {}).keys())
         for bid, (c, t, n) in sorted(wanted.items()):
             try:
                 fresh = fetch_bill(c, t, n)
-                fresh["id"] = bid
-                fresh["fetched"] = now.isoformat(timespec="seconds")
-                auto_by_id[bid] = fresh
             except Exception as e:  # noqa: BLE001
                 warn(f"{bid}: {e}")
+                continue
+            if bid not in curated_ids and not fresh.get("strong"):
+                # discovered but only committee-level activity: stop tracking
+                auto_by_id.pop(bid, None)
+                if bid in tracked["bills"]:
+                    tracked["bills"].remove(bid)
+                continue
+            fresh["id"] = bid
+            fresh["fetched"] = now.isoformat(timespec="seconds")
+            auto_by_id[bid] = fresh
 
     bills = []
     ids = set(auto_by_id) | set((curated.get("bills") or {}).keys())
     for bid in sorted(ids):
         cur = (curated.get("bills") or {}).get(bid)
         auto = auto_by_id.get(bid)
+        if not cur and bid not in tracked["bills"]:
+            continue
         if auto and auto.get("auto") is not None:
             auto = {k: v for k, v in auto.items() if k not in ("auto",)}
+        if auto:
+            auto.pop("strong", None)
         b = merge(auto, cur)
         b["id"] = bid
         if b.get("congress") and b.get("congress") < congress and not b.get("reference") and b.get("auto"):
