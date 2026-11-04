@@ -3,7 +3,7 @@
 
 Sources
   - Congress.gov API v3 (bills, actions, cosponsors, House roll calls beta)
-  - senate.gov roll call vote list (XML)
+  - Voteview Senate roll calls (CSV); senate.gov refuses automated clients
   - data/curated.json (hand-curated layer; always wins over fetched fields)
 
 The API key is read from the CONGRESS_API_KEY environment variable only.
@@ -20,6 +20,8 @@ Standard library only, so the workflow needs no installs.
 from __future__ import annotations
 
 import datetime as dt
+import csv
+import io
 import json
 import os
 import re
@@ -28,7 +30,6 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -309,35 +310,37 @@ def discover(congress: int, since: dt.datetime) -> list[tuple[str, int]]:
 # ---------------------------------------------------------------- votes
 
 def senate_votes(congress: int, session: int) -> list[dict] | None:
-    url = f"https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_{congress}_{session}.xml"
+    """Senate roll calls from Voteview (UCLA), which publishes them for reuse.
+
+    senate.gov answers automated clients with 403 from both GitHub and a home
+    connection, so we don't ask it. Voteview usually lags a vote by a few hours.
+    """
+    url = f"https://voteview.com/static/data/out/rollcalls/S{congress}_rollcalls.csv"
     try:
-        root = ET.fromstring(_get(url))
+        rows = list(csv.DictReader(io.StringIO(_get(url, timeout=60).decode("utf-8-sig"))))
     except Exception as e:  # noqa: BLE001
         code = getattr(e, "code", "")
-        warn(f"Senate vote list unavailable ({e.__class__.__name__} {code})".strip())
+        warn(f"Senate votes (Voteview) unavailable ({e.__class__.__name__} {code})".strip())
         return None
-    year = (root.findtext("congress_year") or str(dt.date.today().year)).strip()
     out = []
-    for v in root.iter("vote"):
-        num = (v.findtext("vote_number") or "").strip()
-        raw_date = (v.findtext("vote_date") or "").strip()  # e.g. 30-Sep
-        try:
-            d = dt.datetime.strptime(f"{raw_date}-{year}", "%d-%b-%Y").date().isoformat()
-        except ValueError:
-            d = raw_date
-        q = v.find("question")
-        question = "".join(q.itertext()).strip() if q is not None else ""
-        measure = (q.findtext("measure") if q is not None else "") or ""
-        tally = v.find("vote_tally")
+    for r in rows:
+        if (r.get("chamber") or "Senate") != "Senate" or str(r.get("session") or session) != str(session):
+            continue
+        num = (r.get("clerk_rollnumber") or r.get("rollnumber") or "").strip()
+        n = int(float(num)) if num.replace(".", "", 1).isdigit() else num
+        def cnt(k: str) -> str:
+            v = (r.get(k) or "").strip()
+            return str(int(float(v))) if v.replace(".", "", 1).isdigit() else v
+        desc = re.sub(r"\s+", " ", (r.get("vote_desc") or r.get("dtl_desc") or "").strip())
         out.append({
-            "ch": "S", "n": int(num) if num.isdigit() else num, "d": d,
-            "q": re.sub(r"\s+", " ", question), "measure": measure.strip(),
-            "issue": (v.findtext("issue") or "").strip(),
-            "title": (v.findtext("title") or "").strip()[:200],
-            "result": (v.findtext("result") or "").strip(),
-            "y": (tally.findtext("yeas") if tally is not None else "") or "",
-            "n_": (tally.findtext("nays") if tally is not None else "") or "",
-            "u": f"https://www.senate.gov/legislative/LIS/roll_call_votes/vote{congress}{session}/vote_{congress}_{session}_{int(num):05d}.htm" if num.isdigit() else "",
+            "ch": "S", "n": n, "d": (r.get("date") or "").strip()[:10],
+            "q": re.sub(r"\s+", " ", (r.get("vote_question") or "").strip()),
+            "measure": (r.get("bill_number") or "").strip(),
+            "issue": (r.get("bill_number") or "").strip(),
+            "title": desc[:200],
+            "result": (r.get("vote_result") or "").strip(),
+            "y": cnt("yea_count"), "n_": cnt("nay_count"),
+            "u": f"https://www.senate.gov/legislative/LIS/roll_call_votes/vote{congress}{session}/vote_{congress}_{session}_{n:05d}.htm" if isinstance(n, int) else "",
         })
     out.sort(key=lambda x: (x["d"], x["n"] if isinstance(x["n"], int) else 0), reverse=True)
     return out[:60]
@@ -369,21 +372,21 @@ def house_votes(congress: int, session: int) -> list[dict]:
 
 
 def senate_with_backoff(congress: int, session: int, now: dt.datetime, state: dict, previous: list) -> list:
-    """Ask senate.gov at most once per backoff window after a failure.
+    """Ask for Senate votes at most once per backoff window after a failure.
 
     1st failure waits 1h, then 2h, 4h, 8h, 16h, capped at 24h. One success resets it.
     While waiting, the last good list is kept.
     """
     b = state.setdefault("senateBackoff", {"failures": 0, "nextTry": None})
     if b.get("nextTry") and now < dt.datetime.fromisoformat(b["nextTry"]):
-        print(f"senate.gov: backing off until {b['nextTry']}")
+        print(f"Senate votes: backing off until {b['nextTry']}")
         return previous
     got = senate_votes(congress, session)
     if got is None:
         b["failures"] = int(b.get("failures") or 0) + 1
         wait = min(2 ** (b["failures"] - 1), 24)
         b["nextTry"] = (now + dt.timedelta(hours=wait)).isoformat(timespec="seconds")
-        print(f"senate.gov: failure {b['failures']}, next try in {wait}h")
+        print(f"Senate votes: failure {b['failures']}, next try in {wait}h")
         return previous
     b["failures"], b["nextTry"] = 0, None
     return got

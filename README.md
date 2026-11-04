@@ -16,7 +16,7 @@ It writes `site/data/ledger.json` and commits only when the data changed. Cloudf
 ## Where data comes from
 
 - [Congress.gov API](https://api.congress.gov/): bill details, actions, cosponsors, House roll calls (beta)
-- [Senate roll call votes](https://www.senate.gov/legislative/votes_new.htm): vote list XML
+- [Voteview](https://voteview.com/data): Senate roll call list (CSV). senate.gov refuses automated clients, so the script doesn't fetch it; vote rows still link to the official senate.gov pages.
 - `data/curated.json`: hand-checked fields (blockers, attribution, footnotes). These always override fetched data.
 
 Bills marked **AUTO** on the page were found by the script and haven't been reviewed yet.
