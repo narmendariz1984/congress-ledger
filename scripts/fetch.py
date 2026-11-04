@@ -168,6 +168,26 @@ PASSED_S = re.compile(r"passed/agreed to in senate|passed senate", re.I)
 FLOOR = re.compile(r"cloture|motion to proceed|considered under|considered by senate|rule h\. ?res|discharge|failed of passage|on passage", re.I)
 COMMITTEE = re.compile(r"reported|ordered to be reported|markup|committee consideration|placed on (the )?(union|house|senate legislative) calendar", re.I)
 VETO = re.compile(r"vetoed by president", re.I)
+# Keep rule (Nov 2026): laws, bills sent to or vetoed by the President, bills passed by
+# both chambers, and bills that died or were fought over on the floor are always kept.
+# A bill that passed only one chamber is kept only if that passage was a recorded vote,
+# which drops the hundreds of voice-vote / unanimous-consent bills that never move again.
+KEEP_RULE = "recorded-vote-v1"
+ALWAYS_KEEP = re.compile(r"became public law|signed by president|presented to president|vetoed|"
+                         r"cloture|not invoked|discharge|failed of passage|failed by", re.I)
+PASSAGE = re.compile(r"\bpass(ed)?\b|on passage|agreed to", re.I)
+RECORDED = re.compile(r"record vote|roll no\.|yeas and nays|yea-nay|\b\d{1,3}\s*-\s*\d{1,3}\b", re.I)
+VOICE = re.compile(r"voice vote|unanimous consent|without objection", re.I)
+
+
+def recorded_passage(actions: list[dict]) -> bool:
+    for a in actions:
+        t = a.get("text") or ""
+        if not PASSAGE.search(t) or VOICE.search(t):
+            continue
+        if a.get("recordedVotes") or RECORDED.search(t):
+            return True
+    return False
 # Auto-tracking bar: a recorded floor event, not just committee work
 MATURE_HINT = re.compile(r"passed|agreed to|on passage|cloture|discharge|presented to president|became public law|vetoed|failed of passage|not invoked", re.I)
 # Looser net for discovery: fetch_bill() still has to find a STRONG action before a bill is kept.
@@ -201,7 +221,8 @@ def derive(actions: list[dict], laws: list) -> dict:
         status = "passed1"
     else:
         status = "moving"
-    return {"reached": stage, "status": status, "strong": bool(STRONG.search(all_text) or laws)}
+    strong = bool(laws) or bool(ALWAYS_KEEP.search(all_text)) or (ph and ps) or ((ph or ps) and recorded_passage(actions))
+    return {"reached": stage, "status": status, "strong": strong, "recorded": recorded_passage(actions)}
 
 
 MILESTONE = re.compile(
@@ -563,6 +584,10 @@ def main() -> int:
                 return float("inf")
         stale = sorted((b for b in wanted if age(b) > 7 * 86400), key=age, reverse=True)[:STALE_PER_RUN]
         refetch = curated_ids | updated | set(stale) | {b for b in wanted if b not in auto_by_id}
+        if tracked.get("rule") != KEEP_RULE:
+            refetch |= set(wanted)
+            tracked["rule"] = KEEP_RULE
+            print(f"keep rule changed to {KEEP_RULE}: re-checking every tracked bill")
         print(f"bills: {len(wanted)} tracked, re-downloading {len(refetch & set(wanted))}")
         for bid, (c, t, n) in sorted(wanted.items()):
             if bid not in refetch:
@@ -593,6 +618,7 @@ def main() -> int:
             auto = {k: v for k, v in auto.items() if k not in ("auto",)}
         if auto:
             auto.pop("strong", None)
+            auto.pop("recorded", None)
         b = merge(auto, cur)
         b["id"] = bid
         if b.get("congress") and b.get("congress") < congress and not b.get("reference") and b.get("auto"):
