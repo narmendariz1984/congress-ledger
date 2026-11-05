@@ -2699,7 +2699,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T06:33:19+00:00",
+   "fetched": "2026-11-05T06:35:44+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -16390,7 +16390,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T06:33:19+00:00",
+   "fetched": "2026-11-05T06:35:44+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -19575,7 +19575,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T06:33:19+00:00",
+   "fetched": "2026-11-05T06:35:44+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -20751,6 +20751,3661 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/6380"
   },
   {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 2,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6387"
+    }
+   },
+   "id": "119-hr6387",
+   "introduced": "2025-12-03",
+   "latest": {
+    "actionDate": "2026-04-27",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
+   },
+   "num": "H.R. 6387",
+   "number": 6387,
+   "reached": 3,
+   "sponsor": {
+    "n": "Gabe Evans",
+    "p": "R",
+    "s": "CO-8"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-03",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "Ordered to be Reported by the Yeas and Nays: 27 - 23.",
+     "fn": "cg",
+     "v": "27–23"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-09",
+     "e": "Reported by the Committee on Energy and Commerce. H. Rept. 119-595.",
+     "fn": "cg",
+     "v": "119–595"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-15",
+     "e": "Rules Committee Resolution H. Res. 1174 Reported to House. Rule provides for consideration of H.R. 6387, H.R. 6398, H.R. 6409 and H. Res. 1156. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-22",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-22",
+     "e": "On passage Passed by the Yeas and Nays: 220 - 198 (Roll no. 136). (text: CR 4/21/2026 H3013)",
+     "fn": "cg",
+     "v": "220–198"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-22",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 220 - 198 (Roll no. 136). (text: CR 4/21/2026 H3013)",
+     "fn": "cg",
+     "v": "220–198"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-22",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 206 - 214 (Roll no. 135).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "206–214"
+    }
+   ],
+   "title": "FIRE Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6387"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6398"
+    }
+   },
+   "id": "119-hr6398",
+   "introduced": "2025-12-03",
+   "latest": {
+    "actionDate": "2026-04-17",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
+   },
+   "num": "H.R. 6398",
+   "number": 6398,
+   "reached": 3,
+   "sponsor": {
+    "n": "John Joyce",
+    "p": "R",
+    "s": "PA-13"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-03",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "Ordered to be Reported by the Yeas and Nays: 23 - 22.",
+     "fn": "cg",
+     "v": "23–22"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-09",
+     "e": "Reported by the Committee on Energy and Commerce. H. Rept. 119-596.",
+     "fn": "cg",
+     "v": "119–596"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-15",
+     "e": "Rules Committee Resolution H. Res. 1174 Reported to House. Rule provides for consideration of H.R. 6387, H.R. 6398, H.R. 6409 and H. Res. 1156. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "On passage Passed by the Yeas and Nays: 222 - 205 (Roll no. 118).",
+     "fn": "cg",
+     "v": "222–205"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 222 - 205 (Roll no. 118).",
+     "fn": "cg",
+     "v": "222–205"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 213 - 216 (Roll no. 117).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "213–216"
+    }
+   ],
+   "title": "RED Tape Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6398"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 2,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6409"
+    }
+   },
+   "id": "119-hr6409",
+   "introduced": "2025-12-03",
+   "latest": {
+    "actionDate": "2026-04-17",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
+   },
+   "num": "H.R. 6409",
+   "number": 6409,
+   "reached": 3,
+   "sponsor": {
+    "n": "August Pfluger",
+    "p": "R",
+    "s": "TX-11"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-03",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "Ordered to be Reported by the Yeas and Nays: 25 - 22.",
+     "fn": "cg",
+     "v": "25–22"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-09",
+     "e": "Reported by the Committee on Energy and Commerce. H. Rept. 119-594.",
+     "fn": "cg",
+     "v": "119–594"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-15",
+     "e": "Rules Committee Resolution H. Res. 1174 Reported to House. Rule provides for consideration of H.R. 6387, H.R. 6398, H.R. 6409 and H. Res. 1156. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "On passage Passed by the Yeas and Nays: 220 - 208 (Roll no. 116).",
+     "fn": "cg",
+     "v": "220–208"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 220 - 208 (Roll no. 116).",
+     "fn": "cg",
+     "v": "220–208"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 213 - 215 (Roll no. 115).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "213–215"
+    }
+   ],
+   "title": "FENCES Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6409"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 1,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6422"
+    }
+   },
+   "id": "119-hr6422",
+   "introduced": "2025-12-04",
+   "latest": {
+    "actionDate": "2026-03-25",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
+   },
+   "num": "H.R. 6422",
+   "number": 6422,
+   "reached": 3,
+   "sponsor": {
+    "n": "Pete Stauber",
+    "p": "R",
+    "s": "MN-8"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-04",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-18",
+     "e": "Ordered to be Reported by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-18",
+     "e": "Subcommittee on Water Resources and Environment Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-20",
+     "e": "Reported (Amended) by the Committee on Transportation and Infrastructure. H. Rept. 119-564.",
+     "fn": "cg",
+     "v": "119–564"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-24",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-24",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 378 - 32 (Roll no. 97). (text: CR H2662-2663)",
+     "fn": "cg",
+     "v": "378–32"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-24",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 378 - 32 (Roll no. 97).",
+     "fn": "cg",
+     "v": "378–32"
+    }
+   ],
+   "title": "American Water Stewardship Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6422"
+  },
+  {
+   "area": "Education",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 2,
+    "t": 5
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6472"
+    }
+   },
+   "id": "119-hr6472",
+   "introduced": "2025-12-04",
+   "latest": {
+    "actionDate": "2026-03-09",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+   },
+   "num": "H.R. 6472",
+   "number": 6472,
+   "reached": 3,
+   "sponsor": {
+    "n": "James C. Moylan",
+    "p": "R",
+    "s": "GU"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-04",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-11",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 32 - 1.",
+     "fn": "cg",
+     "v": "32–1"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-11",
+     "e": "Reported (Amended) by the Committee on Education and Workforce. H. Rept. 119-495.",
+     "fn": "cg",
+     "v": "119–495"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 351 - 72 (Roll no. 82).",
+     "fn": "cg",
+     "v": "351–72"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 351 - 72 (Roll no. 82).",
+     "fn": "cg",
+     "v": "351–72"
+    }
+   ],
+   "title": "Territorial Student Access to Higher Education Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6472"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6500"
+    }
+   },
+   "id": "119-hr6500",
+   "introduced": "2025-12-09",
+   "latest": {
+    "actionDate": "2026-09-02",
+    "text": "Became Public Law No: 119-103."
+   },
+   "law": "Pub. L. 119-103",
+   "num": "H.R. 6500",
+   "number": 6500,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-02",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Jason Smith",
+    "p": "R",
+    "s": "MO-8"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-08-05",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Voice Vote. (CR S4448)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-05",
+     "e": "Motion to proceed to measure considered in Senate. (CR S4448)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-07",
+     "e": "Motion by Senator Thune to commit to Senate Committee on Appropriations with instructions to report back forthwith with the following amendment SA 6740 fell whe",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-08",
+     "e": "Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 90 - 6. Record Vote Number: 228.",
+     "fn": "cg",
+     "v": "90–6"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-08",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 90 - 6. Record Vote Number: 228.",
+     "fn": "cg",
+     "v": "90–6"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-01",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-01",
+     "e": "On motion that the House suspend the rules and agree to the Senate amendments Agreed to by the Yeas and Nays: (2/3 required): 370 - 48 (Roll no. 286). (consider",
+     "fn": "cg",
+     "v": "370–48"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-01",
+     "e": "Resolving differences -- House actions: On motion that the House suspend the rules and agree to the Senate amendments Agreed to by the Yeas and Nays: (2/3 requi",
+     "fn": "cg",
+     "v": "370–48"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-02",
+     "e": "Became Public Law No: 119-103.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–103"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-02",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Continuing Appropriations and Extensions Act, 2027",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6500"
+  },
+  {
+   "area": "Foreign Trade and International Finance",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6504"
+    }
+   },
+   "id": "119-hr6504",
+   "introduced": "2025-12-09",
+   "latest": {
+    "actionDate": "2026-01-13",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Finance."
+   },
+   "num": "H.R. 6504",
+   "number": 6504,
+   "reached": 3,
+   "sponsor": {
+    "n": "Gregory F. Murphy",
+    "p": "R",
+    "s": "NC-3"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-09",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-10",
+     "e": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 41 - 0.",
+     "fn": "cg",
+     "v": "41–0"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-30",
+     "e": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-418.",
+     "fn": "cg",
+     "v": "119–418"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-12",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-12",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 345 - 45 (Roll no. 15). (text: CR H642)",
+     "fn": "cg",
+     "v": "345–45"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-12",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 345 - 45 (Roll no. 15). ",
+     "fn": "cg",
+     "v": "345–45"
+    }
+   ],
+   "title": "Haiti Economic Lift Program Extension Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6504"
+  },
+  {
+   "area": "Housing",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 16,
+    "i": 0,
+    "r": 15,
+    "t": 31
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6644"
+    }
+   },
+   "id": "119-hr6644",
+   "introduced": "2025-12-11",
+   "latest": {
+    "actionDate": "2026-07-11",
+    "text": "Became Public Law No: 119-101."
+   },
+   "law": "Pub. L. 119-101",
+   "num": "H.R. 6644",
+   "number": 6644,
+   "outcome": {
+    "by": "",
+    "d": "2026-07-11",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "J. French Hill",
+    "p": "R",
+    "s": "AR-2"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-05-20",
+     "e": "Resolving differences -- House actions: House agreed to Senate amendment with amendment pursuant to H. Res. 1299",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-16",
+     "e": "Cloture motion on the motion to concur in the House amendment to the Senate amendment to H.R. 6644 with an amendment (SA 5823) presented in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-16",
+     "e": "Motion to proceed to consideration of the House message to accompany H.R. 6644 agreed to in Senate by Yea-Nay Vote. 87 - 8. Record Vote Number: 175.",
+     "fn": "cg",
+     "v": "87–8"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-18",
+     "e": "Motion by Senator Thune to refer to Senate Committee on Banking, Housing, and Urban Affairs the House message to accompany H.R. 6644 with instructions to report",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-18",
+     "e": "Cloture on the motion to concur in the House amendment to the Senate amendment to H.R. 6644 with an amendment (SA 5823) invoked in Senate by Yea-Nay Vote. 84 - ",
+     "fn": "cg",
+     "v": "84–8"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-23",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-23",
+     "e": "On motion that the House suspend the rules and agree to the Senate amendment to the House amendment to the Senate amendment Agreed to by the Yeas and Nays: (2/3",
+     "fn": "cg",
+     "v": "358–32"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-23",
+     "e": "Resolving differences -- House actions: On motion that the House suspend the rules and agree to the Senate amendment to the House amendment to the Senate amendm",
+     "fn": "cg",
+     "v": "358–32"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-29",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-07-11",
+     "e": "Became Public Law No: 119-101.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–101"
+    }
+   ],
+   "title": "21st Century ROAD to Housing Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6644"
+  },
+  {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6703"
+    }
+   },
+   "id": "119-hr6703",
+   "introduced": "2025-12-15",
+   "latest": {
+    "actionDate": "2025-12-18",
+    "text": "Received in the Senate."
+   },
+   "num": "H.R. 6703",
+   "number": 6703,
+   "reached": 3,
+   "sponsor": {
+    "n": "Mariannette Miller-Meeks",
+    "p": "R",
+    "s": "IA-1"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-12-15",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-17",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-17",
+     "e": "On passage Passed by the Yeas and Nays: 216 - 211 (Roll no. 349). (text: CR H5956-5966)",
+     "fn": "cg",
+     "v": "216–211"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-17",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 216 - 211 (Roll no. 349).",
+     "fn": "cg",
+     "v": "216–211"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-17",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 218 (Roll no. 348).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "210–218"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-17",
+     "e": "Rules Committee Resolution H. Res. 953 Reported to House. Rule provides for consideration of H.R. 6703, H.R. 498 and H.R. 3492. The resolution provides for cons",
+     "fn": "cg"
+    }
+   ],
+   "title": "Lower Health Care Premiums for All Americans Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6703"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 8,
+    "t": 10
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/692"
+    }
+   },
+   "id": "119-hr692",
+   "introduced": "2025-01-23",
+   "latest": {
+    "actionDate": "2025-02-11",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Foreign Relations."
+   },
+   "num": "H.R. 692",
+   "number": 692,
+   "reached": 3,
+   "sponsor": {
+    "n": "Daniel Meuser",
+    "p": "R",
+    "s": "PA-9"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-23",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-10",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-10",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 388 - 7 (Roll no. 36). (text: CR H597)",
+     "fn": "cg",
+     "v": "388–7"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-10",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 388 - 7 (Roll no. 36). (",
+     "fn": "cg",
+     "v": "388–7"
+    }
+   ],
+   "title": "China Exchange Rate Transparency Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/692"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6938"
+    }
+   },
+   "id": "119-hr6938",
+   "introduced": "2026-01-06",
+   "latest": {
+    "actionDate": "2026-01-23",
+    "text": "Became Public Law No: 119-74."
+   },
+   "law": "Pub. L. 119-74",
+   "num": "H.R. 6938",
+   "number": 6938,
+   "outcome": {
+    "by": "",
+    "d": "2026-01-23",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Tom Cole",
+    "p": "R",
+    "s": "OK-4"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-12",
+     "e": "Motion to proceed to measure considered in Senate. (consideration: CR S121-128)",
+     "fn": "cg",
+     "v": "121–128"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-13",
+     "e": "Cloture motion on the measure presented in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-13",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Voice Vote. (consideration: CR S141-143, S157)",
+     "fn": "cg",
+     "v": "141–143"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-13",
+     "e": "Motion to proceed to measure considered in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-15",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 82 - 15. Record Vote Number: 11.",
+     "fn": "cg",
+     "v": "82–15"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-15",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 82 - 15. Record Vote Number: 11.",
+     "fn": "cg",
+     "v": "82–15"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-15",
+     "e": "Motion by Senator Thune to commit to Senate Committee on Appropriations with instructions to report back forthwith with the following amendment (SA 4210) fell w",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-15",
+     "e": "Cloture on the measure invoked in Senate by Yea-Nay Vote. 85 - 14. Record Vote Number: 10. (CR S230)",
+     "fn": "cg",
+     "v": "85–14"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-22",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-01-23",
+     "e": "Became Public Law No: 119-74.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–74"
+    }
+   ],
+   "title": "Commerce, Justice, Science; Energy and Water Development; and Interior and Environment Appropriations Act, 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6938"
+  },
+  {
+   "area": "Child care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 15,
+    "t": 15
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6945"
+    }
+   },
+   "id": "119-hr6945",
+   "introduced": "2026-01-06",
+   "latest": {
+    "actionDate": "2026-01-26",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Finance."
+   },
+   "num": "H.R. 6945",
+   "number": 6945,
+   "reached": 3,
+   "sponsor": {
+    "n": "Michelle Fischbach",
+    "p": "R",
+    "s": "MN-7"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-01-06",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-14",
+     "e": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 25 - 18.",
+     "fn": "cg",
+     "v": "25–18"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-20",
+     "e": "Rules Committee Resolution H. Res. 1009 Reported to House. Rule provides for consideration of H.R. 6945, H.R. 6359 and H.J. Res. 140. The resolution provides fo",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "On passage Passed by the Yeas and Nays: 215 - 209 (Roll no. 37). (text of amendment in the nature of a substitute: CR H1139)",
+     "fn": "cg",
+     "v": "215–209"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 215 - 209 (Roll no. 37). (text of amendment in the nature of a substitute: CR H1139)",
+     "fn": "cg",
+     "v": "215–209"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 209 - 213 (Roll no. 36).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "209–213"
+    }
+   ],
+   "title": "Supporting Pregnant and Parenting Women and Families Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6945"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 3,
+    "t": 4
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/695"
+    }
+   },
+   "id": "119-hr695",
+   "introduced": "2025-01-23",
+   "latest": {
+    "actionDate": "2025-12-01",
+    "text": "Became Public Law No: 119-43."
+   },
+   "law": "Pub. L. 119-43",
+   "num": "H.R. 695",
+   "number": 695,
+   "outcome": {
+    "by": "",
+    "d": "2025-12-01",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Troy E. Nehls",
+    "p": "R",
+    "s": "TX-22"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-23",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-26",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-26",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 424 - 0 (Roll no. 51). (text: CR H857)",
+     "fn": "cg",
+     "v": "424–0"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-26",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 424 - 0 (Roll no. 51). (",
+     "fn": "cg",
+     "v": "424–0"
+    },
+    {
+     "ch": "S",
+     "d": "2025-11-07",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S7976-7977)",
+     "fn": "cg",
+     "v": "976–797"
+    },
+    {
+     "ch": "S",
+     "d": "2025-11-07",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-11-07",
+     "e": "Senate Committee on Veterans' Affairs discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-25",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-12-01",
+     "e": "Became Public Law No: 119-43.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–43"
+    }
+   ],
+   "title": "Medal of Honor Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/695"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 33,
+    "t": 33
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/6955"
+    }
+   },
+   "id": "119-hr6955",
+   "introduced": "2026-01-07",
+   "latest": {
+    "actionDate": "2026-07-22",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+   },
+   "num": "H.R. 6955",
+   "number": 6955,
+   "reached": 3,
+   "sponsor": {
+    "n": "J. French Hill",
+    "p": "R",
+    "s": "AR-2"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-01-07",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "Ordered to be Reported by the Yeas and Nays: 26 - 16.",
+     "fn": "cg",
+     "v": "26–16"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-20",
+     "e": "Reported (Amended) by the Committee on Financial Services. H. Rept. 119-617.",
+     "fn": "cg",
+     "v": "119–617"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-20",
+     "e": "Rules Committee Resolution H. Res. 1438 Reported to House. Rule provides for consideration of H.R. 8800, H.R. 8884, H. Con. Res. 113, H.R. 7008, H.R. 6955 and H",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "On passage Passed by the Yeas and Nays: 270 - 155, 1 Present (Roll no. 271). (text of amendment in the nature of a substitute: CR H4708-4722)",
+     "fn": "cg",
+     "v": "270–155"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 270 - 155, 1 Present (Roll no. 271). (text of amendment in the nature of a substitute: CR H47",
+     "fn": "cg",
+     "v": "270–155"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-21",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 216 (Roll no. 270).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "210–216"
+    }
+   ],
+   "title": "Main Street Capital Access Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/6955"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7006"
+    }
+   },
+   "id": "119-hr7006",
+   "introduced": "2026-01-12",
+   "latest": {
+    "actionDate": "2026-01-15",
+    "text": "Received in the Senate."
+   },
+   "num": "H.R. 7006",
+   "number": 7006,
+   "reached": 3,
+   "sponsor": {
+    "n": "Tom Cole",
+    "p": "R",
+    "s": "OK-4"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-01-12",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-13",
+     "e": "Rules Committee Resolution H. Res. 992 Reported to House. Rule provides for consideration of H.R. 7006 with 1 hour of general debate. Motion to recommit allowed",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-14",
+     "e": "On passage Passed by the Yeas and Nays: 341 - 79 (Roll no. 28). (text: CR H741-795)",
+     "fn": "cg",
+     "v": "341–79"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-14",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 341 - 79 (Roll no. 28). (text: CR H741-795)",
+     "fn": "cg",
+     "v": "341–79"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-14",
+     "e": "On motion that the committee rise Agreed to by voice vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-14",
+     "e": "Rule H. Res. 992 passed House.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Financial Services and General Government and National Security, Department of State, and Related Programs Appropriations Act, 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7006"
+  },
+  {
+   "area": "Congress",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 91,
+    "t": 93
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7008"
+    }
+   },
+   "id": "119-hr7008",
+   "introduced": "2026-01-12",
+   "latest": {
+    "actionDate": "2026-09-30",
+    "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 53 - 47. Record Vote Number: 253."
+   },
+   "num": "H.R. 7008",
+   "number": 7008,
+   "reached": 3,
+   "sponsor": {
+    "n": "Bryan Steil",
+    "p": "R",
+    "s": "WI-1"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Reported (Amended) by the Committee on House Administration. H. Rept. 119-479.",
+     "fn": "cg",
+     "v": "119–479"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-20",
+     "e": "Rules Committee Resolution H. Res. 1438 Reported to House. Rule provides for consideration of H.R. 8800, H.R. 8884, H. Con. Res. 113, H.R. 7008, H.R. 6955 and H",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-22",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-22",
+     "e": "On passage Passed by the Yeas and Nays: 232 - 198 (Roll no. 280). (text of amendment in the nature of a substitute: CR H5143-5144)",
+     "fn": "cg",
+     "v": "232–198"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-22",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 232 - 198 (Roll no. 280).",
+     "fn": "cg",
+     "v": "232–198"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-22",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 211 - 218 (Roll no. 279).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "211–218"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Motion to proceed to consideration of measure withdrawn in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S5065)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Motion to proceed to consideration of measure made in Senate. (CR S5065)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 53 - 47. Record Vote Number: 253.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "53–47"
+    }
+   ],
+   "title": "Stop Insider Trading Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7008"
+  },
+  {
+   "area": "Science, Technology, Communications",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 2,
+    "t": 4
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7022"
+    }
+   },
+   "id": "119-hr7022",
+   "introduced": "2026-01-12",
+   "latest": {
+    "actionDate": "2026-10-22",
+    "text": "Became Public Law No: 119-136."
+   },
+   "law": "Pub. L. 119-136",
+   "num": "H.R. 7022",
+   "number": 7022,
+   "outcome": {
+    "by": "",
+    "d": "2026-10-22",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "August Pfluger",
+    "p": "R",
+    "s": "TX-11"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-15",
+     "e": "Reported (Amended) by the Committee on Energy and Commerce. H. Rept. 119-616.",
+     "fn": "cg",
+     "v": "119–616"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-20",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-20",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H2970)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-20",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H2970)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-16",
+     "e": "Committee on Commerce, Science, and Transportation. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5237-5238)",
+     "fn": "cg",
+     "v": "237–523"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Senate Committee on Commerce, Science, and Transportation discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-15",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-10-22",
+     "e": "Became Public Law No: 119-136.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–136"
+    }
+   ],
+   "title": "Mystic Alerts Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7022"
+  },
+  {
+   "area": "Transportation and Public Works",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 5,
+    "t": 7
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7084"
+    }
+   },
+   "id": "119-hr7084",
+   "introduced": "2026-01-15",
+   "latest": {
+    "actionDate": "2026-04-02",
+    "text": "Received in the Senate."
+   },
+   "num": "H.R. 7084",
+   "number": 7084,
+   "reached": 3,
+   "sponsor": {
+    "n": "August Pfluger",
+    "p": "R",
+    "s": "TX-11"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-01-15",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 36 - 22.",
+     "fn": "cg",
+     "v": "36–22"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-21",
+     "e": "Subcommittee on Coast Guard and Maritime Transportation Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-20",
+     "e": "Reported (Amended) by the Committee on Transportation and Infrastructure. H. Rept. 119-563.",
+     "fn": "cg",
+     "v": "119–563"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-24",
+     "e": "Rules Committee Resolution H. Res. 1131 Reported to House. Rule provides for consideration of H.R. 8029, H. Res. 1128, H.R. 5103 and H.R. 7084. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-25",
+     "e": "Rule H. Res. 1131 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-27",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-27",
+     "e": "On passage Passed by the Yeas and Nays: 247 - 164 (Roll no. 105). (text of amendment in the nature of a substitute: CR H2783)",
+     "fn": "cg",
+     "v": "247–164"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-27",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 247 - 164 (Roll no. 105).",
+     "fn": "cg",
+     "v": "247–164"
+    }
+   ],
+   "title": "Defending American Property Abroad Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7084"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 1,
+    "t": 4
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7128"
+    }
+   },
+   "id": "119-hr7128",
+   "introduced": "2026-01-16",
+   "latest": {
+    "actionDate": "2026-07-13",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+   },
+   "num": "H.R. 7128",
+   "number": 7128,
+   "reached": 3,
+   "sponsor": {
+    "n": "Mike Flood",
+    "p": "R",
+    "s": "NE-1"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-01-16",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-22",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 51 - 2.",
+     "fn": "cg",
+     "v": "51–2"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-19",
+     "e": "Reported (Amended) by the Committee on Financial Services. H. Rept. 119-561.",
+     "fn": "cg",
+     "v": "119–561"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-29",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-29",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 373 - 15 (Roll no. 229). (text: CR H4273-4274)",
+     "fn": "cg",
+     "v": "373–15"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-29",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 373 - 15 (Roll no. 229).",
+     "fn": "cg",
+     "v": "373–15"
+    }
+   ],
+   "title": "TRIA Program Reauthorization Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7128"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7147"
+    }
+   },
+   "id": "119-hr7147",
+   "introduced": "2026-01-20",
+   "latest": {
+    "actionDate": "2026-04-30",
+    "text": "Became Public Law No: 119-86."
+   },
+   "law": "Pub. L. 119-86",
+   "num": "H.R. 7147",
+   "number": 7147,
+   "outcome": {
+    "by": "",
+    "d": "2026-04-30",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Tom Cole",
+    "p": "R",
+    "s": "OK-4"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-27",
+     "e": "Fifth cloture motion on the motion to proceed to the measure rendered moot in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-27",
+     "e": "Passed Senate with an amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-27",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-27",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-02",
+     "e": "Motion to table the House message to accompany H.R. 7147 agreed to by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-04-30",
+     "e": "Became Public Law No: 119-86.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–86"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "On motion that the House suspend the rules and recede from the House amendment to the Senate amendment to H.R. 7147, and concur in the Senate amendment Agreed t",
+     "fn": "cg",
+     "v": "311–332"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Resolving differences -- House actions: On motion that the House suspend the rules and recede from the House amendment to the Senate amendment to H.R. 7147, and",
+     "fn": "cg",
+     "v": "311–332"
+    }
+   ],
+   "title": "Homeland Security and Further Additional Continuing Appropriations Act, 2026.",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7147"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7148"
+    }
+   },
+   "id": "119-hr7148",
+   "introduced": "2026-01-20",
+   "latest": {
+    "actionDate": "2026-02-03",
+    "text": "Became Public Law No: 119-75."
+   },
+   "law": "Pub. L. 119-75",
+   "num": "H.R. 7148",
+   "number": 7148,
+   "outcome": {
+    "by": "",
+    "d": "2026-02-03",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Tom Cole",
+    "p": "R",
+    "s": "OK-4"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-30",
+     "e": "Passed/agreed to in Senate: Passed Senate, under the order of 1/30/2026, having achieved 60 votes in the affirmative, with amendments by Yea-Nay Vote. 71 - 29. ",
+     "fn": "cg",
+     "v": "71–29"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-30",
+     "e": "Motion by Senator Thune to reconsider the vote by which cloture on the motion to proceed to H.R.7148 was not invoked (Record Vote No. 13) rendered moot in Senat",
+     "fn": "cg",
+     "k": "kill"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-30",
+     "e": "Cloture motion on the motion to proceed rendered moot in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-30",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-30",
+     "e": "Motion to proceed to measure considered in Senate. (CR S401)",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-02-03",
+     "e": "Became Public Law No: 119-75.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–75"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "On motion that the House agree to the Senate amendments Agreed to by the Yeas and Nays: 217 - 214 (Roll no. 53).",
+     "fn": "cg",
+     "v": "217–214"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Resolving differences -- House actions: On motion that the House agree to the Senate amendments Agreed to by the Yeas and Nays: 217 - 214 (Roll no. 53).",
+     "fn": "cg",
+     "v": "217–214"
+    }
+   ],
+   "title": "Consolidated Appropriations Act, 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7148"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7211"
+    }
+   },
+   "id": "119-hr7211",
+   "introduced": "2026-01-22",
+   "latest": {
+    "actionDate": "2026-03-26",
+    "text": "Became Public Law No: 119-81."
+   },
+   "law": "Pub. L. 119-81",
+   "num": "H.R. 7211",
+   "number": 7211,
+   "outcome": {
+    "by": "",
+    "d": "2026-03-26",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "H. Morgan Griffith",
+    "p": "R",
+    "s": "VA-9"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "On passage Passed without objection. (text: CR H1967)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Passed/agreed to in House: On passage Passed without objection. (text: CR H1967)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Committee on Armed Services discharged.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Mr. Bacon asked unanimous consent to discharge from committee and consider.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-03",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S767)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-03",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-03",
+     "e": "Senate Committee on Armed Services discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-24",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-03-26",
+     "e": "Became Public Law No: 119-81.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–81"
+    }
+   ],
+   "title": "To authorize the President to award the Medal of Honor to John W. Ripley for acts of valor during the Vietnam War, and for other purposes.",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7211"
+  },
+  {
+   "area": "Water Resources Development",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7250"
+    }
+   },
+   "id": "119-hr7250",
+   "introduced": "2026-01-27",
+   "latest": {
+    "actionDate": "2026-09-25",
+    "text": "Became Public Law No: 119-113."
+   },
+   "law": "Pub. L. 119-113",
+   "num": "H.R. 7250",
+   "number": 7250,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-25",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Troy Downing",
+    "p": "R",
+    "s": "MT-2"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-06-02",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-02",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3766)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-02",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3766)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-02",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-675.",
+     "fn": "cg",
+     "v": "119–675"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-29",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-16",
+     "e": "Passed Senate without amendment by Voice Vote. (consideration: CR S4746)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-16",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-16",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-17",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-25",
+     "e": "Became Public Law No: 119-113.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–113"
+    }
+   ],
+   "title": "To reauthorize the Fort Peck Reservation Rural Water System Act of 2000.",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7250"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 10,
+    "t": 12
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/736"
+    }
+   },
+   "id": "119-hr736",
+   "introduced": "2025-01-24",
+   "latest": {
+    "actionDate": "2025-02-11",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+   },
+   "num": "H.R. 736",
+   "number": 736,
+   "reached": 3,
+   "sponsor": {
+    "n": "Zachary Nunn",
+    "p": "R",
+    "s": "IA-3"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-24",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-10",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-10",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 408 - 0 (Roll no. 37). (text: CR H599)",
+     "fn": "cg",
+     "v": "408–0"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-10",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 408 - 0 (Roll no. 37). (text: CR H59",
+     "fn": "cg",
+     "v": "408–0"
+    }
+   ],
+   "title": "Protect Small Businesses from Excessive Paperwork Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/736"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7401"
+    }
+   },
+   "id": "119-hr7401",
+   "introduced": "2026-02-05",
+   "latest": {
+    "actionDate": "2026-07-13",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Small Business and Entrepreneurship."
+   },
+   "num": "H.R. 7401",
+   "number": 7401,
+   "reached": 3,
+   "sponsor": {
+    "n": "Daniel Meuser",
+    "p": "R",
+    "s": "PA-9"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-02-05",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-11",
+     "e": "Ordered to be Reported by the Yeas and Nays: 24 - 0.",
+     "fn": "cg",
+     "v": "24–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-20",
+     "e": "Reported by the Committee on Small Business. H. Rept. 119-500.",
+     "fn": "cg",
+     "v": "119–500"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-24",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-24",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 415 - 0, 1 Present (Roll no. 225).",
+     "fn": "cg",
+     "v": "415–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-24",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 415 - 0, 1 Present (Roll no. 225).",
+     "fn": "cg",
+     "v": "415–0"
+    }
+   ],
+   "title": "Small Business Lending Fraud Prevention Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7401"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 7,
+    "t": 9
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/747"
+    }
+   },
+   "id": "119-hr747",
+   "introduced": "2025-01-28",
+   "latest": {
+    "actionDate": "2025-09-03",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+   },
+   "num": "H.R. 747",
+   "number": 747,
+   "reached": 3,
+   "sponsor": {
+    "n": "Andy Barr",
+    "p": "R",
+    "s": "KY-6"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-05",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 49 - 0.",
+     "fn": "cg",
+     "v": "49–0"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-21",
+     "e": "Reported (Amended) by the Committee on Financial Services. H. Rept. 119-19, Part I.",
+     "fn": "cg",
+     "v": "119–19"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-09",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-09-02",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-09-02",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 407 - 4 (Roll no. 220). (text: CR H3728-3729)",
+     "fn": "cg",
+     "v": "407–4"
+    },
+    {
+     "ch": "H",
+     "d": "2025-09-02",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 407 - 4 (Roll no. 220).",
+     "fn": "cg",
+     "v": "407–4"
+    }
+   ],
+   "title": "Stop Chinese Fentanyl Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/747"
+  },
+  {
+   "area": "Agriculture and Food",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7567"
+    }
+   },
+   "id": "119-hr7567",
+   "introduced": "2026-02-13",
+   "latest": {
+    "actionDate": "2026-05-19",
+    "text": "Received in the Senate."
+   },
+   "num": "H.R. 7567",
+   "number": 7567,
+   "reached": 3,
+   "sponsor": {
+    "n": "Glenn Thompson",
+    "p": "R",
+    "s": "PA-15"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-02-13",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-05",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 34 - 17.",
+     "fn": "cg",
+     "v": "34–17"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-21",
+     "e": "Reported (Amended) by the Committee on Agriculture. H. Rept. 119-620.",
+     "fn": "cg",
+     "v": "119–620"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-29",
+     "e": "Rules Committee Resolution H. Res. 1224 Reported to House. Rule provides for consideration of H.R. 7567, H.R. 2616, S. Con. Res. 33, S. 1318 and H.R. 1346. The ",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "On passage Passed by the Yeas and Nays: 224 - 200 (Roll no. 154).",
+     "fn": "cg",
+     "v": "224–200"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 224 - 200 (Roll no. 154).",
+     "fn": "cg",
+     "v": "224–200"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 211 - 214 (Roll no. 153).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "211–214"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "The House adopted the amendments en gros as agreed to by the Committee of the Whole House on the state of the Union.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "On motion that the committee rise Agreed to by voice vote.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Farm, Food, and National Security Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7567"
+  },
+  {
+   "area": "Accountability & oversight",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 1,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/758"
+    }
+   },
+   "id": "119-hr758",
+   "introduced": "2025-01-28",
+   "latest": {
+    "actionDate": "2025-03-04",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+   },
+   "num": "H.R. 758",
+   "number": 758,
+   "reached": 3,
+   "sponsor": {
+    "n": "Gerald E. Connolly",
+    "p": "D",
+    "s": "VA-11"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-03",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-03",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 402 - 16 (Roll no. 55). (text: CR H933-934)",
+     "fn": "cg",
+     "v": "402–16"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-03",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 402 - 16 (Roll no. 55). (text: CR H9",
+     "fn": "cg",
+     "v": "402–16"
+    }
+   ],
+   "title": "Mail Traffic Deaths Reporting Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/758"
+  },
+  {
+   "area": "Transportation and Public Works",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 37,
+    "i": 0,
+    "r": 50,
+    "t": 87
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7613"
+    }
+   },
+   "id": "119-hr7613",
+   "introduced": "2026-02-20",
+   "latest": {
+    "actionDate": "2026-04-15",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation."
+   },
+   "num": "H.R. 7613",
+   "number": 7613,
+   "reached": 3,
+   "sponsor": {
+    "n": "Sam Graves",
+    "p": "R",
+    "s": "MO-6"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-02-20",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 53 - 0.",
+     "fn": "cg",
+     "v": "53–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 62 - 0.",
+     "fn": "cg",
+     "v": "62–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "Subcommittee on Aviation Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-09",
+     "e": "Reported (Amended) by the Committee on Transportation and Infrastructure. H. Rept. 119-608, Part II.",
+     "fn": "cg",
+     "v": "119–608"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-09",
+     "e": "Reported (Amended) by the Committee on Armed Services. H. Rept. 119-608, Part I.",
+     "fn": "cg",
+     "v": "119–608"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-14",
+     "e": "The title of the measure was amended. Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-14",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 396 - 10 (Roll no. 110). (text: CR H2856-2870)",
+     "fn": "cg",
+     "v": "396–10"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 396 - 10 (Roll no. 110).",
+     "fn": "cg",
+     "v": "396–10"
+    }
+   ],
+   "title": "ALERT Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7613"
+  },
+  {
+   "area": "Accountability & oversight",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 12,
+    "t": 12
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/77"
+    }
+   },
+   "id": "119-hr77",
+   "introduced": "2025-01-03",
+   "latest": {
+    "actionDate": "2025-02-13",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+   },
+   "num": "H.R. 77",
+   "number": 77,
+   "reached": 3,
+   "sponsor": {
+    "n": "Andy Biggs",
+    "p": "R",
+    "s": "AZ-5"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-03",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-10",
+     "e": "Rules Committee Resolution H. Res. 122 Reported to House. Rule provides for consideration of H.R. 77 with 1 hour of general debate. Motion to recommit allowed. ",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-11",
+     "e": "Rule H. Res. 122 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-12",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-12",
+     "e": "On passage Passed by the Yeas and Nays: 212 - 208 (Roll no. 41). (text: CR H654)",
+     "fn": "cg",
+     "v": "212–208"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-12",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 212 - 208 (Roll no. 41). (text: CR H654)",
+     "fn": "cg",
+     "v": "212–208"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-12",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 205 - 213 (Roll no. 40).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "205–213"
+    }
+   ],
+   "title": "Midnight Rules Relief Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/77"
+  },
+  {
+   "area": "Child care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7726"
+    }
+   },
+   "id": "119-hr7726",
+   "introduced": "2026-02-26",
+   "latest": {
+    "actionDate": "2026-06-04",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+   },
+   "num": "H.R. 7726",
+   "number": 7726,
+   "reached": 3,
+   "sponsor": {
+    "n": "Mary E. Miller",
+    "p": "R",
+    "s": "IL-15"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-02-26",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-05",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 20 - 15.",
+     "fn": "cg",
+     "v": "20–15"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-06",
+     "e": "Reported (Amended) by the Committee on Education and Workforce. H. Rept. 119-592.",
+     "fn": "cg",
+     "v": "119–592"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-03",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-03",
+     "e": "On passage Passed by the Yeas and Nays: 217 - 207 (Roll no. 198). (text of amendment in the nature of a substitute: CR H3796-3797)",
+     "fn": "cg",
+     "v": "217–207"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-03",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 217 - 207 (Roll no. 198). (text of amendment in the nature of a substitute: CR H3796-3797)",
+     "fn": "cg",
+     "v": "217–207"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-03",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 213 (Roll no. 197).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "210–213"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-03",
+     "e": "Rules Committee Resolution H. Res. 1333 Reported to House. Rule provides for consideration of H.R. 8646, H.R. 7726, H.R. 7892 and H.R. 8872. The resolution prov",
+     "fn": "cg"
+    }
+   ],
+   "title": "Stop Child Care Scams Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7726"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7744"
+    }
+   },
+   "id": "119-hr7744",
+   "introduced": "2026-03-02",
+   "latest": {
+    "actionDate": "2026-03-09",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Appropriations."
+   },
+   "num": "H.R. 7744",
+   "number": 7744,
+   "reached": 3,
+   "sponsor": {
+    "n": "Tom Cole",
+    "p": "R",
+    "s": "OK-4"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-03-02",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-03",
+     "e": "Rules Committee Resolution H. Res. 1095 Reported to House. Rule provides for consideration of H.R. 7744 with 1 hour of general debate. Motion to recommit allowe",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "Rule H. Res. 1095 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-05",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-05",
+     "e": "On passage Passed by the Yeas and Nays: 221 - 209 (Roll no. 87). (text: CR H2432-2444)",
+     "fn": "cg",
+     "v": "221–209"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-05",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 221 - 209 (Roll no. 87). (text: CR H2432-2444)",
+     "fn": "cg",
+     "v": "221–209"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-05",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 212 - 217 (Roll no. 86).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "212–217"
+    }
+   ],
+   "title": "Department of Homeland Security Appropriations Act, 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7744"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7757"
+    }
+   },
+   "id": "119-hr7757",
+   "introduced": "2026-03-03",
+   "latest": {
+    "actionDate": "2026-07-13",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation."
+   },
+   "num": "H.R. 7757",
+   "number": 7757,
+   "reached": 3,
+   "sponsor": {
+    "n": "Brett Guthrie",
+    "p": "R",
+    "s": "KY-2"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-03-03",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-29",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-29",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 267 - 117 (Roll no. 228). (text: CR H4280-4292)",
+     "fn": "cg",
+     "v": "267–117"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-29",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 267 - 117 (Roll no. 228)",
+     "fn": "cg",
+     "v": "267–117"
+    }
+   ],
+   "title": "KIDS Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7757"
+  },
+  {
+   "area": "Animals",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 1,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/776"
+    }
+   },
+   "id": "119-hr776",
+   "introduced": "2025-01-28",
+   "latest": {
+    "actionDate": "2025-02-05",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
+   },
+   "num": "H.R. 776",
+   "number": 776,
+   "reached": 3,
+   "sponsor": {
+    "n": "Josh Harder",
+    "p": "D",
+    "s": "CA-9"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-04",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-04",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 361 - 56 (Roll no. 29). (text: CR H449)",
+     "fn": "cg",
+     "v": "361–56"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-04",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 361 - 56 (Roll no. 29). (text: CR H4",
+     "fn": "cg",
+     "v": "361–56"
+    }
+   ],
+   "title": "Nutria Eradication and Control Reauthorization Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/776"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 3,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7831"
+    }
+   },
+   "id": "119-hr7831",
+   "introduced": "2026-03-05",
+   "latest": {
+    "actionDate": "2026-10-20",
+    "text": "Became Public Law No: 119-134."
+   },
+   "law": "Pub. L. 119-134",
+   "num": "H.R. 7831",
+   "number": 7831,
+   "outcome": {
+    "by": "",
+    "d": "2026-10-20",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Mike Kennedy",
+    "p": "R",
+    "s": "UT-3"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-05-20",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-665.",
+     "fn": "cg",
+     "v": "119–665"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-02",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-02",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3757)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-02",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3757)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-29",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee without amendment. Without written report.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226-5231)",
+     "fn": "cg",
+     "v": "226–523"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-15",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-10-20",
+     "e": "Became Public Law No: 119-134.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–134"
+    }
+   ],
+   "title": "License to Drill Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7831"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 0,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/788"
+    }
+   },
+   "id": "119-hr788",
+   "introduced": "2025-01-28",
+   "latest": {
+    "actionDate": "2025-02-26",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
+   },
+   "num": "H.R. 788",
+   "number": 788,
+   "reached": 3,
+   "sponsor": {
+    "n": "Nick LaLota",
+    "p": "R",
+    "s": "NY-1"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-25",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-25",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 427 - 3 (Roll no. 48). (text: 2/24/2025 CR H742)",
+     "fn": "cg",
+     "v": "427–3"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-25",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 427 - 3 (Roll no. 48). (text: 2/24/2",
+     "fn": "cg",
+     "v": "427–3"
+    }
+   ],
+   "title": "DOE and SBA Research Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/788"
+  },
+  {
+   "area": "Education",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 4,
+    "t": 4
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7892"
+    }
+   },
+   "id": "119-hr7892",
+   "introduced": "2026-03-12",
+   "latest": {
+    "actionDate": "2026-06-11",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+   },
+   "num": "H.R. 7892",
+   "number": 7892,
+   "reached": 3,
+   "sponsor": {
+    "n": "Burgess Owens",
+    "p": "R",
+    "s": "UT-4"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-03-12",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-17",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 30 - 3.",
+     "fn": "cg",
+     "v": "30–3"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-26",
+     "e": "Reported (Amended) by the Committee on Education and Workforce. H. Rept. 119-669.",
+     "fn": "cg",
+     "v": "119–669"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-03",
+     "e": "Rules Committee Resolution H. Res. 1333 Reported to House. Rule provides for consideration of H.R. 8646, H.R. 7726, H.R. 7892 and H.R. 8872. The resolution prov",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-10",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-10",
+     "e": "On passage Passed by the Yeas and Nays: 249 - 172 (Roll no. 217).",
+     "fn": "cg",
+     "v": "249–172"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-10",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 249 - 172 (Roll no. 217).",
+     "fn": "cg",
+     "v": "249–172"
+    }
+   ],
+   "title": "No Aid for Ghost Students Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7892"
+  },
+  {
+   "area": "Taxation",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 4,
+    "t": 5
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7959"
+    }
+   },
+   "id": "119-hr7959",
+   "introduced": "2026-03-17",
+   "latest": {
+    "actionDate": "2026-04-28",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Finance."
+   },
+   "num": "H.R. 7959",
+   "number": 7959,
+   "reached": 3,
+   "sponsor": {
+    "n": "Mike Kelly",
+    "p": "R",
+    "s": "PA-16"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-03-17",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-25",
+     "e": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 41 - 0.",
+     "fn": "cg",
+     "v": "41–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-09",
+     "e": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-606.",
+     "fn": "cg",
+     "v": "119–606"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-27",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-27",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 346 - 10 (Roll no. 138). (text: CR H3104)",
+     "fn": "cg",
+     "v": "346–10"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-27",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 346 - 10 (Roll no. 138).",
+     "fn": "cg",
+     "v": "346–10"
+    }
+   ],
+   "title": "IRS Whistleblower Program Improvement Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7959"
+  },
+  {
+   "area": "Budget & appropriations",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8029"
+    }
+   },
+   "id": "119-hr8029",
+   "introduced": "2026-03-20",
+   "latest": {
+    "actionDate": "2026-04-02",
+    "text": "Received in the Senate."
+   },
+   "num": "H.R. 8029",
+   "number": 8029,
+   "reached": 3,
+   "sponsor": {
+    "n": "Juan Ciscomani",
+    "p": "R",
+    "s": "AZ-6"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-03-20",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-24",
+     "e": "Rules Committee Resolution H. Res. 1131 Reported to House. Rule provides for consideration of H.R. 8029, H. Res. 1128, H.R. 5103 and H.R. 7084. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "On passage Passed by the Yeas and Nays: 218 - 206 (Roll no. 104).",
+     "fn": "cg",
+     "v": "218–206"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 218 - 206 (Roll no. 104).",
+     "fn": "cg",
+     "v": "218–206"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 215 (Roll no. 103).",
+     "fn": "cg",
+     "k": "kill",
+     "v": "210–215"
+    }
+   ],
+   "title": "Pay Our Homeland Defenders Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8029"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 2,
+    "t": 4
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/804"
+    }
+   },
+   "id": "119-hr804",
+   "introduced": "2025-01-28",
+   "latest": {
+    "actionDate": "2025-02-26",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Small Business and Entrepreneurship."
+   },
+   "num": "H.R. 804",
+   "number": 804,
+   "reached": 3,
+   "sponsor": {
+    "n": "Kelly Morrison",
+    "p": "D",
+    "s": "MN-3"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-25",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-25",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 415 - 8 (Roll no. 49). (text: 2/24/2025 CR H746)",
+     "fn": "cg",
+     "v": "415–8"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-25",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 415 - 8 (Roll no. 49). (text: 2/24/2",
+     "fn": "cg",
+     "v": "415–8"
+    }
+   ],
+   "title": "Rural Small Business Resilience Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/804"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 2,
+    "t": 5
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/818"
+    }
+   },
+   "id": "119-hr818",
+   "introduced": "2025-01-28",
+   "latest": {
+    "actionDate": "2025-02-25",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Small Business and Entrepreneurship."
+   },
+   "num": "H.R. 818",
+   "number": 818,
+   "reached": 3,
+   "sponsor": {
+    "n": "Pete Stauber",
+    "p": "R",
+    "s": "MN-8"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-24",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-24",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 384 - 25 (Roll no. 45). (text: CR H740)",
+     "fn": "cg",
+     "v": "384–25"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-24",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 384 - 25 (Roll no. 45). (text: CR H7",
+     "fn": "cg",
+     "v": "384–25"
+    }
+   ],
+   "title": "SPUR Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/818"
+  },
+  {
    "area": "Health care",
    "auto": true,
    "congress": 119,
@@ -20844,6 +24499,71 @@
    "title": "Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/8205"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 0,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:35:44+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/825"
+    }
+   },
+   "id": "119-hr825",
+   "introduced": "2025-01-28",
+   "latest": {
+    "actionDate": "2025-02-25",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Small Business and Entrepreneurship."
+   },
+   "num": "H.R. 825",
+   "number": 825,
+   "reached": 3,
+   "sponsor": {
+    "n": "Roger Williams",
+    "p": "R",
+    "s": "TX-25"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-01-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-24",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-24",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 405 - 0 (Roll no. 43). (text: CR H737)",
+     "fn": "cg",
+     "v": "405–0"
+    },
+    {
+     "ch": "H",
+     "d": "2025-02-24",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 405 - 0 (Roll no. 43). (text: CR H73",
+     "fn": "cg",
+     "v": "405–0"
+    }
+   ],
+   "title": "Assisting Small Businesses Not Fraudsters Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/825"
   },
   {
    "area": "Armed Forces and National Security",
@@ -21013,7 +24733,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T06:33:19+00:00",
+   "fetched": "2026-11-05T06:35:44+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -21101,7 +24821,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T06:33:19+00:00",
+   "fetched": "2026-11-05T06:35:44+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -21168,7 +24888,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T06:33:19+00:00",
+ "generatedAt": "2026-11-05T06:35:44+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
