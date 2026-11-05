@@ -271,6 +271,7 @@ details.vg>.tbl{margin:0 16px 14px}
 .pst select{flex:1;min-width:0}
 .psum{margin:0;font-size:15.5px;color:var(--soft);padding:12px 14px;border-left:4px solid var(--red);background:var(--wash);border-radius:0 8px 8px 0}
 .psum b{color:var(--ink)}
+.empty-row{margin:0;padding:12px 14px;border:1px dashed var(--line);border-radius:8px;font-size:14.5px;font-style:italic;color:var(--muted)}
 @media (max-width:620px){.ppanel{grid-template-columns:minmax(0,1fr)}}
 .ag-hint{font-size:13.5px;display:grid;line-height:1.4}
 .ag-hint b{color:var(--ink)}
@@ -928,11 +929,22 @@ function renderNames(){
     if(sp&&sp.n&&personOk(sp.n,stOf(sp)))rowsS.push(`<tr><td>${chamberOf(b)} ${esc(sp.n)}${sp.s?` <span class="muted">(${esc(sp.s)})</span>`:""}</td><td>${pb(sp.p)}</td><td>Sponsor</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`);
     (b.lead||[]).forEach(x=>{if(!personOk(x.n,stOf(x)))return;rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`)});
   }
-  const where=PS.st?` for ${esc(STATES[PS.st]||PS.st)}`:"", who=PS.q?` matching “${esc(PS.q)}”`:"";
-  const none=c=>`<tr><td colspan="${c}" class="muted">${!loaded?"Loading…":(PS.st||PS.q)?`None recorded${where}${who}`:"None yet"}</td></tr>`;
-  $("#t-block tbody").innerHTML=rowsB.join("")||none(6);
-  $("#t-cross tbody").innerHTML=rowsC.join("")||none(5);
-  $("#t-spon tbody").innerHTML=rowsS.join("")||none(5);
+  // empty lists say what that means; "hasn't" only where the data is complete (sponsors)
+  const stN=PS.st?(STATES[PS.st]||PS.st):"", q=PS.q?`“${esc(PS.q)}”`:"";
+  const subj=PS.st&&PS.q?`No one from ${esc(stN)} matching ${q}`:PS.st?`${esc(stN)}'s members`:PS.q?`No one matching ${q}`:"";
+  const msg=(kind)=>{
+    if(!loaded)return"Loading…";
+    if(!PS.st&&!PS.q)return"None recorded yet";
+    if(PS.q)return`${subj} ${kind==="spon"?"has sponsored a tracked bill":kind==="cross"?"has a recorded crossover vote yet":"is recorded as stopping or slowing a bill yet"}`;
+    return kind==="spon"?`${subj} haven't sponsored a tracked bill`
+      :kind==="cross"?`No crossover votes recorded for ${subj} yet`
+      :`${subj} aren't recorded as stopping or slowing a tracked bill yet`;
+  };
+  // an empty list shows a line of text instead of an empty table (tables scroll sideways on phones)
+  const fill=(id,rows,k)=>{const t=$(id), box=t.closest(".tbl");let m=box.nextElementSibling;
+    if(!m||!m.classList.contains("empty-row")){m=document.createElement("p");m.className="empty-row";box.after(m)}
+    t.querySelector("tbody").innerHTML=rows.join("");box.hidden=!rows.length;m.hidden=!!rows.length;m.textContent=rows.length?"":msg(k).replace(/&#39;|&quot;|&amp;/g,x=>({"&#39;":"'","&quot;":'"',"&amp;":"&"}[x]))};
+  fill("#t-block",rowsB,"block");fill("#t-cross",rowsC,"cross");fill("#t-spon",rowsS,"spon");
   // state options, with how many tracked bills that state's members sponsored
   const cnt={};pool.forEach(b=>{const t=stOf(b.sponsor);if(t)cnt[t]=(cnt[t]||0)+1});
   const sel=$("#p-st");
