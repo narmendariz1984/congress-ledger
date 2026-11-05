@@ -206,7 +206,8 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 .ag{border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;gap:6px;align-content:start;min-width:0}
 .ag .t{font-weight:600;font-size:14px}
 .ag .s{font-size:12px;color:var(--muted)}
-.ag .pipe{grid-column:auto;margin:0}
+.mix{display:flex;gap:2px;height:8px;border-radius:4px;overflow:hidden;background:var(--rule)}
+.mix i{display:block;background:var(--c);min-width:4px}
 .ag ul{margin:0;padding:0;list-style:none;font-size:14px;display:grid;gap:0}
 .ag-list li{padding:8px 0;border-top:1px solid var(--rule);display:grid;gap:3px}
 .ag-list li:first-child{border-top:0;padding-top:4px}
@@ -333,7 +334,7 @@ details.vg>.tbl{margin:0 16px 14px}
 </details>
 <a class="cta" href="#how"><span><b>New here?</b> How a bill becomes law, what this site tracks and where the numbers come from.</span><span class="go-how" aria-hidden="true">How it works</span></a>
 <details class="sec" id="agenda" open>
-  <summary><h2>Agenda</h2><span class="count">furthest stage reached per area</span></summary>
+  <summary><h2>Agenda</h2><span class="count">how each issue area's bills are doing</span></summary>
   <div class="sec-body"><div class="agenda" id="agenda-grid"></div></div>
 </details>
 </section>
@@ -751,18 +752,24 @@ function renderBills(){
 }
 
 const AG_OPEN=new Set();
+/* one bar per area, split by how many of its bills are in each status */
+function mixBar(bs){
+  const order=["law","passed1","moving","stalled","killed","vetoed"];
+  const parts=order.map(k=>({k,n:bs.filter(b=>b.status===k).length})).filter(x=>x.n);
+  const label=parts.map(x=>`${x.n} ${STATUS[x.k].l.toLowerCase()}`).join(", ");
+  return`<span class="mix" role="img" aria-label="${esc(label)}" title="${esc(label)}">${parts.map(x=>`<i style="flex:${x.n};--c:var(${STATUS[x.k].c})"></i>`).join("")}</span>`;
+}
 function renderAgenda(){
   const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
   const areas=AREAS.slice();pool.forEach(b=>{if(b.area&&!areas.includes(b.area))areas.push(b.area)});
   $("#agenda-grid").innerHTML=areas.map(a=>{
     const bs=pool.filter(b=>b.area===a);
     if(!bs.length)return`<div class="ag empty"><span class="t">${esc(a)}</span><span class="s">No mature bill</span></div>`;
-    const best=bs.slice().sort((x,y)=>(y.reached||0)-(x.reached||0))[0];
     const law=bs.filter(b=>b.status==="law").length, dead=bs.filter(b=>b.status==="killed"||b.status==="vetoed").length;
     const RANK={law:0,vetoed:1,killed:2,passed1:3,moving:4,stalled:5};
     const ord=bs.slice().sort((x,y)=>(RANK[x.status]??9)-(RANK[y.status]??9)||String((lastEv(y)||{}).d||"").localeCompare(String((lastEv(x)||{}).d||"")));
     const open=AG_OPEN.has(a), SHOW=3;
-    return`<div class="ag"><span class="t">${esc(a)}</span><span class="pipe">${pipe(best)}</span><span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul class="ag-list">${ord.map((b,i)=>`<li${i>=SHOW&&!open?" hidden":""}>${billLink(b)}<span class="ag-st"><span class="dot" style="--c:var(${(STATUS[b.status]||{}).c||"--muted"})"></span>${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</span></li>`).join("")}</ul>${ord.length>SHOW?`<button type="button" class="ag-more" data-area="${esc(a)}" aria-expanded="${open}">${open?"Show fewer":`Show all ${ord.length}`}</button>`:""}</div>`;
+    return`<div class="ag"><span class="t">${esc(a)}</span>${mixBar(bs)}<span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul class="ag-list">${ord.map((b,i)=>`<li${i>=SHOW&&!open?" hidden":""}>${billLink(b)}<span class="ag-st"><span class="dot" style="--c:var(${(STATUS[b.status]||{}).c||"--muted"})"></span>${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</span></li>`).join("")}</ul>${ord.length>SHOW?`<button type="button" class="ag-more" data-area="${esc(a)}" aria-expanded="${open}">${open?"Show fewer":`Show all ${ord.length}`}</button>`:""}</div>`;
   }).join("");
 }
 
