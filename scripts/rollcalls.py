@@ -88,6 +88,8 @@ def person_name(bioname: str) -> str:
         m = re.match(r"^([A-Z][a-z]+)([A-Z].*)$", piece)  # McCARTHY, DeLAURO: keep the mixed-case prefix
         if m:
             return m.group(1) + m.group(2).lower().capitalize()
+        if re.match(r"^MC[A-Z]{2,}$", piece):  # MCCOLLUM -> McCollum
+            return "Mc" + piece[2:].lower().capitalize()
         return piece[:1].upper() + piece[1:].lower()
 
     fam = re.sub(r"[A-Za-z]+", lambda m: fix(m.group(0)), last.strip())

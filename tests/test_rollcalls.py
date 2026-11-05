@@ -34,6 +34,8 @@ class Names(unittest.TestCase):
         self.assertEqual(R.person_name("OMAR, Ilhan"), "Ilhan Omar")
         self.assertEqual(R.person_name("THOMPSON, Glenn (G.T.)"), "G.T. Thompson")
         self.assertEqual(R.person_name("McCARTHY, Kevin"), "Kevin McCarthy")
+        self.assertEqual(R.person_name("MCCOLLUM, Betty"), "Betty McCollum")
+        self.assertEqual(R.person_name("MACE, Nancy"), "Nancy Mace")
         self.assertEqual(R.person_name("DeLAURO, Rosa L."), "Rosa DeLauro")
         self.assertEqual(R.person_name("O'ROURKE, Robert"), "Robert O'Rourke")
         self.assertEqual(R.person_name("CRUZ, Rafael Edward (Ted)"), "Ted Cruz")
