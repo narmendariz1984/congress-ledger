@@ -202,11 +202,10 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 .links{font-size:12.5px}
 
 .notes{margin:0;padding-left:0;list-style:none;display:grid;gap:6px;font-size:13px;counter-reset:none}
-.notes li{display:grid;grid-template-columns:40px 72px 1fr;gap:8px;align-items:baseline}
+.notes li{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:baseline;font-size:14px}
 .notes li{scroll-margin-top:72px}
 .notes li:target{background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:4px}
 .notes .no{font-family:var(--f-mono);font-weight:500;color:var(--accent)}
-.notes .bn{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
 
 /* season line */
 .season{display:flex;flex-wrap:wrap;gap:6px}
@@ -252,7 +251,6 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
   .bnum{grid-column:1/2} .btitle{grid-column:1/3;order:3} .bmeta{grid-column:1/3;order:4}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
   .tl li{grid-template-columns:78px 1fr} .tl .ch{display:none}
-  .notes li{grid-template-columns:34px 1fr} .notes .bn{display:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -367,12 +365,12 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 </section>
 
 <section class="tab" data-tab="how" aria-label="How it works" hidden>
-<nav class="toc" id="how-contents" aria-label="On this page"><span class="toc-l">On this page</span><a href="#about">About</a><a href="#how-law">How a bill becomes law</a><a href="#key">Key</a><a href="#tracked">What's tracked</a><a href="#updates">Updates</a><a href="#paths">Paths to law</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a><a href="#notes">Notes</a></nav>
+<nav class="toc" id="how-contents" aria-label="On this page"><span class="toc-l">On this page</span><a href="#about">About</a><a href="#how-law">How a bill becomes law</a><a href="#key">Key</a><a href="#tracked">What's tracked</a><a href="#updates">Updates</a><a href="#paths">Paths to law</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a></nav>
 <details class="sec" id="about" open>
   <summary><h2>About this site</h2></summary>
   <div class="sec-body prose">
     <p>An independent project that follows bills once they reach the House or Senate floor: who wrote them, who voted for them and who stopped them. It isn't affiliated with Congress, any party, campaign or advocacy group.</p>
-    <p>Everything is pulled from public records and refreshed automatically. The code and every data file are public on <a href="https://github.com/narmendariz1984/congress-ledger" target="_blank" rel="noopener">GitHub</a>, so anyone can check how a number was produced.</p>
+    <p>Everything is pulled from public records and refreshed automatically. The code and every data file are public on <a href="https://github.com/narmendariz1984/congress-ledger" target="_blank" rel="noopener">GitHub</a>, so anyone can check how a number was produced. Each bill lists the sources behind it at the bottom of its card.</p>
     <p>Spot an error? <a href="https://github.com/narmendariz1984/congress-ledger/issues" target="_blank" rel="noopener">Report it on GitHub</a> with the bill number and what's wrong.</p>
     <a class="back" href="#how-contents">Back to contents</a>
   </div>
@@ -510,10 +508,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
     <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
-<details class="sec" id="notes">
-  <summary><h2>Notes</h2><span class="count" id="notes-count"></span></summary>
-  <div class="sec-body"><ol class="notes" id="note-list"></ol><a class="back" href="#how-contents">Back to contents</a></div>
-</details>
+
 </section>
 
 </div>
@@ -562,18 +557,24 @@ const chip=s=>{const o=STATUS[s]||{l:s,c:"--muted"};return`<span class="chip ${e
 /* footnotes: stable global numbering across the whole session */
 function sortedAll(){return bills.slice().sort((a,b)=>(b.congress||0)-(a.congress||0)||String(a.introduced||"").localeCompare(String(b.introduced||""))||String(a.id).localeCompare(String(b.id)))}
 let FN={}, FNLIST=[];
+/* sources: numbered per bill, listed at the bottom of that bill's card */
 function buildNotes(){
-  FN={};FNLIST=[];let n=0;
-  for(const b of sortedAll()){
+  FN={};FNLIST={};
+  for(const b of bills){
     const fns=b.fns||{};
     const order=[];
     const push=k=>{if(k&&fns[k]&&!order.includes(k))order.push(k)};
     (b.timeline||[]).forEach(t=>push(t.fn));(b.blockers||[]).forEach(t=>push(t.fn));(b.outcome&&push(b.outcome.fn));
     Object.keys(fns).forEach(push);
-    for(const k of order){n++;FN[b.id+"|"+k]=n;FNLIST.push({n,bill:b,f:fns[k]})}
+    FNLIST[b.id]=order.map((k,i)=>{FN[b.id+"|"+k]=i+1;return{n:i+1,f:fns[k]}});
   }
 }
-const sup=(b,k)=>{const n=FN[b.id+"|"+k];return n?`<sup class="fn"><a href="#fn-${n}" aria-label="Note ${n}">${n}</a></sup>`:""};
+const fnId=(b,n)=>`fn-${b.id}-${n}`;
+const sup=(b,k)=>{const n=FN[b.id+"|"+k];return n?`<sup class="fn"><a href="#${esc(fnId(b,n))}" data-open="${esc(b.id)}" aria-label="Source ${n}">${n}</a></sup>`:""};
+function srcList(b){
+  const L=FNLIST[b.id]||[];if(!L.length)return"";
+  return`<div><h4>Sources</h4><ol class="notes">${L.map(x=>`<li id="${esc(fnId(b,x.n))}"><span class="no">${x.n}</span><span>${x.f.u?`<a href="${esc(x.f.u)}" target="_blank" rel="noopener">${esc(x.f.src||"Source")}</a>`:esc(x.f.src||"")}${x.f.t?`: ${esc(x.f.t)}`:""}</span></li>`).join("")}</ol></div>`;
+}
 
 function pipe(b){
   const c=(STATUS[b.status]||{}).c||"--muted";
@@ -618,6 +619,7 @@ function billCard(b){
     ${b.url?`<div class="links"><a href="${esc(b.url)}" target="_blank" rel="noopener">Congress.gov</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`:""}
     ${tl?`<div><h4>Timeline</h4><ol class="tl">${tl}</ol></div>`:""}
     ${bl}${cr}
+    ${srcList(b)}
   </div></details>`;
 }
 
@@ -689,10 +691,6 @@ function renderOutcomes(){
   document.querySelectorAll("#t-out th").forEach(th=>{const k=th.querySelector("button")?.dataset.k;if(k)th.setAttribute("aria-sort",k===sortK?(sortDir==="asc"?"ascending":"descending"):"none")});
 }
 
-function renderNotesList(){
-  $("#notes-count").textContent=FNLIST.length?`${FNLIST.length} notes`:"";
-  $("#note-list").innerHTML=FNLIST.map(x=>`<li id="fn-${x.n}"><span class="no">${x.n}</span><span class="bn">${esc(x.bill.num)}</span><span>${esc(x.f.t||"")}${x.f.u?` <a href="${esc(x.f.u)}" target="_blank" rel="noopener">${esc(x.f.src||"Source")}</a>`:x.f.src?` ${esc(x.f.src)}`:""}</span></li>`).join("")||`<li class="muted">${loaded?"No notes yet":"Loading…"}</li>`;
-}
 
 function renderMeta(){
   if(meta){
@@ -743,7 +741,7 @@ function renderVotes(){
 }
 
 function renderAll(){
-  renderVotes();buildNotes();renderMeta();renderSeason();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();renderNotesList();
+  renderVotes();buildNotes();renderMeta();renderSeason();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();
   // populate filters once data present
   const ar=$("#f-area");const have=new Set([...ar.options].map(o=>o.value));
   [...AREAS,...bills.map(b=>b.area).filter(Boolean)].forEach(a=>{if(!have.has(a)){ar.add(new Option(a,a));have.add(a)}});
@@ -761,7 +759,6 @@ $("#t-out thead").addEventListener("click",e=>{const btn=e.target.closest("butto
 document.addEventListener("click",e=>{
   const a=e.target.closest("a[data-open]");
   if(a){const d=document.getElementById("b-"+a.dataset.open);if(d){if(!matches(bills.find(b=>b.id===a.dataset.open)||{})){F.cong="all";F.status="all";F.area="all";F.q="";$("#f-q").value="";$("#f-area").value="all";$("#f-cong").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.v==="all")));renderBills()}const el=document.getElementById("b-"+a.dataset.open);if(el){el.open=true;$("#bills").open=true}}}
-  const f=e.target.closest('sup.fn a');if(f)$("#notes").open=true;
 });
 
 /* tabs: one page, hash routes (#bills, #how, or any element id inside a tab) */
