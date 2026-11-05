@@ -199,12 +199,19 @@
         "id": "farm-cliff",
         "date": "2026-12-31",
         "title": "Farm programs fall back to permanent law",
-        "what": "The farm bill expired Sept 30. Without action by Dec 31, farm programs revert to decades-old permanent law.",
+        "what": "The farm bill expired Sept 30. The House passed a new one in April, and the Senate hasn't acted. Without action by Dec 31, farm programs revert to decades-old permanent law.",
         "src": [
           [
             "No Labels lame-duck guide",
             "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+          ],
+          [
+            "H.R. 7567 on Congress.gov",
+            "https://www.congress.gov/bill/119th-congress/house-bill/7567"
           ]
+        ],
+        "bills": [
+          "119-hr7567"
         ]
       },
       {

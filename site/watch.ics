@@ -101,11 +101,13 @@ DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 TRANSP:TRANSPARENT
 SUMMARY:Farm programs fall back to permanent law
-DESCRIPTION:The farm bill expired Sept 30. Without action by Dec 31\, farm 
- programs revert to decades-old permanent law.\n\nSources:\nNo Labels lame-
- duck guide: https://nolabels.org/the-latest/the-2026-lame-duck-session-wha
- t-congress-still-has-to-pass-after-the-midterms/\n\nMore: https://floorvot
- es.org/#w-farm-cliff
+DESCRIPTION:The farm bill expired Sept 30. The House passed a new one in Ap
+ ril\, and the Senate hasn't acted. Without action by Dec 31\, farm program
+ s revert to decades-old permanent law.\n\nSources:\nNo Labels lame-duck gu
+ ide: https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congr
+ ess-still-has-to-pass-after-the-midterms/\nH.R. 7567 on Congress.gov: http
+ s://www.congress.gov/bill/119th-congress/house-bill/7567\n\nMore: https://
+ floorvotes.org/#w-farm-cliff
 URL:https://floorvotes.org/#w-farm-cliff
 SEQUENCE:0
 STATUS:CONFIRMED

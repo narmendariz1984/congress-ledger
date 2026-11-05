@@ -45128,16 +45128,23 @@
     "what": "The Senate's last scheduled day. The House's last scheduled day is Dec 17. Either can stay longer if work is unfinished."
    },
    {
+    "bills": [
+     "119-hr7567"
+    ],
     "date": "2026-12-31",
     "id": "farm-cliff",
     "src": [
      [
       "No Labels lame-duck guide",
       "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+     ],
+     [
+      "H.R. 7567 on Congress.gov",
+      "https://www.congress.gov/bill/119th-congress/house-bill/7567"
      ]
     ],
     "title": "Farm programs fall back to permanent law",
-    "what": "The farm bill expired Sept 30. Without action by Dec 31, farm programs revert to decades-old permanent law."
+    "what": "The farm bill expired Sept 30. The House passed a new one in April, and the Senate hasn't acted. Without action by Dec 31, farm programs revert to decades-old permanent law."
    },
    {
     "date": "2027-01-03",
