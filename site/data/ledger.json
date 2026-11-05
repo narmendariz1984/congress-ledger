@@ -2920,7 +2920,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -10727,7 +10727,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -10961,7 +10961,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12453,7 +12453,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19984,7 +19984,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23948,7 +23948,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -29718,7 +29718,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29808,7 +29808,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29874,7 +29874,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29988,7 +29988,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30063,7 +30063,6 @@
      "d": "2026-05-14",
      "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 213 (Roll no. 172).",
      "fn": "cg",
-     "k": "kill",
      "v": "210–213"
     }
    ],
@@ -30082,7 +30081,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30194,7 +30193,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30294,7 +30293,7 @@
     ],
     "t": 37
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30375,7 +30374,6 @@
      "d": "2025-12-18",
      "e": "On motion to recommit Failed by the Yeas and Nays: 204 - 213 (Roll no. 359).",
      "fn": "cg",
-     "k": "kill",
      "v": "204–213"
     }
    ],
@@ -30397,7 +30395,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30472,7 +30470,6 @@
      "d": "2026-06-10",
      "e": "On motion to recommit Failed by the Yeas and Nays: 209 - 213 (Roll no. 219).",
      "fn": "cg",
-     "k": "kill",
      "v": "209–213"
     }
    ],
@@ -30493,7 +30490,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30566,7 +30563,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30659,7 +30656,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30727,7 +30724,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30806,7 +30803,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30880,7 +30877,6 @@
      "d": "2026-07-15",
      "e": "On motion to recommit Failed by the Yeas and Nays: 209 - 216 (Roll no. 246).",
      "fn": "cg",
-     "k": "kill",
      "v": "209–216"
     },
     {
@@ -30911,7 +30907,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30973,7 +30969,6 @@
      "d": "2026-06-04",
      "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 212 (Roll no. 204).",
      "fn": "cg",
-     "k": "kill",
      "v": "210–212"
     },
     {
@@ -31017,7 +31012,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31104,7 +31099,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31178,7 +31173,6 @@
      "d": "2026-07-22",
      "e": "On motion to recommit Failed by the Yeas and Nays: 213 - 216 (Roll no. 277).",
      "fn": "cg",
-     "k": "kill",
      "v": "213–216"
     },
     {
@@ -31215,7 +31209,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31314,7 +31308,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31399,7 +31393,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31487,7 +31481,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31582,7 +31576,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31671,7 +31665,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31741,7 +31735,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31842,7 +31836,7 @@
     ],
     "t": 30
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31890,7 +31884,6 @@
      "d": "2026-07-16",
      "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 211 (Roll no. 249).",
      "fn": "cg",
-     "k": "kill",
      "v": "210–211"
     }
    ],
@@ -31909,7 +31902,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -31932,7 +31925,7 @@
     "p": "R",
     "s": "AR-1"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "H",
@@ -31992,7 +31985,7 @@
     ],
     "t": 42
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32014,7 +32007,7 @@
     "p": "R",
     "s": "CO-8"
    },
-   "status": "passed1",
+   "status": "killed",
    "timeline": [
     {
      "ch": "H",
@@ -32099,7 +32092,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32174,7 +32167,6 @@
      "d": "2026-09-01",
      "e": "On motion to recommit Failed by the Yeas and Nays: 202 - 212 (Roll no. 290).",
      "fn": "cg",
-     "k": "kill",
      "v": "202–212"
     }
    ],
@@ -32197,7 +32189,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32286,7 +32278,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32359,7 +32351,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:16:37+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32476,7 +32468,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32551,7 +32543,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32656,7 +32648,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32778,7 +32770,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32857,7 +32849,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32935,7 +32927,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33008,7 +33000,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33115,7 +33107,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33183,7 +33175,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33283,7 +33275,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33407,7 +33399,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33525,7 +33517,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33635,7 +33627,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33672,7 +33664,6 @@
      "d": "2025-12-10",
      "e": "On motion to commit Failed by the Yeas and Nays: 209 - 216 (Roll no. 319).",
      "fn": "cg",
-     "k": "kill",
      "v": "209–216"
     },
     {
@@ -33771,7 +33762,7 @@
     ],
     "t": 20
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33793,7 +33784,7 @@
     "p": "R",
     "s": "KS"
    },
-   "status": "passed1",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -33857,6 +33848,7 @@
      "d": "2026-06-05",
      "e": "Motion to proceed to consideration of the House message to accompany S. 1318 rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 164.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–52"
     }
    ],
@@ -33878,7 +33870,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33927,7 +33919,6 @@
      "d": "2026-02-11",
      "e": "On motion to commit Failed by the Yeas and Nays: 214 - 217 (Roll no. 68).",
      "fn": "cg",
-     "k": "kill",
      "v": "214–217"
     },
     {
@@ -33954,7 +33945,6 @@
      "d": "2026-03-21",
      "e": "Cloture on the motion to suspend the operation of Rule XXV, paragraph (n)(1) to permit the committee on Rules and Administration to consider the pending motion ",
      "fn": "cg",
-     "k": "kill",
      "v": "41–49"
     },
     {
@@ -34007,7 +33997,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34120,7 +34110,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34237,7 +34227,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34351,7 +34341,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34476,7 +34466,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34593,7 +34583,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34706,7 +34696,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34789,7 +34779,6 @@
      "d": "2026-06-09",
      "e": "On motion to commit Failed by the Yeas and Nays: 211 - 215 (Roll no. 213).",
      "fn": "cg",
-     "k": "kill",
      "v": "211–215"
     },
     {
@@ -34826,7 +34815,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34933,7 +34922,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35058,7 +35047,7 @@
     ],
     "t": 16
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35171,7 +35160,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35275,7 +35264,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35402,7 +35391,7 @@
     ],
     "t": 22
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35515,7 +35504,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35647,7 +35636,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35761,7 +35750,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35875,7 +35864,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36007,7 +35996,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36030,7 +36019,7 @@
     "p": "R",
     "s": "TX"
    },
-   "status": "passed1",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -36097,7 +36086,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36215,7 +36204,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36334,7 +36323,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36447,7 +36436,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36469,7 +36458,7 @@
     "p": "R",
     "s": "WI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -36499,8 +36488,7 @@
      "ch": "S",
      "d": "2025-09-29",
      "e": "Motion by Senator Thune to reconsider the vote by which cloture on the motion to proceed to S. 2806 was not invoked (Record Vote No. 533) made in Senate.",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -36530,7 +36518,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36648,7 +36636,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36756,7 +36744,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36866,7 +36854,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36888,14 +36876,13 @@
     "p": "D",
     "s": "WA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
      "d": "2025-10-06",
      "e": "Motion by Senator Schumer to reconsider, under the order of 10/6/2025, not having voted on the prevailing side, the vote by which the second cloture on the moti",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -36935,8 +36922,7 @@
      "ch": "S",
      "d": "2025-10-08",
      "e": "Motion by Senator Schumer to reconsider the vote by which the second cloture on the motion to proceed to S. 2882 was not invoked (Record Vote No. 544) in Senate",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -36949,8 +36935,7 @@
      "ch": "S",
      "d": "2025-10-09",
      "e": "Motion by Senator Schumer to reconsider, under the order of 10/9/2025, not having voted on the prevailing side, the vote by which the third cloture motion on th",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -36989,7 +36974,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37011,7 +36996,7 @@
     "p": "R",
     "s": "WI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -37042,8 +37027,7 @@
      "ch": "S",
      "d": "2025-10-23",
      "e": "Motion by Senator Thune to reconsider the vote by which cloture on the motion to proceed to S. 3012 was not invoked (Record Vote No. 585) made in Senate.",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -37065,8 +37049,7 @@
      "ch": "S",
      "d": "2025-11-07",
      "e": "Motion by Senator Thune to reconsider the vote by which cloture on the motion to proceed to S. 3012 was not invoked (Record Vote No. 585) agreed to in Senate by",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -37095,7 +37078,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37203,7 +37186,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37334,7 +37317,7 @@
     ],
     "t": 31
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37490,7 +37473,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -37581,7 +37564,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -37661,7 +37644,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37779,7 +37762,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37905,7 +37888,7 @@
     ],
     "t": 24
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37927,7 +37910,7 @@
     "p": "R",
     "s": "FL"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -37981,7 +37964,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38083,7 +38066,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38187,7 +38170,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38297,7 +38280,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38406,7 +38389,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38478,7 +38461,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38580,7 +38563,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38689,7 +38672,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38796,7 +38779,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38818,7 +38801,7 @@
     "p": "R",
     "s": "MS"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -38849,8 +38832,7 @@
      "ch": "S",
      "d": "2026-07-14",
      "e": "Motion by Senator Thune to reconsider the vote by which cloture on the motion to proceed to the measure was not invoked (Record Vote No. 195) entered in Senate.",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -38931,7 +38913,7 @@
     ],
     "t": 53
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39049,7 +39031,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39071,7 +39053,7 @@
     "p": "R",
     "s": "OH"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -39123,7 +39105,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39262,7 +39244,7 @@
     ],
     "t": 50
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39284,7 +39266,7 @@
     "p": "R",
     "s": "OK"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -39349,7 +39331,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39455,7 +39437,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39563,7 +39545,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39673,7 +39655,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39789,7 +39771,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39904,7 +39886,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40019,7 +40001,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:07:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -45025,7 +45007,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T18:04:27+00:00",
+ "generatedAt": "2026-11-05T18:07:11+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
