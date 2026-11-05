@@ -96,6 +96,18 @@ class KilledStatus(unittest.TestCase):
         self.check(False, "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 230 - 190 (Roll no. 40).",
                    "On motion to suspend the rules and pass the bill Failed by the Yeas and Nays: (2/3 required): 250 - 170 (Roll no. 9).")
 
+    def test_senate_bringing_it_back_up_is_not_killed(self):
+        # H.R. 4016 and S. 4784: cloture failed, then leaders moved to proceed again
+        self.check(False, "Motion to proceed to consideration of measure made in Senate. (CR S8522)",
+                   "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 50 - 44. Record Vote Number: 575.")
+        self.check(False, "Cloture motion on the motion to proceed to the measure presented in Senate.",
+                   "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 50 - 44.")
+        # H.R. 3633: the motion to proceed came first, then cloture failed and only a reconsider was entered
+        self.check(True, "Motion by Senator Tillis to reconsider the vote by which cloture on the motion to proceed to the measure was not invoked (Record Vote No. 234) entered in Senate.",
+                   "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 234.",
+                   "Motion to proceed to consideration of measure made in Senate. (CR S4557)",
+                   "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S4557)")
+
     def test_routine_failures_are_not_kills(self):
         self.check(False, "On motion to recommit Failed by the Yeas and Nays: 210 - 220 (Roll no. 98).", "Rule H. Res. 5 passed House.")
         self.check(False, "Amendment SA 12 not agreed to in Senate by Yea-Nay Vote. 45 - 55.")
@@ -118,6 +130,13 @@ class KilledStatus(unittest.TestCase):
         ev = F.timeline_from([{"actionDate": "2026-01-01", "text": "On motion to recommit Failed by the Yeas and Nays: 210 - 220 (Roll no. 98)."},
                               {"actionDate": "2026-01-02", "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 51 - 48."}])
         self.assertEqual([e.get("k") for e in ev], [None, "kill"])
+
+    def test_timeline_skips_votes_on_reconsidering_and_page_ranges(self):
+        ev = F.timeline_from([
+            {"actionDate": "2025-10-08", "text": "Motion to proceed to consideration of the motion to reconsider the vote by which the second cloture on the motion to proceed to the S. 2882 was not invoked (Record Vote No. 544) agreed to in Senate by Yea-Nay Vote. 52 - 47."},
+            {"actionDate": "2026-07-23", "text": "Motion to proceed to consideration of measure made in Senate. (CR S4241-4242)"}])
+        self.assertEqual([e.get("k") for e in ev], [None, None])
+        self.assertEqual([e.get("v") for e in ev], ["52–47", None])
 
 
 class RollCallDiscovery(unittest.TestCase):

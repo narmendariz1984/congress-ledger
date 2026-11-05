@@ -177,12 +177,14 @@ KILL = re.compile(
     r"motion to discharge\b.{0,80}\brejected|table motion to discharge agreed to|motion to table the motion to discharge\b.{0,40}agreed to|"
     r"(on passage|suspend the rules and (pass|agree))\b.{0,80}\bfailed\b|"
     r"rule h\. ?res\.? \d+ failed", re.I)
-NOT_KILL = re.compile(r"^\s*motion (by senator \w+ )?to reconsider|motion to (re)?commit|instruct conferees|amendment", re.I)
-# Anything that moves a bill forward after a failed vote revives it.
+NOT_KILL = re.compile(r"^\s*motion (by senator \w+ )?to reconsider|the motion to reconsider|motion to (re)?commit|instruct conferees|amendment", re.I)
+# Anything that moves a bill forward after a failed vote revives it, including the
+# Senate bringing it back up: a new motion to proceed or a new cloture filing.
 ADVANCE = re.compile(
     PASSED_H.pattern + "|" + PASSED_S.pattern +
     r"|cloture\b.{0,120}\binvoked(?<!not invoked)|motion to proceed\b.{0,120}\bagreed to|"
-    r"presented to president|became public law|signed by president|motion to discharge\b.{0,80}\bagreed to", re.I)
+    r"presented to president|became public law|signed by president|motion to discharge\b.{0,80}\bagreed to|"
+    r"motion to proceed to consideration of (the )?measure made|cloture motion\b.{0,80}\b(presented|filed)", re.I)
 
 
 def killed(actions: list[dict]) -> bool:
@@ -204,7 +206,7 @@ def killed(actions: list[dict]) -> bool:
 # A bill that passed only one chamber is kept only if that passage was a recorded vote,
 # which drops the hundreds of voice-vote / unanimous-consent bills that never move again.
 KEEP_RULE = "recorded-vote-v3"  # v3: any recorded rejection counts (e.g. motion to proceed rejected 48-51)
-STATUS_RULE = "killed-v1"  # bills whose latest decisive floor vote failed are "killed"
+STATUS_RULE = "killed-v2"  # v2: a new motion to proceed or cloture filing after a failed vote means still in play
 RULE_ONLY_WIDENS = True  # v2 -> v3 keeps strictly more bills: re-check dropped ones, not all
 ALWAYS_KEEP = re.compile(r"became public law|signed by president|presented to president|vetoed|"
                          r"cloture|not invoked|motion to discharge|discharge petition|failed of passage|failed by|"
@@ -279,7 +281,7 @@ def chamber_of(text: str, action: dict) -> str:
     return "—"
 
 
-TALLY = re.compile(r"(\d{1,3})\s*-\s*(\d{1,3})")
+TALLY = re.compile(r"(?<![A-Z\d])(\d{1,3})\s*-\s*(\d{1,3})(?!\d)")  # not "CR S4241-4242" page ranges
 
 
 def timeline_from(actions: list[dict]) -> list[dict]:
