@@ -65,6 +65,15 @@ nav.tabs a{flex:none;font-size:15.5px;font-weight:600;color:var(--soft);text-dec
 nav.tabs a:hover{color:var(--ink)}
 nav.tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
 .tab{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.toc{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:12px 16px;border:1px solid var(--rule);border-radius:10px;background:var(--wash);scroll-margin-top:72px}
+.toc-l{font-size:14px;font-weight:600;color:var(--muted);margin-right:6px}
+.toc a{font-size:14.5px;font-weight:600;color:var(--ink);text-decoration:none;padding:7px 12px;border-radius:999px;border:1px solid #2F4840;background:var(--card);min-height:36px;display:inline-flex;align-items:center}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.toc a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.anch{scroll-margin-top:72px}
+.back{justify-self:start;font-size:13.5px;font-weight:600;color:var(--muted);text-decoration:underline;text-decoration-color:var(--gold-line);text-underline-offset:3px}
+.back:hover{color:var(--accent)}
+:root[data-theme="light"] .toc a{border-color:var(--rule)}
 .cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;padding:16px 20px;border:1px solid var(--gold-line);border-radius:10px;background:var(--head);color:var(--ink);text-decoration:none}
 .cta:hover{border-color:var(--accent)}
 .cta .go-how{font-weight:700;color:var(--accent);white-space:nowrap}
@@ -346,23 +355,26 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 </section>
 
 <section class="tab" data-tab="people" aria-label="People" hidden>
+<nav class="toc" aria-label="On this page"><span class="toc-l">On this page</span><a href="#p-blocked">Who stopped bills</a><a href="#p-cross">Crossover votes</a><a href="#p-sponsors">Sponsors</a></nav>
 <details class="sec" open id="names">
   <summary><h2>Names</h2></summary>
   <div class="sec-body">
-    <div><h4>Who stopped or slowed bills</h4><div class="tbl"><table id="t-block"><thead><tr><th>Member or bloc</th><th>Role</th><th>Action</th><th>Bill</th><th>Date</th><th>Attribution</th></tr></thead><tbody></tbody></table></div></div>
-    <div><h4>Crossover votes</h4><div class="tbl"><table id="t-cross"><thead><tr><th>Member</th><th>Party</th><th>Vote</th><th>Bill</th><th>On</th></tr></thead><tbody></tbody></table></div></div>
-    <div><h4>Sponsors and lead authors</h4><div class="tbl"><table id="t-spon"><thead><tr><th>Member</th><th>Party</th><th>Role</th><th>Bill</th><th>Status</th></tr></thead><tbody></tbody></table></div></div>
+    <div id="p-blocked" class="anch"><h4>Who stopped or slowed bills</h4><div class="tbl"><table id="t-block"><thead><tr><th>Member or bloc</th><th>Role</th><th>Action</th><th>Bill</th><th>Date</th><th>Attribution</th></tr></thead><tbody></tbody></table></div></div>
+    <div id="p-cross" class="anch"><h4>Crossover votes</h4><div class="tbl"><table id="t-cross"><thead><tr><th>Member</th><th>Party</th><th>Vote</th><th>Bill</th><th>On</th></tr></thead><tbody></tbody></table></div></div>
+    <div id="p-sponsors" class="anch"><h4>Sponsors and lead authors</h4><div class="tbl"><table id="t-spon"><thead><tr><th>Member</th><th>Party</th><th>Role</th><th>Bill</th><th>Status</th></tr></thead><tbody></tbody></table></div></div>
   </div>
 </details>
 </section>
 
 <section class="tab" data-tab="how" aria-label="How it works" hidden>
+<nav class="toc" id="how-contents" aria-label="On this page"><span class="toc-l">On this page</span><a href="#about">About</a><a href="#how-law">How a bill becomes law</a><a href="#key">Key</a><a href="#tracked">What's tracked</a><a href="#updates">Updates</a><a href="#paths">Paths to law</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a><a href="#notes">Notes</a></nav>
 <details class="sec" id="about" open>
   <summary><h2>About this site</h2></summary>
   <div class="sec-body prose">
     <p>An independent project that follows bills once they reach the House or Senate floor: who wrote them, who voted for them and who stopped them. It isn't affiliated with Congress, any party, campaign or advocacy group.</p>
     <p>Everything is pulled from public records and refreshed automatically. The code and every data file are public on <a href="https://github.com/narmendariz1984/congress-ledger" target="_blank" rel="noopener">GitHub</a>, so anyone can check how a number was produced.</p>
     <p>Spot an error? <a href="https://github.com/narmendariz1984/congress-ledger/issues" target="_blank" rel="noopener">Report it on GitHub</a> with the bill number and what's wrong.</p>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" id="how-law" open>
@@ -377,6 +389,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
       <li><b>President</b><span>Signs it into law or vetoes it. Unsigned for 10 days (Sundays excluded), it becomes law, unless Congress has adjourned, which kills it.</span></li>
     </ol>
     <p class="note">A Congress lasts two years, split into two yearly sessions. Bills carry over between sessions, but any bill not law by the time a Congress ends dies and has to be reintroduced.</p>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" open id="key">
@@ -410,6 +423,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
         <div class="parties"><span><span class="pb" style="--c:var(--dem)">D</span> Democrat</span><span><span class="pb" style="--c:var(--rep)">R</span> Republican</span><span><span class="pb" style="--c:var(--ind)">I</span> Independent</span><span><span class="ref">119 REF</span> earlier Congress</span></div>
       </div>
     </div>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" id="tracked" open>
@@ -422,6 +436,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
       <li><b>Hand-picked:</b> a few bills are added on purpose at any stage, with notes and sources.</li>
     </ul>
     <p><span class="ref">AUTO</span> means a bill's facts come straight from Congress.gov and haven't been reviewed by hand yet. <span class="ref">119 REF</span> marks a bill from an earlier Congress kept for reference.</p>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" id="updates" open>
@@ -434,6 +449,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
       <li><b>House votes and bill histories</b> come from the official Congress.gov API.</li>
     </ul>
     <p>The time of the last update is under the header on every page. Updates run on GitHub's scheduler, which can start a little late when GitHub is busy.</p>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" id="paths" open>
@@ -450,6 +466,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
       <tr><td>Confirmations</td><td class="n">51 Senate</td><td><span class="chip" style="--c:var(--law)">No</span></td><td>Block or approve nominees, judges</td></tr>
       <tr><td>Impeachment</td><td class="n">218 impeach · 67 convict</td><td><span class="chip" style="--c:var(--law)">No</span></td><td>Removal</td></tr>
     </tbody></table></div>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" id="glossary" open>
@@ -470,6 +487,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
       <dt>Pocket veto</dt><dd>The President doesn't sign a bill while Congress is adjourned, and it dies.</dd>
       <dt>Lame duck</dt><dd>The stretch after an election when the outgoing Congress still serves, until Jan 3.</dd>
     </dl>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" open id="sources">
@@ -489,11 +507,12 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
       <tr><td><a href="https://www.govtrack.us/" target="_blank" rel="noopener">GovTrack</a></td><td>Alerts, plain-language bill pages</td><td><span class="chip" style="--c:var(--stalled)">Fetch returned stale copy</span></td></tr>
       <tr><td><a href="https://projects.propublica.org/api-docs/congress-api/" target="_blank" rel="noopener">ProPublica Congress API</a></td><td>—</td><td><span class="chip killed" style="--c:var(--killed)">Discontinued</span></td></tr>
     </tbody></table></div>
+    <a class="back" href="#how-contents">Back to contents</a>
   </div>
 </details>
 <details class="sec" id="notes">
   <summary><h2>Notes</h2><span class="count" id="notes-count"></span></summary>
-  <div class="sec-body"><ol class="notes" id="note-list"></ol></div>
+  <div class="sec-body"><ol class="notes" id="note-list"></ol><a class="back" href="#how-contents">Back to contents</a></div>
 </details>
 </section>
 
