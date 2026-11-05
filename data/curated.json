@@ -132,7 +132,9 @@
             "Roll Call",
             "https://rollcall.com/2026/10/30/senate-house-gop-set-leadership-elections/"
           ]
-        ]
+        ],
+        "who": "House and Senate Republicans, including newly elected members",
+        "contact": "both"
       },
       {
         "id": "house-dem-leaders",
@@ -149,7 +151,9 @@
             "Punchbowl News",
             "https://punchbowl.news/article/house/jeffries-speaker/"
           ]
-        ]
+        ],
+        "who": "House Democrats, including newly elected members",
+        "contact": "house"
       },
       {
         "id": "senate-dem-leader",
@@ -161,7 +165,9 @@
             "Roll Call",
             "https://rollcall.com/2026/11/04/will-be-reelected-as-majority-leader-schumer-says/"
           ]
-        ]
+        ],
+        "who": "Senate Democrats, including newly elected senators",
+        "contact": "senate"
       },
       {
         "id": "funding",
@@ -177,7 +183,9 @@
             "No Labels lame-duck guide",
             "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
           ]
-        ]
+        ],
+        "who": "The House and Senate, then the President",
+        "contact": "both"
       },
       {
         "id": "last-day",
@@ -199,13 +207,22 @@
         "id": "farm-cliff",
         "date": "2026-12-31",
         "title": "Farm programs fall back to permanent law",
-        "what": "The farm bill expired Sept 30. Without action by Dec 31, farm programs revert to decades-old permanent law.",
+        "what": "The farm bill expired Sept 30. The House passed a new one in April, and the Senate hasn't acted. Without action by Dec 31, farm programs revert to decades-old permanent law.",
         "src": [
           [
             "No Labels lame-duck guide",
             "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+          ],
+          [
+            "H.R. 7567 on Congress.gov",
+            "https://www.congress.gov/bill/119th-congress/house-bill/7567"
           ]
-        ]
+        ],
+        "bills": [
+          "119-hr7567"
+        ],
+        "who": "The Senate first, then both chambers on a final version",
+        "contact": "both"
       },
       {
         "id": "convenes",
@@ -230,7 +247,9 @@
             "TIME",
             "https://time.com/article/2026/11/04/democrats-power-midterms/"
           ]
-        ]
+        ],
+        "who": "The House",
+        "contact": "house"
       },
       {
         "id": "ndaa",
@@ -245,7 +264,9 @@
             "No Labels lame-duck guide",
             "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
           ]
-        ]
+        ],
+        "who": "The House and Senate",
+        "contact": "both"
       },
       {
         "id": "debt-limit",
@@ -257,7 +278,9 @@
             "No Labels lame-duck guide",
             "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
           ]
-        ]
+        ],
+        "who": "The House and Senate, then the President",
+        "contact": "both"
       }
     ]
   },
