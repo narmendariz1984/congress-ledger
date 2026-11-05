@@ -413,6 +413,43 @@ def house_votes(congress: int, session: int) -> list[dict]:
     return out[:60]
 
 
+VOTE_TYPES = {"HR": "hr", "S": "s", "HJRES": "hjres", "SJRES": "sjres"}
+
+
+def rollcall_bills(congress: int) -> set[str] | None:
+    """Every bill or joint resolution with a roll call in either chamber this Congress.
+
+    A bill can fail or pass on a recorded vote and then pick up a later routine
+    action, so its latest action alone can hide the vote. This catches those.
+    None if either source fails, so a partial list never looks complete.
+    """
+    found: set[str] = set()
+    def add(raw: str) -> None:
+        m = re.match(r"^\s*([A-Z]+)\s*0*(\d+)\s*$", (raw or "").upper().replace(".", ""))
+        if m and m.group(1) in VOTE_TYPES:
+            found.add(bill_id(congress, VOTE_TYPES[m.group(1)], int(m.group(2))))
+    try:
+        for session in (1, 2):
+            off = 0
+            while off < 3000:
+                page = api(f"house-vote/{congress}/{session}", limit=250, offset=off)
+                items = next((page[k] for k in page if isinstance(page[k], list)), [])
+                for v in items:
+                    if isinstance(v, dict):
+                        add(f"{v.get('legislationType') or ''}{v.get('legislationNumber') or ''}")
+                if len(items) < 250:
+                    break
+                off += 250
+        url = f"https://voteview.com/static/data/out/rollcalls/S{congress}_rollcalls.csv"
+        for r in csv.DictReader(io.StringIO(_get(url, timeout=60).decode("utf-8-sig"))):
+            if (r.get("chamber") or "Senate") == "Senate":
+                add(r.get("bill_number") or "")
+    except Exception as e:  # noqa: BLE001
+        warn(f"roll call discovery failed: {e}")
+        return None
+    return found
+
+
 def senate_with_backoff(congress: int, session: int, now: dt.datetime, state: dict, previous: list) -> list:
     """Ask for Senate votes at most once per backoff window after a failure.
 
@@ -562,6 +599,24 @@ def main() -> int:
         if items is not None:
             tracked["lastDiscovery"] = now.isoformat(timespec="seconds")
 
+        # once a day: queue bills that had a roll call but weren't picked up yet
+        last = tracked.get("voteDiscovery")
+        try:
+            due = not last or (now - dt.datetime.fromisoformat(last)).total_seconds() > 20 * 3600
+        except ValueError:
+            due = True
+        if due:
+            rc = rollcall_bills(congress)
+            if rc is not None:
+                tracked["voteDiscovery"] = now.isoformat(timespec="seconds")
+                skip = set(tracked["bills"]) | set(tracked.get("dropped") or [])
+                fresh = sorted(rc - skip - set(queue))
+                if fresh:
+                    q = tracked.setdefault("backfill", {"queue": []})
+                    q["queue"] = queue = sorted(set(queue) | set(fresh))
+                    q.pop("finished", None)
+                print(f"roll call discovery: {len(rc)} bills with roll calls, {len(fresh)} new to check")
+
         # this run's slice of the backfill queue
         batch = queue[:BACKFILL_BATCH]
         for bid in batch:
@@ -614,6 +669,9 @@ def main() -> int:
                 auto_by_id.pop(bid, None)
                 if bid in tracked["bills"]:
                     tracked["bills"].remove(bid)
+                    d = tracked.setdefault("dropped", [])
+                    if bid not in d:
+                        d.append(bid)  # checked once and didn't qualify; roll call discovery skips it
                 continue
             fresh["id"] = bid
             fresh["fetched"] = now.isoformat(timespec="seconds")
