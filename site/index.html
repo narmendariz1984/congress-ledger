@@ -313,15 +313,6 @@ details.vg>.tbl{margin:0 16px 14px}
 .nextup .k{font-size:13px;font-weight:600;color:var(--muted)}
 .nextup b{font-family:var(--f-mono);font-weight:700;color:var(--red)}
 .nextup a{font-weight:600}
-.calbox{background:var(--wash);border:1px solid var(--rule);border-radius:10px;padding:16px;display:grid;gap:12px}
-.cal-t{display:grid;gap:2px}
-.cal-t b{font-size:16px}
-.cal-t span{font-size:14px}
-.cal-acts{display:flex;flex-wrap:wrap;gap:8px}
-.cal-acts .fchip{text-decoration:none}
-.cal-acts .fchip[aria-live]{min-width:0}
-.cal-g{margin:0;font-size:13.5px;color:var(--muted);max-width:80ch}
-.cal-g code{font-family:var(--f-mono);font-size:12.5px;color:var(--soft);overflow-wrap:anywhere}
 .months{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,232px),1fr));gap:12px}
 .month{border:1px solid var(--rule);border-radius:10px;padding:12px;background:var(--card);min-width:0}
 .month h3{font-size:15px;font-weight:700;margin:0 0 8px}
@@ -506,15 +497,6 @@ details.wpast .wi{opacity:.75}
   <summary><h2>What to watch</h2><span class="count" id="watch-count"></span></summary>
   <div class="sec-body">
     <p class="note">Deadlines and key dates coming up, from official schedules and news reports. Dates move, and this list changes when they do. Every item lists its sources.</p>
-    <div class="calbox">
-      <div class="cal-t"><b>Put these dates on your calendar</b><span class="muted">Subscribe once and your calendar updates itself when a date moves or gets set.</span></div>
-      <div class="cal-acts">
-        <a class="fchip" id="cal-sub" href="webcal://floorvotes.org/watch.ics">Subscribe <span class="n">Apple · Outlook</span></a>
-        <button type="button" class="fchip" id="cal-copy">Copy link <span class="n" id="cal-copy-n" aria-live="polite">for Google</span></button>
-        <a class="fchip" id="cal-dl" href="watch.ics" download="congress-what-to-watch.ics">Download .ics <span class="n">one time</span></a>
-      </div>
-      <p class="cal-g">Google Calendar: on a computer, go to Other calendars, then <b>+</b>, then From URL, and paste <code id="cal-url">https://floorvotes.org/watch.ics</code>. Google only allows this from a web browser, not its phone app. A downloaded file is a snapshot and won't update.</p>
-    </div>
     <div class="months" id="w-months"></div>
     <div class="mkey"><span><i style="background:var(--red)"></i>Key date</span><span><i style="background:color-mix(in srgb,var(--moving) 30%,transparent)"></i>House or Senate in session</span><span><i style="box-shadow:inset 0 0 0 2px var(--ink)"></i>Today</span></div>
     <ol class="wlist" id="w-list"></ol>
@@ -1032,16 +1014,7 @@ function renderWatch(){
   // next up, shown in the header on every tab
   const nx=up[0];
   if(nx){$("#nextup").hidden=false;$("#nextup").innerHTML=`<span class="k">Next</span><b>${esc(nx.date===today?"Today":short(nx.date))}</b><span>${esc(nx.title)}</span><a href="#watch">All dates</a>`}
-  // calendar links point at whichever host is serving the page (floorvotes.org, or a preview)
-  const host=/^(localhost|127\.|\[)/.test(location.host)||location.protocol==="file:"?"floorvotes.org":location.host;
-  $("#cal-sub").href=`webcal://${host}/watch.ics`;$("#cal-url").textContent=`https://${host}/watch.ics`;
 }
-$("#cal-copy").addEventListener("click",async()=>{
-  const u=$("#cal-url").textContent, n=$("#cal-copy-n");
-  try{await navigator.clipboard.writeText(u);n.textContent="copied"}
-  catch(_){const r=document.createRange();r.selectNodeContents($("#cal-url"));const s=getSelection();s.removeAllRanges();s.addRange(r);n.textContent="selected, press copy"}
-  setTimeout(()=>{n.textContent="for Google"},2500);
-});
 
 /* agenda: jump to an area card, flash it, keep the link shareable */
 $("#ag-jump").addEventListener("change",e=>{
