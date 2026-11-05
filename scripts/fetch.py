@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import datetime as dt
 import csv
+import html
 import io
 import json
 import os
@@ -172,9 +173,11 @@ VETO = re.compile(r"vetoed by president", re.I)
 # both chambers, and bills that died or were fought over on the floor are always kept.
 # A bill that passed only one chamber is kept only if that passage was a recorded vote,
 # which drops the hundreds of voice-vote / unanimous-consent bills that never move again.
-KEEP_RULE = "recorded-vote-v2"  # v2: committee "discharged" is housekeeping, not a fight
+KEEP_RULE = "recorded-vote-v3"  # v3: any recorded rejection counts (e.g. motion to proceed rejected 48-51)
+RULE_ONLY_WIDENS = True  # v2 -> v3 keeps strictly more bills: re-check dropped ones, not all
 ALWAYS_KEEP = re.compile(r"became public law|signed by president|presented to president|vetoed|"
-                         r"cloture|not invoked|motion to discharge|discharge petition|failed of passage|failed by", re.I)
+                         r"cloture|not invoked|motion to discharge|discharge petition|failed of passage|failed by|"
+                         r"(rejected|not agreed to)[^.]{0,60}\b(yea-nay|yeas and nays|record vote|roll no)", re.I)
 PASSAGE = re.compile(r"\bpass(ed)?\b|on passage|agreed to", re.I)
 RECORDED = re.compile(r"record vote|roll no\.|yeas and nays|yea-nay|\b\d{1,3}\s*-\s*\d{1,3}\b", re.I)
 VOICE = re.compile(r"voice vote|unanimous consent|without objection", re.I)
@@ -373,13 +376,13 @@ def senate_votes(congress: int, session: int) -> list[dict] | None:
         def cnt(k: str) -> str:
             v = (r.get(k) or "").strip()
             return str(int(float(v))) if v.replace(".", "", 1).isdigit() else v
-        desc = re.sub(r"\s+", " ", (r.get("vote_desc") or r.get("dtl_desc") or "").strip())
+        desc = re.sub(r"\s+", " ", html.unescape(r.get("vote_desc") or r.get("dtl_desc") or "").strip())
         out.append({
             "ch": "S", "n": n, "d": (r.get("date") or "").strip()[:10],
             "q": re.sub(r"\s+", " ", (r.get("vote_question") or "").strip()),
             "measure": (r.get("bill_number") or "").strip(),
             "issue": (r.get("bill_number") or "").strip(),
-            "title": desc[:200],
+            "title": desc[:600],
             "result": (r.get("vote_result") or "").strip(),
             "y": cnt("yea_count"), "n_": cnt("nay_count"),
             "u": f"https://www.senate.gov/legislative/LIS/roll_call_votes/vote{congress}{session}/vote_{congress}_{session}_{n:05d}.htm" if isinstance(n, int) else "",
@@ -388,8 +391,57 @@ def senate_votes(congress: int, session: int) -> list[dict] | None:
     return out[:60]
 
 
-def house_votes(congress: int, session: int) -> list[dict]:
-    """Congress.gov House roll call endpoint (beta). Parsed defensively."""
+def _num(x) -> int:
+    try:
+        return int(x)
+    except (TypeError, ValueError):
+        return 0
+
+
+def house_vote_detail(congress: int, session: int, num) -> dict | None:
+    """Question and yea/nay totals for one House roll call. Field names are read
+    defensively (the endpoint is beta); None if nothing usable came back."""
+    page = api(f"house-vote/{congress}/{session}/{num}")
+    item = next((v for v in page.values() if isinstance(v, dict)), page)
+    q = item.get("voteQuestion") or item.get("question") or ""
+    y = n = 0
+    seen = False
+    for t in item.get("votePartyTotal") or item.get("partyTotals") or []:
+        if isinstance(t, dict):
+            seen = True
+            y += _num(t.get("yeaTotal") or t.get("yea"))
+            n += _num(t.get("nayTotal") or t.get("nay"))
+    if not seen and ("yeaTotal" in item or "nayTotal" in item):
+        seen, y, n = True, _num(item.get("yeaTotal")), _num(item.get("nayTotal"))
+    if not q and not seen:
+        return None
+    return {"q": q, "y": str(y) if seen else "", "n": str(n) if seen else ""}
+
+
+def bill_title(congress: int, measure: str, cache: dict) -> str:
+    """Title of any measure named in a vote (bills, resolutions), cached forever."""
+    m = re.match(r"^\s*([A-Z]+)\s*0*(\d+)\s*$", (measure or "").upper().replace(".", ""))
+    if not m or m.group(1) == "PN":
+        return ""
+    key = f"{congress}-{m.group(1).lower()}{m.group(2)}"
+    if key not in cache:
+        try:
+            cache[key] = ((api(f"bill/{congress}/{m.group(1).lower()}/{m.group(2)}").get("bill")) or {}).get("title") or ""
+        except Exception as e:  # noqa: BLE001
+            warn(f"title for {measure}: {e}")
+            return ""
+    return cache[key]
+
+
+def house_votes(congress: int, session: int, state: dict | None = None) -> list[dict]:
+    """Congress.gov House roll call endpoint (beta). Parsed defensively.
+
+    The list only gives the vote type, so each roll call's question and tally
+    come from its own record, fetched once and cached in tracked.json.
+    """
+    state = state if state is not None else {}
+    vcache = state.setdefault("houseVotes", {})
+    tcache = state.setdefault("titles", {})
     try:
         page = api(f"house-vote/{congress}/{session}", limit=60)
     except Exception as e:  # noqa: BLE001
@@ -402,11 +454,22 @@ def house_votes(congress: int, session: int) -> list[dict]:
             continue
         num = v.get("rollCallNumber") or v.get("rollNumber")
         leg = " ".join(str(x) for x in (v.get("legislationType"), v.get("legislationNumber")) if x)
+        key = f"{congress}-{session}-{num}"
+        if num and key not in vcache:
+            try:
+                det = house_vote_detail(congress, session, num)
+                if det:
+                    vcache[key] = det
+            except Exception as e:  # noqa: BLE001
+                warn(f"House roll {num}: {e}")
+        det = vcache.get(key) or {}
         out.append({
             "ch": "H", "n": num, "d": (v.get("startDate") or v.get("date") or "")[:10],
-            "q": v.get("voteQuestion") or v.get("question") or v.get("voteType") or "",
-            "measure": leg, "title": "", "result": v.get("result") or "",
-            "y": "", "n_": "",
+            "type": v.get("voteType") or "",
+            "q": det.get("q") or v.get("voteQuestion") or v.get("question") or v.get("voteType") or "",
+            "measure": leg, "title": bill_title(congress, leg, tcache) if leg else "",
+            "result": v.get("result") or "",
+            "y": det.get("y", ""), "n_": det.get("n", ""),
             "u": f"https://clerk.house.gov/Votes/{(v.get('startDate') or '')[:4]}{num}" if num else "",
         })
     out.sort(key=lambda x: (x["d"], x["n"] or 0), reverse=True)
@@ -652,9 +715,16 @@ def main() -> int:
         stale = sorted((b for b in wanted if age(b) > 7 * 86400), key=age, reverse=True)[:STALE_PER_RUN]
         refetch = curated_ids | updated | set(stale) | set(batch) | {b for b in wanted if b not in auto_by_id}
         if tracked.get("rule") != KEEP_RULE:
-            refetch |= set(wanted)
+            if RULE_ONLY_WIDENS and tracked.get("rule"):
+                again = tracked.pop("dropped", [])
+                q = tracked.setdefault("backfill", {"queue": []})
+                q["queue"] = sorted(set(q.get("queue") or []) | set(again))
+                q.pop("finished", None)
+                print(f"keep rule changed to {KEEP_RULE}: re-checking {len(again)} dropped bills")
+            else:
+                refetch |= set(wanted)
+                print(f"keep rule changed to {KEEP_RULE}: re-checking every tracked bill")
             tracked["rule"] = KEEP_RULE
-            print(f"keep rule changed to {KEEP_RULE}: re-checking every tracked bill")
         print(f"bills: {len(wanted)} tracked, re-downloading {len(refetch & set(wanted))}")
         for bid, (c, t, n) in sorted(wanted.items()):
             if bid not in refetch:
@@ -698,7 +768,7 @@ def main() -> int:
     votes = prev.get("votes") or {"senate": [], "house": []}
     if do_votes:
         votes = {"senate": senate_with_backoff(congress, session, now, tracked, votes.get("senate") or []),
-                 "house": house_votes(congress, session)}
+                 "house": house_votes(congress, session, tracked)}
 
     ledger = {
         "generatedAt": now.isoformat(timespec="seconds") if (do_bills or do_votes) else prev.get("generatedAt") or now.isoformat(timespec="seconds"),
