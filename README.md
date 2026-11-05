@@ -45,3 +45,11 @@ python scripts/fetch.py
 ```
 
 `MODE=offline` rebuilds from `data/curated.json` with no network or key.
+
+## Tests and checks
+
+- `node --test tests/names.test.mjs` checks bill names, measure codes and state search against real cases (nominations, war powers and rule-overturning resolutions, cut-off Senate titles), plus every title in the current data.
+- `python -m unittest discover -s tests` checks the keep rule, roll call discovery and House and Senate vote parsing, with no network calls.
+- `node scripts/check.mjs` checks the data itself. It runs after every refresh: warnings go to the run summary, and serious problems (no House tallies, unreadable data, too few bills) fail the run so GitHub sends a notification.
+
+The **Tests** workflow runs all three on every code change. Naming rules live in `site/names.js`, shared by the page, the tests and the check.

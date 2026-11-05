@@ -543,6 +543,7 @@ details.vg>.tbl{margin:0 16px 14px}
 </main>
 <button type="button" class="totop" id="totop" hidden>Back to top</button>
 
+<script src="names.js"></script>
 <script>
 (function(){
 const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
@@ -570,16 +571,6 @@ const AREAS=["Housing","Health care","Child care","Taxation","Accountability & o
 
 let bills=[], meta=null, loaded=false;
 const F={cong:"all",status:"all",area:"all",q:""};
-const STATES={AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming",DC:"District of Columbia",PR:"Puerto Rico",GU:"Guam",VI:"U.S. Virgin Islands",AS:"American Samoa",MP:"Northern Mariana Islands"};
-const STATE_BY_NAME=Object.fromEntries(Object.entries(STATES).map(([k,v])=>[v.toLowerCase(),k]));
-/* "MN", "mn", "Minnesota" -> {st:"MN"}; "MN-5" -> {st:"MN",dist:"5"}; anything else -> null */
-function stateQuery(q){
-  const t=String(q||"").trim().toLowerCase().replace(/\.$/,"");
-  let m=t.match(/^([a-z]{2})-(\d{1,2}|al)$/);if(m&&STATES[m[1].toUpperCase()])return{st:m[1].toUpperCase(),dist:m[2].toUpperCase()};
-  if(/^[a-z]{2}$/.test(t)&&STATES[t.toUpperCase()])return{st:t.toUpperCase()};
-  if(STATE_BY_NAME[t])return{st:STATE_BY_NAME[t]};
-  return null;
-}
 /* every member tied to a bill, as {who, st, dist, how} */
 function billMembers(b){
   const out=[];const add=(who,s,how)=>{if(!s)return;const [st,dist]=String(s).toUpperCase().split("-");out.push({who,st,dist,how})};
@@ -607,57 +598,7 @@ const chip=s=>{const o=STATUS[s]||{l:s,c:"--muted"};return`<span class="chip ${e
 /* footnotes: stable global numbering across the whole session */
 function sortedAll(){return bills.slice().sort((a,b)=>(b.congress||0)-(a.congress||0)||String(a.introduced||"").localeCompare(String(b.introduced||""))||String(a.id).localeCompare(String(b.id)))}
 let FN={}, FNLIST=[];
-/* readable bill names: the short title when there is one, else a shortened official title */
-const AG=[["Centers for Medicare & Medicaid Services","CMS"],["Centers for Medicare and Medicaid Services","CMS"],["Environmental Protection Agency","EPA"],["Bureau of Land Management","BLM"],["Consumer Financial Protection Bureau","CFPB"],["Department of Energy","Energy Dept."],["Department of the Interior","Interior Dept."],["Department of Labor","Labor Dept."],["Department of Education","Education Dept."],["Department of Health and Human Services","HHS"],["Department of Agriculture","USDA"],["Department of Transportation","DOT"],["Department of the Treasury","Treasury"],["Department of Homeland Security","DHS"],["Department of Veterans Affairs","VA"],["Department of Commerce","Commerce Dept."],["Office of the Comptroller of the Currency","OCC"],["Federal Deposit Insurance Corporation","FDIC"],["Securities and Exchange Commission","SEC"],["Federal Communications Commission","FCC"],["Federal Energy Regulatory Commission","FERC"],["Internal Revenue Service","IRS"],["National Park Service","Park Service"],["Fish and Wildlife Service","Fish & Wildlife"],["National Oceanic and Atmospheric Administration","NOAA"],["Bureau of Ocean Energy Management","BOEM"],["Federal Trade Commission","FTC"],["Board of Governors of the Federal Reserve System","Federal Reserve"],["National Labor Relations Board","NLRB"],["Food and Drug Administration","FDA"],["Centers for Medicare & Medicaid Services","CMS"],["Office of Personnel Management","OPM"],["Federal Highway Administration","FHWA"],["National Highway Traffic Safety Administration","NHTSA"],["Department of Defense","Defense Dept."],["Department of Justice","Justice Dept."],["Department of Housing and Urban Development","HUD"],["Department of State","State Dept."]];
-function abbr(s){let x=s.replace(/^the /i,"").replace(/^United States /,"").replace("Office of Energy Efficiency and Renewable Energy","Energy Dept.");for(const[a,b]of AG)x=x.split(a).join(b);
-  x=x.replace(/ of the (Interior|Energy|Treasury|Labor|Commerce|Agriculture) Dept\.$/,"").replace(/,? (Interior|Energy|Labor|Commerce) Dept\.$/,"");
-  x=x.replace(/ of the (HHS|USDA|DOT|DHS|HUD|VA|Treasury|[A-Z][a-z]+ Dept\.)$/,"");
-  x=x.replace(/,? (Department of [A-Z][\w ]+|[A-Z][\w.]+ Dept\.)$/,m=>/^(,? )?(Energy|Interior|Labor|Commerce|Agriculture)/.test(m.replace(/^,? /,""))&&x.indexOf(m)>0?"":m);
-  return x.replace(/ of (BLM|Interior Dept\.|Energy Dept\.)$/,"").replace(/^Energy Dept\., Energy Dept\.$/,"Energy Dept.")}
-const GENERIC=/^(Energy Conservation Program|Endangered and Threatened Wildlife and Plants|Air Plan Approval|Air Quality State Implementation Plans)[:;]\s*/i;
-function cut(s,n){s=s.trim();if(s.length<=n)return s;let c=s.slice(0,n);const i=c.lastIndexOf(" ");if(i>n*0.6)c=c.slice(0,i);return c.replace(/[\s,;:.\-–(]+$/,"")+"…"}
-function nameOf(t){
-  t=decodeEnt(String(t||"")).trim().replace(/\s+/g," ");
-  if(/^(A|An) (bill|joint resolution|concurrent resolution|executive resolution|resolution) to /i.test(t))t=t.replace(/^(A|An) [a-z ]*?(bill|resolution) to /i,"To ");
-  else t=t.replace(/^(A|An) (joint resolution|concurrent resolution|executive resolution|resolution) ([a-z])/i,(m,a,b,c)=>c.toUpperCase());
-  const wp=t.match(/^Directing the President,? pursuant to section 5\(c\) of the War Powers Resolution,? to remove (?:the )?United States Armed Forces from (.+?)\.?$/i);
-  if(wp)return cut("War powers: remove U.S. forces from "+wp[1],70);
-  const wp2=t.match(/^To direct the removal of (?:the )?United States Armed Forces from (.+?)\.?$/i);
-  if(wp2)return cut("War powers: remove U.S. forces from "+wp2[1],70);
-  const rl=t.match(/^Providing for consideration of (?:the )?(?:bill|joint resolution|resolution)s? \(([^)]+)\)/i);
-  if(rl)return cut("Rule for debating "+rl[1]+(/and (?:the )?(?:bill|joint resolution)/i.test(t)?" and others":""),70);
-  const fms=t.match(/^Providing for congressional disapproval of the proposed (?:foreign military sale|direct commercial sale|export|sale)s? to (?:the )?(?:Government of )?(.+?) of .+$/i);
-  if(fms)return cut("Block proposed arms sale to "+fms[1],70);
-  const fex=t.match(/^Providing for congressional disapproval of the proposed export of .+? to (?:the )?(.+?)\.?$/i);
-  if(fex)return cut("Block proposed arms export to "+fex[1],70);
-  const ne=t.match(/^Terminating (the national emergency .+?)\.?$/i);
-  if(ne)return cut("End "+ne[1],70);
-  const m=t.match(/^Providing (?:for )?congressional disapproval under chapter 8 of title 5, United States Code, of the rule (?:submitted|issued|published) by (.+?) relat(?:ing|ed) to (.+?)\.?$/i);
-  if(m){let subj=m[2].replace(/^the /i,"").replace(/^["“”']+|["“”'.]+$/g,"");subj=subj.replace(GENERIC,"");return"Overturn "+cut(abbr(m[1]),28)+" rule: "+cut(subj,44)}
-  const mt=t.match(/^Providing (?:for )?congressional disapproval under chapter 8 of title 5, United States Code, of (?:a|the) rule (?:submitted|issued|published) by (.+)$/i);
-  if(mt){const ag=abbr(mt[1].replace(/ of the Department(?: of)?.*$/i,"").replace(/\s+\S*$/,w=>/^(of|the|Department|Servi\w*)$/i.test(w.trim())?"":w));return"Overturn "+cut(ag,40)+" rule"}
-  if(/^Providing (?:for )?congressional disapproval under chapter 8/i.test(t))return"Overturn an agency rule";
-  const c=t.match(/^Proposing an amendment to the Constitution of the United States,? (.+?)\.?$/i);
-  if(c){const x=c[1].replace(/^relat(?:ive|ing) to /i,"on ").replace(/ of the United States/g,"");return cut("Constitutional amendment "+x,70)}
-  const dc=t.match(/^Disapproving the action of the District of Columbia Council in approving (?:the )?(.+?)\.?$/i);
-  if(dc)return cut("Block D.C. law: "+dc[1],70);
-  const r=t.match(/^Relating to a national emergency declared by the President on (.+?)\.?$/i);
-  if(r)return cut("End national emergency declared "+r[1],70);
-  t=t.replace(/^(A|An) (bill|joint resolution|concurrent resolution|resolution) to /i,"To ").replace(/\.$/,"");
-  return cut(t,70);
-}
-function decodeEnt(s){return s.replace(/&#(\d+);/g,(m,n)=>String.fromCharCode(+n)).replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'")}
 const nm=b=>b.name||(b.name=nameOf(b.title));
-const MTYPE={HR:["H.R.","house-bill"],S:["S.","senate-bill"],HRES:["H.Res.","house-resolution"],SRES:["S.Res.","senate-resolution"],HJRES:["H.J.Res.","house-joint-resolution"],SJRES:["S.J.Res.","senate-joint-resolution"],HCONRES:["H.Con.Res.","house-concurrent-resolution"],SCONRES:["S.Con.Res.","senate-concurrent-resolution"],PN:["PN","nomination"]};
-function measureInfo(raw,congress){
-  const m=String(raw||"").toUpperCase().replace(/\./g,"").match(/^\s*([A-Z]+)\s*0*(\d+)/);if(!m||!MTYPE[m[1]])return null;
-  const [label,path]=MTYPE[m[1]];const c=congress||(CONGRESS&&CONGRESS.number)||119;
-  return{type:m[1],num:m[2],label:`${label} ${m[2]}`,url:path==="nomination"?`https://www.congress.gov/nomination/${c}th-congress/${m[2]}`:`https://www.congress.gov/bill/${c}th-congress/${path}/${m[2]}`};
-}
-/* "Angela Veronica Colmenero, of Texas, to be United States District Judge for ..." */
-function nomName(t){t=decodeEnt(plain(t));const m=t.match(/^(.+?), of (.+?), to be (.+?)(?:, vice .*)?$/i);if(!m)return cut(t,80);return cut(`${m[1]} to be ${m[3].replace(/United States/g,"U.S.")}`,80)}
-const plain=s=>String(s||"").replace(/<[^>]*>/g,"").replace(/\s+/g," ").trim();
-const numKey=s=>String(s||"").replace(/[^a-z0-9]/gi,"").toLowerCase();
 function billLink(b){return`<a href="#b-${esc(b.id)}" data-open="${esc(b.id)}" class="bl" title="${esc(b.title)}"><span class="bl-n">${esc(nm(b))}</span> <span class="bl-num">${esc(b.num)}</span></a>`}
 
 /* sources: numbered per bill, listed at the bottom of that bill's card */
@@ -869,7 +810,7 @@ function renderVotes(){
   const tally=v=>(+v.y||+v.n_)?`${esc(v.y)}–${esc(v.n_)}`:"";
   $("#vote-groups").innerHTML=groups.map(g=>{
     const v0=g.votes[0], tb=BYNUM[numKey(g.measure)];
-    const mi=measureInfo(g.measure);
+    const mi=measureInfo(g.measure,CONGRESS);
     const nmTxt=mi&&mi.type==="PN"?"Nomination: "+nomName(v0.title||""):v0.title?nameOf(plain(v0.title)):(mi?mi.label:(plain(v0.q)||"Vote without a measure"));
     const label=tb?billLink(tb):mi?`<a class="bl" href="${esc(mi.url)}" target="_blank" rel="noopener" title="${esc(decodeEnt(plain(v0.title||"")))}"><span class="bl-n">${esc(nmTxt)}</span> <span class="bl-num">${esc(mi.label)}</span></a>`:`<span class="vg-m">${esc(nmTxt)}</span>`;
     const rows=g.votes.map(v=>`<tr><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">Roll ${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(plain(v.q||""))}</td><td>${resChip(String(v.result||""))}</td><td class="n">${tally(v)}</td></tr>`).join("");
