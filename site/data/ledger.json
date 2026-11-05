@@ -2919,7 +2919,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T08:16:03+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -20008,7 +20008,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T08:16:03+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23980,7 +23980,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T08:16:03+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -37522,7 +37522,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T08:16:03+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -37613,7 +37613,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T08:16:03+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40572,6 +40572,95 @@
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/10"
   },
   {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 37,
+    "i": 2,
+    "r": 0,
+    "st": [
+     "AZ",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "GA",
+     "HI",
+     "IL",
+     "MA",
+     "MD",
+     "ME",
+     "MI",
+     "MN",
+     "NH",
+     "NJ",
+     "NM",
+     "NV",
+     "NY",
+     "OR",
+     "RI",
+     "VT",
+     "WA",
+     "WI"
+    ],
+    "t": 39
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/103"
+    }
+   },
+   "id": "119-sjres103",
+   "introduced": "2026-01-27",
+   "latest": {
+    "actionDate": "2026-03-25",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 72."
+   },
+   "num": "S.J.Res. 103",
+   "number": 103,
+   "reached": 2,
+   "sponsor": {
+    "n": "Richard Blumenthal",
+    "p": "D",
+    "s": "CT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-02-12",
+     "e": "Senate Committee on Veterans' Affairs discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-25",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 72.",
+     "fn": "cg",
+     "v": "48–50"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-25",
+     "e": "Motion to proceed to consideration of measure made in Senate. (consideration: CR S1609)",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Veterans Affairs relating to \"Reproductive Health Services\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/103"
+  },
+  {
    "area": "International Affairs",
    "auto": true,
    "congress": 119,
@@ -40640,6 +40729,76 @@
    "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
    "type": "sjres",
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/104"
+  },
+  {
+   "area": "Taxation",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 4,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "NJ",
+     "NY",
+     "OR",
+     "RI"
+    ],
+    "t": 4
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/107"
+    }
+   },
+   "id": "119-sjres107",
+   "introduced": "2026-02-12",
+   "latest": {
+    "actionDate": "2026-03-25",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 53. Record Vote Number: 70."
+   },
+   "num": "S.J.Res. 107",
+   "number": 107,
+   "reached": 2,
+   "sponsor": {
+    "n": "Catherine Cortez Masto",
+    "p": "D",
+    "s": "NV"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-02-12",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-19",
+     "e": "Senate Committee on Finance discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-25",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 53. Record Vote Number: 70.",
+     "fn": "cg",
+     "v": "47–53"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-25",
+     "e": "Motion to proceed to consideration of measure made in Senate. (CR S1599)",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to \"Beginning of Construction Requirements for Purposes of the Termination of Clean Electricity Production Credits and Clean Electricity Investment Credits for Applicable Wind and Solar Facilities\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/107"
   },
   {
    "area": "Public Lands and Natural Resources",
@@ -41207,6 +41366,124 @@
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/13"
   },
   {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/130"
+    }
+   },
+   "id": "119-sjres130",
+   "introduced": "2026-03-18",
+   "latest": {
+    "actionDate": "2026-05-13",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 53. Record Vote Number: 123. (consideration: CR S2265-2266)"
+   },
+   "num": "S.J.Res. 130",
+   "number": 130,
+   "reached": 2,
+   "sponsor": {
+    "n": "Chris Van Hollen",
+    "p": "D",
+    "s": "MD"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-27",
+     "e": "Senate Committee on Banking, Housing, and Urban Affairs discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-13",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 53. Record Vote Number: 123. (consideration: CR S2265-2266)",
+     "fn": "cg",
+     "v": "47–53"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to withdrawal of the rule relating to \"Consumer Financial Protection Circular 2024-05: Improper Overdraft Opt-In Practices\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/130"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/132"
+    }
+   },
+   "id": "119-sjres132",
+   "introduced": "2026-03-18",
+   "latest": {
+    "actionDate": "2026-05-13",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 52. Record Vote Number: 121. (consideration: CR S2264-2265)"
+   },
+   "num": "S.J.Res. 132",
+   "number": 132,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jack Reed",
+    "p": "D",
+    "s": "RI"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-27",
+     "e": "Senate Committee on Banking, Housing, and Urban Affairs discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-13",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 52. Record Vote Number: 121. (consideration: CR S2264-2265)",
+     "fn": "cg",
+     "v": "48–52"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Examinations for Risks to Active-Duty Servicemembers and Their Covered Dependents\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/132"
+  },
+  {
    "area": "International Affairs",
    "auto": true,
    "congress": 119,
@@ -41268,6 +41545,127 @@
    "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
    "type": "sjres",
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/138"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "CO",
+     "RI"
+    ],
+    "t": 2
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/139"
+    }
+   },
+   "id": "119-sjres139",
+   "introduced": "2026-03-19",
+   "latest": {
+    "actionDate": "2026-04-29",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 52. Record Vote Number: 110. (CR S2106)"
+   },
+   "num": "S.J.Res. 139",
+   "number": 139,
+   "reached": 2,
+   "sponsor": {
+    "n": "Michael F. Bennet",
+    "p": "D",
+    "s": "CO"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-19",
+     "e": "Senate Committee on Environment and Public Works discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-19",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-29",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 52. Record Vote Number: 110. (CR S2106)",
+     "fn": "cg",
+     "v": "46–52"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Air Plan Disapproval; Colorado; Regional Haze Plan for the Second Implementation Period\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/139"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/141"
+    }
+   },
+   "id": "119-sjres141",
+   "introduced": "2026-03-19",
+   "latest": {
+    "actionDate": "2026-05-13",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 122. (consideration: CR S2265)"
+   },
+   "num": "S.J.Res. 141",
+   "number": 141,
+   "reached": 2,
+   "sponsor": {
+    "n": "Raphael G. Warnock",
+    "p": "D",
+    "s": "GA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-19",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-27",
+     "e": "Senate Committee on Banking, Housing, and Urban Affairs discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-13",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 122. (consideration: CR S2265)",
+     "fn": "cg",
+     "v": "50–50"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Debt Collection Practices (Regulation F); Deceptive and Unfair Collection of Medical Debt\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/141"
   },
   {
    "area": "International Affairs",
@@ -41727,6 +42125,548 @@
    "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
    "type": "sjres",
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/184"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 9,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "CA",
+     "CT",
+     "IL",
+     "MD",
+     "NJ",
+     "NY",
+     "OR",
+     "WI"
+    ],
+    "t": 9
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/185"
+    }
+   },
+   "id": "119-sjres185",
+   "introduced": "2026-04-27",
+   "latest": {
+    "actionDate": "2026-06-24",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)"
+   },
+   "num": "S.J.Res. 185",
+   "number": 185,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-19",
+     "e": "Senate Committee on Foreign Relations discharged by Yea-Nay Vote. 50 - 47. Record Vote Number: 129. (consideration: CR S2355)",
+     "fn": "cg",
+     "v": "50–47"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-24",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)",
+     "fn": "cg",
+     "v": "47–50"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/185"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/187"
+    }
+   },
+   "id": "119-sjres187",
+   "introduced": "2026-04-27",
+   "latest": {
+    "actionDate": "2026-08-05",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
+   },
+   "num": "S.J.Res. 187",
+   "number": 187,
+   "reached": 2,
+   "sponsor": {
+    "n": "Sheldon Whitehouse",
+    "p": "D",
+    "s": "RI"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-28",
+     "e": "Senate Committee on Environment and Public Works discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-05",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222.",
+     "fn": "cg",
+     "v": "48–50"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Modification to the Start of the Submission Period for Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS) Reporting and Recordkeeping Under TSCA 8(a)(7)\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/187"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/188"
+    }
+   },
+   "id": "119-sjres188",
+   "introduced": "2026-04-27",
+   "latest": {
+    "actionDate": "2026-06-03",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 53. Record Vote Number: 135. (CR S2509)"
+   },
+   "num": "S.J.Res. 188",
+   "number": 188,
+   "reached": 2,
+   "sponsor": {
+    "n": "Sheldon Whitehouse",
+    "p": "D",
+    "s": "RI"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-12",
+     "e": "Senate Committee on Environment and Public Works discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-03",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 53. Record Vote Number: 135. (CR S2509)",
+     "fn": "cg",
+     "v": "46–53"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"National Emission Standards for Hazardous Air Pollutants: Coal- and Oil-Fired Electric Utility Steam Generating Units: Final Repeal\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/188"
+  },
+  {
+   "area": "Immigration",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "IL"
+    ],
+    "t": 1
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/190"
+    }
+   },
+   "id": "119-sjres190",
+   "introduced": "2026-04-30",
+   "latest": {
+    "actionDate": "2026-06-16",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)"
+   },
+   "num": "S.J.Res. 190",
+   "number": 190,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-30",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-03",
+     "e": "Senate Committee on the Judiciary discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-16",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)",
+     "fn": "cg",
+     "v": "46–48"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Executive Office for Immigration Review relating to \"Appellate Procedures for the Board of Immigration Appeals\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/190"
+  },
+  {
+   "area": "Education",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 7,
+    "i": 1,
+    "r": 0,
+    "st": [
+     "MD",
+     "NM",
+     "NY",
+     "VA",
+     "VT",
+     "WA"
+    ],
+    "t": 8
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/196"
+    }
+   },
+   "id": "119-sjres196",
+   "introduced": "2026-06-04",
+   "latest": {
+    "actionDate": "2026-06-24",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 45 - 52. Record Vote Number: 190. (CR S3193)"
+   },
+   "num": "S.J.Res. 196",
+   "number": 196,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jeff Merkley",
+    "p": "D",
+    "s": "OR"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-06-04",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-10",
+     "e": "Senate Committee on Health, Education, Labor, and Pensions discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-24",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 45 - 52. Record Vote Number: 190. (CR S3193)",
+     "fn": "cg",
+     "v": "45–52"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to \"Reimagining and Improving Student Education-Federal Student Loan Program Final Regulations\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/196"
+  },
+  {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 14,
+    "i": 1,
+    "r": 0,
+    "st": [
+     "CO",
+     "CT",
+     "IL",
+     "MA",
+     "MD",
+     "ME",
+     "MN",
+     "NH",
+     "NM",
+     "NY",
+     "OR",
+     "VA",
+     "WA"
+    ],
+    "t": 15
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/197"
+    }
+   },
+   "id": "119-sjres197",
+   "introduced": "2026-06-17",
+   "latest": {
+    "actionDate": "2026-09-29",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 251. (consideration: CR S5139-5140)"
+   },
+   "num": "S.J.Res. 197",
+   "number": 197,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tammy Baldwin",
+    "p": "D",
+    "s": "WI"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-06-17",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-14",
+     "e": "Senate Committee on Health, Education, Labor, and Pensions discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 251. (consideration: CR S5139-5140)",
+     "fn": "cg",
+     "v": "48–51"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Program\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/197"
+  },
+  {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 20,
+    "i": 1,
+    "r": 0,
+    "st": [
+     "AZ",
+     "CT",
+     "GA",
+     "IL",
+     "MA",
+     "MD",
+     "MN",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "OR",
+     "VA",
+     "VT",
+     "WA",
+     "WI"
+    ],
+    "t": 21
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/198"
+    }
+   },
+   "id": "119-sjres198",
+   "introduced": "2026-06-24",
+   "latest": {
+    "actionDate": "2026-07-16",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 50. Record Vote Number: 199."
+   },
+   "num": "S.J.Res. 198",
+   "number": 198,
+   "reached": 2,
+   "sponsor": {
+    "n": "Ron Wyden",
+    "p": "D",
+    "s": "OR"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-06-24",
+     "e": "Senate Committee on Finance discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-24",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-16",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 50. Record Vote Number: 199.",
+     "fn": "cg",
+     "v": "46–50"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Medicare Program; Implementation of Prior Authorization for Select Services for the Wasteful and Inappropriate Services Reduction (WISeR) Model\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/198"
+  },
+  {
+   "area": "Child care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 15,
+    "i": 2,
+    "r": 0,
+    "st": [
+     "AZ",
+     "CA",
+     "CT",
+     "HI",
+     "MA",
+     "MD",
+     "ME",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "OR",
+     "VT"
+    ],
+    "t": 17
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/199"
+    }
+   },
+   "id": "119-sjres199",
+   "introduced": "2026-06-24",
+   "latest": {
+    "actionDate": "2026-07-30",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
+   },
+   "num": "S.J.Res. 199",
+   "number": 199,
+   "reached": 2,
+   "sponsor": {
+    "n": "Patty Murray",
+    "p": "D",
+    "s": "WA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-06-24",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-28",
+     "e": "Senate Committee on Health, Education, Labor, and Pensions discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-30",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215.",
+     "fn": "cg",
+     "v": "47–52"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-30",
+     "e": "Motion to proceed to consideration of measure made in Senate. (CR S4355)",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Health and Human Services relating to \"Restoring Flexibility in the Child Care and Development Fund (CCDF)\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/199"
   },
   {
    "area": "International Affairs",
@@ -42804,6 +43744,130 @@
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/59"
   },
   {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/60"
+    }
+   },
+   "id": "119-sjres60",
+   "introduced": "2025-06-27",
+   "latest": {
+    "actionDate": "2025-09-16",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 520. (consideration: CR S6631)"
+   },
+   "num": "S.J.Res. 60",
+   "number": 60,
+   "reached": 2,
+   "sponsor": {
+    "n": "Sheldon Whitehouse",
+    "p": "D",
+    "s": "RI"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-06-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-08-01",
+     "e": "Senate Committee on Environment and Public Works discharged by petition pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-09-16",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 520. (consideration: CR S6631)",
+     "fn": "cg",
+     "v": "47–51"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Emissions Budget and Allowance Allocations for Indiana Under the Revised Cross-State Air Pollution Rule Update\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/60"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 5,
+    "st": [
+     "AL",
+     "FL",
+     "KY",
+     "OK",
+     "TN"
+    ],
+    "t": 5
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/69"
+    }
+   },
+   "id": "119-sjres69",
+   "introduced": "2025-07-24",
+   "latest": {
+    "actionDate": "2025-10-29",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 25 - 72. Record Vote Number: 597."
+   },
+   "num": "S.J.Res. 69",
+   "number": 69,
+   "reached": 2,
+   "sponsor": {
+    "n": "John Kennedy",
+    "p": "R",
+    "s": "LA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-07-24",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-15",
+     "e": "Senate Committee on Environment and Public Works discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-29",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 25 - 72. Record Vote Number: 597.",
+     "fn": "cg",
+     "v": "25–72"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to \"Record of Decision for the Barred Owl Management Strategy; Washington, Oregon, and California\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/69"
+  },
+  {
    "area": "Science, Technology, Communications",
    "auto": true,
    "congress": 119,
@@ -42967,6 +44031,67 @@
    "title": "A joint resolution terminating the national emergency declared with respect to energy.",
    "type": "sjres",
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/71"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "RI"
+    ],
+    "t": 1
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/76"
+    }
+   },
+   "id": "119-sjres76",
+   "introduced": "2025-09-04",
+   "latest": {
+    "actionDate": "2025-11-19",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 51. Record Vote Number: 622."
+   },
+   "num": "S.J.Res. 76",
+   "number": 76,
+   "reached": 2,
+   "sponsor": {
+    "n": "Adam B. Schiff",
+    "p": "D",
+    "s": "CA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-09-04",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-09-16",
+     "e": "Senate Committee on Environment and Public Works discharged by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-11-19",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 51. Record Vote Number: 622.",
+     "fn": "cg",
+     "v": "46–51"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Extension of Deadlines in Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review Final Rule\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/76"
   },
   {
    "area": "Foreign Trade and International Finance",
@@ -43403,6 +44528,162 @@
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/83"
   },
   {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 41,
+    "i": 2,
+    "r": 0,
+    "st": [
+     "AZ",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "GA",
+     "HI",
+     "IL",
+     "MA",
+     "MD",
+     "ME",
+     "MI",
+     "MN",
+     "NH",
+     "NJ",
+     "NM",
+     "NV",
+     "NY",
+     "OR",
+     "RI",
+     "VA",
+     "VT",
+     "WA",
+     "WI"
+    ],
+    "t": 43
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/84"
+    }
+   },
+   "id": "119-sjres84",
+   "introduced": "2025-09-30",
+   "latest": {
+    "actionDate": "2026-01-13",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 8."
+   },
+   "num": "S.J.Res. 84",
+   "number": 84,
+   "reached": 2,
+   "sponsor": {
+    "n": "Mark R. Warner",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-09-30",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-09",
+     "e": "Senate Committee on Health, Education, Labor, and Pensions discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-13",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 8.",
+     "fn": "cg",
+     "v": "47–52"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-13",
+     "e": "Motion to proceed to consideration of measure made in Senate. (consideration: CR S147-157; text: CR S147)",
+     "fn": "cg",
+     "v": "147–157"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services relating to \"Patient Protection and Affordable Care Act; Marketplace Integrity and Affordability\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/84"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/86"
+    }
+   },
+   "id": "119-sjres86",
+   "introduced": "2025-10-01",
+   "latest": {
+    "actionDate": "2026-01-07",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 43 - 50. Record Vote Number: 4."
+   },
+   "num": "S.J.Res. 86",
+   "number": 86,
+   "reached": 2,
+   "sponsor": {
+    "n": "Sheldon Whitehouse",
+    "p": "D",
+    "s": "RI"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-10-01",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-09",
+     "e": "Senate Committee on Environment and Public Works discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-07",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 43 - 50. Record Vote Number: 4.",
+     "fn": "cg",
+     "v": "43–50"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-07",
+     "e": "Motion to proceed to consideration of measure made in Senate. (CR S72)",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Air Plan Approval; South Dakota; Regional Haze Plan for the Second Implementation Period\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/86"
+  },
+  {
    "area": "Foreign Trade and International Finance",
    "auto": true,
    "congress": 119,
@@ -43550,6 +44831,69 @@
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/90"
   },
   {
+   "area": "Taxation",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 1,
+    "r": 0,
+    "st": [
+     "MD",
+     "ME",
+     "MI"
+    ],
+    "t": 3
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/95"
+    }
+   },
+   "id": "119-sjres95",
+   "introduced": "2025-11-18",
+   "latest": {
+    "actionDate": "2026-02-10",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 35. (CR S543)"
+   },
+   "num": "S.J.Res. 95",
+   "number": 95,
+   "reached": 2,
+   "sponsor": {
+    "n": "Ron Wyden",
+    "p": "D",
+    "s": "OR"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-11-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-18",
+     "e": "Senate Committee on Finance discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-02-10",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 35. (CR S543)",
+     "fn": "cg",
+     "v": "47–51"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to \"Interim Guidance Simplifying Application of the Corporate Alternative Minimum Tax to Partnerships\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/95"
+  },
+  {
    "area": "International Affairs",
    "auto": true,
    "congress": 119,
@@ -43640,10 +44984,80 @@
    "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against Venezuela that have not been authorized by Congress.",
    "type": "sjres",
    "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/98"
+  },
+  {
+   "area": "Immigration",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 10,
+    "i": 1,
+    "r": 0,
+    "st": [
+     "CA",
+     "CO",
+     "DE",
+     "IL",
+     "MA",
+     "MD",
+     "ME",
+     "NH",
+     "NV",
+     "VT"
+    ],
+    "t": 11
+   },
+   "fetched": "2026-11-05T08:16:03+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/99"
+    }
+   },
+   "id": "119-sjres99",
+   "introduced": "2025-12-10",
+   "latest": {
+    "actionDate": "2026-04-29",
+    "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 111. (CR S2106)"
+   },
+   "num": "S.J.Res. 99",
+   "number": 99,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jacky Rosen",
+    "p": "D",
+    "s": "NV"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-12-10",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-24",
+     "e": "Senate Committee on the Judiciary discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-29",
+     "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 111. (CR S2106)",
+     "fn": "cg",
+     "v": "47–50"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by U.S. Citizenship and Immigration Services relating to \"Removal of the Automatic Extension of Employment Authorization Documents\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/99"
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T08:00:24+00:00",
+ "generatedAt": "2026-11-05T08:16:03+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -43757,720 +45171,780 @@
     "d": "2026-09-15",
     "measure": "HJRES 210",
     "n": 306,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "211",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Nonroad Engine Pollution Control Standards; Ocean-Going Vessels At-Berth; Notice of Decision\".",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026306",
-    "y": ""
+    "y": "216"
    },
    {
     "ch": "H",
     "d": "2026-09-15",
     "measure": "HR 9500",
     "n": 305,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "17",
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
     "result": "Passed",
-    "title": "",
+    "title": "Tax Relief for Fraud Victims Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026305",
-    "y": ""
+    "y": "408"
    },
    {
     "ch": "H",
     "d": "2026-09-15",
     "measure": "HR 8278",
     "n": 302,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "7",
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
     "result": "Passed",
-    "title": "",
+    "title": "Fostering the Use of Technology to Uphold Regulatory Effectiveness in Supervision Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026302",
-    "y": ""
+    "y": "417"
    },
    {
     "ch": "H",
     "d": "2026-09-01",
     "measure": "HRES 1498",
     "n": 292,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "2",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "In the matter of allegations relating to Representative Chuck Edwards.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026292",
-    "y": ""
+    "y": "413"
    },
    {
     "ch": "H",
     "d": "2026-09-01",
     "measure": "HRES 1499",
     "n": 288,
-    "n_": "",
-    "q": "Recorded Vote",
+    "n_": "208",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 1501) to amend the FAST Act to include certain mineral production activities as a covered project, and for other purposes; providing for consideration of the bill (H.R. 9436) to amend the Consolidated Appropriations Act, 2023 to extend the time period for which certain regulations concerning the North Atlantic right whale are effective; providing for consideration of the resolution (H. Res. 1490) providing for the condemnation and denouncement of socialism in all its forms, and for other purposes; providing for consideration of the bill (H.R. 4795) to amend the Higher Education Act of 1965 to prohibit an institution that participates in a nonexpressive commercial boycott of Israel from being eligible for certain funds under that Act, to require an institution that participates in certain programs under that Act to certify that students are not unreasonably obstructed from participating in academic programs in Israel, and for other purposes; and relating to consideration of motions to suspend the rules.",
+    "type": "Recorded Vote",
     "u": "https://clerk.house.gov/Votes/2026288",
-    "y": ""
+    "y": "210"
    },
    {
     "ch": "H",
     "d": "2026-09-01",
     "measure": "HRES 1499",
     "n": 287,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "205",
+    "q": "On Ordering the Previous Question",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 1501) to amend the FAST Act to include certain mineral production activities as a covered project, and for other purposes; providing for consideration of the bill (H.R. 9436) to amend the Consolidated Appropriations Act, 2023 to extend the time period for which certain regulations concerning the North Atlantic right whale are effective; providing for consideration of the resolution (H. Res. 1490) providing for the condemnation and denouncement of socialism in all its forms, and for other purposes; providing for consideration of the bill (H.R. 4795) to amend the Higher Education Act of 1965 to prohibit an institution that participates in a nonexpressive commercial boycott of Israel from being eligible for certain funds under that Act, to require an institution that participates in certain programs under that Act to certify that students are not unreasonably obstructed from participating in academic programs in Israel, and for other purposes; and relating to consideration of motions to suspend the rules.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026287",
-    "y": ""
+    "y": "212"
    },
    {
     "ch": "H",
     "d": "2026-09-01",
     "measure": "HR 6500",
     "n": 286,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "48",
+    "q": "On Motion to Suspend the Rules and Concur in the Senate Amendments",
     "result": "Passed",
-    "title": "",
+    "title": "Continuing Appropriations and Extensions Act, 2027",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026286",
-    "y": ""
+    "y": "370"
    },
    {
     "ch": "H",
     "d": "2026-08-31",
     "measure": "S 32",
     "n": 285,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "10",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "LACA",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026285",
-    "y": ""
+    "y": "378"
    },
    {
     "ch": "H",
     "d": "2026-08-31",
     "measure": "S 307",
     "n": 284,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "8",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "Prison Staff Safety Enhancement Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026284",
-    "y": ""
+    "y": "376"
    },
    {
     "ch": "H",
     "d": "2026-04-21",
     "measure": "S 1020",
     "n": 129,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "14",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "A bill to require the Federal Energy Regulatory Commission to extend the time period during which licensees are required to commence construction of certain hydropower projects.",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026129",
-    "y": ""
+    "y": "394"
    },
    {
     "ch": "H",
     "d": "2026-04-21",
     "measure": "HR 5201",
     "n": 127,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "5",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "Kari's Law Reporting Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026127",
-    "y": ""
+    "y": "405"
    },
    {
     "ch": "H",
     "d": "2026-04-20",
     "measure": "HR 5200",
     "n": 126,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "7",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "Emergency Reporting Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026126",
-    "y": ""
+    "y": "386"
    },
    {
     "ch": "H",
     "d": "2026-04-17",
     "measure": "HRES 1175",
     "n": 124,
-    "n_": "",
-    "q": "Recorded Vote",
+    "n_": "228",
+    "q": "On Agreeing to the Resolution",
     "result": "Failed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 8035) to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978 through October 20, 2027, and for other purposes.",
+    "type": "Recorded Vote",
     "u": "https://clerk.house.gov/Votes/2026124",
-    "y": ""
+    "y": "197"
    },
    {
     "ch": "H",
     "d": "2026-04-17",
     "measure": "",
     "n": 123,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "220",
+    "q": "On Agreeing to the Amendment",
     "result": "Failed",
     "title": "",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026123",
-    "y": ""
+    "y": "200"
    },
    {
     "ch": "H",
     "d": "2026-04-17",
     "measure": "",
     "n": 122,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "210",
+    "q": "On Ordering the Previous Question",
     "result": "Passed",
     "title": "",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026122",
-    "y": ""
+    "y": "211"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HRES 1156",
     "n": 121,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "207",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Expressing support for tax policies that support working families.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026121",
-    "y": ""
+    "y": "219"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HR 1689",
     "n": 120,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "204",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "To require the Secretary of Homeland Security to designate Haiti for temporary protected status.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026120",
-    "y": ""
+    "y": "224"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HRES 965",
     "n": 119,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "207",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 1689) to require the Secretary of Homeland Security to designate Haiti for temporary protected status.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026119",
-    "y": ""
+    "y": "220"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HR 6398",
     "n": 118,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "205",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "RED Tape Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026118",
-    "y": ""
+    "y": "222"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HR 6398",
     "n": 117,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "216",
+    "q": "On Motion to Recommit",
     "result": "Failed",
-    "title": "",
+    "title": "RED Tape Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026117",
-    "y": ""
+    "y": "213"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HR 6409",
     "n": 116,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "208",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "FENCES Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026116",
-    "y": ""
+    "y": "220"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HR 6409",
     "n": 115,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "215",
+    "q": "On Motion to Recommit",
     "result": "Failed",
-    "title": "",
+    "title": "FENCES Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026115",
-    "y": ""
+    "y": "213"
    },
    {
     "ch": "H",
     "d": "2026-04-16",
     "measure": "HCONRES 40",
     "n": 114,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "214",
+    "q": "On Agreeing to the Resolution",
     "result": "Failed",
-    "title": "",
+    "title": "Directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities with Iran.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026114",
-    "y": ""
+    "y": "213"
    },
    {
     "ch": "H",
     "d": "2026-04-15",
     "measure": "HRES 965",
     "n": 113,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "209",
+    "q": "On Motion to Discharge",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 1689) to require the Secretary of Homeland Security to designate Haiti for temporary protected status.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026113",
-    "y": ""
+    "y": "219"
    },
    {
     "ch": "H",
     "d": "2026-04-15",
     "measure": "HRES 1174",
     "n": 112,
-    "n_": "",
-    "q": "Recorded Vote",
+    "n_": "212",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 6387) to amend the Clean Air Act to require revisions to regulations governing the review and handling of air quality monitoring data influenced by exceptional events or actions to mitigate wildfire risk; providing for consideration of the bill (H.R. 6398) to amend the Clean Air Act relating to review by the Environmental Protection Agency of proposed legislation; providing for consideration of the bill (H.R. 6409) to amend the Clean Air Act to clarify standards for emissions emanating from outside of the United States, and for other purposes; and providing for consideration of the resolution (H. Res. 1156) expressing support for tax policies that support working families.",
+    "type": "Recorded Vote",
     "u": "https://clerk.house.gov/Votes/2026112",
-    "y": ""
+    "y": "214"
    },
    {
     "ch": "H",
     "d": "2026-04-15",
     "measure": "HRES 1174",
     "n": 111,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "211",
+    "q": "On Ordering the Previous Question",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 6387) to amend the Clean Air Act to require revisions to regulations governing the review and handling of air quality monitoring data influenced by exceptional events or actions to mitigate wildfire risk; providing for consideration of the bill (H.R. 6398) to amend the Clean Air Act relating to review by the Environmental Protection Agency of proposed legislation; providing for consideration of the bill (H.R. 6409) to amend the Clean Air Act to clarify standards for emissions emanating from outside of the United States, and for other purposes; and providing for consideration of the resolution (H. Res. 1156) expressing support for tax policies that support working families.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/2026111",
-    "y": ""
+    "y": "212"
    },
    {
     "ch": "H",
     "d": "2026-04-14",
     "measure": "HR 7613",
     "n": 110,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "10",
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
     "result": "Passed",
-    "title": "",
+    "title": "ALERT Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026110",
-    "y": ""
+    "y": "396"
    },
    {
     "ch": "H",
     "d": "2026-04-14",
     "measure": "HR 1011",
     "n": 109,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "10",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "Emergency Conservation Program Improvement Act of 2025",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/2026109",
-    "y": ""
+    "y": "395"
    },
    {
     "ch": "H",
     "d": "2026-03-05",
     "measure": "HR 7744",
     "n": 87,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "209",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "Department of Homeland Security Appropriations Act, 2026",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202687",
-    "y": ""
+    "y": "221"
    },
    {
     "ch": "H",
     "d": "2026-03-05",
     "measure": "HR 7744",
     "n": 86,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "217",
+    "q": "On Motion to Recommit",
     "result": "Failed",
-    "title": "",
+    "title": "Department of Homeland Security Appropriations Act, 2026",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202686",
-    "y": ""
+    "y": "212"
    },
    {
     "ch": "H",
     "d": "2026-03-05",
     "measure": "HCONRES 38",
     "n": 85,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "219",
+    "q": "On Agreeing to the Resolution",
     "result": "Failed",
-    "title": "",
+    "title": "Directing the President pursuant to section 5(c) of the War Powers Resolution to remove United States Armed Forces from unauthorized hostilities in the Islamic Republic of Iran.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202685",
-    "y": ""
+    "y": "212"
    },
    {
     "ch": "H",
     "d": "2026-03-05",
     "measure": "HRES 1099",
     "n": 84,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "53",
+    "q": "On Motion to Suspend the Rules and Agree",
     "result": "Passed",
-    "title": "",
+    "title": "Reaffirming Iran remains the largest state sponsor of terrorism.",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202684",
-    "y": ""
+    "y": "372"
    },
    {
     "ch": "H",
     "d": "2026-03-04",
     "measure": "HRES 1100",
     "n": 83,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "65",
+    "q": "On Motion to Refer",
     "result": "Passed",
-    "title": "",
+    "title": "Directing the Committee on Ethics to preserve and publicly release records of the Committee's review of violations or alleged violations of clause 9 (as it pertains to acts of sexual harassment) and clause 18 of rule XXIII of the Rules of the House of Representatives.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202683",
-    "y": ""
+    "y": "357"
    },
    {
     "ch": "H",
     "d": "2026-03-04",
     "measure": "HR 6472",
     "n": 82,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "72",
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
     "result": "Passed",
-    "title": "",
+    "title": "Territorial Student Access to Higher Education Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202682",
-    "y": ""
+    "y": "351"
    },
    {
     "ch": "H",
     "d": "2026-03-04",
     "measure": "S 723",
     "n": 81,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "40",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "Tribal Trust Land Homeownership Act of 2025",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202681",
-    "y": ""
+    "y": "384"
    },
    {
     "ch": "H",
     "d": "2026-03-04",
     "measure": "HRES 1095",
     "n": 80,
-    "n_": "",
-    "q": "Recorded Vote",
+    "n_": "209",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 7744) making appropriations for the Department of Homeland Security for the fiscal year ending September 30, 2026, and for other purposes.",
+    "type": "Recorded Vote",
     "u": "https://clerk.house.gov/Votes/202680",
-    "y": ""
+    "y": "211"
    },
    {
     "ch": "H",
     "d": "2026-03-04",
     "measure": "HRES 1095",
     "n": 79,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "208",
+    "q": "On Ordering the Previous Question",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 7744) making appropriations for the Department of Homeland Security for the fiscal year ending September 30, 2026, and for other purposes.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202679",
-    "y": ""
+    "y": "213"
    },
    {
     "ch": "H",
     "d": "2026-02-25",
     "measure": "HR 4758",
     "n": 78,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "199",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "Homeowner Energy Freedom Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202678",
-    "y": ""
+    "y": "210"
    },
    {
     "ch": "H",
     "d": "2026-02-25",
     "measure": "HR 4758",
     "n": 77,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "208",
+    "q": "On Motion to Recommit",
     "result": "Failed",
-    "title": "",
+    "title": "Homeowner Energy Freedom Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202677",
-    "y": ""
+    "y": "198"
    },
    {
     "ch": "H",
     "d": "2026-02-24",
     "measure": "HR 4626",
     "n": 76,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "190",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "Home Appliance Protection and Affordability Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202676",
-    "y": ""
+    "y": "217"
    },
    {
     "ch": "H",
     "d": "2026-02-24",
     "measure": "HR 4626",
     "n": 75,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "208",
+    "q": "On Motion to Recommit",
     "result": "Failed",
-    "title": "",
+    "title": "Home Appliance Protection and Affordability Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202675",
-    "y": ""
+    "y": "197"
    },
    {
     "ch": "H",
     "d": "2026-02-24",
     "measure": "HRES 1075",
     "n": 74,
-    "n_": "",
-    "q": "Recorded Vote",
+    "n_": "187",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 4626) to amend the Energy Policy and Conservation Act to prohibit the Secretary of Energy from prescribing any new or amended energy conservation standard for a product that is not technologically feasible and economically justified, and for other purposes, and providing for consideration of the bill (H.R. 4758) to repeal provisions of Public Law 117–169 relating to taxpayer subsidies for home electrification, and for other purposes.",
+    "type": "Recorded Vote",
     "u": "https://clerk.house.gov/Votes/202674",
-    "y": ""
+    "y": "208"
    },
    {
     "ch": "H",
     "d": "2026-02-24",
     "measure": "HRES 1075",
     "n": 73,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "189",
+    "q": "On Ordering the Previous Question",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 4626) to amend the Energy Policy and Conservation Act to prohibit the Secretary of Energy from prescribing any new or amended energy conservation standard for a product that is not technologically feasible and economically justified, and for other purposes, and providing for consideration of the bill (H.R. 4758) to repeal provisions of Public Law 117–169 relating to taxpayer subsidies for home electrification, and for other purposes.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202673",
-    "y": ""
+    "y": "208"
    },
    {
     "ch": "H",
     "d": "2026-02-24",
     "measure": "S 2503",
     "n": 72,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "133",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Failed",
-    "title": "",
+    "title": "ROTOR Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202672",
-    "y": ""
+    "y": "264"
    },
    {
     "ch": "H",
     "d": "2026-02-24",
     "measure": "HR 6329",
     "n": 71,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "1",
+    "q": "On Motion to Suspend the Rules and Pass",
     "result": "Passed",
-    "title": "",
+    "title": "Information Quality Assurance Act of 2025",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202671",
-    "y": ""
+    "y": "362"
    },
    {
     "ch": "H",
     "d": "2026-01-12",
     "measure": "HR 6504",
     "n": 15,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "45",
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
     "result": "Passed",
-    "title": "",
+    "title": "Haiti Economic Lift Program Extension Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202615",
-    "y": ""
+    "y": "345"
    },
    {
     "ch": "H",
     "d": "2026-01-12",
     "measure": "HR 6500",
     "n": 14,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "54",
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
     "result": "Passed",
-    "title": "",
+    "title": "Continuing Appropriations and Extensions Act, 2027",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202614",
-    "y": ""
+    "y": "340"
    },
    {
     "ch": "H",
     "d": "2026-01-12",
     "measure": "HR 2683",
     "n": 13,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "22",
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
     "result": "Passed",
-    "title": "",
+    "title": "Remote Access Security Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202613",
-    "y": ""
+    "y": "369"
    },
    {
     "ch": "H",
     "d": "2026-01-09",
     "measure": "HR 5184",
     "n": 12,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "147",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "Affordable HOMES Act",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202612",
-    "y": ""
+    "y": "263"
    },
    {
     "ch": "H",
     "d": "2026-01-08",
     "measure": "HR 1834",
     "n": 11,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "196",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "To advance policy priorities that will break the gridlock.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202611",
-    "y": ""
+    "y": "230"
    },
    {
     "ch": "H",
     "d": "2026-01-08",
     "measure": "HRES 780",
     "n": 10,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "202",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 1834) to advance policy priorities that will break the gridlock.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202610",
-    "y": ""
+    "y": "224"
    },
    {
     "ch": "H",
     "d": "2026-01-08",
     "measure": "HR 131",
     "n": 9,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "177",
+    "q": "Passage, Objections of the President To The Contrary Notwithstanding",
     "result": "Failed",
-    "title": "",
+    "title": "Finish the Arkansas Valley Conduit Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/20269",
-    "y": ""
+    "y": "248"
    },
    {
     "ch": "H",
     "d": "2026-01-08",
     "measure": "HR 504",
     "n": 8,
-    "n_": "",
-    "q": "2/3 Yea-And-Nay",
+    "n_": "188",
+    "q": "Passage, Objections of the President To The Contrary Notwithstanding",
     "result": "Failed",
-    "title": "",
+    "title": "Miccosukee Reserved Area Amendments Act",
+    "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/20268",
-    "y": ""
+    "y": "236"
    },
    {
     "ch": "H",
     "d": "2026-01-08",
     "measure": "HR 6938",
     "n": 7,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "28",
+    "q": "On Passage",
     "result": "Passed",
-    "title": "",
+    "title": "Commerce, Justice, Science; Energy and Water Development; and Interior and Environment Appropriations Act, 2026",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/20267",
-    "y": ""
+    "y": "397"
    },
    {
     "ch": "H",
     "d": "2026-01-08",
     "measure": "HR 6938",
     "n": 6,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "6",
+    "q": "On Retaining Divisions B and C",
     "result": "Passed",
-    "title": "",
+    "title": "Commerce, Justice, Science; Energy and Water Development; and Interior and Environment Appropriations Act, 2026",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/20266",
-    "y": ""
+    "y": "419"
    },
    {
     "ch": "H",
     "d": "2026-01-08",
     "measure": "HR 6938",
     "n": 5,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "47",
+    "q": "On Retaining Division A",
     "result": "Passed",
-    "title": "",
+    "title": "Commerce, Justice, Science; Energy and Water Development; and Interior and Environment Appropriations Act, 2026",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/20265",
-    "y": ""
+    "y": "375"
    },
    {
     "ch": "H",
     "d": "2026-01-07",
     "measure": "HRES 780",
     "n": 4,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "205",
+    "q": "On Motion to Discharge",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 1834) to advance policy priorities that will break the gridlock.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/20264",
-    "y": ""
+    "y": "221"
    },
    {
     "ch": "H",
     "d": "2026-01-07",
     "measure": "HRES 977",
     "n": 3,
-    "n_": "",
-    "q": "Recorded Vote",
+    "n_": "212",
+    "q": "On Agreeing to the Resolution",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 4593) to amend the Energy Policy and Conservation Act to revise the definition of showerhead; providing for consideration of the bill (H.R. 5184) to prohibit the Secretary of Energy from enforcing energy efficiency standards applicable to manufactured housing, and for other purposes; and providing for consideration of the bill (H.R. 6938) making consolidated appropriations for the fiscal year ending September 30, 2026, and for other purposes.",
+    "type": "Recorded Vote",
     "u": "https://clerk.house.gov/Votes/20263",
-    "y": ""
+    "y": "214"
    },
    {
     "ch": "H",
     "d": "2026-01-07",
     "measure": "HRES 977",
     "n": 2,
-    "n_": "",
-    "q": "Yea-and-Nay",
+    "n_": "211",
+    "q": "On Ordering the Previous Question",
     "result": "Passed",
-    "title": "",
+    "title": "Providing for consideration of the bill (H.R. 4593) to amend the Energy Policy and Conservation Act to revise the definition of showerhead; providing for consideration of the bill (H.R. 5184) to prohibit the Secretary of Energy from enforcing energy efficiency standards applicable to manufactured housing, and for other purposes; and providing for consideration of the bill (H.R. 6938) making consolidated appropriations for the fiscal year ending September 30, 2026, and for other purposes.",
+    "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/20262",
-    "y": ""
+    "y": "213"
    },
    {
     "ch": "H",
     "d": "2026-01-06",
     "measure": "",
     "n": 1,
-    "n_": "",
-    "q": "Quorum",
+    "n_": "0",
+    "q": "Call of the House",
     "result": "Passed",
     "title": "",
+    "type": "Quorum",
     "u": "https://clerk.house.gov/Votes/20261",
-    "y": ""
+    "y": "0"
    }
   ],
   "senate": [
@@ -44509,7 +45983,7 @@
     "n_": "43",
     "q": "On Cloture on the Motion to Proceed",
     "result": "Cloture on the Motion to Proceed Rejected",
-    "title": "A bill to amend the Public Utility Regulatory Policies Act of 1978 to establish a Federal standard relating to the recovery of the full, incremental costs of upgrades that serve large-load customers, ",
+    "title": "A bill to amend the Public Utility Regulatory Policies Act of 1978 to establish a Federal standard relating to the recovery of the full, incremental costs of upgrades that serve large-load customers, and for other purposes.",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm",
     "y": "57"
    },
@@ -44548,7 +46022,7 @@
     "n_": "51",
     "q": "On the Motion to Proceed",
     "result": "Motion to Proceed Rejected",
-    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare &#38; Medicaid Services of the Department o",
+    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Program\".",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00251.htm",
     "y": "48"
    },
@@ -44769,7 +46243,7 @@
     "n_": "50",
     "q": "On Cloture on the Motion to Proceed",
     "result": "Cloture on the Motion to Proceed Rejected",
-    "title": "To provide for a system of regulation of the offer and sale of digital commodities by the Securities and Exchange Commission and the Commodity Futures Trading Commission, to amend the Federal Reserve ",
+    "title": "To provide for a system of regulation of the offer and sale of digital commodities by the Securities and Exchange Commission and the Commodity Futures Trading Commission, to amend the Federal Reserve Act to prohibit the Federal reserve banks from offering certain products or services directly to an individual, to prohibit the use of central bank digital currency for monetary policy, and for other purposes.",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00234.htm",
     "y": "49"
    },
@@ -44886,7 +46360,7 @@
     "n_": "47",
     "q": "On the Nomination",
     "result": "Nomination Confirmed",
-    "title": "Francis Brooke, of Virginia, to be Deputy Secretary of the Treasury; and George McMaster, of South Carolina, to be an Assistant Secretary of the Treasury; and Erin Browne, of New York, to be an Under ",
+    "title": "Francis Brooke, of Virginia, to be Deputy Secretary of the Treasury; and George McMaster, of South Carolina, to be an Assistant Secretary of the Treasury; and Erin Browne, of New York, to be an Under Secretary of the Treasury; and Sriprakash Kothari, of Massachusetts, to be an Assistant Secretary of the Treasury; and John Crews, of Virginia, to be a Member of the National Credit Union Administration Board for a term expiring August 2, 2031; and Christopher Phelan, of Minnesota, to be Chairman of the Council of Economic Advisers; and Christopher Nassar, of Oklahoma, to be United States Attorney",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00225.htm",
     "y": "51"
    },
@@ -44925,7 +46399,7 @@
     "n_": "50",
     "q": "On the Motion to Proceed",
     "result": "Motion to Proceed Rejected",
-    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Modification to the",
+    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Modification to the Start of the Submission Period for Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS) Reporting and Recordkeeping Under TSCA 8(a)(7)\".",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00222.htm",
     "y": "48"
    },
@@ -44938,7 +46412,7 @@
     "n_": "44",
     "q": "On the Cloture Motion",
     "result": "Cloture Motion Agreed to",
-    "title": "Francis Brooke, of Virginia, to be Deputy Secretary of the Treasury; and George McMaster, of South Carolina, to be an Assistant Secretary of the Treasury; and Erin Browne, of New York, to be an Under ",
+    "title": "Francis Brooke, of Virginia, to be Deputy Secretary of the Treasury; and George McMaster, of South Carolina, to be an Assistant Secretary of the Treasury; and Erin Browne, of New York, to be an Under Secretary of the Treasury; and Sriprakash Kothari, of Massachusetts, to be an Assistant Secretary of the Treasury; and John Crews, of Virginia, to be a Member of the National Credit Union Administration Board for a term expiring August 2, 2031; and Christopher Phelan, of Minnesota, to be Chairman of the Council of Economic Advisers; and Christopher Nassar, of Oklahoma, to be United States Attorney",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00221.htm",
     "y": "50"
    },
@@ -44977,7 +46451,7 @@
     "n_": "4",
     "q": "On Cloture on the Motion to Proceed",
     "result": "Cloture on the Motion to Proceed Agreed to",
-    "title": "A bill to extend duty-free treatment provided with respect to imports from certain countries in Africa under the African Growth and Opportunity Act, to extend customs user fees, and for other purposes",
+    "title": "A bill to extend duty-free treatment provided with respect to imports from certain countries in Africa under the African Growth and Opportunity Act, to extend customs user fees, and for other purposes.",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00218.htm",
     "y": "89"
    },
@@ -45016,7 +46490,7 @@
     "n_": "52",
     "q": "On the Motion to Proceed",
     "result": "Motion to Proceed Rejected",
-    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Health and Human Services relating to \"Restoring F",
+    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Health and Human Services relating to \"Restoring Flexibility in the Child Care and Development Fund (CCDF)\".",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00215.htm",
     "y": "47"
    },
@@ -45224,7 +46698,7 @@
     "n_": "50",
     "q": "On the Motion to Proceed",
     "result": "Motion to Proceed Rejected",
-    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare &#38; Medicaid Services of the Department o",
+    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Medicare Program; Implementation of Prior Authorization for Select Services for the Wasteful and Inappropriate Services Reduction (WISeR) Model\".",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00199.htm",
     "y": "46"
    },

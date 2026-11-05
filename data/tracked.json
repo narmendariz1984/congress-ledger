@@ -442,27 +442,9 @@
   "119-s1318",
   "119-s1383",
   "119-s4784",
-  "119-sjres3"
- ],
- "lastDiscovery": "2026-11-05T08:00:24+00:00",
- "senateBackoff": {
-  "failures": 0,
-  "nextTry": null
- },
- "backfill": {
-  "queue": [],
-  "since": "2025-01-03",
-  "queued": "2026-11-05T07:11:10+00:00",
-  "reason": "re-download for cosponsor states",
-  "finished": "2026-11-05T08:00:24+00:00"
- },
- "rule": "recorded-vote-v2",
- "schema": 2,
- "voteDiscovery": "2026-11-05T08:00:24+00:00",
- "dropped": [
+  "119-sjres3",
   "119-sjres103",
   "119-sjres107",
-  "119-sjres12",
   "119-sjres130",
   "119-sjres132",
   "119-sjres139",
@@ -480,9 +462,373 @@
   "119-sjres76",
   "119-sjres84",
   "119-sjres86",
-  "119-sjres89",
-  "119-sjres91",
   "119-sjres95",
   "119-sjres99"
+ ],
+ "lastDiscovery": "2026-11-05T08:16:03+00:00",
+ "senateBackoff": {
+  "failures": 0,
+  "nextTry": null
+ },
+ "backfill": {
+  "queue": [],
+  "since": "2025-01-03",
+  "queued": "2026-11-05T07:11:10+00:00",
+  "reason": "re-download for cosponsor states",
+  "finished": "2026-11-05T08:16:03+00:00"
+ },
+ "rule": "recorded-vote-v3",
+ "schema": 2,
+ "voteDiscovery": "2026-11-05T08:00:24+00:00",
+ "houseVotes": {
+  "119-2-74": {
+   "q": "On Agreeing to the Resolution",
+   "y": "208",
+   "n": "187"
+  },
+  "119-2-72": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "264",
+   "n": "133"
+  },
+  "119-2-71": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "362",
+   "n": "1"
+  },
+  "119-2-77": {
+   "q": "On Motion to Recommit",
+   "y": "198",
+   "n": "208"
+  },
+  "119-2-73": {
+   "q": "On Ordering the Previous Question",
+   "y": "208",
+   "n": "189"
+  },
+  "119-2-78": {
+   "q": "On Passage",
+   "y": "210",
+   "n": "199"
+  },
+  "119-2-76": {
+   "q": "On Passage",
+   "y": "217",
+   "n": "190"
+  },
+  "119-2-75": {
+   "q": "On Motion to Recommit",
+   "y": "197",
+   "n": "208"
+  },
+  "119-2-285": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "378",
+   "n": "10"
+  },
+  "119-2-81": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "384",
+   "n": "40"
+  },
+  "119-2-302": {
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "y": "417",
+   "n": "7"
+  },
+  "119-2-286": {
+   "q": "On Motion to Suspend the Rules and Concur in the Senate Amendments",
+   "y": "370",
+   "n": "48"
+  },
+  "119-2-112": {
+   "q": "On Agreeing to the Resolution",
+   "y": "214",
+   "n": "212"
+  },
+  "119-2-284": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "376",
+   "n": "8"
+  },
+  "119-2-110": {
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "y": "396",
+   "n": "10"
+  },
+  "119-2-113": {
+   "q": "On Motion to Discharge",
+   "y": "219",
+   "n": "209"
+  },
+  "119-2-79": {
+   "q": "On Ordering the Previous Question",
+   "y": "213",
+   "n": "208"
+  },
+  "119-2-85": {
+   "q": "On Agreeing to the Resolution",
+   "y": "212",
+   "n": "219"
+  },
+  "119-2-83": {
+   "q": "On Motion to Refer",
+   "y": "357",
+   "n": "65"
+  },
+  "119-2-84": {
+   "q": "On Motion to Suspend the Rules and Agree",
+   "y": "372",
+   "n": "53"
+  },
+  "119-2-86": {
+   "q": "On Motion to Recommit",
+   "y": "212",
+   "n": "217"
+  },
+  "119-2-87": {
+   "q": "On Passage",
+   "y": "221",
+   "n": "209"
+  },
+  "119-2-109": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "395",
+   "n": "10"
+  },
+  "119-2-114": {
+   "q": "On Agreeing to the Resolution",
+   "y": "213",
+   "n": "214"
+  },
+  "119-2-305": {
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "y": "408",
+   "n": "17"
+  },
+  "119-2-118": {
+   "q": "On Passage",
+   "y": "222",
+   "n": "205"
+  },
+  "119-2-119": {
+   "q": "On Agreeing to the Resolution",
+   "y": "220",
+   "n": "207"
+  },
+  "119-2-288": {
+   "q": "On Agreeing to the Resolution",
+   "y": "210",
+   "n": "208"
+  },
+  "119-2-116": {
+   "q": "On Passage",
+   "y": "220",
+   "n": "208"
+  },
+  "119-2-117": {
+   "q": "On Motion to Recommit",
+   "y": "213",
+   "n": "216"
+  },
+  "119-2-306": {
+   "q": "On Passage",
+   "y": "216",
+   "n": "211"
+  },
+  "119-2-111": {
+   "q": "On Ordering the Previous Question",
+   "y": "212",
+   "n": "211"
+  },
+  "119-2-80": {
+   "q": "On Agreeing to the Resolution",
+   "y": "211",
+   "n": "209"
+  },
+  "119-2-82": {
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "y": "351",
+   "n": "72"
+  },
+  "119-2-115": {
+   "q": "On Motion to Recommit",
+   "y": "213",
+   "n": "215"
+  },
+  "119-2-124": {
+   "q": "On Agreeing to the Resolution",
+   "y": "197",
+   "n": "228"
+  },
+  "119-2-287": {
+   "q": "On Ordering the Previous Question",
+   "y": "212",
+   "n": "205"
+  },
+  "119-2-121": {
+   "q": "On Agreeing to the Resolution",
+   "y": "219",
+   "n": "207"
+  },
+  "119-2-120": {
+   "q": "On Passage",
+   "y": "224",
+   "n": "204"
+  },
+  "119-2-123": {
+   "q": "On Agreeing to the Amendment",
+   "y": "200",
+   "n": "220"
+  },
+  "119-2-1": {
+   "q": "Call of the House",
+   "y": "0",
+   "n": "0"
+  },
+  "119-2-2": {
+   "q": "On Ordering the Previous Question",
+   "y": "213",
+   "n": "211"
+  },
+  "119-2-4": {
+   "q": "On Motion to Discharge",
+   "y": "221",
+   "n": "205"
+  },
+  "119-2-3": {
+   "q": "On Agreeing to the Resolution",
+   "y": "214",
+   "n": "212"
+  },
+  "119-2-122": {
+   "q": "On Ordering the Previous Question",
+   "y": "211",
+   "n": "210"
+  },
+  "119-2-10": {
+   "q": "On Agreeing to the Resolution",
+   "y": "224",
+   "n": "202"
+  },
+  "119-2-8": {
+   "q": "Passage, Objections of the President To The Contrary Notwithstanding",
+   "y": "236",
+   "n": "188"
+  },
+  "119-2-9": {
+   "q": "Passage, Objections of the President To The Contrary Notwithstanding",
+   "y": "248",
+   "n": "177"
+  },
+  "119-2-126": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "386",
+   "n": "7"
+  },
+  "119-2-127": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "405",
+   "n": "5"
+  },
+  "119-2-129": {
+   "q": "On Motion to Suspend the Rules and Pass",
+   "y": "394",
+   "n": "14"
+  },
+  "119-2-12": {
+   "q": "On Passage",
+   "y": "263",
+   "n": "147"
+  },
+  "119-2-5": {
+   "q": "On Retaining Division A",
+   "y": "375",
+   "n": "47"
+  },
+  "119-2-6": {
+   "q": "On Retaining Divisions B and C",
+   "y": "419",
+   "n": "6"
+  },
+  "119-2-7": {
+   "q": "On Passage",
+   "y": "397",
+   "n": "28"
+  },
+  "119-2-14": {
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "y": "340",
+   "n": "54"
+  },
+  "119-2-11": {
+   "q": "On Passage",
+   "y": "230",
+   "n": "196"
+  },
+  "119-2-292": {
+   "q": "On Agreeing to the Resolution",
+   "y": "413",
+   "n": "2"
+  },
+  "119-2-13": {
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "y": "369",
+   "n": "22"
+  },
+  "119-2-15": {
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "y": "345",
+   "n": "45"
+  }
+ },
+ "titles": {
+  "119-hres1075": "Providing for consideration of the bill (H.R. 4626) to amend the Energy Policy and Conservation Act to prohibit the Secretary of Energy from prescribing any new or amended energy conservation standard for a product that is not technologically feasible and economically justified, and for other purposes, and providing for consideration of the bill (H.R. 4758) to repeal provisions of Public Law 117\u2013169 relating to taxpayer subsidies for home electrification, and for other purposes.",
+  "119-s2503": "ROTOR Act",
+  "119-hr6329": "Information Quality Assurance Act of 2025",
+  "119-hr4758": "Homeowner Energy Freedom Act",
+  "119-hr4626": "Home Appliance Protection and Affordability Act",
+  "119-s32": "LACA",
+  "119-s723": "Tribal Trust Land Homeownership Act of 2025",
+  "119-hr8278": "Fostering the Use of Technology to Uphold Regulatory Effectiveness in Supervision Act",
+  "119-hr6500": "Continuing Appropriations and Extensions Act, 2027",
+  "119-hres1174": "Providing for consideration of the bill (H.R. 6387) to amend the Clean Air Act to require revisions to regulations governing the review and handling of air quality monitoring data influenced by exceptional events or actions to mitigate wildfire risk; providing for consideration of the bill (H.R. 6398) to amend the Clean Air Act relating to review by the Environmental Protection Agency of proposed legislation; providing for consideration of the bill (H.R. 6409) to amend the Clean Air Act to clarify standards for emissions emanating from outside of the United States, and for other purposes; and providing for consideration of the resolution (H. Res. 1156) expressing support for tax policies that support working families.",
+  "119-s307": "Prison Staff Safety Enhancement Act",
+  "119-hr7613": "ALERT Act",
+  "119-hres965": "Providing for consideration of the bill (H.R. 1689) to require the Secretary of Homeland Security to designate Haiti for temporary protected status.",
+  "119-hres1095": "Providing for consideration of the bill (H.R. 7744) making appropriations for the Department of Homeland Security for the fiscal year ending September 30, 2026, and for other purposes.",
+  "119-hconres38": "Directing the President pursuant to section 5(c) of the War Powers Resolution to remove United States Armed Forces from unauthorized hostilities in the Islamic Republic of Iran.",
+  "119-hres1100": "Directing the Committee on Ethics to preserve and publicly release records of the Committee's review of violations or alleged violations of clause 9 (as it pertains to acts of sexual harassment) and clause 18 of rule XXIII of the Rules of the House of Representatives.",
+  "119-hres1099": "Reaffirming Iran remains the largest state sponsor of terrorism.",
+  "119-hr7744": "Department of Homeland Security Appropriations Act, 2026",
+  "119-hr1011": "Emergency Conservation Program Improvement Act of 2025",
+  "119-hconres40": "Directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities with Iran.",
+  "119-hr9500": "Tax Relief for Fraud Victims Act",
+  "119-hr6398": "RED Tape Act",
+  "119-hres1499": "Providing for consideration of the bill (H.R. 1501) to amend the FAST Act to include certain mineral production activities as a covered project, and for other purposes; providing for consideration of the bill (H.R. 9436) to amend the Consolidated Appropriations Act, 2023 to extend the time period for which certain regulations concerning the North Atlantic right whale are effective; providing for consideration of the resolution (H. Res. 1490) providing for the condemnation and denouncement of socialism in all its forms, and for other purposes; providing for consideration of the bill (H.R. 4795) to amend the Higher Education Act of 1965 to prohibit an institution that participates in a nonexpressive commercial boycott of Israel from being eligible for certain funds under that Act, to require an institution that participates in certain programs under that Act to certify that students are not unreasonably obstructed from participating in academic programs in Israel, and for other purposes; and relating to consideration of motions to suspend the rules.",
+  "119-hr6409": "FENCES Act",
+  "119-hjres210": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Nonroad Engine Pollution Control Standards; Ocean-Going Vessels At-Berth; Notice of Decision\".",
+  "119-hr6472": "Territorial Student Access to Higher Education Act",
+  "119-hres1175": "Providing for consideration of the bill (H.R. 8035) to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978 through October 20, 2027, and for other purposes.",
+  "119-hres1156": "Expressing support for tax policies that support working families.",
+  "119-hr1689": "To require the Secretary of Homeland Security to designate Haiti for temporary protected status.",
+  "119-hres977": "Providing for consideration of the bill (H.R. 4593) to amend the Energy Policy and Conservation Act to revise the definition of showerhead; providing for consideration of the bill (H.R. 5184) to prohibit the Secretary of Energy from enforcing energy efficiency standards applicable to manufactured housing, and for other purposes; and providing for consideration of the bill (H.R. 6938) making consolidated appropriations for the fiscal year ending September 30, 2026, and for other purposes.",
+  "119-hres780": "Providing for consideration of the bill (H.R. 1834) to advance policy priorities that will break the gridlock.",
+  "119-hr504": "Miccosukee Reserved Area Amendments Act",
+  "119-hr131": "Finish the Arkansas Valley Conduit Act",
+  "119-hr5200": "Emergency Reporting Act",
+  "119-hr5201": "Kari's Law Reporting Act",
+  "119-s1020": "A bill to require the Federal Energy Regulatory Commission to extend the time period during which licensees are required to commence construction of certain hydropower projects.",
+  "119-hr5184": "Affordable HOMES Act",
+  "119-hr6938": "Commerce, Justice, Science; Energy and Water Development; and Interior and Environment Appropriations Act, 2026",
+  "119-hr1834": "To advance policy priorities that will break the gridlock.",
+  "119-hres1498": "In the matter of allegations relating to Representative Chuck Edwards.",
+  "119-hr2683": "Remote Access Security Act",
+  "119-hr6504": "Haiti Economic Lift Program Extension Act"
+ },
+ "dropped": [
+  "119-sjres12",
+  "119-sjres89",
+  "119-sjres91"
  ]
 }
