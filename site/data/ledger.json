@@ -2699,7 +2699,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T06:39:20+00:00",
+   "fetched": "2026-11-05T06:41:16+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -16390,7 +16390,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T06:39:20+00:00",
+   "fetched": "2026-11-05T06:41:16+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -19575,7 +19575,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T06:39:20+00:00",
+   "fetched": "2026-11-05T06:41:16+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -31019,6 +31019,224 @@
    "url": "https://www.congress.gov/bill/119th-congress/senate-bill/307"
   },
   {
+   "area": "Courts & justice",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/32"
+    }
+   },
+   "id": "119-s32",
+   "introduced": "2025-01-08",
+   "latest": {
+    "actionDate": "2026-09-16",
+    "text": "Became Public Law No: 119-109."
+   },
+   "law": "Pub. L. 119-109",
+   "num": "S. 32",
+   "number": 32,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-16",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Ted Cruz",
+    "p": "R",
+    "s": "TX"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-01-08",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-12",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S932; text: CR S932)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-12",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-12",
+     "e": "Senate Committee on the Judiciary discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-31",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-31",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 378 - 10 (Roll no. 285). (text: CR H5272)",
+     "fn": "cg",
+     "v": "378–10"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-31",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 378 - 10 (Roll no. 285). (text: CR H",
+     "fn": "cg",
+     "v": "378–10"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-16",
+     "e": "Became Public Law No: 119-109.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–109"
+    }
+   ],
+   "title": "LACA",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/32"
+  },
+  {
+   "area": "Courts & justice",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 6,
+    "i": 1,
+    "r": 24,
+    "t": 31
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/331"
+    }
+   },
+   "id": "119-s331",
+   "introduced": "2025-01-30",
+   "latest": {
+    "actionDate": "2025-07-16",
+    "text": "Became Public Law No: 119-26."
+   },
+   "law": "Pub. L. 119-26",
+   "num": "S. 331",
+   "number": 331,
+   "outcome": {
+    "by": "",
+    "d": "2025-07-16",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Bill Cassidy",
+    "p": "R",
+    "s": "LA"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-14",
+     "e": "Passed Senate with an amendment by Yea-Nay Vote. 84 - 16. Record Vote Number: 127.",
+     "fn": "cg",
+     "v": "84–16"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-14",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Yea-Nay Vote. 84 - 16. Record Vote Number: 127.",
+     "fn": "cg",
+     "v": "84–16"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-14",
+     "e": "The committee substitute agreed to by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-09",
+     "e": "Rules Committee Resolution H. Res. 489 Reported to House. Rule provides for consideration of H.R. 884, H.R. 2056, H.R. 2096 and S. 331. The resolution provides ",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-10",
+     "e": "Rule H. Res. 489 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-12",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-12",
+     "e": "On passage Passed by the Yeas and Nays: 321 - 104 (Roll no. 166). (text: 6/11/2025 CR H2625-2627)",
+     "fn": "cg",
+     "v": "321–104"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-12",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 321 - 104 (Roll no. 166). (text: 6/11/2025 CR H2625-2627)",
+     "fn": "cg",
+     "v": "321–104"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-08",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-07-16",
+     "e": "Became Public Law No: 119-26.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–26"
+    }
+   ],
+   "title": "HALT Fentanyl Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/331"
+  },
+  {
    "area": "Health care",
    "auto": false,
    "blockers": [
@@ -31070,7 +31288,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T06:39:20+00:00",
+   "fetched": "2026-11-05T06:41:16+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -31158,7 +31376,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T06:39:20+00:00",
+   "fetched": "2026-11-05T06:41:16+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -31222,10 +31440,2380 @@
    "title": "HSA deposits for ACA enrollees in place of enhanced credits",
    "type": "s",
    "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3386"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 2,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3424"
+    }
+   },
+   "id": "119-s3424",
+   "introduced": "2025-12-10",
+   "latest": {
+    "actionDate": "2026-02-06",
+    "text": "Became Public Law No: 119-76."
+   },
+   "law": "Pub. L. 119-76",
+   "num": "S. 3424",
+   "number": 3424,
+   "outcome": {
+    "by": "",
+    "d": "2026-02-06",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Christopher A. Coons",
+    "p": "D",
+    "s": "DE"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-12-10",
+     "e": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent. (consideration: CR S8629-8630; text: C",
+     "fn": "cg",
+     "v": "629–863"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-10",
+     "e": "Passed/agreed to in Senate: Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-10",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-12",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-12",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H627)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-01-12",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H627)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-03",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-02-06",
+     "e": "Became Public Law No: 119-76.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–76"
+    }
+   ],
+   "title": "Bankruptcy Administration Improvement Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3424"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 16,
+    "i": 1,
+    "r": 11,
+    "t": 28
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/356"
+    }
+   },
+   "id": "119-s356",
+   "introduced": "2025-02-03",
+   "latest": {
+    "actionDate": "2025-12-18",
+    "text": "Became Public Law No: 119-58."
+   },
+   "law": "Pub. L. 119-58",
+   "num": "S. 356",
+   "number": 356,
+   "outcome": {
+    "by": "",
+    "d": "2025-12-18",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Mike Crapo",
+    "p": "R",
+    "s": "ID"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-03",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-18",
+     "e": "Passed Senate without amendment by Voice Vote. (text: CR S3459-3460)",
+     "fn": "cg",
+     "v": "459–346"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-18",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-18",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent. (consideration: CR S3458)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-09",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-09",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 399 - 5 (Roll no. 315). (text: CR H5066-5067)",
+     "fn": "cg",
+     "v": "399–5"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-09",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 399 - 5 (Roll no. 315). (text: CR H5",
+     "fn": "cg",
+     "v": "399–5"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-15",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-12-18",
+     "e": "Became Public Law No: 119-58.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–58"
+    }
+   ],
+   "title": "Secure Rural Schools Reauthorization Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/356"
+  },
+  {
+   "area": "Education",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 24,
+    "t": 24
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3627"
+    }
+   },
+   "id": "119-s3627",
+   "introduced": "2026-01-13",
+   "latest": {
+    "actionDate": "2026-01-27",
+    "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 47 - 45. Record Vote Number: 12. (CR S286)"
+   },
+   "num": "S. 3627",
+   "number": 3627,
+   "reached": 2,
+   "sponsor": {
+    "n": "Ashley Moody",
+    "p": "R",
+    "s": "FL"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-13",
+     "e": "Introduced in the Senate. Read the first time. Placed on Senate Legislative Calendar under Read the First Time.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-13",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-15",
+     "e": "Cloture motion on the motion to proceed presented in Senate. (CR S262)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-15",
+     "e": "Motion to proceed to consideration of measure made in Senate. (consideration: CR S262)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-27",
+     "e": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 47 - 45. Record Vote Number: 12. (CR S286)",
+     "fn": "cg",
+     "k": "kill",
+     "v": "47–45"
+    }
+   ],
+   "title": "Pregnant Students’ Rights Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3627"
+  },
+  {
+   "area": "Congress",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 1,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3705"
+    }
+   },
+   "id": "119-s3705",
+   "introduced": "2026-01-27",
+   "latest": {
+    "actionDate": "2026-02-18",
+    "text": "Became Public Law No: 119-79."
+   },
+   "law": "Pub. L. 119-79",
+   "num": "S. 3705",
+   "number": 3705,
+   "outcome": {
+    "by": "",
+    "d": "2026-02-18",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Thomas Tillis",
+    "p": "R",
+    "s": "NC"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-27",
+     "e": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent. (consideration: CR S298; text: CR S298",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-27",
+     "e": "Passed/agreed to in Senate: Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-09",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-09",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2046-2047)",
+     "fn": "cg",
+     "v": "046–204"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-09",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2046-2047)",
+     "fn": "cg",
+     "v": "046–204"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-12",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-02-18",
+     "e": "Became Public Law No: 119-79.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–79"
+    }
+   ],
+   "title": "Semiquincentennial Congressional Time Capsule Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3705"
+  },
+  {
+   "area": "Commerce",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/3971"
+    }
+   },
+   "id": "119-s3971",
+   "introduced": "2026-03-03",
+   "latest": {
+    "actionDate": "2026-04-13",
+    "text": "Became Public Law No: 119-83."
+   },
+   "law": "Pub. L. 119-83",
+   "num": "S. 3971",
+   "number": 3971,
+   "outcome": {
+    "by": "",
+    "d": "2026-04-13",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Joni Ernst",
+    "p": "R",
+    "s": "IA"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-03",
+     "e": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Voice Vote. (consideration: CR S752-756; text: CR S752-75",
+     "fn": "cg",
+     "v": "752–756"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-03",
+     "e": "Passed/agreed to in Senate: Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-03",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-17",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-17",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 345 - 41 (Roll no. 89).",
+     "fn": "cg",
+     "v": "345–41"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-17",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 345 - 41 (Roll no. 89).",
+     "fn": "cg",
+     "v": "345–41"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-02",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-04-13",
+     "e": "Became Public Law No: 119-83.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–83"
+    }
+   ],
+   "title": "Small Business Innovation and Economic Security Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3971"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 1,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/4138"
+    }
+   },
+   "id": "119-s4138",
+   "introduced": "2026-03-18",
+   "latest": {
+    "actionDate": "2026-03-20",
+    "text": "Became Public Law No: 119-80."
+   },
+   "law": "Pub. L. 119-80",
+   "num": "S. 4138",
+   "number": 4138,
+   "outcome": {
+    "by": "",
+    "d": "2026-03-20",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Roger F. Wicker",
+    "p": "R",
+    "s": "MS"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-18",
+     "e": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent. (consideration: CR S1202; text: CR S12",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-18",
+     "e": "Passed/agreed to in Senate: Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-19",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-19",
+     "e": "On passage Passed without objection. (text: CR H2607)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-19",
+     "e": "Passed/agreed to in House: On passage Passed without objection. (text: CR H2607)",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-03-20",
+     "e": "Became Public Law No: 119-80.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–80"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-20",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A bill to waive the 60-day notice requirement for the posthumous honorary promotion of Captain Cody Khork, United States Army.",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4138"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 13,
+    "t": 13
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/423"
+    }
+   },
+   "id": "119-s423",
+   "introduced": "2025-02-05",
+   "latest": {
+    "actionDate": "2025-08-14",
+    "text": "Became Public Law No: 119-33."
+   },
+   "law": "Pub. L. 119-33",
+   "num": "S. 423",
+   "number": 423,
+   "outcome": {
+    "by": "",
+    "d": "2025-08-14",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Dan Sullivan",
+    "p": "R",
+    "s": "AK"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-05",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-08",
+     "e": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S2478-2479)",
+     "fn": "cg",
+     "v": "478–247"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-08",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-08",
+     "e": "Senate Committee on Veterans' Affairs discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-21",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-21",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3484-3485)",
+     "fn": "cg",
+     "v": "484–348"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-21",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3484-3485)",
+     "fn": "cg",
+     "v": "484–348"
+    },
+    {
+     "ch": "H",
+     "d": "2025-08-12",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-08-14",
+     "e": "Became Public Law No: 119-33.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–33"
+    }
+   ],
+   "title": "PRO Veterans Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/423"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/4344"
+    }
+   },
+   "id": "119-s4344",
+   "introduced": "2026-04-17",
+   "latest": {
+    "actionDate": "2026-05-13",
+    "text": "Cloture motion on the motion to proceed withdrawn by unanimous consent in Senate. (CR  S2249)"
+   },
+   "num": "S. 4344",
+   "number": 4344,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tom Cotton",
+    "p": "R",
+    "s": "AR"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-17",
+     "e": "Introduced in the Senate. Read the first time. Placed on Senate Legislative Calendar under Read the First Time.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-17",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-23",
+     "e": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S2249)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-23",
+     "e": "Motion to proceed to consideration of measure made in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-13",
+     "e": "Cloture motion on the motion to proceed withdrawn by unanimous consent in Senate. (CR  S2249)",
+     "fn": "cg"
+    }
+   ],
+   "title": "A bill to extend section 702 of the Foreign Intelligence Surveillance Act of 1978 for 3 years.",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4344"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/4465"
+    }
+   },
+   "id": "119-s4465",
+   "introduced": "2026-04-30",
+   "latest": {
+    "actionDate": "2026-04-30",
+    "text": "Became Public Law No: 119-87."
+   },
+   "law": "Pub. L. 119-87",
+   "num": "S. 4465",
+   "number": 4465,
+   "outcome": {
+    "by": "",
+    "d": "2026-04-30",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Tom Cotton",
+    "p": "R",
+    "s": "AR"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "—",
+     "d": "2026-04-30",
+     "e": "Became Public Law No: 119-87.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–87"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 261 - 111 (Roll no. 155). (text: CR H3322)",
+     "fn": "cg",
+     "v": "261–111"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 261 - 111 (Roll no. 155). (text: CR ",
+     "fn": "cg",
+     "v": "261–111"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-30",
+     "e": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Voice Vote. (consideration: CR S2158; text: CR S2158)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-30",
+     "e": "Passed/agreed to in Senate: Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-30",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    }
+   ],
+   "title": "A bill to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978, and for other purposes.",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4465"
+  },
+  {
+   "area": "Accountability & oversight",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/4530"
+    }
+   },
+   "id": "119-s4530",
+   "introduced": "2026-05-14",
+   "latest": {
+    "actionDate": "2026-05-29",
+    "text": "Became Public Law No: 119-95."
+   },
+   "law": "Pub. L. 119-95",
+   "num": "S. 4530",
+   "number": 4530,
+   "outcome": {
+    "by": "",
+    "d": "2026-05-29",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Mitch McConnell",
+    "p": "R",
+    "s": "KY"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-05-14",
+     "e": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent. (consideration: CR S2294-2295; text: C",
+     "fn": "cg",
+     "v": "294–229"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-14",
+     "e": "Passed/agreed to in Senate: Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-14",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-19",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-19",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3557)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-19",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3557)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-21",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-05-29",
+     "e": "Became Public Law No: 119-95.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–95"
+    }
+   ],
+   "title": "A bill to amend chapters 83 and 84 of title 5, United States Code, to authorize an increase of the retirement age for members of the Capitol Police.",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4530"
+  },
+  {
+   "area": "Sports and Recreation",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 5,
+    "i": 0,
+    "r": 4,
+    "t": 9
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/4668"
+    }
+   },
+   "id": "119-s4668",
+   "introduced": "2026-06-02",
+   "latest": {
+    "actionDate": "2026-10-05",
+    "actionTime": "16:54:13",
+    "text": "Held at the desk."
+   },
+   "num": "S. 4668",
+   "number": 4668,
+   "reached": 3,
+   "sponsor": {
+    "n": "Ted Cruz",
+    "p": "R",
+    "s": "TX"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-09-15",
+     "e": "Motion to proceed to measure considered in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-15",
+     "e": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 74 - 24. Record Vote Number: 235. (CR S4715-4716)",
+     "fn": "cg",
+     "v": "74–24"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-16",
+     "e": "Motion to proceed to measure considered in Senate. (CR S4743)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Cloture motion on the measure presented in Senate. (CR S4789)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 77 - 22. Record Vote Number: 236. (CR S4773-4774)",
+     "fn": "cg",
+     "v": "77–22"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Motion to proceed to measure considered in Senate. (CR S4773-4774)",
+     "fn": "cg",
+     "v": "773–477"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-22",
+     "e": "Motion by Senator Thune to recommit to Senate Committee on Commerce, Science, and Transportation with instructions to report back forthwith with the following a",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-24",
+     "e": "Cloture on the measure, as amended, invoked in Senate by Yea-Nay Vote. 74 - 25. Record Vote Number: 243.",
+     "fn": "cg",
+     "v": "74–25"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Passed Senate with an amendment by Yea-Nay Vote. 77 - 22. Record Vote Number: 250. (text: CR S5044-5063)",
+     "fn": "cg",
+     "v": "77–22"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Yea-Nay Vote. 77 - 22. Record Vote Number: 250. (text: CR S5044-5063)",
+     "fn": "cg",
+     "v": "77–22"
+    }
+   ],
+   "title": "Protect College Sports Act of 2026",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4668"
+  },
+  {
+   "area": "Immigration",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 51,
+    "t": 53
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/5"
+    }
+   },
+   "id": "119-s5",
+   "introduced": "2025-01-06",
+   "latest": {
+    "actionDate": "2025-01-29",
+    "text": "Became Public Law No: 119-1."
+   },
+   "law": "Pub. L. 119-1",
+   "num": "S. 5",
+   "number": 5,
+   "outcome": {
+    "by": "",
+    "d": "2025-01-29",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Katie Boyd Britt",
+    "p": "R",
+    "s": "AL"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-01-17",
+     "e": "Cloture on the measure invoked in Senate by Yea-Nay Vote. 61 - 35. Record Vote Number: 5. (CR S240)",
+     "fn": "cg",
+     "v": "61–35"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-20",
+     "e": "Passed Senate with an amendment by Yea-Nay Vote. 64 - 35. Record Vote Number: 7. (text: CR S250-251)",
+     "fn": "cg",
+     "v": "64–35"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-20",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Yea-Nay Vote. 64 - 35. Record Vote Number: 7.",
+     "fn": "cg",
+     "v": "64–35"
+    },
+    {
+     "ch": "H",
+     "d": "2025-01-21",
+     "e": "Rules Committee Resolution H. Res. 53 Reported to House. Rule provides for consideration of H.R. 471 and S. 5. The resolution provides for consideration of H.R.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-01-22",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-01-22",
+     "e": "On passage Passed by the Yeas and Nays: 263 - 156 (Roll no. 23). (text: CR H277-278)",
+     "fn": "cg",
+     "v": "263–156"
+    },
+    {
+     "ch": "H",
+     "d": "2025-01-22",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 263 - 156 (Roll no. 23). (text: CR H277-278)",
+     "fn": "cg",
+     "v": "263–156"
+    },
+    {
+     "ch": "H",
+     "d": "2025-01-22",
+     "e": "Rule H. Res. 53 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-01-23",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-01-29",
+     "e": "Became Public Law No: 119-1.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–1"
+    }
+   ],
+   "title": "Laken Riley Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5"
+  },
+  {
+   "area": "Accountability & oversight",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 2,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/5271"
+    }
+   },
+   "id": "119-s5271",
+   "introduced": "2026-08-05",
+   "latest": {
+    "actionDate": "2026-08-08",
+    "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 46. Record Vote Number: 231."
+   },
+   "num": "S. 5271",
+   "number": 5271,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jon Husted",
+    "p": "R",
+    "s": "OH"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-08-05",
+     "e": "Introduced in the Senate. Read the first time. Placed on Senate Legislative Calendar under Read the First Time.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-05",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-08",
+     "e": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 46. Record Vote Number: 231.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "52–46"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-08",
+     "e": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S4556)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-08-08",
+     "e": "Motion to proceed to consideration of measure made in Senate. (CR S4556)",
+     "fn": "cg"
+    }
+   ],
+   "title": "A bill to amend the Help America Vote Act of 2002 to require voters to provide photo identification.",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5271"
+  },
+  {
+   "area": "Native Americans",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/550"
+    }
+   },
+   "id": "119-s550",
+   "introduced": "2025-02-12",
+   "latest": {
+    "actionDate": "2026-09-25",
+    "text": "Became Public Law No: 119-114."
+   },
+   "law": "Pub. L. 119-114",
+   "num": "S. 550",
+   "number": 550,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-25",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Markwayne Mullin",
+    "p": "R",
+    "s": "OK"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-12",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-05",
+     "e": "Committee on Indian Affairs. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-14",
+     "e": "Committee on Indian Affairs. Reported by Senator Murkowski without amendment. With written report No. 119-76.",
+     "fn": "cg",
+     "v": "119–76"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-15",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S8747; text: CR S8747)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-15",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5574)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5574)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-22",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-25",
+     "e": "Became Public Law No: 119-114.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–114"
+    }
+   ],
+   "title": "A bill to provide for the equitable settlement of certain Indian land disputes regarding land in Illinois, and for other purposes.",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/550"
+  },
+  {
+   "area": "Courts & justice",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 50,
+    "t": 50
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/6"
+    }
+   },
+   "id": "119-s6",
+   "introduced": "2025-01-15",
+   "latest": {
+    "actionDate": "2025-01-22",
+    "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 11. (CR S294-295)"
+   },
+   "num": "S. 6",
+   "number": 6,
+   "reached": 2,
+   "sponsor": {
+    "n": "James Lankford",
+    "p": "R",
+    "s": "OK"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-01-15",
+     "e": "Introduced in the Senate. Read the first time. Placed on Senate Legislative Calendar under Read the First Time.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-15",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-20",
+     "e": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S258)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-20",
+     "e": "Motion to proceed to consideration of measure made in Senate. (CR S258)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-21",
+     "e": "Motion to proceed to measure considered in Senate. (CR S275-276)",
+     "fn": "cg",
+     "v": "275–276"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-22",
+     "e": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 11. (CR S294-295)",
+     "fn": "cg",
+     "k": "kill",
+     "v": "52–47"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-22",
+     "e": "Motion to proceed to measure considered in Senate. (CR S283)",
+     "fn": "cg"
+    }
+   ],
+   "title": "Born-Alive Abortion Survivors Protection Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/6"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/603"
+    }
+   },
+   "id": "119-s603",
+   "introduced": "2025-02-13",
+   "latest": {
+    "actionDate": "2026-09-25",
+    "text": "Became Public Law No: 119-115."
+   },
+   "law": "Pub. L. 119-115",
+   "num": "S. 603",
+   "number": 603,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-25",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-13",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-20",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2387; text: CR S2387)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-20",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-20",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5581)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5581)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-22",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-25",
+     "e": "Became Public Law No: 119-115.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–115"
+    }
+   ],
+   "title": "A bill to designate the General George C. Marshall House, in the Commonwealth of Virginia, as an affiliated area of the National Park System, and for other purposes.",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/603"
+  },
+  {
+   "area": "Courts & justice",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/616"
+    }
+   },
+   "id": "119-s616",
+   "introduced": "2025-02-18",
+   "latest": {
+    "actionDate": "2025-12-12",
+    "text": "Became Public Law No: 119-57."
+   },
+   "law": "Pub. L. 119-57",
+   "num": "S. 616",
+   "number": 616,
+   "outcome": {
+    "by": "",
+    "d": "2025-12-12",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "John Kennedy",
+    "p": "R",
+    "s": "LA"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2709-2710; text: CR S2709-2710)",
+     "fn": "cg",
+     "v": "709–271"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Senate Committee on the Judiciary discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-01",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-01",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H4928)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-01",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H4928)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-10",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-12-12",
+     "e": "Became Public Law No: 119-57.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–57"
+    }
+   ],
+   "title": "Foundation of the Federal Bar Association Charter Amendments Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/616"
+  },
+  {
+   "area": "Agriculture and Food",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 0,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/629"
+    }
+   },
+   "id": "119-s629",
+   "introduced": "2025-02-19",
+   "latest": {
+    "actionDate": "2026-07-12",
+    "text": "Became Public Law No: 119-102."
+   },
+   "law": "Pub. L. 119-102",
+   "num": "S. 629",
+   "number": 629,
+   "outcome": {
+    "by": "",
+    "d": "2026-07-12",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Deb Fischer",
+    "p": "R",
+    "s": "NE"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-19",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-24",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S1565; text: CR S1565)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-24",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-24",
+     "e": "Senate Committee on Agriculture, Nutrition, and Forestry discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-23",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-23",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 368 - 19 (Roll no. 223). (text: CR H4137)",
+     "fn": "cg",
+     "v": "368–19"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-23",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 368 - 19 (Roll no. 223). (text: CR H",
+     "fn": "cg",
+     "v": "368–19"
+    },
+    {
+     "ch": "H",
+     "d": "2026-06-30",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-07-12",
+     "e": "Became Public Law No: 119-102.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–102"
+    }
+   ],
+   "title": "Emergency Conservation Program Improvement Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/629"
+  },
+  {
+   "area": "Native Americans",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 2,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/723"
+    }
+   },
+   "id": "119-s723",
+   "introduced": "2025-02-25",
+   "latest": {
+    "actionDate": "2026-05-04",
+    "text": "Became Public Law No: 119-88."
+   },
+   "law": "Pub. L. 119-88",
+   "num": "S. 723",
+   "number": 723,
+   "outcome": {
+    "by": "",
+    "d": "2026-05-04",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "John Thune",
+    "p": "R",
+    "s": "SD"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-25",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-05",
+     "e": "Committee on Indian Affairs. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-09-03",
+     "e": "Committee on Indian Affairs. Reported by Senator Murkowski without amendment. With written report No. 119-60.",
+     "fn": "cg",
+     "v": "119–60"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-11",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S8689-8691; text: CR S8689-8691)",
+     "fn": "cg",
+     "v": "689–869"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-11",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 384 - 40 (Roll no. 81).",
+     "fn": "cg",
+     "v": "384–40"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-04",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 384 - 40 (Roll no. 81).",
+     "fn": "cg",
+     "v": "384–40"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-27",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-05-04",
+     "e": "Became Public Law No: 119-88.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–88"
+    }
+   ],
+   "title": "Tribal Trust Land Homeownership Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/723"
+  },
+  {
+   "area": "Transportation and Public Works",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 1,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/759"
+    }
+   },
+   "id": "119-s759",
+   "introduced": "2025-02-26",
+   "latest": {
+    "actionDate": "2026-09-25",
+    "text": "Became Public Law No: 119-116."
+   },
+   "law": "Pub. L. 119-116",
+   "num": "S. 759",
+   "number": 759,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-25",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Ted Cruz",
+    "p": "R",
+    "s": "TX"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-26",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-12",
+     "e": "Committee on Commerce, Science, and Transportation. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-07-16",
+     "e": "Committee on Commerce, Science, and Transportation. Reported by Senator Cruz with an amendment in the nature of a substitute. With written report No. 119-40.",
+     "fn": "cg",
+     "v": "119–40"
+    },
+    {
+     "ch": "S",
+     "d": "2025-09-10",
+     "e": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S6556; text of amendment in the nature of a substitute: CR S6556)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-09-10",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5559)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5559)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-22",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-25",
+     "e": "Became Public Law No: 119-116.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–116"
+    }
+   ],
+   "title": "Modernizing Access to Our Public Oceans Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/759"
+  },
+  {
+   "area": "Accountability & oversight",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 2,
+    "t": 4
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/766"
+    }
+   },
+   "id": "119-s766",
+   "introduced": "2025-02-27",
+   "latest": {
+    "actionDate": "2026-10-07",
+    "text": "Became Public Law No: 119-120."
+   },
+   "law": "Pub. L. 119-120",
+   "num": "S. 766",
+   "number": 766,
+   "outcome": {
+    "by": "",
+    "d": "2026-10-07",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Joni Ernst",
+    "p": "R",
+    "s": "IA"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-07-30",
+     "e": "Committee on Homeland Security and Governmental Affairs. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-11-03",
+     "e": "Committee on Homeland Security and Governmental Affairs. Reported by Senator Paul without amendment. Without written report.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-11",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S8693-8694; text: CR S8693-8694)",
+     "fn": "cg",
+     "v": "693–869"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-11",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5930-5931)",
+     "fn": "cg",
+     "v": "930–593"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5930-5931)",
+     "fn": "cg",
+     "v": "930–593"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-29",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-10-07",
+     "e": "Became Public Law No: 119-120.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–120"
+    }
+   ],
+   "title": "Billion Dollar Boondoggle Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/766"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/790"
+    }
+   },
+   "id": "119-s790",
+   "introduced": "2025-02-27",
+   "latest": {
+    "actionDate": "2026-09-25",
+    "text": "Became Public Law No: 119-117."
+   },
+   "law": "Pub. L. 119-117",
+   "num": "S. 790",
+   "number": 790,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-25",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Cynthia M. Lummis",
+    "p": "R",
+    "s": "WY"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-02-04",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-20",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2387; text: CR S2387)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-20",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-20",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5578)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5578)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-22",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-25",
+     "e": "Became Public Law No: 119-117.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–117"
+    }
+   ],
+   "title": "A bill to redesignate the National Historic Trails Interpretive Center in Casper, Wyoming, as the \"Barbara L. Cubin National Historic Trails Interpretive Center\".",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/790"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 12,
+    "t": 13
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/858"
+    }
+   },
+   "id": "119-s858",
+   "introduced": "2025-03-05",
+   "latest": {
+    "actionDate": "2026-09-10",
+    "text": "Became Public Law No: 119-104."
+   },
+   "law": "Pub. L. 119-104",
+   "num": "S. 858",
+   "number": 858,
+   "outcome": {
+    "by": "",
+    "d": "2026-09-10",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "James C. Justice",
+    "p": "R",
+    "s": "WV"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-05",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-17",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-25",
+     "e": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S1605)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-25",
+     "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-25",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-31",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-31",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5264)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-31",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5264)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-02",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-09-10",
+     "e": "Became Public Law No: 119-104.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–104"
+    }
+   ],
+   "title": "Hershel ‘Woody' Williams National Medal of Honor Monument Location Act",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/858"
+  },
+  {
+   "area": "Sports and Recreation",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 44,
+    "t": 44
+   },
+   "fetched": "2026-11-05T06:41:16+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/9"
+    }
+   },
+   "id": "119-s9",
+   "introduced": "2025-01-07",
+   "latest": {
+    "actionDate": "2025-03-03",
+    "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 51 - 45. Record Vote Number: 100. (CR S1455-1456)"
+   },
+   "num": "S. 9",
+   "number": 9,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tommy Tuberville",
+    "p": "R",
+    "s": "AL"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-01-07",
+     "e": "Introduced in the Senate. Read the first time. Placed on Senate Legislative Calendar under Read the First Time.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-01-07",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-27",
+     "e": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S1434)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-27",
+     "e": "Motion to proceed to consideration of measure made in Senate.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-03",
+     "e": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 51 - 45. Record Vote Number: 100. (CR S1455-1456)",
+     "fn": "cg",
+     "k": "kill",
+     "v": "51–45"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-03",
+     "e": "Motion to proceed to measure considered in Senate. (CR S1455)",
+     "fn": "cg"
+    }
+   ],
+   "title": "Protection of Women and Girls in Sports Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/9"
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T06:39:20+00:00",
+ "generatedAt": "2026-11-05T06:41:16+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
