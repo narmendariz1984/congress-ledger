@@ -45055,6 +45055,7 @@
     "what": "The outgoing Congress, still under Republican control, returns for its last weeks. Any bill that hasn't become law by Jan 3 dies and has to be introduced again."
    },
    {
+    "contact": "both",
     "date": "2026-11-10",
     "id": "gop-leaders",
     "src": [
@@ -45064,9 +45065,11 @@
      ]
     ],
     "title": "Republican leadership elections, House and Senate",
-    "what": "Both Republican conferences pick their leaders for the next Congress, where they'll be in the minority. Senate voting starts at 9 a.m. in the Old Senate Chamber."
+    "what": "Both Republican conferences pick their leaders for the next Congress, where they'll be in the minority. Senate voting starts at 9 a.m. in the Old Senate Chamber.",
+    "who": "House and Senate Republicans, including newly elected members"
    },
    {
+    "contact": "house",
     "date": "2026-11-18",
     "end": "2026-11-19",
     "id": "house-dem-leaders",
@@ -45081,9 +45084,11 @@
      ]
     ],
     "title": "House Democratic leadership elections",
-    "what": "House Democrats choose their leaders, including their nominee for Speaker. Hakeem Jeffries has announced he's running."
+    "what": "House Democrats choose their leaders, including their nominee for Speaker. Hakeem Jeffries has announced he's running.",
+    "who": "House Democrats, including newly elected members"
    },
    {
+    "contact": "senate",
     "id": "senate-dem-leader",
     "src": [
      [
@@ -45093,9 +45098,11 @@
     ],
     "title": "Senate Democratic leadership election",
     "what": "A secret ballot that includes the newly elected senators. Chuck Schumer says he has the votes; several incoming Democrats have said they'll back someone else.",
-    "when": "Early December"
+    "when": "Early December",
+    "who": "Senate Democrats, including newly elected senators"
    },
    {
+    "contact": "both",
     "date": "2026-12-11",
     "id": "funding",
     "src": [
@@ -45109,7 +45116,8 @@
      ]
     ],
     "title": "Government funding runs out",
-    "what": "Congress has to pass full-year spending bills or another stopgap, or a shutdown starts. Health care items such as the expired ACA premium subsidies would most likely ride on this bill."
+    "what": "Congress has to pass full-year spending bills or another stopgap, or a shutdown starts. Health care items such as the expired ACA premium subsidies would most likely ride on this bill.",
+    "who": "The House and Senate, then the President"
    },
    {
     "date": "2026-12-18",
@@ -45131,6 +45139,7 @@
     "bills": [
      "119-hr7567"
     ],
+    "contact": "both",
     "date": "2026-12-31",
     "id": "farm-cliff",
     "src": [
@@ -45144,7 +45153,8 @@
      ]
     ],
     "title": "Farm programs fall back to permanent law",
-    "what": "The farm bill expired Sept 30. The House passed a new one in April, and the Senate hasn't acted. Without action by Dec 31, farm programs revert to decades-old permanent law."
+    "what": "The farm bill expired Sept 30. The House passed a new one in April, and the Senate hasn't acted. Without action by Dec 31, farm programs revert to decades-old permanent law.",
+    "who": "The Senate first, then both chambers on a final version"
    },
    {
     "date": "2027-01-03",
@@ -45160,6 +45170,7 @@
     "what": "Noon Eastern, as the Constitution sets unless Congress passes a law moving the day (Jan 3 is a Sunday). The House elects a Speaker before members are sworn in. Democrats hold majorities in both chambers."
    },
    {
+    "contact": "house",
     "id": "first-bills",
     "src": [
      [
@@ -45169,12 +45180,14 @@
     ],
     "title": "House Democrats' first bills",
     "what": "House Democrats say they'll bring up bills to rescind tariffs, restore expired ACA premium subsidies and reverse Medicaid cuts, plus a war powers resolution on Iran.",
-    "when": "First week of January"
+    "when": "First week of January",
+    "who": "The House"
    },
    {
     "bills": [
      "119-s4784"
     ],
+    "contact": "both",
     "id": "ndaa",
     "src": [
      [
@@ -45184,9 +45197,11 @@
     ],
     "title": "Defense policy bill (NDAA)",
     "what": "The 2027 defense bill stalled in the Senate in July. Leaders expect a deal after the election.",
-    "when": "No date set"
+    "when": "No date set",
+    "who": "The House and Senate"
    },
    {
+    "contact": "both",
     "id": "debt-limit",
     "src": [
      [
@@ -45196,7 +45211,8 @@
     ],
     "title": "Debt limit could be reached",
     "what": "The government could hit its borrowing limit as soon as February, leaving the new Congress to raise or suspend it.",
-    "when": "As soon as February 2027"
+    "when": "As soon as February 2027",
+    "who": "The House and Senate, then the President"
    }
   ],
   "watchUpdated": "2026-11-05"

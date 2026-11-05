@@ -338,6 +338,8 @@ ol.wlist{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid va
 .wh h3{font-size:18px;font-weight:700}
 .wb p{margin:0;max-width:72ch;color:var(--soft)}
 .wsrc{font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}
+.wwho{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14.5px;color:var(--soft);align-items:baseline}
+.wwho b{color:var(--ink);font-weight:600}
 .wbills{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14.5px}
 .wsub{font-size:17px;font-weight:700;margin-top:6px}
 .contact{margin:0;font-size:15px;color:var(--soft);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;padding:12px 14px;border-left:4px solid var(--red);background:var(--wash);border-radius:0 8px 8px 0}
@@ -499,7 +501,6 @@ details.wpast .wi{opacity:.75}
 <details class="sec" open id="watch-sec">
   <summary><h2>What to watch</h2><span class="count" id="watch-count"></span></summary>
   <div class="sec-body">
-    <p class="note">Deadlines and key dates coming up, from official schedules and news reports. Dates move, and this list changes when they do. Every item lists its sources.</p>
     <p class="contact"><b>Have a say:</b> <a href="https://www.house.gov/representatives/find-your-representative" target="_blank" rel="noopener">Find your representative</a> <span aria-hidden="true">·</span> <a href="https://www.senate.gov/senators/senators-contact.htm" target="_blank" rel="noopener">Find your senators</a> <span aria-hidden="true">·</span> <span>Capitol switchboard <a href="tel:+12022243121">(202) 224-3121</a></span></p>
     <div class="months" id="w-months"></div>
     <div class="mkey"><span><i style="background:var(--red)"></i>Key date</span><span><i style="background:color-mix(in srgb,var(--moving) 30%,transparent)"></i>House or Senate in session</span><span><i style="box-shadow:inset 0 0 0 2px var(--ink)"></i>Today</span></div>
@@ -973,6 +974,11 @@ function watchDate(e){
   const w=e.time?(e.time==="12:00"?"Noon ET":`${e.time} ET`):end?`${wd}–${end.toLocaleDateString("en-US",{weekday:"short"})}`:wd;
   return`<div class="wd"><span class="m">${MON[d.getMonth()]}</span><span class="dd">${dd}</span><span class="w">${esc(w)}</span></div>`;
 }
+const HOUSE_URL="https://www.house.gov/representatives/find-your-representative", SENATE_URL="https://www.senate.gov/senators/senators-contact.htm";
+const CONTACT={
+  house:`<a href="${HOUSE_URL}" target="_blank" rel="noopener">Contact your representative</a>`,
+  senate:`<a href="${SENATE_URL}" target="_blank" rel="noopener">Contact your senators</a>`,
+  both:`<span class="wc">Contact your <a href="${HOUSE_URL}" target="_blank" rel="noopener">representative</a> or <a href="${SENATE_URL}" target="_blank" rel="noopener">senators</a></span>`};
 function watchItem(e,today){
   let tag="";
   if(e.date){const n=daysBetween(today,e.date), last=e.end||e.date;
@@ -983,6 +989,7 @@ function watchItem(e,today){
   const src=(e.src||[]).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("");
   return`<li class="wi" id="w-${esc(e.id)}">${e.date?watchDate(e):`<div class="wd"><span class="m">Date</span><span class="dd">TBD</span></div>`}
     <div class="wb"><div class="wh"><h3>${esc(e.title)}</h3>${tag}</div>${e.what?`<p>${esc(e.what)}</p>`:""}
+    ${e.who?`<div class="wwho"><span><b>Who decides:</b> ${esc(e.who)}</span>${CONTACT[e.contact]||""}</div>`:""}
     ${bl?`<div class="wbills">On this site: ${bl}</div>`:""}${src?`<div class="wsrc">Sources: ${src}</div>`:""}</div></li>`;
 }
 function monthGrid(y,m,evByDay,inSession,today){
