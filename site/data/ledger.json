@@ -2919,7 +2919,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -18133,7 +18133,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -21588,7 +21588,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -34216,7 +34216,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -34307,7 +34307,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -39562,9 +39562,12 @@
     "d": 0,
     "i": 0,
     "r": 1,
+    "st": [
+     "AK"
+    ],
     "t": 1
    },
-   "fetched": "2026-11-05T06:42:40+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39676,9 +39679,20 @@
     "d": 7,
     "i": 2,
     "r": 1,
+    "st": [
+     "KY",
+     "ME",
+     "NH",
+     "NV",
+     "NY",
+     "OR",
+     "RI",
+     "VA",
+     "VT"
+    ],
     "t": 10
    },
-   "fetched": "2026-11-05T06:42:40+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39742,9 +39756,33 @@
     "d": 37,
     "i": 0,
     "r": 0,
+    "st": [
+     "AZ",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "HI",
+     "IL",
+     "MA",
+     "MD",
+     "MI",
+     "MN",
+     "NH",
+     "NJ",
+     "NM",
+     "NV",
+     "NY",
+     "OR",
+     "RI",
+     "VA",
+     "VT",
+     "WA",
+     "WI"
+    ],
     "t": 37
    },
-   "fetched": "2026-11-05T06:42:40+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39816,9 +39854,18 @@
     "d": 6,
     "i": 1,
     "r": 1,
+    "st": [
+     "CA",
+     "IL",
+     "KY",
+     "MD",
+     "OR",
+     "VA",
+     "VT"
+    ],
     "t": 8
    },
-   "fetched": "2026-11-05T06:42:40+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39868,9 +39915,17 @@
     "d": 5,
     "i": 0,
     "r": 1,
+    "st": [
+     "KY",
+     "MA",
+     "NH",
+     "NY",
+     "VA",
+     "VT"
+    ],
     "t": 6
    },
-   "fetched": "2026-11-05T06:42:40+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39934,9 +39989,23 @@
     "d": 16,
     "i": 1,
     "r": 1,
+    "st": [
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "HI",
+     "IL",
+     "KY",
+     "MA",
+     "MD",
+     "NJ",
+     "OR",
+     "VT"
+    ],
     "t": 18
    },
-   "fetched": "2026-11-05T06:42:40+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39993,9 +40062,30 @@
     "d": 28,
     "i": 1,
     "r": 1,
+    "st": [
+     "AZ",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "HI",
+     "IL",
+     "KY",
+     "MA",
+     "MD",
+     "MI",
+     "NJ",
+     "NM",
+     "NV",
+     "NY",
+     "OR",
+     "VT",
+     "WA",
+     "WI"
+    ],
     "t": 30
    },
-   "fetched": "2026-11-05T06:42:40+00:00",
+   "fetched": "2026-11-05T07:20:14+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40058,7 +40148,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T07:18:20+00:00",
+ "generatedAt": "2026-11-05T07:20:14+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",

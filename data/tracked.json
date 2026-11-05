@@ -408,24 +408,17 @@
   "119-sjres90",
   "119-sjres98"
  ],
- "lastDiscovery": "2026-11-05T07:18:20+00:00",
+ "lastDiscovery": "2026-11-05T07:20:14+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
  },
  "backfill": {
-  "queue": [
-   "119-sjres80",
-   "119-sjres81",
-   "119-sjres82",
-   "119-sjres83",
-   "119-sjres88",
-   "119-sjres90",
-   "119-sjres98"
-  ],
+  "queue": [],
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
-  "reason": "re-download for cosponsor states"
+  "reason": "re-download for cosponsor states",
+  "finished": "2026-11-05T07:20:14+00:00"
  },
  "rule": "recorded-vote-v2",
  "schema": 2
