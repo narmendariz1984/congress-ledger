@@ -202,7 +202,8 @@ th button:focus-visible{outline:2px solid var(--accent)}
 th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending"] button::after{content:" ▼"}
 
 /* agenda */
-.agenda{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.agenda{columns:240px;column-gap:10px}
+.agenda>.ag{break-inside:avoid;margin-bottom:10px}
 .ag{border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;gap:6px;align-content:start;min-width:0}
 .ag .t{font-weight:600;font-size:14px}
 .ag .s{font-size:12px;color:var(--muted)}
@@ -762,6 +763,7 @@ function mixBar(bs){
 function renderAgenda(){
   const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
   const areas=AREAS.slice();pool.forEach(b=>{if(b.area&&!areas.includes(b.area))areas.push(b.area)});
+  areas.sort((x,y)=>x.localeCompare(y,"en",{sensitivity:"base"}));
   $("#agenda-grid").innerHTML=areas.map(a=>{
     const bs=pool.filter(b=>b.area===a);
     if(!bs.length)return`<div class="ag empty"><span class="t">${esc(a)}</span><span class="s">No mature bill</span></div>`;
