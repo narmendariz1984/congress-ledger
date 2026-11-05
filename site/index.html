@@ -64,6 +64,8 @@ nav.tabs .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
 nav.tabs a{flex:none;font-size:15.5px;font-weight:600;color:var(--soft);text-decoration:none;padding:14px 16px 12px;border-bottom:3px solid transparent;min-height:44px;box-sizing:border-box}
 nav.tabs a:hover{color:var(--ink)}
 nav.tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
+nav.tabs .tab-s{display:none}
+@media (max-width:780px){nav.tabs .tab-l{display:none} nav.tabs .tab-s{display:inline}}
 .tab{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
 .extra{padding-top:12px;border-top:1px solid var(--rule)}
 .tog{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid #2F4840;border-radius:8px;color:var(--ink);font:600 15px var(--f-body);cursor:pointer}
@@ -288,7 +290,56 @@ details.vg>.tbl{margin:0 16px 14px}
 .status-line{font-size:12.5px;color:var(--muted);font-family:var(--f-mono)}
 .status-line.warn{color:var(--stalled)}
 
+/* what to watch */
+.nextup{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-size:14.5px;color:var(--soft);border-top:1px solid var(--gold-line2);padding-top:12px}
+.nextup .k{font-size:13px;font-weight:600;color:var(--muted)}
+.nextup b{font-family:var(--f-mono);font-weight:600;color:var(--accent)}
+.nextup a{font-weight:600}
+.calbox{background:var(--wash);border:1px solid var(--rule);border-radius:10px;padding:16px;display:grid;gap:12px}
+.cal-t{display:grid;gap:2px}
+.cal-t b{font-size:16px}
+.cal-t span{font-size:14px}
+.cal-acts{display:flex;flex-wrap:wrap;gap:8px}
+.cal-acts .fchip{text-decoration:none}
+.cal-acts .fchip[aria-live]{min-width:0}
+.cal-g{margin:0;font-size:13.5px;color:var(--muted);max-width:80ch}
+.cal-g code{font-family:var(--f-mono);font-size:12.5px;color:var(--soft);overflow-wrap:anywhere}
+.months{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,232px),1fr));gap:12px}
+.month{border:1px solid var(--rule);border-radius:10px;padding:12px;background:var(--card);min-width:0}
+.month h3{font-size:15px;font-weight:700;margin:0 0 8px}
+.mgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;text-align:center}
+.mgrid .wdh{font-size:11.5px;font-weight:600;color:var(--muted);padding-bottom:2px}
+.mgrid .c{position:relative;display:grid;place-items:center;aspect-ratio:1/1;min-height:28px;border-radius:6px;font:500 13px var(--f-mono);color:var(--muted);text-decoration:none}
+.mgrid .c.in{background:color-mix(in srgb,var(--moving) 16%,transparent);color:var(--ink)}
+.mgrid .c.ev{color:var(--paper);background:var(--accent);font-weight:700}
+.mgrid a.c.ev:hover{outline:2px solid var(--ink);outline-offset:1px}
+.mgrid .c.today{box-shadow:inset 0 0 0 2px var(--ink)}
+.mgrid .c.past{opacity:.55}
+.mkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--muted)}
+.mkey i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+ol.wlist{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--rule)}
+.wi{display:grid;grid-template-columns:76px minmax(0,1fr);gap:8px 18px;padding:16px 0;border-bottom:1px solid var(--rule);scroll-margin-top:72px}
+.wi:target{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.wd{display:grid;align-content:start;gap:1px;font-family:var(--f-mono)}
+.wd .m{font-size:13px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.wd .dd{font-family:var(--f-display);font-weight:700;font-size:30px;line-height:1.05;color:var(--ink)}
+.wd .w{font-size:12.5px;color:var(--muted)}
+.wb{display:grid;gap:8px;min-width:0}
+.wh{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.wh h3{font-size:18px;font-weight:700}
+.wb p{margin:0;max-width:72ch;color:var(--soft)}
+.wsrc{font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}
+.wbills{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14.5px}
+.wsub{font-size:17px;font-weight:700;margin-top:6px}
+details.wpast>summary{cursor:pointer;font-weight:600;color:var(--soft);padding:6px 0}
+details.wpast .wi{opacity:.75}
+
 @media (max-width:620px){
+  .wi{grid-template-columns:58px minmax(0,1fr);gap:6px 12px}
+  .months{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;padding-bottom:4px;scrollbar-width:thin}
+  .months .month{flex:0 0 86%;scroll-snap-align:start}
+  .mgrid .c{aspect-ratio:auto;height:32px;min-height:0} .month{padding:10px}
+  .wd .dd{font-size:26px}
   nav.tabs .wrap{gap:0;justify-content:space-between}
   nav.tabs a{font-size:14.5px;padding:13px 7px 11px}
   .sec-body{padding:0 14px 16px} details.sec>summary{padding:16px 14px}
@@ -301,6 +352,7 @@ details.vg>.tbl{margin:0 16px 14px}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
   .tl li{grid-template-columns:78px minmax(0,1fr)} .tl .ch{display:none}
 }
+@media (max-width:400px){nav.tabs a{font-size:14px;padding:13px 4px 11px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -328,13 +380,14 @@ details.vg>.tbl{margin:0 16px 14px}
       <span class="sz"><span class="sk">Phase</span><span class="sv" id="sz-phase">—</span></span>
     </div>
     <div class="season-key"><b>Recess</b> members home, government runs normally · <b>Shutdown</b> funding lapsed, agencies close · <b>Lame duck</b> outgoing Congress serves until Jan 3</div>
+    <div class="nextup" id="nextup" hidden></div>
     <div class="status-line" id="status-line">Loading records…</div>
   </div></div></div>
 </header>
 
 <nav class="tabs" aria-label="Pages">
   <div class="wrap">
-    <a href="#overview" data-tab="overview">Overview</a><a href="#bills" data-tab="bills">Bills</a><a href="#votes" data-tab="votes">Votes</a><a href="#people" data-tab="people">People</a><a href="#how" data-tab="how">How it works</a>
+    <a href="#overview" data-tab="overview">Overview</a><a href="#watch" data-tab="watch" aria-label="What to watch"><span class="tab-l">What to watch</span><span class="tab-s">Watch</span></a><a href="#bills" data-tab="bills">Bills</a><a href="#votes" data-tab="votes">Votes</a><a href="#people" data-tab="people">People</a><a href="#how" data-tab="how" aria-label="How it works"><span class="tab-l">How it works</span><span class="tab-s">About</span></a>
   </div>
 </nav>
 
@@ -422,6 +475,30 @@ details.vg>.tbl{margin:0 16px 14px}
     <div id="p-blocked" class="anch"><h4>Who stopped or slowed bills</h4><div class="tbl"><table id="t-block"><thead><tr><th>Member or bloc</th><th>Role</th><th>Action</th><th>Bill</th><th>Date</th><th>Attribution</th></tr></thead><tbody></tbody></table></div></div>
     <div id="p-cross" class="anch"><h4>Crossover votes</h4><div class="tbl"><table id="t-cross"><thead><tr><th>Member</th><th>Party</th><th>Vote</th><th>Bill</th><th>On</th></tr></thead><tbody></tbody></table></div></div>
     <div id="p-sponsors" class="anch"><h4>Sponsors and lead authors</h4><div class="tbl"><table id="t-spon"><thead><tr><th>Member</th><th>Party</th><th>Role</th><th>Bill</th><th>Status</th></tr></thead><tbody></tbody></table></div></div>
+  </div>
+</details>
+</section>
+
+<section class="tab" data-tab="watch" aria-label="What to watch" hidden>
+<details class="sec" open id="watch-sec">
+  <summary><h2>What to watch</h2><span class="count" id="watch-count"></span></summary>
+  <div class="sec-body">
+    <p class="note">Deadlines and key dates coming up, from official schedules and news reports. Dates move, and this list changes when they do. Every item lists its sources.</p>
+    <div class="calbox">
+      <div class="cal-t"><b>Put these dates on your calendar</b><span class="muted">Subscribe once and your calendar updates itself when a date moves or gets set.</span></div>
+      <div class="cal-acts">
+        <a class="fchip" id="cal-sub" href="webcal://floorvotes.org/watch.ics">Subscribe <span class="n">Apple · Outlook</span></a>
+        <button type="button" class="fchip" id="cal-copy">Copy link <span class="n" id="cal-copy-n" aria-live="polite">for Google</span></button>
+        <a class="fchip" id="cal-dl" href="watch.ics" download="congress-what-to-watch.ics">Download .ics <span class="n">one time</span></a>
+      </div>
+      <p class="cal-g">Google Calendar: on a computer, go to Other calendars, then <b>+</b>, then From URL, and paste <code id="cal-url">https://floorvotes.org/watch.ics</code>. Google only allows this from a web browser, not its phone app. A downloaded file is a snapshot and won't update.</p>
+    </div>
+    <div class="months" id="w-months"></div>
+    <div class="mkey"><span><i style="background:var(--accent)"></i>Key date</span><span><i style="background:color-mix(in srgb,var(--moving) 30%,transparent)"></i>House or Senate in session</span><span><i style="box-shadow:inset 0 0 0 2px var(--ink)"></i>Today</span></div>
+    <ol class="wlist" id="w-list"></ol>
+    <h3 class="wsub" id="w-undated-h">Date not set yet</h3>
+    <ol class="wlist" id="w-undated"></ol>
+    <details class="wpast" id="w-past-d" hidden><summary id="w-past-s">Earlier</summary><ol class="wlist" id="w-past"></ol></details>
   </div>
 </details>
 </section>
@@ -876,6 +953,72 @@ function renderSeason(){
   $("#sz-phase").innerHTML=ph?`${esc(ph.l)}${ph.s?` <span class="sub">· ${esc(ph.s)}</span>`:""}`:"—";
 }
 
+/* what to watch: meta.watch from data/curated.json; the same list builds watch.ics */
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const MONTH_FULL=["January","February","March","April","May","June","July","August","September","October","November","December"];
+function watchDate(e){
+  const d=wk(e.date), wd=d.toLocaleDateString("en-US",{weekday:"short"});
+  const end=e.end&&e.end!==e.date?wk(e.end):null;
+  const dd=end?`${d.getDate()}–${end.getDate()}`:String(d.getDate());
+  const w=e.time?(e.time==="12:00"?"Noon ET":`${e.time} ET`):end?`${wd}–${end.toLocaleDateString("en-US",{weekday:"short"})}`:wd;
+  return`<div class="wd"><span class="m">${MON[d.getMonth()]}</span><span class="dd">${dd}</span><span class="w">${esc(w)}</span></div>`;
+}
+function watchItem(e,today){
+  let tag="";
+  if(e.date){const n=daysBetween(today,e.date), last=e.end||e.date;
+    if(n<=0&&today<=last)tag=`<span class="chip" style="--c:var(--law)">${n===0?"Today":"Underway"}</span>`;
+    else if(n>0)tag=`<span class="chip" style="--c:var(${n<=7?"--stalled":"--muted"})">${n===1?"Tomorrow":`In ${n} days`}</span>`;
+  }else tag=`<span class="chip" style="--c:var(--moving)">${esc(e.when||"Date not set")}</span>`;
+  const bl=(e.bills||[]).map(id=>{const b=bills.find(x=>x.id===id);return b?billLink(b):""}).filter(Boolean).join("");
+  const src=(e.src||[]).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("");
+  return`<li class="wi" id="w-${esc(e.id)}">${e.date?watchDate(e):`<div class="wd"><span class="m">Date</span><span class="dd">TBD</span></div>`}
+    <div class="wb"><div class="wh"><h3>${esc(e.title)}</h3>${tag}</div>${e.what?`<p>${esc(e.what)}</p>`:""}
+    ${bl?`<div class="wbills">On this site: ${bl}</div>`:""}${src?`<div class="wsrc">Sources: ${src}</div>`:""}</div></li>`;
+}
+function monthGrid(y,m,evByDay,inSession,today){
+  const first=new Date(y,m,1), n=new Date(y,m+1,0).getDate();
+  let h=["S","M","T","W","T","F","S"].map(x=>`<span class="wdh" aria-hidden="true">${x}</span>`).join("");
+  for(let i=0;i<first.getDay();i++)h+=`<span></span>`;
+  for(let d=1;d<=n;d++){
+    const k=`${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`, ev=evByDay[k];
+    const cls=["c",inSession.has(k)?"in":"",ev?"ev":"",k===today?"today":"",k<today?"past":""].filter(Boolean).join(" ");
+    const label=`${MONTH_FULL[m]} ${d}${ev?": "+ev.map(e=>e.title).join("; "):""}${inSession.has(k)?" (in session)":""}`;
+    h+=ev?`<a class="${cls}" href="#w-${esc(ev[0].id)}" title="${esc(label)}" aria-label="${esc(label)}">${d}</a>`:`<span class="${cls}" title="${esc(label)}">${d}</span>`;
+  }
+  return`<div class="month"><h3>${MONTH_FULL[m]} ${y}</h3><div class="mgrid">${h}</div></div>`;
+}
+function renderWatch(){
+  const W=(meta&&meta.watch)||[], today=iso(new Date());
+  const dated=W.filter(e=>e.date).sort((a,b)=>a.date.localeCompare(b.date)||String(a.time||"").localeCompare(String(b.time||"")));
+  const up=dated.filter(e=>(e.end||e.date)>=today), past=dated.filter(e=>(e.end||e.date)<today).reverse(), undated=W.filter(e=>!e.date);
+  $("#w-list").innerHTML=up.map(e=>watchItem(e,today)).join("")||`<li class="empty-state">No dates coming up. Check back once the next schedule is posted.</li>`;
+  $("#w-undated").innerHTML=undated.map(e=>watchItem(e,today)).join("");
+  $("#w-undated-h").hidden=!undated.length;
+  $("#w-past").innerHTML=past.map(e=>watchItem(e,today)).join("");
+  $("#w-past-d").hidden=!past.length;$("#w-past-s").textContent=`Earlier (${past.length})`;
+  $("#watch-count").textContent=W.length?`${up.length} upcoming · ${undated.length} not set`:"";
+  // month calendars: this month through the last upcoming date, at most four
+  const evByDay={};
+  for(const e of dated){for(let d=wk(e.date);iso(d)<=(e.end||e.date);d.setDate(d.getDate()+1))(evByDay[iso(d)]=evByDay[iso(d)]||[]).push(e)}
+  const cal=(meta&&meta.calendar)||{}, inSession=new Set([...sessionDays(cal.house),...sessionDays(cal.senate)]);
+  const t=wk(today), lastUp=up.length?wk(up[up.length-1].date):t;
+  const span=Math.min(3,(lastUp.getFullYear()-t.getFullYear())*12+lastUp.getMonth()-t.getMonth());
+  let g="";for(let i=0;i<=span;i++){const d=new Date(t.getFullYear(),t.getMonth()+i,1);g+=monthGrid(d.getFullYear(),d.getMonth(),evByDay,inSession,today)}
+  $("#w-months").innerHTML=g;
+  // next up, shown in the header on every tab
+  const nx=up[0];
+  if(nx){$("#nextup").hidden=false;$("#nextup").innerHTML=`<span class="k">Next</span><b>${esc(nx.date===today?"Today":short(nx.date))}</b><span>${esc(nx.title)}</span><a href="#watch">All dates</a>`}
+  // calendar links point at whichever host is serving the page (floorvotes.org, or a preview)
+  const host=/^(localhost|127\.|\[)/.test(location.host)||location.protocol==="file:"?"floorvotes.org":location.host;
+  $("#cal-sub").href=`webcal://${host}/watch.ics`;$("#cal-url").textContent=`https://${host}/watch.ics`;
+}
+$("#cal-copy").addEventListener("click",async()=>{
+  const u=$("#cal-url").textContent, n=$("#cal-copy-n");
+  try{await navigator.clipboard.writeText(u);n.textContent="copied"}
+  catch(_){const r=document.createRange();r.selectNodeContents($("#cal-url"));const s=getSelection();s.removeAllRanges();s.addRange(r);n.textContent="selected, press copy"}
+  setTimeout(()=>{n.textContent="for Google"},2500);
+});
+
 let VOTES={senate:[],house:[]}, CONGRESS=null;
 let BYNUM={};
 function renderVotes(){
@@ -905,7 +1048,7 @@ function renderVotes(){
 }
 
 function renderAll(){
-  renderVotes();buildNotes();renderMeta();renderSeason();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();
+  renderVotes();buildNotes();renderMeta();renderSeason();renderWatch();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();
   // populate filters once data present
   const ar=$("#f-area");const have=new Set([...ar.options].map(o=>o.value));
   [...AREAS,...bills.map(b=>b.area).filter(Boolean)].forEach(a=>{if(!have.has(a)){ar.add(new Option(a,a));have.add(a)}});
@@ -937,7 +1080,7 @@ document.addEventListener("click",e=>{
 });
 
 /* tabs: one page, hash routes (#bills, #how, or any element id inside a tab) */
-const TAB_IDS=["overview","bills","votes","people","how"];
+const TAB_IDS=["overview","watch","bills","votes","people","how"];
 function show(tab){
   document.querySelectorAll(".tab").forEach(p=>{p.hidden=p.dataset.tab!==tab});
   document.querySelectorAll("nav.tabs a").forEach(a=>{if(a.dataset.tab===tab)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
@@ -987,7 +1130,7 @@ async function load(){
     loaded=true;statusLine.textContent="Data couldn't load. Refresh to try again.";statusLine.classList.add("warn");
   }
   renderAll();
-  if(/^#(b-|fn-)/.test(location.hash))route();
+  if(/^#(b-|fn-|w-)/.test(location.hash))route();
 }
 load();
 setInterval(()=>{if(!document.hidden)load()},15*60*1000);

@@ -50,11 +50,15 @@ jobs:
           BACKFILL_SINCE: ${{ github.event_name == 'workflow_dispatch' && inputs.since || '' }}
         run: python scripts/fetch.py
 
+      # The subscribable What to watch calendar, built from data/curated.json
+      - name: Build calendar
+        run: python scripts/watch_ics.py
+
       - name: Commit only if data changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A site/data data
+          git add -A site/data site/watch.ics data
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
