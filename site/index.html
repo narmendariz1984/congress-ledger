@@ -65,6 +65,15 @@ nav.tabs a{flex:none;font-size:15.5px;font-weight:600;color:var(--soft);text-dec
 nav.tabs a:hover{color:var(--ink)}
 nav.tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
 .tab{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.bl{text-decoration:none;color:var(--ink)}
+.bl-n{font-weight:600;text-decoration:underline;text-decoration-color:var(--gold-line);text-underline-offset:3px}
+.bl:hover .bl-n{color:var(--accent);text-decoration-color:var(--accent)}
+.bl-num{font:500 12.5px var(--f-mono);color:var(--muted);white-space:nowrap}
+.act{color:var(--soft)}
+#g-latest .act{display:block;margin-top:2px}
+.bcell{min-width:200px}
+.offt{font-size:14px;color:var(--soft)}
+.offt .k{font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:2px}
 .toc{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:12px 16px;border:1px solid var(--rule);border-radius:10px;background:var(--wash);scroll-margin-top:72px}
 .toc-l{font-size:14px;font-weight:600;color:var(--muted);margin-right:6px}
 .toc a{font-size:14.5px;font-weight:600;color:var(--ink);text-decoration:none;padding:7px 12px;border-radius:999px;border:1px solid #2F4840;background:var(--card);min-height:36px;display:inline-flex;align-items:center}
@@ -157,22 +166,23 @@ details.bill>summary::-webkit-details-marker{display:none}
 details.bill[open]>summary{border-bottom:1px solid var(--rule)}
 .bnum{font-family:var(--f-mono);font-weight:600;font-size:16px;white-space:nowrap;color:var(--accent)}
 .btitle{font-weight:700;font-size:17px;line-height:1.35;min-width:0}
-.bmeta{grid-column:2/4;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--soft);align-items:center}
-.pipe{grid-column:1/4;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:6px}
+.bmeta{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--soft);align-items:center}
+.pipe{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:6px}
 .pipe span{height:6px;border-radius:3px;background:#22362F;position:relative}
 .pipe span.on{background:var(--c)}
 .pipe span.x{background:repeating-linear-gradient(135deg,var(--c) 0 3px,transparent 3px 6px)}
-.pipe-l{grid-column:1/4;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font:12.5px var(--f-body);color:var(--muted)}
+.pipe-l{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font:12.5px var(--f-body);color:var(--muted)}
 .pipe-l span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ref{font:600 10.5px var(--f-mono);letter-spacing:.06em;color:var(--muted);border:1px dashed var(--rule);padding:1px 5px;border-radius:3px}
 .bbody{padding:14px 18px 16px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;min-width:0}
+.bbody>*{min-width:0}
 .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:10px 18px;font-size:13.5px}
 .people .k{font-size:12.5px;color:var(--muted);font-weight:600}
 .split{display:flex;height:8px;border-radius:2px;overflow:hidden;background:var(--wash);margin-top:4px;max-width:220px}
 .split i{display:block;height:100%}
 h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}
-.tl{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--rule);margin-left:4px}
-.tl li{position:relative;padding:4px 0 8px 14px;display:grid;grid-template-columns:96px 34px 1fr;gap:8px;font-size:13.5px;align-items:baseline}
+.tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-left:2px solid var(--rule);margin-left:4px}
+.tl li{position:relative;padding:4px 0 8px 14px;display:grid;grid-template-columns:96px 34px minmax(0,1fr);gap:8px;font-size:13.5px;align-items:baseline;overflow-wrap:anywhere}
 .tl li::before{content:"";position:absolute;left:-5px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--card);border:2px solid var(--muted)}
 .tl li.kill::before{background:var(--killed);border-color:var(--killed)}
 .tl li.win::before{background:var(--law);border-color:var(--law)}
@@ -231,7 +241,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 .feed li{display:grid;grid-template-columns:88px 1fr;gap:8px;align-items:baseline;padding-left:8px;border-left:2px solid var(--rule)}
 .feed li.kill{border-left-color:var(--killed)} .feed li.win{border-left-color:var(--law)}
 .feed .dt{font-size:11.5px;color:var(--muted)}
-.last{grid-column:1/4;font-size:14.5px;color:#D6D2C2;margin-top:4px}
+.last{grid-column:1/-1;font-size:14.5px;color:#D6D2C2;margin-top:4px;overflow-wrap:anywhere}
 .last .mono{font-size:13.5px;color:var(--muted)}
 .stages-head{padding:0 19px;display:grid;grid-column:auto}
 @media (max-width:820px){.glance{grid-template-columns:1fr}}
@@ -250,7 +260,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
   details.bill>summary{grid-template-columns:1fr auto}
   .bnum{grid-column:1/2} .btitle{grid-column:1/3;order:3} .bmeta{grid-column:1/3;order:4}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
-  .tl li{grid-template-columns:78px 1fr} .tl .ch{display:none}
+  .tl li{grid-template-columns:78px minmax(0,1fr)} .tl .ch{display:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -557,6 +567,38 @@ const chip=s=>{const o=STATUS[s]||{l:s,c:"--muted"};return`<span class="chip ${e
 /* footnotes: stable global numbering across the whole session */
 function sortedAll(){return bills.slice().sort((a,b)=>(b.congress||0)-(a.congress||0)||String(a.introduced||"").localeCompare(String(b.introduced||""))||String(a.id).localeCompare(String(b.id)))}
 let FN={}, FNLIST=[];
+/* readable bill names: the short title when there is one, else a shortened official title */
+const AG=[["Environmental Protection Agency","EPA"],["Bureau of Land Management","BLM"],["Consumer Financial Protection Bureau","CFPB"],["Department of Energy","Energy Dept."],["Department of the Interior","Interior Dept."],["Department of Labor","Labor Dept."],["Department of Education","Education Dept."],["Department of Health and Human Services","HHS"],["Department of Agriculture","USDA"],["Department of Transportation","DOT"],["Department of the Treasury","Treasury"],["Department of Homeland Security","DHS"],["Department of Veterans Affairs","VA"],["Department of Commerce","Commerce Dept."],["Office of the Comptroller of the Currency","OCC"],["Federal Deposit Insurance Corporation","FDIC"],["Securities and Exchange Commission","SEC"],["Federal Communications Commission","FCC"],["Federal Energy Regulatory Commission","FERC"],["Internal Revenue Service","IRS"],["National Park Service","Park Service"],["Fish and Wildlife Service","Fish & Wildlife"],["National Oceanic and Atmospheric Administration","NOAA"],["Bureau of Ocean Energy Management","BOEM"],["Federal Trade Commission","FTC"],["Board of Governors of the Federal Reserve System","Federal Reserve"],["National Labor Relations Board","NLRB"],["Food and Drug Administration","FDA"],["Centers for Medicare & Medicaid Services","CMS"],["Office of Personnel Management","OPM"],["Federal Highway Administration","FHWA"],["National Highway Traffic Safety Administration","NHTSA"],["Department of Defense","Defense Dept."],["Department of Justice","Justice Dept."],["Department of Housing and Urban Development","HUD"],["Department of State","State Dept."]];
+function abbr(s){let x=s.replace(/^the /i,"").replace(/^United States /,"").replace("Office of Energy Efficiency and Renewable Energy","Energy Dept.");for(const[a,b]of AG)x=x.split(a).join(b);
+  x=x.replace(/ of the (Interior|Energy|Treasury|Labor|Commerce|Agriculture) Dept\.$/,"").replace(/,? (Interior|Energy|Labor|Commerce) Dept\.$/,"");
+  x=x.replace(/,? (Department of [A-Z][\w ]+|[A-Z][\w.]+ Dept\.)$/,m=>/^(,? )?(Energy|Interior|Labor|Commerce|Agriculture)/.test(m.replace(/^,? /,""))&&x.indexOf(m)>0?"":m);
+  return x.replace(/ of (BLM|Interior Dept\.|Energy Dept\.)$/,"").replace(/^Energy Dept\., Energy Dept\.$/,"Energy Dept.")}
+const GENERIC=/^(Energy Conservation Program|Endangered and Threatened Wildlife and Plants|Air Plan Approval|Air Quality State Implementation Plans)[:;]\s*/i;
+function cut(s,n){s=s.trim();if(s.length<=n)return s;let c=s.slice(0,n);const i=c.lastIndexOf(" ");if(i>n*0.6)c=c.slice(0,i);return c.replace(/[\s,;:.\-–(]+$/,"")+"…"}
+function nameOf(t){
+  t=String(t||"").trim().replace(/\s+/g," ").replace(/^(A|An) (joint resolution|concurrent resolution|resolution) (providing|proposing|disapproving|relating|requesting|expressing|terminating)/i,(m,a,b,c)=>c.charAt(0).toUpperCase()+c.slice(1));
+  const fms=t.match(/^Providing for congressional disapproval of the proposed (?:foreign military sale|direct commercial sale|export|sale)s? to (?:the )?(?:Government of )?(.+?) of .+$/i);
+  if(fms)return cut("Block proposed arms sale to "+fms[1],70);
+  const fex=t.match(/^Providing for congressional disapproval of the proposed export of .+? to (?:the )?(.+?)\.?$/i);
+  if(fex)return cut("Block proposed arms export to "+fex[1],70);
+  const ne=t.match(/^Terminating (the national emergency .+?)\.?$/i);
+  if(ne)return cut("End "+ne[1],70);
+  const m=t.match(/^Providing (?:for )?congressional disapproval under chapter 8 of title 5, United States Code, of the rule (?:submitted|issued|published) by (.+?) relat(?:ing|ed) to (.+?)\.?$/i);
+  if(m){let subj=m[2].replace(/^the /i,"").replace(/^["“”']+|["“”'.]+$/g,"");subj=subj.replace(GENERIC,"");return"Overturn "+cut(abbr(m[1]),28)+" rule: "+cut(subj,44)}
+  const c=t.match(/^Proposing an amendment to the Constitution of the United States,? (.+?)\.?$/i);
+  if(c){const x=c[1].replace(/^relat(?:ive|ing) to /i,"on ").replace(/ of the United States/g,"");return cut("Constitutional amendment "+x,70)}
+  const dc=t.match(/^Disapproving the action of the District of Columbia Council in approving (?:the )?(.+?)\.?$/i);
+  if(dc)return cut("Block D.C. law: "+dc[1],70);
+  const r=t.match(/^Relating to a national emergency declared by the President on (.+?)\.?$/i);
+  if(r)return cut("End national emergency declared "+r[1],70);
+  t=t.replace(/^(A|An) (bill|joint resolution|concurrent resolution|resolution) to /i,"To ");
+  return cut(t,70);
+}
+const nm=b=>b.name||(b.name=nameOf(b.title));
+const plain=s=>String(s||"").replace(/<[^>]*>/g,"").replace(/\s+/g," ").trim();
+const numKey=s=>String(s||"").replace(/[^a-z0-9]/gi,"").toLowerCase();
+function billLink(b){return`<a href="#b-${esc(b.id)}" data-open="${esc(b.id)}" class="bl" title="${esc(b.title)}"><span class="bl-n">${esc(nm(b))}</span> <span class="bl-num">${esc(b.num)}</span></a>`}
+
 /* sources: numbered per bill, listed at the bottom of that bill's card */
 function buildNotes(){
   FN={};FNLIST={};
@@ -589,21 +631,21 @@ function matches(b){
   if(F.cong!=="all"&&String(b.congress)!==F.cong)return false;
   if(F.status!=="all"&&b.status!==F.status)return false;
   if(F.area!=="all"&&b.area!==F.area)return false;
-  if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,b.area,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
+  if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,nm(b),b.area,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
   return true;
 }
 
 function billCard(b){
   const sp=b.sponsor||{};
   const cs=b.cosponsors;
-  const tl=(b.timeline||[]).map(t=>`<li class="${t.k||""}"><span class="dt">${fmtD(t.d)}</span><span class="ch">${esc(t.ch||"")}</span><span>${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}${sup(b,t.fn)}</span></li>`).join("");
+  const tl=(b.timeline||[]).map(t=>`<li class="${t.k||""}"><span class="dt">${fmtD(t.d)}</span><span class="ch">${esc(t.ch||"")}</span><span>${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}${sup(b,t.fn)}</span></li>`).join("");
   const bl=(b.blockers||[]).length?`<div><h4>Blocked or slowed by</h4><div class="tbl"><table><thead><tr><th>Who</th><th>Role</th><th>Action</th><th>Kill point</th><th>Date</th><th>Attribution</th></tr></thead><tbody>${b.blockers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc(x.act||"")}${sup(b,x.fn)}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
   const cr=(b.crossovers||[]).length?`<div><h4>Crossed party lines</h4><div class="tbl"><table><thead><tr><th>Member</th><th>Vote</th><th>On</th></tr></thead><tbody>${b.crossovers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td class="n">${esc(x.vote)}</td><td>${esc(x.on||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
   const lead=(b.lead||[]).length?`<div><div class="k">Co-authors &amp; drivers</div>${b.lead.map(x=>`<div>${pb(x.p)} ${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}${x.r?` <span class="muted">· ${esc(x.r)}</span>`:""}</div>`).join("")}</div>`:"";
   return`<details class="bill" id="b-${esc(b.id)}">
   <summary>
     <span class="bnum">${esc(b.num)}</span>
-    <span class="btitle">${esc(b.title)}</span>
+    <span class="btitle" title="${esc(b.title)}">${esc(nm(b))}</span>
     <span>${chip(b.status)}</span>
     <span class="bmeta">${b.reference?`<span class="ref">${esc(b.congress)} REF</span>`:""}${b.auto?`<span class="ref" title="Facts from Congress.gov, not yet reviewed">AUTO</span>`:""}<span>${esc(b.area||"")}</span><span>${pb(sp.p)} ${esc(sp.n||"Sponsor —")}</span>${b.path?`<span>${esc(b.path)}</span>`:""}</span>
     <span class="pipe" aria-label="Stage reached: ${esc(STAGES[b.reached||0])}">${pipe(b)}</span>
@@ -616,6 +658,7 @@ function billCard(b){
       <div><div class="k">Cosponsors</div>${cs&&cs.t!=null?`<div class="mono">${cs.t} · <span class="d">${cs.d||0} D</span> · <span class="r">${cs.r||0} R</span>${cs.i?` · <span class="i">${cs.i} I</span>`:""}</div>${splitBar(cs)}`:`<div class="muted">not recorded</div>`}</div>
       <div><div class="k">Introduced</div><div class="mono">${fmtD(b.introduced)}</div></div>
     </div>
+    ${nm(b)!==b.title?`<div class="offt"><div class="k">Official title</div><div>${esc(b.title)}</div></div>`:""}
     ${b.url?`<div class="links"><a href="${esc(b.url)}" target="_blank" rel="noopener">Congress.gov</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`:""}
     ${tl?`<div><h4>Timeline</h4><ol class="tl">${tl}</ol></div>`:""}
     ${bl}${cr}
@@ -624,7 +667,7 @@ function billCard(b){
 }
 
 function lastEv(b){const t=(b.timeline||[]).slice().sort((x,y)=>String(y.d||"").localeCompare(String(x.d||"")));return t[0]}
-function lastAct(b){const t=lastEv(b)||(b.latest&&b.latest.text?{d:b.latest.actionDate,e:b.latest.text}:null);return t?`<span class="last"><span class="mono">${fmtD(t.d)}</span> ${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span>`:""}
+function lastAct(b){const t=lastEv(b)||(b.latest&&b.latest.text?{d:b.latest.actionDate,e:b.latest.text}:null);return t?`<span class="last"><span class="mono">${fmtD(t.d)}</span> ${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span>`:""}
 
 function renderGlance(){
   const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
@@ -632,7 +675,7 @@ function renderGlance(){
   $("#g-score").innerHTML=["law","passed1","moving","stalled","killed","vetoed"].map(k=>{const c=n(k);const inner=`<span class="num mono" style="color:var(${STATUS[k].c})">${c}</span><span>${esc(STATUS[k].l)}</span>`;return c?`<button type="button" class="sc go" data-status="${k}" aria-label="Show ${c} ${esc(STATUS[k].l.toLowerCase())} bills">${inner}</button>`:`<div class="sc">${inner}</div>`}).join("");
   const ev=[];pool.forEach(b=>(b.timeline||[]).forEach(t=>ev.push({b,t})));
   ev.sort((x,y)=>String(y.t.d||"").localeCompare(String(x.t.d||"")));
-  $("#g-latest").innerHTML=ev.slice(0,6).map(({b,t})=>`<li class="${t.k||""}"><span class="dt mono">${fmtD(t.d)}</span><span><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}" class="mono">${esc(b.num)}</a> ${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span></li>`).join("")||`<li class="muted">${loaded?"No actions yet":"Loading…"}</li>`;
+  $("#g-latest").innerHTML=ev.slice(0,6).map(({b,t})=>`<li class="${t.k||""}"><span class="dt mono">${fmtD(t.d)}</span><span>${billLink(b)} <span class="act">${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span></span></li>`).join("")||`<li class="muted">${loaded?"No actions yet":"Loading…"}</li>`;
   const nx=(meta&&Array.isArray(meta.next)?meta.next:[]);
   $("#g-next").innerHTML=nx.map(x=>`<li><span class="dt mono">${fmtD(x.d)}</span><span>${esc(x.e)}${x.u?` <a href="${esc(x.u)}" target="_blank" rel="noopener">src</a>`:""}</span></li>`).join("")||`<li class="muted">${loaded?"Nothing scheduled":"Loading…"}</li>`;
   $("#glance-count").textContent=meta&&meta.asOf?`as of ${meta.asOf}`:"";
@@ -662,7 +705,7 @@ function renderAgenda(){
     if(!bs.length)return`<div class="ag empty"><span class="t">${esc(a)}</span><span class="s">No mature bill</span></div>`;
     const best=bs.slice().sort((x,y)=>(y.reached||0)-(x.reached||0))[0];
     const law=bs.filter(b=>b.status==="law").length, dead=bs.filter(b=>b.status==="killed"||b.status==="vetoed").length;
-    return`<div class="ag"><span class="t">${esc(a)}</span><span class="pipe">${pipe(best)}</span><span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul>${bs.map(b=>`<li><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a> ${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</li>`).join("")}</ul></div>`;
+    return`<div class="ag"><span class="t">${esc(a)}</span><span class="pipe">${pipe(best)}</span><span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul>${bs.map(b=>`<li>${billLink(b)} <span class="muted">${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</span></li>`).join("")}</ul></div>`;
   }).join("");
 }
 
@@ -670,10 +713,10 @@ function renderNames(){
   const pool=sortedAll().filter(b=>F.cong==="all"||String(b.congress)===F.cong);
   const rowsB=[],rowsC=[],rowsS=[];
   for(const b of pool){
-    (b.blockers||[]).forEach(x=>rowsB.push(`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}${sup(b,x.fn)}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`));
-    (b.crossovers||[]).forEach(x=>rowsC.push(`<tr><td>${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td class="n">${esc(x.vote)}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${esc(x.on||"")}</td></tr>`));
-    if(b.sponsor&&b.sponsor.n)rowsS.push(`<tr><td>${esc(b.sponsor.n)}${b.sponsor.s?` <span class="muted">(${esc(b.sponsor.s)})</span>`:""}</td><td>${pb(b.sponsor.p)}</td><td>Sponsor</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${chip(b.status)}</td></tr>`);
-    (b.lead||[]).forEach(x=>rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${chip(b.status)}</td></tr>`));
+    (b.blockers||[]).forEach(x=>rowsB.push(`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}${sup(b,x.fn)}</td><td class="bcell">${billLink(b)}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`));
+    (b.crossovers||[]).forEach(x=>rowsC.push(`<tr><td>${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td class="n">${esc(x.vote)}</td><td class="bcell">${billLink(b)}</td><td>${esc(x.on||"")}</td></tr>`));
+    if(b.sponsor&&b.sponsor.n)rowsS.push(`<tr><td>${esc(b.sponsor.n)}${b.sponsor.s?` <span class="muted">(${esc(b.sponsor.s)})</span>`:""}</td><td>${pb(b.sponsor.p)}</td><td>Sponsor</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`);
+    (b.lead||[]).forEach(x=>rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`));
   }
   const none=c=>`<tr><td colspan="${c}" class="muted">${loaded?"None yet":"Loading…"}</td></tr>`;
   $("#t-block tbody").innerHTML=rowsB.join("")||none(6);
@@ -687,7 +730,7 @@ function renderOutcomes(){
   done.sort((a,b)=>{const r=String(val(a,sortK)).localeCompare(String(val(b,sortK)),undefined,{numeric:true});return sortDir==="asc"?r:-r});
   const law=done.filter(b=>b.status==="law").length;
   $("#out-count").textContent=`${law} passed · ${done.length-law} killed`;
-  $("#t-out tbody").innerHTML=done.map(b=>{const o=b.outcome||{};return`<tr><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a>${b.reference?` <span class="ref">REF</span>`:""}</td><td>${esc(b.title)}</td><td>${chip(b.status)}</td><td>${esc(o.where||"")}</td><td>${esc(o.by||"")}</td><td class="n">${fmtD(o.d)}</td><td class="n">${esc(o.v||"")}</td><td class="n">${sup(b,o.fn)}</td></tr>`}).join("")||`<tr><td colspan="8" class="muted">${loaded?"Nothing resolved yet":"Loading…"}</td></tr>`;
+  $("#t-out tbody").innerHTML=done.map(b=>{const o=b.outcome||{};return`<tr><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a>${b.reference?` <span class="ref">REF</span>`:""}</td><td title="${esc(b.title)}">${esc(nm(b))}</td><td>${chip(b.status)}</td><td>${esc(o.where||"")}</td><td>${esc(o.by||"")}</td><td class="n">${fmtD(o.d)}</td><td class="n">${esc(o.v||"")}</td><td class="n">${sup(b,o.fn)}</td></tr>`}).join("")||`<tr><td colspan="8" class="muted">${loaded?"Nothing resolved yet":"Loading…"}</td></tr>`;
   document.querySelectorAll("#t-out th").forEach(th=>{const k=th.querySelector("button")?.dataset.k;if(k)th.setAttribute("aria-sort",k===sortK?(sortDir==="asc"?"ascending":"descending"):"none")});
 }
 
@@ -731,13 +774,16 @@ function renderSeason(){
 }
 
 let VOTES={senate:[],house:[]}, CONGRESS=null;
+let BYNUM={};
 function renderVotes(){
+  BYNUM={};bills.forEach(b=>{BYNUM[numKey(b.num)]=b});
   const all=[...(VOTES.senate||[]),...(VOTES.house||[])].filter(v=>v&&v.d).sort((a,b)=>String(b.d).localeCompare(String(a.d))||((+b.n||0)-(+a.n||0))).slice(0,30);
   $("#votes-count").textContent=all.length?`latest ${all.length}`:"";
   $("#t-votes tbody").innerHTML=all.map(v=>{
     const res=String(v.result||"");const ok=/agreed|passed|confirmed|invoked(?! not)/i.test(res)&&!/not|rejected|failed/i.test(res);
-    const q=[v.measure,v.q].filter(Boolean).join(" · ");
-    return`<tr><td class="n">${v.ch==="S"?"Senate":"House"}</td><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(q).slice(0,220)}</td><td><span class="chip" style="--c:var(${ok?"--law":"--killed"})">${esc(res||"—")}</span></td><td class="n">${v.y||v.n_?`${esc(v.y)}–${esc(v.n_)}`:""}</td></tr>`}).join("")||`<tr><td colspan="6" class="muted">${loaded?"No recorded votes yet this session":"Loading…"}</td></tr>`;
+    const tb=BYNUM[numKey(v.measure)];
+    const q=[tb?null:v.measure,v.q].filter(Boolean).join(" · ");
+    return`<tr><td class="n">${v.ch==="S"?"Senate":"House"}</td><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">${esc(v.n)}</a>`:esc(v.n)}</td><td>${tb?billLink(tb)+" ":""}${esc(q).slice(0,220)}</td><td><span class="chip" style="--c:var(${ok?"--law":"--killed"})">${esc(res||"—")}</span></td><td class="n">${v.y||v.n_?`${esc(v.y)}–${esc(v.n_)}`:""}</td></tr>`}).join("")||`<tr><td colspan="6" class="muted">${loaded?"No recorded votes yet this session":"Loading…"}</td></tr>`;
 }
 
 function renderAll(){
