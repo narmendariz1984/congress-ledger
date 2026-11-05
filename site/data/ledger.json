@@ -2920,7 +2920,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -10727,7 +10727,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -10961,7 +10961,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12453,7 +12453,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19984,7 +19984,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23948,7 +23948,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -37473,7 +37473,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -37564,7 +37564,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T18:07:11+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40123,7 +40123,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40260,7 +40260,7 @@
     ],
     "t": 44
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40282,7 +40282,7 @@
     "p": "R",
     "s": "AL"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -40343,7 +40343,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40464,7 +40464,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40486,7 +40486,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -40556,7 +40556,7 @@
     ],
     "t": 39
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40578,7 +40578,7 @@
     "p": "D",
     "s": "CT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -40597,6 +40597,7 @@
      "d": "2026-03-25",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 72.",
      "fn": "cg",
+     "k": "kill",
      "v": "48–50"
     },
     {
@@ -40638,7 +40639,7 @@
     ],
     "t": 27
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40660,7 +40661,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -40673,6 +40674,7 @@
      "d": "2026-03-04",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 46. (consideration: CR S796)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–53"
     }
    ],
@@ -40696,7 +40698,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40718,7 +40720,7 @@
     "p": "D",
     "s": "NV"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -40737,6 +40739,7 @@
      "d": "2026-03-25",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 53. Record Vote Number: 70.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–53"
     },
     {
@@ -40764,7 +40767,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40889,7 +40892,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40911,7 +40914,7 @@
     "p": "D",
     "s": "WI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -40924,6 +40927,7 @@
      "d": "2026-04-22",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 46 - 51. Record Vote Number: 88. (consideration: CR S1889-1890)",
      "fn": "cg",
+     "k": "kill",
      "v": "46–51"
     }
    ],
@@ -40950,7 +40954,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40972,7 +40976,7 @@
     "p": "D",
     "s": "CT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -40985,6 +40989,7 @@
      "d": "2026-03-24",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 69.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–53"
     }
    ],
@@ -41010,7 +41015,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41032,7 +41037,7 @@
     "p": "D",
     "s": "NJ"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41045,6 +41050,7 @@
      "d": "2026-03-18",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 58.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–53"
     }
    ],
@@ -41070,7 +41076,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41092,7 +41098,7 @@
     "p": "D",
     "s": "IL"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41105,6 +41111,7 @@
      "d": "2026-04-15",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 52. Record Vote Number: 79.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–52"
     },
     {
@@ -41139,7 +41146,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41211,7 +41218,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41326,7 +41333,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41348,7 +41355,7 @@
     "p": "D",
     "s": "MD"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41367,6 +41374,7 @@
      "d": "2026-05-13",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 53. Record Vote Number: 123. (consideration: CR S2265-2266)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–53"
     }
    ],
@@ -41385,7 +41393,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41407,7 +41415,7 @@
     "p": "D",
     "s": "RI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41426,6 +41434,7 @@
      "d": "2026-05-13",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 52. Record Vote Number: 121. (consideration: CR S2264-2265)",
      "fn": "cg",
+     "k": "kill",
      "v": "48–52"
     }
    ],
@@ -41448,7 +41457,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41470,7 +41479,7 @@
     "p": "I",
     "s": "VT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41483,6 +41492,7 @@
      "d": "2026-04-15",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 36 - 63. Record Vote Number: 81. (consideration: CR S1779)",
      "fn": "cg",
+     "k": "kill",
      "v": "36–63"
     },
     {
@@ -41510,7 +41520,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41532,7 +41542,7 @@
     "p": "D",
     "s": "CO"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41551,6 +41561,7 @@
      "d": "2026-04-29",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 52. Record Vote Number: 110. (CR S2106)",
      "fn": "cg",
+     "k": "kill",
      "v": "46–52"
     }
    ],
@@ -41569,7 +41580,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41591,7 +41602,7 @@
     "p": "D",
     "s": "GA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41610,6 +41621,7 @@
      "d": "2026-05-13",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 122. (consideration: CR S2265)",
      "fn": "cg",
+     "k": "kill",
      "v": "50–50"
     }
    ],
@@ -41639,7 +41651,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41661,7 +41673,7 @@
     "p": "D",
     "s": "OR"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41674,6 +41686,7 @@
      "d": "2026-05-13",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 118. (consideration: CR S2250-2255)",
      "fn": "cg",
+     "k": "kill",
      "v": "49–50"
     },
     {
@@ -41700,7 +41713,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41722,7 +41735,7 @@
     "p": "D",
     "s": "GA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41735,6 +41748,7 @@
      "d": "2026-06-16",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 48. Record Vote Number: 174.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–48"
     },
     {
@@ -41774,7 +41788,7 @@
     ],
     "t": 16
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41896,7 +41910,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41918,7 +41932,7 @@
     "p": "D",
     "s": "MD"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -41931,6 +41945,7 @@
      "d": "2026-07-23",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–49"
     },
     {
@@ -41965,7 +41980,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41987,7 +42002,7 @@
     "p": "D",
     "s": "NY"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42000,6 +42015,7 @@
      "d": "2026-07-30",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)",
      "fn": "cg",
+     "k": "kill",
      "v": "49–50"
     },
     {
@@ -42034,7 +42050,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42056,7 +42072,7 @@
     "p": "D",
     "s": "CA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42069,6 +42085,7 @@
      "d": "2026-04-30",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 50. Record Vote Number: 113. (consideration: CR S2156-2158)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–50"
     }
    ],
@@ -42096,7 +42113,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42118,7 +42135,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42138,6 +42155,7 @@
      "d": "2026-06-24",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–50"
     }
    ],
@@ -42156,7 +42174,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42178,7 +42196,7 @@
     "p": "D",
     "s": "RI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42197,6 +42215,7 @@
      "d": "2026-08-05",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222.",
      "fn": "cg",
+     "k": "kill",
      "v": "48–50"
     }
    ],
@@ -42215,7 +42234,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42237,7 +42256,7 @@
     "p": "D",
     "s": "RI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42256,6 +42275,7 @@
      "d": "2026-06-03",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 53. Record Vote Number: 135. (CR S2509)",
      "fn": "cg",
+     "k": "kill",
      "v": "46–53"
     }
    ],
@@ -42276,7 +42296,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42298,7 +42318,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42317,6 +42337,7 @@
      "d": "2026-06-16",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)",
      "fn": "cg",
+     "k": "kill",
      "v": "46–48"
     }
    ],
@@ -42342,7 +42363,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42364,7 +42385,7 @@
     "p": "D",
     "s": "OR"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42383,6 +42404,7 @@
      "d": "2026-06-24",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 45 - 52. Record Vote Number: 190. (CR S3193)",
      "fn": "cg",
+     "k": "kill",
      "v": "45–52"
     }
    ],
@@ -42415,7 +42437,7 @@
     ],
     "t": 15
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42437,7 +42459,7 @@
     "p": "D",
     "s": "WI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42456,6 +42478,7 @@
      "d": "2026-09-29",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 251. (consideration: CR S5139-5140)",
      "fn": "cg",
+     "k": "kill",
      "v": "48–51"
     }
    ],
@@ -42491,7 +42514,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42513,7 +42536,7 @@
     "p": "D",
     "s": "OR"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42532,6 +42555,7 @@
      "d": "2026-07-16",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 50. Record Vote Number: 199.",
      "fn": "cg",
+     "k": "kill",
      "v": "46–50"
     }
    ],
@@ -42564,7 +42588,7 @@
     ],
     "t": 17
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42586,7 +42610,7 @@
     "p": "D",
     "s": "WA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42605,6 +42629,7 @@
      "d": "2026-07-30",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–52"
     },
     {
@@ -42629,7 +42654,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42651,7 +42676,7 @@
     "p": "I",
     "s": "VT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -42664,6 +42689,7 @@
      "d": "2025-04-03",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 83. Record Vote Number: 166. (consideration: CR S2152-2158)",
      "fn": "cg",
+     "k": "kill",
      "v": "15–83"
     }
    ],
@@ -42688,7 +42714,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42814,7 +42840,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T08:00:24+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42892,7 +42918,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43010,7 +43036,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43032,7 +43058,7 @@
     "p": "I",
     "s": "VT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43045,6 +43071,7 @@
      "d": "2026-04-15",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 40 - 59. Record Vote Number: 80. (consideration: CR S1764-1779)",
      "fn": "cg",
+     "k": "kill",
      "v": "40–59"
     },
     {
@@ -43069,7 +43096,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43091,7 +43118,7 @@
     "p": "I",
     "s": "VT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43104,6 +43131,7 @@
      "d": "2025-04-03",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 82. Record Vote Number: 165. (consideration: CR S2152-2158)",
      "fn": "cg",
+     "k": "kill",
      "v": "15–82"
     }
    ],
@@ -43125,7 +43153,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43147,7 +43175,7 @@
     "p": "I",
     "s": "VT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43160,6 +43188,7 @@
      "d": "2025-07-30",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 24 - 73. Record Vote Number: 455.",
      "fn": "cg",
+     "k": "kill",
      "v": "24–73"
     },
     {
@@ -43194,7 +43223,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43270,7 +43299,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43292,7 +43321,7 @@
     "p": "I",
     "s": "VT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43305,6 +43334,7 @@
      "d": "2025-07-30",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 27 - 70. Record Vote Number: 454.",
      "fn": "cg",
+     "k": "kill",
      "v": "27–70"
     },
     {
@@ -43336,7 +43366,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43358,7 +43388,7 @@
     "p": "D",
     "s": "OR"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43378,8 +43408,7 @@
      "ch": "S",
      "d": "2025-04-30",
      "e": "Motion by Senator Thune to reconsider the vote by which S.J. Res. 49 failed of passage (Record Vote No. 225) made in Senate.",
-     "fn": "cg",
-     "k": "kill"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -43425,7 +43454,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43447,7 +43476,7 @@
     "p": "D",
     "s": "CT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43460,6 +43489,7 @@
      "d": "2025-06-11",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 306.",
      "fn": "cg",
+     "k": "kill",
      "v": "39–56"
     },
     {
@@ -43490,7 +43520,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43512,7 +43542,7 @@
     "p": "D",
     "s": "CT"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43525,6 +43555,7 @@
      "d": "2025-06-11",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 307.",
      "fn": "cg",
+     "k": "kill",
      "v": "39–56"
     },
     {
@@ -43549,7 +43580,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43644,7 +43675,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43666,7 +43697,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43679,6 +43710,7 @@
      "d": "2025-06-27",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 328. (consideration: CR S3595)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–53"
     },
     {
@@ -43704,7 +43736,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43726,7 +43758,7 @@
     "p": "D",
     "s": "RI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43745,6 +43777,7 @@
      "d": "2025-09-16",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 520. (consideration: CR S6631)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–51"
     }
    ],
@@ -43769,7 +43802,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43791,7 +43824,7 @@
     "p": "R",
     "s": "LA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43810,6 +43843,7 @@
      "d": "2025-10-29",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 25 - 72. Record Vote Number: 597.",
      "fn": "cg",
+     "k": "kill",
      "v": "25–72"
     }
    ],
@@ -43843,7 +43877,7 @@
     ],
     "t": 16
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43925,7 +43959,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -43947,7 +43981,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -43995,7 +44029,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44017,7 +44051,7 @@
     "p": "D",
     "s": "CA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44036,6 +44070,7 @@
      "d": "2025-11-19",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 51. Record Vote Number: 622.",
      "fn": "cg",
+     "k": "kill",
      "v": "46–51"
     }
    ],
@@ -44068,7 +44103,7 @@
     ],
     "t": 16
    },
-   "fetched": "2026-11-05T07:18:20+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44137,7 +44172,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T07:20:14+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44262,7 +44297,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-05T07:20:14+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44352,7 +44387,7 @@
     ],
     "t": 37
    },
-   "fetched": "2026-11-05T07:20:14+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44374,7 +44409,7 @@
     "p": "I",
     "s": "ME"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44435,7 +44470,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T07:20:14+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44457,7 +44492,7 @@
     "p": "D",
     "s": "CA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44470,6 +44505,7 @@
      "d": "2025-10-08",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 48 - 51. Record Vote Number: 555.",
      "fn": "cg",
+     "k": "kill",
      "v": "48–51"
     }
    ],
@@ -44513,7 +44549,7 @@
     ],
     "t": 43
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44535,7 +44571,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44554,6 +44590,7 @@
      "d": "2026-01-13",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 8.",
      "fn": "cg",
+     "k": "kill",
      "v": "47–52"
     },
     {
@@ -44579,7 +44616,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44601,7 +44638,7 @@
     "p": "D",
     "s": "RI"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44620,6 +44657,7 @@
      "d": "2026-01-07",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 43 - 50. Record Vote Number: 4.",
      "fn": "cg",
+     "k": "kill",
      "v": "43–50"
     },
     {
@@ -44651,7 +44689,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T07:20:14+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44731,7 +44769,7 @@
     ],
     "t": 18
    },
-   "fetched": "2026-11-05T07:20:14+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44753,7 +44791,7 @@
     "p": "D",
     "s": "VA"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44766,6 +44804,7 @@
      "d": "2025-11-06",
      "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 51. Record Vote Number: 608. (consideration: CR S7958)",
      "fn": "cg",
+     "k": "kill",
      "v": "49–51"
     },
     {
@@ -44795,7 +44834,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44817,7 +44856,7 @@
     "p": "D",
     "s": "OR"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44836,6 +44875,7 @@
      "d": "2026-02-10",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 35. (CR S543)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–51"
     }
    ],
@@ -44874,7 +44914,7 @@
     ],
     "t": 30
    },
-   "fetched": "2026-11-05T07:20:14+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44957,7 +44997,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-05T08:16:03+00:00",
+   "fetched": "2026-11-05T18:10:07+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -44979,7 +45019,7 @@
     "p": "D",
     "s": "NV"
    },
-   "status": "moving",
+   "status": "killed",
    "timeline": [
     {
      "ch": "S",
@@ -44998,6 +45038,7 @@
      "d": "2026-04-29",
      "e": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 111. (CR S2106)",
      "fn": "cg",
+     "k": "kill",
      "v": "47–50"
     }
    ],
@@ -45007,7 +45048,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T18:07:11+00:00",
+ "generatedAt": "2026-11-05T18:10:07+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
