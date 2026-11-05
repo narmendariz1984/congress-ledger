@@ -672,6 +672,15 @@ def main() -> int:
         tracked["schema"] = 2
         print(f"schema 2: queued {len(q['queue'])} bills to re-download for cosponsor states")
 
+    # Checked on every run, before the schedule decides what to update, so a rule
+    # change starts its re-check right away, even during recess.
+    if tracked.get("statusRule") != STATUS_RULE:
+        q = tracked.setdefault("backfill", {"queue": []})
+        q["queue"] = sorted(set(q.get("queue") or []) | set(tracked["bills"]))
+        q.pop("finished", None)
+        tracked["statusRule"] = STATUS_RULE
+        print(f"status rule changed to {STATUS_RULE}: queued {len(q['queue'])} bills to re-check")
+
     do_bills, do_votes = plan(mode, now, meta.get("calendar") or {})
     queue = (tracked.get("backfill") or {}).get("queue") or []
     if queue:
@@ -747,13 +756,6 @@ def main() -> int:
                 return float("inf")
         stale = sorted((b for b in wanted if age(b) > 7 * 86400), key=age, reverse=True)[:STALE_PER_RUN]
         refetch = curated_ids | updated | set(stale) | set(batch) | {b for b in wanted if b not in auto_by_id}
-        if tracked.get("statusRule") != STATUS_RULE:
-            # re-check every bill in the usual 100-bill batches, which chain until done
-            q = tracked.setdefault("backfill", {"queue": []})
-            q["queue"] = sorted(set(q.get("queue") or []) | set(tracked["bills"]))
-            q.pop("finished", None)
-            tracked["statusRule"] = STATUS_RULE
-            print(f"status rule changed to {STATUS_RULE}: queued {len(q['queue'])} bills to re-check")
         if tracked.get("rule") != KEEP_RULE:
             if RULE_ONLY_WIDENS and tracked.get("rule"):
                 again = tracked.pop("dropped", [])
