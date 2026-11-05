@@ -289,9 +289,13 @@ def fetch_bill(congress: int, btype: str, number: int) -> dict:
     cos = api_all(f"{path}/cosponsors", "cosponsors")
     cos = [c for c in cos if not c.get("sponsorshipWithdrawnDate")]
     split = {"t": len(cos), "d": 0, "r": 0, "i": 0}
+    states = set()
     for c in cos:
         p = (c.get("party") or "").upper()[:1]
         split["d" if p == "D" else "r" if p == "R" else "i"] += 1
+        if c.get("state"):
+            states.add(str(c["state"]).upper())
+    split["st"] = sorted(states)  # cosponsors' states, for searching by state
     sponsors = b.get("sponsors") or []
     laws = b.get("laws") or []
     out = {
@@ -527,6 +531,14 @@ def main() -> int:
         q["since"], q["queued"] = since.date().isoformat(), now.isoformat(timespec="seconds")
         mode = "full"
 
+    if tracked.get("schema", 1) < 2:
+        q = tracked.setdefault("backfill", {"queue": []})
+        q["queue"] = sorted(set(q.get("queue") or []) | set(tracked["bills"]))
+        q["queued"], q["reason"] = now.isoformat(timespec="seconds"), "re-download for cosponsor states"
+        q.pop("finished", None)
+        tracked["schema"] = 2
+        print(f"schema 2: queued {len(q['queue'])} bills to re-download for cosponsor states")
+
     do_bills, do_votes = plan(mode, now, meta.get("calendar") or {})
     queue = (tracked.get("backfill") or {}).get("queue") or []
     if queue:
@@ -583,7 +595,7 @@ def main() -> int:
             except (TypeError, ValueError):
                 return float("inf")
         stale = sorted((b for b in wanted if age(b) > 7 * 86400), key=age, reverse=True)[:STALE_PER_RUN]
-        refetch = curated_ids | updated | set(stale) | {b for b in wanted if b not in auto_by_id}
+        refetch = curated_ids | updated | set(stale) | set(batch) | {b for b in wanted if b not in auto_by_id}
         if tracked.get("rule") != KEEP_RULE:
             refetch |= set(wanted)
             tracked["rule"] = KEEP_RULE
