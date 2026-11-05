@@ -261,6 +261,12 @@ details.vg>.tbl{margin:0 16px 14px}
 .vg-n{margin-left:8px;color:var(--accent);font-weight:600}
 @media (max-width:620px){details.vg>summary{grid-template-columns:minmax(0,1fr) auto}.vg-res{min-width:0}.vg-res .chip{white-space:normal;text-align:center}.vg-name{grid-column:1/-1;order:-1}.vg-ch{order:1}.vg-res{order:3}.vg-meta{order:2;grid-column:1/-1}}
 .ag.empty{border-style:dashed}
+.ag{scroll-margin-top:72px;transition:box-shadow .2s ease}
+.ag.flash{box-shadow:0 0 0 2px var(--red)}
+.ag-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.ag-jump-l{font-size:14px;font-weight:600;color:var(--muted)}
+.ag-tools select{flex:0 1 340px;min-width:0}
+.ag-hint{font-size:13.5px}
 .links{font-size:12.5px}
 
 .notes{margin:0;padding-left:0;list-style:none;display:grid;gap:6px;font-size:13px;counter-reset:none}
@@ -418,7 +424,10 @@ details.wpast .wi{opacity:.75}
 <a class="cta" href="#how"><span><b>New here?</b> How a bill becomes law, what this site tracks and where the numbers come from.</span><span class="go-how" aria-hidden="true">How it works</span></a>
 <details class="sec" id="agenda" open>
   <summary><h2>Agenda</h2><span class="count">how each issue area's bills are doing</span></summary>
-  <div class="sec-body"><div class="agenda" id="agenda-grid"></div></div>
+  <div class="sec-body">
+    <div class="ag-tools"><label class="ag-jump-l" for="ag-jump">Jump to</label><select id="ag-jump"><option value="">Pick an area</option></select><span class="muted ag-hint">Area names open their bills on the Bills tab.</span></div>
+    <div class="agenda" id="agenda-grid"></div>
+  </div>
 </details>
 </section>
 
@@ -886,19 +895,21 @@ function mixBar(bs){
   const label=parts.map(x=>`${x.n} ${STATUS[x.k].l.toLowerCase()}`).join(", ");
   return`<span class="mix" role="img" aria-label="${esc(label)}" title="${esc(label)}">${parts.map(x=>`<i style="flex:${x.n};--c:var(${STATUS[x.k].c})"></i>`).join("")}</span>`;
 }
+const agSlug=a=>"ag-"+a.toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 function renderAgenda(){
   const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
   const areas=AREAS.slice();pool.forEach(b=>{if(b.area&&!areas.includes(b.area))areas.push(b.area)});
   areas.sort((x,y)=>x.localeCompare(y,"en",{sensitivity:"base"}));
   $("#agenda-grid").innerHTML=areas.map(a=>{
     const bs=pool.filter(b=>b.area===a);
-    if(!bs.length)return`<div class="ag empty"><span class="t">${esc(a)}</span><span class="s">No mature bill</span></div>`;
+    if(!bs.length)return`<div class="ag empty" id="${agSlug(a)}"><span class="t">${esc(a)}</span><span class="s">No mature bill</span></div>`;
     const law=bs.filter(b=>b.status==="law").length, dead=bs.filter(b=>b.status==="killed"||b.status==="vetoed").length;
     const RANK={law:0,vetoed:1,killed:2,passed1:3,moving:4,stalled:5};
     const ord=bs.slice().sort((x,y)=>(RANK[x.status]??9)-(RANK[y.status]??9)||String((lastEv(y)||{}).d||"").localeCompare(String((lastEv(x)||{}).d||"")));
     const open=AG_OPEN.has(a), SHOW=3;
-    return`<div class="ag"><button type="button" class="t ag-go" data-area="${esc(a)}" title="Show these ${bs.length} bills on the Bills tab">${esc(a)}</button>${mixBar(bs)}<span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul class="ag-list">${ord.map((b,i)=>`<li${i>=SHOW&&!open?" hidden":""}>${billLink(b)}<span class="ag-st"><span class="dot" style="--c:var(${(STATUS[b.status]||{}).c||"--muted"})"></span>${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</span></li>`).join("")}</ul>${ord.length>SHOW?`<button type="button" class="ag-more" data-area="${esc(a)}" aria-expanded="${open}">${open?"Show fewer":`Show all ${ord.length}`}</button>`:""}</div>`;
+    return`<div class="ag" id="${agSlug(a)}"><button type="button" class="t ag-go" data-area="${esc(a)}" title="Show these ${bs.length} bills on the Bills tab">${esc(a)}</button>${mixBar(bs)}<span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul class="ag-list">${ord.map((b,i)=>`<li${i>=SHOW&&!open?" hidden":""}>${billLink(b)}<span class="ag-st"><span class="dot" style="--c:var(${(STATUS[b.status]||{}).c||"--muted"})"></span>${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</span></li>`).join("")}</ul>${ord.length>SHOW?`<button type="button" class="ag-more" data-area="${esc(a)}" aria-expanded="${open}">${open?"Show fewer":`Show all ${ord.length}`}</button>`:""}</div>`;
   }).join("");
+  $("#ag-jump").innerHTML=`<option value="">Pick an area</option>`+areas.map(a=>{const n=pool.filter(b=>b.area===a).length;return`<option value="${esc(agSlug(a))}">${esc(a)} (${n})</option>`}).join("");
 }
 
 function renderNames(){
@@ -1031,6 +1042,16 @@ $("#cal-copy").addEventListener("click",async()=>{
   setTimeout(()=>{n.textContent="for Google"},2500);
 });
 
+/* agenda: jump to an area card, flash it, keep the link shareable */
+$("#ag-jump").addEventListener("change",e=>{
+  const el=document.getElementById(e.target.value);if(!el)return;
+  el.scrollIntoView({block:"start",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+  history.replaceState(null,"","#"+el.id);
+  el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");setTimeout(()=>el.classList.remove("flash"),1800);
+  (el.querySelector(".ag-go")||el).focus({preventScroll:true});
+  e.target.value="";
+});
+
 /* theme: follows the device unless picked; Auto -> Light -> Dark */
 (function(){
   const btn=$("#theme-btn"), root=document.documentElement, names={auto:"Auto",light:"Light",dark:"Dark"};
@@ -1154,7 +1175,7 @@ async function load(){
     loaded=true;statusLine.textContent="Data couldn't load. Refresh to try again.";statusLine.classList.add("warn");
   }
   renderAll();
-  if(/^#(b-|fn-|w-)/.test(location.hash))route();
+  if(/^#(b-|fn-|w-|ag-)/.test(location.hash))route();
 }
 load();
 setInterval(()=>{if(!document.hidden)load()},15*60*1000);
