@@ -266,6 +266,12 @@ details.vg>.tbl{margin:0 16px 14px}
 .ag-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
 .ag-jump-l{font-size:14px;font-weight:600;color:var(--muted)}
 .ag-tools select{flex:0 1 340px;min-width:0}
+.ppanel{grid-template-columns:minmax(0,220px) minmax(0,1fr);align-items:center}
+.pst{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--muted)}
+.pst select{flex:1;min-width:0}
+.psum{margin:0;font-size:15.5px;color:var(--soft);padding:12px 14px;border-left:4px solid var(--red);background:var(--wash);border-radius:0 8px 8px 0}
+.psum b{color:var(--ink)}
+@media (max-width:620px){.ppanel{grid-template-columns:minmax(0,1fr)}}
 .ag-hint{font-size:13.5px;display:grid;line-height:1.4}
 .ag-hint b{color:var(--ink)}
 .links{font-size:12.5px}
@@ -283,8 +289,6 @@ details.vg>.tbl{margin:0 16px 14px}
 .sv{padding:4px 9px;font-weight:600}
 .sv .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--c);margin-right:6px;vertical-align:1px}
 .sv .sub{font-weight:400;color:var(--muted)}
-.season-key{font-size:12px;color:var(--muted)}
-.season-key b{color:var(--ink);font-weight:600}
 /* glance */
 .glance{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr) minmax(0,1fr);gap:18px}
 .gcol{min-width:0}
@@ -394,7 +398,6 @@ details.wpast .wi{opacity:.75}
       <span class="sz"><span class="sk">Senate</span><span class="sv" id="sz-senate">—</span></span>
       <span class="sz"><span class="sk">Phase</span><span class="sv" id="sz-phase">—</span></span>
     </div>
-    <div class="season-key"><b>Recess</b> members home, government runs normally · <b>Shutdown</b> funding lapsed, agencies close · <b>Lame duck</b> outgoing Congress serves until Jan 3</div>
     <div class="nextup" id="nextup" hidden></div>
     <div class="status-line" id="status-line">Loading records…</div>
   </div></div></div>
@@ -490,6 +493,12 @@ details.wpast .wi{opacity:.75}
 <details class="sec" open id="names">
   <summary><h2>Names</h2></summary>
   <div class="sec-body">
+    <div class="fpanel ppanel">
+      <label class="pst"><span>State</span><select id="p-st"><option value="">All states</option></select></label>
+      <label class="search"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="p-q" placeholder="Search a member's name" aria-label="Search a member's name" autocomplete="off"></label>
+    </div>
+    <p class="psum" id="p-sum" hidden></p>
+    <p class="note">Sponsors cover every tracked bill. Blocks and crossover votes are recorded by hand for major bills, so many states have none yet.</p>
     <div id="p-blocked" class="anch"><h4>Who stopped or slowed bills</h4><div class="tbl"><table id="t-block"><thead><tr><th>Member or bloc</th><th>Role</th><th>Action</th><th>Bill</th><th>Date</th><th>Attribution</th></tr></thead><tbody></tbody></table></div></div>
     <div id="p-cross" class="anch"><h4>Crossover votes</h4><div class="tbl"><table id="t-cross"><thead><tr><th>Member</th><th>Party</th><th>Vote</th><th>Bill</th><th>On</th></tr></thead><tbody></tbody></table></div></div>
     <div id="p-sponsors" class="anch"><h4>Sponsors and lead authors</h4><div class="tbl"><table id="t-spon"><thead><tr><th>Member</th><th>Party</th><th>Role</th><th>Bill</th><th>Status</th></tr></thead><tbody></tbody></table></div></div>
@@ -519,7 +528,7 @@ details.wpast .wi{opacity:.75}
   <div class="sec-body prose">
     <p>An independent project that follows bills once they reach the House or Senate floor: who wrote them, who voted for them and who stopped them. It isn't affiliated with Congress, any party, campaign or advocacy group.</p>
     <p>Everything is pulled from public records and refreshed automatically. The code and every data file are public on <a href="https://github.com/narmendariz1984/congress-ledger" target="_blank" rel="noopener">GitHub</a>, so anyone can check how a number was produced. Each bill lists the sources behind it at the bottom of its card.</p>
-    <p>Spot an error? <a href="https://github.com/narmendariz1984/congress-ledger/issues" target="_blank" rel="noopener">Report it on GitHub</a> with the bill number and what's wrong.</p>
+    <p>Spot an error? <a href="https://github.com/narmendariz1984/congress-ledger/issues" target="_blank" rel="noopener">Report it on GitHub</a></p>
   </div>
 </details>
 <details class="sec" id="how-law" open>
@@ -533,7 +542,7 @@ details.wpast .wi{opacity:.75}
       <li><b>Same text</b><span>Both chambers must pass identical wording, by trading amendments or through a conference committee.</span></li>
       <li><b>President</b><span>Signs it into law or vetoes it. Unsigned for 10 days (Sundays excluded), it becomes law, unless Congress has adjourned, which kills it.</span></li>
     </ol>
-    <p class="note">A Congress lasts two years, split into two yearly sessions. Bills carry over between sessions, but any bill not law by the time a Congress ends dies and has to be reintroduced.</p>
+    <p class="note">A Congress lasts two years, split into two yearly sessions.<br>Bills carry over between sessions, but any bill not law by the time a Congress ends dies and has to be reintroduced.</p>
   </div>
 </details>
 <details class="sec" open id="key">
@@ -900,19 +909,43 @@ function renderAgenda(){
   $("#ag-jump").innerHTML=`<option value="">Pick an area</option>`+areas.map(a=>{const n=pool.filter(b=>b.area===a).length;return`<option value="${esc(agSlug(a))}">${esc(a)} (${n})</option>`}).join("");
 }
 
+const PS={st:"",q:""};
+try{PS.st=localStorage.getItem("peopleState")||""}catch(e){}
+const stOf=x=>String((x&&x.s)||"").split("-")[0];
+const chamberOf=b=>/^S/i.test(b.type||String(b.num||""))?"Sen.":"Rep.";
+function personOk(name,st){
+  if(PS.st&&st!==PS.st)return false;
+  if(PS.q&&!String(name||"").toLowerCase().includes(PS.q))return false;
+  return true;
+}
 function renderNames(){
   const pool=sortedAll().filter(b=>F.cong==="all"||String(b.congress)===F.cong);
   const rowsB=[],rowsC=[],rowsS=[];
   for(const b of pool){
-    (b.blockers||[]).forEach(x=>rowsB.push(`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}${sup(b,x.fn)}</td><td class="bcell">${billLink(b)}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`));
-    (b.crossovers||[]).forEach(x=>rowsC.push(`<tr><td>${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td class="n">${esc(x.vote)}</td><td class="bcell">${billLink(b)}</td><td>${esc(x.on||"")}</td></tr>`));
-    if(b.sponsor&&b.sponsor.n)rowsS.push(`<tr><td>${esc(b.sponsor.n)}${b.sponsor.s?` <span class="muted">(${esc(b.sponsor.s)})</span>`:""}</td><td>${pb(b.sponsor.p)}</td><td>Sponsor</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`);
-    (b.lead||[]).forEach(x=>rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`));
+    (b.blockers||[]).forEach(x=>{if(!personOk(x.who,stOf(x)))return;rowsB.push(`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}${sup(b,x.fn)}</td><td class="bcell">${billLink(b)}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`)});
+    (b.crossovers||[]).forEach(x=>{if(!personOk(x.who,stOf(x)))return;rowsC.push(`<tr><td>${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td class="n">${esc(x.vote)}</td><td class="bcell">${billLink(b)}</td><td>${esc(x.on||"")}</td></tr>`)});
+    const sp=b.sponsor;
+    if(sp&&sp.n&&personOk(sp.n,stOf(sp)))rowsS.push(`<tr><td>${chamberOf(b)} ${esc(sp.n)}${sp.s?` <span class="muted">(${esc(sp.s)})</span>`:""}</td><td>${pb(sp.p)}</td><td>Sponsor</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`);
+    (b.lead||[]).forEach(x=>{if(!personOk(x.n,stOf(x)))return;rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`)});
   }
-  const none=c=>`<tr><td colspan="${c}" class="muted">${loaded?"None yet":"Loading…"}</td></tr>`;
+  const where=PS.st?` for ${esc(STATES[PS.st]||PS.st)}`:"", who=PS.q?` matching “${esc(PS.q)}”`:"";
+  const none=c=>`<tr><td colspan="${c}" class="muted">${!loaded?"Loading…":(PS.st||PS.q)?`None recorded${where}${who}`:"None yet"}</td></tr>`;
   $("#t-block tbody").innerHTML=rowsB.join("")||none(6);
   $("#t-cross tbody").innerHTML=rowsC.join("")||none(5);
   $("#t-spon tbody").innerHTML=rowsS.join("")||none(5);
+  // state options, with how many tracked bills that state's members sponsored
+  const cnt={};pool.forEach(b=>{const t=stOf(b.sponsor);if(t)cnt[t]=(cnt[t]||0)+1});
+  const sel=$("#p-st");
+  sel.innerHTML=`<option value="">All states</option>`+Object.keys(STATES).sort((a,b)=>STATES[a].localeCompare(STATES[b])).map(k=>`<option value="${k}"${k===PS.st?" selected":""}>${esc(STATES[k])}${cnt[k]?` (${cnt[k]})`:""}</option>`).join("");
+  // summary for the picked state
+  const sum=$("#p-sum");
+  if(!PS.st){sum.hidden=true;return}
+  const mine=pool.filter(b=>stOf(b.sponsor)===PS.st);
+  const law=mine.filter(b=>b.status==="law").length, dead=mine.filter(b=>b.status==="killed"||b.status==="vetoed").length;
+  const cos=pool.filter(b=>stOf(b.sponsor)!==PS.st&&((b.cosponsors&&b.cosponsors.st)||[]).includes(PS.st)).length;
+  const nC=pool.reduce((n,b)=>n+(b.crossovers||[]).filter(x=>stOf(x)===PS.st).length,0);
+  sum.hidden=false;
+  sum.innerHTML=`<b>${esc(STATES[PS.st])}</b>: its members sponsored <b>${mine.length}</b> tracked bill${mine.length===1?"":"s"} (${law} became law, ${dead} killed or vetoed) and cosponsored <b>${cos}</b> more. ${nC?`<b>${nC}</b> recorded crossover vote${nC===1?"":"s"}. `:""}<a href="#bills" id="p-tobills">See all of them on the Bills tab</a>`;
 }
 
 function renderOutcomes(){
@@ -1026,6 +1059,13 @@ function renderWatch(){
   const nx=up[0];
   if(nx){$("#nextup").hidden=false;$("#nextup").innerHTML=`<span class="k">Next</span><b>${esc(nx.date===today?"Today":short(nx.date))}</b><span>${esc(nx.title)}</span><a href="#watch">All dates</a>`}
 }
+
+/* people: state and name filters */
+$("#p-st").addEventListener("change",e=>{PS.st=e.target.value;try{PS.st?localStorage.setItem("peopleState",PS.st):localStorage.removeItem("peopleState")}catch(_){}renderNames()});
+$("#p-q").addEventListener("input",e=>{PS.q=e.target.value.trim().toLowerCase();renderNames()});
+document.addEventListener("click",e=>{if(!e.target.closest("#p-tobills"))return;e.preventDefault();
+  const cong=F.cong;resetBillFilters();F.cong=cong;$("#f-cong").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.v===cong)));
+  F.q=STATES[PS.st]||PS.st;$("#f-q").value=F.q;$("#bills").open=true;refilter();go("bills")});
 
 /* agenda: jump to an area card, flash it, keep the link shareable */
 $("#ag-jump").addEventListener("change",e=>{
