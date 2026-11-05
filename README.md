@@ -31,6 +31,12 @@ Edit `data/curated.json`. A bill needs only its key, `congress`, `type` and `num
 
 Anything else you add (`status`, `blockers`, `fns`, ...) overrides what the script fetched.
 
+## What to watch dates
+
+The What to watch tab and the calendar at `https://floorvotes.org/watch.ics` both come from `meta.watch` in `data/curated.json`. Each item has an `id`, a `title`, a `what`, sources in `src` and either a `date` (YYYY-MM-DD, with optional `end` and a `time` in Eastern) or a `when` such as "Early December" if no date is set yet. Undated items show on the page but stay off the calendar until they get a date.
+
+Edit that file on GitHub and the next refresh rebuilds the page data and `site/watch.ics`, so subscribers get the change. Keep the `id` the same when a date moves; calendars use it to update the event instead of adding a second one. Set `watchUpdated` to the day you edited.
+
 ## Secrets
 
 The Congress.gov key lives only in **Settings → Secrets and variables → Actions** as `CONGRESS_API_KEY`. It is never written to a file or printed in logs. Don't commit keys; `.gitignore` blocks `.env` files.

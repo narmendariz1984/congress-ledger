@@ -1,0 +1,129 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//floorvotes.org//What to watch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Congress: what to watch
+X-WR-CALDESC:Deadlines and key dates in Congress\, from floorvotes.org. Upd
+ ates when dates change.
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:lame-duck@floorvotes.org
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+TRANSP:TRANSPARENT
+SUMMARY:Lame-duck session begins
+DESCRIPTION:The outgoing Congress\, still under Republican control\, return
+ s for its last weeks. Any bill that hasn't become law by Jan 3 dies and ha
+ s to be introduced again.\n\nSources:\nNo Labels lame-duck guide: https://
+ nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has
+ -to-pass-after-the-midterms/\nSenate 2026 schedule: https://www.senate.gov
+ /legislative/2026_schedule.htm\n\nMore: https://floorvotes.org/#w-lame-duc
+ k
+URL:https://floorvotes.org/#w-lame-duck
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:gop-leaders@floorvotes.org
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+TRANSP:TRANSPARENT
+SUMMARY:Republican leadership elections\, House and Senate
+DESCRIPTION:Both Republican conferences pick their leaders for the next Con
+ gress\, where they'll be in the minority. Senate voting starts at 9 a.m. i
+ n the Old Senate Chamber.\n\nSources:\nRoll Call: https://rollcall.com/202
+ 6/10/30/senate-house-gop-set-leadership-elections/\n\nMore: https://floorv
+ otes.org/#w-gop-leaders
+URL:https://floorvotes.org/#w-gop-leaders
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:house-dem-leaders@floorvotes.org
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261120
+TRANSP:TRANSPARENT
+SUMMARY:House Democratic leadership elections
+DESCRIPTION:House Democrats choose their leaders\, including their nominee 
+ for Speaker. Hakeem Jeffries has announced he's running.\n\nSources:\nBloo
+ mberg Government: https://news.bgov.com/bloomberg-government-news/house-de
+ mocratic-leadership-elections-set-for-nov-18-and-19\nPunchbowl News: https
+ ://punchbowl.news/article/house/jeffries-speaker/\n\nMore: https://floorvo
+ tes.org/#w-house-dem-leaders
+URL:https://floorvotes.org/#w-house-dem-leaders
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:funding@floorvotes.org
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+TRANSP:TRANSPARENT
+SUMMARY:Government funding runs out
+DESCRIPTION:Congress has to pass full-year spending bills or another stopga
+ p\, or a shutdown starts. Health care items such as the expired ACA premiu
+ m subsidies would most likely ride on this bill.\n\nSources:\nSTAT: https:
+ //www.statnews.com/2026/11/04/lame-duck-session-congress-health-policy-aca
+ -subsidies-medicaid-funding/\nNo Labels lame-duck guide: https://nolabels.
+ org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-
+ after-the-midterms/\n\nMore: https://floorvotes.org/#w-funding
+URL:https://floorvotes.org/#w-funding
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:last-day@floorvotes.org
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+TRANSP:TRANSPARENT
+SUMMARY:Last scheduled day of the year
+DESCRIPTION:The Senate's last scheduled day. The House's last scheduled day
+  is Dec 17. Either can stay longer if work is unfinished.\n\nSources:\nSen
+ ate 2026 schedule: https://www.senate.gov/legislative/2026_schedule.htm\nR
+ oll Call: https://rollcall.com/2025/11/19/senate-calendar-2026-midterm-ele
+ ction/\n\nMore: https://floorvotes.org/#w-last-day
+URL:https://floorvotes.org/#w-last-day
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:farm-cliff@floorvotes.org
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+TRANSP:TRANSPARENT
+SUMMARY:Farm programs fall back to permanent law
+DESCRIPTION:The farm bill expired Sept 30. Without action by Dec 31\, farm 
+ programs revert to decades-old permanent law.\n\nSources:\nNo Labels lame-
+ duck guide: https://nolabels.org/the-latest/the-2026-lame-duck-session-wha
+ t-congress-still-has-to-pass-after-the-midterms/\n\nMore: https://floorvot
+ es.org/#w-farm-cliff
+URL:https://floorvotes.org/#w-farm-cliff
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:convenes@floorvotes.org
+DTSTAMP:20261105T000000Z
+DTSTART:20270103T170000Z
+DTEND:20270103T180000Z
+SUMMARY:120th Congress convenes
+DESCRIPTION:Noon Eastern\, as the Constitution sets unless Congress passes 
+ a law moving the day (Jan 3 is a Sunday). The House elects a Speaker befor
+ e members are sworn in. Democrats hold majorities in both chambers.\n\nSou
+ rces:\nBipartisan Policy Center: https://bipartisanpolicy.org/article/the-
+ 2026-midterms-key-dates-and-events/\n\nMore: https://floorvotes.org/#w-con
+ venes
+URL:https://floorvotes.org/#w-convenes
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

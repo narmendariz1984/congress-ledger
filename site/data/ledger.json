@@ -45036,7 +45036,163 @@
    "d": "54",
    "note": "AK, MS uncalled",
    "r": "44"
-  }
+  },
+  "watch": [
+   {
+    "date": "2026-11-09",
+    "id": "lame-duck",
+    "src": [
+     [
+      "No Labels lame-duck guide",
+      "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+     ],
+     [
+      "Senate 2026 schedule",
+      "https://www.senate.gov/legislative/2026_schedule.htm"
+     ]
+    ],
+    "title": "Lame-duck session begins",
+    "what": "The outgoing Congress, still under Republican control, returns for its last weeks. Any bill that hasn't become law by Jan 3 dies and has to be introduced again."
+   },
+   {
+    "date": "2026-11-10",
+    "id": "gop-leaders",
+    "src": [
+     [
+      "Roll Call",
+      "https://rollcall.com/2026/10/30/senate-house-gop-set-leadership-elections/"
+     ]
+    ],
+    "title": "Republican leadership elections, House and Senate",
+    "what": "Both Republican conferences pick their leaders for the next Congress, where they'll be in the minority. Senate voting starts at 9 a.m. in the Old Senate Chamber."
+   },
+   {
+    "date": "2026-11-18",
+    "end": "2026-11-19",
+    "id": "house-dem-leaders",
+    "src": [
+     [
+      "Bloomberg Government",
+      "https://news.bgov.com/bloomberg-government-news/house-democratic-leadership-elections-set-for-nov-18-and-19"
+     ],
+     [
+      "Punchbowl News",
+      "https://punchbowl.news/article/house/jeffries-speaker/"
+     ]
+    ],
+    "title": "House Democratic leadership elections",
+    "what": "House Democrats choose their leaders, including their nominee for Speaker. Hakeem Jeffries has announced he's running."
+   },
+   {
+    "id": "senate-dem-leader",
+    "src": [
+     [
+      "Roll Call",
+      "https://rollcall.com/2026/11/04/will-be-reelected-as-majority-leader-schumer-says/"
+     ]
+    ],
+    "title": "Senate Democratic leadership election",
+    "what": "A secret ballot that includes the newly elected senators. Chuck Schumer says he has the votes; several incoming Democrats have said they'll back someone else.",
+    "when": "Early December"
+   },
+   {
+    "date": "2026-12-11",
+    "id": "funding",
+    "src": [
+     [
+      "STAT",
+      "https://www.statnews.com/2026/11/04/lame-duck-session-congress-health-policy-aca-subsidies-medicaid-funding/"
+     ],
+     [
+      "No Labels lame-duck guide",
+      "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+     ]
+    ],
+    "title": "Government funding runs out",
+    "what": "Congress has to pass full-year spending bills or another stopgap, or a shutdown starts. Health care items such as the expired ACA premium subsidies would most likely ride on this bill."
+   },
+   {
+    "date": "2026-12-18",
+    "id": "last-day",
+    "src": [
+     [
+      "Senate 2026 schedule",
+      "https://www.senate.gov/legislative/2026_schedule.htm"
+     ],
+     [
+      "Roll Call",
+      "https://rollcall.com/2025/11/19/senate-calendar-2026-midterm-election/"
+     ]
+    ],
+    "title": "Last scheduled day of the year",
+    "what": "The Senate's last scheduled day. The House's last scheduled day is Dec 17. Either can stay longer if work is unfinished."
+   },
+   {
+    "date": "2026-12-31",
+    "id": "farm-cliff",
+    "src": [
+     [
+      "No Labels lame-duck guide",
+      "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+     ]
+    ],
+    "title": "Farm programs fall back to permanent law",
+    "what": "The farm bill expired Sept 30. Without action by Dec 31, farm programs revert to decades-old permanent law."
+   },
+   {
+    "date": "2027-01-03",
+    "id": "convenes",
+    "src": [
+     [
+      "Bipartisan Policy Center",
+      "https://bipartisanpolicy.org/article/the-2026-midterms-key-dates-and-events/"
+     ]
+    ],
+    "time": "12:00",
+    "title": "120th Congress convenes",
+    "what": "Noon Eastern, as the Constitution sets unless Congress passes a law moving the day (Jan 3 is a Sunday). The House elects a Speaker before members are sworn in. Democrats hold majorities in both chambers."
+   },
+   {
+    "id": "first-bills",
+    "src": [
+     [
+      "TIME",
+      "https://time.com/article/2026/11/04/democrats-power-midterms/"
+     ]
+    ],
+    "title": "House Democrats' first bills",
+    "what": "House Democrats say they'll bring up bills to rescind tariffs, restore expired ACA premium subsidies and reverse Medicaid cuts, plus a war powers resolution on Iran.",
+    "when": "First week of January"
+   },
+   {
+    "bills": [
+     "119-s4784"
+    ],
+    "id": "ndaa",
+    "src": [
+     [
+      "No Labels lame-duck guide",
+      "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+     ]
+    ],
+    "title": "Defense policy bill (NDAA)",
+    "what": "The 2027 defense bill stalled in the Senate in July. Leaders expect a deal after the election.",
+    "when": "No date set"
+   },
+   {
+    "id": "debt-limit",
+    "src": [
+     [
+      "No Labels lame-duck guide",
+      "https://nolabels.org/the-latest/the-2026-lame-duck-session-what-congress-still-has-to-pass-after-the-midterms/"
+     ]
+    ],
+    "title": "Debt limit could be reached",
+    "what": "The government could hit its borrowing limit as soon as February, leaving the new Congress to raise or suspend it.",
+    "when": "As soon as February 2027"
+   }
+  ],
+  "watchUpdated": "2026-11-05"
  },
  "session": 2,
  "votes": {

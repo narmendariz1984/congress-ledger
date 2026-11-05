@@ -57,6 +57,17 @@ if (L) {
   if (!senate.length) warn.push("no Senate votes; Voteview may be unreachable");
   if (!house.length) warn.push("no House votes; the House vote endpoint may be unreachable");
 
+  // What to watch (meta.watch, hand-edited in data/curated.json)
+  const W = L.meta?.watch || [];
+  const today = new Date().toISOString().slice(0, 10);
+  for (const e of W) {
+    if (!e.id || !e.title) warn.push(`What to watch: an item is missing its id or title`);
+    if (e.date && !/^\d{4}-\d{2}-\d{2}$/.test(e.date)) warn.push(`What to watch: ${e.id} has an unreadable date "${e.date}"`);
+    if (!e.date && !e.when) warn.push(`What to watch: ${e.id} has neither a date nor a "when"`);
+    if (!(e.src || []).length) warn.push(`What to watch: ${e.id} has no sources`);
+  }
+  if (W.length && !W.some(e => !e.date || (e.end || e.date) >= today)) warn.push("What to watch: every date has passed; add the next ones to data/curated.json");
+
   const age = (Date.now() - Date.parse(L.generatedAt || 0)) / 36e5;
   if (age > 72) warn.push(`data last written ${Math.round(age)} hours ago`);
   for (const w of L.warnings || []) warn.push(`from the refresh: ${w}`);
