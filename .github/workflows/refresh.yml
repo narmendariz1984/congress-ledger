@@ -1,12 +1,15 @@
 name: Refresh ledger data
 
-# Runs every hour at :17 (off the top of the hour, when GitHub queues are busiest).
+# Runs twice an hour, at :17 and :47 (off the top of the hour, when GitHub queues are
+# busiest). GitHub's scheduler is best effort and sometimes drops a run, so the second
+# slot is a backup; runs never overlap (see concurrency below).
 # scripts/fetch.py decides what to do from the session calendar in data/curated.json:
 #   session days: votes hourly 8am-11pm CT, bills 4x a day
 #   recess days:  bills once a day at 6am CT, nothing else
 on:
   schedule:
     - cron: "17 * * * *"
+    - cron: "47 * * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -19,9 +22,11 @@ on:
         type: string
         default: ""
 
-# The token can only read and write this repo's contents. Nothing else.
+# The token can read and write this repo's contents, and start this workflow again
+# (used only to chain backfill batches). Nothing else.
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: refresh
@@ -60,4 +65,24 @@ jobs:
           else
             git commit -m "Refresh ledger data"
           fi
-          git push
+          # Someone may have pushed while this ran (a code change, an edit on GitHub).
+          # Replay this commit on top of theirs and try again, up to 3 times.
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push rejected, rebasing on the latest main (try $i)"
+            git pull --rebase --quiet origin main || { git rebase --abort; exit 1; }
+          done
+          exit 1
+
+      # While a backfill queue remains, start the next batch now instead of waiting
+      # for the schedule. Stops on its own when the queue is empty or a run fails.
+      - name: Continue backfill
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          left=$(python3 -c "import json;print(len((json.load(open('data/tracked.json')).get('backfill') or {}).get('queue') or []))")
+          echo "backfill queue: $left"
+          if [ "$left" -gt 0 ]; then
+            gh workflow run refresh.yml --ref main -f mode=auto
+            echo "started the next batch"
+          fi
