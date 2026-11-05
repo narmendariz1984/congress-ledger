@@ -442,43 +442,40 @@
   "119-s1318",
   "119-s1383",
   "119-s4784",
-  "119-sjres3"
+  "119-sjres3",
+  "119-sjres103",
+  "119-sjres107",
+  "119-sjres130",
+  "119-sjres132",
+  "119-sjres139",
+  "119-sjres141",
+  "119-sjres185",
+  "119-sjres187",
+  "119-sjres188",
+  "119-sjres190",
+  "119-sjres196",
+  "119-sjres197",
+  "119-sjres198",
+  "119-sjres199",
+  "119-sjres60",
+  "119-sjres69",
+  "119-sjres76",
+  "119-sjres84",
+  "119-sjres86",
+  "119-sjres95",
+  "119-sjres99"
  ],
- "lastDiscovery": "2026-11-05T08:14:54+00:00",
+ "lastDiscovery": "2026-11-05T08:16:03+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
  },
  "backfill": {
-  "queue": [
-   "119-sjres103",
-   "119-sjres107",
-   "119-sjres12",
-   "119-sjres130",
-   "119-sjres132",
-   "119-sjres139",
-   "119-sjres141",
-   "119-sjres185",
-   "119-sjres187",
-   "119-sjres188",
-   "119-sjres190",
-   "119-sjres196",
-   "119-sjres197",
-   "119-sjres198",
-   "119-sjres199",
-   "119-sjres60",
-   "119-sjres69",
-   "119-sjres76",
-   "119-sjres84",
-   "119-sjres86",
-   "119-sjres89",
-   "119-sjres91",
-   "119-sjres95",
-   "119-sjres99"
-  ],
+  "queue": [],
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
-  "reason": "re-download for cosponsor states"
+  "reason": "re-download for cosponsor states",
+  "finished": "2026-11-05T08:16:03+00:00"
  },
  "rule": "recorded-vote-v3",
  "schema": 2,
@@ -828,5 +825,10 @@
   "119-hres1498": "In the matter of allegations relating to Representative Chuck Edwards.",
   "119-hr2683": "Remote Access Security Act",
   "119-hr6504": "Haiti Economic Lift Program Extension Act"
- }
+ },
+ "dropped": [
+  "119-sjres12",
+  "119-sjres89",
+  "119-sjres91"
+ ]
 }
