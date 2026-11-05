@@ -2699,7 +2699,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T06:41:16+00:00",
+   "fetched": "2026-11-05T06:42:40+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -16390,7 +16390,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T06:41:16+00:00",
+   "fetched": "2026-11-05T06:42:40+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -19575,7 +19575,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T06:41:16+00:00",
+   "fetched": "2026-11-05T06:42:40+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -31288,7 +31288,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T06:41:16+00:00",
+   "fetched": "2026-11-05T06:42:40+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -31376,7 +31376,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T06:41:16+00:00",
+   "fetched": "2026-11-05T06:42:40+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -33810,10 +33810,2840 @@
    "title": "Protection of Women and Girls in Sports Act of 2025",
    "type": "s",
    "url": "https://www.congress.gov/bill/119th-congress/senate-bill/9"
+  },
+  {
+   "area": "Science, Technology, Communications",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 1,
+    "t": 4
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-bill/98"
+    }
+   },
+   "id": "119-s98",
+   "introduced": "2025-01-15",
+   "latest": {
+    "actionDate": "2026-05-11",
+    "text": "Became Public Law No: 119-89."
+   },
+   "law": "Pub. L. 119-89",
+   "num": "S. 98",
+   "number": 98,
+   "outcome": {
+    "by": "",
+    "d": "2026-05-11",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Shelley Moore Capito",
+    "p": "R",
+    "s": "WV"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-01-15",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-05",
+     "e": "Committee on Commerce, Science, and Transportation. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-28",
+     "e": "Committee on Commerce, Science, and Transportation. Reported by Senator Cruz without amendment. With written report No. 119-14.",
+     "fn": "cg",
+     "v": "119–14"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-26",
+     "e": "Passed Senate without amendment by Voice Vote. (consideration: CR S3570; text: CR S3570)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-26",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-20",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-20",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2977)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-20",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2977)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-30",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-05-11",
+     "e": "Became Public Law No: 119-89.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–89"
+    }
+   ],
+   "title": "Rural Broadband Protection Act of 2025",
+   "type": "s",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/98"
+  },
+  {
+   "area": "Emergency Management",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 10,
+    "i": 1,
+    "r": 0,
+    "t": 11
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/10"
+    }
+   },
+   "id": "119-sjres10",
+   "introduced": "2025-02-03",
+   "latest": {
+    "actionDate": "2025-02-26",
+    "text": "Failed of passage in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 95. (consideration: CR S1364, S1367-1390)"
+   },
+   "num": "S.J.Res. 10",
+   "number": 10,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-03",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-26",
+     "e": "Failed of passage in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 95. (consideration: CR S1364, S1367-1390)",
+     "fn": "cg",
+     "k": "kill",
+     "v": "47–52"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-26",
+     "e": "Failed of passage/not agreed to in Senate: Failed of passage in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 95.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "47–52"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-26",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent pursuant to the order of 02/18/2025.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution terminating the national emergency declared with respect to energy.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/10"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 24,
+    "i": 2,
+    "r": 1,
+    "t": 27
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/104"
+    }
+   },
+   "id": "119-sjres104",
+   "introduced": "2026-01-29",
+   "latest": {
+    "actionDate": "2026-03-04",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 46. (consideration: CR S796)"
+   },
+   "num": "S.J.Res. 104",
+   "number": 104,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-01-29",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-04",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 46. (consideration: CR S796)",
+     "fn": "cg",
+     "v": "47–53"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/104"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 2,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/11"
+    }
+   },
+   "id": "119-sjres11",
+   "introduced": "2025-02-04",
+   "latest": {
+    "actionDate": "2025-03-14",
+    "text": "Became Public Law No: 119-3."
+   },
+   "law": "Pub. L. 119-3",
+   "num": "S.J.Res. 11",
+   "number": 11,
+   "outcome": {
+    "by": "",
+    "d": "2025-03-14",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "John Kennedy",
+    "p": "R",
+    "s": "LA"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-24",
+     "e": "Senate Committee on Energy and Natural Resources discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-25",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 54 - 44. Record Vote Number: 92. (text: CR S1333)",
+     "fn": "cg",
+     "v": "54–44"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-25",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 54 - 44. Record Vote Number: 92.",
+     "fn": "cg",
+     "v": "54–44"
+    },
+    {
+     "ch": "S",
+     "d": "2025-02-25",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 54 - 42. Record Vote Number: 91. (CR S1322)",
+     "fn": "cg",
+     "v": "54–42"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-04",
+     "e": "Rule H. Res. 177 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-06",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-06",
+     "e": "On passage Passed by the Yeas and Nays: 221 - 202, 1 Present (Roll no. 61). (text: CR H1014-1015)",
+     "fn": "cg",
+     "v": "221–202"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-06",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 221 - 202, 1 Present (Roll no. 61). (text: CR H1014-1015)",
+     "fn": "cg",
+     "v": "221–202"
+    },
+    {
+     "ch": "H",
+     "d": "2025-03-10",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-03-14",
+     "e": "Became Public Law No: 119-3.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–3"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Ocean Energy Management relating to \"Protection of Marine Archaeological Resources\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/11"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 11,
+    "i": 0,
+    "r": 0,
+    "t": 11
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/114"
+    }
+   },
+   "id": "119-sjres114",
+   "introduced": "2026-03-05",
+   "latest": {
+    "actionDate": "2026-04-22",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 46 - 51. Record Vote Number: 88. (consideration: CR S1889-1890)"
+   },
+   "num": "S.J.Res. 114",
+   "number": 114,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tammy Baldwin",
+    "p": "D",
+    "s": "WI"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-05",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-22",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 46 - 51. Record Vote Number: 88. (consideration: CR S1889-1890)",
+     "fn": "cg",
+     "v": "46–51"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/114"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 9,
+    "i": 0,
+    "r": 0,
+    "t": 9
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/116"
+    }
+   },
+   "id": "119-sjres116",
+   "introduced": "2026-03-05",
+   "latest": {
+    "actionDate": "2026-03-24",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 69."
+   },
+   "num": "S.J.Res. 116",
+   "number": 116,
+   "reached": 2,
+   "sponsor": {
+    "n": "Christopher Murphy",
+    "p": "D",
+    "s": "CT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-05",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-24",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 69.",
+     "fn": "cg",
+     "v": "47–53"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/116"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 6,
+    "i": 0,
+    "r": 0,
+    "t": 6
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
+    }
+   },
+   "id": "119-sjres118",
+   "introduced": "2026-03-05",
+   "latest": {
+    "actionDate": "2026-03-18",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 58."
+   },
+   "num": "S.J.Res. 118",
+   "number": 118,
+   "reached": 2,
+   "sponsor": {
+    "n": "Cory A. Booker",
+    "p": "D",
+    "s": "NJ"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-05",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-03-18",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 58.",
+     "fn": "cg",
+     "v": "47–53"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 6,
+    "i": 0,
+    "r": 0,
+    "t": 6
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/123"
+    }
+   },
+   "id": "119-sjres123",
+   "introduced": "2026-03-10",
+   "latest": {
+    "actionDate": "2026-04-15",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 52. Record Vote Number: 79."
+   },
+   "num": "S.J.Res. 123",
+   "number": 123,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tammy Duckworth",
+    "p": "D",
+    "s": "IL"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-10",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-15",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 52. Record Vote Number: 79.",
+     "fn": "cg",
+     "v": "47–52"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-15",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/123"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 12,
+    "i": 1,
+    "r": 0,
+    "t": 13
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/124"
+    }
+   },
+   "id": "119-sjres124",
+   "introduced": "2026-03-12",
+   "latest": {
+    "actionDate": "2026-04-28",
+    "text": "The motion to discharge fell when the point of order was well taken."
+   },
+   "num": "S.J.Res. 124",
+   "number": 124,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-12",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-28",
+     "e": "The motion to discharge fell when the point of order was well taken.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-28",
+     "e": "Point of order that the measure is not entitled to expedited procedures under 50 U.S.C. 1546a raised against the measure agreed to in Senate by Yea-Nay Vote. 51",
+     "fn": "cg",
+     "v": "51–47"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-28",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to 50 U.S.C. 1546a, Department of State Authorization Act). (consideration: CR S2070-2",
+     "fn": "cg",
+     "v": "070–207"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Republic of Cuba that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/124"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 5,
+    "t": 5
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/13"
+    }
+   },
+   "id": "119-sjres13",
+   "introduced": "2025-02-04",
+   "latest": {
+    "actionDate": "2025-06-20",
+    "text": "Became Public Law No: 119-19."
+   },
+   "law": "Pub. L. 119-19",
+   "num": "S.J.Res. 13",
+   "number": 13,
+   "outcome": {
+    "by": "",
+    "d": "2025-06-20",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "John Kennedy",
+    "p": "R",
+    "s": "LA"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-05-06",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 53 - 46. Record Vote Number: 233.",
+     "fn": "cg",
+     "v": "53–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-06",
+     "e": "Senate Committee on Banking, Housing, and Urban Affairs discharged by petition pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-07",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 52 - 47. Record Vote Number: 237. (text: CR S2793)",
+     "fn": "cg",
+     "v": "52–47"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-07",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 52 - 47. Record Vote Number: 237.",
+     "fn": "cg",
+     "v": "52–47"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-19",
+     "e": "Rules Committee Resolution H. Res. 426 Reported to House. Rule provides for consideration of S.J. Res. 13 and S.J. Res. 31. The resolution provides for consider",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-20",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-20",
+     "e": "On passage Passed by the Yeas and Nays: 220 - 207 (Roll no. 137).",
+     "fn": "cg",
+     "v": "220–207"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-20",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 220 - 207 (Roll no. 137).",
+     "fn": "cg",
+     "v": "220–207"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-10",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-06-20",
+     "e": "Became Public Law No: 119-19.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–19"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Office of the Comptroller of the Currency of the Department of the Treasury relating to the review of applications under the Bank Merger Act.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/13"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 0,
+    "t": 3
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/138"
+    }
+   },
+   "id": "119-sjres138",
+   "introduced": "2026-03-19",
+   "latest": {
+    "actionDate": "2026-04-15",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 36 - 63. Record Vote Number: 81. (consideration: CR S1779)"
+   },
+   "num": "S.J.Res. 138",
+   "number": 138,
+   "reached": 2,
+   "sponsor": {
+    "n": "Bernard Sanders",
+    "p": "I",
+    "s": "VT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-03-19",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-15",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 36 - 63. Record Vote Number: 81. (consideration: CR S1779)",
+     "fn": "cg",
+     "v": "36–63"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-15",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/138"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 11,
+    "i": 0,
+    "r": 0,
+    "t": 11
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/163"
+    }
+   },
+   "id": "119-sjres163",
+   "introduced": "2026-04-13",
+   "latest": {
+    "actionDate": "2026-05-13",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 118. (consideration: CR S2250-2255)"
+   },
+   "num": "S.J.Res. 163",
+   "number": 163,
+   "reached": 2,
+   "sponsor": {
+    "n": "Jeff Merkley",
+    "p": "D",
+    "s": "OR"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-13",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-13",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 118. (consideration: CR S2250-2255)",
+     "fn": "cg",
+     "v": "49–50"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-13",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/163"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/172"
+    }
+   },
+   "id": "119-sjres172",
+   "introduced": "2026-04-13",
+   "latest": {
+    "actionDate": "2026-06-16",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 48. Record Vote Number: 174."
+   },
+   "num": "S.J.Res. 172",
+   "number": 172,
+   "reached": 2,
+   "sponsor": {
+    "n": "Raphael G. Warnock",
+    "p": "D",
+    "s": "GA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-13",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-16",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 48. Record Vote Number: 174.",
+     "fn": "cg",
+     "v": "47–48"
+    },
+    {
+     "ch": "S",
+     "d": "2026-06-16",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/172"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 16,
+    "t": 16
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/18"
+    }
+   },
+   "id": "119-sjres18",
+   "introduced": "2025-02-13",
+   "latest": {
+    "actionDate": "2025-05-09",
+    "text": "Became Public Law No: 119-10."
+   },
+   "law": "Pub. L. 119-10",
+   "num": "S.J.Res. 18",
+   "number": 18,
+   "outcome": {
+    "by": "",
+    "d": "2025-05-09",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Tim Scott",
+    "p": "R",
+    "s": "SC"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-26",
+     "e": "Senate Committee on Banking, Housing, and Urban Affairs discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-27",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 52 - 48. Record Vote Number: 153. (text: CR S1884)",
+     "fn": "cg",
+     "v": "52–48"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-27",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 52 - 48. Record Vote Number: 153.",
+     "fn": "cg",
+     "v": "52–48"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-01",
+     "e": "Rules Committee Resolution H. Res. 282 Reported to House. Rule provides for consideration of H.R. 22, H.R. 1526, S.J. Res. 18 and S.J. Res. 28. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-07",
+     "e": "Rules Committee Resolution H. Res. 294 Reported to House. Rule provides for consideration of S.J. Res. 18, S.J. Res. 28, H.R. 1526 and H.R. 22. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-09",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-09",
+     "e": "On passage Passed by the Yeas and Nays: 217 - 211 (Roll no. 96). (text: CR H1519)",
+     "fn": "cg",
+     "v": "217–211"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-09",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 217 - 211 (Roll no. 96). (text: CR H1519: 1)",
+     "fn": "cg",
+     "v": "217–211"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-05",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-05-09",
+     "e": "Became Public Law No: 119-10.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–10"
+    }
+   ],
+   "title": "A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to \"Overdraft Lending: Very Large Financial Institutions\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/18"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 9,
+    "i": 0,
+    "r": 0,
+    "t": 9
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/180"
+    }
+   },
+   "id": "119-sjres180",
+   "introduced": "2026-04-13",
+   "latest": {
+    "actionDate": "2026-07-23",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207."
+   },
+   "num": "S.J.Res. 180",
+   "number": 180,
+   "reached": 2,
+   "sponsor": {
+    "n": "Chris Van Hollen",
+    "p": "D",
+    "s": "MD"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-13",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-23",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207.",
+     "fn": "cg",
+     "v": "47–49"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-23",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976). (consideration: CR S4246-4249)",
+     "fn": "cg",
+     "v": "246–424"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/180"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 8,
+    "i": 0,
+    "r": 0,
+    "t": 8
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/181"
+    }
+   },
+   "id": "119-sjres181",
+   "introduced": "2026-04-13",
+   "latest": {
+    "actionDate": "2026-07-30",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
+   },
+   "num": "S.J.Res. 181",
+   "number": 181,
+   "reached": 2,
+   "sponsor": {
+    "n": "Kirsten E. Gillibrand",
+    "p": "D",
+    "s": "NY"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-13",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-30",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)",
+     "fn": "cg",
+     "v": "49–50"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-30",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to 50 U.S.C. 1546a, Department of State Authorization Act). (consideration: CR S4356-4",
+     "fn": "cg",
+     "v": "356–435"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/181"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 10,
+    "i": 0,
+    "r": 0,
+    "t": 10
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/184"
+    }
+   },
+   "id": "119-sjres184",
+   "introduced": "2026-04-16",
+   "latest": {
+    "actionDate": "2026-04-30",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 50. Record Vote Number: 113. (consideration: CR S2156-2158)"
+   },
+   "num": "S.J.Res. 184",
+   "number": 184,
+   "reached": 2,
+   "sponsor": {
+    "n": "Adam B. Schiff",
+    "p": "D",
+    "s": "CA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2026-04-16",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-30",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 50. Record Vote Number: 113. (consideration: CR S2156-2158)",
+     "fn": "cg",
+     "v": "47–50"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/184"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/26"
+    }
+   },
+   "id": "119-sjres26",
+   "introduced": "2025-02-25",
+   "latest": {
+    "actionDate": "2025-04-03",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 83. Record Vote Number: 166. (consideration: CR S2152-2158)"
+   },
+   "num": "S.J.Res. 26",
+   "number": 26,
+   "reached": 2,
+   "sponsor": {
+    "n": "Bernard Sanders",
+    "p": "I",
+    "s": "VT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-02-25",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-03",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 83. Record Vote Number: 166. (consideration: CR S2152-2158)",
+     "fn": "cg",
+     "v": "15–83"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to Israel of certain defense articles and services.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/26"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 5,
+    "t": 5
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/28"
+    }
+   },
+   "id": "119-sjres28",
+   "introduced": "2025-02-27",
+   "latest": {
+    "actionDate": "2025-05-09",
+    "text": "Became Public Law No: 119-11."
+   },
+   "law": "Pub. L. 119-11",
+   "num": "S.J.Res. 28",
+   "number": 28,
+   "outcome": {
+    "by": "",
+    "d": "2025-05-09",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Pete Ricketts",
+    "p": "R",
+    "s": "NE"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-05",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 51 - 47. Record Vote Number: 106.",
+     "fn": "cg",
+     "v": "51–47"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-05",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 51 - 47. Record Vote Number: 106.",
+     "fn": "cg",
+     "v": "51–47"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-01",
+     "e": "Rule H. Res. 282 failed passage of House.",
+     "fn": "cg",
+     "k": "kill"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-01",
+     "e": "Rules Committee Resolution H. Res. 282 Reported to House. Rule provides for consideration of H.R. 22, H.R. 1526, S.J. Res. 18 and S.J. Res. 28. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-07",
+     "e": "Rules Committee Resolution H. Res. 294 Reported to House. Rule provides for consideration of S.J. Res. 18, S.J. Res. 28, H.R. 1526 and H.R. 22. The resolution p",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-09",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-09",
+     "e": "On passage Passed by the Yeas and Nays: 219 - 211 (Roll no. 95). (text: CR H1514)",
+     "fn": "cg",
+     "v": "219–211"
+    },
+    {
+     "ch": "H",
+     "d": "2025-04-09",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 219 - 211 (Roll no. 95). (text: CR H1514: 2)",
+     "fn": "cg",
+     "v": "219–211"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-05",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-05-09",
+     "e": "Became Public Law No: 119-11.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–11"
+    }
+   ],
+   "title": "A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to \"Defining Larger Participants of a Market for General-Use Digital Consumer Payment Applications\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/28"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 5,
+    "t": 5
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/31"
+    }
+   },
+   "id": "119-sjres31",
+   "introduced": "2025-03-06",
+   "latest": {
+    "actionDate": "2025-06-20",
+    "text": "Became Public Law No: 119-20."
+   },
+   "law": "Pub. L. 119-20",
+   "num": "S.J.Res. 31",
+   "number": 31,
+   "outcome": {
+    "by": "",
+    "d": "2025-06-20",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "John R. Curtis",
+    "p": "R",
+    "s": "UT"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 52 - 40. Record Vote Number: 227.",
+     "fn": "cg",
+     "v": "52–40"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-01",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 52 - 46. Record Vote Number: 229.",
+     "fn": "cg",
+     "v": "52–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-01",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 52 - 46. Record Vote Number: 229.",
+     "fn": "cg",
+     "v": "52–46"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-19",
+     "e": "Rules Committee Resolution H. Res. 426 Reported to House. Rule provides for consideration of S.J. Res. 13 and S.J. Res. 31. The resolution provides for consider",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-20",
+     "e": "Rule H. Res. 426 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-22",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-22",
+     "e": "On passage Passed by the Yeas and Nays: 216 - 212 (Roll no. 143).",
+     "fn": "cg",
+     "v": "216–212"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-22",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 216 - 212 (Roll no. 143).",
+     "fn": "cg",
+     "v": "216–212"
+    },
+    {
+     "ch": "H",
+     "d": "2025-06-10",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-06-20",
+     "e": "Became Public Law No: 119-20.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–20"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Review of Final Rule Reclassification of Major Sources as Area Sources Under Section 112 of the Clean Air Act\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/31"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 0,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/32"
+    }
+   },
+   "id": "119-sjres32",
+   "introduced": "2025-03-10",
+   "latest": {
+    "actionDate": "2026-04-15",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 40 - 59. Record Vote Number: 80. (consideration: CR S1764-1779)"
+   },
+   "num": "S.J.Res. 32",
+   "number": 32,
+   "reached": 2,
+   "sponsor": {
+    "n": "Bernard Sanders",
+    "p": "I",
+    "s": "VT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-10",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-15",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 40 - 59. Record Vote Number: 80. (consideration: CR S1764-1779)",
+     "fn": "cg",
+     "v": "40–59"
+    },
+    {
+     "ch": "S",
+     "d": "2026-04-15",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/32"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/33"
+    }
+   },
+   "id": "119-sjres33",
+   "introduced": "2025-03-10",
+   "latest": {
+    "actionDate": "2025-04-03",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 82. Record Vote Number: 165. (consideration: CR S2152-2158)"
+   },
+   "num": "S.J.Res. 33",
+   "number": 33,
+   "reached": 2,
+   "sponsor": {
+    "n": "Bernard Sanders",
+    "p": "I",
+    "s": "VT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-10",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-03",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 82. Record Vote Number: 165. (consideration: CR S2152-2158)",
+     "fn": "cg",
+     "v": "15–82"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/33"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 0,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/34"
+    }
+   },
+   "id": "119-sjres34",
+   "introduced": "2025-03-10",
+   "latest": {
+    "actionDate": "2025-07-30",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 24 - 73. Record Vote Number: 455."
+   },
+   "num": "S.J.Res. 34",
+   "number": 34,
+   "reached": 2,
+   "sponsor": {
+    "n": "Bernard Sanders",
+    "p": "I",
+    "s": "VT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-10",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-07-30",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 24 - 73. Record Vote Number: 455.",
+     "fn": "cg",
+     "v": "24–73"
+    },
+    {
+     "ch": "S",
+     "d": "2025-07-30",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/34"
+  },
+  {
+   "area": "Foreign Trade and International Finance",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 7,
+    "i": 1,
+    "r": 1,
+    "t": 9
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/37"
+    }
+   },
+   "id": "119-sjres37",
+   "introduced": "2025-03-11",
+   "latest": {
+    "actionDate": "2025-04-03",
+    "actionTime": "11:02:30",
+    "text": "Held at the desk."
+   },
+   "num": "S.J.Res. 37",
+   "number": 37,
+   "reached": 3,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-11",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-02",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 51 - 48. Record Vote Number: 160.",
+     "fn": "cg",
+     "v": "51–48"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-02",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 51 - 48. Record Vote Number: 160.",
+     "fn": "cg",
+     "v": "51–48"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-02",
+     "e": "Senate Committee on Finance discharged by Unanimous Consent. (consideration: CR S2121)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-02",
+     "e": "Senate Committee on Finance discharged by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution terminating the national emergency declared to impose duties on articles imported from Canada.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/37"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 0,
+    "t": 2
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/41"
+    }
+   },
+   "id": "119-sjres41",
+   "introduced": "2025-03-27",
+   "latest": {
+    "actionDate": "2025-07-30",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 27 - 70. Record Vote Number: 454."
+   },
+   "num": "S.J.Res. 41",
+   "number": 41,
+   "reached": 2,
+   "sponsor": {
+    "n": "Bernard Sanders",
+    "p": "I",
+    "s": "VT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-03-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-07-30",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 27 - 70. Record Vote Number: 454.",
+     "fn": "cg",
+     "v": "27–70"
+    },
+    {
+     "ch": "S",
+     "d": "2025-07-30",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed export of certain defense articles to Israel.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/41"
+  },
+  {
+   "area": "Foreign Trade and International Finance",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 5,
+    "i": 0,
+    "r": 1,
+    "t": 6
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/49"
+    }
+   },
+   "id": "119-sjres49",
+   "introduced": "2025-04-10",
+   "latest": {
+    "actionDate": "2025-04-30",
+    "text": "Motion to table the motion to reconsider the vote by which S.J. Res. 49 failed of passage (Record Vote No. 225) agreed to in Senate by Yea-Nay Vote. 50 - 49. Record Vote Number: 226."
+   },
+   "num": "S.J.Res. 49",
+   "number": 49,
+   "reached": 2,
+   "sponsor": {
+    "n": "Ron Wyden",
+    "p": "D",
+    "s": "OR"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-04-10",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Motion to table the motion to reconsider the vote by which S.J. Res. 49 failed of passage (Record Vote No. 225) agreed to in Senate by Yea-Nay Vote. 50 - 49. Re",
+     "fn": "cg",
+     "k": "kill",
+     "v": "50–49"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Motion by Senator Thune to reconsider the vote by which S.J. Res. 49 failed of passage (Record Vote No. 225) made in Senate.",
+     "fn": "cg",
+     "k": "kill"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Failed of passage in Senate by Yea-Nay Vote. 49 - 49. Record Vote Number: 225.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "49–49"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Failed of passage/not agreed to in Senate: Failed of passage in Senate by Yea-Nay Vote. 49 - 49. Record Vote Number: 225.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "49–49"
+    },
+    {
+     "ch": "S",
+     "d": "2025-04-30",
+     "e": "Senate Committee on Finance discharged by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution terminating the national emergency declared to impose global tariffs.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/49"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 5,
+    "i": 1,
+    "r": 0,
+    "t": 6
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/53"
+    }
+   },
+   "id": "119-sjres53",
+   "introduced": "2025-05-15",
+   "latest": {
+    "actionDate": "2025-06-11",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 306."
+   },
+   "num": "S.J.Res. 53",
+   "number": 53,
+   "reached": 2,
+   "sponsor": {
+    "n": "Christopher Murphy",
+    "p": "D",
+    "s": "CT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-05-15",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-11",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 306.",
+     "fn": "cg",
+     "v": "39–56"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-11",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to Section 36(b) of the Arms Export Control Act).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Qatar of certain defense articles and services.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/53"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 5,
+    "i": 1,
+    "r": 0,
+    "t": 6
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/54"
+    }
+   },
+   "id": "119-sjres54",
+   "introduced": "2025-05-15",
+   "latest": {
+    "actionDate": "2025-06-11",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 307."
+   },
+   "num": "S.J.Res. 54",
+   "number": 54,
+   "reached": 2,
+   "sponsor": {
+    "n": "Christopher Murphy",
+    "p": "D",
+    "s": "CT"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-05-15",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-11",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 307.",
+     "fn": "cg",
+     "v": "39–56"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-11",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to Section 36(b) of the Arms Export Control Act).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of the United Arab Emirates of certain defense articles and services.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/54"
+  },
+  {
+   "area": "Transportation and Public Works",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/55"
+    }
+   },
+   "id": "119-sjres55",
+   "introduced": "2025-05-19",
+   "latest": {
+    "actionDate": "2025-05-26",
+    "actionTime": "09:16:36",
+    "text": "Held at the desk."
+   },
+   "num": "S.J.Res. 55",
+   "number": 55,
+   "reached": 3,
+   "sponsor": {
+    "n": "Shelley Moore Capito",
+    "p": "R",
+    "s": "WV"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-05-19",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-21",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 51 - 46. Record Vote Number: 275. (text: CR S3051)",
+     "fn": "cg",
+     "v": "51–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-21",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 51 - 46. Record Vote Number: 275.",
+     "fn": "cg",
+     "v": "51–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-21",
+     "e": "Point of order by Senator Thune: Shall Joint Resolutions that meet all the requirements of Section 802 of the Congressional Review Act or are disapproving of ag",
+     "fn": "cg",
+     "v": "51–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-21",
+     "e": "Point of order by Senator Thune: Shall points of order be in order under the Congressional Review Act? agreed to in Senate by Yea-Nay Vote. 51 - 46. Record Vote",
+     "fn": "cg",
+     "v": "51–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-21",
+     "e": "Motion to table the appeal that two points of order are not in order at the same time agreed to in Senate by Yea-Nay Vote. 51 - 46. Record Vote Number: 266.",
+     "fn": "cg",
+     "v": "51–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-21",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 53 - 46. Record Vote Number: 264.",
+     "fn": "cg",
+     "v": "53–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-21",
+     "e": "Senate Committee on Commerce, Science, and Transportation discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Highway Traffic Safety Administration relating to \"Federal Motor Vehicle Safety Standards; Fuel System Integrity of Hydrogen Vehicles; Compressed Hydrogen Storage System Integrity; Incorporation by Reference\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/55"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "t": 0
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/59"
+    }
+   },
+   "id": "119-sjres59",
+   "introduced": "2025-06-16",
+   "latest": {
+    "actionDate": "2025-06-27",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 328. (consideration: CR S3595)"
+   },
+   "num": "S.J.Res. 59",
+   "number": 59,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-06-16",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-27",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 328. (consideration: CR S3595)",
+     "fn": "cg",
+     "v": "47–53"
+    },
+    {
+     "ch": "S",
+     "d": "2025-06-27",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976). (consideration: CR S3583-3595)",
+     "fn": "cg",
+     "v": "583–359"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities against the Islamic Republic of Iran that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/59"
+  },
+  {
+   "area": "Science, Technology, Communications",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 16,
+    "t": 16
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/7"
+    }
+   },
+   "id": "119-sjres7",
+   "introduced": "2025-01-27",
+   "latest": {
+    "actionDate": "2025-05-09",
+    "actionTime": "13:04:45",
+    "text": "Held at the desk."
+   },
+   "num": "S.J.Res. 7",
+   "number": 7,
+   "reached": 3,
+   "sponsor": {
+    "n": "Ted Cruz",
+    "p": "R",
+    "s": "TX"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-01-27",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-03-05",
+     "e": "Senate Committee on Commerce, Science, and Transportation discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-06",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 53 - 47. Record Vote Number: 235.",
+     "fn": "cg",
+     "v": "53–47"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-08",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 50 - 38. Record Vote Number: 238. (text: CR S2813)",
+     "fn": "cg",
+     "v": "50–38"
+    },
+    {
+     "ch": "S",
+     "d": "2025-05-08",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 50 - 38. Record Vote Number: 238.",
+     "fn": "cg",
+     "v": "50–38"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Federal Communications Commission relating to \"Addressing the Homework Gap Through the E-Rate Program\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/7"
+  },
+  {
+   "area": "Emergency Management",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 7,
+    "i": 1,
+    "r": 0,
+    "t": 8
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/71"
+    }
+   },
+   "id": "119-sjres71",
+   "introduced": "2025-07-31",
+   "latest": {
+    "actionDate": "2025-10-08",
+    "text": "Failed of passage in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 554."
+   },
+   "num": "S.J.Res. 71",
+   "number": 71,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-07-31",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-08",
+     "e": "Failed of passage in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 554.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "47–51"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-08",
+     "e": "Failed of passage/not agreed to in Senate: Failed of passage in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 554.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "47–51"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-08",
+     "e": "Senate Committee on Energy and Natural Resources discharged by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution terminating the national emergency declared with respect to energy.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/71"
+  },
+  {
+   "area": "Foreign Trade and International Finance",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 11,
+    "i": 2,
+    "r": 3,
+    "t": 16
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/77"
+    }
+   },
+   "id": "119-sjres77",
+   "introduced": "2025-09-16",
+   "latest": {
+    "actionDate": "2025-10-31",
+    "actionTime": "13:15:12",
+    "text": "Held at the desk."
+   },
+   "num": "S.J.Res. 77",
+   "number": 77,
+   "reached": 3,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-09-16",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-29",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 50 - 46. Record Vote Number: 598. (text: CR S7822)",
+     "fn": "cg",
+     "v": "50–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-29",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 50 - 46. Record Vote Number: 598.",
+     "fn": "cg",
+     "v": "50–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-29",
+     "e": "Senate Committee on Finance discharged pursuant to the order of 10/07/2025.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution terminating the national emergency declared to impose duties on articles imported from Canada.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/77"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "t": 1
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/80"
+    }
+   },
+   "id": "119-sjres80",
+   "introduced": "2025-09-18",
+   "latest": {
+    "actionDate": "2025-12-05",
+    "text": "Became Public Law No: 119-47."
+   },
+   "law": "Pub. L. 119-47",
+   "num": "S.J.Res. 80",
+   "number": 80,
+   "outcome": {
+    "by": "",
+    "d": "2025-12-05",
+    "fn": "cg",
+    "v": "",
+    "where": "Signed into law"
+   },
+   "reached": 6,
+   "sponsor": {
+    "n": "Dan Sullivan",
+    "p": "R",
+    "s": "AK"
+   },
+   "status": "law",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-10-28",
+     "e": "Senate Committee on Energy and Natural Resources discharged, by petition, pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-29",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 54 - 46. Record Vote Number: 595.",
+     "fn": "cg",
+     "v": "54–46"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-30",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 52 - 45. Record Vote Number: 599. (text: CR S7842)",
+     "fn": "cg",
+     "v": "52–45"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-30",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 52 - 45. Record Vote Number: 599.",
+     "fn": "cg",
+     "v": "52–45"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-17",
+     "e": "Rules Committee Resolution H. Res. 879 Reported to House. Rule provides for consideration of S.J. Res. 80, H.J. Res. 130, H.J. Res. 131, H. Con. Res. 58, H.R. 1",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-18",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-18",
+     "e": "On passage Passed by the Yeas and Nays: 216 - 209 (Roll no. 296). (text: CR H4750)",
+     "fn": "cg",
+     "v": "216–209"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-18",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 216 - 209 (Roll no. 296). (text: CR H4750)",
+     "fn": "cg",
+     "v": "216–209"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-25",
+     "e": "Presented to President.",
+     "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2025-12-05",
+     "e": "Became Public Law No: 119-47.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–47"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to \"National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/80"
+  },
+  {
+   "area": "Foreign Trade and International Finance",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 7,
+    "i": 2,
+    "r": 1,
+    "t": 10
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/81"
+    }
+   },
+   "id": "119-sjres81",
+   "introduced": "2025-09-18",
+   "latest": {
+    "actionDate": "2025-10-31",
+    "actionTime": "13:15:21",
+    "text": "Held at the desk."
+   },
+   "num": "S.J.Res. 81",
+   "number": 81,
+   "reached": 3,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-09-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-28",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 52 - 48. Record Vote Number: 594. (text: CR S7778-7779)",
+     "fn": "cg",
+     "v": "52–48"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-28",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 52 - 48. Record Vote Number: 594.",
+     "fn": "cg",
+     "v": "52–48"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-28",
+     "e": "Senate Committee on Finance discharged pursuant to the order of 10/07/2025.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution terminating the national emergency declared to impose duties on articles imported from Brazil.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/81"
+  },
+  {
+   "area": "Accountability & oversight",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 37,
+    "i": 0,
+    "r": 0,
+    "t": 37
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/82"
+    }
+   },
+   "id": "119-sjres82",
+   "introduced": "2025-09-18",
+   "latest": {
+    "actionDate": "2025-12-18",
+    "text": "Failed of passage in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 654."
+   },
+   "num": "S.J.Res. 82",
+   "number": 82,
+   "reached": 2,
+   "sponsor": {
+    "n": "Angus S., Jr. King",
+    "p": "I",
+    "s": "ME"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-09-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-22",
+     "e": "Senate Committee on Health, Education, Labor, and Pensions discharged by petition pursuant to 5 U.S.C. 802(c).",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-10",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 50 - 49. Record Vote Number: 641. (CR S8591)",
+     "fn": "cg",
+     "v": "50–49"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-18",
+     "e": "Failed of passage in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 654.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "50–50"
+    },
+    {
+     "ch": "S",
+     "d": "2025-12-18",
+     "e": "Failed of passage/not agreed to in Senate: Failed of passage in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 654.",
+     "fn": "cg",
+     "k": "kill",
+     "v": "50–50"
+    }
+   ],
+   "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Office of the Secretary of the Department of Health and Human Services relating to \"Policy on Adhering to the Text of the Administrative Procedure Act\".",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/82"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 6,
+    "i": 1,
+    "r": 1,
+    "t": 8
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/83"
+    }
+   },
+   "id": "119-sjres83",
+   "introduced": "2025-09-18",
+   "latest": {
+    "actionDate": "2025-10-08",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 48 - 51. Record Vote Number: 555."
+   },
+   "num": "S.J.Res. 83",
+   "number": 83,
+   "reached": 2,
+   "sponsor": {
+    "n": "Adam B. Schiff",
+    "p": "D",
+    "s": "CA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-09-18",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-08",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 48 - 51. Record Vote Number: 555.",
+     "fn": "cg",
+     "v": "48–51"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/83"
+  },
+  {
+   "area": "Foreign Trade and International Finance",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 5,
+    "i": 0,
+    "r": 1,
+    "t": 6
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/88"
+    }
+   },
+   "id": "119-sjres88",
+   "introduced": "2025-10-07",
+   "latest": {
+    "actionDate": "2025-10-31",
+    "actionTime": "13:15:26",
+    "text": "Held at the desk."
+   },
+   "num": "S.J.Res. 88",
+   "number": 88,
+   "reached": 3,
+   "sponsor": {
+    "n": "Ron Wyden",
+    "p": "D",
+    "s": "OR"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-10-07",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-30",
+     "e": "Passed Senate without amendment by Yea-Nay Vote. 51 - 47. Record Vote Number: 600. (text: CR S7843)",
+     "fn": "cg",
+     "v": "51–47"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-30",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Yea-Nay Vote. 51 - 47. Record Vote Number: 600.",
+     "fn": "cg",
+     "v": "51–47"
+    },
+    {
+     "ch": "S",
+     "d": "2025-10-30",
+     "e": "Senate Committee on Finance discharged by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution terminating the national emergency declared to impose global tariffs.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/88"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 16,
+    "i": 1,
+    "r": 1,
+    "t": 18
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/90"
+    }
+   },
+   "id": "119-sjres90",
+   "introduced": "2025-10-16",
+   "latest": {
+    "actionDate": "2025-11-06",
+    "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 51. Record Vote Number: 608. (consideration: CR S7958)"
+   },
+   "num": "S.J.Res. 90",
+   "number": 90,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-10-16",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2025-11-06",
+     "e": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 51. Record Vote Number: 608. (consideration: CR S7958)",
+     "fn": "cg",
+     "v": "49–51"
+    },
+    {
+     "ch": "S",
+     "d": "2025-11-06",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (Pursuant to the Arms Export Control Act of 1976). (consideration: CR S7945-7958)",
+     "fn": "cg",
+     "v": "945–795"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against Venezuela that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/90"
+  },
+  {
+   "area": "International Affairs",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 28,
+    "i": 1,
+    "r": 1,
+    "t": 30
+   },
+   "fetched": "2026-11-05T06:42:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/98"
+    }
+   },
+   "id": "119-sjres98",
+   "introduced": "2025-12-03",
+   "latest": {
+    "actionDate": "2026-01-14",
+    "text": "Point of order that the measure is not entitled to expedited procedures under 50 U.S.C. 1546(a) raised against the measure agreed to in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 9."
+   },
+   "num": "S.J.Res. 98",
+   "number": 98,
+   "reached": 2,
+   "sponsor": {
+    "n": "Tim Kaine",
+    "p": "D",
+    "s": "VA"
+   },
+   "status": "moving",
+   "timeline": [
+    {
+     "ch": "S",
+     "d": "2025-12-03",
+     "e": "Introduced in Senate",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-08",
+     "e": "Senate Committee on Foreign Relations discharged by Yea-Nay Vote. 52 - 47. Record Vote Number: 5, by motion, pursuant to 50 U.S.C. 1546a.",
+     "fn": "cg",
+     "v": "52–47"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-08",
+     "e": "Motion to discharge Senate Committee on Foreign Relations made. (consideration: CR S100)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-14",
+     "e": "Point of order that the measure is not entitled to expedited procedures under 50 U.S.C. 1546(a) raised against the measure agreed to in Senate by Yea-Nay Vote. ",
+     "fn": "cg",
+     "v": "50–50"
+    },
+    {
+     "ch": "S",
+     "d": "2026-01-14",
+     "e": "Motion to proceed to consideration of measure made in Senate. (consideration: CR S218)",
+     "fn": "cg"
+    }
+   ],
+   "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against Venezuela that have not been authorized by Congress.",
+   "type": "sjres",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/98"
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T06:41:16+00:00",
+ "generatedAt": "2026-11-05T06:42:40+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
