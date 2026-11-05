@@ -266,7 +266,8 @@ details.vg>.tbl{margin:0 16px 14px}
 .ag-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
 .ag-jump-l{font-size:14px;font-weight:600;color:var(--muted)}
 .ag-tools select{flex:0 1 340px;min-width:0}
-.ag-hint{font-size:13.5px}
+.ag-hint{font-size:13.5px;display:grid;line-height:1.4}
+.ag-hint b{color:var(--ink)}
 .links{font-size:12.5px}
 
 .notes{margin:0;padding-left:0;list-style:none;display:grid;gap:6px;font-size:13px;counter-reset:none}
@@ -425,7 +426,7 @@ details.wpast .wi{opacity:.75}
 <details class="sec" id="agenda" open>
   <summary><h2>Agenda</h2><span class="count">how each issue area's bills are doing</span></summary>
   <div class="sec-body">
-    <div class="ag-tools"><label class="ag-jump-l" for="ag-jump">Jump to</label><select id="ag-jump"><option value="">Pick an area</option></select><span class="muted ag-hint">Area names open their bills on the Bills tab.</span></div>
+    <div class="ag-tools"><label class="ag-jump-l" for="ag-jump">Jump to</label><select id="ag-jump"><option value="">Pick an area</option></select><span class="muted ag-hint"><span>Tap an <b>Area</b> for its bills</span><span>Tap a <b>Bill</b> for its details</span></span></div>
     <div class="agenda" id="agenda-grid"></div>
   </div>
 </details>
