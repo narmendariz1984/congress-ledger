@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Congress Legislation Tracker</title>
-<meta name="description" content="Mature House and Senate bills: who wrote them, who blocked them, and what passed or died.">
+<meta name="description" content="Mature House and Senate bills: who wrote them, who blocked them and what passed or died.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500;600&family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&display=swap">
 <style>
@@ -86,12 +86,14 @@ nav.tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--ac
 main .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;padding-block:20px 48px}
 .sec-body>*{min-width:0}
 details.sec{background:var(--card);border:1px solid var(--rule);border-radius:10px;scroll-margin-top:72px}
-details.sec>summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+details.sec>summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;border-radius:10px}
 details.sec>summary::-webkit-details-marker{display:none}
 details.sec>summary h2{font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.15}
 details.sec>summary .count{font-family:var(--f-mono);font-size:13.5px;color:var(--muted)}
-details.sec>summary::after{content:"−";margin-left:auto;font-family:var(--f-mono);color:var(--muted)}
-details.sec:not([open])>summary::after{content:"+"}
+details.sec>summary::before{content:"";flex:none;width:9px;height:9px;margin:0 4px 4px 2px;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(45deg);transition:transform .15s ease}
+details.sec:not([open])>summary::before{transform:rotate(-45deg);margin-bottom:0}
+details.sec>summary:hover h2{color:var(--accent)}
+details.sec>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .sec-body{padding:0 20px 20px;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;min-width:0}
 
 /* legend */
@@ -253,7 +255,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
     <div>
     <div class="eyebrow" id="cong-label">120th Congress, House and Senate</div>
     <h1>Congress Legislation Tracker</h1>
-    <p class="lede">Bills that reached the floor, who wrote them, and who stopped them.</p>
+    <p class="lede">Bills that reached the floor, who wrote them and who stopped them.</p>
     </div>
     <div class="session" id="session">
       <div><span class="k">Convenes</span><span class="v">Jan 3, 2027</span><span class="s"><span id="days-to"></span> · a Sunday, may shift</span></div>
@@ -292,7 +294,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
     <div class="gcol"><h4>Coming up</h4><ol class="feed" id="g-next"></ol></div>
   </div>
 </details>
-<a class="cta" href="#how"><span><b>New here?</b> How a bill becomes law, what this site tracks, and where the numbers come from.</span><span class="go-how" aria-hidden="true">How it works</span></a>
+<a class="cta" href="#how"><span><b>New here?</b> How a bill becomes law, what this site tracks and where the numbers come from.</span><span class="go-how" aria-hidden="true">How it works</span></a>
 <details class="sec" id="agenda" open>
   <summary><h2>Agenda</h2><span class="count">furthest stage reached per area</span></summary>
   <div class="sec-body"><div class="agenda" id="agenda-grid"></div></div>
@@ -358,7 +360,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 <details class="sec" id="about" open>
   <summary><h2>About this site</h2></summary>
   <div class="sec-body prose">
-    <p>An independent project that follows bills once they reach the House or Senate floor: who wrote them, who voted for them, and who stopped them. It isn't affiliated with Congress, any party, campaign or advocacy group.</p>
+    <p>An independent project that follows bills once they reach the House or Senate floor: who wrote them, who voted for them and who stopped them. It isn't affiliated with Congress, any party, campaign or advocacy group.</p>
     <p>Everything is pulled from public records and refreshed automatically. The code and every data file are public on <a href="https://github.com/narmendariz1984/congress-ledger" target="_blank" rel="noopener">GitHub</a>, so anyone can check how a number was produced.</p>
     <p>Spot an error? <a href="https://github.com/narmendariz1984/congress-ledger/issues" target="_blank" rel="noopener">Report it on GitHub</a> with the bill number and what's wrong.</p>
   </div>
@@ -398,13 +400,13 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
         <b>51</b><span>budget bills; VP breaks ties</span>
         <b>2/3</b><span>fast-track, veto override (290 / 67)</span>
       </div></div>
-      <div><h3 class="kh">Who's named, and how</h3><div class="kv">
+      <div><h3 class="kh">Who's named and how</h3><div class="kv">
         <span class="sym" aria-hidden="true">●</span><span>on the record: a roll call</span>
         <span class="sym" aria-hidden="true">◐</span><span>by role: chair or leader controls it</span>
         <span class="sym" aria-hidden="true">○</span><span>reported by press, not on record</span>
       </div></div>
       <div><h3 class="kh">Tracked when</h3>
-        <p style="margin:0;font-size:14.5px">A bill hits the floor: a recorded passage vote, a cloture or discharge fight, a veto, or it becomes law. Hand-picked bills show at any stage.</p>
+        <p style="margin:0;font-size:14.5px">A bill hits the floor: a recorded passage vote, a cloture or discharge fight, a veto or it becomes law. Hand-picked bills show at any stage.</p>
         <div class="parties"><span><span class="pb" style="--c:var(--dem)">D</span> Democrat</span><span><span class="pb" style="--c:var(--rep)">R</span> Republican</span><span><span class="pb" style="--c:var(--ind)">I</span> Independent</span><span><span class="ref">119 REF</span> earlier Congress</span></div>
       </div>
     </div>
@@ -415,7 +417,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
   <div class="sec-body prose">
     <p>Thousands of bills are introduced each Congress and most never get a vote. This site follows the ones that reach the floor:</p>
     <ul>
-      <li><b>Always:</b> bills that became law, were sent to or vetoed by the President, passed both chambers, or had a cloture, discharge or failed-passage fight.</li>
+      <li><b>Always:</b> bills that became law, were sent to or vetoed by the President, passed both chambers or had a cloture, discharge or failed-passage fight.</li>
       <li><b>Passed one chamber:</b> only when that passage was a roll call vote, so members are on the record. Voice-vote and unanimous-consent passages are left out.</li>
       <li><b>Hand-picked:</b> a few bills are added on purpose at any stage, with notes and sources.</li>
     </ul>
@@ -426,7 +428,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
   <summary><h2>How it updates</h2></summary>
   <div class="sec-body prose">
     <ul>
-      <li><b>On days Congress meets:</b> floor votes hourly from 8 AM to 11 PM Central, and bills four times a day.</li>
+      <li><b>On days Congress meets:</b> floor votes hourly from 8 AM to 11 PM Central and bills four times a day.</li>
       <li><b>During recess:</b> bills once a day at 6 AM Central.</li>
       <li><b>Senate votes</b> come from Voteview, which usually posts a vote a few hours after it happens. senate.gov turns away automated requests, so this site links to its official vote pages instead of fetching them.</li>
       <li><b>House votes and bill histories</b> come from the official Congress.gov API.</li>
