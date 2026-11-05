@@ -2917,7 +2917,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -10708,7 +10708,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -10942,7 +10942,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12429,7 +12429,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19943,7 +19943,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -20069,7 +20069,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20153,7 +20153,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20266,7 +20266,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20429,7 +20429,7 @@
     ],
     "t": 299
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20465,15 +20465,13 @@
      "ch": "H",
      "d": "2025-04-28",
      "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H1633-1634)",
-     "fn": "cg",
-     "v": "633–163"
+     "fn": "cg"
     },
     {
      "ch": "H",
      "d": "2025-04-28",
      "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H1633-1634)",
-     "fn": "cg",
-     "v": "633–163"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -20555,7 +20553,7 @@
     ],
     "t": 20
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20635,7 +20633,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20715,7 +20713,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20809,7 +20807,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20902,7 +20900,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21010,7 +21008,7 @@
     ],
     "t": 19
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21110,7 +21108,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21202,7 +21200,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21330,7 +21328,7 @@
     ],
     "t": 56
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21410,7 +21408,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21521,7 +21519,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21622,7 +21620,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21717,7 +21715,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21777,7 +21775,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21864,7 +21862,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21936,7 +21934,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22017,7 +22015,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22052,15 +22050,13 @@
      "ch": "H",
      "d": "2025-07-14",
      "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3228-3229)",
-     "fn": "cg",
-     "v": "228–322"
+     "fn": "cg"
     },
     {
      "ch": "H",
      "d": "2025-07-14",
      "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H3228-3229)",
-     "fn": "cg",
-     "v": "228–322"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -22130,7 +22126,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22255,7 +22251,7 @@
     ],
     "t": 29
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22344,7 +22340,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22430,7 +22426,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22512,7 +22508,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22593,7 +22589,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22712,7 +22708,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22807,7 +22803,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22883,7 +22879,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22960,7 +22956,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23072,7 +23068,7 @@
     ],
     "t": 35
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23138,7 +23134,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23234,7 +23230,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23352,7 +23348,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23466,7 +23462,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23548,7 +23544,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23602,15 +23598,13 @@
      "ch": "H",
      "d": "2025-12-01",
      "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H4942-4944)",
-     "fn": "cg",
-     "v": "942–494"
+     "fn": "cg"
     },
     {
      "ch": "H",
      "d": "2025-12-01",
      "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H4942-4944)",
-     "fn": "cg",
-     "v": "942–494"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -23648,7 +23642,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23723,7 +23717,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23779,15 +23773,13 @@
      "ch": "H",
      "d": "2026-04-27",
      "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3107-3108)",
-     "fn": "cg",
-     "v": "107–310"
+     "fn": "cg"
     },
     {
      "ch": "H",
      "d": "2026-04-27",
      "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3107-3108)",
-     "fn": "cg",
-     "v": "107–310"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -23907,7 +23899,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -24028,7 +24020,7 @@
     ],
     "t": 110
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24126,7 +24118,7 @@
     ],
     "t": 83
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24228,7 +24220,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24339,7 +24331,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24428,7 +24420,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24512,7 +24504,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24599,7 +24591,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24686,7 +24678,7 @@
     ],
     "t": 39
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24765,7 +24757,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24853,7 +24845,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24914,15 +24906,13 @@
      "ch": "H",
      "d": "2025-05-13",
      "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H1980-1981)",
-     "fn": "cg",
-     "v": "980–198"
+     "fn": "cg"
     },
     {
      "ch": "H",
      "d": "2025-05-13",
      "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H1980-1981)",
-     "fn": "cg",
-     "v": "980–198"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -24970,7 +24960,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25065,7 +25055,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25142,7 +25132,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25237,7 +25227,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25351,7 +25341,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25444,7 +25434,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25540,7 +25530,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25636,7 +25626,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25727,7 +25717,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25809,7 +25799,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25925,7 +25915,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26026,7 +26016,7 @@
     ],
     "t": 31
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26140,7 +26130,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26229,7 +26219,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26295,7 +26285,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26331,8 +26321,7 @@
      "ch": "S",
      "d": "2026-01-12",
      "e": "Motion to proceed to measure considered in Senate. (consideration: CR S121-128)",
-     "fn": "cg",
-     "v": "121–128"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -26344,8 +26333,7 @@
      "ch": "S",
      "d": "2026-01-13",
      "e": "Motion to proceed to consideration of measure agreed to in Senate by Voice Vote. (consideration: CR S141-143, S157)",
-     "fn": "cg",
-     "v": "141–143"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -26424,7 +26412,7 @@
     ],
     "t": 15
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26515,7 +26503,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26577,8 +26565,7 @@
      "ch": "S",
      "d": "2025-11-07",
      "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S7976-7977)",
-     "fn": "cg",
-     "v": "976–797"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -26645,7 +26632,7 @@
     ],
     "t": 33
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26738,7 +26725,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26857,7 +26844,7 @@
     ],
     "t": 93
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26967,7 +26954,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27034,8 +27021,7 @@
      "ch": "S",
      "d": "2026-09-30",
      "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5237-5238)",
-     "fn": "cg",
-     "v": "237–523"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -27085,7 +27071,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27187,7 +27173,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27267,7 +27253,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27353,15 +27339,13 @@
      "ch": "H",
      "d": "2026-04-30",
      "e": "On motion that the House suspend the rules and recede from the House amendment to the Senate amendment to H.R. 7147, and concur in the Senate amendment Agreed t",
-     "fn": "cg",
-     "v": "311–332"
+     "fn": "cg"
     },
     {
      "ch": "H",
      "d": "2026-04-30",
      "e": "Resolving differences -- House actions: On motion that the House suspend the rules and recede from the House amendment to the Senate amendment to H.R. 7147, and",
-     "fn": "cg",
-     "v": "311–332"
+     "fn": "cg"
     }
    ],
    "title": "Homeland Security and Further Additional Continuing Appropriations Act, 2026.",
@@ -27379,7 +27363,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27492,7 +27476,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27602,7 +27586,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27725,7 +27709,7 @@
     ],
     "t": 12
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27793,7 +27777,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27881,7 +27865,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27967,7 +27951,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28076,7 +28060,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28176,7 +28160,7 @@
     ],
     "t": 87
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28288,7 +28272,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28391,7 +28375,7 @@
     ],
     "t": 12
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28476,7 +28460,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28569,7 +28553,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28656,7 +28640,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28724,7 +28708,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28794,7 +28778,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28867,8 +28851,7 @@
      "ch": "S",
      "d": "2026-09-30",
      "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226-5231)",
-     "fn": "cg",
-     "v": "226–523"
+     "fn": "cg"
     },
     {
      "ch": "S",
@@ -28910,7 +28893,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28980,7 +28963,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29072,7 +29055,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29152,7 +29135,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29235,7 +29218,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29307,7 +29290,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29411,7 +29394,7 @@
     ],
     "t": 103
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29527,7 +29510,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29595,7 +29578,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:04:27+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37432,7 +37415,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -37523,7 +37506,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-05T18:20:18+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -45007,7 +44990,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T18:18:19+00:00",
+ "generatedAt": "2026-11-05T18:20:18+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
