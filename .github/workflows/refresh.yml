@@ -65,7 +65,14 @@ jobs:
           else
             git commit -m "Refresh ledger data"
           fi
-          git push
+          # Someone may have pushed while this ran (a code change, an edit on GitHub).
+          # Replay this commit on top of theirs and try again, up to 3 times.
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push rejected, rebasing on the latest main (try $i)"
+            git pull --rebase --quiet origin main || { git rebase --abort; exit 1; }
+          done
+          exit 1
 
       # While a backfill queue remains, start the next batch now instead of waiting
       # for the schedule. Stops on its own when the queue is empty or a run fails.
