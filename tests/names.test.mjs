@@ -18,11 +18,11 @@ test("short titles pass through unchanged", () => {
 test("rule-overturning resolutions (Congressional Review Act)", () => {
   assert.equal(
     N.nameOf('Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to "Buffalo Field Office Record of Decision and Approved Resource Management Plan Amendment".'),
-    "Overturn BLM rule: Buffalo Field Office Record of Decision and…");
+    "Overturn BLM rule: Buffalo Field Office land-use plan");
   // Senate wording, "issued by", and the Energy Dept. sub-office
   assert.match(N.nameOf('A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Ocean Energy Management relating to "Protection of Marine Archaeological Resources".'), /^Overturn BOEM rule: Protection of Marine/);
   assert.match(N.nameOf('Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule issued by the Environmental Protection Agency relating to the "California State Nonroad Engine Pollution Control Standards".'), /^Overturn EPA rule: California State Nonroad/);
-  assert.match(N.nameOf('Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Office of Energy Efficiency and Renewable Energy, Department of Energy relating to "Energy Conservation Program: Energy Conservation Standards for Commercial Refrigerators".'), /^Overturn Energy Dept\. rule: Energy Conservation Standards for/);
+  assert.match(N.nameOf('Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Office of Energy Efficiency and Renewable Energy, Department of Energy relating to "Energy Conservation Program: Energy Conservation Standards for Commercial Refrigerators".'), /^Overturn Energy Dept\. rule: efficiency standards for Commercial Refrigerators$/);
 });
 
 test("S.J.Res. 197: Voteview cuts the title off mid-word and encodes the ampersand", () => {
@@ -34,21 +34,40 @@ test("war powers resolutions, House and Senate wording", () => {
   assert.equal(N.nameOf("A concurrent resolution directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities with Iran."),
     "War powers: remove U.S. forces from hostilities with Iran");
   assert.match(N.nameOf("A joint resolution to direct the removal of United States Armed Forces from hostilities within or against Venezuela that have not been authorized by Congress."),
-    /^War powers: remove U\.S\. forces from hostilities within or against/);
+    /^War powers: remove U\.S\. forces from hostilities against Venezuela$/);
+  assert.equal(N.nameOf("A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress."),
+    "War powers: remove U.S. forces from hostilities against Iran");
 });
 
 test("other resolution patterns", () => {
   assert.equal(N.nameOf("A joint resolution providing for congressional disapproval of the proposed foreign military sale to Israel of certain defense articles and services."), "Block proposed arms sale to Israel");
   assert.equal(N.nameOf("A joint resolution providing for congressional disapproval of the proposed export of certain defense articles to Israel."), "Block proposed arms export to Israel");
-  assert.equal(N.nameOf("A joint resolution terminating the national emergency declared to impose global tariffs."), "End the national emergency declared to impose global tariffs");
+  assert.equal(N.nameOf("A joint resolution terminating the national emergency declared to impose global tariffs."), "End the national emergency behind global tariffs");
   assert.equal(N.nameOf("Proposing an amendment to the Constitution of the United States requiring a balanced budget for the Federal Government."), "Constitutional amendment requiring a balanced budget for the Federal…");
   assert.match(N.nameOf("Disapproving the action of the District of Columbia Council in approving the D.C. Income and Franchise Tax Conformity and Revision Temporary Amendment Act of 2025."), /^Block D\.C\. law: /);
   assert.equal(N.nameOf("Providing for consideration of the bill (H.R. 1501) to amend title 18, United States Code, and for other purposes."), "Rule for debating H.R. 1501");
   assert.equal(N.nameOf("A resolution requesting information on Israel's human rights practices."), "Requesting information on Israel's human rights practices");
 });
 
+test("rule subjects drop boilerplate", () => {
+  const cra = (agency, subj) => `A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by ${agency} relating to "${subj}".`;
+  assert.equal(N.nameOf(cra("the Centers for Medicare & Medicaid Services", "Medicare Program; Implementation of Prior Authorization for Select Services")), "Overturn CMS rule: Implementation of Prior Authorization for Select Services");
+  assert.equal(N.nameOf(cra("the Centers for Medicare & Medicaid Services", "Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027")), "Overturn CMS rule: ACA Notice of Benefit and Payment Parameters for 2027");
+  assert.equal(N.nameOf(cra("the Bureau of Land Management", "Miles City Field Office Record of Decision and Approved Resource Management Plan Amendment")), "Overturn BLM rule: Miles City Field Office land-use plan");
+  assert.match(N.nameOf(cra("the Bureau of Consumer Financial Protection", "Overdraft Lending")), /^Overturn CFPB rule: Overdraft Lending$/);
+});
+
+test("tariff emergencies, spending bills and who a bill directs", () => {
+  assert.equal(N.nameOf("A joint resolution terminating the national emergency declared to impose duties on articles imported from Canada."), "End the national emergency behind tariffs on Canada");
+  assert.equal(N.nameOf("Commerce, Justice, Science; Energy and Water Development; and Interior and Environment Appropriations Act, 2026"), "2026 funding: Commerce, Justice, Science / Energy and Water / Interior");
+  assert.equal(N.nameOf("Department of Defense Appropriations Act, 2026"), "Department of Defense Appropriations Act, 2026");
+  assert.equal(N.nameOf("To require the Secretary of Homeland Security to designate Haiti for temporary protected status."), "Require DHS to designate Haiti for temporary protected status");
+  assert.match(N.nameOf("To amend the Internal Revenue Code of 1986 to provide special rules for the taxation of certain residents of Taiwan."), /^Amend the tax code to provide special rules/);
+  assert.match(N.nameOf("To name the Department of Veterans Affairs community-based outpatient clinic in Toms River, New Jersey, and for other purposes."), /^Name the VA community-based outpatient clinic in Toms River/);
+});
+
 test("plain bills and tidy endings", () => {
-  assert.match(N.nameOf("A bill to require the Federal Energy Regulatory Commission to extend the time period during which licensees are required to commence construction."), /^To require the Federal Energy Regulatory Commission to extend the…$/);
+  assert.match(N.nameOf("A bill to require the Federal Energy Regulatory Commission to extend the time period during which licensees are required to commence construction."), /^Require FERC to extend the time period during which licensees are…$/);
   assert.equal(N.nameOf("Expressing support for tax policies that support working families."), "Expressing support for tax policies that support working families");
   assert.ok(N.nameOf("x ".repeat(80)).length <= 72);
 });

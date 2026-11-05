@@ -169,11 +169,42 @@ PASSED_S = re.compile(r"passed/agreed to in senate|passed senate", re.I)
 FLOOR = re.compile(r"cloture|motion to proceed|considered under|considered by senate|rule h\. ?res|discharge|failed of passage|on passage", re.I)
 COMMITTEE = re.compile(r"reported|ordered to be reported|markup|committee consideration|placed on (the )?(union|house|senate legislative) calendar", re.I)
 VETO = re.compile(r"vetoed by president", re.I)
+# A decisive floor vote that failed. Not counted: motions to recommit, commit or
+# instruct conferees, amendments, and motions to reconsider (routine, or a retry).
+KILL = re.compile(
+    r"cloture\b.{0,120}\bnot invoked|failed of passage|"
+    r"motion to proceed\b.{0,120}\b(rejected|not agreed to)|"
+    r"motion to discharge\b.{0,80}\brejected|table motion to discharge agreed to|motion to table the motion to discharge\b.{0,40}agreed to|"
+    r"(on passage|suspend the rules and (pass|agree))\b.{0,80}\bfailed\b|"
+    r"rule h\. ?res\.? \d+ failed", re.I)
+NOT_KILL = re.compile(r"^\s*motion (by senator \w+ )?to reconsider|motion to (re)?commit|instruct conferees|amendment", re.I)
+# Anything that moves a bill forward after a failed vote revives it.
+ADVANCE = re.compile(
+    PASSED_H.pattern + "|" + PASSED_S.pattern +
+    r"|cloture\b.{0,120}\binvoked(?<!not invoked)|motion to proceed\b.{0,120}\bagreed to|"
+    r"presented to president|became public law|signed by president|motion to discharge\b.{0,80}\bagreed to", re.I)
+
+
+def killed(actions: list[dict]) -> bool:
+    """True when the bill's most recent decisive floor vote failed and nothing
+    moved it forward afterwards. Congress.gov lists actions newest first."""
+    for a in actions:
+        t = a.get("text") or ""
+        if NOT_KILL.search(t):
+            continue
+        if re.search(r"not invoked", t, re.I) and not KILL.search(t):
+            continue
+        if KILL.search(t):
+            return True
+        if ADVANCE.search(t):
+            return False
+    return False
 # Keep rule (Nov 2026): laws, bills sent to or vetoed by the President, bills passed by
 # both chambers, and bills that died or were fought over on the floor are always kept.
 # A bill that passed only one chamber is kept only if that passage was a recorded vote,
 # which drops the hundreds of voice-vote / unanimous-consent bills that never move again.
 KEEP_RULE = "recorded-vote-v3"  # v3: any recorded rejection counts (e.g. motion to proceed rejected 48-51)
+STATUS_RULE = "killed-v1"  # bills whose latest decisive floor vote failed are "killed"
 RULE_ONLY_WIDENS = True  # v2 -> v3 keeps strictly more bills: re-check dropped ones, not all
 ALWAYS_KEEP = re.compile(r"became public law|signed by president|presented to president|vetoed|"
                          r"cloture|not invoked|motion to discharge|discharge petition|failed of passage|failed by|"
@@ -220,6 +251,8 @@ def derive(actions: list[dict], laws: list) -> dict:
         status = "law"
     elif VETO.search(all_text):
         status = "vetoed"
+    elif killed(actions):
+        status = "killed"
     elif stage >= 3:
         status = "passed1"
     else:
@@ -265,7 +298,7 @@ def timeline_from(actions: list[dict]) -> list[dict]:
             ev["v"] = f"{m.group(1)}–{m.group(2)}"
         if re.search(r"became public law", text, re.I):
             ev["k"] = "win"
-        elif re.search(r"not invoked|failed|vetoed", text, re.I):
+        elif re.search(r"vetoed by president", text, re.I) or (KILL.search(text) and not NOT_KILL.search(text)):
             ev["k"] = "kill"
         out.append(ev)
     return out[-10:]
@@ -714,6 +747,13 @@ def main() -> int:
                 return float("inf")
         stale = sorted((b for b in wanted if age(b) > 7 * 86400), key=age, reverse=True)[:STALE_PER_RUN]
         refetch = curated_ids | updated | set(stale) | set(batch) | {b for b in wanted if b not in auto_by_id}
+        if tracked.get("statusRule") != STATUS_RULE:
+            # re-check every bill in the usual 100-bill batches, which chain until done
+            q = tracked.setdefault("backfill", {"queue": []})
+            q["queue"] = sorted(set(q.get("queue") or []) | set(tracked["bills"]))
+            q.pop("finished", None)
+            tracked["statusRule"] = STATUS_RULE
+            print(f"status rule changed to {STATUS_RULE}: queued {len(q['queue'])} bills to re-check")
         if tracked.get("rule") != KEEP_RULE:
             if RULE_ONLY_WIDENS and tracked.get("rule"):
                 again = tracked.pop("dropped", [])
