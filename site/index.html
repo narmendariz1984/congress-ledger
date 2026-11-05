@@ -202,8 +202,7 @@ th button:focus-visible{outline:2px solid var(--accent)}
 th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending"] button::after{content:" ▼"}
 
 /* agenda */
-.agenda{columns:240px;column-gap:10px}
-.agenda>.ag{break-inside:avoid;margin-bottom:10px}
+.agenda{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
 .ag{border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;gap:6px;align-content:start;min-width:0}
 .ag .t{font-weight:600;font-size:14px}
 .ag .s{font-size:12px;color:var(--muted)}
