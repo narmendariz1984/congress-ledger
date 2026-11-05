@@ -55,6 +55,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(36px,6.2vw,64px)
 .session .k{font-size:13px;font-weight:600;color:var(--muted)}
 .session .v{font-family:var(--f-mono);font-size:20px;font-weight:500}
 .session .s{font-size:13px;color:var(--muted)}
+.session .v.seats{display:grid;line-height:1.25}
 @media (max-width:820px){.session{grid-template-columns:repeat(2,minmax(0,1fr))}.session>div{padding-left:14px;border-top:1px solid var(--gold-line2)}.session>div:nth-child(-n+2){border-top:0}.session>div:nth-child(odd){border-left:0;padding-left:0}}
 .d{color:var(--dem)} .r{color:var(--rep)} .i{color:var(--ind)}
 
@@ -575,8 +576,8 @@ function renderNotesList(){
 
 function renderMeta(){
   if(meta){
-    if(meta.house){$("#house-v").innerHTML=`<span class="d">${esc(meta.house.d)} D</span> · <span class="r">${esc(meta.house.r)} R</span>`;$("#house-s").textContent=meta.house.note||""}
-    if(meta.senate){$("#senate-v").innerHTML=`<span class="d">${esc(meta.senate.d)} D</span> · <span class="r">${esc(meta.senate.r)} R</span>`;$("#senate-s").textContent=meta.senate.note||""}
+    if(meta.house){$("#house-v").innerHTML=`<span class="d">${esc(meta.house.d)} D</span><span class="r">${esc(meta.house.r)} R</span>`;$("#house-v").classList.add("seats");$("#house-s").textContent=meta.house.note||""}
+    if(meta.senate){$("#senate-v").innerHTML=`<span class="d">${esc(meta.senate.d)} D</span><span class="r">${esc(meta.senate.r)} R</span>`;$("#senate-v").classList.add("seats");$("#senate-s").textContent=meta.senate.note||""}
   }
   const cur=bills.filter(b=>!b.reference).length, ref=bills.filter(b=>b.reference).length;
   $("#tracked-v").textContent=String(cur);
