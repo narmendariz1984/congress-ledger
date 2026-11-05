@@ -54,6 +54,10 @@ jobs:
       - name: Build calendar
         run: python scripts/watch_ics.py
 
+      # Every roll call with each member's vote (Voteview), checked at most every 4 hours
+      - name: Build roll calls
+        run: python scripts/rollcalls.py
+
       - name: Commit only if data changed
         run: |
           git config user.name "github-actions[bot]"

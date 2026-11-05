@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Naming, codes and state search
-        run: node --test tests/names.test.mjs
+        run: node --test tests/names.test.mjs tests/votes.test.mjs
       - name: Keep rule, roll call discovery, vote parsing
         run: python -m unittest discover -s tests -v
       - name: Current data passes the quality check

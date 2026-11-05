@@ -68,6 +68,24 @@ if (L) {
   }
   if (W.length && !W.some(e => !e.date || (e.end || e.date) >= today)) warn.push("What to watch: every date has passed; add the next ones to data/curated.json");
 
+  // Roll calls with member votes (site/data/rollcalls.json, from Voteview)
+  // it sits next to ledger.json
+  const rp = typeof path === "string" ? path.replace(/[^/\\]*$/, "rollcalls.json") : new URL("rollcalls.json", path);
+  let RCJ = null;
+  try { RCJ = JSON.parse(readFileSync(rp, "utf8")); } catch { warn.push("rollcalls.json is missing or unreadable; the Votes tab falls back to recent votes"); }
+  if (RCJ) {
+    const bad = (RCJ.votes || []).filter(v => v.v && v.v.length !== (RCJ.members?.[v.ch] || []).length);
+    if (bad.length) err.push(`${bad.length} roll calls have member votes that don't line up with the member list`);
+    for (const ch of ["H", "S"]) {
+      const vs = (RCJ.votes || []).filter(v => v.ch === ch);
+      if (!vs.length) warn.push(`rollcalls.json has no ${ch === "H" ? "House" : "Senate"} roll calls`);
+      const latest = vs.reduce((m, v) => (v.d > m ? v.d : m), "");
+      const ledgerLatest = (ch === "H" ? house : senate).reduce((m, v) => (v.d > m ? v.d : m), "");
+      if (latest && ledgerLatest && (Date.parse(ledgerLatest) - Date.parse(latest)) / 864e5 > 7)
+        warn.push(`Voteview's ${ch === "H" ? "House" : "Senate"} roll calls end ${latest}, over a week behind Congress.gov (${ledgerLatest})`);
+    }
+  }
+
   const age = (Date.now() - Date.parse(L.generatedAt || 0)) / 36e5;
   if (age > 72) warn.push(`data last written ${Math.round(age)} hours ago`);
   for (const w of L.warnings || []) warn.push(`from the refresh: ${w}`);
