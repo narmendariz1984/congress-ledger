@@ -37,9 +37,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -86,3 +86,9 @@ jobs:
             gh workflow run refresh.yml --ref main -f mode=auto
             echo "started the next batch"
           fi
+
+      # Flags raw names, missing House tallies, unreadable codes and the like. Warnings
+      # go to the run summary; serious problems fail the run so GitHub notifies.
+      # Runs last, so the data above is already saved either way.
+      - name: Check data quality
+        run: node scripts/check.mjs

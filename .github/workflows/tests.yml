@@ -1,0 +1,28 @@
+name: Tests
+
+# Runs the naming and backend tests whenever code changes. Data-only commits from
+# the refresh workflow don't touch these paths, so they don't trigger it.
+on:
+  push:
+    paths: ["site/*.js", "site/index.html", "scripts/**", "tests/**", ".github/workflows/tests.yml"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Naming, codes and state search
+        run: node --test tests/names.test.mjs
+      - name: Keep rule, roll call discovery, vote parsing
+        run: python -m unittest discover -s tests -v
+      - name: Current data passes the quality check
+        run: node scripts/check.mjs

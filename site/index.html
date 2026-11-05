@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Congress Legislation Tracker</title>
-<meta name="description" content="Mature House and Senate bills: who wrote them, who blocked them, and what passed or died.">
+<meta name="description" content="Mature House and Senate bills: who wrote them, who blocked them and what passed or died.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500;600&family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&display=swap">
 <style>
@@ -59,20 +59,62 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(36px,6.2vw,64px)
 @media (max-width:820px){.session{grid-template-columns:repeat(2,minmax(0,1fr))}.session>div{padding-left:14px;border-top:1px solid var(--gold-line2)}.session>div:nth-child(-n+2){border-top:0}.session>div:nth-child(odd){border-left:0;padding-left:0}}
 .d{color:var(--dem)} .r{color:var(--rep)} .i{color:var(--ind)}
 
-nav.index{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
-nav.index .wrap{display:flex;gap:4px;overflow-x:auto;padding-block:8px;scrollbar-width:none}
-nav.index a{flex:none;font-size:14.5px;font-weight:600;color:var(--soft);text-decoration:none;padding:8px 12px;border-radius:6px}
-nav.index a:hover{color:var(--accent);background:var(--wash)}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);margin-top:14px}
+nav.tabs .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.tabs a{flex:none;font-size:15.5px;font-weight:600;color:var(--soft);text-decoration:none;padding:14px 16px 12px;border-bottom:3px solid transparent;min-height:44px;box-sizing:border-box}
+nav.tabs a:hover{color:var(--ink)}
+nav.tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.bl{text-decoration:none;color:var(--ink)}
+.bl-n{font-weight:600;text-decoration:underline;text-decoration-color:var(--gold-line);text-underline-offset:3px}
+.bl:hover .bl-n{color:var(--accent);text-decoration-color:var(--accent)}
+.bl-num{font:500 12.5px var(--f-mono);color:var(--muted);white-space:nowrap}
+.act{color:var(--soft)}
+#g-latest .act{display:block;margin-top:2px}
+.bcell{min-width:200px}
+.offt{font-size:14px;color:var(--soft)}
+.offt .k{font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:2px}
+.toc{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:12px 16px;border:1px solid var(--rule);border-radius:10px;background:var(--wash);scroll-margin-top:72px}
+.toc-l{font-size:14px;font-weight:600;color:var(--muted);margin-right:6px}
+.toc a{font-size:14.5px;font-weight:600;color:var(--ink);text-decoration:none;padding:7px 12px;border-radius:999px;border:1px solid #2F4840;background:var(--card);min-height:36px;display:inline-flex;align-items:center}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.toc a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.anch{scroll-margin-top:72px}
+.totop{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:6;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:#0E1A17;font:700 15px var(--f-body);cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+.totop:hover{background:#E0BC6A}
+.totop:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.back{justify-self:start;font-size:13.5px;font-weight:600;color:var(--muted);text-decoration:underline;text-decoration-color:var(--gold-line);text-underline-offset:3px}
+.back:hover{color:var(--accent)}
+:root[data-theme="light"] .toc a{border-color:var(--rule)}
+.cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;padding:16px 20px;border:1px solid var(--gold-line);border-radius:10px;background:var(--head);color:var(--ink);text-decoration:none}
+.cta:hover{border-color:var(--accent)}
+.cta .go-how{font-weight:700;color:var(--accent);white-space:nowrap}
+.prose{font-size:15.5px}
+.prose p,.prose ul{margin:0;max-width:72ch}
+.prose ul{padding-left:20px;display:grid;gap:8px}
+.prose a{color:var(--accent)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;counter-reset:st}
+.steps li{counter-increment:st;display:grid;gap:6px;align-content:start;padding-top:10px;border-top:3px solid var(--accent);min-width:0}
+.steps li b::before{content:counter(st) ". ";color:var(--accent);font-family:var(--f-mono)}
+.steps span{font-size:14px;color:var(--soft)}
+.note{margin:0;font-size:14.5px;color:var(--soft);max-width:80ch}
+.gloss{display:grid;grid-template-columns:max-content 1fr;gap:10px 22px;margin:0;font-size:15px}
+.gloss dt{font-weight:700;color:var(--accent)}
+.gloss dd{margin:0;color:var(--ink)}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.gloss{grid-template-columns:1fr;gap:2px}.gloss dd{margin-bottom:10px}}
 
 main .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;padding-block:20px 48px}
 .sec-body>*{min-width:0}
-details.sec{background:var(--card);border:1px solid var(--rule);border-radius:10px;scroll-margin-top:64px}
-details.sec>summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+details.sec{background:var(--card);border:1px solid var(--rule);border-radius:10px;scroll-margin-top:72px}
+details.sec>summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;border-radius:10px}
 details.sec>summary::-webkit-details-marker{display:none}
 details.sec>summary h2{font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.15}
 details.sec>summary .count{font-family:var(--f-mono);font-size:13.5px;color:var(--muted)}
-details.sec>summary::after{content:"−";margin-left:auto;font-family:var(--f-mono);color:var(--muted)}
-details.sec:not([open])>summary::after{content:"+"}
+details.sec>summary::before{content:"";flex:none;width:9px;height:9px;margin:0 4px 4px 2px;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(45deg);transition:transform .15s ease}
+details.sec:not([open])>summary::before{transform:rotate(-45deg);margin-bottom:0}
+details.sec>summary:hover h2{color:var(--accent)}
+details.sec>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .sec-body{padding:0 20px 20px;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;min-width:0}
 
 /* legend */
@@ -121,28 +163,29 @@ input[type=search]::placeholder{color:#7F8B80}
 
 /* bill dockets */
 .bills{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
-details.bill{border:1px solid var(--rule);border-radius:8px;background:#0F1D19}
+details.bill{border:1px solid var(--rule);border-radius:8px;background:#0F1D19;scroll-margin-top:72px}
 details.bill>summary{list-style:none;cursor:pointer;padding:16px 18px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:center}
 details.bill>summary::-webkit-details-marker{display:none}
 details.bill[open]>summary{border-bottom:1px solid var(--rule)}
 .bnum{font-family:var(--f-mono);font-weight:600;font-size:16px;white-space:nowrap;color:var(--accent)}
 .btitle{font-weight:700;font-size:17px;line-height:1.35;min-width:0}
-.bmeta{grid-column:2/4;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--soft);align-items:center}
-.pipe{grid-column:1/4;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:6px}
+.bmeta{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--soft);align-items:center}
+.pipe{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:6px}
 .pipe span{height:6px;border-radius:3px;background:#22362F;position:relative}
 .pipe span.on{background:var(--c)}
 .pipe span.x{background:repeating-linear-gradient(135deg,var(--c) 0 3px,transparent 3px 6px)}
-.pipe-l{grid-column:1/4;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font:12.5px var(--f-body);color:var(--muted)}
+.pipe-l{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font:12.5px var(--f-body);color:var(--muted)}
 .pipe-l span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ref{font:600 10.5px var(--f-mono);letter-spacing:.06em;color:var(--muted);border:1px dashed var(--rule);padding:1px 5px;border-radius:3px}
 .bbody{padding:14px 18px 16px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;min-width:0}
+.bbody>*{min-width:0}
 .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:10px 18px;font-size:13.5px}
 .people .k{font-size:12.5px;color:var(--muted);font-weight:600}
 .split{display:flex;height:8px;border-radius:2px;overflow:hidden;background:var(--wash);margin-top:4px;max-width:220px}
 .split i{display:block;height:100%}
 h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}
-.tl{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--rule);margin-left:4px}
-.tl li{position:relative;padding:4px 0 8px 14px;display:grid;grid-template-columns:96px 34px 1fr;gap:8px;font-size:13.5px;align-items:baseline}
+.tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-left:2px solid var(--rule);margin-left:4px}
+.tl li{position:relative;padding:4px 0 8px 14px;display:grid;grid-template-columns:96px 34px minmax(0,1fr);gap:8px;font-size:13.5px;align-items:baseline;overflow-wrap:anywhere}
 .tl li::before{content:"";position:absolute;left:-5px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--card);border:2px solid var(--muted)}
 .tl li.kill::before{background:var(--killed);border-color:var(--killed)}
 .tl li.win::before{background:var(--law);border-color:var(--law)}
@@ -162,20 +205,41 @@ th button:focus-visible{outline:2px solid var(--accent)}
 th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending"] button::after{content:" ▼"}
 
 /* agenda */
-.agenda{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.agenda{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
 .ag{border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;gap:6px;align-content:start;min-width:0}
 .ag .t{font-weight:600;font-size:14px}
 .ag .s{font-size:12px;color:var(--muted)}
-.ag .pipe{grid-column:auto;margin:0}
-.ag ul{margin:0;padding:0;list-style:none;font-size:12.5px;display:grid;gap:2px}
+.mix{display:flex;gap:2px;height:8px;border-radius:4px;overflow:hidden;background:var(--rule)}
+.mix i{display:block;background:var(--c);min-width:4px}
+.ag ul{margin:0;padding:0;list-style:none;font-size:14px;display:grid;gap:0}
+.ag-list li{padding:8px 0;border-top:1px solid var(--rule);display:grid;gap:3px}
+.ag-list li:first-child{border-top:0;padding-top:4px}
+.ag-st{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted)}
+.ag-st .dot{width:7px;height:7px;border-radius:50%;background:var(--c)}
+.ag-more{justify-self:start;font:600 13.5px var(--f-body);color:var(--accent);background:none;border:0;padding:6px 0;cursor:pointer;min-height:32px}
+.ag-more:hover{text-decoration:underline}
+.stl{grid-column:1/-1;font-size:13.5px;color:var(--accent)}
+.vgroups{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+details.vg{border:1px solid var(--rule);border-radius:8px;background:#0F1D19;min-width:0}
+details.vg>summary{list-style:none;cursor:pointer;padding:12px 16px;display:grid;grid-template-columns:62px minmax(0,1fr) auto auto;gap:6px 14px;align-items:center}
+details.vg>summary::-webkit-details-marker{display:none}
+details.vg>summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg);position:absolute;margin-left:-11px}
+details.vg[open]>summary::before{transform:rotate(45deg)}
+details.vg>summary{position:relative;padding-left:26px}
+details.vg>.tbl{margin:0 16px 14px}
+.vg-ch{font-size:13px;font-weight:600;color:var(--muted)}
+.vg-m{font-weight:600}
+.vg-meta{font-size:13px;color:var(--muted);white-space:nowrap}
+.vg-n{margin-left:8px;color:var(--accent);font-weight:600}
+@media (max-width:620px){details.vg>summary{grid-template-columns:1fr auto}.vg-name{grid-column:1/-1;order:-1}.vg-ch{order:1}.vg-res{order:3}.vg-meta{order:2;grid-column:1/-1}}
 .ag.empty{border-style:dashed}
 .links{font-size:12.5px}
 
 .notes{margin:0;padding-left:0;list-style:none;display:grid;gap:6px;font-size:13px;counter-reset:none}
-.notes li{display:grid;grid-template-columns:40px 72px 1fr;gap:8px;align-items:baseline}
+.notes li{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:baseline;font-size:14px}
+.notes li{scroll-margin-top:72px}
 .notes li:target{background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:4px}
 .notes .no{font-family:var(--f-mono);font-weight:500;color:var(--accent)}
-.notes .bn{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
 
 /* season line */
 .season{display:flex;flex-wrap:wrap;gap:6px}
@@ -201,7 +265,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 .feed li{display:grid;grid-template-columns:88px 1fr;gap:8px;align-items:baseline;padding-left:8px;border-left:2px solid var(--rule)}
 .feed li.kill{border-left-color:var(--killed)} .feed li.win{border-left-color:var(--law)}
 .feed .dt{font-size:11.5px;color:var(--muted)}
-.last{grid-column:1/4;font-size:14.5px;color:#D6D2C2;margin-top:4px}
+.last{grid-column:1/-1;font-size:14.5px;color:#D6D2C2;margin-top:4px;overflow-wrap:anywhere}
 .last .mono{font-size:13.5px;color:var(--muted)}
 .stages-head{padding:0 19px;display:grid;grid-column:auto}
 @media (max-width:820px){.glance{grid-template-columns:1fr}}
@@ -210,6 +274,8 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 .status-line.warn{color:var(--stalled)}
 
 @media (max-width:620px){
+  nav.tabs .wrap{gap:0;justify-content:space-between}
+  nav.tabs a{font-size:14.5px;padding:13px 7px 11px}
   .sec-body{padding:0 14px 16px} details.sec>summary{padding:16px 14px}
   .fpanel{padding:12px}
   .fchip{min-height:40px;padding:0 13px;font-size:14px}
@@ -218,8 +284,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
   details.bill>summary{grid-template-columns:1fr auto}
   .bnum{grid-column:1/2} .btitle{grid-column:1/3;order:3} .bmeta{grid-column:1/3;order:4}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
-  .tl li{grid-template-columns:78px 1fr} .tl .ch{display:none}
-  .notes li{grid-template-columns:34px 1fr} .notes .bn{display:none}
+  .tl li{grid-template-columns:78px minmax(0,1fr)} .tl .ch{display:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -231,7 +296,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
     <div>
     <div class="eyebrow" id="cong-label">120th Congress, House and Senate</div>
     <h1>Congress Legislation Tracker</h1>
-    <p class="lede">Bills that reached the floor, who wrote them, and who stopped them.</p>
+    <p class="lede">Bills that reached the floor, who wrote them and who stopped them.</p>
     </div>
     <div class="session" id="session">
       <div><span class="k">Convenes</span><span class="v">Jan 3, 2027</span><span class="s"><span id="days-to"></span> · a Sunday, may shift</span></div>
@@ -252,15 +317,16 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
   </div></div></div>
 </header>
 
-<nav class="index" aria-label="Sections">
+<nav class="tabs" aria-label="Pages">
   <div class="wrap">
-    <a href="#glance">Glance</a><a href="#bills">Bills</a><a href="#outcomes">Passed &amp; killed</a><a href="#votes">Votes</a><a href="#agenda">Agenda</a><a href="#names">Names</a><a href="#paths">Paths to law</a><a href="#key">Key</a><a href="#notes">Notes</a><a href="#sources">Sources</a>
+    <a href="#overview" data-tab="overview">Overview</a><a href="#bills" data-tab="bills">Bills</a><a href="#votes" data-tab="votes">Votes</a><a href="#people" data-tab="people">People</a><a href="#how" data-tab="how">How it works</a>
   </div>
 </nav>
 
 <main>
 <div class="wrap">
 
+<section class="tab" data-tab="overview" aria-label="Overview">
 <details class="sec" id="glance" open>
   <summary><h2>At a glance</h2><span class="count" id="glance-count"></span></summary>
   <div class="sec-body glance">
@@ -269,8 +335,95 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
     <div class="gcol"><h4>Coming up</h4><ol class="feed" id="g-next"></ol></div>
   </div>
 </details>
+<a class="cta" href="#how"><span><b>New here?</b> How a bill becomes law, what this site tracks and where the numbers come from.</span><span class="go-how" aria-hidden="true">How it works</span></a>
+<details class="sec" id="agenda" open>
+  <summary><h2>Agenda</h2><span class="count">how each issue area's bills are doing</span></summary>
+  <div class="sec-body"><div class="agenda" id="agenda-grid"></div></div>
+</details>
+</section>
 
-<details class="sec" id="key">
+<section class="tab" data-tab="bills" aria-label="Bills" hidden>
+<details class="sec" id="bills" open>
+  <summary><h2>Bills</h2><span class="count" id="bills-count"></span></summary>
+  <div class="sec-body">
+    <div class="fpanel">
+      <div class="fchips" role="group" aria-label="Status" id="f-status"></div>
+      <div class="filters">
+        <div class="seg" role="group" aria-label="Congress" id="f-cong">
+          <button type="button" data-v="all" aria-pressed="true">Both</button>
+          <button type="button" data-v="119" aria-pressed="false">119th</button>
+          <button type="button" data-v="120" aria-pressed="false">120th</button>
+        </div>
+        <label class="flabel">Area <select id="f-area"><option value="all">Any area</option></select></label>
+        <label class="search"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--accent)"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="f-q" placeholder="Search a bill, member or state (MN, Texas)" aria-label="Search bills"></label>
+      </div>
+    </div>
+    <div class="pipe-l stages-head" aria-hidden="true"><span>Intro</span><span>Cmte</span><span>Floor</span><span>Ch. 1</span><span>Ch. 2</span><span>Pres.</span><span>Law</span></div>
+    <div class="bills" id="bill-list"></div>
+  </div>
+</details>
+<details class="sec" id="outcomes" open>
+  <summary><h2>Passed &amp; killed</h2><span class="count" id="out-count"></span></summary>
+  <div class="sec-body">
+    <div class="tbl"><table id="t-out"><thead><tr>
+      <th aria-sort="none"><button type="button" data-k="num">Bill</button></th>
+      <th aria-sort="none"><button type="button" data-k="title">Title</button></th>
+      <th aria-sort="none"><button type="button" data-k="status">Outcome</button></th>
+      <th aria-sort="none"><button type="button" data-k="where">Where</button></th>
+      <th>By whom</th>
+      <th aria-sort="descending"><button type="button" data-k="date">Date</button></th>
+      <th>Vote</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</details>
+</section>
+
+<section class="tab" data-tab="votes" aria-label="Votes" hidden>
+<details class="sec" open id="votes">
+  <summary><h2>Floor votes</h2><span class="count" id="votes-count"></span></summary>
+  <div class="sec-body">
+    <p class="note">Latest result first. Open a row to see every roll call on that measure. Bills this site tracks link to their card; nominations and resolutions link to Congress.gov.</p>
+    <div class="vgroups" id="vote-groups"></div>
+  </div>
+</details>
+</section>
+
+<section class="tab" data-tab="people" aria-label="People" hidden>
+<nav class="toc" aria-label="On this page"><span class="toc-l">On this page</span><a href="#p-blocked">Who stopped bills</a><a href="#p-cross">Crossover votes</a><a href="#p-sponsors">Sponsors</a></nav>
+<details class="sec" open id="names">
+  <summary><h2>Names</h2></summary>
+  <div class="sec-body">
+    <div id="p-blocked" class="anch"><h4>Who stopped or slowed bills</h4><div class="tbl"><table id="t-block"><thead><tr><th>Member or bloc</th><th>Role</th><th>Action</th><th>Bill</th><th>Date</th><th>Attribution</th></tr></thead><tbody></tbody></table></div></div>
+    <div id="p-cross" class="anch"><h4>Crossover votes</h4><div class="tbl"><table id="t-cross"><thead><tr><th>Member</th><th>Party</th><th>Vote</th><th>Bill</th><th>On</th></tr></thead><tbody></tbody></table></div></div>
+    <div id="p-sponsors" class="anch"><h4>Sponsors and lead authors</h4><div class="tbl"><table id="t-spon"><thead><tr><th>Member</th><th>Party</th><th>Role</th><th>Bill</th><th>Status</th></tr></thead><tbody></tbody></table></div></div>
+  </div>
+</details>
+</section>
+
+<section class="tab" data-tab="how" aria-label="How it works" hidden>
+<nav class="toc" id="how-contents" aria-label="On this page"><span class="toc-l">On this page</span><a href="#about">About</a><a href="#how-law">How a bill becomes law</a><a href="#key">Key</a><a href="#tracked">What's tracked</a><a href="#updates">Updates</a><a href="#paths">Paths to law</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a></nav>
+<details class="sec" id="about" open>
+  <summary><h2>About this site</h2></summary>
+  <div class="sec-body prose">
+    <p>An independent project that follows bills once they reach the House or Senate floor: who wrote them, who voted for them and who stopped them. It isn't affiliated with Congress, any party, campaign or advocacy group.</p>
+    <p>Everything is pulled from public records and refreshed automatically. The code and every data file are public on <a href="https://github.com/narmendariz1984/congress-ledger" target="_blank" rel="noopener">GitHub</a>, so anyone can check how a number was produced. Each bill lists the sources behind it at the bottom of its card.</p>
+    <p>Spot an error? <a href="https://github.com/narmendariz1984/congress-ledger/issues" target="_blank" rel="noopener">Report it on GitHub</a> with the bill number and what's wrong.</p>
+  </div>
+</details>
+<details class="sec" id="how-law" open>
+  <summary><h2>How a bill becomes law</h2></summary>
+  <div class="sec-body">
+    <ol class="steps">
+      <li><b>Introduced</b><span>A member files it in their own chamber. That's why bills are numbered H.R. or S. Tax bills must start in the House.</span></li>
+      <li><b>Committee</b><span>It goes to the committee for its subject. Most bills never leave this step.</span></li>
+      <li><b>Floor vote</b><span>The first chamber passes it by majority. In the Senate, most bills first need 60 votes to end debate.</span></li>
+      <li><b>Other chamber</b><span>Committee and a floor vote again, in the House or Senate.</span></li>
+      <li><b>Same text</b><span>Both chambers must pass identical wording, by trading amendments or through a conference committee.</span></li>
+      <li><b>President</b><span>Signs it into law or vetoes it. Unsigned for 10 days (Sundays excluded), it becomes law, unless Congress has adjourned, which kills it.</span></li>
+    </ol>
+    <p class="note">A Congress lasts two years, split into two yearly sessions. Bills carry over between sessions, but any bill not law by the time a Congress ends dies and has to be reintroduced.</p>
+  </div>
+</details>
+<details class="sec" open id="key">
   <summary><h2>Key</h2></summary>
   <div class="sec-body">
     <div>
@@ -291,74 +444,43 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
         <b>51</b><span>budget bills; VP breaks ties</span>
         <b>2/3</b><span>fast-track, veto override (290 / 67)</span>
       </div></div>
-      <div><h3 class="kh">Who's named, and how</h3><div class="kv">
+      <div><h3 class="kh">Who's named and how</h3><div class="kv">
         <span class="sym" aria-hidden="true">●</span><span>on the record: a roll call</span>
         <span class="sym" aria-hidden="true">◐</span><span>by role: chair or leader controls it</span>
         <span class="sym" aria-hidden="true">○</span><span>reported by press, not on record</span>
       </div></div>
       <div><h3 class="kh">Tracked when</h3>
-        <p style="margin:0;font-size:14.5px">A bill hits the floor: a recorded passage vote, a cloture or discharge fight, a veto, or it becomes law. Hand-picked bills show at any stage.</p>
+        <p style="margin:0;font-size:14.5px">A bill hits the floor: a recorded passage vote, a cloture or discharge fight, a veto or it becomes law. Hand-picked bills show at any stage.</p>
         <div class="parties"><span><span class="pb" style="--c:var(--dem)">D</span> Democrat</span><span><span class="pb" style="--c:var(--rep)">R</span> Republican</span><span><span class="pb" style="--c:var(--ind)">I</span> Independent</span><span><span class="ref">119 REF</span> earlier Congress</span></div>
       </div>
     </div>
   </div>
 </details>
-
-<details class="sec" id="bills" open>
-  <summary><h2>Bills</h2><span class="count" id="bills-count"></span></summary>
-  <div class="sec-body">
-    <div class="fpanel">
-      <div class="fchips" role="group" aria-label="Status" id="f-status"></div>
-      <div class="filters">
-        <div class="seg" role="group" aria-label="Congress" id="f-cong">
-          <button type="button" data-v="all" aria-pressed="true">Both</button>
-          <button type="button" data-v="119" aria-pressed="false">119th</button>
-          <button type="button" data-v="120" aria-pressed="false">120th</button>
-        </div>
-        <label class="flabel">Area <select id="f-area"><option value="all">Any area</option></select></label>
-        <label class="search"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--accent)"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="f-q" placeholder="Search a bill, title or member" aria-label="Search bills"></label>
-      </div>
-    </div>
-    <div class="pipe-l stages-head" aria-hidden="true"><span>Intro</span><span>Cmte</span><span>Floor</span><span>Ch. 1</span><span>Ch. 2</span><span>Pres.</span><span>Law</span></div>
-    <div class="bills" id="bill-list"></div>
+<details class="sec" id="tracked" open>
+  <summary><h2>What gets tracked</h2></summary>
+  <div class="sec-body prose">
+    <p>Thousands of bills are introduced each Congress and most never get a vote. This site follows the ones that reach the floor:</p>
+    <ul>
+      <li><b>Always:</b> bills that became law, were sent to or vetoed by the President, passed both chambers, or were voted down or fought over on a roll call (cloture, discharge, a failed passage or motion to proceed).</li>
+      <li><b>Passed one chamber:</b> only when that passage was a roll call vote, so members are on the record. Voice-vote and unanimous-consent passages are left out.</li>
+      <li><b>Hand-picked:</b> a few bills are added on purpose at any stage, with notes and sources.</li>
+      <li><b>Found two ways:</b> by each bill's latest action, and once a day by checking every roll call this Congress, so a vote isn't missed when later paperwork follows it.</li>
+    </ul>
+    <p><span class="ref">AUTO</span> means a bill's facts come straight from Congress.gov and haven't been reviewed by hand yet. <span class="ref">119 REF</span> marks a bill from an earlier Congress kept for reference.</p>
   </div>
 </details>
-
-<details class="sec" id="votes">
-  <summary><h2>Floor votes</h2><span class="count" id="votes-count"></span></summary>
-  <div class="sec-body">
-    <div class="tbl"><table id="t-votes"><thead><tr><th>Chamber</th><th>Date</th><th>Roll</th><th>Question</th><th>Result</th><th>Tally</th></tr></thead><tbody></tbody></table></div>
+<details class="sec" id="updates" open>
+  <summary><h2>How it updates</h2></summary>
+  <div class="sec-body prose">
+    <ul>
+      <li><b>On days Congress meets:</b> floor votes hourly from 8 AM to 11 PM Central and bills four times a day.</li>
+      <li><b>During recess:</b> bills once a day at 6 AM Central.</li>
+      <li><b>Senate votes</b> come from Voteview, which usually posts a vote a few hours after it happens. senate.gov turns away automated requests, so this site links to its official vote pages instead of fetching them.</li>
+      <li><b>House votes and bill histories</b> come from the official Congress.gov API.</li>
+    </ul>
+    <p>The time of the last update is under the header on every page. Updates run on GitHub's scheduler, which can start a little late when GitHub is busy.</p>
   </div>
 </details>
-
-<details class="sec" id="agenda" open>
-  <summary><h2>Agenda</h2><span class="count">furthest stage reached per area</span></summary>
-  <div class="sec-body"><div class="agenda" id="agenda-grid"></div></div>
-</details>
-
-<details class="sec" id="names">
-  <summary><h2>Names</h2></summary>
-  <div class="sec-body">
-    <div><h4>Who stopped or slowed bills</h4><div class="tbl"><table id="t-block"><thead><tr><th>Member or bloc</th><th>Role</th><th>Action</th><th>Bill</th><th>Date</th><th>Attribution</th></tr></thead><tbody></tbody></table></div></div>
-    <div><h4>Crossover votes</h4><div class="tbl"><table id="t-cross"><thead><tr><th>Member</th><th>Party</th><th>Vote</th><th>Bill</th><th>On</th></tr></thead><tbody></tbody></table></div></div>
-    <div><h4>Sponsors and lead authors</h4><div class="tbl"><table id="t-spon"><thead><tr><th>Member</th><th>Party</th><th>Role</th><th>Bill</th><th>Status</th></tr></thead><tbody></tbody></table></div></div>
-  </div>
-</details>
-
-<details class="sec" id="outcomes" open>
-  <summary><h2>Passed &amp; killed</h2><span class="count" id="out-count"></span></summary>
-  <div class="sec-body">
-    <div class="tbl"><table id="t-out"><thead><tr>
-      <th aria-sort="none"><button type="button" data-k="num">Bill</button></th>
-      <th aria-sort="none"><button type="button" data-k="title">Title</button></th>
-      <th aria-sort="none"><button type="button" data-k="status">Outcome</button></th>
-      <th aria-sort="none"><button type="button" data-k="where">Where</button></th>
-      <th>By whom</th>
-      <th aria-sort="descending"><button type="button" data-k="date">Date</button></th>
-      <th>Vote</th><th>Note</th></tr></thead><tbody></tbody></table></div>
-  </div>
-</details>
-
 <details class="sec" id="paths" open>
   <summary><h2>Paths to law</h2><span class="count">Trump (R) holds the veto through Jan 20, 2029</span></summary>
   <div class="sec-body">
@@ -375,13 +497,27 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
     </tbody></table></div>
   </div>
 </details>
-
-<details class="sec" id="notes">
-  <summary><h2>Notes</h2><span class="count" id="notes-count"></span></summary>
-  <div class="sec-body"><ol class="notes" id="note-list"></ol></div>
+<details class="sec" id="glossary" open>
+  <summary><h2>Glossary</h2></summary>
+  <div class="sec-body">
+    <dl class="gloss">
+      <dt>Roll call vote</dt><dd>Each member's yes or no is recorded by name. Also called a recorded vote.</dd>
+      <dt>Voice vote</dt><dd>Members answer aloud together; no names are recorded.</dd>
+      <dt>Unanimous consent</dt><dd>Passes unless a single member objects. No vote is recorded.</dd>
+      <dt>Cloture</dt><dd>The Senate's vote to end debate. Most bills need 60 of 100.</dd>
+      <dt>Filibuster</dt><dd>Using the Senate's unlimited debate to block a final vote.</dd>
+      <dt>Hold</dt><dd>A senator's notice that they'll object to moving a bill by unanimous consent.</dd>
+      <dt>Suspension</dt><dd>A House fast track: limited debate, no amendments, two-thirds needed to pass.</dd>
+      <dt>Rule</dt><dd>A House resolution, written by the Rules Committee, that sets how a major bill is debated. No rule, no debate.</dd>
+      <dt>Discharge petition</dt><dd>218 House signatures force a vote on a bill leadership won't schedule.</dd>
+      <dt>Reconciliation</dt><dd>A budget process that needs only 51 Senate votes, limited to taxes, spending and the debt limit.</dd>
+      <dt>Veto override</dt><dd>Two-thirds of both chambers can pass a bill over the President's veto.</dd>
+      <dt>Pocket veto</dt><dd>The President doesn't sign a bill while Congress is adjourned, and it dies.</dd>
+      <dt>Lame duck</dt><dd>The stretch after an election when the outgoing Congress still serves, until Jan 3.</dd>
+    </dl>
+  </div>
 </details>
-
-<details class="sec" id="sources">
+<details class="sec" open id="sources">
   <summary><h2>Sources</h2><span class="count">checked Nov 4, 2026</span></summary>
   <div class="sec-body">
     <div class="tbl"><table><thead><tr><th>Source</th><th>Gives</th><th>Check</th></tr></thead><tbody>
@@ -401,9 +537,13 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
   </div>
 </details>
 
+</section>
+
 </div>
 </main>
+<button type="button" class="totop" id="totop" hidden>Back to top</button>
 
+<script src="names.js"></script>
 <script>
 (function(){
 const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
@@ -431,6 +571,17 @@ const AREAS=["Housing","Health care","Child care","Taxation","Accountability & o
 
 let bills=[], meta=null, loaded=false;
 const F={cong:"all",status:"all",area:"all",q:""};
+/* every member tied to a bill, as {who, st, dist, how} */
+function billMembers(b){
+  const out=[];const add=(who,s,how)=>{if(!s)return;const [st,dist]=String(s).toUpperCase().split("-");out.push({who,st,dist,how})};
+  if(b.sponsor)add(b.sponsor.n,b.sponsor.s,"sponsor");
+  (b.lead||[]).forEach(x=>add(x.n,x.s,x.r||"co-author"));
+  (b.crossovers||[]).forEach(x=>add(x.who,x.s,"crossed party lines"));
+  (b.blockers||[]).forEach(x=>add(x.who,x.s,"blocked or slowed it"));
+  ((b.cosponsors||{}).st||[]).forEach(st=>out.push({who:null,st,how:"cosponsor"}));
+  return out;
+}
+function stateHits(b,sq){return billMembers(b).filter(m=>m.st===sq.st&&(!sq.dist||m.dist===sq.dist))}
 let sortK="date", sortDir="desc";
 
 const $=s=>document.querySelector(s);
@@ -447,18 +598,27 @@ const chip=s=>{const o=STATUS[s]||{l:s,c:"--muted"};return`<span class="chip ${e
 /* footnotes: stable global numbering across the whole session */
 function sortedAll(){return bills.slice().sort((a,b)=>(b.congress||0)-(a.congress||0)||String(a.introduced||"").localeCompare(String(b.introduced||""))||String(a.id).localeCompare(String(b.id)))}
 let FN={}, FNLIST=[];
+const nm=b=>b.name||(b.name=nameOf(b.title));
+function billLink(b){return`<a href="#b-${esc(b.id)}" data-open="${esc(b.id)}" class="bl" title="${esc(b.title)}"><span class="bl-n">${esc(nm(b))}</span> <span class="bl-num">${esc(b.num)}</span></a>`}
+
+/* sources: numbered per bill, listed at the bottom of that bill's card */
 function buildNotes(){
-  FN={};FNLIST=[];let n=0;
-  for(const b of sortedAll()){
+  FN={};FNLIST={};
+  for(const b of bills){
     const fns=b.fns||{};
     const order=[];
     const push=k=>{if(k&&fns[k]&&!order.includes(k))order.push(k)};
     (b.timeline||[]).forEach(t=>push(t.fn));(b.blockers||[]).forEach(t=>push(t.fn));(b.outcome&&push(b.outcome.fn));
     Object.keys(fns).forEach(push);
-    for(const k of order){n++;FN[b.id+"|"+k]=n;FNLIST.push({n,bill:b,f:fns[k]})}
+    FNLIST[b.id]=order.map((k,i)=>{FN[b.id+"|"+k]=i+1;return{n:i+1,f:fns[k]}});
   }
 }
-const sup=(b,k)=>{const n=FN[b.id+"|"+k];return n?`<sup class="fn"><a href="#fn-${n}" aria-label="Note ${n}">${n}</a></sup>`:""};
+const fnId=(b,n)=>`fn-${b.id}-${n}`;
+const sup=(b,k)=>{const n=FN[b.id+"|"+k];return n?`<sup class="fn"><a href="#${esc(fnId(b,n))}" data-open="${esc(b.id)}" aria-label="Source ${n}">${n}</a></sup>`:""};
+function srcList(b){
+  const L=FNLIST[b.id]||[];if(!L.length)return"";
+  return`<div><h4>Sources</h4><ol class="notes">${L.map(x=>`<li id="${esc(fnId(b,x.n))}"><span class="no">${x.n}</span><span>${x.f.u?`<a href="${esc(x.f.u)}" target="_blank" rel="noopener">${esc(x.f.src||"Source")}</a>`:esc(x.f.src||"")}${x.f.t?`: ${esc(x.f.t)}`:""}</span></li>`).join("")}</ol></div>`;
+}
 
 function pipe(b){
   const c=(STATUS[b.status]||{}).c||"--muted";
@@ -473,25 +633,28 @@ function matches(b){
   if(F.cong!=="all"&&String(b.congress)!==F.cong)return false;
   if(F.status!=="all"&&b.status!==F.status)return false;
   if(F.area!=="all"&&b.area!==F.area)return false;
-  if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,b.area,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
+  const sq=F.q&&stateQuery(F.q);
+  if(sq){if(!stateHits(b,sq).length)return false}
+  else if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,nm(b),b.area,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
   return true;
 }
 
 function billCard(b){
   const sp=b.sponsor||{};
   const cs=b.cosponsors;
-  const tl=(b.timeline||[]).map(t=>`<li class="${t.k||""}"><span class="dt">${fmtD(t.d)}</span><span class="ch">${esc(t.ch||"")}</span><span>${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}${sup(b,t.fn)}</span></li>`).join("");
+  const tl=(b.timeline||[]).map(t=>`<li class="${t.k||""}"><span class="dt">${fmtD(t.d)}</span><span class="ch">${esc(t.ch||"")}</span><span>${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}${sup(b,t.fn)}</span></li>`).join("");
   const bl=(b.blockers||[]).length?`<div><h4>Blocked or slowed by</h4><div class="tbl"><table><thead><tr><th>Who</th><th>Role</th><th>Action</th><th>Kill point</th><th>Date</th><th>Attribution</th></tr></thead><tbody>${b.blockers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc(x.act||"")}${sup(b,x.fn)}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
   const cr=(b.crossovers||[]).length?`<div><h4>Crossed party lines</h4><div class="tbl"><table><thead><tr><th>Member</th><th>Vote</th><th>On</th></tr></thead><tbody>${b.crossovers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td class="n">${esc(x.vote)}</td><td>${esc(x.on||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
   const lead=(b.lead||[]).length?`<div><div class="k">Co-authors &amp; drivers</div>${b.lead.map(x=>`<div>${pb(x.p)} ${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}${x.r?` <span class="muted">· ${esc(x.r)}</span>`:""}</div>`).join("")}</div>`:"";
   return`<details class="bill" id="b-${esc(b.id)}">
   <summary>
     <span class="bnum">${esc(b.num)}</span>
-    <span class="btitle">${esc(b.title)}</span>
+    <span class="btitle" title="${esc(b.title)}">${esc(nm(b))}</span>
     <span>${chip(b.status)}</span>
     <span class="bmeta">${b.reference?`<span class="ref">${esc(b.congress)} REF</span>`:""}${b.auto?`<span class="ref" title="Facts from Congress.gov, not yet reviewed">AUTO</span>`:""}<span>${esc(b.area||"")}</span><span>${pb(sp.p)} ${esc(sp.n||"Sponsor —")}</span>${b.path?`<span>${esc(b.path)}</span>`:""}</span>
     <span class="pipe" aria-label="Stage reached: ${esc(STAGES[b.reached||0])}">${pipe(b)}</span>
     ${lastAct(b)}
+    ${stateLine(b)}
   </summary>
   <div class="bbody">
     <div class="people">
@@ -500,14 +663,23 @@ function billCard(b){
       <div><div class="k">Cosponsors</div>${cs&&cs.t!=null?`<div class="mono">${cs.t} · <span class="d">${cs.d||0} D</span> · <span class="r">${cs.r||0} R</span>${cs.i?` · <span class="i">${cs.i} I</span>`:""}</div>${splitBar(cs)}`:`<div class="muted">not recorded</div>`}</div>
       <div><div class="k">Introduced</div><div class="mono">${fmtD(b.introduced)}</div></div>
     </div>
+    ${nm(b)!==b.title?`<div class="offt"><div class="k">Official title</div><div>${esc(b.title)}</div></div>`:""}
     ${b.url?`<div class="links"><a href="${esc(b.url)}" target="_blank" rel="noopener">Congress.gov</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`:""}
     ${tl?`<div><h4>Timeline</h4><ol class="tl">${tl}</ol></div>`:""}
     ${bl}${cr}
+    ${srcList(b)}
   </div></details>`;
 }
 
+function stateLine(b){
+  const sq=F.q&&stateQuery(F.q);if(!sq)return"";
+  const hits=stateHits(b,sq);if(!hits.length)return"";
+  const named=hits.filter(h=>h.who).map(h=>`${esc(h.who)} (${esc(h.how)})`);
+  const cos=hits.filter(h=>!h.who).length;
+  return`<span class="stl">${esc(STATES[sq.st])}: ${named.join(", ")}${cos?`${named.length?", ":""}cosponsored by ${sq.dist?"this district":"its members"}`:""}</span>`;
+}
 function lastEv(b){const t=(b.timeline||[]).slice().sort((x,y)=>String(y.d||"").localeCompare(String(x.d||"")));return t[0]}
-function lastAct(b){const t=lastEv(b)||(b.latest&&b.latest.text?{d:b.latest.actionDate,e:b.latest.text}:null);return t?`<span class="last"><span class="mono">${fmtD(t.d)}</span> ${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span>`:""}
+function lastAct(b){const t=lastEv(b)||(b.latest&&b.latest.text?{d:b.latest.actionDate,e:b.latest.text}:null);return t?`<span class="last"><span class="mono">${fmtD(t.d)}</span> ${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span>`:""}
 
 function renderGlance(){
   const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
@@ -515,7 +687,7 @@ function renderGlance(){
   $("#g-score").innerHTML=["law","passed1","moving","stalled","killed","vetoed"].map(k=>{const c=n(k);const inner=`<span class="num mono" style="color:var(${STATUS[k].c})">${c}</span><span>${esc(STATUS[k].l)}</span>`;return c?`<button type="button" class="sc go" data-status="${k}" aria-label="Show ${c} ${esc(STATUS[k].l.toLowerCase())} bills">${inner}</button>`:`<div class="sc">${inner}</div>`}).join("");
   const ev=[];pool.forEach(b=>(b.timeline||[]).forEach(t=>ev.push({b,t})));
   ev.sort((x,y)=>String(y.t.d||"").localeCompare(String(x.t.d||"")));
-  $("#g-latest").innerHTML=ev.slice(0,6).map(({b,t})=>`<li class="${t.k||""}"><span class="dt mono">${fmtD(t.d)}</span><span><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}" class="mono">${esc(b.num)}</a> ${esc(t.e)}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span></li>`).join("")||`<li class="muted">${loaded?"No actions yet":"Loading…"}</li>`;
+  $("#g-latest").innerHTML=ev.slice(0,6).map(({b,t})=>`<li class="${t.k||""}"><span class="dt mono">${fmtD(t.d)}</span><span>${billLink(b)} <span class="act">${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span></span></li>`).join("")||`<li class="muted">${loaded?"No actions yet":"Loading…"}</li>`;
   const nx=(meta&&Array.isArray(meta.next)?meta.next:[]);
   $("#g-next").innerHTML=nx.map(x=>`<li><span class="dt mono">${fmtD(x.d)}</span><span>${esc(x.e)}${x.u?` <a href="${esc(x.u)}" target="_blank" rel="noopener">src</a>`:""}</span></li>`).join("")||`<li class="muted">${loaded?"Nothing scheduled":"Loading…"}</li>`;
   $("#glance-count").textContent=meta&&meta.asOf?`as of ${meta.asOf}`:"";
@@ -530,22 +702,34 @@ function renderStatusChips(){
 function renderBills(){
   renderStatusChips();
   const list=sortedAll().filter(matches);
-  $("#bills-count").textContent=`${list.length} of ${bills.length}`;
+  const sq=F.q&&stateQuery(F.q);
+  $("#bills-count").textContent=`${list.length} of ${bills.length}`+(sq?` · members from ${STATES[sq.st]}${sq.dist?`, district ${sq.dist}`:""}`:"");
   if(!loaded){$("#bill-list").innerHTML=`<div class="empty-state">Loading bill records…</div>`;return}
   if(!bills.length){$("#bill-list").innerHTML=`<div class="empty-state">No bills on the ledger yet. Ask Claude to add one by number, e.g. “add H.R. 1234 to the ledger.”</div>`;return}
   if(!list.length){$("#bill-list").innerHTML=`<div class="empty-state">${F.cong==="120"?"No 120th Congress bills have reached committee or floor action yet. The 120th convenes Jan 3, 2027.":"No bills match these filters."}</div>`;return}
   $("#bill-list").innerHTML=list.map(billCard).join("");
 }
 
+const AG_OPEN=new Set();
+/* one bar per area, split by how many of its bills are in each status */
+function mixBar(bs){
+  const order=["law","passed1","moving","stalled","killed","vetoed"];
+  const parts=order.map(k=>({k,n:bs.filter(b=>b.status===k).length})).filter(x=>x.n);
+  const label=parts.map(x=>`${x.n} ${STATUS[x.k].l.toLowerCase()}`).join(", ");
+  return`<span class="mix" role="img" aria-label="${esc(label)}" title="${esc(label)}">${parts.map(x=>`<i style="flex:${x.n};--c:var(${STATUS[x.k].c})"></i>`).join("")}</span>`;
+}
 function renderAgenda(){
   const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
   const areas=AREAS.slice();pool.forEach(b=>{if(b.area&&!areas.includes(b.area))areas.push(b.area)});
+  areas.sort((x,y)=>x.localeCompare(y,"en",{sensitivity:"base"}));
   $("#agenda-grid").innerHTML=areas.map(a=>{
     const bs=pool.filter(b=>b.area===a);
     if(!bs.length)return`<div class="ag empty"><span class="t">${esc(a)}</span><span class="s">No mature bill</span></div>`;
-    const best=bs.slice().sort((x,y)=>(y.reached||0)-(x.reached||0))[0];
     const law=bs.filter(b=>b.status==="law").length, dead=bs.filter(b=>b.status==="killed"||b.status==="vetoed").length;
-    return`<div class="ag"><span class="t">${esc(a)}</span><span class="pipe">${pipe(best)}</span><span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul>${bs.map(b=>`<li><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a> ${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</li>`).join("")}</ul></div>`;
+    const RANK={law:0,vetoed:1,killed:2,passed1:3,moving:4,stalled:5};
+    const ord=bs.slice().sort((x,y)=>(RANK[x.status]??9)-(RANK[y.status]??9)||String((lastEv(y)||{}).d||"").localeCompare(String((lastEv(x)||{}).d||"")));
+    const open=AG_OPEN.has(a), SHOW=3;
+    return`<div class="ag"><span class="t">${esc(a)}</span>${mixBar(bs)}<span class="s mono">${bs.length} tracked · ${law} law · ${dead} killed</span><ul class="ag-list">${ord.map((b,i)=>`<li${i>=SHOW&&!open?" hidden":""}>${billLink(b)}<span class="ag-st"><span class="dot" style="--c:var(${(STATUS[b.status]||{}).c||"--muted"})"></span>${esc(STATUS[b.status]?STATUS[b.status].l:b.status)}</span></li>`).join("")}</ul>${ord.length>SHOW?`<button type="button" class="ag-more" data-area="${esc(a)}" aria-expanded="${open}">${open?"Show fewer":`Show all ${ord.length}`}</button>`:""}</div>`;
   }).join("");
 }
 
@@ -553,10 +737,10 @@ function renderNames(){
   const pool=sortedAll().filter(b=>F.cong==="all"||String(b.congress)===F.cong);
   const rowsB=[],rowsC=[],rowsS=[];
   for(const b of pool){
-    (b.blockers||[]).forEach(x=>rowsB.push(`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}${sup(b,x.fn)}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`));
-    (b.crossovers||[]).forEach(x=>rowsC.push(`<tr><td>${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td class="n">${esc(x.vote)}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${esc(x.on||"")}</td></tr>`));
-    if(b.sponsor&&b.sponsor.n)rowsS.push(`<tr><td>${esc(b.sponsor.n)}${b.sponsor.s?` <span class="muted">(${esc(b.sponsor.s)})</span>`:""}</td><td>${pb(b.sponsor.p)}</td><td>Sponsor</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${chip(b.status)}</td></tr>`);
-    (b.lead||[]).forEach(x=>rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a></td><td>${chip(b.status)}</td></tr>`));
+    (b.blockers||[]).forEach(x=>rowsB.push(`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}${sup(b,x.fn)}</td><td class="bcell">${billLink(b)}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`));
+    (b.crossovers||[]).forEach(x=>rowsC.push(`<tr><td>${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td class="n">${esc(x.vote)}</td><td class="bcell">${billLink(b)}</td><td>${esc(x.on||"")}</td></tr>`));
+    if(b.sponsor&&b.sponsor.n)rowsS.push(`<tr><td>${esc(b.sponsor.n)}${b.sponsor.s?` <span class="muted">(${esc(b.sponsor.s)})</span>`:""}</td><td>${pb(b.sponsor.p)}</td><td>Sponsor</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`);
+    (b.lead||[]).forEach(x=>rowsS.push(`<tr><td>${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td>${pb(x.p)}</td><td>${esc(x.r||"Lead cosponsor")}</td><td class="bcell">${billLink(b)}</td><td>${chip(b.status)}</td></tr>`));
   }
   const none=c=>`<tr><td colspan="${c}" class="muted">${loaded?"None yet":"Loading…"}</td></tr>`;
   $("#t-block tbody").innerHTML=rowsB.join("")||none(6);
@@ -570,14 +754,10 @@ function renderOutcomes(){
   done.sort((a,b)=>{const r=String(val(a,sortK)).localeCompare(String(val(b,sortK)),undefined,{numeric:true});return sortDir==="asc"?r:-r});
   const law=done.filter(b=>b.status==="law").length;
   $("#out-count").textContent=`${law} passed · ${done.length-law} killed`;
-  $("#t-out tbody").innerHTML=done.map(b=>{const o=b.outcome||{};return`<tr><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a>${b.reference?` <span class="ref">REF</span>`:""}</td><td>${esc(b.title)}</td><td>${chip(b.status)}</td><td>${esc(o.where||"")}</td><td>${esc(o.by||"")}</td><td class="n">${fmtD(o.d)}</td><td class="n">${esc(o.v||"")}</td><td class="n">${sup(b,o.fn)}</td></tr>`}).join("")||`<tr><td colspan="8" class="muted">${loaded?"Nothing resolved yet":"Loading…"}</td></tr>`;
+  $("#t-out tbody").innerHTML=done.map(b=>{const o=b.outcome||{};return`<tr><td class="n"><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}">${esc(b.num)}</a>${b.reference?` <span class="ref">REF</span>`:""}</td><td title="${esc(b.title)}">${esc(nm(b))}</td><td>${chip(b.status)}</td><td>${esc(o.where||"")}</td><td>${esc(o.by||"")}</td><td class="n">${fmtD(o.d)}</td><td class="n">${esc(o.v||"")}</td><td class="n">${sup(b,o.fn)}</td></tr>`}).join("")||`<tr><td colspan="8" class="muted">${loaded?"Nothing resolved yet":"Loading…"}</td></tr>`;
   document.querySelectorAll("#t-out th").forEach(th=>{const k=th.querySelector("button")?.dataset.k;if(k)th.setAttribute("aria-sort",k===sortK?(sortDir==="asc"?"ascending":"descending"):"none")});
 }
 
-function renderNotesList(){
-  $("#notes-count").textContent=FNLIST.length?`${FNLIST.length} notes`:"";
-  $("#note-list").innerHTML=FNLIST.map(x=>`<li id="fn-${x.n}"><span class="no">${x.n}</span><span class="bn">${esc(x.bill.num)}</span><span>${esc(x.f.t||"")}${x.f.u?` <a href="${esc(x.f.u)}" target="_blank" rel="noopener">${esc(x.f.src||"Source")}</a>`:x.f.src?` ${esc(x.f.src)}`:""}</span></li>`).join("")||`<li class="muted">${loaded?"No notes yet":"Loading…"}</li>`;
-}
 
 function renderMeta(){
   if(meta){
@@ -618,17 +798,28 @@ function renderSeason(){
 }
 
 let VOTES={senate:[],house:[]}, CONGRESS=null;
+let BYNUM={};
 function renderVotes(){
-  const all=[...(VOTES.senate||[]),...(VOTES.house||[])].filter(v=>v&&v.d).sort((a,b)=>String(b.d).localeCompare(String(a.d))||((+b.n||0)-(+a.n||0))).slice(0,30);
-  $("#votes-count").textContent=all.length?`latest ${all.length}`:"";
-  $("#t-votes tbody").innerHTML=all.map(v=>{
-    const res=String(v.result||"");const ok=/agreed|passed|confirmed|invoked(?! not)/i.test(res)&&!/not|rejected|failed/i.test(res);
-    const q=[v.measure,v.q].filter(Boolean).join(" · ");
-    return`<tr><td class="n">${v.ch==="S"?"Senate":"House"}</td><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(q).slice(0,220)}</td><td><span class="chip" style="--c:var(${ok?"--law":"--killed"})">${esc(res||"—")}</span></td><td class="n">${v.y||v.n_?`${esc(v.y)}–${esc(v.n_)}`:""}</td></tr>`}).join("")||`<tr><td colspan="6" class="muted">${loaded?"No recorded votes yet this session":"Loading…"}</td></tr>`;
+  BYNUM={};bills.forEach(b=>{BYNUM[numKey(b.num)]=b});
+  const all=[...(VOTES.senate||[]),...(VOTES.house||[])].filter(v=>v&&v.d).sort((a,b)=>String(b.d).localeCompare(String(a.d))||((+b.n||0)-(+a.n||0)));
+  const groups=[],byKey={};
+  for(const v of all){const k=(v.ch||"")+"|"+(numKey(v.measure)||`${v.d}|${v.n}`);if(!byKey[k]){byKey[k]={k,ch:v.ch,measure:v.measure,votes:[]};groups.push(byKey[k])}byKey[k].votes.push(v)}
+  $("#votes-count").textContent=all.length?`${all.length} roll calls on ${groups.length} measures`:"";
+  const okRes=res=>/agreed|passed|confirmed|invoked(?! not)/i.test(res)&&!/not|rejected|failed/i.test(res);
+  const resChip=res=>`<span class="chip" style="--c:var(${okRes(res)?"--law":"--killed"})">${esc(res||"—")}</span>`;
+  const tally=v=>(+v.y||+v.n_)?`${esc(v.y)}–${esc(v.n_)}`:"";
+  $("#vote-groups").innerHTML=groups.map(g=>{
+    const v0=g.votes[0], tb=BYNUM[numKey(g.measure)];
+    const mi=measureInfo(g.measure,CONGRESS);
+    const nmTxt=mi&&mi.type==="PN"?"Nomination: "+nomName(v0.title||""):v0.title?nameOf(plain(v0.title)):(mi?mi.label:(plain(v0.q)||"Vote without a measure"));
+    const label=tb?billLink(tb):mi?`<a class="bl" href="${esc(mi.url)}" target="_blank" rel="noopener" title="${esc(decodeEnt(plain(v0.title||"")))}"><span class="bl-n">${esc(nmTxt)}</span> <span class="bl-num">${esc(mi.label)}</span></a>`:`<span class="vg-m">${esc(nmTxt)}</span>`;
+    const rows=g.votes.map(v=>`<tr><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">Roll ${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(plain(v.q||""))}</td><td>${resChip(String(v.result||""))}</td><td class="n">${tally(v)}</td></tr>`).join("");
+    return`<details class="vg"><summary><span class="vg-ch">${g.ch==="S"?"Senate":"House"}</span><span class="vg-name">${label}</span><span class="vg-meta"><span class="mono">${fmtD(v0.d)}</span>${g.votes.length>1?` <span class="vg-n">${g.votes.length} roll calls</span>`:""}</span><span class="vg-res">${resChip(String(v0.result||""))}</span></summary><div class="tbl"><table><thead><tr><th>Date</th><th>Roll</th><th>Question</th><th>Result</th><th>Tally</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
+  }).join("")||`<p class="muted">${loaded?"No recorded votes yet this session":"Loading…"}</p>`;
 }
 
 function renderAll(){
-  renderVotes();buildNotes();renderMeta();renderSeason();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();renderNotesList();
+  renderVotes();buildNotes();renderMeta();renderSeason();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();
   // populate filters once data present
   const ar=$("#f-area");const have=new Set([...ar.options].map(o=>o.value));
   [...AREAS,...bills.map(b=>b.area).filter(Boolean)].forEach(a=>{if(!have.has(a)){ar.add(new Option(a,a));have.add(a)}});
@@ -638,7 +829,8 @@ function renderAll(){
 $("#f-cong").addEventListener("click",e=>{const btn=e.target.closest("button");if(!btn)return;F.cong=btn.dataset.v;$("#f-cong").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===btn)));renderAll()});
 $("#g-score").addEventListener("click",e=>{const btn=e.target.closest("button[data-status]");if(!btn)return;
   F.status=btn.dataset.status;F.area="all";F.q="";$("#f-area").value="all";$("#f-q").value="";
-  $("#bills").open=true;renderBills();$("#bills").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"})});
+  $("#bills").open=true;renderBills();go("bills")});
+$("#agenda-grid").addEventListener("click",e=>{const btn=e.target.closest("button.ag-more");if(!btn)return;const a=btn.dataset.area;AG_OPEN.has(a)?AG_OPEN.delete(a):AG_OPEN.add(a);renderAgenda()});
 $("#f-status").addEventListener("click",e=>{const btn=e.target.closest("button");if(!btn)return;F.status=btn.dataset.v;renderBills()});
 $("#f-area").addEventListener("change",e=>{F.area=e.target.value;renderBills()});
 let qt;$("#f-q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{F.q=e.target.value.trim();renderBills()},150)});
@@ -646,8 +838,39 @@ $("#t-out thead").addEventListener("click",e=>{const btn=e.target.closest("butto
 document.addEventListener("click",e=>{
   const a=e.target.closest("a[data-open]");
   if(a){const d=document.getElementById("b-"+a.dataset.open);if(d){if(!matches(bills.find(b=>b.id===a.dataset.open)||{})){F.cong="all";F.status="all";F.area="all";F.q="";$("#f-q").value="";$("#f-area").value="all";$("#f-cong").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.v==="all")));renderBills()}const el=document.getElementById("b-"+a.dataset.open);if(el){el.open=true;$("#bills").open=true}}}
-  const f=e.target.closest('sup.fn a');if(f)$("#notes").open=true;
 });
+
+/* tabs: one page, hash routes (#bills, #how, or any element id inside a tab) */
+const TAB_IDS=["overview","bills","votes","people","how"];
+function show(tab){
+  document.querySelectorAll(".tab").forEach(p=>{p.hidden=p.dataset.tab!==tab});
+  document.querySelectorAll("nav.tabs a").forEach(a=>{if(a.dataset.tab===tab)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+}
+/* page position where the sticky tab bar starts sticking: just below the header */
+function tabsTop(){const hd=document.querySelector("header.top");return Math.max(0,Math.round(hd.getBoundingClientRect().bottom+window.scrollY))}
+function route(initial){
+  const h=decodeURIComponent(location.hash.slice(1));
+  let tab=TAB_IDS.includes(h)?h:null, target=null;
+  if(!tab&&h){target=document.getElementById(h);const p=target&&target.closest(".tab");tab=p?p.dataset.tab:null}
+  show(tab||"overview");
+  if(target){for(let d=target.closest("details");d;d=d.parentElement&&d.parentElement.closest("details"))d.open=true;target.scrollIntoView({block:"start"})}
+  else if(h&&initial!==true){const y=tabsTop();if(window.scrollY>y)window.scrollTo(0,y)}
+}
+function go(tab){if(location.hash==="#"+tab)route();else location.hash=tab}
+window.addEventListener("hashchange",()=>route());
+
+/* one Back to top button: shows after about two screens of scrolling, returns to the
+   top of the current tab (on Bills that's the filters) */
+const totop=$("#totop"), tabsNav=document.querySelector("nav.tabs");
+let tt=false;
+window.addEventListener("scroll",()=>{if(tt)return;tt=true;requestAnimationFrame(()=>{tt=false;totop.hidden=window.scrollY<window.innerHeight*2})},{passive:true});
+totop.addEventListener("click",()=>{
+  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  window.scrollTo({top:tabsTop(),behavior:reduce?"auto":"smooth"});
+  const panel=document.querySelector(".tab:not([hidden])");
+  if(panel){panel.setAttribute("tabindex","-1");panel.focus({preventScroll:true})}
+});
+route(true);
 
 renderAll();
 
@@ -667,6 +890,7 @@ async function load(){
     loaded=true;statusLine.textContent="Data couldn't load. Refresh to try again.";statusLine.classList.add("warn");
   }
   renderAll();
+  if(/^#(b-|fn-)/.test(location.hash))route();
 }
 load();
 setInterval(()=>{if(!document.hidden)load()},15*60*1000);
