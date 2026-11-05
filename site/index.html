@@ -3,38 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Congress Bill Ledger</title>
+<title>Congress Legislation Tracker</title>
 <meta name="description" content="Mature House and Senate bills: who wrote them, who blocked them, and what passed or died.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Public+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap">
 <style>
 /* Layout: docket header with session numbers, sticky section index, stacked collapsible sections; bills are expandable dockets */
 :root{
-  --paper:#F3F5F9; --card:#FFFFFF; --ink:#17202E; --muted:#5A6678; --rule:#D6DDE7; --wash:#E9EEF5;
-  --accent:#0F6670;
+  /* chamber at night: navy-slate wood, parchment text, gilt accent */
+  --paper:#131A24; --card:#1A2330; --ink:#ECE6D9; --muted:#A4ACB8; --rule:#2D394A; --wash:#212C3B;
+  --accent:#D4AF62;
+  --dem:#86ABF2; --rep:#F28C82; --ind:#C0ABEA;
+  --law:#6FCB98; --passed1:#6CC1CF; --moving:#8FB0E8; --stalled:#E7B85A; --killed:#EE93A6; --vetoed:#C2A2EE;
+  --f-display:"Libre Caslon Text",Georgia,"Times New Roman",serif;
+  --f-body:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"Atkinson Hyperlegible Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --paper:#F2EFE8; --card:#FFFFFF; --ink:#1A2230; --muted:#56606E; --rule:#D9D3C7; --wash:#EAE5DA;
+  --accent:#8A6A1F;
   --dem:#2C5AA0; --rep:#B23A3A; --ind:#6B5B95;
   --law:#1E7A46; --passed1:#24798A; --moving:#3866A8; --stalled:#9A6500; --killed:#7A2638; --vetoed:#64398F;
-  --f-display:"Merriweather",Georgia,"Times New Roman",serif;
-  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --f-mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,monospace;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#0F141C; --card:#171F2A; --ink:#E5EAF1; --muted:#97A3B4; --rule:#2A3443; --wash:#1D2734;
-  --accent:#4DB0B7; --dem:#80A7E8; --rep:#E8897F; --ind:#B6A5DC;
-  --law:#5CC08B; --passed1:#62B8C7; --moving:#86A9E2; --stalled:#E2B14F; --killed:#E0899B; --vetoed:#B999E6;
-  color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#0F141C; --card:#171F2A; --ink:#E5EAF1; --muted:#97A3B4; --rule:#2A3443; --wash:#1D2734;
-  --accent:#4DB0B7; --dem:#80A7E8; --rep:#E8897F; --ind:#B6A5DC;
-  --law:#5CC08B; --passed1:#62B8C7; --moving:#86A9E2; --stalled:#E2B14F; --killed:#E0899B; --vetoed:#B999E6;
-  color-scheme:dark}
+  color-scheme:light}
 
 *{box-sizing:border-box}
-html{color-scheme:light}
 body{margin:0}
 img{max-width:100%}
 [hidden]{display:none!important}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15.5px;line-height:1.55}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
 .wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 a{color:var(--accent);text-underline-offset:2px}
@@ -44,13 +41,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
 h1,h2,h3{text-wrap:balance;margin:0}
 
 /* header */
-header.top{background:var(--card);border-bottom:1px solid var(--rule)}
+header.top{background:var(--card);border-top:3px solid var(--accent);border-bottom:1px solid var(--rule)}
 header.top .wrap{padding-block:22px 18px;display:grid;gap:16px}
-.eyebrow{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-h1{font-family:var(--f-display);font-weight:900;font-size:clamp(26px,4.4vw,38px);letter-spacing:-.01em;line-height:1.1}
+.eyebrow{font-size:14px;font-weight:600;color:var(--accent)}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(30px,5.2vw,46px);letter-spacing:-.005em;line-height:1.08}
 .session{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
 .session>div{background:var(--card);padding:10px 12px;display:grid;gap:2px;min-width:0}
-.session .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.session .k{font-size:12.5px;font-weight:600;color:var(--muted)}
 .session .v{font-family:var(--f-mono);font-size:17px;font-weight:500}
 .session .s{font-size:12px;color:var(--muted)}
 .d{color:var(--dem)} .r{color:var(--rep)} .i{color:var(--ind)}
@@ -73,7 +70,7 @@ details.sec:not([open])>summary::after{content:"+"}
 /* legend */
 .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .legend .grp{display:grid;gap:6px;align-content:start;min-width:0}
-.legend h3{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.legend h3{font-size:13px;color:var(--muted);font-weight:600}
 .legend ul{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:13px}
 .legend li{display:flex;gap:8px;align-items:baseline}
 .legend li .key{flex:none;min-width:88px}
@@ -112,10 +109,10 @@ details.bill[open]>summary{border-bottom:1px solid var(--rule)}
 .ref{font:600 10.5px var(--f-mono);letter-spacing:.06em;color:var(--muted);border:1px dashed var(--rule);padding:1px 5px;border-radius:3px}
 .bbody{padding:12px 14px 14px;display:grid;gap:14px;min-width:0}
 .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;font-size:13.5px}
-.people .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.people .k{font-size:12.5px;color:var(--muted);font-weight:600}
 .split{display:flex;height:8px;border-radius:2px;overflow:hidden;background:var(--wash);margin-top:4px;max-width:220px}
 .split i{display:block;height:100%}
-h4{margin:0 0 6px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}
 .tl{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--rule);margin-left:4px}
 .tl li{position:relative;padding:4px 0 8px 14px;display:grid;grid-template-columns:96px 34px 1fr;gap:8px;font-size:13.5px;align-items:baseline}
 .tl li::before{content:"";position:absolute;left:-5px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--card);border:2px solid var(--muted)}
@@ -129,7 +126,7 @@ sup.fn a{font:600 10.5px var(--f-mono);text-decoration:none;padding:0 1px}
 .tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
 table{border-collapse:collapse;width:100%;font-size:13px}
 th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
-th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--wash);white-space:nowrap;position:sticky;top:0}
+th{font-size:12.5px;color:var(--muted);font-weight:600;background:var(--wash);white-space:nowrap;position:sticky;top:0}
 tr:last-child td{border-bottom:0}
 td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 th button{all:unset;cursor:pointer}
@@ -155,7 +152,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 /* season line */
 .season{display:flex;flex-wrap:wrap;gap:6px}
 .sz{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:4px;overflow:hidden;font-size:12.5px;min-width:0}
-.sk{padding:4px 8px;background:var(--wash);color:var(--muted);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.sk{padding:4px 8px;background:var(--wash);color:var(--muted);font-size:12px;font-weight:600}
 .sv{padding:4px 9px;font-weight:600}
 .sv .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--c);margin-right:6px;vertical-align:1px}
 .sv .sub{font-weight:400;color:var(--muted)}
@@ -180,6 +177,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 .status-line.warn{color:var(--stalled)}
 
 @media (max-width:620px){
+  .session>div:last-child:nth-child(odd){grid-column:1/-1}
   details.bill>summary{grid-template-columns:1fr auto}
   .bnum{grid-column:1/2} .btitle{grid-column:1/3;order:3} .bmeta{grid-column:1/3;order:4}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
@@ -193,8 +191,8 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 
 <header class="top">
   <div class="wrap">
-    <div class="eyebrow" id="cong-label">120th Congress · House &amp; Senate</div>
-    <h1>Congress Bill Ledger</h1>
+    <div class="eyebrow" id="cong-label">120th Congress, House and Senate</div>
+    <h1>Congress Legislation Tracker</h1>
     <div class="session" id="session">
       <div><span class="k">Convenes</span><span class="v">Jan 3, 2027</span><span class="s"><span id="days-to"></span> · a Sunday, may shift</span></div>
       <div><span class="k">House</span><span class="v" id="house-v">—</span><span class="s" id="house-s">results counting</span></div>
