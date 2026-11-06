@@ -7,31 +7,31 @@
 <meta name="description" content="Mature House and Senate bills: who wrote them, who blocked them and what passed or died.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap">
 <meta name="color-scheme" content="light dark">
 <script>try{const t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
 /* Redeployed Nov 5 2026 so Cloudflare adds the Web Analytics snippet. Layout: newspaper masthead with flag-red rule and session numbers, sticky tabs, stacked collapsible sections; bills are expandable dockets */
 :root{
-  /* newsroom: white page, navy and flag-red accents; dark is navy with white and red */
-  --paper:#FFFFFF; --card:#FFFFFF; --card2:#FFFFFF; --wash:#F2F4F8; --ink:#111A2B; --soft:#364152; --muted:#566273; --rule:#DCE1E8; --line:#B3BDCB;
-  --accent:#0A3161; --accent-hover:#164B93; --on-accent:#FFFFFF; --red:#B31942; --link-line:#E3A0AE; --pressed:#E6ECF5; --on-party:#FFFFFF;
+  /* wire-service style: white page, black type, one red accent; dark is near-black with off-white type and a lighter red */
+  --paper:#FFFFFF; --card:#FFFFFF; --card2:#FFFFFF; --wash:#F5F5F5; --ink:#121212; --soft:#3A3A3A; --muted:#5E5E5E; --rule:#E0E0E0; --line:#C4C4C4;
+  --accent:#121212; --accent-hover:#3A3A3A; --on-accent:#FFFFFF; --red:#D21F1A; --link-line:#E8A39F; --pressed:#EDEDED; --on-party:#FFFFFF;
   --dem:#1F5BB5; --rep:#C0362C; --ind:#6B5B95;
   --law:#1E7A46; --passed1:#1F7385; --moving:#3866A8; --stalled:#8F5E00; --killed:#8A2439; --vetoed:#64398F;
-  --f-display:"Newsreader",Georgia,"Times New Roman",serif;
-  --f-body:"Libre Franklin","Franklin Gothic Medium","Helvetica Neue",Arial,sans-serif;
-  --f-mono:"Libre Franklin","Helvetica Neue",Arial,sans-serif;
+  --f-display:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#0B1A30; --card:#10223D; --card2:#0D1E36; --wash:#142A4B; --ink:#F4F6FA; --soft:#CDD6E4; --muted:#A0AEC4; --rule:#24406A; --line:#3A5884;
-  --accent:#FFFFFF; --accent-hover:#DCE5F2; --on-accent:#0B1A30; --red:#FF6B78; --link-line:#FF6B78; --pressed:#1E3A63; --on-party:#0B1A30;
+  --paper:#111111; --card:#1C1C1C; --card2:#161616; --wash:#222222; --ink:#F2F2F2; --soft:#C8C8C8; --muted:#9A9A9A; --rule:#333333; --line:#555555;
+  --accent:#F2F2F2; --accent-hover:#FFFFFF; --on-accent:#111111; --red:#FF5A4F; --link-line:#FF5A4F; --pressed:#2A2A2A; --on-party:#111111;
   --dem:#8DB6F7; --rep:#FF907F; --ind:#C9B6F0;
   --law:#7DD3A0; --passed1:#7CCBDA; --moving:#A3BDF0; --stalled:#EBC062; --killed:#F5A0B1; --vetoed:#CBADF3;
   color-scheme:dark}}
 :root[data-theme="dark"]{
-  --paper:#0B1A30; --card:#10223D; --card2:#0D1E36; --wash:#142A4B; --ink:#F4F6FA; --soft:#CDD6E4; --muted:#A0AEC4; --rule:#24406A; --line:#3A5884;
-  --accent:#FFFFFF; --accent-hover:#DCE5F2; --on-accent:#0B1A30; --red:#FF6B78; --link-line:#FF6B78; --pressed:#1E3A63; --on-party:#0B1A30;
+  --paper:#111111; --card:#1C1C1C; --card2:#161616; --wash:#222222; --ink:#F2F2F2; --soft:#C8C8C8; --muted:#9A9A9A; --rule:#333333; --line:#555555;
+  --accent:#F2F2F2; --accent-hover:#FFFFFF; --on-accent:#111111; --red:#FF5A4F; --link-line:#FF5A4F; --pressed:#2A2A2A; --on-party:#111111;
   --dem:#8DB6F7; --rep:#FF907F; --ind:#C9B6F0;
   --law:#7DD3A0; --passed1:#7CCBDA; --moving:#A3BDF0; --stalled:#EBC062; --killed:#F5A0B1; --vetoed:#CBADF3;
   color-scheme:dark}
@@ -55,7 +55,7 @@ header.top .wrap{padding-block:28px 6px}
 .frame{border-top:5px solid var(--red)}
 .frame-in{border-top:1px solid var(--accent);margin-top:3px;padding:clamp(18px,3vw,28px) 0 20px;display:grid;gap:18px}
 .eyebrow{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--red)}
-h1{font-family:var(--f-display);font-weight:700;font-size:clamp(36px,6.2vw,64px);letter-spacing:-.015em;line-height:1.02;color:var(--ink)}
+h1{font-family:var(--f-display);font-weight:900;font-size:clamp(36px,6.2vw,64px);letter-spacing:-.015em;line-height:1.02;color:var(--ink)}
 .mast-top{display:flex;align-items:center;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin-bottom:6px}
 .theme-btn{min-height:36px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--soft);font:600 13px var(--f-body);cursor:pointer}
 .theme-btn:hover{border-color:var(--accent);color:var(--accent)}
@@ -65,7 +65,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(36px,6.2vw,64px)
 .session>div+div{border-left:1px solid var(--rule)}
 .session>div:first-child{padding-left:0}
 .session .k{font-size:13px;font-weight:600;color:var(--muted)}
-.session .v{font-family:var(--f-mono);font-size:20px;font-weight:500}
+.session .v{font-family:var(--f-mono);font-size:20px;font-weight:700}
 .session .s{font-size:13px;color:var(--muted)}
 .session .v.seats{display:grid;line-height:1.25}
 @media (max-width:820px){.session{grid-template-columns:repeat(2,minmax(0,1fr))}.session>div{padding-left:14px;border-top:1px solid var(--rule)}.session>div:nth-child(-n+2){border-top:0}.session>div:nth-child(odd){border-left:0;padding-left:0}}
@@ -137,7 +137,7 @@ main .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;padding-blo
 details.sec{background:var(--card);border:1px solid var(--rule);border-radius:10px;scroll-margin-top:72px}
 details.sec>summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;border-radius:10px}
 details.sec>summary::-webkit-details-marker{display:none}
-details.sec>summary h2{font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.15}
+details.sec>summary h2{font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1.15}
 details.sec>summary .count{font-family:var(--f-mono);font-size:13.5px;color:var(--muted)}
 details.sec>summary::before{content:"";flex:none;width:9px;height:9px;margin:0 4px 4px 2px;border-right:2.5px solid var(--red);border-bottom:2.5px solid var(--red);transform:rotate(45deg);transition:transform .15s ease}
 details.sec:not([open])>summary::before{transform:rotate(-45deg);margin-bottom:0}
@@ -341,7 +341,7 @@ ol.wlist{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid va
 .wi:target{background:color-mix(in srgb,var(--accent) 8%,transparent)}
 .wd{display:grid;align-content:start;gap:1px;font-family:var(--f-mono)}
 .wd .m{font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.06em}
-.wd .dd{font-family:var(--f-display);font-weight:700;font-size:30px;line-height:1.05;color:var(--ink)}
+.wd .dd{font-family:var(--f-display);font-weight:800;font-size:30px;line-height:1.05;color:var(--ink)}
 .wd .w{font-size:12.5px;color:var(--muted)}
 .wb{display:grid;gap:8px;min-width:0}
 .wh{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
