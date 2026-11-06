@@ -65,21 +65,29 @@ def get_json(url: str) -> dict:
 EO_REF = re.compile(r"\b(?:EO|E\.O\.|Executive Order)\s*(\d{4,5})", re.I)
 
 
-def relations(notes: str) -> dict:
-    """Read the Federal Register's notes: "Revokes: EO 14148; See: EO 14189; Revoked by: EO 14200"."""
+LABEL = re.compile(r"\b(revoked in part by|revoked by|revokes in part|revokes|superseded by|supersedes|amended by|amends|see)\s*:", re.I)
+KEYS = {"revoked by": "revokedBy", "revoked in part by": "revokedBy", "revokes": "revokes", "revokes in part": "revokes",
+        "superseded by": "supersededBy", "supersedes": "supersedes", "amended by": "amendedBy", "amends": "amends", "see": "see"}
+
+
+def relations(notes: str, own: int | None = None) -> dict:
+    """Read the Federal Register's notes: "Revokes: EO 13318, November 21, 2003 Amended by: EO 14410".
+
+    Labels can sit anywhere, even mid-line, so each one covers the text up to the next label.
+    Order numbers only go up over time, so an order is revoked or amended only by a higher
+    number, and only revokes or amends a lower one.
+    """
     out: dict[str, list[int]] = {}
-    key = None  # a label ("Revokes:") covers the items after it until the next label
-    for part in re.split(r";|\n", notes or ""):
-        m = re.match(r"\s*([A-Za-z][A-Za-z ,]*?)\s*:\s*(.*)", part)
-        if m and not EO_REF.match(m.group(1)):
-            label = m.group(1).strip().lower()
-            key = ("revokedBy" if "revoked by" in label else "amendedBy" if "amended by" in label
-                   else "supersededBy" if "superseded by" in label else "revokes" if "revoke" in label
-                   else "amends" if "amend" in label else "supersedes" if "supersede" in label else "see")
-            part = m.group(2)
-        if not key:
-            continue
-        nums = [int(n) for n in EO_REF.findall(part)]
+    marks = list(LABEL.finditer(notes or ""))
+    for k, m in enumerate(marks):
+        key = KEYS[re.sub(r"\s+", " ", m.group(1).lower())]
+        seg = notes[m.end(): marks[k + 1].start() if k + 1 < len(marks) else len(notes)]
+        nums = [int(n) for n in EO_REF.findall(seg)]
+        if own is not None:
+            if key in ("revokedBy", "supersededBy", "amendedBy"):
+                nums = [n for n in nums if n > own]
+            elif key in ("revokes", "supersedes", "amends"):
+                nums = [n for n in nums if n < own]
         if nums:
             out.setdefault(key, [])
             out[key] += [n for n in nums if n not in out[key]]
@@ -92,13 +100,14 @@ def tidy(o: dict) -> dict | None:
         num = int(num)
     except (TypeError, ValueError):
         return None
-    notes = re.sub(r"\s+", " ", o.get("executive_order_notes") or "").strip()
+    raw = o.get("executive_order_notes") or ""
+    notes = re.sub(r"\s+", " ", raw).strip()
     rec = {"n": num, "t": re.sub(r"\s+", " ", (o.get("title") or "").strip()),
            "s": o.get("signing_date") or "", "p": o.get("publication_date") or "",
            "c": o.get("citation") or "", "u": o.get("html_url") or "", "pdf": o.get("pdf_url") or ""}
     if notes:
         rec["notes"] = notes
-        rel = relations(notes)
+        rel = relations(raw, num)
         if rel:
             rec["rel"] = rel
     ab = re.sub(r"\s+", " ", o.get("abstract") or "").strip()

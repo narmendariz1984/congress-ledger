@@ -77,7 +77,10 @@ nav.tabs a{flex:none;font-size:15.5px;font-weight:600;color:var(--soft);text-dec
 nav.tabs a:hover{color:var(--ink)}
 nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--red)}
 nav.tabs .tab-s{display:none}
-@media (max-width:780px){nav.tabs .tab-l{display:none} nav.tabs .tab-s{display:inline}}
+@media (max-width:880px){nav.tabs .tab-l{display:none} nav.tabs .tab-s{display:inline}}
+nav.tabs .wrap.fade-r{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent)}
+nav.tabs .wrap.fade-l{-webkit-mask-image:linear-gradient(to left,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(to left,#000 calc(100% - 32px),transparent)}
+nav.tabs .wrap.fade-l.fade-r{-webkit-mask-image:linear-gradient(to right,transparent,#000 32px,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(to right,transparent,#000 32px,#000 calc(100% - 32px),transparent)}
 .tab{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
 .extra{padding-top:12px;border-top:1px solid var(--rule)}
 .tog{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);font:600 15px var(--f-body);cursor:pointer}
@@ -270,6 +273,24 @@ details.vg>.tbl{margin:0 16px 14px}
 .vrow .search{flex:1 1 260px}
 .psplit{white-space:nowrap;font-size:13.5px}
 .psplit .d,.psplit .r{font-weight:600}
+.eo-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.eo-stats>div{padding:10px 14px;display:grid;gap:2px;min-width:0}
+.eo-stats>div+div{border-left:1px solid var(--rule)}
+.eo-stats>div:first-child{padding-left:0}
+.eo-stats .k{font-size:13px;font-weight:600;color:var(--muted)}
+.eo-stats .v{font-size:22px;font-weight:600}
+ol.eo-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.eo{display:grid;grid-template-columns:86px minmax(0,1fr) auto;gap:4px 16px;padding:14px 0;border-bottom:1px solid var(--rule);align-items:start;scroll-margin-top:72px}
+.eo:target{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.eo-n{font-weight:700;color:var(--red);font-size:14.5px;white-space:nowrap;padding-top:2px}
+.eo-t{font-weight:600;font-size:16px;line-height:1.35}
+.eo-t a{color:var(--ink);text-decoration-color:var(--link-line)}
+.eo-t a:hover{color:var(--accent)}
+.eo-m{font-size:13.5px;color:var(--muted);margin-top:4px}
+.eo-r{font-size:13.5px;color:var(--soft);margin-top:4px}
+.eo-r b{font-weight:600;color:var(--ink)}
+@media (max-width:620px){.eo-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.eo-stats>div:nth-child(odd){border-left:0;padding-left:0}.eo-stats>div:nth-child(n+3){border-top:1px solid var(--rule)}
+  .eo{grid-template-columns:minmax(0,1fr) auto}.eo-n{grid-column:1}.eo-b{grid-column:1/-1;order:3}}
 .ppanel{grid-template-columns:minmax(0,220px) minmax(0,1fr);align-items:center}
 .pst{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--muted)}
 .pst select{flex:1;min-width:0}
@@ -394,7 +415,7 @@ details.wpast .wi{opacity:.75}
   .mgrid .c{aspect-ratio:auto;height:32px;min-height:0} .month{padding:10px}
   .wd .dd{font-size:26px}
   nav.tabs .wrap{gap:0;justify-content:space-between}
-  nav.tabs a{font-size:14.5px;padding:13px 7px 11px}
+  nav.tabs a{font-size:14px;padding:13px 5px 11px}
   .sec-body{padding:0 14px 16px} details.sec>summary{padding:16px 14px}
   .fpanel{padding:12px}
   .fchip{min-height:40px;padding:0 13px;font-size:14px}
@@ -405,7 +426,7 @@ details.wpast .wi{opacity:.75}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
   .tl li{grid-template-columns:78px minmax(0,1fr)} .tl .ch{display:none}
 }
-@media (max-width:400px){nav.tabs a{font-size:14px;padding:13px 4px 11px}}
+@media (max-width:400px){nav.tabs a{font-size:13.5px;padding:13px 4px 11px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -441,7 +462,7 @@ details.wpast .wi{opacity:.75}
 
 <nav class="tabs" aria-label="Pages">
   <div class="wrap">
-    <a href="#overview" data-tab="overview">Overview</a><a href="#watch" data-tab="watch" aria-label="What to watch"><span class="tab-l">What to watch</span><span class="tab-s">Watch</span></a><a href="#bills" data-tab="bills">Bills</a><a href="#votes" data-tab="votes">Votes</a><a href="#people" data-tab="people">People</a><a href="#how" data-tab="how" aria-label="How it works"><span class="tab-l">How it works</span><span class="tab-s">About</span></a>
+    <a href="#overview" data-tab="overview">Overview</a><a href="#watch" data-tab="watch" aria-label="What to watch"><span class="tab-l">What to watch</span><span class="tab-s">Watch</span></a><a href="#bills" data-tab="bills">Bills</a><a href="#votes" data-tab="votes">Votes</a><a href="#orders" data-tab="orders" aria-label="Executive orders"><span class="tab-l">Executive orders</span><span class="tab-s">Orders</span></a><a href="#people" data-tab="people">People</a><a href="#how" data-tab="how" aria-label="How it works"><span class="tab-l">How it works</span><span class="tab-s">About</span></a>
   </div>
 </nav>
 
@@ -524,6 +545,22 @@ details.wpast .wi{opacity:.75}
     </div>
     <div class="vgroups" id="vote-groups"></div>
     <div class="more-bills" id="v-more" hidden><button type="button" data-vmore="25">Show 25 more</button><button type="button" class="ghost" data-vmore="all">Show all</button></div>
+  </div>
+</details>
+</section>
+
+<section class="tab" data-tab="orders" aria-label="Executive orders" hidden>
+<details class="sec" open id="orders-sec">
+  <summary><h2>Executive orders</h2><span class="count" id="eo-count"></span></summary>
+  <div class="sec-body">
+    <p class="note">Every executive order President Trump has signed this term, from the Federal Register, the government's official journal. Revoked and Amended come from the Federal Register's own notes on later orders. Court rulings that block an order aren't recorded there, so they don't show here.</p>
+    <div class="eo-stats" id="eo-stats"></div>
+    <div class="fpanel">
+      <div class="fchips" role="group" aria-label="Show" id="eo-kind"></div>
+      <label class="search"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="eo-q" placeholder="Search a title or order number" aria-label="Search executive orders" autocomplete="off"></label>
+    </div>
+    <ol class="eo-list" id="eo-list"><li class="muted">Loading…</li></ol>
+    <div class="more-bills" id="eo-more" hidden><button type="button" data-eomore="25">Show 25 more</button><button type="button" class="ghost" data-eomore="all">Show all</button></div>
   </div>
 </details>
 </section>
@@ -1150,6 +1187,47 @@ document.addEventListener("click",e=>{if(!e.target.closest("#p-tobills"))return;
   const cong=F.cong;resetBillFilters();F.cong=cong;$("#f-cong").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.v===cong)));
   F.q=STATES[PS.st]||PS.st;$("#f-q").value=F.q;$("#bills").open=true;refilter();go("bills")});
 
+/* executive orders: data/orders.json (Federal Register), loaded the first time the tab opens */
+let EO=null, eoLoading=null;
+const EOV={kind:"all",q:"",shown:25};
+function loadOrders(){return eoLoading||(eoLoading=(async()=>{
+  try{const r=await fetch("data/orders.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);EO=await r.json()}
+  catch(e){EO={orders:[],err:true}}
+  renderOrders()})())}
+const eoStatus=o=>{const r=o.rel||{};return r.revokedBy||r.supersededBy?"rev":r.amendedBy?"amd":""};
+function renderOrders(){
+  if(!EO)return;
+  const all=EO.orders||[];
+  if(EO.err||!all.length){$("#eo-list").innerHTML=`<li class="empty-row">${EO.err?"Executive orders couldn't load. Refresh to try again.":"No executive orders yet."}</li>`;return}
+  const today=iso(new Date()), yr=today.slice(0,4), d30=iso(new Date(Date.now()-30*864e5));
+  const nRev=all.filter(o=>eoStatus(o)==="rev").length, nAmd=all.filter(o=>eoStatus(o)==="amd").length;
+  $("#eo-stats").innerHTML=[["This term",all.length],[`Signed in ${yr}`,all.filter(o=>o.s.startsWith(yr)).length],["Last 30 days",all.filter(o=>o.s>=d30).length],["Revoked by a later order",nRev]]
+    .map(([k,v])=>`<div><span class="k">${esc(k)}</span><span class="v mono">${v}</span></div>`).join("");
+  const KINDS=[["all","All",all.length],["amd","Amended",nAmd],["rev","Revoked",nRev]];
+  $("#eo-kind").innerHTML=KINDS.map(([k,l,n])=>`<button type="button" class="fchip" data-v="${k}" aria-pressed="${EOV.kind===k}">${l} <span class="n">${n}</span></button>`).join("");
+  const q=EOV.q.toLowerCase().replace(/^(eo|e\.o\.)\s*/,"");
+  const list=all.filter(o=>(EOV.kind==="all"||eoStatus(o)===EOV.kind)&&(!q||`${o.n} ${o.t} ${o.a||""}`.toLowerCase().includes(q)));
+  const have=new Set(all.map(o=>o.n));
+  const ref=n=>have.has(n)?`<a href="#eo-${n}">EO ${n}</a>`:`EO ${n}`;
+  const REL=[["revokedBy","Revoked by"],["supersededBy","Superseded by"],["amendedBy","Amended by"],["revokes","Revokes"],["supersedes","Supersedes"],["amends","Amends"]];
+  const row=o=>{const r=o.rel||{}, st=eoStatus(o);
+    const rel=REL.filter(([k])=>(r[k]||[]).length).map(([k,l])=>`<b>${l}</b> ${r[k].map(ref).join(", ")}`).join(" · ");
+    const chipH=st==="rev"?`<span class="chip" style="--c:var(--killed)">Revoked</span>`:st==="amd"?`<span class="chip" style="--c:var(--stalled)">Amended</span>`:"";
+    return`<li class="eo" id="eo-${o.n}"><span class="eo-n">EO ${o.n}</span><div class="eo-b"><div class="eo-t"><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a></div>
+      <div class="eo-m">Signed ${fmtD(o.s)}${o.c?` · ${esc(o.c)}`:""}${o.pdf?` · <a href="${esc(o.pdf)}" target="_blank" rel="noopener">PDF</a>`:""}</div>${rel?`<div class="eo-r">${rel}</div>`:""}</div><span class="eo-s">${chipH}</span></li>`};
+  const page=list.slice(0,EOV.shown), left=list.length-page.length;
+  $("#eo-list").innerHTML=page.map(row).join("")||`<li class="empty-row">No executive orders match${EOV.q?` “${esc(EOV.q)}”`:""}.</li>`;
+  $("#eo-count").textContent=`${list.length} of ${all.length}`;
+  $("#eo-more").hidden=left<=0;
+  $("#eo-more [data-eomore='25']").textContent=`Show ${Math.min(25,left)} more`;
+  $("#eo-more [data-eomore='all']").textContent=`Show all ${list.length}`;
+}
+$("#eo-kind").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;EOV.kind=b.dataset.v;EOV.shown=25;renderOrders()});
+let eoqt;$("#eo-q").addEventListener("input",e=>{clearTimeout(eoqt);eoqt=setTimeout(()=>{EOV.q=e.target.value.trim();EOV.shown=25;renderOrders()},150)});
+$("#eo-more").addEventListener("click",e=>{const b=e.target.closest("[data-eomore]");if(!b)return;EOV.shown=b.dataset.eomore==="all"?1e9:EOV.shown+25;renderOrders()});
+// a link to an order further down the list: show the whole list first
+$("#eo-list").addEventListener("click",e=>{const a=e.target.closest('a[href^="#eo-"]');if(!a)return;if(!document.querySelector(a.getAttribute("href"))){EOV.kind="all";EOV.q="";$("#eo-q").value="";EOV.shown=1e9;renderOrders()}});
+
 /* phone header: show or hide the session details */
 $("#sess-tog").addEventListener("click",()=>{const h=document.querySelector("header.top"), open=h.classList.toggle("sess-open");
   const b=$("#sess-tog");b.setAttribute("aria-expanded",String(open));b.textContent=open?"Hide session details":"Session details"});
@@ -1261,22 +1339,32 @@ document.addEventListener("click",e=>{
 });
 
 /* tabs: one page, hash routes (#bills, #how, or any element id inside a tab) */
-const TAB_IDS=["overview","watch","bills","votes","people","how"];
+const TAB_IDS=["overview","watch","bills","votes","orders","people","how"];
 let CURTAB="overview";
+/* tab row: when it's wider than the screen, fade the edge that has more tabs and keep the current one in view */
+function tabEdges(){const w=document.querySelector("nav.tabs .wrap");if(!w)return;const max=w.scrollWidth-w.clientWidth;
+  w.classList.toggle("fade-r",max>2&&w.scrollLeft<max-2);w.classList.toggle("fade-l",max>2&&w.scrollLeft>2)}
+function tabIntoView(){const w=document.querySelector("nav.tabs .wrap"), a=w&&w.querySelector("a[aria-current]");if(!a||w.scrollWidth<=w.clientWidth)return;
+  const l=a.offsetLeft-w.offsetLeft, r=l+a.offsetWidth;if(l<w.scrollLeft+8)w.scrollLeft=l-8;else if(r>w.scrollLeft+w.clientWidth-8)w.scrollLeft=r-w.clientWidth+40;tabEdges()}
 function show(tab){
   CURTAB=tab;
   // the full roll call file is only needed on Votes and People; fetch it the first time either opens
   if((tab==="votes"||tab==="people")&&loaded&&typeof loadRollcalls==="function")loadRollcalls();
+  if(tab==="orders"&&typeof loadOrders==="function")loadOrders();
   document.querySelectorAll(".tab").forEach(p=>{p.hidden=p.dataset.tab!==tab});
   document.querySelectorAll("nav.tabs a").forEach(a=>{if(a.dataset.tab===tab)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  tabIntoView();
 }
+document.querySelector("nav.tabs .wrap").addEventListener("scroll",tabEdges,{passive:true});
+addEventListener("resize",()=>{tabEdges();tabIntoView()});
 /* page position where the sticky tab bar starts sticking: just below the header */
 function tabsTop(){const hd=document.querySelector("header.top");return Math.max(0,Math.round(hd.getBoundingClientRect().bottom+window.scrollY))}
 function route(initial){
   const h=decodeURIComponent(location.hash.slice(1));
   let tab=TAB_IDS.includes(h)?h:null, target=null;
   if(!tab&&h){target=document.getElementById(h);
-    if(!target){const m=h.match(/^b-(.+)$/)||h.match(/^fn-(.+)-\d+$/);if(m&&ensureBill(m[1]))target=document.getElementById(h)}const p=target&&target.closest(".tab");tab=p?p.dataset.tab:null}
+    if(!target){const m=h.match(/^b-(.+)$/)||h.match(/^fn-(.+)-\d+$/);if(m&&ensureBill(m[1]))target=document.getElementById(h)}
+    if(!target&&/^eo-\d+$/.test(h)&&EO){EOV.kind="all";EOV.q="";EOV.shown=1e9;renderOrders();target=document.getElementById(h)}const p=target&&target.closest(".tab");tab=p?p.dataset.tab:null}
   show(tab||"overview");
   if(target){for(let d=target.closest("details");d;d=d.parentElement&&d.parentElement.closest("details"))d.open=true;target.scrollIntoView({block:"start"})}
   else if(h&&initial!==true){const y=tabsTop();if(window.scrollY>y)window.scrollTo(0,y)}
@@ -1317,6 +1405,7 @@ async function load(){
   renderAll();
   if(/^#(b-|fn-|w-|ag-)/.test(location.hash))route();
   if(["votes","people"].includes(CURTAB))loadRollcalls();
+  if(/^#eo-\d+$/.test(location.hash))loadOrders().then(()=>route());
 }
 /* every roll call with member votes (Voteview); the ledger's recent votes stay as a fallback */
 let rcLoading=null;

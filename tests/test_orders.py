@@ -29,6 +29,14 @@ class Notes(unittest.TestCase):
         r = O.relations("Revokes: EO 13985, January 20, 2021; EO 13988, January 20, 2021\nAmended by: EO 14236, March 14, 2025")
         self.assertEqual(r, {"revokes": [13985, 13988], "amendedBy": [14236]})
 
+    def test_labels_without_separators(self):
+        # EO 14217's real notes: no semicolon or line break before "Amends" and "Amended by"
+        r = O.relations("Revokes: Memo. of November 13, 1961; EO 13318, November 21, 2003 Amends: EO 13562, December 27, 2010 Amended by: EO 14410, June 3, 2026", 14217)
+        self.assertEqual(r, {"revokes": [13318], "amends": [13562], "amendedBy": [14410]})
+
+    def test_an_older_order_cannot_revoke_a_newer_one(self):
+        self.assertEqual(O.relations("Revoked by: EO 14100; Revokes: EO 14500", 14200), {})
+
     def test_other_wordings(self):
         self.assertEqual(O.relations("See: EO 14148; Revoked by: Executive Order 14300"), {"see": [14148], "revokedBy": [14300]})
         self.assertEqual(O.relations("Supersedes: E.O. 14001"), {"supersedes": [14001]})
