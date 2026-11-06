@@ -1,6 +1,6 @@
 # Congress Bill Ledger
 
-Tracks mature House and Senate bills: who wrote them, who cosponsored them, who blocked them, and what passed or died. Live at **congress.nikolasarmendariz.com**.
+Tracks mature House and Senate bills: who wrote them, who cosponsored them, who blocked them, and what passed or died. Live at **[www.floorvotes.org](https://www.floorvotes.org)**.
 
 ## How it updates
 
