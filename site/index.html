@@ -299,7 +299,8 @@ details.vg>.tbl{margin:0 16px 14px}
 .gcol{min-width:0}
 .score{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px}
 .sc{display:flex;align-items:baseline;gap:8px;font-size:12.5px;color:var(--muted)}
-.sc .num{font-size:22px;font-weight:500;min-width:1.4em}
+.sc .num{font-size:22px;font-weight:500;flex:none;min-width:1.8em}  /* never shrinks into its label (249 was overlapping) */
+.sc>span:last-child{min-width:0}
 .sc.go{all:unset;display:flex;align-items:baseline;gap:8px;font-size:12.5px;color:var(--muted);cursor:pointer;border-radius:8px;padding:6px 8px;margin:-6px -8px;min-height:32px}
 .sc.go span:last-child{text-decoration:underline;text-decoration-color:var(--link-line);text-underline-offset:3px}
 .sc.go:hover{background:var(--wash);color:var(--ink)}
