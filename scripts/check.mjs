@@ -86,6 +86,20 @@ if (L) {
     }
   }
 
+  // Executive orders (site/data/orders.json, from the Federal Register)
+  const op = typeof path === "string" ? path.replace(/[^/\\]*$/, "orders.json") : new URL("orders.json", path);
+  let EOJ = null;
+  try { EOJ = JSON.parse(readFileSync(op, "utf8")); } catch { warn.push("orders.json is missing or unreadable; the Executive orders tab will say it couldn't load"); }
+  if (EOJ) {
+    const os = EOJ.orders || [];
+    if (!os.length) err.push("orders.json has no executive orders");
+    const nums = os.map(o => o.n).sort((a, b) => a - b), gaps = [];
+    for (let i = 1; i < nums.length; i++) if (nums[i] - nums[i - 1] > 1) gaps.push(`${nums[i - 1]}-${nums[i]}`);
+    if (gaps.length) warn.push(`executive order numbers skip: ${gaps.slice(0, 5).join(", ")} (an order may not be published yet)`);
+    const bad = os.filter(o => Object.entries(o.rel || {}).some(([k, v]) => (/By$/.test(k) && v.some(n => n < o.n)) || (/^(revokes|amends|supersedes)$/.test(k) && v.some(n => n > o.n))));
+    if (bad.length) err.push(`${bad.length} executive orders link to an order in the wrong direction (e.g. EO ${bad[0].n})`);
+  }
+
   const age = (Date.now() - Date.parse(L.generatedAt || 0)) / 36e5;
   if (age > 72) warn.push(`data last written ${Math.round(age)} hours ago`);
   for (const w of L.warnings || []) warn.push(`from the refresh: ${w}`);

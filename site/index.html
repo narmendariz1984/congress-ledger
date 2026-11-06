@@ -553,7 +553,7 @@ details.wpast .wi{opacity:.75}
 <details class="sec" open id="orders-sec">
   <summary><h2>Executive orders</h2><span class="count" id="eo-count"></span></summary>
   <div class="sec-body">
-    <p class="note">Every executive order President Trump has signed this term, from the Federal Register, the government's official journal. Revoked and Amended come from the Federal Register's own notes on later orders. Court rulings that block an order aren't recorded there, so they don't show here.</p>
+    <p class="note">Every executive order President Trump has signed this term, from the Federal Register, the government's official journal. Revoked, superseded and amended come from the Federal Register's own notes on later orders. Court rulings that block an order aren't recorded there, so they don't show here.</p>
     <div class="eo-stats" id="eo-stats"></div>
     <div class="fpanel">
       <div class="fchips" role="group" aria-label="Show" id="eo-kind"></div>
@@ -1201,9 +1201,9 @@ function renderOrders(){
   if(EO.err||!all.length){$("#eo-list").innerHTML=`<li class="empty-row">${EO.err?"Executive orders couldn't load. Refresh to try again.":"No executive orders yet."}</li>`;return}
   const today=iso(new Date()), yr=today.slice(0,4), d30=iso(new Date(Date.now()-30*864e5));
   const nRev=all.filter(o=>eoStatus(o)==="rev").length, nAmd=all.filter(o=>eoStatus(o)==="amd").length;
-  $("#eo-stats").innerHTML=[["This term",all.length],[`Signed in ${yr}`,all.filter(o=>o.s.startsWith(yr)).length],["Last 30 days",all.filter(o=>o.s>=d30).length],["Revoked by a later order",nRev]]
+  $("#eo-stats").innerHTML=[["This term",all.length],[`Signed in ${yr}`,all.filter(o=>o.s.startsWith(yr)).length],["Last 30 days",all.filter(o=>o.s>=d30).length],["Revoked or superseded",nRev]]
     .map(([k,v])=>`<div><span class="k">${esc(k)}</span><span class="v mono">${v}</span></div>`).join("");
-  const KINDS=[["all","All",all.length],["amd","Amended",nAmd],["rev","Revoked",nRev]];
+  const KINDS=[["all","All",all.length],["amd","Amended",nAmd],["rev","Revoked or superseded",nRev]];
   $("#eo-kind").innerHTML=KINDS.map(([k,l,n])=>`<button type="button" class="fchip" data-v="${k}" aria-pressed="${EOV.kind===k}">${l} <span class="n">${n}</span></button>`).join("");
   const q=EOV.q.toLowerCase().replace(/^(eo|e\.o\.)\s*/,"");
   const list=all.filter(o=>(EOV.kind==="all"||eoStatus(o)===EOV.kind)&&(!q||`${o.n} ${o.t} ${o.a||""}`.toLowerCase().includes(q)));
@@ -1212,7 +1212,7 @@ function renderOrders(){
   const REL=[["revokedBy","Revoked by"],["supersededBy","Superseded by"],["amendedBy","Amended by"],["revokes","Revokes"],["supersedes","Supersedes"],["amends","Amends"]];
   const row=o=>{const r=o.rel||{}, st=eoStatus(o);
     const rel=REL.filter(([k])=>(r[k]||[]).length).map(([k,l])=>`<b>${l}</b> ${r[k].map(ref).join(", ")}`).join(" · ");
-    const chipH=st==="rev"?`<span class="chip" style="--c:var(--killed)">Revoked</span>`:st==="amd"?`<span class="chip" style="--c:var(--stalled)">Amended</span>`:"";
+    const chipH=st==="rev"?`<span class="chip" style="--c:var(--killed)">${r.revokedBy?"Revoked":"Superseded"}</span>`:st==="amd"?`<span class="chip" style="--c:var(--stalled)">Amended</span>`:"";
     return`<li class="eo" id="eo-${o.n}"><span class="eo-n">EO ${o.n}</span><div class="eo-b"><div class="eo-t"><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a></div>
       <div class="eo-m">Signed ${fmtD(o.s)}${o.c?` · ${esc(o.c)}`:""}${o.pdf?` · <a href="${esc(o.pdf)}" target="_blank" rel="noopener">PDF</a>`:""}</div>${rel?`<div class="eo-r">${rel}</div>`:""}</div><span class="eo-s">${chipH}</span></li>`};
   const page=list.slice(0,EOV.shown), left=list.length-page.length;
