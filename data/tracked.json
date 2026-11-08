@@ -467,29 +467,17 @@
   "119-hr7730",
   "119-hr1945"
  ],
- "lastDiscovery": "2026-11-08T09:14:11+00:00",
+ "lastDiscovery": "2026-11-08T09:21:37+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
  },
  "backfill": {
-  "queue": [
-   "119-s723",
-   "119-s759",
-   "119-s766",
-   "119-s790",
-   "119-s858",
-   "119-s98",
-   "119-sjres11",
-   "119-sjres13",
-   "119-sjres18",
-   "119-sjres28",
-   "119-sjres31",
-   "119-sjres80"
-  ],
+  "queue": [],
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
-  "reason": "re-download for cosponsor states"
+  "reason": "re-download for cosponsor states",
+  "finished": "2026-11-08T09:21:37+00:00"
  },
  "rule": "recorded-vote-v3",
  "schema": 2,
