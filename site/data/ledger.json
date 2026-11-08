@@ -2917,7 +2917,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-08T06:08:04+00:00",
+   "fetched": "2026-11-08T06:46:09+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -8401,6 +8401,111 @@
    "title": "Amtrak Executive Bonus Disclosure Act",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/192"
+  },
+  {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 2,
+    "st": [
+     "CO",
+     "NE",
+     "PA"
+    ],
+    "t": 3
+   },
+   "fetched": "2026-11-08T06:46:09+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1945"
+    }
+   },
+   "id": "119-hr1945",
+   "introduced": "2025-03-06",
+   "latest": {
+    "actionDate": "2026-11-05",
+    "text": "Presented to President."
+   },
+   "num": "H.R. 1945",
+   "number": 1945,
+   "reached": 5,
+   "sponsor": {
+    "n": "Robert Onder",
+    "p": "R",
+    "s": "MO-3"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-03-06",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-11",
+     "e": "Ordered to be Reported by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-11",
+     "e": "Subcommittee on Federal Lands Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-02-24",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-517.",
+     "fn": "cg",
+     "v": "119–517"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-03",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-03",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2356)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-03",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2356)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-05",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "America's National Churchill Museum National Historic Landmark Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/1945"
   },
   {
    "area": "Climate & energy",
@@ -19943,7 +20048,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T06:46:09+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23899,7 +24004,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T06:46:09+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -28541,6 +28646,107 @@
    "title": "Stop Child Care Scams Act of 2026",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/7726"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 3,
+    "st": [
+     "CA",
+     "CO",
+     "FL",
+     "OH",
+     "TX"
+    ],
+    "t": 6
+   },
+   "fetched": "2026-11-08T06:46:09+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7730"
+    }
+   },
+   "id": "119-hr7730",
+   "introduced": "2026-02-26",
+   "latest": {
+    "actionDate": "2026-11-05",
+    "text": "Presented to President."
+   },
+   "num": "H.R. 7730",
+   "number": 7730,
+   "reached": 5,
+   "sponsor": {
+    "n": "Ben Cline",
+    "p": "R",
+    "s": "VA-6"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-02-26",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-26",
+     "e": "Ordered to be Reported (Amended) by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-27",
+     "e": "Reported (Amended) by the Committee on Judiciary. H. Rept. 119-783.",
+     "fn": "cg",
+     "v": "119–783"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5939-5940)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5939-5940)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-05",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Bankruptcy Threshold Adjustment Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7730"
   },
   {
    "area": "Budget & appropriations",
@@ -37381,7 +37587,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T06:46:09+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -37472,7 +37678,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T06:46:09+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -44932,7 +45138,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-08T06:08:04+00:00",
+ "generatedAt": "2026-11-08T06:46:09+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -45216,9 +45422,6 @@
    }
   ],
   "watchUpdated": "2026-11-05"
- },
- "outage": {
-  "since": "2026-11-08T01:16:49+00:00"
  },
  "session": 2,
  "votes": {
@@ -46787,12 +46990,5 @@
    }
   ]
  },
- "warnings": [
-  "119-hr1001: IncompleteRead(0 bytes read, 7127 more expected)",
-  "119-hr1044: The read operation timed out",
-  "119-hr1098: The read operation timed out",
-  "119-hr1455: The read operation timed out",
-  "119-hr1744: The read operation timed out",
-  "Congress.gov isn't responding (3 bills in a row failed); stopping bill downloads this run"
- ]
+ "warnings": []
 }
