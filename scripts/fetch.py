@@ -274,12 +274,12 @@ PRESIDENTS = [  # (first full day in office, name, party)
     ("2009-01-21", "Barack Obama", "D"), ("2017-01-21", "Donald Trump", "R"),
     ("2021-01-21", "Joe Biden", "D"), ("2025-01-21", "Donald Trump", "R"),
 ]
-OUTCOME_RULE = "outcome-v1"  # v1: president, signing date, veto, how each chamber passed it
+OUTCOME_RULE = "outcome-v2"  # v2: veto message as "House Document (119-119)", override tally from either action  # v1: president, signing date, veto, how each chamber passed it
 
 SIGNED = re.compile(r"^\s*signed by president", re.I)
 BECAME = re.compile(r"became public law", re.I)
 OVERRIDE_WON = re.compile(r"passed (house|senate) over veto|over (the )?(president's )?veto.*\b(passed|agreed to)\b|became public law.*over veto", re.I)
-HDOC = re.compile(r"\bH\.\s*Doc\.?\s*(?:No\.?\s*)?(\d{2,3})-(\d{1,4})", re.I)
+HDOC = re.compile(r"\b(?:H\.\s*Doc\.?|House Document)\s*(?:No\.?\s*)?\(?(\d{2,3})\s*[-\u2013]\s*(\d{1,4})\)?", re.I)  # "H. Doc. 119-119" or "printed as a House Document (119-119)"
 PASS_ACT = re.compile(
     r"passed/agreed to in (house|senate)|^\s*passed senate|"
     r"resolving differences -- (house|senate) actions:.*\b(agree|agreed|concur|concurred)\b|"
@@ -374,7 +374,9 @@ def outcome_from(actions: list[dict], laws: list, status: str, url: str) -> tupl
             o["msg"] = f"https://www.govinfo.gov/app/details/CDOC-{doc.group(1)}hdoc{doc.group(2)}"
             o["msgLabel"] = f"H. Doc. {doc.group(1)}-{doc.group(2)}"
         # the override vote, if one was held
-        ov = next((a for a in reversed(acts) if re.search(r"objections of the president to the contrary notwithstanding", a.get("text") or "", re.I)), None)
+        # Congress.gov records it more than once; use one that carries the tally
+        ovs = [a for a in reversed(acts) if re.search(r"objections of the president to the contrary notwithstanding", a.get("text") or "", re.I)]
+        ov = next((a for a in ovs if TALLY.search(a.get("text") or "")), ovs[0] if ovs else None)
         if ov:
             t = TALLY.search(ov.get("text") or "")
             failed = re.search(r"\bfailed\b", ov.get("text") or "", re.I)

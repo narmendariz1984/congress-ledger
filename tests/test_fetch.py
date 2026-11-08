@@ -198,6 +198,20 @@ class Outcomes(unittest.TestCase):
         self.assertEqual(o["v"], "Override failed 248–177")
         self.assertIn("veto", fns)
 
+    def test_veto_in_congress_gov_s_real_wording(self):
+        # H.R. 131 as Congress.gov lists it: "House Document (119-119)" and the override recorded twice
+        actions = [act("2025-12-29", "Vetoed by President."),
+                   act("2026-01-02", "The Chair announced that the objections of the President to H.R. 131 would be spread at large upon the Journal, and the veto message would be printed as a House Document (119-119)."),
+                   act("2026-01-08", "On passage, the objections of the President to the contrary notwithstanding Failed by the Yeas and Nays: (2/3 required): 248 - 177, 1 Present (Roll no. 9)."),
+                   act("2026-01-08", "Failed of passage in House over veto")]
+        o, _ = F.outcome_from(actions, [], "vetoed", self.URL)
+        self.assertEqual((o["msg"], o["msgLabel"]), ("https://www.govinfo.gov/app/details/CDOC-119hdoc119", "H. Doc. 119-119"))
+        self.assertEqual(o["v"], "Override failed 248–177")
+
+    def test_veto_without_an_override_vote_has_no_tally(self):
+        o, _ = F.outcome_from([act("2025-12-29", "Vetoed by President.")], [], "vetoed", self.URL)
+        self.assertEqual((o["v"], o.get("msg")), ("", None))
+
     def test_veto_overridden_into_law(self):
         actions = [act("2026-03-01", "Became Public Law No: 119-80."), act("2026-02-20", "Passed Senate over veto by Yea-Nay Vote. 70 - 30."),
                    act("2026-02-01", "Vetoed by President.")]
