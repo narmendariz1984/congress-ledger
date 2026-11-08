@@ -463,46 +463,22 @@
   "119-sjres84",
   "119-sjres86",
   "119-sjres95",
-  "119-sjres99"
+  "119-sjres99",
+  "119-s1528",
+  "119-s503",
+  "119-hr8107",
+  "119-hr5658",
+  "119-hr7730",
+  "119-hr1945",
+  "119-hr7037"
  ],
- "lastDiscovery": "2026-11-05T18:24:55+00:00",
+ "lastDiscovery": "2026-11-08T06:38:42+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
  },
  "backfill": {
   "queue": [
-   "119-hjres105",
-   "119-hjres106",
-   "119-hjres130",
-   "119-hjres131",
-   "119-hjres133",
-   "119-hjres140",
-   "119-hjres142",
-   "119-hjres20",
-   "119-hjres24",
-   "119-hjres25",
-   "119-hjres35",
-   "119-hjres42",
-   "119-hjres60",
-   "119-hjres61",
-   "119-hjres75",
-   "119-hjres87",
-   "119-hjres88",
-   "119-hjres89",
-   "119-hr1",
-   "119-hr1276",
-   "119-hr131",
-   "119-hr1316",
-   "119-hr1491",
-   "119-hr1512",
-   "119-hr165",
-   "119-hr1721",
-   "119-hr1744",
-   "119-hr1815",
-   "119-hr1823",
-   "119-hr187",
-   "119-hr1912",
    "119-hr1968",
    "119-hr2066",
    "119-hr2069",
@@ -613,8 +589,7 @@
   ],
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
-  "reason": "re-download for cosponsor states",
-  "pausedUntil": "2026-11-08T05:09:56+00:00"
+  "reason": "re-download for cosponsor states"
  },
  "rule": "recorded-vote-v3",
  "schema": 2,
@@ -969,9 +944,13 @@
   "119-sjres12",
   "119-sjres89",
   "119-sjres91",
-  "119-hr7037"
+  "119-hr7037",
+  "119-hr1001",
+  "119-hr1044",
+  "119-hr1045",
+  "119-hr1098",
+  "119-hr1455"
  ],
  "statusRule": "killed-v2",
- "outcomeRule": "outcome-v1",
- "congressDown": "2026-11-08T01:16:49+00:00"
+ "outcomeRule": "outcome-v1"
 }
