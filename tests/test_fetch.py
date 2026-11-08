@@ -3,6 +3,7 @@
 Run: python -m unittest discover -s tests -v
 No network: every call to Congress.gov or Voteview is replaced with sample data.
 """
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -272,6 +273,57 @@ class OutageBreaker(unittest.TestCase):
         b = F.Breaker(3)
         b.fail("119-hr2"); b.skipped.add("119-hr9"); b.skipped.add("119-s1")  # 119-s1 isn't in this batch
         self.assertEqual(F.requeue(["119-hr1", "119-hr2", "119-hr9"], b), ["119-hr2", "119-hr9"])
+
+
+
+class OutageNote(unittest.TestCase):
+    """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
+    import datetime as _dt
+    T0 = _dt.datetime(2026, 11, 7, 18, 17, tzinfo=_dt.timezone.utc)
+
+    def at(self, minutes):
+        return self.T0 + self._dt.timedelta(minutes=minutes)
+
+    def test_first_failed_run_starts_the_clock_but_shows_nothing(self):
+        since, note = F.outage_state(None, True, self.T0, None)
+        self.assertEqual(since, "2026-11-07T18:17:00+00:00")
+        self.assertIsNone(note)
+
+    def test_next_failed_run_shows_the_note_with_the_first_failure_time(self):
+        since, note = F.outage_state("2026-11-07T18:17:00+00:00", True, self.at(30), None)
+        self.assertEqual(note, {"since": "2026-11-07T18:17:00+00:00"})
+        self.assertEqual(since, "2026-11-07T18:17:00+00:00")
+
+    def test_note_stays_identical_while_down_so_nothing_new_commits(self):
+        a = F.outage_state("2026-11-07T18:17:00+00:00", True, self.at(60), None)
+        b = F.outage_state("2026-11-07T18:17:00+00:00", True, self.at(600), a[1])
+        self.assertEqual(a, b)
+
+    def test_a_quick_chained_rerun_does_not_count_as_a_second_failure(self):
+        self.assertIsNone(F.outage_state("2026-11-07T18:17:00+00:00", True, self.at(5), None)[1])
+
+    def test_recovery_clears_everything(self):
+        self.assertEqual(F.outage_state("2026-11-07T18:17:00+00:00", False, self.at(90), {"since": "x"}), (None, None))
+
+    def test_a_blip_never_reaches_the_site(self):
+        since, note = F.outage_state(None, True, self.T0, None)
+        self.assertIsNone(note)
+        self.assertEqual(F.outage_state(since, False, self.at(30), note), (None, None))
+
+    def test_a_run_that_did_not_check_keeps_the_state(self):
+        self.assertEqual(F.outage_state("2026-11-07T18:17:00+00:00", None, self.at(30), {"since": "2026-11-07T18:17:00+00:00"}),
+                         ("2026-11-07T18:17:00+00:00", {"since": "2026-11-07T18:17:00+00:00"}))
+        self.assertEqual(F.outage_state(None, None, self.at(30), None), (None, None))
+
+    def test_unreadable_start_time_restarts_the_clock(self):
+        since, note = F.outage_state("garbage", True, self.T0, None)
+        self.assertEqual((since, note), ("2026-11-07T18:17:00+00:00", None))
+
+    def test_the_note_is_data_so_its_start_and_end_commit(self):
+        base = {"bills": [], "generatedAt": "a"}
+        self.assertTrue(F.data_changed(json.dumps({**base, "outage": {"since": "x"}}), json.dumps(base)))
+        self.assertFalse(F.data_changed(json.dumps({**base, "outage": {"since": "x"}, "generatedAt": "b"}),
+                                        json.dumps({**base, "outage": {"since": "x"}})))
 
 
 class RollCallDiscovery(unittest.TestCase):
