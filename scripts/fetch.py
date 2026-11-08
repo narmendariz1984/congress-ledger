@@ -716,8 +716,14 @@ def session_days(ranges: list[dict]) -> set[str]:
     return days
 
 
-def plan(mode: str, now: dt.datetime, cal: dict) -> tuple[bool, bool]:
-    """(refresh_bills, refresh_votes)."""
+BILLS_EVERY_H = {True: 5, False: 20}  # in session about four times a day, in recess about once
+
+
+def plan(mode: str, now: dt.datetime, cal: dict, last_bills: str | None = None) -> tuple[bool, bool]:
+    """(refresh_bills, refresh_votes). GitHub drops many scheduled runs (often only a pair
+    every 4-6 hours), so bills are due by time since the last good check rather than only in
+    set hours, which a dropped run would skip entirely. Votes are checked on every run that
+    happens between 8 AM and 11 PM on session days."""
     if mode == "full":
         return True, True
     if mode == "votes":
@@ -729,7 +735,11 @@ def plan(mode: str, now: dt.datetime, cal: dict) -> tuple[bool, bool]:
     in_session = today in session_days(cal.get("house")) | session_days(cal.get("senate"))
     hour = local.hour
     votes = in_session and 8 <= hour <= 23
-    bills = (in_session and hour in (6, 12, 18, 23)) or (not in_session and hour == 6)
+    try:
+        age = (now - dt.datetime.fromisoformat(last_bills)).total_seconds() / 3600 if last_bills else float("inf")
+    except ValueError:
+        age = float("inf")
+    bills = 6 <= hour <= 23 and age >= BILLS_EVERY_H[in_session]
     return bills, votes
 
 
@@ -906,7 +916,7 @@ def main() -> int:
         tracked["statusRule"] = STATUS_RULE
         print(f"status rule changed to {STATUS_RULE}: queued {len(q['queue'])} bills to re-check")
 
-    do_bills, do_votes = plan(mode, now, meta.get("calendar") or {})
+    do_bills, do_votes = plan(mode, now, meta.get("calendar") or {}, tracked.get("lastDiscovery"))
     queue = (tracked.get("backfill") or {}).get("queue") or []
     if queue:
         do_bills = True

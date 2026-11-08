@@ -4,12 +4,12 @@ Tracks mature House and Senate bills: who wrote them, who cosponsored them, who 
 
 ## How it updates
 
-A GitHub Actions schedule (`.github/workflows/refresh.yml`) runs `scripts/fetch.py` every hour. The script reads the session calendar and only does work when it's useful:
+A GitHub Actions schedule (`.github/workflows/refresh.yml`) asks to run `scripts/fetch.py` twice an hour. GitHub often delays or drops scheduled runs, so the script works from time since the last good check, not the clock:
 
 | | Session days | Recess days |
 |---|---|---|
-| Floor votes | Hourly, 8am–11pm CT | Skipped |
-| Bills | 6am, noon, 6pm, 11pm CT | 6am CT |
+| Floor votes | Every run, 8am–11pm CT | Skipped |
+| Bills | About every 5 hours, 6am–11pm CT | Once a day |
 
 It writes `site/data/ledger.json` and commits only when the data changed. Cloudflare Pages redeploys the `site/` folder on each commit.
 

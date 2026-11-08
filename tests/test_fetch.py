@@ -337,6 +337,51 @@ class TimeBudget(unittest.TestCase):
         t[0] = 1e9
         self.assertFalse(b.stop())
 
+
+class Schedule(unittest.TestCase):
+    """Bill checks are due by time since the last good one, so dropped GitHub runs only delay them."""
+    import datetime as _dt
+    CAL = {"house": [{"f": "2026-11-09", "t": "2026-11-13"}]}
+
+    def at(self, day, hour_ct, minute=17):
+        return self._dt.datetime(2026, 11, day, hour_ct + 6, minute, tzinfo=self._dt.timezone.utc) if hour_ct + 6 < 24 else \
+            self._dt.datetime(2026, 11, day + 1, hour_ct - 18, minute, tzinfo=self._dt.timezone.utc)
+
+    def iso(self, d):
+        return d.isoformat(timespec="seconds")
+
+    def test_a_run_outside_the_old_check_hours_still_checks_bills(self):
+        # yesterday's runs came at 9:41, 2:15, 5:41 and 12:07; none was in the old 6/12/18/23 hours
+        last = self.iso(self.at(9, 6))
+        self.assertEqual(F.plan("auto", self.at(9, 14, 15), self.CAL, last), (True, True))
+
+    def test_in_session_not_again_until_five_hours_pass(self):
+        last = self.iso(self.at(9, 9))
+        self.assertFalse(F.plan("auto", self.at(9, 13, 47), self.CAL, last)[0])
+        self.assertTrue(F.plan("auto", self.at(9, 14, 17), self.CAL, last)[0])
+
+    def test_recess_about_once_a_day(self):
+        last = self.iso(self.at(8, 9))
+        self.assertFalse(F.plan("auto", self.at(8, 20), {}, last)[0])
+        self.assertTrue(F.plan("auto", self.at(9, 6), {}, last)[0])  # 21 hours later
+
+    def test_quiet_overnight(self):
+        self.assertEqual(F.plan("auto", self.at(9, 3), self.CAL, None), (False, False))
+
+    def test_never_checked_is_due(self):
+        self.assertTrue(F.plan("auto", self.at(8, 7), {}, None)[0])
+        self.assertTrue(F.plan("auto", self.at(8, 7), {}, "garbage")[0])
+
+    def test_votes_only_on_session_days_from_8_am(self):
+        self.assertFalse(F.plan("auto", self.at(9, 7), self.CAL, None)[1])
+        self.assertTrue(F.plan("auto", self.at(9, 8), self.CAL, None)[1])
+        self.assertFalse(F.plan("auto", self.at(8, 12), self.CAL, None)[1])
+
+    def test_modes_still_override(self):
+        self.assertEqual(F.plan("full", self.at(9, 3), {}, None), (True, True))
+        self.assertEqual(F.plan("votes", self.at(9, 3), {}, None), (False, True))
+        self.assertEqual(F.plan("offline", self.at(9, 12), self.CAL, None), (False, False))
+
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
     import datetime as _dt

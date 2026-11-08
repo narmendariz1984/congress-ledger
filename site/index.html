@@ -642,12 +642,12 @@ details.wpast .wi{opacity:.75}
   <summary><h2>How it updates</h2></summary>
   <div class="sec-body prose">
     <ul>
-      <li><b>On days Congress meets:</b> floor votes hourly from 8 AM to 11 PM Central and bills four times a day.</li>
-      <li><b>During recess:</b> bills once a day at 6 AM Central.</li>
+      <li><b>On days Congress meets:</b> floor votes on every update from 8 AM to 11 PM Central and bills about every five hours.</li>
+      <li><b>During recess:</b> bills about once a day.</li>
       <li><b>Senate votes</b> come from Voteview, which usually posts a vote a few hours after it happens. senate.gov turns away automated requests, so this site links to its official vote pages instead of fetching them.</li>
       <li><b>House votes and bill histories</b> come from the official Congress.gov API.</li>
     </ul>
-    <p>The header shows when the data last changed, so during recess that time can be a day or more old even though checks keep running. Updates run on GitHub's scheduler, which can start a little late when GitHub is busy.</p>
+    <p>The header shows when the data last changed, so during recess that time can be a day or more old even though checks keep running. Updates run on GitHub's scheduler, which can run hours late or skip runs when GitHub is busy, so a check that's due happens on the next run that does start.</p>
     <p>If Congress.gov stops responding for more than one check, a note under the header says so and goes away on its own once it's back. Bills and votes already on the page stay as they were.</p>
   </div>
 </details>
