@@ -1724,7 +1724,7 @@
     ],
     "t": 19
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-08T06:08:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -2917,7 +2917,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T06:08:04+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -44932,7 +44932,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-08T03:17:15+00:00",
+ "generatedAt": "2026-11-08T06:08:04+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -46788,10 +46788,11 @@
   ]
  },
  "warnings": [
-  "bill listing failed: The read operation timed out",
-  "119-hr1: The read operation timed out",
-  "119-hr4405: The read operation timed out",
-  "119-hr5371: The read operation timed out",
+  "119-hr1001: IncompleteRead(0 bytes read, 7127 more expected)",
+  "119-hr1044: The read operation timed out",
+  "119-hr1098: The read operation timed out",
+  "119-hr1455: The read operation timed out",
+  "119-hr1744: The read operation timed out",
   "Congress.gov isn't responding (3 bills in a row failed); stopping bill downloads this run"
  ]
 }
