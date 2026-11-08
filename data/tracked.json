@@ -615,7 +615,7 @@
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
   "reason": "re-download for cosponsor states",
-  "pausedUntil": "2026-11-08T01:39:42+00:00"
+  "pausedUntil": "2026-11-08T02:16:49+00:00"
  },
  "rule": "recorded-vote-v3",
  "schema": 2,
@@ -973,5 +973,6 @@
   "119-hr7037"
  ],
  "statusRule": "killed-v2",
- "outcomeRule": "outcome-v1"
+ "outcomeRule": "outcome-v1",
+ "congressDown": "2026-11-08T01:16:49+00:00"
 }
