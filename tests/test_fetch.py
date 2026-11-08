@@ -139,6 +139,121 @@ class KilledStatus(unittest.TestCase):
         self.assertEqual([e.get("v") for e in ev], ["52–47", None])
 
 
+class PresidentByDate(unittest.TestCase):
+    """Biden through Jan 20, 2025, Trump after. Inauguration days count for the outgoing president."""
+
+    def test_the_2025_cutoff(self):
+        self.assertEqual(F.president_on("2025-01-19"), ("Joe Biden", "D"))
+        self.assertEqual(F.president_on("2025-01-20"), ("Joe Biden", "D"))
+        self.assertEqual(F.president_on("2025-01-21"), ("Donald Trump", "R"))
+        self.assertEqual(F.president_on("2026-07-04"), ("Donald Trump", "R"))
+
+    def test_earlier_terms_follow_the_same_rule(self):
+        self.assertEqual(F.president_on("2021-01-20"), ("Donald Trump", "R"))
+        self.assertEqual(F.president_on("2021-01-21"), ("Joe Biden", "D"))
+        self.assertEqual(F.president_on("2017-01-21"), ("Donald Trump", "R"))
+        self.assertEqual(F.president_on("2009-06-01"), ("Barack Obama", "D"))
+
+    def test_unknown_dates(self):
+        self.assertIsNone(F.president_on(None))
+        self.assertIsNone(F.president_on(""))
+        self.assertIsNone(F.president_on("1990-05-01"))
+
+    def test_timestamps_use_the_day(self):
+        self.assertEqual(F.president_on("2025-01-20T23:59:00Z"), ("Joe Biden", "D"))
+
+
+def act(d, t):
+    return {"actionDate": d, "text": t}
+
+
+class Outcomes(unittest.TestCase):
+    URL = "https://www.congress.gov/bill/119th-congress/house-bill/1"
+
+    def test_signed_law_names_the_president_and_the_signing_date(self):
+        actions = [act("2025-07-04", "Became Public Law No: 119-21."), act("2025-07-04", "Signed by President."),
+                   act("2025-07-03", "Presented to President."), act("2025-07-03", "Resolving differences -- House actions: On motion that the House agree to the Senate amendment Agreed to by the Yeas and Nays: 218 - 214 (Roll no. 190).")]
+        o, fns = F.outcome_from(actions, [{"number": "119-21"}], "law", self.URL)
+        self.assertEqual((o["where"], o["d"], o["pres"], o["pp"], o["by"], o["fn"]), ("Signed into law", "2025-07-04", "Donald Trump", "R", "Donald Trump", "sig"))
+        self.assertIn("Signed by President", fns["sig"]["t"])
+        self.assertEqual(fns["sig"]["u"], self.URL + "/all-actions")
+
+    def test_signing_date_not_latest_action(self):
+        actions = [act("2025-09-02", "Some later housekeeping."), act("2025-08-01", "Became Public Law No: 119-40."), act("2025-08-01", "Signed by President.")]
+        o, _ = F.outcome_from(actions, [{"number": "119-40"}], "law", self.URL)
+        self.assertEqual(o["d"], "2025-08-01")
+
+    def test_law_without_signature(self):
+        o, _ = F.outcome_from([act("2025-05-01", "Became Public Law No: 119-9 without the President's signature.")], [{"number": "119-9"}], "law", self.URL)
+        self.assertEqual((o["where"], o["how"], o["pres"]), ("Became law without signature", "unsigned", "Donald Trump"))
+
+    def test_veto_with_message_and_failed_override(self):
+        actions = [act("2026-01-08", "On passage, the objections of the President to the contrary notwithstanding Failed by the Yeas and Nays: (2/3 required): 248 - 177 (Roll no. 9)."),
+                   act("2026-01-02", "Veto message received in House and ordered printed as a House Document (H. Doc. 119-119)."),
+                   act("2025-12-29", "Vetoed by President."), act("2025-12-17", "Presented to President.")]
+        o, fns = F.outcome_from(actions, [], "vetoed", self.URL)
+        self.assertEqual((o["where"], o["d"], o["pres"], o["by"]), ("Vetoed", "2025-12-29", "Donald Trump", "Donald Trump"))
+        self.assertEqual(o["msg"], "https://www.govinfo.gov/app/details/CDOC-119hdoc119")
+        self.assertEqual(o["v"], "Override failed 248–177")
+        self.assertIn("veto", fns)
+
+    def test_veto_overridden_into_law(self):
+        actions = [act("2026-03-01", "Became Public Law No: 119-80."), act("2026-02-20", "Passed Senate over veto by Yea-Nay Vote. 70 - 30."),
+                   act("2026-02-01", "Vetoed by President.")]
+        o, _ = F.outcome_from(actions, [{"number": "119-80"}], "law", self.URL)
+        self.assertEqual((o["where"], o["how"], o["pres"]), ("Became law over a veto", "override", "Donald Trump"))
+
+    def test_nothing_for_other_bills(self):
+        self.assertEqual(F.outcome_from([act("2025-03-01", "Passed Senate by Unanimous Consent.")], [], "passed1", self.URL), (None, {}))
+
+    def test_same_actions_same_result(self):
+        actions = [act("2025-07-04", "Became Public Law No: 119-21."), act("2025-07-04", "Signed by President.")]
+        self.assertEqual(F.outcome_from(actions, [{"number": "119-21"}], "law", self.URL), F.outcome_from(list(reversed(actions)), [{"number": "119-21"}], "law", self.URL))
+
+
+class Passages(unittest.TestCase):
+    def test_roll_call_voice_and_consent(self):
+        p = F.passages([act("2026-04-30", "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 224 - 200 (Roll no. 154)."),
+                        act("2026-06-10", "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.")])
+        self.assertEqual(p, {"H": {"d": "2026-04-30", "how": "roll", "v": "224–200", "roll": 154}, "S": {"d": "2026-06-10", "how": "uc"}})
+        self.assertEqual(F.passages([act("2025-03-03", "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote.")])["H"]["how"], "voice")
+
+    def test_senate_record_vote(self):
+        p = F.passages([act("2025-07-01", "Passed/agreed to in Senate: Passed Senate with an amendment by Yea-Nay Vote. 51 - 50. Record Vote Number: 372.")])
+        self.assertEqual(p["S"], {"d": "2025-07-01", "how": "roll", "v": "51–50", "roll": 372})
+
+    def test_final_vote_wins_and_failures_are_ignored(self):
+        p = F.passages([act("2025-05-22", "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 215 - 214 (Roll no. 145)."),
+                        act("2025-07-03", "Resolving differences -- House actions: On motion that the House agree to the Senate amendment Agreed to by the Yeas and Nays: 218 - 214 (Roll no. 190)."),
+                        act("2025-07-03", "On motion to recommit Failed by the Yeas and Nays: 207 - 216 (Roll no. 189).")])
+        self.assertEqual((p["H"]["d"], p["H"]["roll"]), ("2025-07-03", 190))
+
+    def test_same_day_duplicate_keeps_the_roll_number(self):
+        p = F.passages([act("2026-04-30", "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 224 - 200 (Roll no. 154)."),
+                        act("2026-04-30", "Passed/agreed to in House: On passage Passed.")])
+        self.assertEqual(p["H"]["roll"], 154)
+
+
+class MergeAndCommits(unittest.TestCase):
+    def test_curated_note_stays_and_the_president_comes_through(self):
+        auto = {"outcome": {"where": "Signed into law", "by": "Donald Trump", "pres": "Donald Trump", "pp": "R", "d": "2025-07-04", "fn": "sig"},
+                "fns": {"sig": {"t": "signed"}}, "url": "u"}
+        cur = {"outcome": {"by": "Party-line reconciliation; VP tiebreak", "d": "2025-07-04", "fn": "d", "v": "218–214"}, "fns": {"d": {"t": "curated"}}}
+        b = F.merge(auto, cur)
+        self.assertEqual(b["outcome"]["by"], "Party-line reconciliation; VP tiebreak")
+        self.assertEqual((b["outcome"]["pres"], b["outcome"]["fn"], b["outcome"]["fn2"]), ("Donald Trump", "d", "sig"))
+        self.assertEqual(set(b["fns"]), {"sig", "d", "cg"})
+
+    def test_blank_curated_by_gets_the_president(self):
+        b = F.merge({"outcome": {"by": "Donald Trump", "pres": "Donald Trump", "fn": "sig"}}, {"outcome": {"by": "", "v": "x"}})
+        self.assertEqual(b["outcome"]["by"], "Donald Trump")
+
+    def test_only_a_new_timestamp_is_not_a_change(self):
+        old = '{"generatedAt": "2026-11-07T10:00:00+00:00", "bills": [1]}'
+        self.assertFalse(F.data_changed('{"generatedAt": "2026-11-07T11:00:00+00:00", "bills": [1]}', old))
+        self.assertTrue(F.data_changed('{"generatedAt": "2026-11-07T11:00:00+00:00", "bills": [2]}', old))
+
+
 class RollCallDiscovery(unittest.TestCase):
     def test_finds_bills_and_skips_nominations_and_simple_resolutions(self):
         pages = {

@@ -266,6 +266,8 @@ details.vg>.tbl{margin:0 16px 14px}
 .ag-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
 .ag-jump-l{font-size:14px;font-weight:600;color:var(--muted)}
 .ag-tools select{flex:0 1 340px;min-width:0}
+.credit{margin:0 0 4px;font-size:15px;line-height:1.5;color:var(--soft);padding:10px 14px;border-left:3px solid var(--red);background:var(--wash);border-radius:0 6px 6px 0}
+.credit a{font-weight:600}
 .vrow{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
 .vrow .search{flex:1 1 260px}
 .psplit{white-space:nowrap;font-size:13.5px}
@@ -853,6 +855,40 @@ function matches(b){
   return true;
 }
 
+/* one-line credit: who sponsored it, how each chamber passed it, who signed or vetoed it */
+const surname=n=>String(n||"").trim().split(/\s+/).pop();
+function passSplit(ch,p){
+  if(!RCD||!p||!p.roll)return"";
+  const v=(RCD.votes||[]).find(x=>x.ch===ch&&x.n===p.roll&&x.d===p.d);
+  if(!v||!v.v)return"";
+  const t=RC.split(v,RCD.members[ch]||[]);
+  return` (D ${t.D.Y+t.I.Y}–${t.D.N+t.I.N}, R ${t.R.Y}–${t.R.N})`;
+}
+function creditLine(b){
+  const parts=[], sp=b.sponsor, cs=b.cosponsors||{}, o=b.outcome||{};
+  if(sp&&sp.n){
+    const st=String(sp.s||"").split("-")[0];
+    let t=`Sponsored by ${chamberOf(b)} ${esc(sp.n)} (${esc(sp.p||"?")}${st?"-"+esc(st):""})`;
+    if(cs.t>0)t+=` with ${cs.t} cosponsor${cs.t===1?"":"s"} (${[cs.d?`${cs.d} D`:"",cs.r?`${cs.r} R`:"",cs.i?`${cs.i} I`:""].filter(Boolean).join(", ")})`;
+    parts.push(t);
+  }
+  for(const [ch,name] of [["H","House"],["S","Senate"]]){
+    const p=(b.passed||{})[ch];if(!p)continue;
+    parts.push(p.how==="roll"&&p.v?`passed ${name} ${esc(p.v)}${passSplit(ch,p)}`:p.how==="voice"?`passed ${name} by voice vote`:p.how==="uc"?`passed ${name} by unanimous consent`:`passed ${name}`);
+  }
+  if(o.pres){
+    const who=`President ${esc(surname(o.pres))}`, when=o.d?` on ${fmtD(o.d)}`:"", src=`${sup(b,o.fn2||"")}${sup(b,o.fn)}`;
+    if(b.status==="vetoed")parts.push(`vetoed by ${who}${when}${src}${o.msg?` (<a href="${esc(o.msg)}" target="_blank" rel="noopener">veto message</a>)`:""}${o.v?` · ${esc(o.v.replace(/^Override/,"override"))}`:""}`);
+    else if(o.how==="unsigned")parts.push(`became law without ${who}'s signature${when}${src}`);
+    else if(o.how==="override")parts.push(`became law over ${who}'s veto${when}${src}`);
+    else parts.push(`signed by ${who}${when}${src}`);
+  }
+  return parts.join(" · ");
+}
+function refreshCredits(){document.querySelectorAll("[data-credit]").forEach(el=>{const b=bills.find(x=>x.id===el.dataset.credit);if(b)el.innerHTML=creditLine(b)})}
+// party splits need the roll call file; fetch it the first time a bill card opens
+document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.bill")&&d.open&&!RCD&&loaded)loadRollcalls()},true);
+
 function billCard(b){
   const sp=b.sponsor||{};
   const cs=b.cosponsors;
@@ -872,6 +908,7 @@ function billCard(b){
     ${F.sort==="active"&&activity(b)?`<span class="stl">Active on ${activity(b)} day${activity(b)>1?"s":""} in the last 30</span>`:""}
   </summary>
   <div class="bbody">
+    ${b.sponsor||b.passed||(b.outcome&&b.outcome.pres)?`<p class="credit" data-credit="${esc(b.id)}">${creditLine(b)}</p>`:""}
     <div class="people">
       <div><div class="k">Sponsor</div><div>${pb(sp.p)} ${esc(sp.n||"—")}${sp.s?` <span class="muted">(${esc(sp.s)})</span>`:""}</div></div>
       ${lead}
@@ -1337,7 +1374,7 @@ async function fetchRollcalls(){
     const conv=v=>({ch:v.ch,n:v.n,d:v.d,q:v.q,measure:v.m,title:v.t,result:v.res,y:String(v.y),n_:String(v.no),v:v.v,u:url(v),rc:v});
     VOTES={senate:R.votes.filter(v=>v.ch==="S").map(conv),house:R.votes.filter(v=>v.ch==="H").map(conv)};
     for(const v of R.votes){if(!v.m)continue;const id=RC.billId(v.m,cg);(RC_BY_BILL[id]=RC_BY_BILL[id]||[]).push(v)}
-    renderVotes();renderNames();
+    renderVotes();renderNames();refreshCredits();
   }catch(e){console.warn("roll calls unavailable",e);renderVotes()}
 }
 load();
