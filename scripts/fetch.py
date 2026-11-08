@@ -757,13 +757,32 @@ def merge(auto: dict | None, cur: dict | None) -> dict:
 BREAKER_LIMIT = 3  # bills in a row that fail before a run stops downloading
 
 
-class Breaker:
-    """Stops a run from spending its whole time limit on an API that isn't answering."""
+BILL_BUDGET_MIN = 7  # bill downloads stop after this long; the job's limit is 15 minutes
 
-    def __init__(self, limit: int):
+
+class Breaker:
+    """Stops a run from spending its whole time limit on an API that isn't answering: after
+    `limit` failures in a row, or once `budget` seconds are used up (a half-working API
+    resets the failure count with each success while every timeout costs a minute or more)."""
+
+    def __init__(self, limit: int, budget: float | None = None, clock=time.monotonic):
         self.limit, self.run, self.tripped = limit, 0, False
+        self.clock = clock
+        self.deadline = clock() + budget if budget else None
+        self.out_of_time = False
         self.failed: set[str] = set()
         self.skipped: set[str] = set()
+
+    def stop(self) -> bool:
+        """True once this run should stop downloading."""
+        if not self.out_of_time and self.deadline is not None and self.clock() >= self.deadline:
+            self.out_of_time = True
+        return self.tripped or self.out_of_time
+
+    @property
+    def struggling(self) -> bool:
+        """Congress.gov is effectively down: failures in a row, or out of time with failures."""
+        return self.tripped or (self.out_of_time and bool(self.failed))
 
     def fail(self, bid: str) -> None:
         self.failed.add(bid)
@@ -975,11 +994,14 @@ def main() -> int:
                 print(f"keep rule changed to {KEEP_RULE}: re-checking every tracked bill")
             tracked["rule"] = KEEP_RULE
         print(f"bills: {len(wanted)} tracked, re-downloading {len(refetch & set(wanted))}")
-        breaker = Breaker(BREAKER_LIMIT)
+        breaker = Breaker(BREAKER_LIMIT, BILL_BUDGET_MIN * 60)
         for bid, (c, t, n) in sorted(wanted.items()):
             if bid not in refetch:
                 continue
-            if breaker.tripped:
+            was_out = breaker.out_of_time
+            if breaker.stop():
+                if breaker.out_of_time and not was_out and not breaker.tripped:
+                    warn(f"Congress.gov is slow; stopped bill downloads after {BILL_BUDGET_MIN} minutes, the rest wait for the next run")
                 breaker.skipped.add(bid)
                 continue
             try:
@@ -1011,8 +1033,8 @@ def main() -> int:
             q["queue"] = sorted(set(q.get("queue") or []) | set(back))
             q.pop("finished", None)
             print(f"backfill: {len(back)} bills back on the queue")
-        down = items is None or breaker.tripped
-        if breaker.tripped:
+        down = items is None or breaker.struggling
+        if breaker.struggling:
             tracked.setdefault("backfill", {"queue": []})["pausedUntil"] = (now + dt.timedelta(hours=1)).isoformat(timespec="seconds")
         else:
             (tracked.get("backfill") or {}).pop("pausedUntil", None)
