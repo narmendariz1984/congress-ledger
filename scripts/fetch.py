@@ -619,6 +619,66 @@ def merge(auto: dict | None, cur: dict | None) -> dict:
     return b
 
 
+BREAKER_LIMIT = 3  # bills in a row that fail before a run stops downloading
+
+
+class Breaker:
+    """Stops a run from spending its whole time limit on an API that isn't answering."""
+
+    def __init__(self, limit: int):
+        self.limit, self.run, self.tripped = limit, 0, False
+        self.failed: set[str] = set()
+        self.skipped: set[str] = set()
+
+    def fail(self, bid: str) -> None:
+        self.failed.add(bid)
+        self.run += 1
+        self.tripped = self.tripped or self.run >= self.limit
+
+    def ok(self) -> None:
+        self.run = 0
+
+
+def requeue(batch: list[str], breaker: Breaker) -> list[str]:
+    """Backfill bills to try again next run: the ones that failed or were skipped."""
+    return [b for b in batch if b in breaker.failed or b in breaker.skipped]
+
+
+OUTAGE_SHOW_MIN = 20  # minutes: the next run (about 30 minutes later) failing too means it isn't a blip
+
+
+def outage_state(since: str | None, down: bool | None, now: dt.datetime, shown: dict | None) -> tuple[str | None, dict | None]:
+    """Track a Congress.gov outage across runs: (start time to keep in tracked.json, the
+    ledger's note for visitors or None). `down` is None when this run didn't check. The note
+    appears only once a later run also fails, and its value never changes during an outage,
+    so an outage costs two site commits (start and end) and a one-run blip costs none."""
+    if down is False:
+        return None, None
+    if down is None:
+        return since, shown if since else None
+    since = since or now.isoformat(timespec="seconds")
+    try:
+        age = (now - dt.datetime.fromisoformat(since)).total_seconds() / 60
+    except ValueError:
+        since, age = now.isoformat(timespec="seconds"), 0
+    return since, ({"since": since} if age >= OUTAGE_SHOW_MIN else None)
+
+
+def data_changed(new: str, old: str) -> bool:
+    """Whether a rebuilt ledger differs from the last one in its data, so the hourly refresh
+    doesn't commit (and redeploy the site) for a new timestamp or run warnings alone."""
+    def core(t: str):
+        try:
+            d = json.loads(t)
+        except ValueError:
+            return t
+        if isinstance(d, dict):
+            d.pop("generatedAt", None)
+            d.pop("warnings", None)
+        return d
+    return core(new) != core(old)
+
+
 def load_json(p: Path, default):
     try:
         return json.loads(p.read_text(encoding="utf-8"))
@@ -687,6 +747,9 @@ def main() -> int:
     queue = (tracked.get("backfill") or {}).get("queue") or []
     if queue:
         do_bills = True
+    if tracked.get("congressDown") and mode == "auto":
+        do_bills = True  # while Congress.gov is down, every run checks, so the site notices it's back
+    down = None  # whether Congress.gov failed this run; None if this run didn't ask it
     print(f"mode={mode} bills={do_bills} votes={do_votes} backfill_queue={len(queue)}")
     auto_by_id = {b["id"]: b for b in prev.get("bills", []) if isinstance(b, dict) and b.get("id")}
 
@@ -770,14 +833,22 @@ def main() -> int:
                 print(f"keep rule changed to {KEEP_RULE}: re-checking every tracked bill")
             tracked["rule"] = KEEP_RULE
         print(f"bills: {len(wanted)} tracked, re-downloading {len(refetch & set(wanted))}")
+        breaker = Breaker(BREAKER_LIMIT)
         for bid, (c, t, n) in sorted(wanted.items()):
             if bid not in refetch:
+                continue
+            if breaker.tripped:
+                breaker.skipped.add(bid)
                 continue
             try:
                 fresh = fetch_bill(c, t, n)
             except Exception as e:  # noqa: BLE001
                 warn(f"{bid}: {e}")
+                breaker.fail(bid)
+                if breaker.tripped:
+                    warn(f"Congress.gov isn't responding ({BREAKER_LIMIT} bills in a row failed); stopping bill downloads this run")
                 continue
+            breaker.ok()
             if bid not in curated_ids and not fresh.get("strong"):
                 # discovered but only committee-level activity: stop tracking
                 auto_by_id.pop(bid, None)
@@ -790,6 +861,19 @@ def main() -> int:
             fresh["id"] = bid
             fresh["fetched"] = now.isoformat(timespec="seconds")
             auto_by_id[bid] = fresh
+        # backfill bills that failed or never ran go back on the queue; after an outage, pause
+        # the self-chaining for an hour (the regular half-hourly runs still pick the queue up)
+        back = requeue(batch, breaker)
+        if back:
+            q = tracked.setdefault("backfill", {"queue": []})
+            q["queue"] = sorted(set(q.get("queue") or []) | set(back))
+            q.pop("finished", None)
+            print(f"backfill: {len(back)} bills back on the queue")
+        down = items is None or breaker.tripped
+        if breaker.tripped:
+            tracked.setdefault("backfill", {"queue": []})["pausedUntil"] = (now + dt.timedelta(hours=1)).isoformat(timespec="seconds")
+        else:
+            (tracked.get("backfill") or {}).pop("pausedUntil", None)
 
     bills = []
     ids = set(auto_by_id) | set((curated.get("bills") or {}).keys())
@@ -814,20 +898,25 @@ def main() -> int:
         votes = {"senate": senate_with_backoff(congress, session, now, tracked, votes.get("senate") or []),
                  "house": house_votes(congress, session, tracked)}
 
+    since, outage = outage_state(tracked.get("congressDown"), down, now, prev.get("outage"))
+    if since:
+        tracked["congressDown"] = since
+    else:
+        tracked.pop("congressDown", None)
+
     ledger = {
         "generatedAt": now.isoformat(timespec="seconds") if (do_bills or do_votes) else prev.get("generatedAt") or now.isoformat(timespec="seconds"),
         "congress": congress, "session": session,
         "meta": meta, "bills": bills, "votes": votes,
         "warnings": WARN[-20:],
     }
+    if outage:
+        ledger["outage"] = outage
     OUT.parent.mkdir(parents=True, exist_ok=True)
     new = json.dumps(ledger, indent=1, ensure_ascii=False, sort_keys=True)
     old = OUT.read_text(encoding="utf-8") if OUT.exists() else ""
 
-    # don't commit a new timestamp alone: compare without generatedAt
-    def strip(s: str) -> str:
-        return re.sub(r'"generatedAt": "[^"]*"', "", s)
-    if strip(new) != strip(old):
+    if data_changed(new, old):
         OUT.write_text(new + "\n", encoding="utf-8")
         print(f"wrote {OUT.relative_to(ROOT)}: {len(bills)} bills, {len(votes.get('senate', []))} Senate and {len(votes.get('house', []))} House votes")
     else:

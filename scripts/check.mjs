@@ -88,6 +88,7 @@ if (L) {
 
   const age = (Date.now() - Date.parse(L.generatedAt || 0)) / 36e5;
   if (age > 72) warn.push(`data last written ${Math.round(age)} hours ago`);
+  if (L.outage?.since) warn.push(`the site is showing an outage note: Congress.gov hasn't responded since ${L.outage.since}`);
   for (const w of L.warnings || []) warn.push(`from the refresh: ${w}`);
 }
 

@@ -317,6 +317,8 @@ details.vg>.tbl{margin:0 16px 14px}
 .empty-state{border:1px dashed var(--rule);border-radius:6px;padding:16px;font-size:13.5px;color:var(--muted)}
 .status-line{font-size:12.5px;color:var(--muted);font-family:var(--f-mono)}
 .status-line.warn{color:var(--stalled)}
+.outage{margin:0;font-size:13.5px;line-height:1.45;color:var(--soft);border-left:3px solid var(--stalled);padding:2px 0 2px 10px;max-width:68ch}
+.outage b{color:var(--stalled);font-weight:600}
 
 /* what to watch */
 .nextup{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-size:14.5px;color:var(--soft);border-top:1px solid var(--rule);padding-top:12px}
@@ -436,6 +438,7 @@ details.wpast .wi{opacity:.75}
     </div>
     <div class="nextup" id="nextup" hidden></div>
     <div class="status-line" id="status-line">Loading records…</div>
+    <p class="outage" id="outage" role="status" hidden></p>
   </div></div></div>
 </header>
 
@@ -642,7 +645,8 @@ details.wpast .wi{opacity:.75}
       <li><b>Senate votes</b> come from Voteview, which usually posts a vote a few hours after it happens. senate.gov turns away automated requests, so this site links to its official vote pages instead of fetching them.</li>
       <li><b>House votes and bill histories</b> come from the official Congress.gov API.</li>
     </ul>
-    <p>The time of the last update is under the header on every page. Updates run on GitHub's scheduler, which can start a little late when GitHub is busy.</p>
+    <p>The header shows when the data last changed, so during recess that time can be a day or more old even though checks keep running. Updates run on GitHub's scheduler, which can start a little late when GitHub is busy.</p>
+    <p>If Congress.gov stops responding for more than one check, a note under the header says so and goes away on its own once it's back. Bills and votes already on the page stay as they were.</p>
   </div>
 </details>
 <details class="sec" id="paths" open>
@@ -1309,7 +1313,10 @@ async function load(){
     const L=await r.json();
     bills=(L.bills||[]).filter(b=>b&&b.id);meta=L.meta||{};VOTES=L.votes||{senate:[],house:[]};CONGRESS=L.congress||null;
     loaded=true;statusLine.classList.remove("warn");
-    statusLine.textContent=L.generatedAt?`Data updated ${fmtStamp(L.generatedAt)}`:"";
+    statusLine.textContent=L.generatedAt?`Last change ${fmtStamp(L.generatedAt)} · checked daily, more often in session`:"";
+    const out=$("#outage"),since=L.outage&&L.outage.since;
+    out.hidden=!since;
+    if(since)out.innerHTML=`<b>Congress.gov hasn't responded since ${esc(fmtStamp(since))}</b>, so the newest floor actions may be missing. Updates resume on their own once it's back.`;
     if(L.warnings&&L.warnings.length)console.warn("ledger warnings",L.warnings);
   }catch(e){
     loaded=true;statusLine.textContent="Data couldn't load. Refresh to try again.";statusLine.classList.add("warn");
