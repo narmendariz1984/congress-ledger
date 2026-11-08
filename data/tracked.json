@@ -472,7 +472,6 @@
  },
  "backfill": {
   "queue": [
-   "119-hjres104",
    "119-hjres105",
    "119-hjres106",
    "119-hjres130",
@@ -615,7 +614,7 @@
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
   "reason": "re-download for cosponsor states",
-  "pausedUntil": "2026-11-08T02:16:49+00:00"
+  "pausedUntil": "2026-11-08T02:54:25+00:00"
  },
  "rule": "recorded-vote-v3",
  "schema": 2,

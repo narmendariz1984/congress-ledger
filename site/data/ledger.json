@@ -93,12 +93,17 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-08T01:54:25+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/104"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-12-11: Signed by President.; 2025-12-11: Became Public Law No: 119-48.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/104/all-actions"
     }
    },
    "id": "119-hjres104",
@@ -111,11 +116,28 @@
    "num": "H.J.Res. 104",
    "number": 104,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-12-11",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-09-03",
+     "how": "roll",
+     "roll": 224,
+     "v": "211–208"
+    },
+    "S": {
+     "d": "2025-10-08",
+     "how": "roll",
+     "roll": 549,
+     "v": "52–47"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -44932,7 +44954,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-05T18:24:55+00:00",
+ "generatedAt": "2026-11-08T01:54:25+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -45216,6 +45238,9 @@
    }
   ],
   "watchUpdated": "2026-11-05"
+ },
+ "outage": {
+  "since": "2026-11-08T01:16:49+00:00"
  },
  "session": 2,
  "votes": {
@@ -46784,5 +46809,12 @@
    }
   ]
  },
- "warnings": []
+ "warnings": [
+  "bill listing failed: The read operation timed out",
+  "roll call discovery failed: The read operation timed out",
+  "119-hjres105: The read operation timed out",
+  "119-hjres106: The read operation timed out",
+  "119-hjres130: The read operation timed out",
+  "Congress.gov isn't responding (3 bills in a row failed); stopping bill downloads this run"
+ ]
 }
