@@ -263,6 +263,130 @@ def derive(actions: list[dict], laws: list) -> dict:
     return {"reached": stage, "status": status, "strong": strong, "recorded": recorded_passage(actions)}
 
 
+# --- who signed or vetoed, and how each chamber passed it -------------------------------
+# Inauguration days: the outgoing president serves until noon, the incoming one after. A
+# signing date alone can't tell them apart, and it has gone both ways (the incoming president
+# signed Public Law 115-2 on Jan 20, 2017). The rule here counts an inauguration day as the
+# outgoing president's ("Biden through Jan 20, 2025, Trump after"); a curated outcome.pres
+# overrides it for any bill where that's wrong.
+PRESIDENTS = [  # (first full day in office, name, party)
+    ("1993-01-21", "Bill Clinton", "D"), ("2001-01-21", "George W. Bush", "R"),
+    ("2009-01-21", "Barack Obama", "D"), ("2017-01-21", "Donald Trump", "R"),
+    ("2021-01-21", "Joe Biden", "D"), ("2025-01-21", "Donald Trump", "R"),
+]
+OUTCOME_RULE = "outcome-v2"  # v2: veto message as "House Document (119-119)", override tally from either action  # v1: president, signing date, veto, how each chamber passed it
+
+SIGNED = re.compile(r"^\s*signed by president", re.I)
+BECAME = re.compile(r"became public law", re.I)
+OVERRIDE_WON = re.compile(r"passed (house|senate) over veto|over (the )?(president's )?veto.*\b(passed|agreed to)\b|became public law.*over veto", re.I)
+HDOC = re.compile(r"\b(?:H\.\s*Doc\.?|House Document)\s*(?:No\.?\s*)?\(?(\d{2,3})\s*[-\u2013]\s*(\d{1,4})\)?", re.I)  # "H. Doc. 119-119" or "printed as a House Document (119-119)"
+PASS_ACT = re.compile(
+    r"passed/agreed to in (house|senate)|^\s*passed senate|"
+    r"resolving differences -- (house|senate) actions:.*\b(agree|agreed|concur|concurred)\b|"
+    r"(house|senate) agreed to (the )?(senate|house) amendment|"
+    r"(house|senate) agreed to (the )?conference report|conference report agreed to", re.I)
+NOT_PASS = re.compile(r"\bfail|not agreed|rejected|motion to reconsider|motion to table|recommit|amendment to the (house|senate) amendment", re.I)
+ROLL_H = re.compile(r"roll no\.\s*(\d+)", re.I)
+ROLL_S = re.compile(r"record vote (?:number|no\.?):?\s*(\d+)", re.I)
+
+
+def president_on(day: str | None) -> tuple[str, str] | None:
+    """(name, party) of the president who could sign on `day` (YYYY-MM-DD); see the note above."""
+    if not day:
+        return None
+    found = None
+    for start, name, party in PRESIDENTS:
+        if day[:10] >= start:
+            found = (name, party)
+    return found
+
+
+def passages(actions: list[dict]) -> dict:
+    """Each chamber's final passing action: date, how (roll, voice, uc), tally and roll number."""
+    out: dict[str, dict] = {}
+    for a in sorted(actions, key=lambda a: a.get("actionDate") or ""):  # stable: same-day order kept
+        text = (a.get("text") or "").strip()
+        if not PASS_ACT.search(text) or NOT_PASS.search(text):
+            continue
+        m = re.search(r"in (house|senate)|^\s*passed (senate)|-- (house|senate) actions|(house|senate) agreed", text, re.I)
+        word = next((g for g in (m.groups() if m else ()) if g), "")
+        ch = "H" if word.lower() == "house" else "S" if word.lower() == "senate" else chamber_of(text, a)
+        if ch not in ("H", "S"):
+            continue
+        rec = {"d": a.get("actionDate")}
+        roll = (ROLL_H if ch == "H" else ROLL_S).search(text)
+        t = TALLY.search(text)
+        if roll and t:
+            rec.update(how="roll", v=f"{t.group(1)}–{t.group(2)}", roll=int(roll.group(1)))
+        elif re.search(r"voice vote", text, re.I):
+            rec["how"] = "voice"
+        elif re.search(r"unanimous consent|without objection", text, re.I):
+            rec["how"] = "uc"
+        elif t:
+            rec.update(how="roll", v=f"{t.group(1)}–{t.group(2)}")
+        else:
+            rec["how"] = ""
+        prev = out.get(ch)
+        # the same vote is often listed twice on one day; keep the one with a roll number
+        if prev and prev["d"] == rec["d"] and prev.get("roll") and not rec.get("roll"):
+            continue
+        out[ch] = rec
+    return out
+
+
+def outcome_from(actions: list[dict], laws: list, status: str, url: str) -> tuple[dict | None, dict]:
+    """The outcome block for a law or a vetoed bill, plus the footnotes it cites."""
+    acts = sorted(actions, key=lambda a: a.get("actionDate") or "")
+    fns: dict[str, dict] = {}
+    if laws:
+        signed = next((a for a in reversed(acts) if SIGNED.search(a.get("text") or "")), None)
+        became = next((a for a in reversed(acts) if BECAME.search(a.get("text") or "")), None)
+        vetoed = next((a for a in reversed(acts) if VETO.search(a.get("text") or "")), None)
+        ln = laws[0].get("number")
+        if vetoed and not signed:
+            d = vetoed.get("actionDate")
+            pres = president_on(d)
+            o = {"where": "Became law over a veto", "d": (became or {}).get("actionDate") or d, "how": "override"}
+        else:
+            src = signed or became
+            d = (src or {}).get("actionDate")
+            pres = president_on(d)
+            unsigned = bool(became and not signed and re.search(r"without (the )?(president's )?signature", became.get("text") or "", re.I))
+            o = {"where": "Became law without signature" if unsigned else "Signed into law", "d": d, "how": "unsigned" if unsigned else "signed"}
+        if pres:
+            o.update(pres=pres[0], pp=pres[1], by=pres[0])
+        o.update(v="", fn="sig")
+        quote = "; ".join(f"{x.get('actionDate')}: {x.get('text').strip()}" for x in (signed, became) if x)
+        fns["sig"] = {"t": (quote or "Became law.") + (f" Public Law {ln}." if ln and f"{ln}" not in quote else ""),
+                      "src": "Congress.gov, all actions", "u": f"{url}/all-actions" if url else ""}
+        return o, fns
+    if status == "vetoed":
+        vetoed = next((a for a in reversed(acts) if VETO.search(a.get("text") or "")), None)
+        if not vetoed:
+            return None, fns
+        d = vetoed.get("actionDate")
+        pres = president_on(d)
+        o = {"where": "Vetoed", "d": d, "how": "vetoed", "v": "", "fn": "veto"}
+        if pres:
+            o.update(pres=pres[0], pp=pres[1], by=pres[0])
+        doc = next((HDOC.search(a.get("text") or "") for a in acts if HDOC.search(a.get("text") or "")), None)
+        if doc:
+            o["msg"] = f"https://www.govinfo.gov/app/details/CDOC-{doc.group(1)}hdoc{doc.group(2)}"
+            o["msgLabel"] = f"H. Doc. {doc.group(1)}-{doc.group(2)}"
+        # the override vote, if one was held
+        # Congress.gov records it more than once; use one that carries the tally
+        ovs = [a for a in reversed(acts) if re.search(r"objections of the president to the contrary notwithstanding", a.get("text") or "", re.I)]
+        ov = next((a for a in ovs if TALLY.search(a.get("text") or "")), ovs[0] if ovs else None)
+        if ov:
+            t = TALLY.search(ov.get("text") or "")
+            failed = re.search(r"\bfailed\b", ov.get("text") or "", re.I)
+            o["v"] = f"Override {'failed' if failed else 'vote'} {t.group(1)}–{t.group(2)}" if t else ""
+        fns["veto"] = {"t": f"{d}: {vetoed.get('text').strip()}" + (f" Veto message printed as {o['msgLabel']}." if o.get("msgLabel") else ""),
+                       "src": "Congress.gov, all actions", "u": f"{url}/all-actions" if url else ""}
+        return o, fns
+    return None, fns
+
+
 MILESTONE = re.compile(
     r"^introduced in|reported|passed|agreed to|cloture|presented to president|became public law|vetoed|"
     r"discharge|failed|not invoked|motion to proceed", re.I)
@@ -352,7 +476,14 @@ def fetch_bill(congress: int, btype: str, number: int) -> dict:
     if laws:
         ln = laws[0].get("number")
         out["law"] = f"Pub. L. {ln}" if ln else "Public law"
-        out["outcome"] = {"where": "Signed into law", "by": "", "d": (b.get("latestAction") or {}).get("actionDate"), "v": "", "fn": "cg"}
+    passed = passages(actions)
+    if passed:
+        out["passed"] = passed
+    outcome, fns = outcome_from(actions, laws, out["status"], out["url"])
+    if outcome:
+        out["outcome"] = outcome
+    if fns:
+        out["fns"] = fns
     return out
 
 
@@ -611,7 +742,13 @@ def merge(auto: dict | None, cur: dict | None) -> dict:
         if v in (None, "", [], {}):
             continue
         b[k] = v
-    fns = dict(cur.get("fns") or {})
+    # outcome: curated fields win one by one, so a curated note in "by" keeps the fetched president
+    ao, co = (auto or {}).get("outcome"), cur.get("outcome")
+    if isinstance(ao, dict) and isinstance(co, dict):
+        b["outcome"] = {**ao, **{k: v for k, v in co.items() if v not in (None, "")}}
+        if co.get("fn") and ao.get("fn") and co["fn"] != ao["fn"]:
+            b["outcome"]["fn2"] = ao["fn"]  # keep citing the signing action too
+    fns = {**((auto or {}).get("fns") or {}), **(cur.get("fns") or {})}
     if b.get("url"):
         fns.setdefault("cg", {"t": "Bill text, actions and cosponsors.", "src": "Congress.gov", "u": b["url"]})
     b["fns"] = fns
@@ -755,6 +892,13 @@ def main() -> int:
 
     # Checked on every run, before the schedule decides what to update, so a rule
     # change starts its re-check right away, even during recess.
+    if tracked.get("outcomeRule") != OUTCOME_RULE:
+        done = [b["id"] for b in (prev.get("bills") or []) if b.get("status") in ("law", "vetoed") or b.get("law")]
+        q = tracked.setdefault("backfill", {"queue": []})
+        q["queue"] = sorted(set(q.get("queue") or []) | set(done))
+        q.pop("finished", None)
+        tracked["outcomeRule"] = OUTCOME_RULE
+        print(f"outcome rule changed to {OUTCOME_RULE}: queued {len(done)} laws and vetoed bills to re-read")
     if tracked.get("statusRule") != STATUS_RULE:
         q = tracked.setdefault("backfill", {"queue": []})
         q["queue"] = sorted(set(q.get("queue") or []) | set(tracked["bills"]))
