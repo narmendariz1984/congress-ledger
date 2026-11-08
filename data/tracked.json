@@ -472,14 +472,13 @@
   "119-hr1945",
   "119-hr7037"
  ],
- "lastDiscovery": "2026-11-08T06:53:29+00:00",
+ "lastDiscovery": "2026-11-08T07:02:20+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
  },
  "backfill": {
   "queue": [
-   "119-hr2069",
    "119-hr2481",
    "119-hr2483",
    "119-hr2808",
@@ -581,7 +580,7 @@
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
   "reason": "re-download for cosponsor states",
-  "pausedUntil": "2026-11-08T07:53:29+00:00"
+  "pausedUntil": "2026-11-08T08:02:20+00:00"
  },
  "rule": "recorded-vote-v3",
  "schema": 2,

@@ -10064,12 +10064,17 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-08T07:02:20+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2069"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-09-11: Signed by President.; 2026-09-11: Became Public Law No: 119-106.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2069/all-actions"
     }
    },
    "id": "119-hr2069",
@@ -10082,11 +10087,24 @@
    "num": "H.R. 2069",
    "number": 2069,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-09-11",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2026-07-20",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-08-07",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -45885,7 +45903,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-08T06:53:29+00:00",
+ "generatedAt": "2026-11-08T07:02:20+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -47738,7 +47756,10 @@
   ]
  },
  "warnings": [
-  "119-hr2069: The read operation timed out",
-  "Congress.gov is slow; stopped bill downloads after 7 minutes, the rest wait for the next run"
+  "119-hr1: The read operation timed out",
+  "119-hr2481: The read operation timed out",
+  "119-hr2483: The read operation timed out",
+  "119-hr2808: The read operation timed out",
+  "Congress.gov isn't responding (3 bills in a row failed); stopping bill downloads this run"
  ]
 }
