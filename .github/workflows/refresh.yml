@@ -89,8 +89,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           left=$(python3 -c "import json;print(len((json.load(open('data/tracked.json')).get('backfill') or {}).get('queue') or []))")
-          echo "backfill queue: $left"
-          if [ "$left" -gt 0 ]; then
+          # after an outage fetch.py sets pausedUntil an hour out; don't chain until then
+          paused=$(python3 -c "import json,datetime as d;p=(json.load(open('data/tracked.json')).get('backfill') or {}).get('pausedUntil');print(1 if p and d.datetime.fromisoformat(p)>d.datetime.now(d.timezone.utc) else 0)")
+          echo "backfill queue: $left (paused: $paused)"
+          if [ "$left" -gt 0 ] && [ "$paused" = "0" ]; then
             gh workflow run refresh.yml --ref main -f mode=auto
             echo "started the next batch"
           fi

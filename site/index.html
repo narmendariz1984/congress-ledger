@@ -877,11 +877,12 @@ function creditLine(b){
     parts.push(p.how==="roll"&&p.v?`passed ${name} ${esc(p.v)}${passSplit(ch,p)}`:p.how==="voice"?`passed ${name} by voice vote`:p.how==="uc"?`passed ${name} by unanimous consent`:`passed ${name}`);
   }
   if(o.pres){
-    const who=`President ${esc(surname(o.pres))}`, when=o.d?` on ${fmtD(o.d)}`:"", src=`${sup(b,o.fn2||"")}${sup(b,o.fn)}`;
-    if(b.status==="vetoed")parts.push(`vetoed by ${who}${when}${src}${o.msg?` (<a href="${esc(o.msg)}" target="_blank" rel="noopener">veto message</a>)`:""}${o.v?` · ${esc(o.v.replace(/^Override/,"override"))}`:""}`);
-    else if(o.how==="unsigned")parts.push(`became law without ${who}'s signature${when}${src}`);
-    else if(o.how==="override")parts.push(`became law over ${who}'s veto${when}${src}`);
-    else parts.push(`signed by ${who}${when}${src}`);
+    // the source number sits on the president's name, not after the year
+    const who=`President ${esc(surname(o.pres))}${sup(b,o.fn2||"")}${sup(b,o.fn)}`, when=o.d?` on ${fmtD(o.d)}`:"";
+    if(b.status==="vetoed")parts.push(`vetoed by ${who}${when}${o.msg?` (<a href="${esc(o.msg)}" target="_blank" rel="noopener">veto message</a>)`:""}${o.v?` · ${esc(o.v.replace(/^Override/,"override"))}`:""}`);
+    else if(o.how==="unsigned")parts.push(`became law without the signature of ${who}${when}`);
+    else if(o.how==="override")parts.push(`became law over the veto of ${who}${when}`);
+    else parts.push(`signed by ${who}${when}`);
   }
   return parts.join(" · ");
 }

@@ -252,6 +252,26 @@ class MergeAndCommits(unittest.TestCase):
         old = '{"generatedAt": "2026-11-07T10:00:00+00:00", "bills": [1]}'
         self.assertFalse(F.data_changed('{"generatedAt": "2026-11-07T11:00:00+00:00", "bills": [1]}', old))
         self.assertTrue(F.data_changed('{"generatedAt": "2026-11-07T11:00:00+00:00", "bills": [2]}', old))
+        # outage warnings alone aren't a data change either
+        self.assertFalse(F.data_changed('{"generatedAt": "x", "bills": [1], "warnings": ["119-hjres104: timed out"]}', old))
+        self.assertTrue(F.data_changed("not json", old))
+
+
+class OutageBreaker(unittest.TestCase):
+    def test_trips_after_three_failures_in_a_row(self):
+        b = F.Breaker(3)
+        b.fail("a"); b.fail("b"); self.assertFalse(b.tripped)
+        b.fail("c"); self.assertTrue(b.tripped)
+
+    def test_a_success_resets_the_count(self):
+        b = F.Breaker(3)
+        b.fail("a"); b.fail("b"); b.ok(); b.fail("c"); b.fail("d")
+        self.assertFalse(b.tripped)
+
+    def test_failed_and_skipped_backfill_bills_go_back_on_the_queue(self):
+        b = F.Breaker(3)
+        b.fail("119-hr2"); b.skipped.add("119-hr9"); b.skipped.add("119-s1")  # 119-s1 isn't in this batch
+        self.assertEqual(F.requeue(["119-hr1", "119-hr2", "119-hr9"], b), ["119-hr2", "119-hr9"])
 
 
 class RollCallDiscovery(unittest.TestCase):

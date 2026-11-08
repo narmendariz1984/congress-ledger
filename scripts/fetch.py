@@ -754,12 +754,44 @@ def merge(auto: dict | None, cur: dict | None) -> dict:
     return b
 
 
+BREAKER_LIMIT = 3  # bills in a row that fail before a run stops downloading
+
+
+class Breaker:
+    """Stops a run from spending its whole time limit on an API that isn't answering."""
+
+    def __init__(self, limit: int):
+        self.limit, self.run, self.tripped = limit, 0, False
+        self.failed: set[str] = set()
+        self.skipped: set[str] = set()
+
+    def fail(self, bid: str) -> None:
+        self.failed.add(bid)
+        self.run += 1
+        self.tripped = self.tripped or self.run >= self.limit
+
+    def ok(self) -> None:
+        self.run = 0
+
+
+def requeue(batch: list[str], breaker: Breaker) -> list[str]:
+    """Backfill bills to try again next run: the ones that failed or were skipped."""
+    return [b for b in batch if b in breaker.failed or b in breaker.skipped]
+
+
 def data_changed(new: str, old: str) -> bool:
-    """Whether a rebuilt ledger differs from the last one, ignoring generatedAt, so the hourly
-    refresh doesn't commit a new timestamp alone."""
-    def strip(t: str) -> str:
-        return re.sub(r'"generatedAt": "[^"]*"', "", t)
-    return strip(new) != strip(old)
+    """Whether a rebuilt ledger differs from the last one in its data, so the hourly refresh
+    doesn't commit (and redeploy the site) for a new timestamp or run warnings alone."""
+    def core(t: str):
+        try:
+            d = json.loads(t)
+        except ValueError:
+            return t
+        if isinstance(d, dict):
+            d.pop("generatedAt", None)
+            d.pop("warnings", None)
+        return d
+    return core(new) != core(old)
 
 
 def load_json(p: Path, default):
@@ -920,14 +952,22 @@ def main() -> int:
                 print(f"keep rule changed to {KEEP_RULE}: re-checking every tracked bill")
             tracked["rule"] = KEEP_RULE
         print(f"bills: {len(wanted)} tracked, re-downloading {len(refetch & set(wanted))}")
+        breaker = Breaker(BREAKER_LIMIT)
         for bid, (c, t, n) in sorted(wanted.items()):
             if bid not in refetch:
+                continue
+            if breaker.tripped:
+                breaker.skipped.add(bid)
                 continue
             try:
                 fresh = fetch_bill(c, t, n)
             except Exception as e:  # noqa: BLE001
                 warn(f"{bid}: {e}")
+                breaker.fail(bid)
+                if breaker.tripped:
+                    warn(f"Congress.gov isn't responding ({BREAKER_LIMIT} bills in a row failed); stopping bill downloads this run")
                 continue
+            breaker.ok()
             if bid not in curated_ids and not fresh.get("strong"):
                 # discovered but only committee-level activity: stop tracking
                 auto_by_id.pop(bid, None)
@@ -940,6 +980,18 @@ def main() -> int:
             fresh["id"] = bid
             fresh["fetched"] = now.isoformat(timespec="seconds")
             auto_by_id[bid] = fresh
+        # backfill bills that failed or never ran go back on the queue; after an outage, pause
+        # the self-chaining for an hour (the regular half-hourly runs still pick the queue up)
+        back = requeue(batch, breaker)
+        if back:
+            q = tracked.setdefault("backfill", {"queue": []})
+            q["queue"] = sorted(set(q.get("queue") or []) | set(back))
+            q.pop("finished", None)
+            print(f"backfill: {len(back)} bills back on the queue")
+        if breaker.tripped:
+            tracked.setdefault("backfill", {"queue": []})["pausedUntil"] = (now + dt.timedelta(hours=1)).isoformat(timespec="seconds")
+        else:
+            (tracked.get("backfill") or {}).pop("pausedUntil", None)
 
     bills = []
     ids = set(auto_by_id) | set((curated.get("bills") or {}).keys())
