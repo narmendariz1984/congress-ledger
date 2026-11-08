@@ -1962,7 +1962,7 @@
     ],
     "t": 19
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3331,7 +3331,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -7846,7 +7846,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -9085,7 +9085,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-08T06:46:09+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -9101,6 +9101,16 @@
    },
    "num": "H.R. 1945",
    "number": 1945,
+   "passed": {
+    "H": {
+     "d": "2026-03-03",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-29",
+     "how": "uc"
+    }
+   },
    "reached": 5,
    "sponsor": {
     "n": "Robert Onder",
@@ -11613,7 +11623,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11867,7 +11877,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12685,12 +12695,17 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2481"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-10-20: Signed by President.; 2026-10-20: Became Public Law No: 119-129.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2481/all-actions"
     }
    },
    "id": "119-hr2481",
@@ -12703,11 +12718,24 @@
    "num": "H.R. 2481",
    "number": 2481,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-10-20",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-06-23",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-23",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -12798,12 +12826,17 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2483"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-12-01: Signed by President.; 2025-12-01: Became Public Law No: 119-44",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2483/all-actions"
     }
    },
    "id": "119-hr2483",
@@ -12816,11 +12849,26 @@
    "num": "H.R. 2483",
    "number": 2483,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-12-01",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-06-04",
+     "how": "roll",
+     "roll": 151,
+     "v": "366–57"
+    },
+    "S": {
+     "d": "2025-09-18",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -13390,7 +13438,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:24:55+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13406,6 +13454,14 @@
    },
    "num": "H.R. 2616",
    "number": 2616,
+   "passed": {
+    "H": {
+     "d": "2026-05-20",
+     "how": "roll",
+     "roll": 184,
+     "v": "217–198"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Tim Walberg",
@@ -14216,12 +14272,17 @@
     ],
     "t": 89
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2808"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-09-05: Signed by President.; 2025-09-05: Became Public Law No: 119-36.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2808/all-actions"
     }
    },
    "id": "119-hr2808",
@@ -14234,11 +14295,24 @@
    "num": "H.R. 2808",
    "number": 2808,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-09-05",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-06-23",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2025-08-02",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -14328,12 +14402,17 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2815"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-05-19: Signed by President.; 2026-05-19: Became Public Law No: 119-93.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2815/all-actions"
     }
    },
    "id": "119-hr2815",
@@ -14346,11 +14425,24 @@
    "num": "H.R. 2815",
    "number": 2815,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-05-19",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-12-15",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-02-26",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -17249,12 +17341,17 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/3490"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-06-09: Signed by President.; 2026-06-09: Became Public Law No: 119-96.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3490/all-actions"
     }
    },
    "id": "119-hr3490",
@@ -17267,11 +17364,24 @@
    "num": "H.R. 3490",
    "number": 3490,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-06-09",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-06-03",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-05-20",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -17503,12 +17613,17 @@
     ],
     "t": 36
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/3497"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-05-28: Signed by President.; 2026-05-28: Became Public Law No: 119-94.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3497/all-actions"
     }
    },
    "id": "119-hr3497",
@@ -17521,11 +17636,24 @@
    "num": "H.R. 3497",
    "number": 3497,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-05-28",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2026-02-02",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-05-11",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -18058,12 +18186,17 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/3620"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-10-20: Signed by President.; 2026-10-20: Became Public Law No: 119-130.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3620/all-actions"
     }
    },
    "id": "119-hr3620",
@@ -18076,11 +18209,24 @@
    "num": "H.R. 3620",
    "number": 3620,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-10-20",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-12-15",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-29",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -18574,12 +18720,17 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/3657"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-09-25: Signed by President.; 2026-09-25: Became Public Law No: 119-112.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3657/all-actions"
     }
    },
    "id": "119-hr3657",
@@ -18592,11 +18743,24 @@
    "num": "H.R. 3657",
    "number": 3657,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-09-25",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-07-14",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-16",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -19279,12 +19443,17 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/4"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-07-24: Signed by President.; 2025-07-24: Became Public Law No: 119-28.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4/all-actions"
     }
    },
    "id": "119-hr4",
@@ -19297,11 +19466,26 @@
    "num": "H.R. 4",
    "number": 4,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-07-24",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-07-18",
+     "how": ""
+    },
+    "S": {
+     "d": "2025-07-17",
+     "how": "roll",
+     "roll": 411,
+     "v": "51–48"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -19695,12 +19879,17 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/410"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-12-26: Signed by President.; 2025-12-26: Became Public Law No: 119-63.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/410/all-actions"
     }
    },
    "id": "119-hr410",
@@ -19713,11 +19902,24 @@
    "num": "H.R. 410",
    "number": 410,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-12-26",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-07-14",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2025-12-16",
+     "how": "voice"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -19806,12 +20008,17 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/42"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-07-07: Signed by President.; 2025-07-07: Became Public Law No: 119-22.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/42/all-actions"
     }
    },
    "id": "119-hr42",
@@ -19824,11 +20031,24 @@
    "num": "H.R. 42",
    "number": 42,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-07-07",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-02-04",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2025-06-18",
+     "how": "voice"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -20251,12 +20471,17 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/43"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-07-07: Signed by President.; 2025-07-07: Became Public Law No: 119-23.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/43/all-actions"
     }
    },
    "id": "119-hr43",
@@ -20269,11 +20494,26 @@
    "num": "H.R. 43",
    "number": 43,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-07-07",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-02-04",
+     "how": "roll",
+     "roll": 28,
+     "v": "412–1"
+    },
+    "S": {
+     "d": "2025-06-18",
+     "how": "voice"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -20519,12 +20759,17 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/4307"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-10-20: Signed by President.; 2026-10-20: Became Public Law No: 119-131.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4307/all-actions"
     }
    },
    "id": "119-hr4307",
@@ -20537,11 +20782,24 @@
    "num": "H.R. 4307",
    "number": 4307,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-10-20",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2026-03-03",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-30",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -20646,12 +20904,17 @@
     ],
     "t": 19
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/4323"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-01-23: Signed by President.; 2026-01-23: Became Public Law No: 119-73.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4323/all-actions"
     }
    },
    "id": "119-hr4323",
@@ -20664,11 +20927,24 @@
    "num": "H.R. 4323",
    "number": 4323,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-01-23",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-12-01",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2025-12-18",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -20904,7 +21180,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-08T06:46:09+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -20930,6 +21206,11 @@
      "src": "National Archives",
      "t": "Pub. L. 119-38, approved Nov 19, 2025.",
      "u": "https://www.archives.gov/federal-register/laws/119-first-session"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-11-19: Signed by President.; 2025-11-19: Became Public Law No: 119-38.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4405/all-actions"
     }
    },
    "id": "119-hr4405",
@@ -20959,8 +21240,24 @@
     "by": "Discharge petition forced the floor vote",
     "d": "2025-11-19",
     "fn": "d",
+    "fn2": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "427–1 · UC",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-11-18",
+     "how": "roll",
+     "roll": 289,
+     "v": "427–1"
+    },
+    "S": {
+     "d": "2025-11-19",
+     "how": "uc"
+    }
    },
    "path": "Discharge petition → suspension",
    "reached": 6,
@@ -21114,12 +21411,17 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/4446"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-01-20: Signed by President.; 2026-01-20: Became Public Law No: 119-72.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4446/all-actions"
     }
    },
    "id": "119-hr4446",
@@ -21132,11 +21434,24 @@
    "num": "H.R. 4446",
    "number": 4446,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-01-20",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-09-15",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2025-12-18",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -21227,12 +21542,17 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/4467"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-10-20: Signed by President.; 2026-10-20: Became Public Law No: 119-132.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4467/all-actions"
     }
    },
    "id": "119-hr4467",
@@ -21245,11 +21565,24 @@
    "num": "H.R. 4467",
    "number": 4467,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2026-10-20",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2026-03-16",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-22",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -21390,12 +21723,17 @@
     ],
     "t": 299
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/452"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-12-12: Signed by President.; 2025-12-12: Became Public Law No: 119-53.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/452/all-actions"
     }
    },
    "id": "119-hr452",
@@ -21408,11 +21746,24 @@
    "num": "H.R. 452",
    "number": 452,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-12-12",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-09-15",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2025-09-08",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -22976,12 +23327,17 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/504"
+    },
+    "veto": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-12-29: Vetoed by President. Veto message printed as H. Doc. 119-120.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/504/all-actions"
     }
    },
    "id": "119-hr504",
@@ -22993,6 +23349,28 @@
    },
    "num": "H.R. 504",
    "number": 504,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2025-12-29",
+    "fn": "veto",
+    "how": "vetoed",
+    "msg": "https://www.govinfo.gov/app/details/CDOC-119hdoc120",
+    "msgLabel": "H. Doc. 119-120",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "Override failed 236–188",
+    "where": "Vetoed"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-07-14",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2025-12-11",
+     "how": "uc"
+    }
+   },
    "reached": 5,
    "sponsor": {
     "n": "Carlos A. Gimenez",
@@ -23550,12 +23928,17 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-08T07:52:36+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/517"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2025-07-24: Signed by President.; 2025-07-24: Became Public Law No: 119-29.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/517/all-actions"
     }
    },
    "id": "119-hr517",
@@ -23568,11 +23951,26 @@
    "num": "H.R. 517",
    "number": 517,
    "outcome": {
-    "by": "",
+    "by": "Donald Trump",
     "d": "2025-07-24",
-    "fn": "cg",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
     "v": "",
     "where": "Signed into law"
+   },
+   "passed": {
+    "H": {
+     "d": "2025-03-31",
+     "how": "roll",
+     "roll": 84,
+     "v": "388–0"
+    },
+    "S": {
+     "d": "2025-07-10",
+     "how": "uc"
+    }
    },
    "reached": 6,
    "sponsor": {
@@ -45994,7 +46392,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-08T06:46:09+00:00",
+ "generatedAt": "2026-11-08T07:52:36+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -47846,5 +48244,7 @@
    }
   ]
  },
- "warnings": []
+ "warnings": [
+  "Congress.gov is slow; stopped bill downloads after 7 minutes, the rest wait for the next run"
+ ]
 }
