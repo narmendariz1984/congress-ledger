@@ -167,6 +167,52 @@ class OutageBreaker(unittest.TestCase):
         self.assertEqual(F.requeue(["119-hr1", "119-hr2", "119-hr9"], b), ["119-hr2", "119-hr9"])
 
 
+class TimeBudget(unittest.TestCase):
+    """A half-working Congress.gov: successes reset the failure count, so time has to stop it."""
+
+    def clock(self):
+        t = [0.0]
+        return t, (lambda: t[0])
+
+    def test_stops_when_the_budget_is_used_up(self):
+        t, clk = self.clock()
+        b = F.Breaker(3, 420, clk)
+        self.assertFalse(b.stop())
+        for _ in range(4):  # fail, ok, fail, ok: never 3 in a row
+            b.fail("x"); t[0] += 100; b.ok(); t[0] += 10
+        self.assertFalse(b.tripped)
+        self.assertTrue(b.stop())
+        self.assertTrue(b.out_of_time)
+
+    def test_slow_with_failures_counts_as_down_for_the_note(self):
+        t, clk = self.clock()
+        b = F.Breaker(3, 420, clk)
+        b.fail("119-hr1"); b.ok(); t[0] = 500
+        b.stop()
+        self.assertTrue(b.struggling)
+
+    def test_slow_but_every_bill_worked_is_not_an_outage(self):
+        t, clk = self.clock()
+        b = F.Breaker(3, 420, clk)
+        b.ok(); t[0] = 500
+        self.assertTrue(b.stop())
+        self.assertFalse(b.struggling)
+
+    def test_bills_skipped_for_time_go_back_on_the_queue(self):
+        t, clk = self.clock()
+        b = F.Breaker(3, 420, clk)
+        t[0] = 500
+        for bid in ("119-hr1", "119-hr2"):
+            if b.stop():
+                b.skipped.add(bid)
+        self.assertEqual(F.requeue(["119-hr1", "119-hr2", "119-hr3"], b), ["119-hr1", "119-hr2"])
+
+    def test_no_budget_never_runs_out(self):
+        t, clk = self.clock()
+        b = F.Breaker(3, None, clk)
+        t[0] = 1e9
+        self.assertFalse(b.stop())
+
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
     import datetime as _dt
