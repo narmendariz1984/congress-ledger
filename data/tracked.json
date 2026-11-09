@@ -467,7 +467,7 @@
   "119-hr7730",
   "119-hr1945"
  ],
- "lastDiscovery": "2026-11-09T12:07:30+00:00",
+ "lastDiscovery": "2026-11-09T22:25:37+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -841,7 +841,8 @@
   "119-hr5658",
   "119-hr8107",
   "119-s1528",
-  "119-s503"
+  "119-s503",
+  "119-s3041"
  ],
  "statusRule": "killed-v2",
  "outcomeRule": "outcome-v2"
