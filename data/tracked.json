@@ -467,7 +467,7 @@
   "119-hr7730",
   "119-hr1945"
  ],
- "lastDiscovery": "2026-11-08T09:21:37+00:00",
+ "lastDiscovery": "2026-11-09T12:07:30+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -481,7 +481,7 @@
  },
  "rule": "recorded-vote-v3",
  "schema": 2,
- "voteDiscovery": "2026-11-08T03:17:15+00:00",
+ "voteDiscovery": "2026-11-09T12:07:30+00:00",
  "houseVotes": {
   "119-2-74": {
    "q": "On Agreeing to the Resolution",
