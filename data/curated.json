@@ -120,7 +120,24 @@
             "Senate 2026 schedule",
             "https://www.senate.gov/legislative/2026_schedule.htm"
           ]
-        ]
+        ],
+        "outcome": {
+          "h": "Senate votes 73–25 to take up the permitting package",
+          "t": "On its first day back the Senate voted 73–25 to move ahead on the permitting package, using the number of H.R. 2347, a House-passed tax bill, as its vehicle.",
+          "bills": [
+            "119-hr2347"
+          ],
+          "src": [
+            [
+              "Senate Daily Press",
+              "https://www.dailypress.senate.gov/monday-november-9-2026/"
+            ],
+            [
+              "Congress.gov",
+              "https://www.congress.gov/bill/119th-congress/house-bill/2347/all-actions"
+            ]
+          ]
+        }
       },
       {
         "id": "gop-leaders",
@@ -134,7 +151,25 @@
           ]
         ],
         "who": "House and Senate Republicans, including newly elected members",
-        "contact": "both"
+        "contact": "both",
+        "outcome": {
+          "h": "Senate Republicans keep Thune; House Republicans pick Jordan over Scalise",
+          "t": "Senate Republicans re-elected John Thune as leader and John Barrasso as whip with no challengers, after a secret-ballot motion to delay the vote failed. House Republicans chose Jim Jordan over Steve Scalise for minority leader by secret ballot, 106–73 according to people in the room. Speaker Mike Johnson is stepping down from leadership.",
+          "src": [
+            [
+              "Deseret News",
+              "https://www.deseret.com/politics/2026/11/10/senate-leadership-elections/"
+            ],
+            [
+              "CBS News",
+              "https://www.cbsnews.com/news/jim-jordan-house-minority-leader-republicans/"
+            ],
+            [
+              "Fox News",
+              "https://www.foxnews.com/politics/jim-jordan-becomes-new-house-gop-leader-after-closed-door-vote-defeating-steve-scalise"
+            ]
+          ]
+        }
       },
       {
         "id": "house-dem-leaders",
