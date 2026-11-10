@@ -65,6 +65,10 @@ if (L) {
     if (e.date && !/^\d{4}-\d{2}-\d{2}$/.test(e.date)) warn.push(`What to watch: ${e.id} has an unreadable date "${e.date}"`);
     if (!e.date && !e.when) warn.push(`What to watch: ${e.id} has neither a date nor a "when"`);
     if (!(e.src || []).length) warn.push(`What to watch: ${e.id} has no sources`);
+    // once a key date is two days gone, it should say what happened
+    const last = e.end || e.date;
+    if (last && (Date.parse(today) - Date.parse(last)) / 864e5 >= 2 && !e.outcome) warn.push(`What to watch: ${e.id} (${last}) has passed with no outcome; add one in data/curated.json`);
+    if (e.outcome && (!e.outcome.h || !(e.outcome.src || []).length)) warn.push(`What to watch: ${e.id}'s outcome needs a headline (h) and sources (src)`);
   }
   if (W.length && !W.some(e => !e.date || (e.end || e.date) >= today)) warn.push("What to watch: every date has passed; add the next ones to data/curated.json");
 

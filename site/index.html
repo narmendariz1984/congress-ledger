@@ -366,7 +366,29 @@ ol.wlist{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid va
 .contact b{color:var(--ink)}
 .contact span{white-space:nowrap}
 details.wpast>summary{cursor:pointer;font-weight:600;color:var(--soft);padding:6px 0}
-details.wpast .wi{opacity:.75}
+details.wpast .wi:not(.has-out){opacity:.75}
+details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
+/* what happened: an outcome under a key date, and the latest ones under the calendar */
+.wout{display:grid;gap:4px;padding:8px 12px;border-left:3px solid var(--ink);background:var(--wash);border-radius:0 6px 6px 0;max-width:72ch}
+.wout .k{font:700 11.5px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.wout b{font-weight:700;color:var(--ink);line-height:1.35}
+.wout p{margin:0;color:var(--soft);font-size:15px}
+.wout .wsrc,.wout .wbills{font-size:13.5px}
+.wres{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+/* a tapped calendar day opens here, right under the calendar */
+.wday{display:grid;gap:10px;padding:14px 16px;border:1px solid var(--rule);border-top:3px solid var(--red);border-radius:0 0 8px 8px;background:var(--card)}
+.wday-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 14px}
+.wday-h b{font:700 13px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.wday-h button{all:unset;cursor:pointer;font-size:14px;color:var(--soft);border-bottom:1px solid var(--link-line)}
+.wday-h button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wday h4{margin:0;font-size:17px;font-weight:700;color:var(--ink)}
+.wday .wout{max-width:none}
+.wday .more{font-size:14px}
+.mgrid a.c.ev.sel{outline:3px solid var(--ink);outline-offset:1px}
+.wres li{display:grid;grid-template-columns:58px minmax(0,1fr);gap:10px;font-size:15px;line-height:1.4}
+.wres .dt{font:600 13px var(--f-mono);color:var(--red);padding-top:2px;white-space:nowrap}
+.wres a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--link-line)}
+.wres a:hover{border-bottom-color:currentColor}
 
 .sess-tog{display:none}
 @media (max-width:620px){
@@ -564,6 +586,8 @@ details.wpast .wi{opacity:.75}
   <div class="sec-body">
     <p class="contact"><b>Have a say:</b> <a href="https://www.house.gov/representatives/find-your-representative" target="_blank" rel="noopener">Find your representative</a> <span aria-hidden="true">·</span> <a href="https://www.senate.gov/senators/senators-contact.htm" target="_blank" rel="noopener">Find your senators</a> <span aria-hidden="true">·</span> <span>Capitol switchboard <a href="tel:+12022243121">(202) 224-3121</a></span></p>
     <div class="months" id="w-months"></div>
+    <div class="wresw" id="w-res-w" hidden><h3 class="wsub">What happened</h3><ol class="wres" id="w-res"></ol></div>
+    <div class="wday" id="w-day" hidden aria-live="polite"></div>
     <div class="mkey"><span><i style="background:var(--red)"></i>Key date</span><span><i style="background:color-mix(in srgb,var(--moving) 30%,transparent)"></i>House or Senate in session</span><span><i style="box-shadow:inset 0 0 0 2px var(--ink)"></i>Today</span></div>
     <ol class="wlist" id="w-list"></ol>
     <h3 class="wsub" id="w-undated-h">Date not set yet</h3>
@@ -1161,8 +1185,10 @@ function watchItem(e,today){
   }else tag=`<span class="chip" style="--c:var(--moving)">${esc(e.when||"Date not set")}</span>`;
   const bl=(e.bills||[]).map(id=>{const b=bills.find(x=>x.id===id);return b?billLink(b):""}).filter(Boolean).join("");
   const src=(e.src||[]).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("");
-  return`<li class="wi" id="w-${esc(e.id)}">${e.date?watchDate(e):`<div class="wd"><span class="m">Date</span><span class="dd">TBD</span></div>`}
-    <div class="wb"><div class="wh"><h3>${esc(e.title)}</h3>${tag}</div>${e.what?`<p>${esc(e.what)}</p>`:""}
+  const o=e.outcome&&e.outcome.h?e.outcome:null;
+  const out=o?outcomeBox(o):"";
+  return`<li class="wi${o?" has-out":""}" id="w-${esc(e.id)}">${e.date?watchDate(e):`<div class="wd"><span class="m">Date</span><span class="dd">TBD</span></div>`}
+    <div class="wb"><div class="wh"><h3>${esc(e.title)}</h3>${o?"":tag}</div>${out}${e.what?`<p>${esc(e.what)}</p>`:""}
     ${e.who?`<div class="wwho"><span><b>Who decides:</b> ${esc(e.who)}</span>${CONTACT[e.contact]||""}</div>`:""}
     ${bl?`<div class="wbills">On this site: ${bl}</div>`:""}${src?`<div class="wsrc">Sources: ${src}</div>`:""}</div></li>`;
 }
@@ -1173,8 +1199,8 @@ function monthGrid(y,m,evByDay,inSession,today){
   for(let d=1;d<=n;d++){
     const k=`${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`, ev=evByDay[k];
     const cls=["c",inSession.has(k)?"in":"",ev?"ev":"",k===today?"today":"",k<today?"past":""].filter(Boolean).join(" ");
-    const label=`${MONTH_FULL[m]} ${d}${ev?": "+ev.map(e=>e.title).join("; "):""}${inSession.has(k)?" (in session)":""}`;
-    h+=ev?`<a class="${cls}" href="#w-${esc(ev[0].id)}" title="${esc(label)}" aria-label="${esc(label)}">${d}</a>`:`<span class="${cls}" title="${esc(label)}">${d}</span>`;
+    const label=`${MONTH_FULL[m]} ${d}${ev?": "+ev.map(e=>e.title+(e.outcome&&e.outcome.h?` (what happened: ${e.outcome.h})`:"")).join("; "):""}${inSession.has(k)?" (in session)":""}`;
+    h+=ev?`<a class="${cls}" href="#w-${esc(ev[0].id)}" data-day="${k}" title="${esc(label)}" aria-label="${esc(label)}">${d}</a>`:`<span class="${cls}" title="${esc(label)}">${d}</span>`;
   }
   return`<div class="month"><h3>${MONTH_FULL[m]} ${y}</h3><div class="mgrid">${h}</div></div>`;
 }
@@ -1196,10 +1222,39 @@ function renderWatch(){
   const span=Math.min(3,(lastUp.getFullYear()-t.getFullYear())*12+lastUp.getMonth()-t.getMonth());
   let g="";for(let i=0;i<=span;i++){const d=new Date(t.getFullYear(),t.getMonth()+i,1);g+=monthGrid(d.getFullYear(),d.getMonth(),evByDay,inSession,today)}
   $("#w-months").innerHTML=g;
+  // what happened: the latest outcomes, right under the calendar
+  const res=dated.filter(e=>e.outcome&&e.outcome.h&&e.date<=today).sort((a,b)=>(b.end||b.date).localeCompare(a.end||a.date)).slice(0,3);
+  $("#w-res").innerHTML=res.map(e=>`<li><span class="dt">${esc(wk(e.end||e.date).toLocaleDateString("en-US",{month:"short",day:"numeric"}))}</span><a href="#w-${esc(e.id)}">${esc(e.outcome.h)}</a></li>`).join("");
+  $("#w-res-w").hidden=!res.length;
+  renderDay();
   // next up, shown in the header on every tab
   const nx=up[0];
   if(nx){$("#nextup").hidden=false;$("#nextup").innerHTML=`<span class="k">Next</span><b>${esc(nx.date===today?"Today":short(nx.date))}</b><span>${esc(nx.title)}</span><a href="#watch">All dates</a>`}
 }
+
+/* tap a key date on the calendar: that day's events and outcomes open right under the calendar */
+let WDAY=null;
+function outcomeBox(o){
+  const obl=(o.bills||[]).map(id=>{const b=bills.find(x=>x.id===id);return b?billLink(b):""}).filter(Boolean).join("");
+  return`<div class="wout"><span class="k">What happened</span><b>${esc(o.h)}</b>${o.t?`<p>${esc(o.t)}</p>`:""}${obl?`<div class="wbills">On this site: ${obl}</div>`:""}${(o.src||[]).length?`<div class="wsrc">Sources: ${o.src.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>`:""}</div>`;
+}
+function renderDay(){
+  const box=$("#w-day"), W=(meta&&meta.watch)||[], today=iso(new Date());
+  document.querySelectorAll("#w-months a.c.ev").forEach(a=>a.classList.toggle("sel",a.dataset.day===WDAY));
+  if(!WDAY){box.hidden=true;$("#w-res-w").hidden=!$("#w-res").children.length;return}
+  const evs=W.filter(e=>e.date&&e.date<=WDAY&&WDAY<=(e.end||e.date));
+  const head=wk(WDAY).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"});
+  box.innerHTML=`<div class="wday-h"><b>${esc(head)}</b><button type="button" data-wclose>${$("#w-res").children.length?"Back to latest results":"Close"}</button></div>`+evs.map(e=>{
+    const o=e.outcome&&e.outcome.h?e.outcome:null, done=(e.end||e.date)<today;
+    return`<div><h4>${esc(e.title)}</h4></div>${o?outcomeBox(o):`<p style="margin:0;color:var(--soft)">${done?"Outcome not posted yet.":esc(e.what||"")}</p>`}<a class="more" href="#w-${esc(e.id)}">Full entry</a>`}).join("");
+  box.hidden=false;$("#w-res-w").hidden=true;
+}
+document.addEventListener("click",e=>{
+  const a=e.target.closest("#w-months a.c.ev[data-day]");
+  if(a){e.preventDefault();WDAY=WDAY===a.dataset.day?null:a.dataset.day;renderDay();
+    if(WDAY){const box=$("#w-day"),r=box.getBoundingClientRect();if(r.bottom>innerHeight)box.scrollIntoView({block:"nearest",behavior:"smooth"})}return}
+  if(e.target.closest("[data-wclose]")){WDAY=null;renderDay()}
+});
 
 /* people: state and name filters */
 $("#p-st").addEventListener("change",e=>{PS.st=e.target.value;try{PS.st?localStorage.setItem("peopleState",PS.st):localStorage.removeItem("peopleState")}catch(_){}renderNames()});
