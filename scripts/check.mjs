@@ -68,6 +68,15 @@ if (L) {
   }
   if (W.length && !W.some(e => !e.date || (e.end || e.date) >= today)) warn.push("What to watch: every date has passed; add the next ones to data/curated.json");
 
+  // Vehicle swaps (data/vehicles.json, hand-edited): each listed bill should be on the site
+  let VJ = null;
+  try { VJ = JSON.parse(readFileSync(new URL("../data/vehicles.json", import.meta.url), "utf8")); } catch { warn.push("data/vehicles.json is missing or isn't valid JSON"); }
+  for (const e of VJ?.vehicles || []) {
+    const b = bills.find(x => x.id === e.bill);
+    if (!b) warn.push(`vehicles.json lists ${e.bill}, but it isn't on the site yet`);
+    else if (!b.vehicle) warn.push(`${b.num} is listed in vehicles.json but has no vehicle note`);
+  }
+
   // Roll calls with member votes (site/data/rollcalls.json, from Voteview)
   // it sits next to ledger.json
   const rp = typeof path === "string" ? path.replace(/[^/\\]*$/, "rollcalls.json") : new URL("rollcalls.json", path);

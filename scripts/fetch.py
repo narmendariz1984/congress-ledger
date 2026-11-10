@@ -39,6 +39,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CURATED = ROOT / "data" / "curated.json"
+VEHICLES = ROOT / "data" / "vehicles.json"     # hand-edited vehicle swaps; nothing writes it
 TRACKED = ROOT / "data" / "tracked.json"          # bills found by discovery
 OUT = ROOT / "site" / "data" / "ledger.json"
 
@@ -845,6 +846,48 @@ def data_changed(new: str, old: str) -> bool:
     return core(new) != core(old)
 
 
+# --- vehicle swaps: a bill's number carrying a different bill's text ----------------------
+BILL_ID = re.compile(r"^(\d+)-([a-z]+)(\d+)$")
+SOURCE_NAMES = {"dailypress.senate.gov": "Senate Daily Press", "congress.gov": "Congress.gov",
+                "senate.gov": "U.S. Senate", "clerk.house.gov": "Clerk of the House"}
+
+
+def bill_num(bid: str) -> str:
+    """"119-s5653" -> "S. 5653"."""
+    m = BILL_ID.match(bid or "")
+    return f"{TYPE_LABEL.get(m.group(2), m.group(2).upper())} {m.group(3)}" if m else bid
+
+
+def source_name(url: str) -> str:
+    host = re.sub(r"^www\.", "", urllib.parse.urlparse(url or "").netloc.lower())
+    return SOURCE_NAMES.get(host) or host or "Source"
+
+
+def load_vehicles(raw: dict) -> dict[str, dict]:
+    """{vehicle bill id: entry} from data/vehicles.json, skipping entries that don't read."""
+    out = {}
+    for e in (raw or {}).get("vehicles") or []:
+        bid, carries = (e or {}).get("bill") or "", (e or {}).get("carries") or ""
+        since, src = (e or {}).get("since") or "", (e or {}).get("source") or ""
+        if not BILL_ID.match(bid) or not BILL_ID.match(carries):
+            warn(f"vehicles.json: bill and carries need ids like 119-hr2347 (got {bid!r}, {carries!r})")
+            continue
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", since) or not src.startswith("https://"):
+            warn(f"vehicles.json: {bid} needs since (YYYY-MM-DD) and an https source")
+            continue
+        out[bid] = e
+    return out
+
+
+def vehicle_note(e: dict) -> tuple[dict, dict]:
+    """(the bill's "vehicle" field, its footnote) for one vehicles.json entry."""
+    d = dt.date.fromisoformat(e["since"])
+    num = bill_num(e["carries"])
+    v = {"carries": e["carries"], "num": num, "label": (e.get("label") or "").strip(), "since": e["since"], "fn": "veh"}
+    fn = {"src": source_name(e["source"]), "t": f"vehicle for {num} since {d:%b} {d.day}, {d.year}", "u": e["source"]}
+    return v, fn
+
+
 def load_json(p: Path, default):
     try:
         return json.loads(p.read_text(encoding="utf-8"))
@@ -856,6 +899,7 @@ def main() -> int:
     mode = os.environ.get("MODE", "auto").lower()
     now = dt.datetime.now(dt.timezone.utc)
     curated = load_json(CURATED, {"meta": {}, "bills": {}})
+    vehicles = load_vehicles(load_json(VEHICLES, {}))
     meta = curated.get("meta") or {}
     prev = load_json(OUT, {})
     tracked = load_json(TRACKED, {"bills": [], "lastDiscovery": None})
@@ -982,6 +1026,14 @@ def main() -> int:
             if m and bid not in wanted:
                 wanted[bid] = (int(m.group(1)), m.group(2), int(m.group(3)))
         curated_ids = set((curated.get("bills") or {}).keys())
+        # vehicles are always kept, whatever the keep rule says about how they passed
+        for bid in vehicles:
+            m = BILL_ID.match(bid)
+            wanted.setdefault(bid, (int(m.group(1)), m.group(2), int(m.group(3))))
+            if bid not in tracked["bills"]:
+                tracked["bills"].append(bid)
+            if bid in (tracked.get("dropped") or []):
+                tracked["dropped"].remove(bid)
 
         # Only re-download what could have changed: curated bills, anything Congress.gov
         # updated since the last check, new or never-fetched bills, and a few of the
@@ -1025,7 +1077,7 @@ def main() -> int:
                     warn(f"Congress.gov isn't responding ({BREAKER_LIMIT} bills in a row failed); stopping bill downloads this run")
                 continue
             breaker.ok()
-            if bid not in curated_ids and not fresh.get("strong"):
+            if bid not in curated_ids and bid not in vehicles and not fresh.get("strong"):
                 # discovered but only committee-level activity: stop tracking
                 auto_by_id.pop(bid, None)
                 if bid in tracked["bills"]:
@@ -1066,6 +1118,8 @@ def main() -> int:
             auto.pop("recorded", None)
         b = merge(auto, cur)
         b["id"] = bid
+        if bid in vehicles:
+            b["vehicle"], b.setdefault("fns", {})["veh"] = vehicle_note(vehicles[bid])
         if b.get("congress") and b.get("congress") < congress and not b.get("reference") and b.get("auto"):
             b["reference"] = True
         bills.append(b)

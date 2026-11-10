@@ -382,6 +382,41 @@ class Schedule(unittest.TestCase):
         self.assertEqual(F.plan("votes", self.at(9, 3), {}, None), (False, True))
         self.assertEqual(F.plan("offline", self.at(9, 12), self.CAL, None), (False, False))
 
+
+class Vehicles(unittest.TestCase):
+    """data/vehicles.json: a bill's number carrying a different bill's text."""
+    ENTRY = {"bill": "119-hr2347", "carries": "119-s5653", "label": "Bipartisan American Affordability and Jobs Act",
+             "since": "2026-11-09", "source": "https://www.dailypress.senate.gov/monday-november-9-2026/"}
+
+    def test_the_repo_file_reads_and_lists_hr2347(self):
+        raw = json.loads((Path(__file__).resolve().parent.parent / "data" / "vehicles.json").read_text())
+        self.assertIn("119-hr2347", F.load_vehicles(raw))
+
+    def test_note_and_footnote(self):
+        v, fn = F.vehicle_note(self.ENTRY)
+        self.assertEqual(v, {"carries": "119-s5653", "num": "S. 5653", "label": "Bipartisan American Affordability and Jobs Act",
+                             "since": "2026-11-09", "fn": "veh"})
+        self.assertEqual(fn, {"src": "Senate Daily Press", "t": "vehicle for S. 5653 since Nov 9, 2026",
+                              "u": "https://www.dailypress.senate.gov/monday-november-9-2026/"})
+
+    def test_bill_numbers_read_naturally(self):
+        self.assertEqual([F.bill_num(x) for x in ("119-s5653", "119-hr2347", "119-hjres104", "bad")],
+                         ["S. 5653", "H.R. 2347", "H.J.Res. 104", "bad"])
+
+    def test_unknown_source_falls_back_to_its_host(self):
+        self.assertEqual(F.source_name("https://www.example.org/x"), "example.org")
+
+    def test_bad_entries_are_skipped_not_fatal(self):
+        bad = [{**self.ENTRY, "bill": "hr2347-119"}, {**self.ENTRY, "since": "11/9/2026"},
+               {**self.ENTRY, "source": "http://insecure.example"}, None, {}]
+        F.WARN.clear()
+        self.assertEqual(F.load_vehicles({"vehicles": bad + [self.ENTRY]}), {"119-hr2347": self.ENTRY})
+        self.assertEqual(len(F.WARN), 5)  # one per bad entry
+
+    def test_missing_or_empty_file_means_no_vehicles(self):
+        self.assertEqual(F.load_vehicles({}), {})
+        self.assertEqual(F.load_vehicles(None), {})
+
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
     import datetime as _dt

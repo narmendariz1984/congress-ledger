@@ -205,6 +205,12 @@ details.bill[open]>summary{border-bottom:1px solid var(--rule)}
 .pipe-l{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font:12.5px var(--f-body);color:var(--muted)}
 .pipe-l span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ref{font:600 10.5px var(--f-mono);letter-spacing:.06em;color:var(--muted);border:1px dashed var(--rule);padding:1px 5px;border-radius:3px}
+/* vehicle swap: this bill's number is carrying a different bill's text */
+.vb{font:600 10.5px var(--f-mono);letter-spacing:.06em;color:var(--accent);border:1px solid var(--accent);padding:1px 5px;border-radius:3px;white-space:nowrap}
+.veh{grid-column:2/-1;font-size:14px;line-height:1.4;color:var(--soft);overflow-wrap:anywhere}
+.veh .vb{margin-right:4px;vertical-align:1px}
+.veh .bl-num{font-family:var(--f-mono);font-weight:600;color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .bbody{padding:14px 18px 16px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;min-width:0}
 .bbody>*{min-width:0}
 .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:10px 18px;font-size:13.5px}
@@ -405,7 +411,7 @@ details.wpast .wi{opacity:.75}
   .search{flex-basis:100%}
   .session>div:last-child:nth-child(odd){grid-column:1/-1}
   details.bill>summary{grid-template-columns:1fr auto}
-  .bnum{grid-column:1/2} .btitle{grid-column:1/3;order:3} .bmeta{grid-column:1/3;order:4}
+  .bnum{grid-column:1/2} .btitle{grid-column:1/3;order:3} .veh{grid-column:1/3;order:3} .bmeta{grid-column:1/3;order:4}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
   .tl li{grid-template-columns:78px minmax(0,1fr)} .tl .ch{display:none}
 }
@@ -619,7 +625,7 @@ details.wpast .wi{opacity:.75}
       </div></div>
       <div><h3 class="kh">Tracked when</h3>
         <p style="margin:0;font-size:14.5px">A bill hits the floor: a recorded passage vote, a cloture or discharge fight, a veto or it becomes law. Hand-picked bills show at any stage.</p>
-        <div class="parties"><span><span class="pb" style="--c:var(--dem)">D</span> Democrat</span><span><span class="pb" style="--c:var(--rep)">R</span> Republican</span><span><span class="pb" style="--c:var(--ind)">I</span> Independent</span><span><span class="ref">119 REF</span> earlier Congress</span></div>
+        <div class="parties"><span><span class="pb" style="--c:var(--dem)">D</span> Democrat</span><span><span class="pb" style="--c:var(--rep)">R</span> Republican</span><span><span class="pb" style="--c:var(--ind)">I</span> Independent</span><span><span class="ref">119 REF</span> earlier Congress</span><span><span class="vb">VEHICLE</span> this bill's number is carrying a different bill's text</span></div>
       </div>
     </div>
   </div>
@@ -855,7 +861,7 @@ function matches(b){
   if(F.area!=="all"&&b.area!==F.area)return false;
   const sq=F.q&&stateQuery(F.q);
   if(sq){if(!stateHits(b,sq).length)return false}
-  else if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,nm(b),b.area,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
+  else if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,nm(b),b.area,b.vehicle&&b.vehicle.num,b.vehicle&&b.vehicle.label,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
   return true;
 }
 
@@ -908,6 +914,7 @@ function billCard(b){
     <span class="bnum">${esc(b.num)}</span>
     <span class="btitle" title="${esc(b.title)}">${esc(nm(b))}</span>
     <span>${chip(b.status)}</span>
+    ${vehicleLine(b)}
     <span class="bmeta">${b.reference?`<span class="ref">${esc(b.congress)} REF</span>`:""}${b.auto?`<span class="ref" title="Facts from Congress.gov, not yet reviewed">AUTO</span>`:""}<span>${esc(b.area||"")}</span><span>${pb(sp.p)} ${esc(sp.n||"Sponsor —")}</span>${b.path?`<span>${esc(b.path)}</span>`:""}</span>
     <span class="pipe" aria-label="Stage reached: ${esc(STAGES[b.reached||0])}">${pipe(b)}</span>
     ${lastAct(b)}
@@ -930,6 +937,13 @@ function billCard(b){
   </div></details>`;
 }
 
+/* vehicle swap, from data/vehicles.json: the badge, the bill it carries (linked when it's on the site) and its source */
+function vehicleLine(b){
+  const v=b.vehicle;if(!v||!v.num)return"";
+  const on=bills.some(x=>x.id===v.carries);
+  const num=on?`<a href="#b-${esc(v.carries)}" data-open="${esc(v.carries)}" class="bl"><span class="bl-num">${esc(v.num)}</span></a>`:`<span class="bl-num">${esc(v.num)}</span>`;
+  return`<span class="veh"><span class="vb">VEHICLE</span><span aria-hidden="true">→</span><span class="sr">carrying the text of</span> ${num} ${esc(v.label||"")}${sup(b,v.fn)}</span>`;
+}
 function stateLine(b){
   const sq=F.q&&stateQuery(F.q);if(!sq)return"";
   const hits=stateHits(b,sq);if(!hits.length)return"";
@@ -1301,7 +1315,12 @@ $("#v-ch").addEventListener("click",e=>{const btn=e.target.closest("button");if(
 $("#t-out thead").addEventListener("click",e=>{const btn=e.target.closest("button");if(!btn)return;const k=btn.dataset.k;if(sortK===k)sortDir=sortDir==="asc"?"desc":"asc";else{sortK=k;sortDir=k==="date"?"desc":"asc"}renderOutcomes()});
 document.addEventListener("click",e=>{
   const a=e.target.closest("a[data-open]");
-  if(a){const el=ensureBill(a.dataset.open);if(el){el.open=true;$("#bills").open=true}}
+  if(!a)return;
+  // a link in a bill's header row would also toggle that bill; open the target and jump instead
+  const inRow=a.closest("details.bill>summary");
+  if(inRow)e.preventDefault();
+  const el=ensureBill(a.dataset.open);if(el){el.open=true;$("#bills").open=true}
+  if(inRow){const id=(a.getAttribute("href")||"").slice(1),t=id&&document.getElementById(id);if(t)requestAnimationFrame(()=>t.scrollIntoView({block:"center"}))}
 });
 
 /* tabs: one page, hash routes (#bills, #how, or any element id inside a tab) */

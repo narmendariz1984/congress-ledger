@@ -12279,6 +12279,11 @@
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
+    },
+    "veh": {
+     "src": "Senate Daily Press",
+     "t": "vehicle for S. 5653 since Nov 9, 2026",
+     "u": "https://www.dailypress.senate.gov/monday-november-9-2026/"
     }
    },
    "id": "119-hr2347",
@@ -12369,7 +12374,14 @@
    ],
    "title": "Survivor Justice Tax Prevention Act",
    "type": "hr",
-   "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347",
+   "vehicle": {
+    "carries": "119-s5653",
+    "fn": "veh",
+    "label": "Bipartisan American Affordability and Jobs Act",
+    "num": "S. 5653",
+    "since": "2026-11-09"
+   }
   },
   {
    "area": "Native Americans",

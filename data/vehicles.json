@@ -1,0 +1,12 @@
+{
+ "_readme": "Hand-edited. Bills whose number is carrying a different bill's text (a 'vehicle swap'). One entry per swap: bill is the vehicle, carries is the bill whose text it now holds, label names that bill, since is the date the swap was first reported (YYYY-MM-DD), source is a page that says so. Bill ids are <congress>-<type><number>, as in curated.json. Every bill listed here is always kept on the site. Nothing writes to this file automatically.",
+ "vehicles": [
+  {
+   "bill": "119-hr2347",
+   "carries": "119-s5653",
+   "label": "Bipartisan American Affordability and Jobs Act",
+   "since": "2026-11-09",
+   "source": "https://www.dailypress.senate.gov/monday-november-9-2026/"
+  }
+ ]
+}
