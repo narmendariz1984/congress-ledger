@@ -3331,7 +3331,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-10T04:19:31+00:00",
+   "fetched": "2026-11-10T12:58:55+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -7846,7 +7846,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-09T22:25:37+00:00",
+   "fetched": "2026-11-10T12:58:55+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12273,7 +12273,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-10T12:58:55+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12284,11 +12284,17 @@
    "id": "119-hr2347",
    "introduced": "2025-03-25",
    "latest": {
-    "actionDate": "2026-09-30",
-    "text": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S5241)"
+    "actionDate": "2026-11-09",
+    "text": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257."
    },
    "num": "H.R. 2347",
    "number": 2347,
+   "passed": {
+    "H": {
+     "d": "2026-04-27",
+     "how": "voice"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Lloyd Smucker",
@@ -12345,6 +12351,19 @@
      "ch": "S",
      "d": "2026-09-30",
      "e": "Motion to proceed to consideration of measure made in Senate. (CR S5241)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-09",
+     "e": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257.",
+     "fn": "cg",
+     "v": "73–25"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-09",
+     "e": "Motion to proceed to measure considered in Senate.",
      "fn": "cg"
     }
    ],
@@ -21180,7 +21199,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-10T04:19:31+00:00",
+   "fetched": "2026-11-10T12:58:55+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -25316,7 +25335,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-10T04:19:31+00:00",
+   "fetched": "2026-11-10T12:58:55+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -39856,7 +39875,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-10T04:19:31+00:00",
+   "fetched": "2026-11-10T12:58:55+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -39947,7 +39966,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-10T04:19:31+00:00",
+   "fetched": "2026-11-10T12:58:55+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -47895,7 +47914,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-10T04:19:31+00:00",
+ "generatedAt": "2026-11-10T12:58:55+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
