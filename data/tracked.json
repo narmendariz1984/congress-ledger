@@ -465,19 +465,36 @@
   "119-sjres95",
   "119-sjres99",
   "119-hr7730",
-  "119-hr1945"
+  "119-hr1945",
+  "119-hr8552",
+  "119-hr9614",
+  "119-hr9613",
+  "119-hr9612",
+  "119-hr3978",
+  "119-s3589",
+  "119-hr1703"
  ],
- "lastDiscovery": "2026-11-10T12:58:55+00:00",
+ "lastDiscovery": "2026-11-10T19:25:06+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
  },
  "backfill": {
-  "queue": [],
+  "queue": [
+   "119-hr4405",
+   "119-hr8552",
+   "119-hr9612",
+   "119-hr9613",
+   "119-hr9614",
+   "119-hr997",
+   "119-s3385",
+   "119-s3386",
+   "119-s3589"
+  ],
   "since": "2025-01-03",
   "queued": "2026-11-05T07:11:10+00:00",
   "reason": "re-download for cosponsor states",
-  "finished": "2026-11-08T09:21:37+00:00"
+  "pausedUntil": "2026-11-10T20:25:06+00:00"
  },
  "rule": "recorded-vote-v3",
  "schema": 2,
@@ -843,8 +860,10 @@
   "119-s1528",
   "119-s503",
   "119-s3041",
-  "119-s3589"
+  "119-s3589",
+  "119-hr1522"
  ],
  "statusRule": "killed-v2",
- "outcomeRule": "outcome-v2"
+ "outcomeRule": "outcome-v2",
+ "congressDown": "2026-11-10T19:25:06+00:00"
 }

@@ -3331,7 +3331,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-10T12:58:55+00:00",
+   "fetched": "2026-11-10T19:25:06+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -7528,6 +7528,127 @@
    "title": "To require the Secretary of Homeland Security to designate Haiti for temporary protected status.",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/1689"
+  },
+  {
+   "area": "Health care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 4,
+    "i": 0,
+    "r": 6,
+    "st": [
+     "DC",
+     "FL",
+     "MA",
+     "NJ",
+     "NY",
+     "PA",
+     "WA",
+     "WI"
+    ],
+    "t": 10
+   },
+   "fetched": "2026-11-10T19:25:06+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1703"
+    }
+   },
+   "id": "119-hr1703",
+   "introduced": "2025-02-27",
+   "latest": {
+    "actionDate": "2026-11-09",
+    "text": "Presented to President."
+   },
+   "num": "H.R. 1703",
+   "number": 1703,
+   "passed": {
+    "H": {
+     "d": "2026-07-20",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-30",
+     "how": "voice"
+    }
+   },
+   "reached": 5,
+   "sponsor": {
+    "n": "John Joyce",
+    "p": "R",
+    "s": "PA-13"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-05-21",
+     "e": "Ordered to be Reported by the Yeas and Nays: 45 - 0.",
+     "fn": "cg",
+     "v": "45–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-18",
+     "e": "Committee on Ways and Means discharged.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-18",
+     "e": "Reported (Amended) by the Committee on Energy and Commerce. H. Rept. 119-753, Part I.",
+     "fn": "cg",
+     "v": "119–753"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-20",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-20",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H4636-4637)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-20",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H4636-4637)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed Senate without amendment by Voice Vote. (consideration: CR S5299)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Senate Committee on Finance discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Choices for Increased Mobility Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/1703"
   },
   {
    "area": "Science, Technology, Communications",
@@ -19458,6 +19579,107 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/3944"
   },
   {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 8,
+    "i": 0,
+    "r": 20,
+    "st": [
+     "AL",
+     "CA",
+     "CO",
+     "FL",
+     "GA",
+     "IA",
+     "IN",
+     "KS",
+     "LA",
+     "MA",
+     "MO",
+     "ND",
+     "NY",
+     "OH",
+     "TN",
+     "TX",
+     "VA",
+     "WA"
+    ],
+    "t": 28
+   },
+   "fetched": "2026-11-10T19:25:06+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/3978"
+    }
+   },
+   "id": "119-hr3978",
+   "introduced": "2025-06-12",
+   "latest": {
+    "actionDate": "2026-11-09",
+    "actionTime": "19:00:03",
+    "text": "Motion to reconsider laid on the table Agreed to without objection."
+   },
+   "num": "H.R. 3978",
+   "number": 3978,
+   "passed": {
+    "H": {
+     "d": "2026-11-09",
+     "how": "roll",
+     "roll": 315,
+     "v": "397–2"
+    }
+   },
+   "reached": 3,
+   "sponsor": {
+    "n": "Robert E. Latta",
+    "p": "R",
+    "s": "OH-5"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-06-12",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-05",
+     "e": "Reported (Amended) by the Committee on Energy and Commerce. H. Rept. 119-871.",
+     "fn": "cg",
+     "v": "119–871"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 397 - 2 (Roll no. 315). (text: CR H6096)",
+     "fn": "cg",
+     "v": "397–2"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 397 - 2 (Roll no. 315).",
+     "fn": "cg",
+     "v": "397–2"
+    }
+   ],
+   "title": "Nuclear REFUEL (Recycling Efficient Fuels Utilizing Expedited Licensing) Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/3978"
+  },
+  {
    "area": "Budget & appropriations",
    "auto": true,
    "congress": 119,
@@ -25347,7 +25569,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-10T12:58:55+00:00",
+   "fetched": "2026-11-10T19:25:06+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -47926,7 +48148,7 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-10T12:58:55+00:00",
+ "generatedAt": "2026-11-10T19:25:06+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -48998,6 +49220,19 @@
   "senate": [
    {
     "ch": "S",
+    "d": "2026-11-09",
+    "issue": "HR2347",
+    "measure": "HR2347",
+    "n": 257,
+    "n_": "25",
+    "q": "On Cloture on the Motion to Proceed",
+    "result": "Cloture on the Motion to Proceed Agreed to",
+    "title": "A bill to amend the Internal Revenue Code of 1986 to exclude from gross income any damages, other than punitive damages, received on account of any sexual acts or sexual contact.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm",
+    "y": "73"
+   },
+   {
+    "ch": "S",
     "d": "2026-09-30",
     "issue": "PN1129",
     "measure": "PN1129",
@@ -49762,21 +49997,13 @@
     "title": "Kara Marie Westercamp, of Virginia, to be a Judge of the United States Court of International Trade",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00198.htm",
     "y": "49"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-15",
-    "issue": "PN9304",
-    "measure": "PN9304",
-    "n": 197,
-    "n_": "46",
-    "q": "On the Nomination",
-    "result": "Nomination Confirmed",
-    "title": "Jeffrey T. Kuntz, of Florida, to be United States District Judge for the Southern District of Florida",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00197.htm",
-    "y": "51"
    }
   ]
  },
- "warnings": []
+ "warnings": [
+  "119-hr4405: The read operation timed out",
+  "119-hr8552: The read operation timed out",
+  "119-hr9612: The read operation timed out",
+  "Congress.gov is slow; stopped bill downloads after 7 minutes, the rest wait for the next run"
+ ]
 }
