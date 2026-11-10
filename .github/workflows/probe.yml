@@ -1,0 +1,19 @@
+name: Probe vehicle swap signals (temporary)
+on:
+  push:
+    branches: [probe-vehicle-signals]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Probe Congress.gov
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        run: python probe/probe_swaps.py
