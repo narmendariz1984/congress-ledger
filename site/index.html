@@ -1301,7 +1301,7 @@ $("#ag-jump").addEventListener("change",e=>{
   paint();
 })();
 
-let VOTES={senate:[],house:[]}, CONGRESS=null;
+let VOTES={senate:[],house:[]}, LVOTES={senate:[],house:[]}, CONGRESS=null;
 let BYNUM={};
 function renderVotes(){
   BYNUM={};bills.forEach(b=>{BYNUM[numKey(b.num)]=b});
@@ -1328,6 +1328,10 @@ function renderVotes(){
     return`<span class="psplit"><span class="d">D ${dY}–${dN}</span> · <span class="r">R ${t.R.Y}–${t.R.N}</span></span>`};
   const okRes=res=>/agreed|passed|confirmed|invoked(?! not)/i.test(res)&&!/not|rejected|failed/i.test(res);
   const resChip=res=>`<span class="chip" style="--c:var(${okRes(res)?"--law":"--killed"})">${esc(res||"—")}</span>`;
+  // a passed motion to table or refer sets the measure aside, so "Passed" next to its name would mislead
+  const sideChip=(q,res)=>{const ok=okRes(res);
+    const m=/motion to (lay (it )?on the )?table/i.test(q)?["Tabled","Not tabled"]:/motion to refer/i.test(q)?["Sent to committee","Not sent to committee"]:/motion to postpone/i.test(q)?["Postponed","Not postponed"]:null;
+    return m?`<span class="chip" style="--c:var(${ok?"--killed":"--law"})" title="${esc(plain(q))}: ${esc(res)}">${m[ok?0:1]}</span>`:resChip(res)};
   const tally=v=>(+v.y||+v.n_)?`${esc(v.y)}–${esc(v.n_)}`:"";
   $("#vote-groups").innerHTML=pageG.map(g=>{
     const v0=g.votes[0], tb=BYNUM[numKey(g.measure)];
@@ -1335,7 +1339,7 @@ function renderVotes(){
     const nmTxt=mi&&mi.type==="PN"?"Nomination: "+nomName(v0.title||""):v0.title?nameOf(plain(v0.title)):(mi?mi.label:(plain(v0.q)||"Vote without a measure"));
     const label=tb?billLink(tb):mi?`<a class="bl" href="${esc(mi.url)}" target="_blank" rel="noopener" title="${esc(decodeEnt(plain(v0.title||"")))}"><span class="bl-n">${esc(nmTxt)}</span> <span class="bl-num">${esc(mi.label)}</span></a>`:`<span class="vg-m">${esc(nmTxt)}</span>`;
     const rows=g.votes.map(v=>`<tr><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">Roll ${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(plain(v.q||""))}</td><td>${resChip(String(v.result||""))}</td><td class="n">${tally(v)}</td><td>${psplit(v)}</td></tr>`).join("");
-    return`<details class="vg"><summary><span class="vg-ch">${g.ch==="S"?"Senate":"House"}</span><span class="vg-name">${label}</span><span class="vg-meta"><span class="mono">${fmtD(v0.d)}</span>${g.votes.length>1?` <span class="vg-n">${g.votes.length} roll calls</span>`:""}</span><span class="vg-res">${resChip(String(v0.result||""))}</span></summary><div class="tbl"><table><thead><tr><th>Date</th><th>Roll</th><th>Question</th><th>Result</th><th>Tally</th><th>By party</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
+    return`<details class="vg"><summary><span class="vg-ch">${g.ch==="S"?"Senate":"House"}</span><span class="vg-name">${label}</span><span class="vg-meta"><span class="mono">${fmtD(v0.d)}</span>${g.votes.length>1?` <span class="vg-n">${g.votes.length} roll calls</span>`:""}</span><span class="vg-res">${sideChip(String(v0.q||""),String(v0.result||""))}</span></summary><div class="tbl"><table><thead><tr><th>Date</th><th>Roll</th><th>Question</th><th>Result</th><th>Tally</th><th>By party</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
   }).join("")||`<p class="muted">${!loaded?"Loading…":!all.length?"No recorded votes yet this session":V.kind==="nom"&&V.ch==="H"?"Only the Senate votes on nominations.":vq?`No votes match “${esc(V.q)}”.`:"No votes of this kind in this chamber."}</p>`;
 }
 
@@ -1425,7 +1429,7 @@ async function load(){
     const r=await fetch("data/ledger.json?t="+Date.now(),{cache:"no-store"});
     if(!r.ok)throw new Error("HTTP "+r.status);
     const L=await r.json();
-    bills=(L.bills||[]).filter(b=>b&&b.id);meta=L.meta||{};VOTES=L.votes||{senate:[],house:[]};CONGRESS=L.congress||null;
+    bills=(L.bills||[]).filter(b=>b&&b.id);meta=L.meta||{};VOTES=L.votes||{senate:[],house:[]};LVOTES=VOTES;CONGRESS=L.congress||null;
     loaded=true;statusLine.classList.remove("warn");
     statusLine.textContent=L.generatedAt?`Last change ${fmtStamp(L.generatedAt)} · checked daily, more often in session`:"";
     const out=$("#outage"),since=L.outage&&L.outage.since;
@@ -1456,7 +1460,11 @@ async function fetchRollcalls(){
     const cg=R.congress||CONGRESS||119;
     const url=v=>v.ch==="S"?`https://www.senate.gov/legislative/LIS/roll_call_votes/vote${cg}${v.sess}/vote_${cg}_${v.sess}_${String(v.n).padStart(5,"0")}.htm`:`https://clerk.house.gov/Votes/${String(v.d).slice(0,4)}${v.n}`;
     const conv=v=>({ch:v.ch,n:v.n,d:v.d,q:v.q,measure:v.m,title:v.t,result:v.res,y:String(v.y),n_:String(v.no),v:v.v,u:url(v),rc:v});
-    VOTES={senate:R.votes.filter(v=>v.ch==="S").map(conv),house:R.votes.filter(v=>v.ch==="H").map(conv)};
+    // Voteview posts a few hours to a day late; keep the newer roll calls the refresh already has
+    // (House Clerk, Senate) so a vote doesn't vanish from the tab when this file loads
+    const LV=LVOTES||{}, have=new Set(R.votes.map(v=>`${v.ch}|${String(v.d).slice(0,4)}|${v.n}`));
+    const newer=(ch,list)=>(list||[]).filter(v=>v&&v.d&&v.n&&!have.has(`${ch}|${String(v.d).slice(0,4)}|${v.n}`)).map(v=>({...v,ch}));
+    VOTES={senate:[...newer("S",LV.senate),...R.votes.filter(v=>v.ch==="S").map(conv)],house:[...newer("H",LV.house),...R.votes.filter(v=>v.ch==="H").map(conv)]};
     for(const v of R.votes){if(!v.m)continue;const id=RC.billId(v.m,cg);(RC_BY_BILL[id]=RC_BY_BILL[id]||[]).push(v)}
     renderVotes();renderNames();refreshCredits();
   }catch(e){console.warn("roll calls unavailable",e);renderVotes()}
