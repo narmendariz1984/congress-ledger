@@ -48262,7 +48262,28 @@
   }
  ],
  "congress": 119,
- "generatedAt": "2026-11-11T03:17:38+00:00",
+ "floor": {
+  "house": {
+   "items": [
+    {
+     "how": "rule",
+     "id": "119-hr1013",
+     "num": "H.R. 1013",
+     "t": "Retirement Fairness for Charities and Educational Institutions Act of 2025"
+    },
+    {
+     "how": "other",
+     "id": "",
+     "num": "",
+     "t": "Impeaching Peter Brian Hegseth, Secretary of Defense, for high crimes and misdemeanors."
+    }
+   ],
+   "u": "https://docs.house.gov/floor/Default.aspx?date=2026-11-09",
+   "week": "2026-11-09"
+  },
+  "senate": []
+ },
+ "generatedAt": "2026-11-11T03:32:41+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
