@@ -120,24 +120,7 @@
             "Senate 2026 schedule",
             "https://www.senate.gov/legislative/2026_schedule.htm"
           ]
-        ],
-        "outcome": {
-          "h": "Senate votes 73–25 to take up the permitting package",
-          "t": "On its first day back the Senate voted 73–25 to move ahead on the permitting package, using the number of H.R. 2347, a House-passed tax bill, as its vehicle.",
-          "bills": [
-            "119-hr2347"
-          ],
-          "src": [
-            [
-              "Senate Daily Press",
-              "https://www.dailypress.senate.gov/monday-november-9-2026/"
-            ],
-            [
-              "Congress.gov",
-              "https://www.congress.gov/bill/119th-congress/house-bill/2347/all-actions"
-            ]
-          ]
-        }
+        ]
       },
       {
         "id": "gop-leaders",

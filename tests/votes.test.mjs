@@ -70,3 +70,65 @@ test("real data, when present: every vote string matches its chamber's member li
     assert.ok(v.v === "" || v.v.length === n, `${v.ch} roll ${v.r}: ${v.v.length} vs ${n} members`);
   }
 });
+
+// ---- What happened: floor decisions for What to watch ----
+const vote = (o) => ({ ch: "H", n: 317, d: "2026-11-10", q: "On Motion to Refer", result: "Passed", y: "211", n_: "204", measure: "HRES 1655",
+  title: "Impeaching Peter Brian Hegseth, Secretary of Defense, for high crimes and misdemeanors", ...o });
+
+test("decisions: impeachment, censure, expulsion and war powers votes are always in", () => {
+  assert.equal(RC.notable(vote()), "special");
+  assert.equal(RC.headline(vote(), RC.subject(vote().title)), "House sends Hegseth impeachment resolution to committee, 211–204");
+  const tabled = vote({ q: "On Motion to Table", y: "232", n_: "147", title: "Impeaching Donald John Trump, President of the United States, for high crimes" });
+  assert.equal(RC.headline(tabled, RC.subject(tabled.title)), "House tables Trump impeachment resolution, 232–147");
+  const censure = vote({ q: "On Agreeing to the Resolution", y: "224", n_: "198", measure: "HRES 189", title: "Censuring Representative Al Green of Texas" });
+  assert.equal(RC.headline(censure, RC.subject(censure.title)), "House censures Rep. Al Green, 224–198");
+  const failedCensure = vote({ q: "On Agreeing to the Resolution", result: "Failed", y: "209", n_: "214", measure: "HRES 888",
+    title: "Censuring and condemning Delegate Stacey Plaskett and removing her from the Permanent Select Committee" });
+  assert.equal(RC.headline(failedCensure, RC.subject(failedCensure.title)), "House rejects censure of Del. Stacey Plaskett, 209–214");
+  const wp = { ch: "S", n: 240, d: "2026-09-24", q: "On the Concurrent Resolution", result: "Concurrent Resolution Rejected", y: 49, no: 50, m: "HCONRES89",
+    t: "A concurrent resolution directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities against the Islamic Republic of Iran that have not been authorized by Congress." };
+  assert.equal(RC.headline(wp, RC.subject(wp.t)), "Senate rejects Iran war powers resolution, 49–50");
+});
+
+test("decisions: the rule that sets up a debate is not a decision", () => {
+  assert.equal(RC.notable(vote({ q: "On Agreeing to the Resolution", measure: "HRES 1650", title: "Providing for consideration of the bill (H.R. 1013)" })), null);
+});
+
+test("decisions: close passage is in, lopsided passage is out", () => {
+  const close = vote({ q: "On Passage", measure: "HR 10326", title: "PROOF Act", y: "217", n_: "207" });
+  assert.equal(RC.notable(close), "close");
+  assert.equal(RC.headline(close, "PROOF Act"), "House passes PROOF Act, 217–207");
+  assert.equal(RC.notable(vote({ q: "On Motion to Suspend the Rules and Pass", measure: "HR 9612", title: "American Enrichment Deployment Act", y: "394", n_: "3" })), null);
+});
+
+test("decisions: a bill that fails is in, however lopsided", () => {
+  const f = vote({ q: "On Passage", result: "Failed", measure: "HR 1329", title: "Smithsonian American Women's History Museum Act", y: "204", n_: "216" });
+  assert.equal(RC.notable(f), "failed");
+  assert.equal(RC.headline(f, "Smithsonian American Women's History Museum Act"), "House rejects Smithsonian American Women's History Museum Act, 204–216");
+});
+
+test("decisions: Senate cloture on legislation, not on nominations", () => {
+  const c = { ch: "S", n: 257, d: "2026-11-09", q: "On Cloture on the Motion to Proceed", result: "Cloture on the Motion to Proceed Agreed to", y: 73, no: 25, m: "HR2347", t: "A bill to amend the tax code" };
+  assert.equal(RC.notable(c), "cloture");
+  assert.equal(RC.headline(c, "Bipartisan American Affordability and Jobs Act (in H.R. 2347)"), "Senate advances Bipartisan American Affordability and Jobs Act (in H.R. 2347), 73–25");
+  assert.equal(RC.headline({ ...c, result: "Cloture on the Motion to Proceed Rejected", y: 57, no: 43 }, "Ratepayer Protection Act"), "Senate fails to advance Ratepayer Protection Act, 57–43");
+  assert.equal(RC.notable({ ...c, m: "PN117", q: "On the Cloture Motion" }), null);
+});
+
+test("decisions: veto overrides, joint resolutions pass and concurrence names the other chamber", () => {
+  const ov = vote({ q: "Passage, Objections of the President To The Contrary Notwithstanding", result: "Failed", measure: "HR 131", title: "Finish the Arkansas Valley Conduit Act", y: "248", n_: "177" });
+  assert.equal(RC.notable(ov), "veto");
+  assert.equal(RC.headline(ov, "Finish the Arkansas Valley Conduit Act"), "House fails to override veto of Finish the Arkansas Valley Conduit Act, 248–177");
+  const jr = vote({ q: "On Passage", measure: "HJRES 213", title: "Providing for congressional disapproval", y: "214", n_: "208" });
+  assert.equal(RC.headline(jr, RC.subject(jr.title, "Overturn EPA rule: Nonroad Engines")), "House passes resolution to overturn EPA rule: Nonroad Engines, 214–208");
+  const cc = vote({ q: "On Motion to Concur in the Senate Amendments", measure: "HR 5334", title: "X", y: "262", n_: "159" });
+  assert.equal(RC.headline(cc, "Early Educators Act"), "House accepts the Senate version of Early Educators Act, 262–159");
+});
+
+test("decisions: one line per measure per day, newest first, and bad records are skipped", () => {
+  const a = vote({ n: 1, q: "On Motion to Refer", result: "Failed", y: "213", n_: "214", measure: "HRES 888", title: "Censuring and condemning Delegate Stacey Plaskett and removing her" });
+  const b = { ...a, n: 2, q: "On Agreeing to the Resolution", y: "209", n_: "214" };
+  const out = RC.decisions([a, b, null, {}, { d: "2026-01-01" }, vote({ d: "2026-11-11", n: 320 })], () => "");
+  assert.deepEqual(out.map(x => x.v.n), [320, 2]);
+  assert.equal(out[1].h, "House rejects censure of Del. Stacey Plaskett, 209–214");
+});

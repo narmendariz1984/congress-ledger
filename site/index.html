@@ -375,6 +375,13 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 .wout p{margin:0;color:var(--soft);font-size:15px}
 .wout .wsrc,.wout .wbills{font-size:13.5px}
 .wres{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+/* on the House floor this week (Majority Leader's schedule): bills under a rule and privileged items */
+.wfloor{display:grid;gap:6px;padding:10px 0 4px;border-top:1px solid var(--rule)}
+.wfloor h3{margin:0;font-size:15px;font-weight:700}
+.wfloor ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.wfloor li{font-size:15px;line-height:1.4;color:var(--soft)}
+.wfloor li .how{font:600 11.5px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-left:6px;white-space:nowrap}
+.wfloor .wsrc{font-size:13.5px}
 /* a tapped calendar day opens here, right under the calendar */
 .wday{display:grid;gap:10px;padding:14px 16px;border:1px solid var(--rule);border-top:3px solid var(--red);border-radius:0 0 8px 8px;background:var(--card)}
 .wday-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 14px}
@@ -589,6 +596,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
     <div class="wresw" id="w-res-w" hidden><h3 class="wsub">What happened</h3><ol class="wres" id="w-res"></ol></div>
     <div class="wday" id="w-day" hidden aria-live="polite"></div>
     <div class="mkey"><span><i style="background:var(--red)"></i>Key date</span><span><i style="background:color-mix(in srgb,var(--moving) 30%,transparent)"></i>House or Senate in session</span><span><i style="box-shadow:inset 0 0 0 2px var(--ink)"></i>Today</span></div>
+    <div class="wfloor" id="w-floor" hidden></div>
     <ol class="wlist" id="w-list"></ol>
     <h3 class="wsub" id="w-undated-h">Date not set yet</h3>
     <ol class="wlist" id="w-undated"></ol>
@@ -1200,14 +1208,67 @@ function monthGrid(y,m,evByDay,inSession,today){
     const k=`${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`, ev=evByDay[k];
     const cls=["c",inSession.has(k)?"in":"",ev?"ev":"",k===today?"today":"",k<today?"past":""].filter(Boolean).join(" ");
     const label=`${MONTH_FULL[m]} ${d}${ev?": "+ev.map(e=>e.title+(e.outcome&&e.outcome.h?` (what happened: ${e.outcome.h})`:"")).join("; "):""}${inSession.has(k)?" (in session)":""}`;
-    h+=ev?`<a class="${cls}" href="#w-${esc(ev[0].id)}" data-day="${k}" title="${esc(label)}" aria-label="${esc(label)}">${d}</a>`:`<span class="${cls}" title="${esc(label)}">${d}</span>`;
+    const tgt=ev&&(ev.find(e=>!e.auto||e.auto==="ahead")||null);
+    h+=ev?`<a class="${cls}" href="${tgt?`#w-${esc(tgt.id)}`:"#watch"}" data-day="${k}" title="${esc(label)}" aria-label="${esc(label)}">${d}</a>`:`<span class="${cls}" title="${esc(label)}">${d}</span>`;
   }
   return`<div class="month"><h3>${MONTH_FULL[m]} ${y}</h3><div class="mgrid">${h}</div></div>`;
 }
+/* automatic What to watch items: floor decisions from the roll calls (past) and expected Senate
+   cloture votes (ahead). Built from data the site already has; a problem here only drops them. */
+let WALL=[];
+function autoWatch(today){
+  const out=[];
+  try{
+    const byNum={};bills.forEach(b=>{byNum[numKey(b.num)]=b});
+    const siteName=v=>{const b=byNum[numKey(v.measure)];if(!b)return"";return b.vehicle&&b.vehicle.label?`${b.vehicle.label} (in ${b.num})`:nm(b)};
+    const fallback=v=>{const mi=measureInfo(v.measure,CONGRESS);let n="";try{n=nameOf(plain(v.title||""))}catch(e){}
+      return n&&n.length<=70&&!/…|^(A|An) /.test(n)?n:(mi?mi.label:String(v.measure||""))};
+    const all=[...(VOTES.senate||[]),...(VOTES.house||[])];
+    for(const d of RC.decisions(all,v=>siteName(v)||fallback(v))){
+      if(d.date>today)continue;
+      const v=d.v, b=byNum[numKey(v.measure)], sp=v.v&&RCD?RC.split(v,RCD.members[v.ch]||[]):null, pt=v.p;
+      const split=sp?` · D ${sp.D.Y+sp.I.Y}–${sp.D.N+sp.I.N} · R ${sp.R.Y}–${sp.R.N}`
+        :pt&&pt.R&&pt.D?` · D ${(pt.D[0]||0)+((pt.I||[])[0]||0)}–${(pt.D[1]||0)+((pt.I||[])[1]||0)} · R ${pt.R[0]||0}–${pt.R[1]||0}`:"";
+      out.push({id:d.id,date:d.date,title:d.h,auto:"vote",outcome:{h:d.h,t:`${plain(v.q||"")}: ${v.result||""}${split}`,bills:b?[b.id]:[],
+        src:v.u?[[v.ch==="S"?`Senate roll call ${v.n}`:`House roll call ${v.n}`,v.u]]:[]}});
+    }
+  }catch(e){console.warn("automatic decisions skipped",e)}
+  try{
+    for(const c of ((LEDGER_FLOOR||{}).senate)||[]){
+      if(!c.expected||c.expected<today)continue;
+      const b=bills.find(x=>x.id===c.id), name=b?(b.vehicle&&b.vehicle.label?`${b.vehicle.label} (in ${b.num})`:nm(b)):c.num;
+      out.push({id:`c-${c.id}`,date:c.expected,title:`Senate cloture vote expected: ${name}`,auto:"ahead",bills:b?[b.id]:[],
+        what:`Cloture was filed ${short(c.filed)} on the ${c.on}. Senate rules put the vote two days later, unless senators agree to move it.`});
+    }
+  }catch(e){console.warn("expected cloture votes skipped",e)}
+  return out;
+}
+function renderFloor(){
+  const box=$("#w-floor");
+  try{
+    const f=(LEDGER_FLOOR||{}).house, items=(f&&f.items)||[];
+    if(!items.length){box.hidden=true;return}
+    const thisMon=(()=>{const d=new Date();d.setDate(d.getDate()-((d.getDay()+6)%7));return iso(d)})();
+    const when=f.week>thisMon?`week of ${short(f.week).replace(/^\w+, /,"")}`:"this week";
+    // once the House has voted on an item this week, say so instead of "may come up"
+    const norm=t=>String(t||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim().slice(0,48);
+    const hv=(VOTES.house||[]).filter(v=>v&&v.d>=f.week);
+    const voted=i=>hv.find(v=>(i.num&&numKey(v.measure)===numKey(i.num))||(!i.num&&norm(v.title)&&norm(v.title)===norm(i.t)));
+    box.innerHTML=`<h3>On the House floor ${esc(when)}</h3><ul>${items.map(i=>{const b=i.id&&bills.find(x=>x.id===i.id), v=voted(i);
+      return`<li>${b?billLink(b):`${esc(i.t)}${i.num?` <span class="bl-num">${esc(i.num)}</span>`:""}`}<span class="how">${v?`Voted ${esc(wk(v.d).toLocaleDateString("en-US",{month:"short",day:"numeric"}))}`:i.how==="rule"?"Under a rule":"May come up"}</span></li>`}).join("")}</ul>
+      <div class="wsrc">Routine bills that need two-thirds to pass aren't listed. <a href="${esc(f.u)}" target="_blank" rel="noopener">House floor schedule</a></div>`;
+    box.hidden=false;
+  }catch(e){box.hidden=true;console.warn("House floor schedule skipped",e)}
+}
 function renderWatch(){
-  const W=(meta&&meta.watch)||[], today=iso(new Date());
-  const dated=W.filter(e=>e.date).sort((a,b)=>a.date.localeCompare(b.date)||String(a.time||"").localeCompare(String(b.time||"")));
+  const today=iso(new Date());
+  const W=(meta&&meta.watch)||[], AUTO=autoWatch(today);
+  WALL=[...W,...AUTO];
+  renderFloor();
+  const byDate=(a,b)=>a.date.localeCompare(b.date)||String(a.time||"").localeCompare(String(b.time||""));
+  const dated=[...W,...AUTO.filter(e=>e.auto==="ahead")].filter(e=>e.date).sort(byDate);
   const up=dated.filter(e=>(e.end||e.date)>=today), past=dated.filter(e=>(e.end||e.date)<today).reverse(), undated=W.filter(e=>!e.date);
+  const calEv=WALL.filter(e=>e.date).sort(byDate);
   $("#w-list").innerHTML=up.map(e=>watchItem(e,today)).join("")||`<li class="empty-state">No dates coming up. Check back once the next schedule is posted.</li>`;
   $("#w-undated").innerHTML=undated.map(e=>watchItem(e,today)).join("");
   $("#w-undated-h").hidden=!undated.length;
@@ -1216,15 +1277,15 @@ function renderWatch(){
   $("#watch-count").textContent=W.length?`${up.length} upcoming · ${undated.length} not set`:"";
   // month calendars: this month through the last upcoming date, at most four
   const evByDay={};
-  for(const e of dated){for(let d=wk(e.date);iso(d)<=(e.end||e.date);d.setDate(d.getDate()+1))(evByDay[iso(d)]=evByDay[iso(d)]||[]).push(e)}
+  for(const e of calEv){for(let d=wk(e.date);iso(d)<=(e.end||e.date);d.setDate(d.getDate()+1))(evByDay[iso(d)]=evByDay[iso(d)]||[]).push(e)}
   const cal=(meta&&meta.calendar)||{}, inSession=new Set([...sessionDays(cal.house),...sessionDays(cal.senate)]);
   const t=wk(today), lastUp=up.length?wk(up[up.length-1].date):t;
   const span=Math.min(3,(lastUp.getFullYear()-t.getFullYear())*12+lastUp.getMonth()-t.getMonth());
   let g="";for(let i=0;i<=span;i++){const d=new Date(t.getFullYear(),t.getMonth()+i,1);g+=monthGrid(d.getFullYear(),d.getMonth(),evByDay,inSession,today)}
   $("#w-months").innerHTML=g;
   // what happened: the latest outcomes, right under the calendar
-  const res=dated.filter(e=>e.outcome&&e.outcome.h&&e.date<=today).sort((a,b)=>(b.end||b.date).localeCompare(a.end||a.date)).slice(0,3);
-  $("#w-res").innerHTML=res.map(e=>`<li><span class="dt">${esc(wk(e.end||e.date).toLocaleDateString("en-US",{month:"short",day:"numeric"}))}</span><a href="#w-${esc(e.id)}">${esc(e.outcome.h)}</a></li>`).join("");
+  const res=calEv.filter(e=>e.outcome&&e.outcome.h&&e.date<=today).sort((a,b)=>(b.end||b.date).localeCompare(a.end||a.date)).slice(0,3);
+  $("#w-res").innerHTML=res.map(e=>`<li><span class="dt">${esc(wk(e.end||e.date).toLocaleDateString("en-US",{month:"short",day:"numeric"}))}</span>${e.auto?`<a href="#watch" data-wday="${esc(e.date)}">${esc(e.outcome.h)}</a>`:`<a href="#w-${esc(e.id)}">${esc(e.outcome.h)}</a>`}</li>`).join("");
   $("#w-res-w").hidden=!res.length;
   renderDay();
   // next up, shown in the header on every tab
@@ -1236,21 +1297,24 @@ function renderWatch(){
 let WDAY=null;
 function outcomeBox(o){
   const obl=(o.bills||[]).map(id=>{const b=bills.find(x=>x.id===id);return b?billLink(b):""}).filter(Boolean).join("");
-  return`<div class="wout"><span class="k">What happened</span><b>${esc(o.h)}</b>${o.t?`<p>${esc(o.t)}</p>`:""}${obl?`<div class="wbills">On this site: ${obl}</div>`:""}${(o.src||[]).length?`<div class="wsrc">Sources: ${o.src.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>`:""}</div>`;
+  return`<div class="wout"><span class="k">${o.k||"What happened"}</span><b>${esc(o.h)}</b>${o.t?`<p>${esc(o.t)}</p>`:""}${obl?`<div class="wbills">On this site: ${obl}</div>`:""}${(o.src||[]).length?`<div class="wsrc">Sources: ${o.src.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>`:""}</div>`;
 }
 function renderDay(){
-  const box=$("#w-day"), W=(meta&&meta.watch)||[], today=iso(new Date());
+  const box=$("#w-day"), W=WALL, today=iso(new Date());
   document.querySelectorAll("#w-months a.c.ev").forEach(a=>a.classList.toggle("sel",a.dataset.day===WDAY));
   if(!WDAY){box.hidden=true;$("#w-res-w").hidden=!$("#w-res").children.length;return}
   const evs=W.filter(e=>e.date&&e.date<=WDAY&&WDAY<=(e.end||e.date));
   const head=wk(WDAY).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"});
   box.innerHTML=`<div class="wday-h"><b>${esc(head)}</b><button type="button" data-wclose>${$("#w-res").children.length?"Back to latest results":"Close"}</button></div>`+evs.map(e=>{
     const o=e.outcome&&e.outcome.h?e.outcome:null, done=(e.end||e.date)<today;
+    if(e.auto==="vote")return outcomeBox(o);
     return`<div><h4>${esc(e.title)}</h4></div>${o?outcomeBox(o):`<p style="margin:0;color:var(--soft)">${done?"Outcome not posted yet.":esc(e.what||"")}</p>`}<a class="more" href="#w-${esc(e.id)}">Full entry</a>`}).join("");
   box.hidden=false;$("#w-res-w").hidden=true;
 }
 document.addEventListener("click",e=>{
   const a=e.target.closest("#w-months a.c.ev[data-day]");
+  const r=e.target.closest("#w-res a[data-wday]");
+  if(r){e.preventDefault();WDAY=r.dataset.wday;renderDay();return}
   if(a){e.preventDefault();WDAY=WDAY===a.dataset.day?null:a.dataset.day;renderDay();
     if(WDAY){const box=$("#w-day"),r=box.getBoundingClientRect();if(r.bottom>innerHeight)box.scrollIntoView({block:"nearest",behavior:"smooth"})}return}
   if(e.target.closest("[data-wclose]")){WDAY=null;renderDay()}
@@ -1301,7 +1365,7 @@ $("#ag-jump").addEventListener("change",e=>{
   paint();
 })();
 
-let VOTES={senate:[],house:[]}, LVOTES={senate:[],house:[]}, CONGRESS=null;
+let VOTES={senate:[],house:[]}, LVOTES={senate:[],house:[]}, CONGRESS=null, LEDGER_FLOOR={};
 let BYNUM={};
 function renderVotes(){
   BYNUM={};bills.forEach(b=>{BYNUM[numKey(b.num)]=b});
@@ -1344,7 +1408,10 @@ function renderVotes(){
 }
 
 function renderAll(){
-  renderVotes();buildNotes();renderMeta();renderSeason();renderWatch();renderGlance();renderBills();renderAgenda();renderNames();renderOutcomes();
+  // each section draws on its own, so a problem in one never blanks the others
+  for(const f of [renderVotes,buildNotes,renderMeta,renderSeason,renderWatch,renderGlance,renderBills,renderAgenda,renderNames,renderOutcomes]){
+    try{f()}catch(e){console.warn(`${f.name} skipped`,e)}
+  }
   // populate filters once data present
   const ar=$("#f-area");const have=new Set([...ar.options].map(o=>o.value));
   [...AREAS,...bills.map(b=>b.area).filter(Boolean)].forEach(a=>{if(!have.has(a)){ar.add(new Option(a,a));have.add(a)}});
@@ -1432,9 +1499,13 @@ async function load(){
     bills=(L.bills||[]).filter(b=>b&&b.id);meta=L.meta||{};VOTES=L.votes||{senate:[],house:[]};LVOTES=VOTES;CONGRESS=L.congress||null;
     loaded=true;statusLine.classList.remove("warn");
     statusLine.textContent=L.generatedAt?`Last change ${fmtStamp(L.generatedAt)} · checked daily, more often in session`:"";
-    const out=$("#outage"),since=L.outage&&L.outage.since;
-    out.hidden=!since;
-    if(since)out.innerHTML=`<b>Congress.gov hasn't responded since ${esc(fmtStamp(since))}</b>, so the newest floor actions may be missing. Updates resume on their own once it's back.`;
+    LEDGER_FLOOR=L.floor||{};
+    const out=$("#outage"),O=L.outage||{},srcs=O.sources||(O.since?{congress:O.since}:{});
+    const SRC={congress:["Congress.gov","the newest bill actions"],clerk:["The House Clerk's vote records","the newest House votes"],
+      voteview:["Voteview","the newest Senate votes"],hfloor:["The House floor schedule","this week's House schedule"]};
+    const lines=Object.entries(srcs).filter(([k])=>SRC[k]).map(([k,t])=>`<b>${SRC[k][0]} hasn't responded since ${esc(fmtStamp(t))}</b>, so ${SRC[k][1]} may be missing.`);
+    out.hidden=!lines.length;
+    if(lines.length)out.innerHTML=lines.join("<br>")+" Updates resume on their own once it's back.";
     if(L.warnings&&L.warnings.length)console.warn("ledger warnings",L.warnings);
   }catch(e){
     loaded=true;statusLine.textContent="Data couldn't load. Refresh to try again.";statusLine.classList.add("warn");
@@ -1467,6 +1538,7 @@ async function fetchRollcalls(){
     VOTES={senate:[...newer("S",LV.senate),...R.votes.filter(v=>v.ch==="S").map(conv)],house:[...newer("H",LV.house),...R.votes.filter(v=>v.ch==="H").map(conv)]};
     for(const v of R.votes){if(!v.m)continue;const id=RC.billId(v.m,cg);(RC_BY_BILL[id]=RC_BY_BILL[id]||[]).push(v)}
     renderVotes();renderNames();refreshCredits();
+    try{renderWatch()}catch(e){console.warn("What to watch refresh skipped",e)}
   }catch(e){console.warn("roll calls unavailable",e);renderVotes()}
 }
 load();

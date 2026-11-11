@@ -633,7 +633,15 @@ def parse_clerk_vote(xml: bytes) -> dict | None:
         return None
     tot = md.find("vote-totals/totals-by-vote")
     tv = (lambda k: (tot.findtext(k) or "").strip()) if tot is not None else (lambda k: "")
-    return {"ch": "H", "n": num, "d": day.isoformat(), "type": t("vote-type").title(),
+    party = {}
+    for tp in md.findall("vote-totals/totals-by-party"):
+        k = {"republican": "R", "democratic": "D", "independent": "I"}.get((tp.findtext("party") or "").strip().lower())
+        try:
+            if k:
+                party[k] = [int(tp.findtext("yea-total") or 0), int(tp.findtext("nay-total") or 0)]
+        except ValueError:
+            pass
+    return {"ch": "H", "n": num, "p": party, "d": day.isoformat(), "type": t("vote-type").title(),
             "q": t("vote-question"), "measure": clerk_measure(t("legis-num")), "title": t("vote-desc"),
             "result": t("vote-result"), "y": tv("yea-total"), "n_": tv("nay-total"),
             "u": f"https://clerk.house.gov/Votes/{day.year}{num}"}
@@ -673,8 +681,11 @@ def clerk_house_votes(now: dt.datetime, state: dict, prev: list[dict], fetch=Non
 def house_with_fallback(congress: int, session: int, now: dt.datetime, state: dict, prev: list[dict]) -> list[dict]:
     """House roll calls from the Clerk; Congress.gov if the Clerk can't be reached; else keep what we had."""
     try:
-        return clerk_house_votes(now, state, prev)
+        got = clerk_house_votes(now, state, prev)
+        DOWN["clerk"] = False
+        return got
     except Exception as e:  # noqa: BLE001
+        DOWN["clerk"] = True
         warn(f"House Clerk roll calls unavailable ({e.__class__.__name__}); trying Congress.gov")
     return house_votes(congress, session, state) or prev
 
@@ -770,6 +781,7 @@ def senate_with_backoff(congress: int, session: int, now: dt.datetime, state: di
         print(f"Senate votes: backing off until {b['nextTry']}")
         return previous
     got = senate_votes(congress, session)
+    DOWN["voteview"] = got is None
     if got is None:
         b["failures"] = int(b.get("failures") or 0) + 1
         wait = min(2 ** (b["failures"] - 1), 24)
@@ -778,6 +790,103 @@ def senate_with_backoff(congress: int, session: int, now: dt.datetime, state: di
         return previous
     b["failures"], b["nextTry"] = 0, None
     return got
+
+
+# ---------------------------------------------------------------- what's coming to the floor
+# House: the Majority Leader's weekly schedule (docs.house.gov). Only bills under a rule and
+# other items such as privileged resolutions; routine suspension bills are left out.
+# Senate: cloture filings on legislation in tracked bills' actions; the vote comes the second
+# day after filing, or the Senate's next session day after that.
+HFLOOR = "https://docs.house.gov/floor/Download.aspx?file=/billsthisweek/{d}/{d}.xml"
+
+
+def floor_week(now: dt.datetime) -> dt.date:
+    """Monday of the week to show: this week, or next week from Saturday on."""
+    d = now.astimezone(CT).date()
+    return d - dt.timedelta(days=d.weekday()) + dt.timedelta(days=7 if d.weekday() >= 5 else 0)
+
+
+def floor_id(num: str, congress: int) -> str:
+    """"H.R. 1013" -> "119-hr1013"; an unnumbered "H. Res. ___" -> ""."""
+    m = re.match(r"^([A-Za-z]+)(\d+)$", re.sub(r"[.\s]", "", num or ""))
+    return f"{congress}-{m.group(1).lower()}{m.group(2)}" if m else ""
+
+
+def parse_house_floor(xml: bytes, congress: int) -> dict | None:
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError:
+        return None
+    if root.tag != "floorschedule" or not (root.get("week-date") or "")[:10]:
+        return None
+    week = root.get("week-date")[:10]
+    items = []
+    for cat in root.findall("category"):
+        typ = (cat.get("type") or "").lower()
+        if "suspension" in typ:
+            continue
+        how = "rule" if "pursuant to a rule" in typ else "other"
+        for it in cat.iter("floor-item"):
+            if (it.get("remove-date") or "").strip():
+                continue
+            num = re.sub(r"\s+", " ", it.findtext("legis-num") or "").strip()
+            text = re.sub(r"\s+", " ", it.findtext("floor-text") or "").strip()
+            if not text or re.match(r"providing for (the )?consideration", text, re.I):
+                continue  # the rule itself, not a decision on anything
+            items.append({"num": num if re.search(r"\d", num) else "", "id": floor_id(num, congress), "t": text[:200], "how": how})
+    return {"week": week, "items": items, "u": f"https://docs.house.gov/floor/Default.aspx?date={week}"}
+
+
+def house_floor(now: dt.datetime, congress: int, prev: dict | None, fetch=None) -> dict | None:
+    """This week's House floor schedule. Never last week's; the last good copy if the site fails."""
+    fetch = fetch or (lambda u: _get(u, timeout=30))
+    week = floor_week(now).isoformat()
+    prev = prev if (prev or {}).get("week") == week else None
+    try:
+        body = fetch(HFLOOR.format(d=week.replace("-", "")))
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            DOWN["hfloor"] = False
+            return None  # nothing posted for that week (the House is out)
+        DOWN["hfloor"] = True
+        return prev
+    except Exception:  # noqa: BLE001
+        DOWN["hfloor"] = True
+        return prev
+    got = parse_house_floor(body, congress)
+    DOWN["hfloor"] = got is None
+    return got if got is not None else prev
+
+
+CLOTURE_FILED = re.compile(r"^cloture motion on (the motion to proceed to )?the measure presented in senate", re.I)
+CLOTURE_DONE = re.compile(r"cloture\b.*\b(invoked|withdrawn|vitiated)|cloture on .*\bnot invoked", re.I)
+
+
+def senate_cloture_ahead(bills: list[dict], senate_days: set[str], today: dt.date) -> list[dict]:
+    """Cloture filings on tracked bills still waiting for their vote, with the expected date."""
+    out = []
+    for b in bills:
+        tl = sorted((t for t in b.get("timeline") or [] if t.get("d")), key=lambda t: t["d"])
+        filed = None
+        for t in tl:
+            e = t.get("e") or ""
+            if CLOTURE_FILED.search(e):
+                filed = t
+            elif filed and CLOTURE_DONE.search(e) and t["d"] >= filed["d"]:
+                filed = None
+        if not filed:
+            continue
+        try:
+            d = dt.date.fromisoformat(filed["d"][:10]) + dt.timedelta(days=2)
+        except ValueError:
+            continue
+        later = sorted(x for x in senate_days if x >= d.isoformat())
+        exp = later[0] if later else d.isoformat()
+        if exp < today.isoformat():
+            continue  # it didn't happen when expected; don't guess
+        out.append({"id": b["id"], "num": b.get("num") or "", "filed": filed["d"][:10], "expected": exp,
+                    "on": "motion to proceed" if "motion to proceed" in filed["e"].lower() else "the bill"})
+    return sorted(out, key=lambda x: x["expected"])
 
 
 # ---------------------------------------------------------------- calendar
@@ -908,6 +1017,31 @@ def outage_state(since: str | None, down: bool | None, now: dt.datetime, shown: 
     except ValueError:
         since, age = now.isoformat(timespec="seconds"), 0
     return since, ({"since": since} if age >= OUTAGE_SHOW_MIN else None)
+
+
+# Sources we sync from. Each one that fails marks itself down for this run; the outage note
+# shows a source once a later check fails too, and clears on its first good check.
+OUTAGE_SOURCES = ("congress", "clerk", "voteview", "hfloor")
+DOWN: dict[str, bool] = {}  # this run: source -> failed?  (absent means this run didn't ask it)
+
+
+def outages(since: dict, shown: dict, down: dict, now: dt.datetime) -> tuple[dict, dict]:
+    """Per source: (start times to keep in tracked.json, sources the site should mention)."""
+    keep, note = {}, {}
+    for src in OUTAGE_SOURCES:
+        s, n = outage_state((since or {}).get(src), down.get(src), now,
+                            {"since": shown[src]} if (shown or {}).get(src) else None)
+        if s:
+            keep[src] = s
+        if n:
+            note[src] = n["since"]
+    return keep, note
+
+
+def shown_outages(prev_outage: dict | None) -> dict:
+    """The sources the site showed last time; older data only had Congress.gov's start time."""
+    o = prev_outage or {}
+    return dict(o.get("sources") or ({"congress": o["since"]} if o.get("since") else {}))
 
 
 def data_changed(new: str, old: str) -> bool:
@@ -1043,7 +1177,10 @@ def main() -> int:
     queue = (tracked.get("backfill") or {}).get("queue") or []
     if queue:
         do_bills = True
-    if tracked.get("congressDown") and mode == "auto":
+    DOWN.clear()
+    if tracked.get("congressDown"):  # older single-source state
+        tracked.setdefault("down", {})["congress"] = tracked.pop("congressDown")
+    if (tracked.get("down") or {}).get("congress") and mode == "auto":
         do_bills = True  # while Congress.gov is down, every run checks, so the site notices it's back
     down = None  # whether Congress.gov failed this run; None if this run didn't ask it
     print(f"mode={mode} bills={do_bills} votes={do_votes} backfill_queue={len(queue)}")
@@ -1208,16 +1345,34 @@ def main() -> int:
         votes = {"senate": senate_with_backoff(congress, session, now, tracked, votes.get("senate") or []),
                  "house": house_with_fallback(congress, session, now, tracked, votes.get("house") or [])}
 
-    since, outage = outage_state(tracked.get("congressDown"), down, now, prev.get("outage"))
+    # what's coming to the floor; each part keeps its last good copy if anything goes wrong
+    floor = dict(prev.get("floor") or {})
+    if do_bills or do_votes:
+        try:
+            floor["house"] = house_floor(now, congress, floor.get("house"))
+        except Exception as e:  # noqa: BLE001
+            warn(f"House floor schedule skipped ({e.__class__.__name__})")
+    try:
+        cal = meta.get("calendar") or {}
+        floor["senate"] = senate_cloture_ahead(bills, session_days(cal.get("senate")), now.astimezone(CT).date())
+    except Exception as e:  # noqa: BLE001
+        warn(f"Senate cloture schedule skipped ({e.__class__.__name__})")
+    if not floor.get("house"):
+        floor.pop("house", None)
+
+    if down is not None:
+        DOWN["congress"] = down
+    since, shown = outages(tracked.get("down") or {}, shown_outages(prev.get("outage")), DOWN, now)
     if since:
-        tracked["congressDown"] = since
+        tracked["down"] = since
     else:
-        tracked.pop("congressDown", None)
+        tracked.pop("down", None)
+    outage = {"since": min(shown.values()), "sources": shown} if shown else None
 
     ledger = {
         "generatedAt": now.isoformat(timespec="seconds") if (do_bills or do_votes) else prev.get("generatedAt") or now.isoformat(timespec="seconds"),
         "congress": congress, "session": session,
-        "meta": meta, "bills": bills, "votes": votes,
+        "meta": meta, "bills": bills, "votes": votes, "floor": floor,
         "warnings": WARN[-20:],
     }
     if outage:

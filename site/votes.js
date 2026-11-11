@@ -55,7 +55,87 @@
   // "HR7567" -> "119-hr7567", the id bills use in ledger.json
   const billId = (m, congress) => (m ? `${congress}-${String(m).toLowerCase().replace(/\s+/g, "")}` : "");
 
-  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD };
+  // ---- What happened: floor decisions worth a line on What to watch, with a plain headline ----
+  // Kept tight on purpose: impeachment, censure, expulsion, contempt and war powers votes; veto
+  // overrides; bills that fail; Senate cloture on legislation; and close passage votes (the losing
+  // side has at least 40%). Lopsided passage votes, nominations and procedural votes stay out.
+  const SPECIAL = /\bimpeach|\bcensur|\bexpel|\bexpulsion|contempt of congress|office of speaker|vacat\w* the (office|chair)|war powers/i;
+  const DISPOSE = /passage|pass the bill|suspend the rules and pass|agreeing to the (joint |concurrent )?resolution|on the (joint |concurrent )?resolution|motion to (lay (it )?on the )?table|motion to refer|motion to postpone|concur|conference report|objections of the president|overrid/i;
+  const FINAL = /\bon passage|passage of the bill|suspend the rules and pass|pass the bill|\bconcur\b|conference report|on the joint resolution|agreeing to the joint resolution|\bon the bill\b/i;
+  const VETO = /objections of the president|overrid/i;
+  const RULE = /providing for (the )?consideration/i;
+  const OK = res => /agreed|passed|confirmed|invoked|sustained/i.test(res || "") && !/\bnot\b|rejected|failed/i.test(res || "");
+  const code = v => String(v.measure || v.m || "").replace(/\s+/g, "").toUpperCase();
+
+  function notable(v) {
+    if (!v || !v.d) return null;
+    const q = v.q || "", m = code(v), t = v.title || v.t || "";
+    if (/^HRES/.test(m) && RULE.test(t)) return null;
+    if (SPECIAL.test(t) && DISPOSE.test(q)) return "special";
+    if (VETO.test(q)) return "veto";
+    if (/^PN/.test(m)) return null;
+    if (/cloture/i.test(q)) return v.ch === "S" && /^(HR|S|HJRES|SJRES)\d/.test(m) ? "cloture" : null;
+    if (FINAL.test(q) && /^(HR|S|HJRES|SJRES)\d/.test(m)) {
+      if (!OK(v.result || v.res)) return "failed";
+      const y = +v.y || 0, n = +(v.n_ != null ? v.n_ : v.no) || 0;
+      if (y + n && Math.min(y, n) / (y + n) >= 0.4) return "close";
+    }
+    return null;
+  }
+
+  // What the vote was about, short enough for a headline
+  function subject(t, fallback) {
+    t = String(t || "");
+    let m;
+    if ((m = /^Impeaching (.+?)(?:,| for high)/i.exec(t))) return `${m[1].trim().split(/\s+/).pop()} impeachment resolution`;
+    if ((m = /^Censuring (?:and condemning )?(Representative|Delegate|Resident Commissioner) (.+?)(?: of [A-Z][\w .]+?)?(?: and |,|$)/i.exec(t)))
+      return `censure of ${{ representative: "Rep.", delegate: "Del." }[m[1].toLowerCase()] || "Res. Comm."} ${m[2].trim()}`;
+    if ((m = /^Expelling (?:Representative )?(.+?)(?: from|,|$)/i.exec(t))) return `expulsion of Rep. ${m[1].trim()}`;
+    if (/war powers/i.test(t)) {
+      m = /hostilities (?:against|in|within|with) (?:the )?(.+?)(?: that| which| not|,|\.|;|$)/i.exec(t);
+      const where = m ? m[1].replace(/^Islamic Republic of /i, "").replace(/^Bolivarian Republic of /i, "").trim() : "";
+      return where ? `${where} war powers resolution` : "war powers resolution";
+    }
+    if (/^Overturn /.test(fallback || "")) return `resolution to overturn ${fallback.slice(9)}`;
+    return fallback;
+  }
+
+  // "House sends Hegseth impeachment resolution to committee, 211–204"
+  function headline(v, subj) {
+    const ch = v.ch === "S" ? "Senate" : "House", q = v.q || "", ok = OK(v.result || v.res);
+    const tally = `${+v.y || 0}–${+(v.n_ != null ? v.n_ : v.no) || 0}`;
+    let h;
+    if (/motion to (lay (it )?on the )?table/i.test(q)) h = ok ? `${ch} tables ${subj}` : `${ch} refuses to table ${subj}`;
+    else if (/motion to refer/i.test(q)) h = ok ? `${ch} sends ${subj} to committee` : `${ch} refuses to send ${subj} to committee`;
+    else if (/motion to postpone/i.test(q)) h = ok ? `${ch} postpones ${subj}` : `${ch} refuses to postpone ${subj}`;
+    else if (VETO.test(q)) h = ok ? `${ch} overrides veto of ${subj}` : `${ch} fails to override veto of ${subj}`;
+    else if (/cloture/i.test(q)) h = ok ? `${ch} advances ${subj}` : `${ch} fails to advance ${subj}`;
+    else if (/^censure of /.test(subj) && ok) h = `${ch} censures ${subj.replace(/^censure of /, "")}`;
+    else if (/^expulsion of /.test(subj) && ok) h = `${ch} expels ${subj.replace(/^expulsion of /, "")}`;
+    else if (/impeachment resolution$/.test(subj) && ok) h = `${ch} impeaches ${subj.replace(/ impeachment resolution$/, "")}`;
+    else if (/\bconcur\b/i.test(q)) h = ok ? `${ch} accepts the ${ch === "House" ? "Senate" : "House"} version of ${subj}` : `${ch} rejects the ${ch === "House" ? "Senate" : "House"} version of ${subj}`;
+    else if (/^(HRES|HCONRES|SRES|SCONRES)/.test(code(v)) || / resolution$/.test(subj)) h = ok ? `${ch} adopts ${subj}` : `${ch} rejects ${subj}`;
+    else h = ok ? `${ch} passes ${subj}` : `${ch} rejects ${subj}`;
+    return `${h}, ${tally}`;
+  }
+
+  // One line per measure per day: the last notable roll call that day decided it
+  function decisions(votes, nameOf) {
+    const by = {};
+    for (const v of votes || []) {
+      let kind;
+      try { kind = notable(v); } catch (e) { kind = null; }
+      if (!kind) continue;
+      const k = `${v.ch}|${code(v) || v.n}|${v.d}`;
+      if (!by[k] || (+v.n || 0) > (+by[k].v.n || 0)) by[k] = { v, kind };
+    }
+    return Object.values(by).map(({ v, kind }) => {
+      const name = subject(v.title || v.t, (nameOf && nameOf(v)) || code(v));
+      return { id: `v-${v.ch}-${String(v.d).slice(0, 4)}-${v.n}`, date: v.d, kind, v, h: headline(v, name) };
+    }).sort((a, b) => b.date.localeCompare(a.date) || (+b.v.n || 0) - (+a.v.n || 0));
+  }
+
+  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, decisions };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.RC = api;
 })(this);

@@ -446,7 +446,7 @@ class ClerkHouseVotes(unittest.TestCase):
 
     def test_reads_a_clerk_roll_call(self):
         v = F.parse_clerk_vote(clerk_xml(318))
-        self.assertEqual(v, {"ch": "H", "n": 318, "d": "2026-11-10", "type": "Yea-And-Nay", "q": "On Motion to Table",
+        self.assertEqual(v, {"ch": "H", "n": 318, "p": {"R": [200, 10]}, "d": "2026-11-10", "type": "Yea-And-Nay", "q": "On Motion to Table",
                              "measure": "HRES 1601", "title": "Impeaching Peter B. Hegseth, Secretary of Defense",
                              "result": "Passed", "y": "220", "n_": "205", "u": "https://clerk.house.gov/Votes/2026318"})
 
@@ -503,6 +503,121 @@ class ClerkHouseVotes(unittest.TestCase):
             self.assertEqual(F.house_with_fallback(119, 2, self.NOW, {}, [{"n": 0}]), [{"n": 0}])
         finally:
             F.clerk_house_votes, F.house_votes = old
+
+
+FLOOR_XML = """<floorschedule congress-num="119" week-date="2026-11-09" update-date="2026-11-10T09:25:12.060">
+  <current-status>R</current-status><language>en-us</language>
+  <category type="Items that may be considered under suspension of the rules" sort-order="1"><floor-items>
+    <floor-item id="1" add-date="2026-11-02" remove-date="" sort-order="1"><legis-num>H.R. 3978</legis-num><floor-text>Nuclear REFUEL Act, as amended</floor-text></floor-item>
+  </floor-items></category>
+  <category type="Items that may be considered pursuant to a rule" sort-order="4"><floor-items>
+    <floor-item id="2" add-date="2026-11-05" remove-date="" sort-order="1"><legis-num>H.R. 1013</legis-num><floor-text>Retirement Fairness for Charities and Educational Institutions Act of 2025</floor-text></floor-item>
+    <floor-item id="3" add-date="2026-11-05" remove-date="2026-11-06" sort-order="2"><legis-num>H.R. 77</legis-num><floor-text>Pulled Act</floor-text></floor-item>
+  </floor-items></category>
+  <category type="Items that may be considered" sort-order="5"><floor-items>
+    <floor-item id="4" add-date="2026-11-09" remove-date="" sort-order="1"><legis-num>H. Res. 1650</legis-num><floor-text>Providing for consideration of the bill (H.R. 1013)</floor-text></floor-item>
+    <floor-item id="5" add-date="2026-11-09" remove-date="" sort-order="2"><legis-num>H. Res. ___</legis-num><floor-text>Impeaching Peter Brian Hegseth, Secretary of Defense, for high crimes and misdemeanors.</floor-text></floor-item>
+  </floor-items></category>
+</floorschedule>""".encode()
+
+
+class HouseFloor(unittest.TestCase):
+    import datetime as _dt
+    TUE = _dt.datetime(2026, 11, 10, 20, 0, tzinfo=_dt.timezone.utc)
+
+    def test_keeps_rule_bills_and_privileged_items_only(self):
+        f = F.parse_house_floor(FLOOR_XML, 119)
+        self.assertEqual(f["week"], "2026-11-09")
+        self.assertEqual(f["items"], [
+            {"num": "H.R. 1013", "id": "119-hr1013", "t": "Retirement Fairness for Charities and Educational Institutions Act of 2025", "how": "rule"},
+            {"num": "", "id": "", "t": "Impeaching Peter Brian Hegseth, Secretary of Defense, for high crimes and misdemeanors.", "how": "other"}])
+        self.assertEqual(f["u"], "https://docs.house.gov/floor/Default.aspx?date=2026-11-09")
+
+    def test_week_shown(self):
+        self.assertEqual(F.floor_week(self.TUE).isoformat(), "2026-11-09")
+        sat = self._dt.datetime(2026, 11, 14, 18, 0, tzinfo=self._dt.timezone.utc)
+        self.assertEqual(F.floor_week(sat).isoformat(), "2026-11-16")  # from Saturday, next week
+
+    def test_down_keeps_this_weeks_copy_but_never_last_weeks(self):
+        def down(u):
+            raise TimeoutError("no route")
+        F.DOWN.clear()
+        this = {"week": "2026-11-09", "items": [{"t": "x"}]}
+        self.assertEqual(F.house_floor(self.TUE, 119, this, down), this)
+        self.assertTrue(F.DOWN["hfloor"])
+        self.assertIsNone(F.house_floor(self.TUE, 119, {"week": "2026-11-02", "items": []}, down))
+
+    def test_nothing_posted_is_not_an_outage(self):
+        def missing(u):
+            raise F.urllib.error.HTTPError(u, 404, "Not Found", {}, None)
+        F.DOWN.clear()
+        self.assertIsNone(F.house_floor(self.TUE, 119, None, missing))
+        self.assertFalse(F.DOWN["hfloor"])
+
+    def test_unreadable_file_keeps_the_last_copy(self):
+        F.DOWN.clear()
+        this = {"week": "2026-11-09", "items": []}
+        self.assertEqual(F.house_floor(self.TUE, 119, this, lambda u: b"<html>oops</html>"), this)
+        self.assertTrue(F.DOWN["hfloor"])
+
+    def test_asks_for_the_right_file(self):
+        seen = []
+        F.house_floor(self.TUE, 119, None, lambda u: seen.append(u) or FLOOR_XML)
+        self.assertEqual(seen, ["https://docs.house.gov/floor/Download.aspx?file=/billsthisweek/20261109/20261109.xml"])
+
+
+class SenateClotureAhead(unittest.TestCase):
+    import datetime as _dt
+    DAYS = {"2026-11-09", "2026-11-10", "2026-11-16", "2026-11-17", "2026-11-18"}
+
+    def bill(self, *tl):
+        return {"id": "119-hr1", "num": "H.R. 1", "timeline": [{"d": d, "e": e} for d, e in tl]}
+
+    def test_filing_waits_for_the_second_day_or_next_session_day(self):
+        b = self.bill(("2026-11-10", "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S5241)"))
+        out = F.senate_cloture_ahead([b], self.DAYS, self._dt.date(2026, 11, 10))
+        self.assertEqual(out, [{"id": "119-hr1", "num": "H.R. 1", "filed": "2026-11-10", "expected": "2026-11-16", "on": "motion to proceed"}])
+
+    def test_gone_once_the_vote_happens(self):
+        b = self.bill(("2026-09-30", "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S5241)"),
+                      ("2026-11-09", "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257."))
+        self.assertEqual(F.senate_cloture_ahead([b], self.DAYS, self._dt.date(2026, 11, 10)), [])
+
+    def test_not_invoked_and_withdrawn_also_end_it(self):
+        for done in ("Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 53 - 47.",
+                     "Cloture motion on the motion to proceed to the measure withdrawn by unanimous consent in Senate."):
+            b = self.bill(("2026-11-09", "Cloture motion on the measure presented in Senate."), ("2026-11-10", done))
+            self.assertEqual(F.senate_cloture_ahead([b], self.DAYS, self._dt.date(2026, 11, 10)), [])
+
+    def test_a_vote_that_didnt_happen_when_expected_is_dropped(self):
+        b = self.bill(("2026-09-30", "Cloture motion on the measure presented in Senate."))
+        self.assertEqual(F.senate_cloture_ahead([b], set(), self._dt.date(2026, 11, 10)), [])
+
+    def test_no_timeline_no_problem(self):
+        self.assertEqual(F.senate_cloture_ahead([{"id": "x"}, {"id": "y", "timeline": [{"e": "no date"}]}], self.DAYS, self._dt.date(2026, 11, 10)), [])
+
+
+class AllSourcesOutage(unittest.TestCase):
+    import datetime as _dt
+    T0 = _dt.datetime(2026, 11, 10, 18, 0, tzinfo=_dt.timezone.utc)
+
+    def test_each_source_on_its_own_clock(self):
+        t1 = self.T0 + self._dt.timedelta(minutes=30)
+        since, note = F.outages({}, {}, {"clerk": True, "congress": False}, self.T0)
+        self.assertEqual((since, note), ({"clerk": "2026-11-10T18:00:00+00:00"}, {}))
+        since, note = F.outages(since, note, {"clerk": True, "voteview": True}, t1)
+        self.assertEqual(note, {"clerk": "2026-11-10T18:00:00+00:00"})  # voteview only just started
+        self.assertIn("voteview", since)
+        since, note = F.outages(since, note, {"clerk": False}, t1 + self._dt.timedelta(minutes=30))
+        self.assertEqual(note, {})  # clerk cleared; voteview has failed only once, and wasn't asked again
+        self.assertEqual(set(since), {"voteview"})  # so its clock keeps running
+        since, note = F.outages(since, note, {"voteview": True}, t1 + self._dt.timedelta(minutes=60))
+        self.assertEqual(set(note), {"voteview"})  # a later failed check: now it shows
+
+    def test_older_site_data_reads_as_congress_gov(self):
+        self.assertEqual(F.shown_outages({"since": "x"}), {"congress": "x"})
+        self.assertEqual(F.shown_outages({"since": "x", "sources": {"clerk": "y"}}), {"clerk": "y"})
+        self.assertEqual(F.shown_outages(None), {})
 
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
