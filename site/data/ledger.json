@@ -3331,7 +3331,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-10T21:03:21+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -12394,7 +12394,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-10T21:03:21+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12410,8 +12410,8 @@
    "id": "119-hr2347",
    "introduced": "2025-03-25",
    "latest": {
-    "actionDate": "2026-11-09",
-    "text": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257."
+    "actionDate": "2026-11-10",
+    "text": "Motion by Senator Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate."
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -12429,12 +12429,6 @@
    },
    "status": "passed1",
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-03-25",
-     "e": "Introduced in House",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2026-03-25",
@@ -12482,15 +12476,22 @@
     {
      "ch": "S",
      "d": "2026-11-09",
-     "e": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257.",
+     "e": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257. (CR S5343-5344)",
      "fn": "cg",
      "v": "73–25"
     },
     {
      "ch": "S",
      "d": "2026-11-09",
-     "e": "Motion to proceed to measure considered in Senate.",
+     "e": "Motion to proceed to measure considered in Senate. (CR S5337)",
      "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-10",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 62 - 21. Record Vote Number: 258.",
+     "fn": "cg",
+     "v": "62–21"
     }
    ],
    "title": "Survivor Justice Tax Prevention Act",
@@ -19608,7 +19609,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-10T19:25:06+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19619,9 +19620,8 @@
    "id": "119-hr3978",
    "introduced": "2025-06-12",
    "latest": {
-    "actionDate": "2026-11-09",
-    "actionTime": "19:00:03",
-    "text": "Motion to reconsider laid on the table Agreed to without objection."
+    "actionDate": "2026-11-10",
+    "text": "Received in the Senate. Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 695."
    },
    "num": "H.R. 3978",
    "number": 3978,
@@ -19670,7 +19670,7 @@
     {
      "ch": "H",
      "d": "2026-11-09",
-     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 397 - 2 (Roll no. 315).",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 397 - 2 (Roll no. 315). ",
      "fn": "cg",
      "v": "397–2"
     }
@@ -21433,7 +21433,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-10T21:03:21+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23407,6 +23407,119 @@
    "title": "D. C. Criminal Reforms to Immediately Make Everyone Safe Act of 2025",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/4922"
+  },
+  {
+   "area": "Foreign Trade and International Finance",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 4,
+    "st": [
+     "IL",
+     "NE",
+     "OH",
+     "TN",
+     "VA",
+     "WV"
+    ],
+    "t": 6
+   },
+   "fetched": "2026-11-11T16:13:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4930"
+    }
+   },
+   "id": "119-hr4930",
+   "introduced": "2025-08-08",
+   "latest": {
+    "actionDate": "2026-11-10",
+    "text": "Passed Senate without amendment by Unanimous Consent."
+   },
+   "num": "H.R. 4930",
+   "number": 4930,
+   "passed": {
+    "H": {
+     "d": "2026-04-27",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-11-10",
+     "how": "uc"
+    }
+   },
+   "reached": 4,
+   "sponsor": {
+    "n": "Blake D. Moore",
+    "p": "R",
+    "s": "UT-1"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-08-08",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-10",
+     "e": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 40 - 0.",
+     "fn": "cg",
+     "v": "40–0"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-30",
+     "e": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-415.",
+     "fn": "cg",
+     "v": "119–415"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-27",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-27",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3098-3099)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-27",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3098-3099)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-10",
+     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-10",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-10",
+     "e": "Senate Committee on Finance discharged by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "To expand the sharing of information with respect to suspected violations of intellectual property rights in trade.",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/4930"
   },
   {
    "area": "Immigration",
@@ -25569,7 +25682,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-10T21:03:21+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -33704,7 +33817,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-10T21:03:21+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34609,7 +34722,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-10T20:51:13+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34620,9 +34733,8 @@
    "id": "119-hr9612",
    "introduced": "2026-07-09",
    "latest": {
-    "actionDate": "2026-11-09",
-    "actionTime": "19:07:47",
-    "text": "Motion to reconsider laid on the table Agreed to without objection."
+    "actionDate": "2026-11-10",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
    },
    "num": "H.R. 9612",
    "number": 9612,
@@ -34671,7 +34783,7 @@
     {
      "ch": "H",
      "d": "2026-11-09",
-     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 394 - 3 (Roll no. 316).",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 394 - 3 (Roll no. 316). ",
      "fn": "cg",
      "v": "394–3"
     }
@@ -34816,7 +34928,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T09:14:11+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40223,7 +40335,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-10T21:03:21+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40314,7 +40426,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-10T21:03:21+00:00",
+   "fetched": "2026-11-11T16:13:40+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -48283,7 +48395,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-11T03:43:45+00:00",
+ "generatedAt": "2026-11-11T16:13:40+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -49433,6 +49545,19 @@
   "senate": [
    {
     "ch": "S",
+    "d": "2026-11-10",
+    "issue": "HR2347",
+    "measure": "HR2347",
+    "n": 258,
+    "n_": "21",
+    "q": "On the Motion to Proceed",
+    "result": "Motion to Proceed Agreed to",
+    "title": "A bill to amend the Internal Revenue Code of 1986 to exclude from gross income any damages, other than punitive damages, received on account of any sexual acts or sexual contact.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm",
+    "y": "62"
+   },
+   {
+    "ch": "S",
     "d": "2026-11-09",
     "issue": "HR2347",
     "measure": "HR2347",
@@ -50197,19 +50322,6 @@
     "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Medicare Program; Implementation of Prior Authorization for Select Services for the Wasteful and Inappropriate Services Reduction (WISeR) Model\".",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00199.htm",
     "y": "46"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-16",
-    "issue": "PN8518",
-    "measure": "PN8518",
-    "n": 198,
-    "n_": "48",
-    "q": "On the Cloture Motion",
-    "result": "Cloture Motion Agreed to",
-    "title": "Kara Marie Westercamp, of Virginia, to be a Judge of the United States Court of International Trade",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00198.htm",
-    "y": "49"
    }
   ]
  },
