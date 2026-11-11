@@ -1599,6 +1599,105 @@
    "y": "394",
    "n_": "3",
    "u": "https://clerk.house.gov/Votes/2026316"
+  },
+  "2026-317": {
+   "ch": "H",
+   "n": 317,
+   "p": {
+    "R": [
+     210,
+     1,
+     0,
+     7
+    ],
+    "D": [
+     0,
+     203,
+     0,
+     11
+    ],
+    "I": [
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   "d": "2026-11-10",
+   "type": "Yea-And-Nay",
+   "q": "On Motion to Refer",
+   "measure": "HRES 1655",
+   "title": "Impeaching Peter Brian Hegseth, Secretary of Defense, for high crimes and misdemeanors",
+   "result": "Passed",
+   "y": "211",
+   "n_": "204",
+   "u": "https://clerk.house.gov/Votes/2026317"
+  },
+  "2026-318": {
+   "ch": "H",
+   "n": 318,
+   "p": {
+    "R": [
+     212,
+     0,
+     0,
+     6
+    ],
+    "D": [
+     0,
+     207,
+     0,
+     7
+    ],
+    "I": [
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   "d": "2026-11-10",
+   "type": "Yea-And-Nay",
+   "q": "On Ordering the Previous Question",
+   "measure": "HRES 1650",
+   "title": "Providing for consideration of the bill (H.R. 1013) to amend the Federal securities laws to enhance 403(b) plans, and for other purposes",
+   "result": "Passed",
+   "y": "213",
+   "n_": "207",
+   "u": "https://clerk.house.gov/Votes/2026318"
+  },
+  "2026-319": {
+   "ch": "H",
+   "n": 319,
+   "p": {
+    "R": [
+     214,
+     0,
+     0,
+     4
+    ],
+    "D": [
+     0,
+     209,
+     0,
+     5
+    ],
+    "I": [
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   "d": "2026-11-10",
+   "type": "Recorded Vote",
+   "q": "On Agreeing to the Resolution",
+   "measure": "HRES 1650",
+   "title": "Providing for consideration of the bill (H.R. 1013) to amend the Federal securities laws to enhance 403(b) plans, and for other purposes",
+   "result": "Passed",
+   "y": "215",
+   "n_": "209",
+   "u": "https://clerk.house.gov/Votes/2026319"
   }
  }
 }
