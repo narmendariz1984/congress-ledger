@@ -3331,7 +3331,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-11T22:45:05+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -21433,7 +21433,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-11T22:45:05+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -25682,7 +25682,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-11T22:45:05+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -40335,7 +40335,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-11T22:45:05+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40426,7 +40426,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-11T22:45:05+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -48395,7 +48395,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-11T16:13:40+00:00",
+ "generatedAt": "2026-11-11T22:45:05+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -48701,6 +48701,72 @@
  "session": 2,
  "votes": {
   "house": [
+   {
+    "ch": "H",
+    "d": "2026-11-11",
+    "measure": "HR 1013",
+    "n": 321,
+    "n_": "128",
+    "p": {
+     "D": [
+      83,
+      128,
+      0,
+      3
+     ],
+     "I": [
+      1,
+      0,
+      0,
+      0
+     ],
+     "R": [
+      211,
+      0,
+      0,
+      7
+     ]
+    },
+    "q": "On Passage",
+    "result": "Passed",
+    "title": "Retirement Fairness for Charities and Educational Institutions Act",
+    "type": "Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026321",
+    "y": "295"
+   },
+   {
+    "ch": "H",
+    "d": "2026-11-11",
+    "measure": "HRES 1247",
+    "n": 320,
+    "n_": "175",
+    "p": {
+     "D": [
+      210,
+      0,
+      0,
+      4
+     ],
+     "I": [
+      1,
+      0,
+      0,
+      0
+     ],
+     "R": [
+      34,
+      175,
+      0,
+      9
+     ]
+    },
+    "q": "On Motion to Discharge",
+    "result": "Passed",
+    "title": "Providing for consideration of the bill (H.R. 2102) to amend title 10, United States Code, to provide for concurrent receipt of veterans’ disability compensation and retired pay for disability retirees with combat-related disabilities, and for other purposes",
+    "type": "Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026320",
+    "y": "245"
+   },
    {
     "ch": "H",
     "d": "2026-11-10",
@@ -49514,32 +49580,6 @@
     "type": "2/3 Yea-And-Nay",
     "u": "https://clerk.house.gov/Votes/202671",
     "y": "362"
-   },
-   {
-    "ch": "H",
-    "d": "2026-01-12",
-    "measure": "HR 6504",
-    "n": 15,
-    "n_": "45",
-    "q": "On Motion to Suspend the Rules and Pass, as Amended",
-    "result": "Passed",
-    "title": "Haiti Economic Lift Program Extension Act",
-    "type": "2/3 Yea-And-Nay",
-    "u": "https://clerk.house.gov/Votes/202615",
-    "y": "345"
-   },
-   {
-    "ch": "H",
-    "d": "2026-01-12",
-    "measure": "HR 6500",
-    "n": 14,
-    "n_": "54",
-    "q": "On Motion to Suspend the Rules and Pass, as Amended",
-    "result": "Passed",
-    "title": "Continuing Appropriations and Extensions Act, 2027",
-    "type": "2/3 Yea-And-Nay",
-    "u": "https://clerk.house.gov/Votes/202614",
-    "y": "340"
    }
   ],
   "senate": [
