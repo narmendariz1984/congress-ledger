@@ -34,6 +34,7 @@ import sys
 import time
 import urllib.error
 import urllib.parse
+import xml.etree.ElementTree as ET
 import urllib.request
 from pathlib import Path
 
@@ -600,6 +601,84 @@ def bill_title(congress: int, measure: str, cache: dict) -> str:
     return cache[key]
 
 
+# ---------------------------------------------------------------- House roll calls (Clerk)
+# The House Clerk posts each roll call as XML within minutes (clerk.house.gov/evs/<year>/roll<n>.xml).
+# Congress.gov's House vote feed stopped at roll 306 (Sept 15, 2026), so the Clerk is the source
+# and Congress.gov the fallback. Polite: identifying User-Agent, and each check asks only for the
+# next roll number (one small request when nothing is new).
+CLERK = "https://clerk.house.gov/evs"
+CLERK_NEW_PER_RUN = 40
+
+
+def clerk_measure(legis: str) -> str:
+    """Clerk "H RES 1234" -> "HRES 1234"; quorum calls and the like -> ""."""
+    m = re.match(r"^\s*([A-Z][A-Z .]*?)\s*0*(\d+)\s*$", (legis or "").upper())
+    return f"{re.sub(r'[ .]', '', m.group(1))} {m.group(2)}" if m else ""
+
+
+def parse_clerk_vote(xml: bytes) -> dict | None:
+    """One Clerk roll call XML -> a vote row like the ones on the site, or None if it doesn't read."""
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError:
+        return None
+    md = root.find("vote-metadata")
+    if md is None:
+        return None
+    t = lambda k: re.sub(r"\s+", " ", (md.findtext(k) or "")).strip()  # noqa: E731
+    try:
+        num = int(t("rollcall-num"))
+        day = dt.datetime.strptime(t("action-date"), "%d-%b-%Y").date()
+    except ValueError:
+        return None
+    tot = md.find("vote-totals/totals-by-vote")
+    tv = (lambda k: (tot.findtext(k) or "").strip()) if tot is not None else (lambda k: "")
+    return {"ch": "H", "n": num, "d": day.isoformat(), "type": t("vote-type").title(),
+            "q": t("vote-question"), "measure": clerk_measure(t("legis-num")), "title": t("vote-desc"),
+            "result": t("vote-result"), "y": tv("yea-total"), "n_": tv("nay-total"),
+            "u": f"https://clerk.house.gov/Votes/{day.year}{num}"}
+
+
+def clerk_house_votes(now: dt.datetime, state: dict, prev: list[dict], fetch=None) -> list[dict]:
+    """The 60 newest House roll calls of this year. Keeps what's already known (from earlier
+    runs or the previous site data) and asks the Clerk only for roll numbers after the newest."""
+    fetch = fetch or (lambda u: _get(u, timeout=30))
+    year = now.astimezone(CT).year
+    cache = state.setdefault("clerkVotes", {})
+    for k in [k for k in cache if not k.startswith(f"{year}-")]:
+        del cache[k]  # last year's roll numbers start over
+    for v in prev or []:  # seed from what the site already shows
+        if v.get("n") and str(v.get("d", "")).startswith(str(year)):
+            cache.setdefault(f"{year}-{v['n']}", v)
+    n = max([int(k.split("-")[1]) for k in cache] or [0])
+    for _ in range(CLERK_NEW_PER_RUN):
+        try:
+            body = fetch(f"{CLERK}/{year}/roll{n + 1:03d}.xml")
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                break  # not posted yet
+            raise
+        v = parse_clerk_vote(body)
+        if not v or v["n"] != n + 1:
+            break
+        cache[f"{year}-{v['n']}"] = v
+        n += 1
+    out = sorted(cache.values(), key=lambda x: (x["d"], x["n"] or 0), reverse=True)[:60]
+    keep = {f"{year}-{v['n']}" for v in out}
+    for k in [k for k in cache if k not in keep]:
+        del cache[k]
+    return out
+
+
+def house_with_fallback(congress: int, session: int, now: dt.datetime, state: dict, prev: list[dict]) -> list[dict]:
+    """House roll calls from the Clerk; Congress.gov if the Clerk can't be reached; else keep what we had."""
+    try:
+        return clerk_house_votes(now, state, prev)
+    except Exception as e:  # noqa: BLE001
+        warn(f"House Clerk roll calls unavailable ({e.__class__.__name__}); trying Congress.gov")
+    return house_votes(congress, session, state) or prev
+
+
 def house_votes(congress: int, session: int, state: dict | None = None) -> list[dict]:
     """Congress.gov House roll call endpoint (beta). Parsed defensively.
 
@@ -1127,7 +1206,7 @@ def main() -> int:
     votes = prev.get("votes") or {"senate": [], "house": []}
     if do_votes:
         votes = {"senate": senate_with_backoff(congress, session, now, tracked, votes.get("senate") or []),
-                 "house": house_votes(congress, session, tracked)}
+                 "house": house_with_fallback(congress, session, now, tracked, votes.get("house") or [])}
 
     since, outage = outage_state(tracked.get("congressDown"), down, now, prev.get("outage"))
     if since:

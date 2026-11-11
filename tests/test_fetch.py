@@ -417,6 +417,93 @@ class Vehicles(unittest.TestCase):
         self.assertEqual(F.load_vehicles({}), {})
         self.assertEqual(F.load_vehicles(None), {})
 
+
+def clerk_xml(n, day="10-Nov-2026", legis="H RES 1601", q="On Motion to Table", desc="Impeaching Peter B. Hegseth, Secretary of Defense", y=220, no=205):
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rollcall-vote><vote-metadata><majority>R</majority><congress>119</congress><session>2nd</session>
+<chamber>U.S. House of Representatives</chamber><rollcall-num>{n}</rollcall-num><legis-num>{legis}</legis-num>
+<vote-question>{q}</vote-question><vote-type>YEA-AND-NAY</vote-type><vote-result>Passed</vote-result>
+<action-date>{day}</action-date><action-time time-etz="15:02">3:02 PM</action-time><vote-desc>{desc}</vote-desc>
+<vote-totals><totals-by-party><party>Republican</party><yea-total>200</yea-total><nay-total>10</nay-total></totals-by-party>
+<totals-by-vote><total-stub>Totals</total-stub><yea-total>{y}</yea-total><nay-total>{no}</nay-total><present-total>0</present-total><not-voting-total>8</not-voting-total></totals-by-vote>
+</vote-totals></vote-metadata><vote-data></vote-data></rollcall-vote>""".encode()
+
+
+class ClerkHouseVotes(unittest.TestCase):
+    """House roll calls from the Clerk's XML, since Congress.gov's feed stopped at roll 306."""
+    import datetime as _dt
+    NOW = _dt.datetime(2026, 11, 11, 3, 0, tzinfo=_dt.timezone.utc)  # Nov 10 evening, Central
+
+    def fetcher(self, posted):
+        calls = []
+        def fetch(url):
+            calls.append(url)
+            n = int(url.rsplit("roll", 1)[1].split(".")[0])
+            if n in posted:
+                return posted[n]
+            raise F.urllib.error.HTTPError(url, 404, "Not Found", {}, None)
+        return fetch, calls
+
+    def test_reads_a_clerk_roll_call(self):
+        v = F.parse_clerk_vote(clerk_xml(318))
+        self.assertEqual(v, {"ch": "H", "n": 318, "d": "2026-11-10", "type": "Yea-And-Nay", "q": "On Motion to Table",
+                             "measure": "HRES 1601", "title": "Impeaching Peter B. Hegseth, Secretary of Defense",
+                             "result": "Passed", "y": "220", "n_": "205", "u": "https://clerk.house.gov/Votes/2026318"})
+
+    def test_measure_numbers(self):
+        self.assertEqual([F.clerk_measure(x) for x in ("H R 9612", "H RES 1601", "H J RES 210", "S 5653", "QUORUM", "")],
+                         ["HR 9612", "HRES 1601", "HJRES 210", "S 5653", "", ""])
+
+    def test_bad_xml_is_skipped(self):
+        self.assertIsNone(F.parse_clerk_vote(b"<html>error</html>"))
+        self.assertIsNone(F.parse_clerk_vote(b"not xml"))
+
+    def test_picks_up_new_roll_calls_after_what_the_site_has(self):
+        prev = [{"ch": "H", "n": 306, "d": "2026-09-15", "q": "On Passage", "y": "216", "n_": "211"}]
+        fetch, calls = self.fetcher({307: clerk_xml(307, "16-Sep-2026"), 308: clerk_xml(308)})
+        state = {}
+        out = F.clerk_house_votes(self.NOW, state, prev, fetch)
+        self.assertEqual([v["n"] for v in out], [308, 307, 306])
+        self.assertEqual(calls[-1].endswith("roll309.xml"), True)  # one miss, then stop
+        self.assertEqual(len(calls), 3)
+
+    def test_nothing_new_costs_one_request(self):
+        state = {}
+        fetch, calls = self.fetcher({})
+        F.clerk_house_votes(self.NOW, state, [{"ch": "H", "n": 318, "d": "2026-11-10"}], fetch)
+        self.assertEqual(len(calls), 1)
+
+    def test_keeps_the_60_newest(self):
+        posted = {n: clerk_xml(n) for n in range(1, 71)}
+        fetch, _ = self.fetcher(posted)
+        F.CLERK_NEW_PER_RUN, old = 100, F.CLERK_NEW_PER_RUN
+        try:
+            state = {}
+            out = F.clerk_house_votes(self.NOW, state, [], fetch)
+        finally:
+            F.CLERK_NEW_PER_RUN = old
+        self.assertEqual((len(out), out[0]["n"], out[-1]["n"], len(state["clerkVotes"])), (60, 70, 11, 60))
+
+    def test_new_year_starts_over(self):
+        state = {"clerkVotes": {"2025-400": {"n": 400, "d": "2025-12-18"}}}
+        fetch, calls = self.fetcher({1: clerk_xml(1, "6-Jan-2026")})
+        out = F.clerk_house_votes(self.NOW, state, [{"n": 400, "d": "2025-12-18"}], fetch)
+        self.assertEqual([v["n"] for v in out], [1])
+        self.assertTrue(calls[0].endswith("/2026/roll001.xml"))
+
+    def test_clerk_down_falls_back_to_congress_gov_then_keeps_what_we_had(self):
+        old = (F.clerk_house_votes, F.house_votes)
+        def down(*a, **k):
+            raise TimeoutError("no route")
+        F.clerk_house_votes = down
+        try:
+            F.house_votes = lambda *a, **k: [{"n": 1}]
+            self.assertEqual(F.house_with_fallback(119, 2, self.NOW, {}, [{"n": 0}]), [{"n": 1}])
+            F.house_votes = lambda *a, **k: []
+            self.assertEqual(F.house_with_fallback(119, 2, self.NOW, {}, [{"n": 0}]), [{"n": 0}])
+        finally:
+            F.clerk_house_votes, F.house_votes = old
+
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
     import datetime as _dt
