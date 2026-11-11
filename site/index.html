@@ -1227,8 +1227,9 @@ function autoWatch(today){
     for(const d of RC.decisions(all,v=>siteName(v)||fallback(v))){
       if(d.date>today)continue;
       const v=d.v, b=byNum[numKey(v.measure)], sp=v.v&&RCD?RC.split(v,RCD.members[v.ch]||[]):null, pt=v.p;
-      const split=sp?` · D ${sp.D.Y+sp.I.Y}–${sp.D.N+sp.I.N} · R ${sp.R.Y}–${sp.R.N}`
-        :pt&&pt.R&&pt.D?` · D ${(pt.D[0]||0)+((pt.I||[])[0]||0)}–${(pt.D[1]||0)+((pt.I||[])[1]||0)} · R ${pt.R[0]||0}–${pt.R[1]||0}`:"";
+      // party split; independents get their own count when any voted
+      const P=sp?{D:[sp.D.Y,sp.D.N],R:[sp.R.Y,sp.R.N],I:[sp.I.Y,sp.I.N]}:pt&&pt.R&&pt.D?pt:null;
+      const split=P?` · D ${P.D[0]||0}–${P.D[1]||0} · R ${P.R[0]||0}–${P.R[1]||0}${P.I&&(P.I[0]||P.I[1])?` · I ${P.I[0]||0}–${P.I[1]||0}`:""}`:"";
       out.push({id:d.id,date:d.date,title:d.h,auto:"vote",outcome:{h:d.h,t:`${plain(v.q||"")}: ${v.result||""}${split}`,bills:b?[b.id]:[],
         src:v.u?[[v.ch==="S"?`Senate roll call ${v.n}`:`House roll call ${v.n}`,v.u]]:[]}});
     }
