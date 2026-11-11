@@ -119,6 +119,32 @@
     return `${h}, ${tally}`;
   }
 
+  // What the vote did, in plain words, for motions people don't read every day. Passage needs none.
+  function explain(v) {
+    const ch = v.ch === "S" ? "Senate" : "House", q = v.q || "", ok = OK(v.result || v.res);
+    const y = parseInt(String(v.d || "").slice(0, 4), 10);
+    const ends = y ? `Jan 3, ${y % 2 ? y + 2 : y + 1}` : "Jan 3";  // a Congress ends Jan 3 of the next odd year
+    if (/motion to refer/i.test(q)) return ok
+      ? `The ${ch} voted to send it to committee instead of voting on it directly. It dies there unless the committee acts before this Congress ends ${ends}.`
+      : `A motion to send it to committee failed, so it stayed on the ${ch} floor.`;
+    if (/motion to (lay (it )?on the )?table/i.test(q)) return ok
+      ? `The ${ch} voted to set it aside without voting on it directly, which in practice ends it for this Congress.`
+      : `A motion to set it aside failed, so it stayed on the ${ch} floor.`;
+    if (/motion to postpone/i.test(q)) return ok ? `The ${ch} voted to put off a decision on it.` : `A motion to put off a decision on it failed.`;
+    if (VETO.test(q)) return ok
+      ? "It got the two-thirds needed to override. Both the House and Senate have to override for it to become law."
+      : "It fell short of the two-thirds needed to override, so the veto stands.";
+    if (/cloture/i.test(q)) {
+      const what = /motion to proceed/i.test(q) ? "taking it up" : "it";
+      return ok ? `The Senate voted to end debate on ${what} so it can move forward. Ending debate takes 60 votes.`
+        : `The Senate fell short of the 60 votes needed to end debate on ${what}, so it's blocked for now.`;
+    }
+    if (/\bconcur\b/i.test(q) && ok) return /with an amendment/i.test(q)
+      ? `It goes back to the ${ch === "House" ? "Senate" : "House"} with more changes.`
+      : "Both chambers have now passed the same text, so it goes to the President.";
+    return "";
+  }
+
   // One line per measure per day: the last notable roll call that day decided it
   function decisions(votes, nameOf) {
     const by = {};
@@ -135,7 +161,7 @@
     }).sort((a, b) => b.date.localeCompare(a.date) || (+b.v.n || 0) - (+a.v.n || 0));
   }
 
-  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, decisions };
+  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, explain, decisions };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.RC = api;
 })(this);

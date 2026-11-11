@@ -132,3 +132,16 @@ test("decisions: one line per measure per day, newest first, and bad records are
   assert.deepEqual(out.map(x => x.v.n), [320, 2]);
   assert.equal(out[1].h, "House rejects censure of Del. Stacey Plaskett, 209–214");
 });
+
+test("plain words for what a motion did", () => {
+  assert.equal(RC.explain(vote()), "The House voted to send it to committee instead of voting on it directly. It dies there unless the committee acts before this Congress ends Jan 3, 2027.");
+  assert.equal(RC.explain(vote({ result: "Failed" })), "A motion to send it to committee failed, so it stayed on the House floor.");
+  assert.equal(RC.explain(vote({ q: "On Motion to Table", d: "2025-06-24" })), "The House voted to set it aside without voting on it directly, which in practice ends it for this Congress.");
+  assert.equal(RC.explain(vote({ d: "2025-11-19" })).endsWith("ends Jan 3, 2027."), true);
+  const c = { ch: "S", d: "2026-11-09", q: "On Cloture on the Motion to Proceed", result: "Cloture on the Motion to Proceed Agreed to" };
+  assert.equal(RC.explain(c), "The Senate voted to end debate on taking it up so it can move forward. Ending debate takes 60 votes.");
+  assert.equal(RC.explain({ ...c, result: "Cloture on the Motion to Proceed Rejected" }), "The Senate fell short of the 60 votes needed to end debate on taking it up, so it's blocked for now.");
+  assert.equal(RC.explain(vote({ q: "Passage, Objections of the President To The Contrary Notwithstanding", result: "Failed" })), "It fell short of the two-thirds needed to override, so the veto stands.");
+  assert.equal(RC.explain(vote({ q: "On Motion to Concur in the Senate Amendments" })), "Both chambers have now passed the same text, so it goes to the President.");
+  assert.equal(RC.explain(vote({ q: "On Passage" })), "");
+});

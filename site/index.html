@@ -1230,7 +1230,8 @@ function autoWatch(today){
       // party split; independents get their own count when any voted
       const P=sp?{D:[sp.D.Y,sp.D.N],R:[sp.R.Y,sp.R.N],I:[sp.I.Y,sp.I.N]}:pt&&pt.R&&pt.D?pt:null;
       const split=P?` · D ${P.D[0]||0}–${P.D[1]||0} · R ${P.R[0]||0}–${P.R[1]||0}${P.I&&(P.I[0]||P.I[1])?` · I ${P.I[0]||0}–${P.I[1]||0}`:""}`:"";
-      out.push({id:d.id,date:d.date,title:d.h,auto:"vote",outcome:{h:d.h,t:`${plain(v.q||"")}: ${v.result||""}${split}`,bills:b?[b.id]:[],
+      let why="";try{why=RC.explain(v)}catch(e){}
+      out.push({id:d.id,date:d.date,title:d.h,auto:"vote",outcome:{h:d.h,t:[why,split?`Party split: ${split.slice(3)}.`:""].filter(Boolean).join(" "),bills:b?[b.id]:[],
         src:v.u?[[v.ch==="S"?`Senate roll call ${v.n}`:`House roll call ${v.n}`,v.u]]:[]}});
     }
   }catch(e){console.warn("automatic decisions skipped",e)}
