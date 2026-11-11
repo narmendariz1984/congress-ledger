@@ -257,7 +257,7 @@ th[aria-sort="ascending"] button::after{content:" ▲"} th[aria-sort="descending
 details.vg{border:1px solid var(--rule);border-radius:8px;background:var(--card2);min-width:0}
 details.vg>summary{list-style:none;cursor:pointer;padding:12px 16px;display:grid;grid-template-columns:62px minmax(0,1fr) auto auto;gap:6px 14px;align-items:center}
 details.vg>summary::-webkit-details-marker{display:none}
-details.vg>summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(-45deg);position:absolute;margin-left:-11px}
+details.vg>summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(-45deg);position:absolute;left:11px;top:50%;margin-top:-5px}
 details.vg[open]>summary::before{transform:rotate(45deg)}
 details.vg>summary{position:relative;padding-left:26px}
 details.vg>.tbl{margin:0 16px 14px}
@@ -265,7 +265,7 @@ details.vg>.tbl{margin:0 16px 14px}
 .vg-m{font-weight:600}
 .vg-meta{font-size:13px;color:var(--muted);white-space:nowrap}
 .vg-n{margin-left:8px;color:var(--accent);font-weight:600}
-@media (max-width:620px){details.vg>summary{grid-template-columns:minmax(0,1fr) auto}.vg-res{min-width:0}.vg-res .chip{white-space:normal;text-align:center}.vg-name{grid-column:1/-1;order:-1}.vg-ch{order:1}.vg-res{order:3}.vg-meta{order:2;grid-column:1/-1}}
+@media (max-width:620px){details.vg>summary::before{top:21px;margin-top:0}details.vg>summary{grid-template-columns:minmax(0,1fr) auto}.vg-res{min-width:0}.vg-res .chip{white-space:normal;text-align:center}.vg-name{grid-column:1/-1;order:-1}.vg-ch{order:1}.vg-res{order:3}.vg-meta{order:2;grid-column:1/-1}}
 .ag.empty{border-style:dashed}
 .ag{scroll-margin-top:72px;transition:box-shadow .2s ease}
 .ag.flash{box-shadow:0 0 0 2px var(--red)}
@@ -751,8 +751,8 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 </main>
 <button type="button" class="totop" id="totop" hidden>Back to top</button>
 
-<script src="names.js"></script>
-<script src="votes.js"></script>
+<script src="names.js?v=76c87de1"></script>
+<script src="votes.js?v=d356b47d"></script>
 <script>
 (function(){
 const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
@@ -903,7 +903,7 @@ function passSplit(ch,p){
   if(!RCD||!p||!p.roll)return"";
   const v=(RCD.votes||[]).find(x=>x.ch===ch&&x.n===p.roll&&x.d===p.d);
   if(!v||!v.v)return"";
-  const s=RC.partyText(RC.split(v,RCD.members[ch]||[]));
+  let s="";try{s=RC.partyText(RC.split(v,RCD.members[ch]||[]))}catch(e){}
   return s?` (${s})`:"";
 }
 function creditLine(b){
@@ -1228,7 +1228,7 @@ function autoWatch(today){
       if(d.date>today)continue;
       const v=d.v, b=byNum[numKey(v.measure)];
       // every member accounted for: yea, nay, present and didn't vote, by party
-      const split=RC.partyText(v.v&&RCD?RC.split(v,RCD.members[v.ch]||[]):RC.fromTotals(v.p));
+      let split="";try{split=RC.partyText(v.v&&RCD?RC.split(v,RCD.members[v.ch]||[]):RC.fromTotals(v.p))}catch(e){}
       let why="";try{why=RC.explain(v)}catch(e){}
       out.push({id:d.id,date:d.date,title:d.h,auto:"vote",outcome:{h:d.h,t:[why,split?`By party: ${split}.`:""].filter(Boolean).join(" "),bills:b?[b.id]:[],
         src:v.u?[[v.ch==="S"?`Senate roll call ${v.n}`:`House roll call ${v.n}`,v.u]]:[]}});
@@ -1389,8 +1389,8 @@ function renderVotes(){
   $("#v-more").hidden=left<=0;
   const vm=$("#v-more [data-vmore='25']");if(vm)vm.textContent=`Show ${Math.min(25,left)} more`;
   const vall=$("#v-more [data-vmore='all']");if(vall)vall.textContent=`Show all ${showG.length}`;
-  const psplit=v=>{const t=RCD&&v.v?RC.split(v,RCD.members[v.ch]||[]):RC.fromTotals(v.p);const parts=RC.partyParts(t);if(!parts.length)return"";
-    return`<span class="psplit">${parts.map(x=>`<span class="${x.p==="D"?"d":x.p==="R"?"r":"i"}">${esc(x.s)}</span>`).join(" · ")}</span>`};
+  const psplit=v=>{try{const t=RCD&&v.v?RC.split(v,RCD.members[v.ch]||[]):RC.fromTotals(v.p);const parts=RC.partyParts(t);if(!parts.length)return"";
+    return`<span class="psplit">${parts.map(x=>`<span class="${x.p==="D"?"d":x.p==="R"?"r":"i"}">${esc(x.s)}</span>`).join(" · ")}</span>`}catch(e){return""}};
   const okRes=res=>/agreed|passed|confirmed|invoked(?! not)/i.test(res)&&!/not|rejected|failed/i.test(res);
   const resChip=res=>`<span class="chip" style="--c:var(${okRes(res)?"--law":"--killed"})">${esc(res||"—")}</span>`;
   // a passed motion to table or refer sets the measure aside, so "Passed" next to its name would mislead

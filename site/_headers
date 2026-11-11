@@ -1,0 +1,6 @@
+# Cloudflare Pages response headers. Browsers check for a fresh copy of the page and its
+# scripts and data on every visit, so a new page never runs with an old cached script.
+/*.js
+  Cache-Control: no-cache
+/data/*
+  Cache-Control: no-cache

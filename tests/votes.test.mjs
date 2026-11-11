@@ -153,3 +153,14 @@ test("every member accounted for: present and didn't vote, by party", () => {
   assert.equal(RC.partyText(RC.split({ v: "YYN.NNY" }, members)), "D 2–1 · R 0–2, 1 didn't vote · I 1–0");
   assert.equal(RC.partyText(null), "");
 });
+
+test("the page asks for the current version of each shared script", () => {
+  // index.html loads names.js?v=<hash> and votes.js?v=<hash>; a stale hash would let browsers run
+  // an old cached copy with a new page. Update the ?v= value whenever these files change.
+  const { createHash } = require("node:crypto");
+  const html = readFileSync(new URL("../site/index.html", import.meta.url), "utf8");
+  for (const f of ["names.js", "votes.js"]) {
+    const want = createHash("sha256").update(readFileSync(new URL(`../site/${f}`, import.meta.url))).digest("hex").slice(0, 8);
+    assert.match(html, new RegExp(`<script src="${f}\\?v=${want}"></script>`), `${f}: update its ?v= in index.html to ${want}`);
+  }
+});
