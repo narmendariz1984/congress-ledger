@@ -1,0 +1,13 @@
+name: Probe House floor schedule (temporary)
+on:
+  push:
+    branches: [probe-house-floor]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 probe/floor.py
