@@ -15,17 +15,36 @@
   // Independents (King, Sanders) caucus with Democrats, so they're compared with Democrats
   const side = p => (p === "R" ? "R" : "D");
 
+  // Everyone in each party: yea, nay, present (P) and didn't vote (X). "_" was not a member then.
   function split(rc, members) {
-    const t = { D: { Y: 0, N: 0 }, R: { Y: 0, N: 0 }, I: { Y: 0, N: 0 } };
+    const t = { D: { Y: 0, N: 0, P: 0, X: 0 }, R: { Y: 0, N: 0, P: 0, X: 0 }, I: { Y: 0, N: 0, P: 0, X: 0 } };
     const v = rc.v || "";
     for (let i = 0; i < v.length; i++) {
-      const c = v[i];
-      if (c !== "Y" && c !== "N") continue;
+      const c = v[i] === "." ? "X" : v[i];
+      if (!"YNPX".includes(c)) continue;
       const p = (members[i] || {}).p || "I";
       (t[p] || t.I)[c]++;
     }
     return t;
   }
+
+  // The House Clerk's party totals ({R: [yea, nay, present, not voting], ...}) in the same shape
+  function fromTotals(p) {
+    const one = a => ({ Y: +(a || [])[0] || 0, N: +(a || [])[1] || 0, P: +(a || [])[2] || 0, X: +(a || [])[3] || 0 });
+    return p && p.R && p.D ? { D: one(p.D), R: one(p.R), I: one(p.I) } : null;
+  }
+
+  // "D 0–203, 11 didn't vote · R 210–1, 8 didn't vote · I 1–0": every member accounted for
+  function partyParts(t) {
+    if (!t) return [];
+    return ["D", "R", "I"].map(k => {
+      const x = t[k];
+      if (!x || (k === "I" && !(x.Y || x.N || x.P || x.X))) return null;
+      const extra = [x.P ? `${x.P} present` : "", x.X ? `${x.X} didn't vote` : ""].filter(Boolean).join(", ");
+      return { p: k, s: `${k} ${x.Y || 0}–${x.N || 0}${extra ? `, ${extra}` : ""}` };
+    }).filter(Boolean);
+  }
+  const partyText = t => partyParts(t).map(x => x.s).join(" · ");
 
   // Majority position of each caucus, or null when it's tied
   function majorities(t) {
@@ -161,7 +180,7 @@
     }).sort((a, b) => b.date.localeCompare(a.date) || (+b.v.n || 0) - (+a.v.n || 0));
   }
 
-  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, explain, decisions };
+  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, explain, decisions, fromTotals, partyParts, partyText };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.RC = api;
 })(this);

@@ -638,7 +638,7 @@ def parse_clerk_vote(xml: bytes) -> dict | None:
         k = {"republican": "R", "democratic": "D", "independent": "I"}.get((tp.findtext("party") or "").strip().lower())
         try:
             if k:
-                party[k] = [int(tp.findtext("yea-total") or 0), int(tp.findtext("nay-total") or 0)]
+                party[k] = [int(tp.findtext(f) or 0) for f in ("yea-total", "nay-total", "present-total", "not-voting-total")]
         except ValueError:
             pass
     return {"ch": "H", "n": num, "p": party, "d": day.isoformat(), "type": t("vote-type").title(),

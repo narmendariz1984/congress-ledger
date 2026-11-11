@@ -34,7 +34,7 @@ const members = [
 
 test("party split counts yeas and nays by party", () => {
   const t = RC.split({ v: "YYN.NNY" }, members);
-  assert.deepEqual(t, { D: { Y: 2, N: 1 }, R: { Y: 0, N: 2 }, I: { Y: 1, N: 0 } });
+  assert.deepEqual(t, { D: { Y: 2, N: 1, P: 0, X: 0 }, R: { Y: 0, N: 2, P: 0, X: 1 }, I: { Y: 1, N: 0, P: 0, X: 0 } });
 });
 
 test("crossovers: voting with the other party when the parties split", () => {
@@ -144,4 +144,12 @@ test("plain words for what a motion did", () => {
   assert.equal(RC.explain(vote({ q: "Passage, Objections of the President To The Contrary Notwithstanding", result: "Failed" })), "It fell short of the two-thirds needed to override, so the veto stands.");
   assert.equal(RC.explain(vote({ q: "On Motion to Concur in the Senate Amendments" })), "Both chambers have now passed the same text, so it goes to the President.");
   assert.equal(RC.explain(vote({ q: "On Passage" })), "");
+});
+
+test("every member accounted for: present and didn't vote, by party", () => {
+  const t = RC.fromTotals({ D: [0, 203, 0, 11], R: [210, 1, 1, 8], I: [1, 0, 0, 0] });
+  assert.equal(RC.partyText(t), "D 0–203, 11 didn't vote · R 210–1, 1 present, 8 didn't vote · I 1–0");
+  assert.equal(RC.partyText(RC.fromTotals({ D: [5, 1], R: [3, 2] })), "D 5–1 · R 3–2");  // no independents, nothing extra
+  assert.equal(RC.partyText(RC.split({ v: "YYN.NNY" }, members)), "D 2–1 · R 0–2, 1 didn't vote · I 1–0");
+  assert.equal(RC.partyText(null), "");
 });

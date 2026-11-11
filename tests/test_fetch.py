@@ -424,7 +424,7 @@ def clerk_xml(n, day="10-Nov-2026", legis="H RES 1601", q="On Motion to Table", 
 <chamber>U.S. House of Representatives</chamber><rollcall-num>{n}</rollcall-num><legis-num>{legis}</legis-num>
 <vote-question>{q}</vote-question><vote-type>YEA-AND-NAY</vote-type><vote-result>Passed</vote-result>
 <action-date>{day}</action-date><action-time time-etz="15:02">3:02 PM</action-time><vote-desc>{desc}</vote-desc>
-<vote-totals><totals-by-party><party>Republican</party><yea-total>200</yea-total><nay-total>10</nay-total></totals-by-party>
+<vote-totals><totals-by-party><party>Republican</party><yea-total>200</yea-total><nay-total>10</nay-total><present-total>1</present-total><not-voting-total>7</not-voting-total></totals-by-party>
 <totals-by-vote><total-stub>Totals</total-stub><yea-total>{y}</yea-total><nay-total>{no}</nay-total><present-total>0</present-total><not-voting-total>8</not-voting-total></totals-by-vote>
 </vote-totals></vote-metadata><vote-data></vote-data></rollcall-vote>""".encode()
 
@@ -446,7 +446,7 @@ class ClerkHouseVotes(unittest.TestCase):
 
     def test_reads_a_clerk_roll_call(self):
         v = F.parse_clerk_vote(clerk_xml(318))
-        self.assertEqual(v, {"ch": "H", "n": 318, "p": {"R": [200, 10]}, "d": "2026-11-10", "type": "Yea-And-Nay", "q": "On Motion to Table",
+        self.assertEqual(v, {"ch": "H", "n": 318, "p": {"R": [200, 10, 1, 7]}, "d": "2026-11-10", "type": "Yea-And-Nay", "q": "On Motion to Table",
                              "measure": "HRES 1601", "title": "Impeaching Peter B. Hegseth, Secretary of Defense",
                              "result": "Passed", "y": "220", "n_": "205", "u": "https://clerk.house.gov/Votes/2026318"})
 

@@ -276,8 +276,8 @@ details.vg>.tbl{margin:0 16px 14px}
 .credit a{font-weight:600}
 .vrow{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
 .vrow .search{flex:1 1 260px}
-.psplit{white-space:nowrap;font-size:13.5px}
-.psplit .d,.psplit .r{font-weight:600}
+.psplit{font-size:13.5px}
+.psplit .d,.psplit .r,.psplit .i{font-weight:600;white-space:nowrap}
 .ppanel{grid-template-columns:minmax(0,220px) minmax(0,1fr);align-items:center}
 .pst{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--muted)}
 .pst select{flex:1;min-width:0}
@@ -903,8 +903,8 @@ function passSplit(ch,p){
   if(!RCD||!p||!p.roll)return"";
   const v=(RCD.votes||[]).find(x=>x.ch===ch&&x.n===p.roll&&x.d===p.d);
   if(!v||!v.v)return"";
-  const t=RC.split(v,RCD.members[ch]||[]);
-  return` (D ${t.D.Y+t.I.Y}–${t.D.N+t.I.N}, R ${t.R.Y}–${t.R.N})`;
+  const s=RC.partyText(RC.split(v,RCD.members[ch]||[]));
+  return s?` (${s})`:"";
 }
 function creditLine(b){
   const parts=[], sp=b.sponsor, cs=b.cosponsors||{}, o=b.outcome||{};
@@ -1226,12 +1226,11 @@ function autoWatch(today){
     const all=[...(VOTES.senate||[]),...(VOTES.house||[])];
     for(const d of RC.decisions(all,v=>siteName(v)||fallback(v))){
       if(d.date>today)continue;
-      const v=d.v, b=byNum[numKey(v.measure)], sp=v.v&&RCD?RC.split(v,RCD.members[v.ch]||[]):null, pt=v.p;
-      // party split; independents get their own count when any voted
-      const P=sp?{D:[sp.D.Y,sp.D.N],R:[sp.R.Y,sp.R.N],I:[sp.I.Y,sp.I.N]}:pt&&pt.R&&pt.D?pt:null;
-      const split=P?` · D ${P.D[0]||0}–${P.D[1]||0} · R ${P.R[0]||0}–${P.R[1]||0}${P.I&&(P.I[0]||P.I[1])?` · I ${P.I[0]||0}–${P.I[1]||0}`:""}`:"";
+      const v=d.v, b=byNum[numKey(v.measure)];
+      // every member accounted for: yea, nay, present and didn't vote, by party
+      const split=RC.partyText(v.v&&RCD?RC.split(v,RCD.members[v.ch]||[]):RC.fromTotals(v.p));
       let why="";try{why=RC.explain(v)}catch(e){}
-      out.push({id:d.id,date:d.date,title:d.h,auto:"vote",outcome:{h:d.h,t:[why,split?`Party split: ${split.slice(3)}.`:""].filter(Boolean).join(" "),bills:b?[b.id]:[],
+      out.push({id:d.id,date:d.date,title:d.h,auto:"vote",outcome:{h:d.h,t:[why,split?`By party: ${split}.`:""].filter(Boolean).join(" "),bills:b?[b.id]:[],
         src:v.u?[[v.ch==="S"?`Senate roll call ${v.n}`:`House roll call ${v.n}`,v.u]]:[]}});
     }
   }catch(e){console.warn("automatic decisions skipped",e)}
@@ -1390,8 +1389,8 @@ function renderVotes(){
   $("#v-more").hidden=left<=0;
   const vm=$("#v-more [data-vmore='25']");if(vm)vm.textContent=`Show ${Math.min(25,left)} more`;
   const vall=$("#v-more [data-vmore='all']");if(vall)vall.textContent=`Show all ${showG.length}`;
-  const psplit=v=>{if(!RCD||!v.v)return"";const t=RC.split(v,RCD.members[v.ch]||[]);const dY=t.D.Y+t.I.Y,dN=t.D.N+t.I.N;
-    return`<span class="psplit"><span class="d">D ${dY}–${dN}</span> · <span class="r">R ${t.R.Y}–${t.R.N}</span></span>`};
+  const psplit=v=>{const t=RCD&&v.v?RC.split(v,RCD.members[v.ch]||[]):RC.fromTotals(v.p);const parts=RC.partyParts(t);if(!parts.length)return"";
+    return`<span class="psplit">${parts.map(x=>`<span class="${x.p==="D"?"d":x.p==="R"?"r":"i"}">${esc(x.s)}</span>`).join(" · ")}</span>`};
   const okRes=res=>/agreed|passed|confirmed|invoked(?! not)/i.test(res)&&!/not|rejected|failed/i.test(res);
   const resChip=res=>`<span class="chip" style="--c:var(${okRes(res)?"--law":"--killed"})">${esc(res||"—")}</span>`;
   // a passed motion to table or refer sets the measure aside, so "Passed" next to its name would mislead
