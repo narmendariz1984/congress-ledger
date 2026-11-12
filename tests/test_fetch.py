@@ -619,6 +619,31 @@ class AllSourcesOutage(unittest.TestCase):
         self.assertEqual(F.shown_outages({"since": "x", "sources": {"clerk": "y"}}), {"clerk": "y"})
         self.assertEqual(F.shown_outages(None), {})
 
+
+class FreshRollCalls(unittest.TestCase):
+    """A bill dropped for no floor action comes back when it gets a roll call (H.R. 1013, Nov 11)."""
+    VOTES = {"house": [{"n": 321, "d": "2026-11-11", "measure": "HR 1013", "q": "On Passage"},
+                       {"n": 320, "d": "2026-11-11", "measure": "HRES 1247", "q": "On Motion to Discharge"}],
+             "senate": [{"n": 257, "d": "2026-11-09", "measure": "HR2347"}, {"n": 256, "d": "2026-09-30", "measure": "PN1129"}]}
+
+    def test_dropped_bill_with_a_new_roll_call_is_rechecked(self):
+        t = {"bills": ["119-hr2347"], "dropped": ["119-hr1013"]}
+        self.assertEqual(F.fresh_rollcall_bills(self.VOTES, 119, t, []), ["119-hr1013"])
+
+    def test_each_roll_call_date_is_looked_at_once(self):
+        t = {"bills": [], "dropped": []}
+        self.assertEqual(F.fresh_rollcall_bills(self.VOTES, 119, t, []), ["119-hr1013", "119-hr2347"])
+        self.assertEqual(F.fresh_rollcall_bills(self.VOTES, 119, t, []), [])  # still not tracked, same votes: no loop
+        later = {"house": [{"n": 330, "d": "2026-11-13", "measure": "HR 1013"}]}
+        self.assertEqual(F.fresh_rollcall_bills(later, 119, t, []), ["119-hr1013"])  # a newer roll call: look again
+
+    def test_resolutions_nominations_tracked_and_queued_are_skipped(self):
+        t = {"bills": ["119-hr2347"], "dropped": []}
+        self.assertEqual(F.fresh_rollcall_bills(self.VOTES, 119, t, ["119-hr1013"]), [])
+
+    def test_bad_records_are_ignored(self):
+        self.assertEqual(F.fresh_rollcall_bills({"house": [None, {}, {"measure": "HR 5"}, {"measure": "QUORUM", "d": "2026-11-11"}]}, 119, {"bills": []}, []), [])
+
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
     import datetime as _dt

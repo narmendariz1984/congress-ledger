@@ -504,6 +504,29 @@ def list_updated(congress: int, since: dt.datetime | None, cap: int = 3000) -> l
         return None
 
 
+def fresh_rollcall_bills(votes: dict, congress: int, tracked: dict, queue: list) -> list[str]:
+    """Bills that just got a floor roll call (the House Clerk posts the same day) but aren't
+    tracked, including ones dropped earlier for having no floor action. Each roll call date is
+    looked at once per bill (tracked["rcSeen"]), so a bill that still doesn't qualify isn't
+    re-queued every run."""
+    seen = tracked.setdefault("rcSeen", {})
+    out = []
+    for v in (votes or {}).get("house", []) + (votes or {}).get("senate", []):
+        m = re.match(r"^([A-Z]+)\s*(\d+)$", str((v or {}).get("measure") or "").upper())
+        d = str((v or {}).get("d") or "")[:10]
+        if not m or not d or m.group(1).lower() not in LAW_TYPES:
+            continue
+        bid = bill_id(congress, m.group(1), int(m.group(2)))
+        if bid in tracked["bills"] or bid in queue or seen.get(bid, "") >= d:
+            continue
+        seen[bid] = d
+        if bid not in out:
+            out.append(bid)
+    for k in sorted(seen, key=lambda k: seen[k])[:-200]:
+        del seen[k]  # keep the newest 200
+    return out
+
+
 def is_candidate(item: dict) -> bool:
     text = ((item.get("latestAction") or {}).get("text") or "")
     if (item.get("type") or "").lower() not in LAW_TYPES:
@@ -1219,6 +1242,21 @@ def main() -> int:
                     q["queue"] = queue = sorted(set(queue) | set(fresh))
                     q.pop("finished", None)
                 print(f"roll call discovery: {len(rc)} bills with roll calls, {len(fresh)} new to check")
+
+        # bills with a new roll call go to the front of the queue, even if dropped before
+        try:
+            fresh_rc = fresh_rollcall_bills(prev.get("votes") or {}, congress, tracked, queue)
+        except Exception as e:  # noqa: BLE001
+            fresh_rc = []
+            warn(f"roll call re-check skipped ({e.__class__.__name__})")
+        if fresh_rc:
+            for bid in fresh_rc:
+                if bid in (tracked.get("dropped") or []):
+                    tracked["dropped"].remove(bid)
+            q = tracked.setdefault("backfill", {"queue": []})
+            q["queue"] = queue = fresh_rc + [b for b in queue if b not in fresh_rc]
+            q.pop("finished", None)
+            print(f"new roll calls: re-checking {', '.join(fresh_rc)}")
 
         # this run's slice of the backfill queue
         batch = queue[:BACKFILL_BATCH]
