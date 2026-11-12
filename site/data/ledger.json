@@ -14,7 +14,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -510,7 +510,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -986,7 +986,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1501,7 +1501,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1517,6 +1517,14 @@
    },
    "num": "H.J.Res. 210",
    "number": 210,
+   "passed": {
+    "H": {
+     "d": "2026-09-15",
+     "how": "roll",
+     "roll": 306,
+     "v": "216–211"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Vince Fong",
@@ -1578,7 +1586,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1594,6 +1602,14 @@
    },
    "num": "H.J.Res. 213",
    "number": 213,
+   "passed": {
+    "H": {
+     "d": "2026-09-16",
+     "how": "roll",
+     "roll": 311,
+     "v": "214–208"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "James Gallagher",
@@ -2534,7 +2550,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -2550,6 +2566,14 @@
    },
    "num": "H.J.Res. 72",
    "number": 72,
+   "passed": {
+    "H": {
+     "d": "2026-02-11",
+     "how": "roll",
+     "roll": 65,
+     "v": "219–211"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Gregory W. Meeks",
@@ -2750,7 +2774,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -2766,6 +2790,14 @@
    },
    "num": "H.J.Res. 78",
    "number": 78,
+   "passed": {
+    "H": {
+     "d": "2025-05-01",
+     "how": "roll",
+     "roll": 113,
+     "v": "216–195"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Doug LaMalfa",
@@ -3331,7 +3363,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3455,7 +3487,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3471,6 +3503,14 @@
    },
    "num": "H.R. 1005",
    "number": 1005,
+   "passed": {
+    "H": {
+     "d": "2025-12-03",
+     "how": "roll",
+     "roll": 312,
+     "v": "242–176"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "David P. Joyce",
@@ -3550,7 +3590,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3566,6 +3606,14 @@
    },
    "num": "H.R. 1011",
    "number": 1011,
+   "passed": {
+    "H": {
+     "d": "2026-04-14",
+     "how": "roll",
+     "roll": 109,
+     "v": "395–10"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Julia Letlow",
@@ -3634,7 +3682,7 @@
     ],
     "t": 24
    },
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3708,7 +3756,7 @@
     {
      "ch": "H",
      "d": "2026-11-11",
-     "e": "On passage Passed by the Yeas and Nays: 295 - 128 (Roll no. 321).",
+     "e": "On passage Passed by the Yeas and Nays: 295 - 128 (Roll no. 321). (text of amendment in the nature of a substitute: CR H6166)",
      "fn": "cg",
      "v": "295–128"
     },
@@ -3735,7 +3783,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3751,6 +3799,14 @@
    },
    "num": "H.R. 10326",
    "number": 10326,
+   "passed": {
+    "H": {
+     "d": "2026-09-16",
+     "how": "roll",
+     "roll": 310,
+     "v": "217–207"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Jefferson Van Drew",
@@ -3815,7 +3871,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3831,6 +3887,14 @@
    },
    "num": "H.R. 1039",
    "number": 1039,
+   "passed": {
+    "H": {
+     "d": "2025-04-07",
+     "how": "roll",
+     "roll": 90,
+     "v": "412–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Tom Barrett",
@@ -3913,7 +3977,7 @@
     ],
     "t": 70
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3929,6 +3993,14 @@
    },
    "num": "H.R. 1041",
    "number": 1041,
+   "passed": {
+    "H": {
+     "d": "2026-05-21",
+     "how": "roll",
+     "roll": 190,
+     "v": "216–201"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mike Bost",
@@ -4026,7 +4098,7 @@
     ],
     "t": 17
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4042,6 +4114,14 @@
    },
    "num": "H.R. 1047",
    "number": 1047,
+   "passed": {
+    "H": {
+     "d": "2025-09-18",
+     "how": "roll",
+     "roll": 279,
+     "v": "216–206"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Troy Balderson",
@@ -4130,7 +4210,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4146,6 +4226,14 @@
    },
    "num": "H.R. 1048",
    "number": 1048,
+   "passed": {
+    "H": {
+     "d": "2025-03-27",
+     "how": "roll",
+     "roll": 83,
+     "v": "241–169"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Michael Baumgartner",
@@ -4238,7 +4326,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4254,6 +4342,14 @@
    },
    "num": "H.R. 1049",
    "number": 1049,
+   "passed": {
+    "H": {
+     "d": "2025-12-04",
+     "how": "roll",
+     "roll": 314,
+     "v": "247–166"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Aaron Bean",
@@ -4327,7 +4423,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4343,6 +4439,14 @@
    },
    "num": "H.R. 1069",
    "number": 1069,
+   "passed": {
+    "H": {
+     "d": "2025-12-04",
+     "how": "roll",
+     "roll": 313,
+     "v": "247–164"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Kevin Hern",
@@ -4415,7 +4519,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4431,6 +4535,14 @@
    },
    "num": "H.R. 1118",
    "number": 1118,
+   "passed": {
+    "H": {
+     "d": "2026-07-21",
+     "how": "roll",
+     "roll": 252,
+     "v": "421–1"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Byron Donalds",
@@ -4635,7 +4747,7 @@
     ],
     "t": 132
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4651,6 +4763,14 @@
    },
    "num": "H.R. 1181",
    "number": 1181,
+   "passed": {
+    "H": {
+     "d": "2026-07-14",
+     "how": "roll",
+     "roll": 240,
+     "v": "221–201"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Riley Moore",
@@ -6868,7 +6988,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6884,6 +7004,14 @@
    },
    "num": "H.R. 1531",
    "number": 1531,
+   "passed": {
+    "H": {
+     "d": "2026-02-09",
+     "how": "roll",
+     "roll": 58,
+     "v": "395–2"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Frank D. Lucas",
@@ -6956,7 +7084,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6972,6 +7100,14 @@
    },
    "num": "H.R. 1534",
    "number": 1534,
+   "passed": {
+    "H": {
+     "d": "2025-03-25",
+     "how": "roll",
+     "roll": 74,
+     "v": "350–73"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Max L. Miller",
@@ -7668,7 +7804,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-10T19:25:06+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7679,8 +7815,8 @@
    "id": "119-hr1703",
    "introduced": "2025-02-27",
    "latest": {
-    "actionDate": "2026-11-09",
-    "text": "Presented to President."
+    "actionDate": "2026-11-10",
+    "text": "Signed by President."
    },
    "num": "H.R. 1703",
    "number": 1703,
@@ -7694,13 +7830,13 @@
      "how": "voice"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "John Joyce",
     "p": "R",
     "s": "PA-13"
    },
-   "status": "passed1",
+   "status": "law",
    "timeline": [
     {
      "ch": "H",
@@ -9325,7 +9461,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -9336,8 +9472,8 @@
    "id": "119-hr1945",
    "introduced": "2025-03-06",
    "latest": {
-    "actionDate": "2026-11-05",
-    "text": "Presented to President."
+    "actionDate": "2026-11-10",
+    "text": "Signed by President."
    },
    "num": "H.R. 1945",
    "number": 1945,
@@ -9351,13 +9487,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Robert Onder",
     "p": "R",
     "s": "MO-3"
    },
-   "status": "passed1",
+   "status": "law",
    "timeline": [
     {
      "ch": "H",
@@ -12513,7 +12649,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12530,7 +12666,7 @@
    "introduced": "2025-03-25",
    "latest": {
     "actionDate": "2026-11-11",
-    "text": "Cloture motion on the measure presented in Senate."
+    "text": "Cloture motion on the measure presented in Senate. (CR S5568)"
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -12548,13 +12684,6 @@
    },
    "status": "passed1",
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2026-03-25",
-     "e": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 41 - 0.",
-     "fn": "cg",
-     "v": "41–0"
-    },
     {
      "ch": "H",
      "d": "2026-04-09",
@@ -12608,9 +12737,15 @@
     {
      "ch": "S",
      "d": "2026-11-10",
-     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 62 - 21. Record Vote Number: 258.",
+     "e": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 62 - 21. Record Vote Number: 258. (CR S5383-5393)",
      "fn": "cg",
      "v": "62–21"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-11",
+     "e": "Cloture motion on the measure presented in Senate. (CR S5568)",
+     "fn": "cg"
     }
    ],
    "title": "Survivor Justice Tax Prevention Act",
@@ -21552,7 +21687,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23545,7 +23680,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23557,7 +23692,7 @@
    "introduced": "2025-08-08",
    "latest": {
     "actionDate": "2026-11-10",
-    "text": "Passed Senate without amendment by Unanimous Consent."
+    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5525)"
    },
    "num": "H.R. 4930",
    "number": 4930,
@@ -23620,7 +23755,7 @@
     {
      "ch": "S",
      "d": "2026-11-10",
-     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5525)",
      "fn": "cg"
     },
     {
@@ -25801,7 +25936,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -30706,7 +30841,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-08T09:14:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30717,8 +30852,8 @@
    "id": "119-hr7730",
    "introduced": "2026-02-26",
    "latest": {
-    "actionDate": "2026-11-05",
-    "text": "Presented to President."
+    "actionDate": "2026-11-10",
+    "text": "Signed by President."
    },
    "num": "H.R. 7730",
    "number": 7730,
@@ -30732,13 +30867,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Ben Cline",
     "p": "R",
     "s": "VA-6"
    },
-   "status": "passed1",
+   "status": "law",
    "timeline": [
     {
      "ch": "H",
@@ -32930,7 +33065,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32942,7 +33077,7 @@
    "introduced": "2026-04-28",
    "latest": {
     "actionDate": "2026-11-11",
-    "text": "Passed Senate without amendment by Voice Vote."
+    "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5572)"
    },
    "num": "H.R. 8552",
    "number": 8552,
@@ -32991,7 +33126,7 @@
     {
      "ch": "S",
      "d": "2026-11-11",
-     "e": "Passed Senate without amendment by Voice Vote.",
+     "e": "Passed Senate without amendment by Voice Vote. (consideration: CR S5572)",
      "fn": "cg"
     },
     {
@@ -34206,7 +34341,7 @@
     ],
     "t": 30
    },
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35724,7 +35859,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-10T20:51:13+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35735,8 +35870,8 @@
    "id": "119-hr997",
    "introduced": "2025-02-05",
    "latest": {
-    "actionDate": "2026-11-09",
-    "text": "Presented to President."
+    "actionDate": "2026-11-10",
+    "text": "Signed by President."
    },
    "num": "H.R. 997",
    "number": 997,
@@ -35752,13 +35887,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Randy Feenstra",
     "p": "R",
     "s": "IA-4"
    },
-   "status": "passed1",
+   "status": "law",
    "timeline": [
     {
      "ch": "H",
@@ -40569,7 +40704,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40660,7 +40795,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-12T12:47:11+00:00",
+   "fetched": "2026-11-12T20:51:29+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -48627,9 +48762,17 @@
    "u": "https://docs.house.gov/floor/Default.aspx?date=2026-11-09",
    "week": "2026-11-09"
   },
-  "senate": []
+  "senate": [
+   {
+    "expected": "2026-11-16",
+    "filed": "2026-11-11",
+    "id": "119-hr2347",
+    "num": "H.R. 2347",
+    "on": "the bill"
+   }
+  ]
  },
- "generatedAt": "2026-11-12T12:47:11+00:00",
+ "generatedAt": "2026-11-12T20:51:29+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -48935,6 +49078,72 @@
  "session": 2,
  "votes": {
   "house": [
+   {
+    "ch": "H",
+    "d": "2026-11-12",
+    "measure": "HR 2102",
+    "n": 323,
+    "n_": "18",
+    "p": {
+     "D": [
+      210,
+      0,
+      0,
+      4
+     ],
+     "I": [
+      1,
+      0,
+      0,
+      0
+     ],
+     "R": [
+      181,
+      18,
+      0,
+      19
+     ]
+    },
+    "q": "On Passage",
+    "result": "Passed",
+    "title": "Major Richard Star Act",
+    "type": "Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026323",
+    "y": "392"
+   },
+   {
+    "ch": "H",
+    "d": "2026-11-12",
+    "measure": "HRES 1247",
+    "n": 322,
+    "n_": "135",
+    "p": {
+     "D": [
+      210,
+      0,
+      0,
+      4
+     ],
+     "I": [
+      1,
+      0,
+      0,
+      0
+     ],
+     "R": [
+      60,
+      135,
+      0,
+      22
+     ]
+    },
+    "q": "On Agreeing to the Resolution",
+    "result": "Passed",
+    "title": "Providing for consideration of the bill (H.R. 2102) to amend title 10, United States Code, to provide for concurrent receipt of veterans’ disability compensation and retired pay for disability retirees with combat-related disabilities, and for other purposes",
+    "type": "Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026322",
+    "y": "271"
+   },
    {
     "ch": "H",
     "d": "2026-11-11",
@@ -49788,32 +49997,6 @@
     "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202673",
     "y": "208"
-   },
-   {
-    "ch": "H",
-    "d": "2026-02-24",
-    "measure": "S 2503",
-    "n": 72,
-    "n_": "133",
-    "q": "On Motion to Suspend the Rules and Pass",
-    "result": "Failed",
-    "title": "ROTOR Act",
-    "type": "2/3 Yea-And-Nay",
-    "u": "https://clerk.house.gov/Votes/202672",
-    "y": "264"
-   },
-   {
-    "ch": "H",
-    "d": "2026-02-24",
-    "measure": "HR 6329",
-    "n": 71,
-    "n_": "1",
-    "q": "On Motion to Suspend the Rules and Pass",
-    "result": "Passed",
-    "title": "Information Quality Assurance Act of 2025",
-    "type": "2/3 Yea-And-Nay",
-    "u": "https://clerk.house.gov/Votes/202671",
-    "y": "362"
    }
   ],
   "senate": [
