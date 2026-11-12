@@ -752,7 +752,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 <button type="button" class="totop" id="totop" hidden>Back to top</button>
 
 <script src="names.js?v=76c87de1"></script>
-<script src="votes.js?v=d356b47d"></script>
+<script src="votes.js?v=c563f9a0"></script>
 <script>
 (function(){
 const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
@@ -1207,7 +1207,7 @@ function monthGrid(y,m,evByDay,inSession,today){
   for(let d=1;d<=n;d++){
     const k=`${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`, ev=evByDay[k];
     const cls=["c",inSession.has(k)?"in":"",ev?"ev":"",k===today?"today":"",k<today?"past":""].filter(Boolean).join(" ");
-    const label=`${MONTH_FULL[m]} ${d}${ev?": "+ev.map(e=>e.title+(e.outcome&&e.outcome.h?` (what happened: ${e.outcome.h})`:"")).join("; "):""}${inSession.has(k)?" (in session)":""}`;
+    const label=`${MONTH_FULL[m]} ${d}${ev?": "+ev.map(e=>e.title+(e.outcome&&e.outcome.h&&e.outcome.h!==e.title?` (what happened: ${e.outcome.h})`:"")).join("; "):""}${inSession.has(k)?" (in session)":""}`;
     const tgt=ev&&(ev.find(e=>!e.auto||e.auto==="ahead")||null);
     h+=ev?`<a class="${cls}" href="${tgt?`#w-${esc(tgt.id)}`:"#watch"}" data-day="${k}" title="${esc(label)}" aria-label="${esc(label)}">${d}</a>`:`<span class="${cls}" title="${esc(label)}">${d}</span>`;
   }
@@ -1234,6 +1234,16 @@ function autoWatch(today){
         src:v.u?[[v.ch==="S"?`Senate roll call ${v.n}`:`House roll call ${v.n}`,v.u]]:[]}});
     }
   }catch(e){console.warn("automatic decisions skipped",e)}
+  try{
+    // a rule bill that passed the House with no recorded vote (routine suspension bills don't count)
+    for(const u of RC.unrecorded(bills)){
+      if(u.d>today)continue;
+      const b=bills.find(x=>x.id===u.id);if(!b)continue;
+      const name=b.vehicle&&b.vehicle.label?`${b.vehicle.label} (in ${b.num})`:nm(b), h=`House passes ${name} ${u.how}, no recorded vote`;
+      out.push({id:`u-${u.id}`,date:u.d,title:h,auto:"vote",outcome:{h,bills:[b.id],src:b.url?[["Congress.gov actions",`${b.url}/all-actions`]]:[],
+        t:`It came up under a rule (${u.rule}), where final passage usually gets a recorded vote. No member asked for one, so there's no record of how anyone voted.`}});
+    }
+  }catch(e){console.warn("unrecorded passages skipped",e)}
   try{
     for(const c of ((LEDGER_FLOOR||{}).senate)||[]){
       if(!c.expected||c.expected<today)continue;

@@ -164,3 +164,28 @@ test("the page asks for the current version of each shared script", () => {
     assert.match(html, new RegExp(`<script src="${f}\\?v=${want}"></script>`), `${f}: update its ?v= in index.html to ${want}`);
   }
 });
+
+// ---- rule bills that pass with no recorded vote (H.R. 9237, Nov 11, 2026) ----
+const ruleBill = (...tl) => ({ id: "119-hr9237", num: "H.R. 9237", timeline: tl.map(([d, e]) => ({ d, e })) });
+const RULE = ["2026-07-13", "Rules Committee Resolution H. Res. 1423 Reported to House. Rule provides for consideration of H.R. 139, H.R. 8595, H.R. 9237 and H.R. 9440"];
+
+test("unrecorded: a rule bill passed by voice vote is flagged", () => {
+  const b = ruleBill(["2026-06-23", "Rules Committee Resolution H. Res. 1377 Reported to House. Rule provides for consideration of H.R. 1181, H.R. 9022, H.R. 8595 and H.R. 9237"],
+    RULE, ["2026-07-16", "On motion to recommit Failed by the Yeas and Nays: 210 - 211 (Roll no. 249)."],
+    ["2026-11-11", "Passed/agreed to in House: On passage Passed by voice vote. (text: CR H4613)"], ["2026-11-11", "On passage Passed by voice vote. (text: CR H4613)"]);
+  assert.deepEqual(RC.unrecorded([b]), [{ id: "119-hr9237", d: "2026-11-11", how: "by voice vote", rule: "H.Res. 1423" }]);
+});
+
+test("unrecorded: without objection counts too, under a rule", () => {
+  const b = ruleBill(RULE, ["2026-11-12", "On passage Passed without objection."]);
+  assert.equal(RC.unrecorded([b])[0].how, "without objection");
+});
+
+test("unrecorded: routine and recorded passages are not flagged", () => {
+  const suspension = ruleBill(["2026-03-02", "On motion to suspend the rules and pass the bill Agreed to by voice vote."]);
+  const noRule = ruleBill(["2026-02-03", "On passage Passed without objection."]);
+  const recorded = ruleBill(RULE, ["2026-07-17", "On passage Passed by the Yeas and Nays: 216 - 211 (Roll no. 251)."]);
+  const voiceBeforeRule = ruleBill(["2026-06-01", "On passage Passed by voice vote."], RULE);
+  const otherVoice = ruleBill(RULE, ["2026-07-16", "On motion that the committee rise Agreed to by voice vote."]);
+  assert.deepEqual(RC.unrecorded([suspension, noRule, recorded, voiceBeforeRule, otherVoice, null, {}, { timeline: [null, { d: "x" }] }]), []);
+});

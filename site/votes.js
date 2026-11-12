@@ -164,6 +164,25 @@
     return "";
   }
 
+  // A bill the House took up under a rule (major or contested bills, which almost always get a
+  // recorded vote) that passed by voice vote or without objection, so there's no record of how
+  // anyone voted. Routine "suspension" bills that pass by voice vote are not included.
+  const RULE_FOR = /^Rules Committee Resolution H\. ?Res\. ?(\d+) Reported to House/i;
+  const UNRECORDED = /^(?:Passed\/agreed to in House: )?On passage Passed (by voice vote|without objection)/i;
+  function unrecorded(bills) {
+    const out = [];
+    for (const b of bills || []) {
+      try {
+        const tl = (b && b.timeline || []).filter(t => t && t.d && t.e).slice().sort((x, y) => x.d.localeCompare(y.d));
+        const pass = tl.filter(t => UNRECORDED.test(t.e)).pop();
+        const rule = pass && tl.filter(t => t.d <= pass.d && RULE_FOR.test(t.e)).pop();  // the rule that brought it up
+        if (!pass || !rule) continue;
+        out.push({ id: b.id, d: pass.d.slice(0, 10), how: /without objection/i.test(pass.e) ? "without objection" : "by voice vote", rule: `H.Res. ${RULE_FOR.exec(rule.e)[1]}` });
+      } catch (e) { /* a bad record is skipped */ }
+    }
+    return out;
+  }
+
   // One line per measure per day: the last notable roll call that day decided it
   function decisions(votes, nameOf) {
     const by = {};
@@ -180,7 +199,7 @@
     }).sort((a, b) => b.date.localeCompare(a.date) || (+b.v.n || 0) - (+a.v.n || 0));
   }
 
-  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, explain, decisions, fromTotals, partyParts, partyText };
+  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, explain, decisions, fromTotals, partyParts, partyText, unrecorded };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.RC = api;
 })(this);
