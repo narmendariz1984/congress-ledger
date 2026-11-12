@@ -1340,6 +1340,8 @@ def main() -> int:
                     if bid not in d:
                         d.append(bid)  # checked once and didn't qualify; roll call discovery skips it
                 continue
+            if bid in (tracked.get("dropped") or []):
+                tracked["dropped"].remove(bid)  # it qualifies now (e.g. a later floor vote)
             fresh["id"] = bid
             fresh["fetched"] = now.isoformat(timespec="seconds")
             auto_by_id[bid] = fresh
