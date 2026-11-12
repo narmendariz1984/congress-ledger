@@ -3331,7 +3331,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-12T03:49:59+00:00",
+   "fetched": "2026-11-12T12:47:11+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3604,6 +3604,125 @@
    "title": "Emergency Conservation Program Improvement Act of 2025",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/1011"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 19,
+    "i": 0,
+    "r": 5,
+    "st": [
+     "AL",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "GA",
+     "IA",
+     "IL",
+     "KY",
+     "NC",
+     "NJ",
+     "NV",
+     "NY",
+     "OR",
+     "PA",
+     "TX",
+     "VA"
+    ],
+    "t": 24
+   },
+   "fetched": "2026-11-12T12:47:11+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1013"
+    }
+   },
+   "id": "119-hr1013",
+   "introduced": "2025-02-05",
+   "latest": {
+    "actionDate": "2026-11-11",
+    "actionTime": "14:43:59",
+    "text": "Motion to reconsider laid on the table Agreed to without objection."
+   },
+   "num": "H.R. 1013",
+   "number": 1013,
+   "passed": {
+    "H": {
+     "d": "2026-11-11",
+     "how": "roll",
+     "roll": 321,
+     "v": "295–128"
+    }
+   },
+   "reached": 3,
+   "sponsor": {
+    "n": "Frank D. Lucas",
+    "p": "R",
+    "s": "OK-3"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-02-05",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-20",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 43 - 8.",
+     "fn": "cg",
+     "v": "43–8"
+    },
+    {
+     "ch": "H",
+     "d": "2025-11-28",
+     "e": "Reported (Amended) by the Committee on Financial Services. H. Rept. 119-390.",
+     "fn": "cg",
+     "v": "119–390"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "Rules Committee Resolution H. Res. 1650 Reported to House. Rule provides for consideration of H.R. 1013 with 1 hour of general debate. Previous question shall b",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-10",
+     "e": "Rule H. Res. 1650 passed House.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-11",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-11",
+     "e": "On passage Passed by the Yeas and Nays: 295 - 128 (Roll no. 321).",
+     "fn": "cg",
+     "v": "295–128"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-11",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 295 - 128 (Roll no. 321).",
+     "fn": "cg",
+     "v": "295–128"
+    }
+   ],
+   "title": "Retirement Fairness for Charities and Educational Institutions Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/1013"
   },
   {
    "area": "Accountability & oversight",
@@ -12394,7 +12513,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-12T12:47:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12410,8 +12529,8 @@
    "id": "119-hr2347",
    "introduced": "2025-03-25",
    "latest": {
-    "actionDate": "2026-11-10",
-    "text": "Motion by Senator Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate."
+    "actionDate": "2026-11-11",
+    "text": "Cloture motion on the measure presented in Senate."
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -21433,7 +21552,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-12T03:49:59+00:00",
+   "fetched": "2026-11-12T12:47:11+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -25682,7 +25801,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-12T03:49:59+00:00",
+   "fetched": "2026-11-12T12:47:11+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -32796,6 +32915,97 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/8469"
   },
   {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 4,
+    "i": 0,
+    "r": 1,
+    "st": [
+     "KY",
+     "NY",
+     "TX",
+     "VA"
+    ],
+    "t": 5
+   },
+   "fetched": "2026-11-12T12:47:11+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8552"
+    }
+   },
+   "id": "119-hr8552",
+   "introduced": "2026-04-28",
+   "latest": {
+    "actionDate": "2026-11-11",
+    "text": "Passed Senate without amendment by Voice Vote."
+   },
+   "num": "H.R. 8552",
+   "number": 8552,
+   "passed": {
+    "H": {
+     "d": "2026-11-09",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-11-11",
+     "how": "voice"
+    }
+   },
+   "reached": 4,
+   "sponsor": {
+    "n": "Morgan Luttrell",
+    "p": "R",
+    "s": "TX-8"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-28",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H6105-6106)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-09",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H6105-6106)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-11",
+     "e": "Passed Senate without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-11",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Voice Vote.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Veterans’ Compensation Cost-of-Living Adjustment Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8552"
+  },
+  {
    "area": "Accountability & oversight",
    "auto": true,
    "congress": 119,
@@ -33996,7 +34206,7 @@
     ],
     "t": 30
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-12T12:47:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34007,19 +34217,25 @@
    "id": "119-hr9237",
    "introduced": "2026-06-10",
    "latest": {
-    "actionDate": "2026-07-16",
-    "actionTime": "11:16:45",
-    "text": "POSTPONED PROCEEDINGS - Pursuant to clause 1(c) of rule XIX, the Chair announced further proceedings on H.R. 9237 is postponed."
+    "actionDate": "2026-11-11",
+    "actionTime": "14:46:12",
+    "text": "Motion to reconsider laid on the table Agreed to without objection."
    },
    "num": "H.R. 9237",
    "number": 9237,
-   "reached": 2,
+   "passed": {
+    "H": {
+     "d": "2026-11-11",
+     "how": "voice"
+    }
+   },
+   "reached": 3,
    "sponsor": {
     "n": "Mike Bost",
     "p": "R",
     "s": "IL-12"
    },
-   "status": "moving",
+   "status": "passed1",
    "timeline": [
     {
      "ch": "H",
@@ -34045,6 +34261,24 @@
      "e": "On motion to recommit Failed by the Yeas and Nays: 210 - 211 (Roll no. 249).",
      "fn": "cg",
      "v": "210–211"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-11",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-11",
+     "e": "On passage Passed by voice vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-11",
+     "e": "Passed/agreed to in House: On passage Passed by voice vote.",
+     "fn": "cg"
     }
    ],
    "title": "Take Care of America’s Veterans Act",
@@ -40335,7 +40569,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-12T03:49:59+00:00",
+   "fetched": "2026-11-12T12:47:11+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40426,7 +40660,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-12T03:49:59+00:00",
+   "fetched": "2026-11-12T12:47:11+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -48395,7 +48629,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-12T03:49:59+00:00",
+ "generatedAt": "2026-11-12T12:47:11+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
