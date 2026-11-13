@@ -1339,6 +1339,11 @@ def main() -> int:
                     d = tracked.setdefault("dropped", [])
                     if bid not in d:
                         d.append(bid)  # checked once and didn't qualify; roll call discovery skips it
+                # a roll call newer than Congress.gov's record of the bill: Congress.gov hasn't posted
+                # it yet, so look again next bill check instead of counting it as checked
+                seen = tracked.get("rcSeen") or {}
+                if seen.get(bid, "") > str((fresh.get("latest") or {}).get("actionDate") or "")[:10]:
+                    del seen[bid]
                 continue
             if bid in (tracked.get("dropped") or []):
                 tracked["dropped"].remove(bid)  # it qualifies now (e.g. a later floor vote)

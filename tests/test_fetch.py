@@ -4,6 +4,7 @@ Run: python -m unittest discover -s tests -v
 No network: every call to Congress.gov or Voteview is replaced with sample data.
 """
 import json
+import os
 import sys
 import unittest
 from pathlib import Path
@@ -643,6 +644,41 @@ class FreshRollCalls(unittest.TestCase):
 
     def test_bad_records_are_ignored(self):
         self.assertEqual(F.fresh_rollcall_bills({"house": [None, {}, {"measure": "HR 5"}, {"measure": "QUORUM", "d": "2026-11-11"}]}, 119, {"bills": []}, []), [])
+
+
+class RollCallAheadOfCongressGov(unittest.TestCase):
+    """H.R. 2102 passed 392-18 on Nov 12 but was fetched before Congress.gov posted it: retry, don't drop for good."""
+
+    def run_main(self, latest_date):
+        import datetime as dt, shutil, tempfile
+        d = Path(tempfile.mkdtemp())
+        old = (F.OUT, F.TRACKED, F.ROOT, F.list_updated, F.fetch_bill, F.rollcall_bills, F.senate_with_backoff, F.house_with_fallback, F.house_floor)
+        try:
+            (d / "ledger.json").write_text(json.dumps({"bills": [], "votes": {"house": [{"n": 323, "d": "2026-11-12", "measure": "HR 2102"}], "senate": []}, "meta": {}}))
+            (d / "tracked.json").write_text(json.dumps({"bills": [], "lastDiscovery": "2026-11-12T00:00:00+00:00"}))
+            F.OUT, F.TRACKED, F.ROOT = d / "ledger.json", d / "tracked.json", d
+            F.list_updated = lambda *a, **k: []
+            F.rollcall_bills = lambda c: set()
+            F.fetch_bill = lambda c, t, n: {"num": "H.R. 2102", "title": "x", "strong": False, "latest": {"actionDate": latest_date}, "timeline": []}
+            F.senate_with_backoff = lambda c, s, n, t, prev: prev
+            F.house_with_fallback = lambda *a: a[-1]
+            F.house_floor = lambda *a, **k: None
+            os.environ["MODE"] = "full"
+            F.main()
+            return json.loads(F.TRACKED.read_text())
+        finally:
+            os.environ.pop("MODE", None)
+            F.OUT, F.TRACKED, F.ROOT, F.list_updated, F.fetch_bill, F.rollcall_bills, F.senate_with_backoff, F.house_with_fallback, F.house_floor = old
+            shutil.rmtree(d, ignore_errors=True)
+
+    def test_not_posted_yet_means_look_again(self):
+        t = self.run_main("2026-02-10")
+        self.assertIn("119-hr2102", t.get("dropped") or [])
+        self.assertNotIn("119-hr2102", t.get("rcSeen") or {})  # so the next bill check retries it
+
+    def test_posted_and_still_not_qualifying_is_checked_once(self):
+        t = self.run_main("2026-11-12")
+        self.assertEqual((t.get("rcSeen") or {}).get("119-hr2102"), "2026-11-12")
 
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
