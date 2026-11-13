@@ -3363,7 +3363,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-13T01:51:46+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3682,7 +3682,7 @@
     ],
     "t": 24
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3693,9 +3693,8 @@
    "id": "119-hr1013",
    "introduced": "2025-02-05",
    "latest": {
-    "actionDate": "2026-11-11",
-    "actionTime": "14:43:59",
-    "text": "Motion to reconsider laid on the table Agreed to without objection."
+    "actionDate": "2026-11-12",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
    },
    "num": "H.R. 1013",
    "number": 1013,
@@ -3763,7 +3762,7 @@
     {
      "ch": "H",
      "d": "2026-11-11",
-     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 295 - 128 (Roll no. 321).",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 295 - 128 (Roll no. 321). (text of amendment in the nature of a substitute: CR H6166)",
      "fn": "cg",
      "v": "295–128"
     }
@@ -3771,6 +3770,106 @@
    "title": "Retirement Fairness for Charities and Educational Institutions Act of 2025",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/1013"
+  },
+  {
+   "area": "Finance and Financial Sector",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "CA"
+    ],
+    "t": 1
+   },
+   "fetched": "2026-11-13T22:46:27+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10167"
+    }
+   },
+   "id": "119-hr10167",
+   "introduced": "2026-08-27",
+   "latest": {
+    "actionDate": "2026-11-12",
+    "text": "Presented to President."
+   },
+   "num": "H.R. 10167",
+   "number": 10167,
+   "passed": {
+    "H": {
+     "d": "2026-09-14",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-28",
+     "how": "uc"
+    }
+   },
+   "reached": 5,
+   "sponsor": {
+    "n": "Lisa C. McClain",
+    "p": "R",
+    "s": "MI-9"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-08-27",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5599-5601)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5599-5601)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-28",
+     "e": "Senate Committee on Banking, Housing, and Urban Affairs discharged by Unanimous Consent. (consideration: CR S5120)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-12",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Common Cents Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/10167"
   },
   {
    "area": "Accountability & oversight",
@@ -7252,6 +7351,112 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/1534"
   },
   {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "NY"
+    ],
+    "t": 1
+   },
+   "fetched": "2026-11-13T22:46:27+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1550"
+    }
+   },
+   "id": "119-hr1550",
+   "introduced": "2025-02-25",
+   "latest": {
+    "actionDate": "2026-11-12",
+    "text": "Presented to President."
+   },
+   "num": "H.R. 1550",
+   "number": 1550,
+   "passed": {
+    "H": {
+     "d": "2025-05-13",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-29",
+     "how": "uc"
+    }
+   },
+   "reached": 5,
+   "sponsor": {
+    "n": "Elise M. Stefanik",
+    "p": "R",
+    "s": "NY-21"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-02-25",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-13",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-13",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H1974)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-05-13",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H1974)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-02-04",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-23",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee without amendment. Without written report.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140-5144)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140-5144)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-12",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Strengthening America’s Turning Point Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/1550"
+  },
+  {
    "area": "Transportation and Public Works",
    "auto": true,
    "congress": 119,
@@ -7948,22 +8153,38 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/1703"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-10: Signed by President.; 2026-11-10: Became Public Law No: 119-140.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1703/all-actions"
     }
    },
    "id": "119-hr1703",
    "introduced": "2025-02-27",
    "latest": {
     "actionDate": "2026-11-10",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-140."
    },
+   "law": "Pub. L. 119-140",
    "num": "H.R. 1703",
    "number": 1703,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-10",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-07-20",
@@ -7982,13 +8203,6 @@
    },
    "status": "law",
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2026-05-21",
-     "e": "Ordered to be Reported by the Yeas and Nays: 45 - 0.",
-     "fn": "cg",
-     "v": "45–0"
-    },
     {
      "ch": "H",
      "d": "2026-07-18",
@@ -8043,6 +8257,14 @@
      "d": "2026-11-09",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-10",
+     "e": "Became Public Law No: 119-140.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–140"
     }
    ],
    "title": "Choices for Increased Mobility Act of 2026",
@@ -9621,22 +9843,38 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/1945"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-10: Signed by President.; 2026-11-10: Became Public Law No: 119-141.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1945/all-actions"
     }
    },
    "id": "119-hr1945",
    "introduced": "2025-03-06",
    "latest": {
     "actionDate": "2026-11-10",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-141."
    },
+   "law": "Pub. L. 119-141",
    "num": "H.R. 1945",
    "number": 1945,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-10",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-03-03",
@@ -9655,12 +9893,6 @@
    },
    "status": "law",
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-03-06",
-     "e": "Introduced in House",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2026-02-11",
@@ -9715,6 +9947,14 @@
      "d": "2026-11-05",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-10",
+     "e": "Became Public Law No: 119-141.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–141"
     }
    ],
    "title": "America's National Churchill Museum National Historic Landmark Act",
@@ -11011,6 +11251,136 @@
    "title": "Born-Alive Abortion Survivors Protection Act",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/21"
+  },
+  {
+   "area": "Armed Forces and National Security",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 207,
+    "i": 0,
+    "r": 135,
+    "st": [
+     "AK",
+     "AL",
+     "AR",
+     "AS",
+     "AZ",
+     "CA",
+     "CO",
+     "CT",
+     "DC",
+     "DE",
+     "FL",
+     "GA",
+     "GU",
+     "HI",
+     "IA",
+     "ID",
+     "IL",
+     "IN",
+     "KS",
+     "KY",
+     "LA",
+     "MA",
+     "MD",
+     "ME",
+     "MI",
+     "MN",
+     "MO",
+     "MP",
+     "MS",
+     "MT",
+     "NC",
+     "ND",
+     "NE",
+     "NH",
+     "NJ",
+     "NM",
+     "NV",
+     "NY",
+     "OH",
+     "OK",
+     "OR",
+     "PA",
+     "PR",
+     "RI",
+     "SC",
+     "SD",
+     "TN",
+     "TX",
+     "UT",
+     "VA",
+     "VT",
+     "WA",
+     "WI",
+     "WV",
+     "WY"
+    ],
+    "t": 342
+   },
+   "fetched": "2026-11-13T22:46:27+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2102"
+    }
+   },
+   "id": "119-hr2102",
+   "introduced": "2025-03-14",
+   "latest": {
+    "actionDate": "2026-11-12",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Armed Services."
+   },
+   "num": "H.R. 2102",
+   "number": 2102,
+   "passed": {
+    "H": {
+     "d": "2026-11-12",
+     "how": "roll",
+     "roll": 323,
+     "v": "392–18"
+    }
+   },
+   "reached": 3,
+   "sponsor": {
+    "n": "Gus M. Bilirakis",
+    "p": "R",
+    "s": "FL-12"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-03-14",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-12",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-12",
+     "e": "On passage Passed by the Yeas and Nays: 392 - 18 (Roll no. 323). (text: CR H6195)",
+     "fn": "cg",
+     "v": "392–18"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-12",
+     "e": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 392 - 18 (Roll no. 323).",
+     "fn": "cg",
+     "v": "392–18"
+    }
+   ],
+   "title": "Major Richard Star Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/2102"
   },
   {
    "area": "Climate & energy",
@@ -12809,7 +13179,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20033,7 +20403,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21857,7 +22227,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-13T01:51:46+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23850,7 +24220,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23861,8 +24231,8 @@
    "id": "119-hr4930",
    "introduced": "2025-08-08",
    "latest": {
-    "actionDate": "2026-11-10",
-    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5525)"
+    "actionDate": "2026-11-12",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 4930",
    "number": 4930,
@@ -25187,6 +25557,126 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/5214"
   },
   {
+   "area": "Child care",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 3,
+    "i": 0,
+    "r": 6,
+    "st": [
+     "FL",
+     "IN",
+     "NY",
+     "OH",
+     "PA",
+     "UT",
+     "VA"
+    ],
+    "t": 9
+   },
+   "fetched": "2026-11-13T22:46:27+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/5284"
+    }
+   },
+   "id": "119-hr5284",
+   "introduced": "2025-09-10",
+   "latest": {
+    "actionDate": "2026-11-12",
+    "text": "Presented to President."
+   },
+   "num": "H.R. 5284",
+   "number": 5284,
+   "passed": {
+    "H": {
+     "d": "2025-12-01",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-29",
+     "how": "uc"
+    }
+   },
+   "reached": 5,
+   "sponsor": {
+    "n": "Lloyd Smucker",
+    "p": "R",
+    "s": "PA-11"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-09-10",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-09-17",
+     "e": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 41 - 1.",
+     "fn": "cg",
+     "v": "41–1"
+    },
+    {
+     "ch": "H",
+     "d": "2025-10-03",
+     "e": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-330.",
+     "fn": "cg",
+     "v": "119–330"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-01",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-01",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H4937)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-01",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H4937)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5184)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent. (consideration: CR S5184)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-29",
+     "e": "Senate Committee on Finance discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-12",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Claiming Age Clarity Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/5284"
+  },
+  {
    "area": "Armed Forces and National Security",
    "auto": true,
    "congress": 119,
@@ -26106,7 +26596,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-13T01:51:46+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -30716,7 +31206,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -30727,11 +31217,19 @@
    "id": "119-hr7618",
    "introduced": "2026-02-20",
    "latest": {
-    "actionDate": "2026-09-30",
-    "text": "Committee on Energy and Natural Resources. Ordered to be reported without amendment favorably."
+    "actionDate": "2026-11-12",
+    "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 715."
    },
    "num": "H.R. 7618",
    "number": 7618,
+   "passed": {
+    "H": {
+     "d": "2026-06-03",
+     "how": "roll",
+     "roll": 192,
+     "v": "404–13"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Jennifer A. Kiggans",
@@ -30789,6 +31287,12 @@
      "ch": "S",
      "d": "2026-09-30",
      "e": "Committee on Energy and Natural Resources. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-12",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee without amendment. Without written report.",
      "fn": "cg"
     }
    ],
@@ -31011,22 +31515,38 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/7730"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-10: Signed by President.; 2026-11-10: Became Public Law No: 119-142.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7730/all-actions"
     }
    },
    "id": "119-hr7730",
    "introduced": "2026-02-26",
    "latest": {
     "actionDate": "2026-11-10",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-142."
    },
+   "law": "Pub. L. 119-142",
    "num": "H.R. 7730",
    "number": 7730,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-10",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-09-16",
@@ -31099,6 +31619,14 @@
      "d": "2026-11-05",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-10",
+     "e": "Became Public Law No: 119-142.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–142"
     }
    ],
    "title": "Bankruptcy Threshold Adjustment Act",
@@ -32537,6 +33065,119 @@
    "auto": true,
    "congress": 119,
    "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 0,
+    "st": [
+     "NC"
+    ],
+    "t": 1
+   },
+   "fetched": "2026-11-13T22:46:27+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8352"
+    }
+   },
+   "id": "119-hr8352",
+   "introduced": "2026-04-16",
+   "latest": {
+    "actionDate": "2026-11-12",
+    "text": "Presented to President."
+   },
+   "num": "H.R. 8352",
+   "number": 8352,
+   "passed": {
+    "H": {
+     "d": "2026-05-12",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-30",
+     "how": "uc"
+    }
+   },
+   "reached": 5,
+   "sponsor": {
+    "n": "Derek Schmidt",
+    "p": "R",
+    "s": "KS-2"
+   },
+   "status": "passed1",
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-16",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-04-22",
+     "e": "Ordered to be Reported (Amended) by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-04",
+     "e": "Reported (Amended) by the Committee on Judiciary. H. Rept. 119-636.",
+     "fn": "cg",
+     "v": "119–636"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-12",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-12",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3370-3371)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-05-12",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3370-3371)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5299)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Senate Committee on the Judiciary discharged by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-12",
+     "e": "Presented to President.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Criminal History Access Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8352"
+  },
+  {
+   "area": "Courts & justice",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
     "d": 0,
     "i": 0,
     "r": 2,
@@ -33235,7 +33876,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33246,8 +33887,8 @@
    "id": "119-hr8552",
    "introduced": "2026-04-28",
    "latest": {
-    "actionDate": "2026-11-11",
-    "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5572)"
+    "actionDate": "2026-11-12",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 8552",
    "number": 8552,
@@ -34692,7 +35333,7 @@
     ],
     "t": 42
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34708,6 +35349,14 @@
    },
    "num": "H.R. 9340",
    "number": 9340,
+   "passed": {
+    "H": {
+     "d": "2026-09-16",
+     "how": "roll",
+     "roll": 312,
+     "v": "417–3"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Gabe Evans",
@@ -35269,7 +35918,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-11T16:13:40+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36037,22 +36686,38 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-13T01:51:46+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/997"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-10: Signed by President.; 2026-11-10: Became Public Law No: 119-139.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/997/all-actions"
     }
    },
    "id": "119-hr997",
    "introduced": "2025-02-05",
    "latest": {
     "actionDate": "2026-11-10",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-139."
    },
+   "law": "Pub. L. 119-139",
    "num": "H.R. 997",
    "number": 997,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-10",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2025-03-31",
@@ -36073,12 +36738,6 @@
    },
    "status": "law",
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-02-05",
-     "e": "Introduced in House",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2025-02-12",
@@ -36136,6 +36795,14 @@
      "d": "2026-11-09",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-10",
+     "e": "Became Public Law No: 119-139.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–139"
     }
    ],
    "title": "National Taxpayer Advocate Enhancement Act of 2025",
@@ -37632,7 +38299,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-08T09:14:11+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37761,7 +38428,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T09:14:11+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40882,7 +41549,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-13T01:51:46+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40973,7 +41640,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-13T01:51:46+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -42328,7 +42995,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-13T22:46:27+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -48950,7 +49617,7 @@
    }
   ]
  },
- "generatedAt": "2026-11-13T01:51:46+00:00",
+ "generatedAt": "2026-11-13T22:46:27+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
