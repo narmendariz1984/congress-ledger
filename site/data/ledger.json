@@ -3363,7 +3363,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -4866,7 +4866,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4882,6 +4882,14 @@
    },
    "num": "H.R. 1223",
    "number": 1223,
+   "passed": {
+    "H": {
+     "d": "2025-05-20",
+     "how": "roll",
+     "roll": 136,
+     "v": "412–11"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Vince Fong",
@@ -4940,7 +4948,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4956,6 +4964,14 @@
    },
    "num": "H.R. 1228",
    "number": 1228,
+   "passed": {
+    "H": {
+     "d": "2025-04-09",
+     "how": "roll",
+     "roll": 99,
+     "v": "424–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Juan Ciscomani",
@@ -5010,7 +5026,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -5026,6 +5042,14 @@
    },
    "num": "H.R. 1263",
    "number": 1263,
+   "passed": {
+    "H": {
+     "d": "2025-05-19",
+     "how": "roll",
+     "roll": 132,
+     "v": "334–51"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Gregory W. Meeks",
@@ -5215,7 +5239,7 @@
     ],
     "t": 18
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -5231,6 +5255,14 @@
    },
    "num": "H.R. 1286",
    "number": 1286,
+   "passed": {
+    "H": {
+     "d": "2025-05-19",
+     "how": "roll",
+     "roll": 133,
+     "v": "386–1"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Robert Bresnahan",
@@ -5551,7 +5583,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -5567,6 +5599,14 @@
    },
    "num": "H.R. 1326",
    "number": 1326,
+   "passed": {
+    "H": {
+     "d": "2025-03-24",
+     "how": "roll",
+     "roll": 73,
+     "v": "372–35"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Frank D. Lucas",
@@ -5667,7 +5707,7 @@
     ],
     "t": 231
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -5795,7 +5835,7 @@
     ],
     "t": 55
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -5811,6 +5851,14 @@
    },
    "num": "H.R. 1346",
    "number": 1346,
+   "passed": {
+    "H": {
+     "d": "2026-05-13",
+     "how": "roll",
+     "roll": 164,
+     "v": "218–203"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Adrian Smith",
@@ -6001,7 +6049,7 @@
     ],
     "t": 34
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6017,6 +6065,14 @@
    },
    "num": "H.R. 139",
    "number": 139,
+   "passed": {
+    "H": {
+     "d": "2026-07-14",
+     "how": "roll",
+     "roll": 238,
+     "v": "308–117"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Vern Buchanan",
@@ -6157,7 +6213,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6173,6 +6229,14 @@
    },
    "num": "H.R. 144",
    "number": 144,
+   "passed": {
+    "H": {
+     "d": "2025-01-15",
+     "how": "roll",
+     "roll": 14,
+     "v": "423–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Steve Cohen",
@@ -6452,7 +6516,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6468,6 +6532,14 @@
    },
    "num": "H.R. 1501",
    "number": 1501,
+   "passed": {
+    "H": {
+     "d": "2026-09-02",
+     "how": "roll",
+     "roll": 294,
+     "v": "218–201"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Jefferson Shreve",
@@ -6546,7 +6618,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6562,6 +6634,14 @@
    },
    "num": "H.R. 1503",
    "number": 1503,
+   "passed": {
+    "H": {
+     "d": "2025-05-07",
+     "how": "roll",
+     "roll": 119,
+     "v": "406–1"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Christopher H. Smith",
@@ -6741,7 +6821,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6757,6 +6837,14 @@
    },
    "num": "H.R. 152",
    "number": 152,
+   "passed": {
+    "H": {
+     "d": "2025-01-13",
+     "how": "roll",
+     "roll": 9,
+     "v": "405–5"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mike Ezell",
@@ -6817,7 +6905,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6833,6 +6921,14 @@
    },
    "num": "H.R. 1526",
    "number": 1526,
+   "passed": {
+    "H": {
+     "d": "2025-04-09",
+     "how": "roll",
+     "roll": 98,
+     "v": "219–213"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Darrell Issa",
@@ -6919,7 +7015,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -6935,6 +7031,14 @@
    },
    "num": "H.R. 153",
    "number": 153,
+   "passed": {
+    "H": {
+     "d": "2025-01-14",
+     "how": "roll",
+     "roll": 10,
+     "v": "426–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mike Ezell",
@@ -6988,7 +7092,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7084,7 +7188,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7161,7 +7265,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7177,6 +7281,14 @@
    },
    "num": "H.R. 1608",
    "number": 1608,
+   "passed": {
+    "H": {
+     "d": "2025-11-17",
+     "how": "roll",
+     "roll": 286,
+     "v": "400–15"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Carlos A. Gimenez",
@@ -7254,7 +7366,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7270,6 +7382,14 @@
    },
    "num": "H.R. 164",
    "number": 164,
+   "passed": {
+    "H": {
+     "d": "2025-01-15",
+     "how": "roll",
+     "roll": 13,
+     "v": "419–2"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Val T. Hoyle",
@@ -7326,7 +7446,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7342,6 +7462,14 @@
    },
    "num": "H.R. 1642",
    "number": 1642,
+   "passed": {
+    "H": {
+     "d": "2025-06-03",
+     "how": "roll",
+     "roll": 146,
+     "v": "396–5"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Roger Williams",
@@ -7543,7 +7671,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7559,6 +7687,14 @@
    },
    "num": "H.R. 1676",
    "number": 1676,
+   "passed": {
+    "H": {
+     "d": "2025-12-09",
+     "how": "roll",
+     "roll": 316,
+     "v": "400–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Byron Donalds",
@@ -7631,7 +7767,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7647,6 +7783,14 @@
    },
    "num": "H.R. 1681",
    "number": 1681,
+   "passed": {
+    "H": {
+     "d": "2026-04-20",
+     "how": "roll",
+     "roll": 125,
+     "v": "384–9"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Gabe Evans",
@@ -7921,7 +8065,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7937,6 +8081,14 @@
    },
    "num": "H.R. 1709",
    "number": 1709,
+   "passed": {
+    "H": {
+     "d": "2025-07-14",
+     "how": "roll",
+     "roll": 191,
+     "v": "360–10"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Greg Landsman",
@@ -8002,7 +8154,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:16:06+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -8018,6 +8170,14 @@
    },
    "num": "H.R. 1717",
    "number": 1717,
+   "passed": {
+    "H": {
+     "d": "2025-07-15",
+     "how": "roll",
+     "roll": 196,
+     "v": "380–33"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Robert Menendez",
@@ -12900,7 +13060,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12916,6 +13076,16 @@
    },
    "num": "H.R. 2400",
    "number": 2400,
+   "passed": {
+    "H": {
+     "d": "2025-12-15",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-30",
+     "how": "uc"
+    }
+   },
    "reached": 4,
    "sponsor": {
     "n": "Doug LaMalfa",
@@ -21687,7 +21857,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -25936,7 +26106,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -33890,7 +34060,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33906,6 +34076,14 @@
    },
    "num": "H.R. 884",
    "number": 884,
+   "passed": {
+    "H": {
+     "d": "2025-06-10",
+     "how": "roll",
+     "roll": 163,
+     "v": "266–148"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "August Pfluger",
@@ -35859,7 +36037,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40704,7 +40882,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -40795,7 +40973,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-12T20:51:29+00:00",
+   "fetched": "2026-11-13T01:51:46+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -48772,7 +48950,7 @@
    }
   ]
  },
- "generatedAt": "2026-11-12T20:51:29+00:00",
+ "generatedAt": "2026-11-13T01:51:46+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
