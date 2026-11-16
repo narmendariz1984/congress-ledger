@@ -396,6 +396,46 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 .wres .dt{font:600 13px var(--f-mono);color:var(--red);padding-top:2px;white-space:nowrap}
 .wres a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--link-line)}
 .wres a:hover{border-bottom-color:currentColor}
+/* Today: one day's floor moves, biggest first */
+.today{display:grid;gap:14px}
+.td-head{display:flex;align-items:center;gap:10px}
+.td-head b{font:700 13px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--red);min-width:0;flex:1;text-align:center}
+.td-arrow{width:40px;height:40px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
+.td-arrow:disabled{opacity:.3;cursor:default}
+.td-arrow:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.td-note{margin:0;color:var(--muted);font-size:14px;text-align:center}
+.td-bills{display:grid;gap:12px}
+.td-card{display:grid;gap:10px;padding:14px 16px 16px;border:1px solid var(--rule);border-top:3px solid var(--c,var(--ink));border-radius:0 0 8px 8px;background:var(--card);min-width:0}
+.td-kick{font:800 22px/1.2 var(--f-display);color:var(--c,var(--ink))}
+.td-kick small{display:block;font:600 14px var(--f-body);color:var(--soft);margin-top:2px}
+.td-card h3{margin:0;font-size:19px;line-height:1.3;font-weight:700}
+.td-card h3 .bl{color:var(--ink)}
+.td-veh{margin:-4px 0 0;font-size:14px;color:var(--muted)}
+.td-track{list-style:none;margin:0;padding:0;display:flex;gap:4px;font:600 11.5px var(--f-mono);letter-spacing:.04em;text-transform:uppercase}
+.td-track li{flex:1 1 0;min-width:0;padding-top:7px;border-top:4px solid var(--rule);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.td-track li.done{border-top-color:var(--law);color:var(--ink)}
+.td-track li.now{border-top-color:var(--moving);color:var(--ink)}
+.td-track li.no{border-top-color:var(--vetoed);color:var(--vetoed)}
+.td-track .tl-s{display:none}
+.td-card dl{margin:0;display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 14px;font-size:15.5px;line-height:1.45}
+.td-card dt{font:700 12px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.td-card dd{margin:0;color:var(--soft)}
+.td-card dd .src{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.td-bars{display:grid;grid-template-columns:44px minmax(0,1fr) 36px;gap:4px 8px;align-items:center;font:600 13px var(--f-mono);max-width:520px}
+.td-bars .bar{display:flex;height:12px;border-radius:2px;overflow:hidden;background:var(--wash)}
+.td-bars .bar i{display:block;height:100%}
+.td-bars .n{text-align:right;color:var(--ink)}
+.td-bars .l{color:var(--muted)}
+.td-pt{font-size:13.5px;color:var(--muted);margin-top:4px}
+.td-pt .d{color:var(--dem)} .td-pt .r{color:var(--rep)} .td-pt .i{color:var(--ind)}
+.td-more{display:grid;gap:6px;padding-top:12px;border-top:1px solid var(--rule)}
+.td-more h3{margin:0;font-size:15px;font-weight:700}
+.td-more ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.td-more li{font-size:15px;line-height:1.4;color:var(--soft)}
+.td-more li b{color:var(--ink);font-weight:600}
+.td-more li .how{font:600 11.5px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-left:6px;white-space:nowrap}
+.td-more li p{margin:2px 0 0;font-size:14px;color:var(--muted)}
+@media (max-width:620px){.td-card dl{grid-template-columns:1fr;gap:2px}.td-card dd{margin-bottom:8px}.td-kick{font-size:20px}.td-track{font-size:11px;letter-spacing:0}.td-track .tl-l{display:none}.td-track .tl-s{display:inline}}
 
 .sess-tog{display:none}
 @media (max-width:620px){
@@ -433,7 +473,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
   .mgrid .c{aspect-ratio:auto;height:32px;min-height:0} .month{padding:10px}
   .wd .dd{font-size:26px}
   nav.tabs .wrap{gap:0;justify-content:space-between}
-  nav.tabs a{font-size:14.5px;padding:13px 7px 11px}
+  nav.tabs a{font-size:14.5px;padding:13px 5px 11px}
   .sec-body{padding:0 14px 16px} details.sec>summary{padding:16px 14px}
   .fpanel{padding:12px}
   .fchip{min-height:40px;padding:0 13px;font-size:14px}
@@ -444,7 +484,8 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
   .pipe{grid-column:1/3;order:5} .last{grid-column:1/3;order:6}
   .tl li{grid-template-columns:78px minmax(0,1fr)} .tl .ch{display:none}
 }
-@media (max-width:400px){nav.tabs a{font-size:14px;padding:13px 4px 11px}}
+@media (max-width:400px){nav.tabs a{font-size:13.5px;padding:13px 3px 11px}}
+@media (max-width:370px){nav.tabs a{font-size:12.5px;padding:13px 2px 11px;letter-spacing:-.01em}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -481,7 +522,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 
 <nav class="tabs" aria-label="Pages">
   <div class="wrap">
-    <a href="#overview" data-tab="overview">Overview</a><a href="#watch" data-tab="watch" aria-label="What to watch"><span class="tab-l">What to watch</span><span class="tab-s">Watch</span></a><a href="#bills" data-tab="bills">Bills</a><a href="#votes" data-tab="votes">Votes</a><a href="#people" data-tab="people">People</a><a href="#how" data-tab="how" aria-label="How it works"><span class="tab-l">How it works</span><span class="tab-s">About</span></a>
+    <a href="#overview" data-tab="overview">Overview</a><a href="#today" data-tab="today">Today</a><a href="#watch" data-tab="watch" aria-label="What to watch"><span class="tab-l">What to watch</span><span class="tab-s">Watch</span></a><a href="#bills" data-tab="bills">Bills</a><a href="#votes" data-tab="votes">Votes</a><a href="#people" data-tab="people">People</a><a href="#how" data-tab="how" aria-label="How it works"><span class="tab-l">How it works</span><span class="tab-s">About</span></a>
   </div>
 </nav>
 
@@ -503,6 +544,24 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
   <div class="sec-body">
     <div class="ag-tools"><label class="ag-jump-l" for="ag-jump">Jump to</label><select id="ag-jump"><option value="">Pick an area</option></select><span class="muted ag-hint"><span>Tap an <b>Area</b> for its bills</span><span>Tap a <b>Bill</b> for its details</span></span></div>
     <div class="agenda" id="agenda-grid"></div>
+  </div>
+</details>
+</section>
+
+<section class="tab" data-tab="today" aria-label="Today" hidden>
+<details class="sec" open id="today-sec">
+  <summary><h2>On the floor</h2><span class="count" id="td-count"></span></summary>
+  <div class="sec-body today" aria-live="polite">
+    <div class="td-head">
+      <button type="button" class="td-arrow" id="td-prev" aria-label="Earlier day">‹</button>
+      <b id="td-date"></b>
+      <button type="button" class="td-arrow" id="td-next" aria-label="Later day">›</button>
+    </div>
+    <p class="td-note" id="td-note" hidden></p>
+    <div class="td-bills" id="td-bills"></div>
+    <div class="td-more" id="td-also" hidden></div>
+    <div class="td-more" id="td-other" hidden></div>
+    <div class="td-more" id="td-ahead" hidden></div>
   </div>
 </details>
 </section>
@@ -752,7 +811,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 <button type="button" class="totop" id="totop" hidden>Back to top</button>
 
 <script src="names.js?v=76c87de1"></script>
-<script src="votes.js?v=c563f9a0"></script>
+<script src="votes.js?v=a56c8733"></script>
 <script>
 (function(){
 const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
@@ -1331,6 +1390,86 @@ document.addEventListener("click",e=>{
   if(e.target.closest("[data-wclose]")){WDAY=null;renderDay()}
 });
 
+/* Today: what moved on the floor on one day. Bills on this site come first, biggest move first,
+   each with what it does (the CRS summary) and whether it's law; then other decisions and what's next.
+   Each part draws on its own, so a problem in one card only drops that card. */
+let TDAY=null, TDAYS=[];
+const TD_C={law:"--law",veto:"--vetoed",failed:"--killed",passed:"--passed1",cloture:"--moving",proceed:"--moving",sent:"--moving"};
+const TD_S={Introduced:"Intro",President:"Pres."};
+function tdVote(m,day){
+  if(!m||!m.roll)return null;
+  return((VOTES[m.ch==="S"?"senate":"house"])||[]).find(v=>v&&String(v.n)===String(m.roll)&&String(v.d||"").slice(0,10)===day)||null;
+}
+function tdBars(v){
+  let t=null;try{t=v.v&&RCD?RC.split(v,RCD.members[v.ch]||[]):RC.fromTotals(v.p)}catch(e){}
+  if(!t)return"";
+  const Y=t.D.Y+t.R.Y+t.I.Y, N=t.D.N+t.R.N+t.I.N, all=Y+N;if(!all)return"";
+  const w=x=>(x/all*100).toFixed(2)+"%";
+  const row=(l,k,tot)=>`<span class="l">${l}</span><span class="bar">${[["D","--dem"],["I","--ind"],["R","--rep"]].map(([p,c])=>t[p][k]?`<i style="width:${w(t[p][k])};background:var(${c})"></i>`:"").join("")}</span><span class="n">${tot}</span>`;
+  return`<div class="td-bars" role="img" aria-label="${esc(`Yea ${Y}, nay ${N}. ${RC.partyText(t)}`)}">${row("Yea","Y",Y)}${row("Nay","N",N)}</div><div class="td-pt">${RC.partyParts(t).map(x=>`<span class="${x.p.toLowerCase()}">${esc(x.s)}</span>`).join(" · ")}</div>`;
+}
+function tdCard(x,day){
+  const b=x.b, m=x.moves[0], rest=x.moves.slice(1);
+  const c=m.kind==="cloture"&&!m.invoked?"--killed":TD_C[m.kind]||"--ink";
+  const v=x.moves.map(mm=>tdVote(mm,day)).find(Boolean);
+  let why="";try{why=v?RC.explain(v):""}catch(e){}
+  // a vehicle's summary describes the bill it used to be, unless CRS wrote it after the swap
+  const veh=b.vehicle&&b.vehicle.label?b.vehicle:null;
+  const sum=b.sum&&b.sum.t&&!(veh&&veh.since&&(b.sum.d||"")<veh.since)?b.sum:null;
+  return`<article class="td-card" style="--c:var(${c})">
+    <div class="td-kick">${esc(RC.moveText(m))}${rest.length?`<small>Also: ${esc(rest.map(RC.moveText).join(" · "))}</small>`:""}</div>
+    <h3>${billLink(b)}</h3>${veh?`<p class="td-veh">This bill number now carries the ${esc(veh.label)}.</p>`:""}
+    <ol class="td-track" aria-label="Where it stands">${RC.track(b).map(s=>`<li class="${s.s}">${TD_S[s.k]?`<span class="tl-l">${esc(s.k)}</span><span class="tl-s">${TD_S[s.k]}</span>`:esc(s.k)}</li>`).join("")}</ol>
+    <dl>
+      <dt>What it does</dt><dd>${sum?`${esc(sum.t)}<span class="src">Congressional Research Service summary${sum.v?` (${esc(sum.v)})`:""}</span>`:`<span class="src">${veh?"No summary of the new text yet.":"The Congressional Research Service hasn't posted a summary yet."}</span>`}</dd>
+      <dt>Is it law?</dt><dd>${esc(RC.lawLine(b))}</dd>
+      ${why?`<dt>What the vote did</dt><dd>${esc(why)}</dd>`:""}
+      ${v?`<dt>The vote</dt><dd>${tdBars(v)}${v.u?`<span class="src"><a href="${esc(v.u)}" target="_blank" rel="noopener">${m.ch==="S"?"Senate":"House"} roll call ${esc(v.n)}</a></span>`:""}</dd>`:""}
+    </dl></article>`;
+}
+function renderToday(){
+  const today=iso(new Date()), decs=WALL.filter(e=>e.auto==="vote"&&e.date);
+  const set=new Set(RC.activeDays(bills));decs.forEach(e=>set.add(e.date));
+  TDAYS=[...set].filter(d=>d<=today).sort().reverse();
+  const box=n=>$("#td-"+n);
+  if(!TDAYS.length){box("date").textContent="";box("note").hidden=true;["also","other","ahead"].forEach(n=>box(n).hidden=true);
+    box("bills").innerHTML=`<p class="muted">${loaded?"No floor action on bills this site tracks yet.":"Loading…"}</p>`;return}
+  if(!TDAY||!TDAYS.includes(TDAY))TDAY=TDAYS[0];
+  const day=TDAY, i=TDAYS.indexOf(day);
+  box("prev").disabled=i>=TDAYS.length-1;box("next").disabled=i<=0;
+  box("date").textContent=(day===today?"Today · ":"")+wk(day).toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric",year:"numeric"});
+  box("note").hidden=!(i===0&&day!==today);box("note").textContent="Nothing has moved on the floor yet today, so this is the latest day that had floor action.";
+  const moves=RC.dayMoves(bills,day), top=moves.slice(0,6), also=moves.slice(6);
+  box("bills").innerHTML=top.map(x=>{try{return tdCard(x,day)}catch(e){console.warn("Today card skipped",e);return""}}).join("")||`<p class="muted">No bills this site tracks moved on the floor this day.</p>`;
+  box("also").hidden=!also.length;
+  box("also").innerHTML=also.length?`<h3>More bills that moved</h3><ul>${also.map(x=>`<li>${billLink(x.b)}<span class="how">${esc(RC.moveText(x.moves[0]))}</span></li>`).join("")}</ul>`:"";
+  // floor decisions not already shown above: nominations aside, mostly measures this site doesn't track
+  const shown=new Set(moves.map(x=>x.b.id));
+  const other=decs.filter(e=>e.date===day&&!((e.outcome||{}).bills||[]).some(id=>shown.has(id)));
+  box("other").hidden=!other.length;
+  box("other").innerHTML=other.length?`<h3>Other floor decisions</h3><ul>${other.map(e=>{const o=e.outcome||{};
+    return`<li><b>${esc(o.h||e.title)}</b>${o.t?`<p>${esc(o.t)}</p>`:""}${(o.src||[]).length?`<p>${o.src.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")}</p>`:""}</li>`}).join("")}</ul>`:"";
+  // what's next, on the latest day only
+  const ah=[];
+  if(i===0){
+    for(const e of WALL)if(e.auto==="ahead"&&e.date>=today)ah.push(`<li><b>${esc(e.title)}</b><span class="how">${esc(e.date===today?"Today":short(e.date))}</span></li>`);
+    try{
+      const f=(LEDGER_FLOOR||{}).house, d=new Date();d.setDate(d.getDate()-((d.getDay()+6)%7));const mon=iso(d);
+      if(f&&f.week&&f.week>=mon){
+        const hv=(VOTES.house||[]).filter(v=>v&&v.d>=f.week);
+        for(const it of f.items||[]){if(it.num&&hv.some(v=>numKey(v.measure)===numKey(it.num)))continue;
+          const b=it.id&&bills.find(x=>x.id===it.id);
+          ah.push(`<li>${b?billLink(b):`${esc(it.t)}${it.num?` <span class="bl-num">${esc(it.num)}</span>`:""}`}<span class="how">House ${f.week>mon?"next week":"this week"}${it.how==="rule"?" · under a rule":""}</span></li>`)}
+      }
+    }catch(e){console.warn("Today: House floor skipped",e)}
+  }
+  box("ahead").hidden=!ah.length;
+  box("ahead").innerHTML=ah.length?`<h3>Coming up</h3><ul>${ah.slice(0,8).join("")}</ul>${ah.length>8?`<p class="td-note" style="text-align:left"><a href="#watch">All dates on What to watch</a></p>`:""}`:"";
+  box("count").textContent=`${moves.length} bill${moves.length===1?"":"s"} moved${other.length?` · ${other.length} other decision${other.length===1?"":"s"}`:""}`;
+}
+$("#td-prev").addEventListener("click",()=>{const i=TDAYS.indexOf(TDAY);if(i<TDAYS.length-1){TDAY=TDAYS[i+1];renderToday()}});
+$("#td-next").addEventListener("click",()=>{const i=TDAYS.indexOf(TDAY);if(i>0){TDAY=TDAYS[i-1];renderToday()}});
+
 /* people: state and name filters */
 $("#p-st").addEventListener("change",e=>{PS.st=e.target.value;try{PS.st?localStorage.setItem("peopleState",PS.st):localStorage.removeItem("peopleState")}catch(_){}renderNames()});
 $("#p-q").addEventListener("input",e=>{PS.q=e.target.value.trim().toLowerCase();renderNames()});
@@ -1420,7 +1559,7 @@ function renderVotes(){
 
 function renderAll(){
   // each section draws on its own, so a problem in one never blanks the others
-  for(const f of [renderVotes,buildNotes,renderMeta,renderSeason,renderWatch,renderGlance,renderBills,renderAgenda,renderNames,renderOutcomes]){
+  for(const f of [renderVotes,buildNotes,renderMeta,renderSeason,renderWatch,renderToday,renderGlance,renderBills,renderAgenda,renderNames,renderOutcomes]){
     try{f()}catch(e){console.warn(`${f.name} skipped`,e)}
   }
   // populate filters once data present
@@ -1461,12 +1600,12 @@ document.addEventListener("click",e=>{
 });
 
 /* tabs: one page, hash routes (#bills, #how, or any element id inside a tab) */
-const TAB_IDS=["overview","watch","bills","votes","people","how"];
+const TAB_IDS=["overview","today","watch","bills","votes","people","how"];
 let CURTAB="overview";
 function show(tab){
   CURTAB=tab;
   // the full roll call file is only needed on Votes and People; fetch it the first time either opens
-  if((tab==="votes"||tab==="people")&&loaded&&typeof loadRollcalls==="function")loadRollcalls();
+  if((tab==="votes"||tab==="people"||tab==="today")&&loaded&&typeof loadRollcalls==="function")loadRollcalls();
   document.querySelectorAll(".tab").forEach(p=>{p.hidden=p.dataset.tab!==tab});
   document.querySelectorAll("nav.tabs a").forEach(a=>{if(a.dataset.tab===tab)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
 }
@@ -1523,7 +1662,7 @@ async function load(){
   }
   renderAll();
   if(/^#(b-|fn-|w-|ag-)/.test(location.hash))route();
-  if(["votes","people"].includes(CURTAB))loadRollcalls();
+  if(["votes","people","today"].includes(CURTAB))loadRollcalls();
 }
 /* every roll call with member votes (Voteview); the ledger's recent votes stay as a fallback */
 let rcLoading=null;
@@ -1550,6 +1689,7 @@ async function fetchRollcalls(){
     for(const v of R.votes){if(!v.m)continue;const id=RC.billId(v.m,cg);(RC_BY_BILL[id]=RC_BY_BILL[id]||[]).push(v)}
     renderVotes();renderNames();refreshCredits();
     try{renderWatch()}catch(e){console.warn("What to watch refresh skipped",e)}
+    try{renderToday()}catch(e){console.warn("Today refresh skipped",e)}
   }catch(e){console.warn("roll calls unavailable",e);renderVotes()}
 }
 load();

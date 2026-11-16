@@ -189,3 +189,71 @@ test("unrecorded: routine and recorded passages are not flagged", () => {
   const otherVoice = ruleBill(RULE, ["2026-07-16", "On motion that the committee rise Agreed to by voice vote."]);
   assert.deepEqual(RC.unrecorded([suspension, noRule, recorded, voiceBeforeRule, otherVoice, null, {}, { timeline: [null, { d: "x" }] }]), []);
 });
+
+// ---- Today: a day's moves from bill actions ----
+const tb = (id, num, timeline, extra = {}) => ({ id, num, timeline, cosponsors: { n: 0 }, ...extra });
+
+test("today: reads each kind of move from Congress.gov action text", () => {
+  const m = e => RC.moveOf(e);
+  assert.deepEqual([m("Passed/agreed to in House: On passage Passed by the Yeas and Nays: 392 - 18 (Roll no. 323).")].map(x => [x.kind, x.ch, x.y, x.n, x.roll]), [["passed", "H", 392, 18, 323]]);
+  assert.equal(RC.moveText(m("Passed/agreed to in Senate: Passed Senate without amendment by Voice Vote.")), "Passed the Senate by voice vote");
+  assert.equal(RC.moveText(m("Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.")), "Passed the Senate by unanimous consent");
+  assert.equal(RC.moveText(m("Became Public Law No: 119-139.")), "Became law (Public Law 119-139)");
+  assert.equal(RC.moveText(m("Presented to President.")), "Sent to the President");
+  const c = m("Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257. (CR S5343-5344)");
+  assert.deepEqual([c.kind, c.ch, c.roll, c.invoked], ["cloture", "S", 257, true]);
+  assert.equal(RC.moveText(c), "Senate voted 73–25 to end debate on taking it up");
+  assert.equal(RC.moveText(m("Cloture on the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 200.")), "Senate fell short of the 60 votes to end debate, 52–47");
+  assert.equal(RC.moveText(m("Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 62 - 21. Record Vote Number: 258.")), "Senate voted 62–21 to take it up");
+  assert.equal(RC.moveText(m("Failed of passage/not agreed to in House: On motion to suspend the rules and pass the bill Failed by the Yeas and Nays: (2/3 required): 250 - 170 (Roll no. 99).")), "Failed in the House, 250–170 (needed two-thirds)");
+  // dates and citations are not tallies
+  assert.equal(m("Passed/agreed to in House: On passage Passed by voice vote. (text: CR H6105-6106)").y, null);
+  for (const e of ["Motion to reconsider laid on the table Agreed to without objection.", "Referred to the Committee on Ways and Means.", "Cloture motion on the measure presented in Senate.", "", null])
+    assert.equal(RC.moveOf(e), null, String(e));
+});
+
+test("today: biggest move first, one card per bill, closer votes first, bad records skipped", () => {
+  const day = "2026-11-10";
+  const bills = [
+    tb("a", "H.R. 1", [{ d: day, e: "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 400 - 2 (Roll no. 1)." }]),
+    tb("b", "H.R. 2", [{ d: day, e: "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 220 - 210 (Roll no. 2)." }]),
+    tb("c", "H.R. 3", [{ d: day, e: "Presented to President." }, { d: day, e: "Became Public Law No: 119-1." }]),
+    tb("d", "H.R. 4", [{ d: "2026-11-09", e: "Passed/agreed to in House: On passage Passed by voice vote." }]),
+    tb("e", "H.R. 5", [{ d: day, e: "On passage Passed by the Yeas and Nays: 220 - 210 (Roll no. 2)." }, { d: day, e: "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 220 - 210 (Roll no. 2)." }]),
+    null, { id: "bad", timeline: "nope" },
+  ];
+  const out = RC.dayMoves(bills, day);
+  assert.deepEqual(out.map(x => x.b.id), ["c", "b", "e", "a"]);
+  assert.deepEqual(out[0].moves.map(m => m.kind), ["law", "sent"]);
+  assert.equal(out.find(x => x.b.id === "e").moves.length, 1);
+  assert.deepEqual(RC.activeDays(bills), ["2026-11-10", "2026-11-09"]);
+});
+
+test("today: where a bill stands and whether it's law", () => {
+  const signed = { num: "H.R. 997", status: "law", passed: { H: {}, S: {} }, outcome: { d: "2026-11-10", pres: "Donald Trump", where: "Signed into law" } };
+  assert.equal(RC.lawLine(signed), "Yes. Signed Nov 10, 2026 by President Trump.");
+  assert.deepEqual(RC.track(signed).map(s => s.s), ["done", "done", "done", "done", "done"]);
+  const house = { num: "H.R. 2102", status: "passed1", passed: { H: {} } };
+  assert.equal(RC.lawLine(house), "Not yet. It passed the House; the Senate is next.");
+  assert.deepEqual(RC.track(house).map(s => `${s.k}:${s.s}`), ["Introduced:done", "House:done", "Senate:now", "President:todo", "Law:todo"]);
+  const senateBill = { num: "S. 5", status: "passed2", passed: { S: {}, H: {} } };
+  assert.deepEqual(RC.track(senateBill).map(s => s.k), ["Introduced", "Senate", "House", "President", "Law"]);
+  assert.equal(RC.lawLine(senateBill), "Not yet. Both chambers passed it; the President is next.");
+  const vetoed = { num: "H.J.Res. 1", status: "vetoed", passed: { H: {}, S: {} }, outcome: { d: "2026-10-01", pres: "Donald Trump" } };
+  assert.match(RC.lawLine(vetoed), /^No\. Vetoed Oct 1, 2026 by President Trump\.$/);
+  assert.deepEqual(RC.track(vetoed).map(s => s.s), ["done", "done", "done", "no", "todo"]);
+  assert.equal(RC.lawLine({ num: "H.R. 9", status: "killed" }), "No. It failed on the floor.");
+  assert.equal(RC.lawLine({ num: "H.R. 9" }), "Not yet. It hasn't passed either chamber.");
+});
+
+test("today: works on the real ledger, when present", () => {
+  const p = new URL("../site/data/ledger.json", import.meta.url);
+  if (!existsSync(p)) return;
+  const bills = JSON.parse(readFileSync(p, "utf8")).bills;
+  for (const d of RC.activeDays(bills).slice(0, 30))
+    for (const x of RC.dayMoves(bills, d)) {
+      for (const m of x.moves) assert.ok(RC.moveText(m).length > 5, `${x.b.id} ${d}`);
+      assert.equal(RC.track(x.b).length, 5);
+      assert.match(RC.lawLine(x.b), /^(Yes|No|Not yet)\. /);
+    }
+});

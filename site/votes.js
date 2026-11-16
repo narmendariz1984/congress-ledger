@@ -183,6 +183,100 @@
     return out;
   }
 
+  // ---- Today: what moved on each bill on a given day, from its actions ----
+  const MOVES = [
+    ["law", /^Became Public Law|^Signed by President/i],
+    ["veto", /^Vetoed by President/i],
+    ["failed", /^Failed of passage/i],
+    ["passed", /^Passed\/agreed to in (House|Senate)/i],
+    ["cloture", /^Cloture on .*?\b(not invoked|invoked)\b in Senate/i],
+    ["proceed", /^Motion to proceed to consideration of measure (agreed to|not agreed to|rejected) in Senate/i],
+    ["sent", /^Presented to President/i],
+  ];
+  const RANK = { law: 0, veto: 1, failed: 2, passed: 3, cloture: 4, proceed: 4, sent: 5 };
+
+  function moveOf(e) {
+    e = String(e || "");
+    const hit = MOVES.find(([, re]) => re.test(e));
+    if (!hit) return null;
+    const kind = hit[0];
+    const ch = /\bin Senate\b|Passed Senate/i.test(e) || kind === "cloture" || kind === "proceed" ? "S" : /\bin House\b/i.test(e) ? "H" : "";
+    const pl = /Public Law No:\s*([\d-]+)/i.exec(e);
+    const t = /(?<![\d/])(\d{1,3})\s*-\s*(\d{1,3})(?![\d/])/.exec(e);
+    const roll = /Roll no\.\s*(\d+)|Record Vote Number:\s*(\d+)/i.exec(e);
+    return { kind, ch, y: t ? +t[1] : null, n: t ? +t[2] : null, roll: roll ? +(roll[1] || roll[2]) : null,
+      how: /voice vote/i.test(e) ? "voice" : /unanimous consent/i.test(e) ? "uc" : /without objection/i.test(e) ? "uc" : t ? "roll" : "",
+      twoThirds: /2\/3 required/i.test(e), mtp: /motion to proceed/i.test(e), pl: pl ? pl[1] : "",
+      invoked: (kind === "cloture" && !/not invoked/i.test(e)) || (kind === "proceed" && /agreed to in/i.test(e) && !/not agreed/i.test(e)) };
+  }
+
+  // [{ b, moves }] for one day, biggest first: laws, vetoes, failures, passage, cloture; closer votes first
+  function dayMoves(bills, day) {
+    const out = [];
+    for (const b of bills || []) {
+      try {
+        const seen = new Set(), moves = [];
+        for (const t of (b && b.timeline) || []) {
+          if (!t || String(t.d).slice(0, 10) !== day) continue;
+          const m = moveOf(t.e);
+          if (m && !seen.has(m.kind + m.ch)) { seen.add(m.kind + m.ch); moves.push(m); }
+        }
+        if (moves.length) out.push({ b, moves: moves.sort((x, y) => RANK[x.kind] - RANK[y.kind]) });
+      } catch (e) { /* a bad record is skipped */ }
+    }
+    const close = m => (m.y != null && m.y + m.n ? Math.abs(m.y - m.n) / (m.y + m.n) : 2);
+    return out.sort((a, c) => RANK[a.moves[0].kind] - RANK[c.moves[0].kind] || close(a.moves[0]) - close(c.moves[0]) || ((c.b.cosponsors || {}).n || 0) - ((a.b.cosponsors || {}).n || 0));
+  }
+
+  // Days that had at least one move, newest first
+  function activeDays(bills) {
+    const days = new Set();
+    for (const b of bills || []) for (const t of (b && b.timeline) || []) if (t && t.d && moveOf(t.e)) days.add(String(t.d).slice(0, 10));
+    return [...days].sort().reverse();
+  }
+
+  const CH = { H: "House", S: "Senate" };
+  function moveText(m) {
+    const tally = m.y != null ? `${m.y}–${m.n}` : "";
+    if (m.kind === "law") return m.pl ? `Became law (Public Law ${m.pl})` : "Became law";
+    if (m.kind === "sent") return "Sent to the President";
+    if (m.kind === "proceed") return m.invoked ? (tally ? `Senate voted ${tally} to take it up` : "Senate agreed to take it up") : `Senate voted not to take it up${tally ? `, ${tally}` : ""}`;
+    if (m.kind === "veto") return "Vetoed";
+    if (m.kind === "failed") return `Failed in the ${CH[m.ch] || "chamber"}${tally ? `, ${tally}` : ""}${m.twoThirds ? " (needed two-thirds)" : ""}`;
+    if (m.kind === "cloture") return m.invoked ? `Senate voted ${tally} to end debate${m.mtp ? " on taking it up" : ""}` : `Senate fell short of the 60 votes to end debate, ${tally}`;
+    return `Passed the ${CH[m.ch] || "chamber"} ${tally || (m.how === "voice" ? "by voice vote" : m.how === "uc" ? "by unanimous consent" : "")}`.trim();
+  }
+
+  // Introduced ▸ House ▸ Senate ▸ President ▸ Law, in the bill's own order; each step done, now, todo or no
+  function track(b) {
+    const origin = /^S/i.test(String(b.num || "").replace(/[^A-Za-z]/g, "")) ? "S" : "H";
+    const p = b.passed || {}, o = b.outcome || {}, law = b.status === "law", veto = b.status === "vetoed";
+    const steps = [["Introduced", true], [CH[origin], !!p[origin]], [CH[origin === "H" ? "S" : "H"], !!p[origin === "H" ? "S" : "H"]],
+      [veto ? "Vetoed" : "President", law || veto || !!o.pres], ["Law", law]];
+    let now = false;
+    return steps.map(([k, done]) => {
+      if (k === "Vetoed") return { k, s: "no" };
+      if (done) return { k, s: "done" };
+      if (!now && b.status !== "killed" && !veto) { now = true; return { k, s: "now" }; }
+      return { k, s: "todo" };
+    });
+  }
+
+  // "Is it law?" in plain words
+  function lawLine(b) {
+    const o = b.outcome || {}, p = b.passed || {}, who = o.pres ? `President ${String(o.pres).split(" ").pop()}` : "the President";
+    const when = o.d ? new Date(o.d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : "";
+    if (b.status === "law") return /without signature/i.test(o.where || "") ? `Yes. It became law without a signature${when ? ` on ${when}` : ""}.`
+      : /over a veto/i.test(o.where || "") ? `Yes. Congress overrode the veto${when ? ` on ${when}` : ""}.` : `Yes. Signed${when ? ` ${when}` : ""} by ${who}.`;
+    if (b.status === "vetoed") return `No. Vetoed${when ? ` ${when}` : ""} by ${who}.`;
+    if (b.status === "killed") return "No. It failed on the floor.";
+    const origin = /^S/i.test(String(b.num || "").replace(/[^A-Za-z]/g, "")) ? "S" : "H", other = origin === "H" ? "S" : "H";
+    if (p[origin] && p[other]) return "Not yet. Both chambers passed it; the President is next.";
+    if (p[origin]) return `Not yet. It passed the ${CH[origin]}; the ${CH[other]} is next.`;
+    if (p[other]) return `Not yet. It passed the ${CH[other]}; the ${CH[origin]} is next.`;
+    return "Not yet. It hasn't passed either chamber.";
+  }
+
   // One line per measure per day: the last notable roll call that day decided it
   function decisions(votes, nameOf) {
     const by = {};
@@ -199,7 +293,7 @@
     }).sort((a, b) => b.date.localeCompare(a.date) || (+b.v.n || 0) - (+a.v.n || 0));
   }
 
-  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, explain, decisions, fromTotals, partyParts, partyText, unrecorded };
+  const api = { isDecisive, failed, split, majorities, crossovers, voteOf, billId, VOTE_WORD, notable, subject, headline, explain, decisions, fromTotals, partyParts, partyText, unrecorded, moveOf, dayMoves, activeDays, moveText, track, lawLine };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.RC = api;
 })(this);
