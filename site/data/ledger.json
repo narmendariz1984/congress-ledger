@@ -3363,7 +3363,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -11487,7 +11487,7 @@
     ],
     "t": 342
    },
-   "fetched": "2026-11-14T19:12:18+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13193,7 +13193,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18528,7 +18528,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18544,6 +18544,14 @@
    },
    "num": "H.R. 3424",
    "number": 3424,
+   "passed": {
+    "H": {
+     "d": "2025-09-08",
+     "how": "roll",
+     "roll": 240,
+     "v": "397–1"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Robert F. Onder",
@@ -18615,7 +18623,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18631,6 +18639,14 @@
    },
    "num": "H.R. 3425",
    "number": 3425,
+   "passed": {
+    "H": {
+     "d": "2025-09-08",
+     "how": "roll",
+     "roll": 241,
+     "v": "402–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mike Kennedy",
@@ -18955,7 +18971,7 @@
     ],
     "t": 44
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18971,6 +18987,14 @@
    },
    "num": "H.R. 3492",
    "number": 3492,
+   "passed": {
+    "H": {
+     "d": "2025-12-17",
+     "how": "roll",
+     "roll": 351,
+     "v": "216–211"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Marjorie Taylor Greene",
@@ -19218,7 +19242,7 @@
     ],
     "t": 32
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19234,6 +19258,14 @@
    },
    "num": "H.R. 35",
    "number": 35,
+   "passed": {
+    "H": {
+     "d": "2025-02-13",
+     "how": "roll",
+     "roll": 42,
+     "v": "264–155"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Juan Ciscomani",
@@ -19286,7 +19318,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19302,6 +19334,14 @@
    },
    "num": "H.R. 359",
    "number": 359,
+   "passed": {
+    "H": {
+     "d": "2025-03-24",
+     "how": "roll",
+     "roll": 72,
+     "v": "405–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Jay Obernolte",
@@ -19366,7 +19406,7 @@
     ],
     "t": 18
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19382,6 +19422,14 @@
    },
    "num": "H.R. 36",
    "number": 36,
+   "passed": {
+    "H": {
+     "d": "2025-05-05",
+     "how": "roll",
+     "roll": 116,
+     "v": "349–42"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Joe Wilson",
@@ -19448,7 +19496,7 @@
     ],
     "t": 20
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19464,6 +19512,14 @@
    },
    "num": "H.R. 3616",
    "number": 3616,
+   "passed": {
+    "H": {
+     "d": "2025-12-17",
+     "how": "roll",
+     "roll": 347,
+     "v": "225–203"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Troy Balderson",
@@ -19777,7 +19833,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19793,6 +19849,14 @@
    },
    "num": "H.R. 3628",
    "number": 3628,
+   "passed": {
+    "H": {
+     "d": "2025-12-11",
+     "how": "roll",
+     "roll": 323,
+     "v": "218–207"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Gabe Evans",
@@ -19868,7 +19932,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19884,6 +19948,14 @@
    },
    "num": "H.R. 3632",
    "number": 3632,
+   "passed": {
+    "H": {
+     "d": "2025-12-16",
+     "how": "roll",
+     "roll": 342,
+     "v": "222–202"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "H. Morgan Griffith",
@@ -19976,7 +20048,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19992,6 +20064,14 @@
    },
    "num": "H.R. 3633",
    "number": 3633,
+   "passed": {
+    "H": {
+     "d": "2025-07-17",
+     "how": "roll",
+     "roll": 199,
+     "v": "294–134"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "J. French Hill",
@@ -20083,7 +20163,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20099,6 +20179,14 @@
    },
    "num": "H.R. 3638",
    "number": 3638,
+   "passed": {
+    "H": {
+     "d": "2025-12-11",
+     "how": "roll",
+     "roll": 324,
+     "v": "267–159"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Robert E. Latta",
@@ -20312,7 +20400,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20328,6 +20416,14 @@
    },
    "num": "H.R. 3668",
    "number": 3668,
+   "passed": {
+    "H": {
+     "d": "2025-12-12",
+     "how": "roll",
+     "roll": 334,
+     "v": "213–184"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Richard Hudson",
@@ -20413,7 +20509,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20429,6 +20525,14 @@
    },
    "num": "H.R. 375",
    "number": 375,
+   "passed": {
+    "H": {
+     "d": "2025-01-23",
+     "how": "roll",
+     "roll": 24,
+     "v": "359–62"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Jill N. Tokuda",
@@ -20481,7 +20585,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20497,6 +20601,14 @@
    },
    "num": "H.R. 3838",
    "number": 3838,
+   "passed": {
+    "H": {
+     "d": "2025-09-10",
+     "how": "roll",
+     "roll": 262,
+     "v": "231–196"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mike D. Rogers",
@@ -20595,7 +20707,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20611,6 +20723,14 @@
    },
    "num": "H.R. 3898",
    "number": 3898,
+   "passed": {
+    "H": {
+     "d": "2025-12-11",
+     "how": "roll",
+     "roll": 330,
+     "v": "221–205"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mike Collins",
@@ -21253,7 +21373,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21269,6 +21389,14 @@
    },
    "num": "H.R. 4058",
    "number": 4058,
+   "passed": {
+    "H": {
+     "d": "2025-11-19",
+     "how": "roll",
+     "roll": 300,
+     "v": "380–45"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Daniel S. Goldman",
@@ -21697,7 +21825,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21713,6 +21841,14 @@
    },
    "num": "H.R. 4216",
    "number": 4216,
+   "passed": {
+    "H": {
+     "d": "2025-09-02",
+     "how": "roll",
+     "roll": 219,
+     "v": "395–20"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Sheri Biggs",
@@ -21772,7 +21908,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21788,6 +21924,14 @@
    },
    "num": "H.R. 4219",
    "number": 4219,
+   "passed": {
+    "H": {
+     "d": "2026-09-14",
+     "how": "roll",
+     "roll": 296,
+     "v": "371–33"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Ed Case",
@@ -21862,7 +22006,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21878,6 +22022,14 @@
    },
    "num": "H.R. 4275",
    "number": 4275,
+   "passed": {
+    "H": {
+     "d": "2025-07-23",
+     "how": "roll",
+     "roll": 218,
+     "v": "399–12"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Sam Graves",
@@ -21953,7 +22105,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21969,6 +22121,14 @@
    },
    "num": "H.R. 4294",
    "number": 4294,
+   "passed": {
+    "H": {
+     "d": "2026-03-17",
+     "how": "roll",
+     "roll": 88,
+     "v": "320–66"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Sarah Elfreth",
@@ -22173,7 +22333,7 @@
     ],
     "t": 25
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22230,7 +22390,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22246,6 +22406,14 @@
    },
    "num": "H.R. 4305",
    "number": 4305,
+   "passed": {
+    "H": {
+     "d": "2025-12-03",
+     "how": "roll",
+     "roll": 311,
+     "v": "269–146"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Tony Wied",
@@ -22603,7 +22771,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:18:19+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22619,6 +22787,14 @@
    },
    "num": "H.R. 4371",
    "number": 4371,
+   "passed": {
+    "H": {
+     "d": "2025-12-16",
+     "how": "roll",
+     "roll": 340,
+     "v": "225–201"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Russell Fry",
@@ -22747,7 +22923,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -27116,7 +27292,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -37206,7 +37382,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-13T22:46:27+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -42069,7 +42245,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -42160,7 +42336,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-16T22:10:05+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -50137,7 +50313,7 @@
    }
   ]
  },
- "generatedAt": "2026-11-16T12:02:41+00:00",
+ "generatedAt": "2026-11-16T22:10:05+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -51367,6 +51543,58 @@
   "senate": [
    {
     "ch": "S",
+    "d": "2026-11-12",
+    "issue": "PN11817",
+    "measure": "PN11817",
+    "n": 262,
+    "n_": "26",
+    "q": "On the Cloture Motion",
+    "result": "Cloture Motion Agreed to",
+    "title": "Anna St. John, of Louisiana, to be United States Circuit Judge for the Fifth Circuit",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00262.htm",
+    "y": "49"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-12",
+    "issue": "PN9992",
+    "measure": "PN9992",
+    "n": 261,
+    "n_": "27",
+    "q": "On the Cloture Motion",
+    "result": "Cloture Motion Agreed to",
+    "title": "Daniel Desmond Domenico, of Colorado, to be United States Circuit Judge for the Tenth Circuit",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00261.htm",
+    "y": "51"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-12",
+    "issue": "PN11811",
+    "measure": "PN11811",
+    "n": 260,
+    "n_": "27",
+    "q": "On the Nomination",
+    "result": "Nomination Confirmed",
+    "title": "Gregory Carl Cook, of Alabama, to be United States District Judge for the Northern District of Alabama",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00260.htm",
+    "y": "49"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-12",
+    "issue": "PN11811",
+    "measure": "PN11811",
+    "n": 259,
+    "n_": "27",
+    "q": "On the Cloture Motion",
+    "result": "Cloture Motion Agreed to",
+    "title": "Gregory Carl Cook, of Alabama, to be United States District Judge for the Northern District of Alabama",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00259.htm",
+    "y": "50"
+   },
+   {
+    "ch": "S",
     "d": "2026-11-10",
     "issue": "HR2347",
     "measure": "HR2347",
@@ -52092,58 +52320,6 @@
     "title": "Michael C. Martin, of Michigan, to be United States District Judge for the Eastern District of Michigan",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00203.htm",
     "y": "60"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-22",
-    "issue": "PN9381",
-    "measure": "PN9381",
-    "n": 202,
-    "n_": "46",
-    "q": "On the Nomination",
-    "result": "Nomination Confirmed",
-    "title": "Benjamin M. Flowers, of Ohio, to be United States Circuit Judge for the Sixth Circuit",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00202.htm",
-    "y": "49"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-21",
-    "issue": "PN8518",
-    "measure": "PN8518",
-    "n": 201,
-    "n_": "48",
-    "q": "On the Nomination",
-    "result": "Nomination Confirmed",
-    "title": "Kara Marie Westercamp, of Virginia, to be a Judge of the United States Court of International Trade",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00201.htm",
-    "y": "50"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-20",
-    "issue": "PN9381",
-    "measure": "PN9381",
-    "n": 200,
-    "n_": "40",
-    "q": "On the Cloture Motion",
-    "result": "Cloture Motion Agreed to",
-    "title": "Benjamin M. Flowers, of Ohio, to be United States Circuit Judge for the Sixth Circuit",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00200.htm",
-    "y": "43"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-16",
-    "issue": "SJRES198",
-    "measure": "SJRES198",
-    "n": 199,
-    "n_": "50",
-    "q": "On the Motion to Proceed",
-    "result": "Motion to Proceed Rejected",
-    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Medicare Program; Implementation of Prior Authorization for Select Services for the Wasteful and Inappropriate Services Reduction (WISeR) Model\".",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00199.htm",
-    "y": "46"
    }
   ]
  },
