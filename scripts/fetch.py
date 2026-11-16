@@ -41,6 +41,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CURATED = ROOT / "data" / "curated.json"
 VEHICLES = ROOT / "data" / "vehicles.json"     # hand-edited vehicle swaps; nothing writes it
+SUMMARIES = ROOT / "data" / "summaries.json"   # CRS summaries, kept between runs
 TRACKED = ROOT / "data" / "tracked.json"          # bills found by discovery
 OUT = ROOT / "site" / "data" / "ledger.json"
 
@@ -815,6 +816,64 @@ def senate_with_backoff(congress: int, session: int, now: dt.datetime, state: di
     return got
 
 
+# ---------------------------------------------------------------- what a bill does (CRS)
+# Congress.gov carries bill summaries written by the Congressional Research Service. The site
+# shows their first sentence or two. Fetched in small batches, newest action first, and checked
+# again when a bill has a newer action; a problem here never touches the bills themselves.
+SUMMARY_PER_RUN = 40
+SUMMARY_BUDGET_S = 120
+
+
+def summary_text(html_text: str, sentences: int = 2, cap: int = 320) -> str:
+    """CRS summary HTML -> its first sentence or two, plain text."""
+    t = re.sub(r"(?is)<(script|style).*?</\1>", " ", html_text or "")
+    paras = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", p))).strip() for p in re.split(r"(?i)</p>|<br\s*/?>", t)]
+    paras = [p for p in paras if p]
+    if len(paras) > 1 and not re.search(r"[.;:]$", paras[0]):
+        paras = paras[1:]  # a bold title line comes first
+    body = " ".join(paras)
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z(])", body)
+    out = ""
+    for part in parts[:sentences]:
+        if out and len(out) + len(part) + 1 > cap:
+            break
+        out = f"{out} {part}".strip()
+    return out if len(out) <= cap else out[:cap].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+
+
+def latest_summary(items: list[dict]) -> dict | None:
+    items = [x for x in items or [] if (x or {}).get("text")]
+    return max(items, key=lambda x: (x.get("actionDate") or "", x.get("updateDate") or "")) if items else None
+
+
+def refresh_summaries(bills: list[dict], store: dict, today: str, fetch=None, clock=time.monotonic) -> bool:
+    """Fill in or update summaries for bills that need one. True if anything changed."""
+    fetch = fetch or (lambda c, t, n: api(f"bill/{c}/{t}/{n}/summaries", limit=50).get("summaries") or [])
+    def needs(b):
+        have = store.get(b["id"]) or {}
+        return not have or have.get("checked", "") < str((b.get("latest") or {}).get("actionDate") or "")[:10]
+    todo = sorted((b for b in bills if needs(b)), key=lambda b: str((b.get("latest") or {}).get("actionDate") or ""), reverse=True)
+    changed, fails, start = False, 0, clock()
+    for b in todo[:SUMMARY_PER_RUN]:
+        if clock() - start > SUMMARY_BUDGET_S or fails >= 2:
+            break
+        m = re.match(r"^(\d+)-([a-z]+)(\d+)$", b["id"])
+        if not m:
+            continue
+        try:
+            s = latest_summary(fetch(int(m.group(1)), m.group(2), int(m.group(3))))
+            fails = 0
+        except Exception:  # noqa: BLE001
+            fails += 1
+            continue
+        rec = {"checked": today}
+        if s:
+            rec.update(t=summary_text(s.get("text") or ""), d=(s.get("actionDate") or "")[:10], v=(s.get("actionDesc") or "").strip())
+        if store.get(b["id"]) != rec:
+            store[b["id"]], changed = rec, True
+    return changed
+
+
 # ---------------------------------------------------------------- what's coming to the floor
 # House: the Majority Leader's weekly schedule (docs.house.gov). Only bills under a rule and
 # other items such as privileged resolutions; routine suspension bills are left out.
@@ -1389,6 +1448,19 @@ def main() -> int:
     if do_votes:
         votes = {"senate": senate_with_backoff(congress, session, now, tracked, votes.get("senate") or []),
                  "house": house_with_fallback(congress, session, now, tracked, votes.get("house") or [])}
+
+    # what each bill does (CRS); runs only alongside a bill check, never when Congress.gov is down
+    summaries = load_json(SUMMARIES, {})
+    if do_bills and not DOWN.get("congress"):
+        try:
+            if refresh_summaries(bills, summaries, now.astimezone(CT).date().isoformat()):
+                SUMMARIES.write_text(json.dumps(summaries, indent=1, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
+        except Exception as e:  # noqa: BLE001
+            warn(f"bill summaries skipped ({e.__class__.__name__})")
+    for b in bills:
+        s = summaries.get(b["id"]) or {}
+        if s.get("t"):
+            b["sum"] = {"t": s["t"], "d": s.get("d", ""), "v": s.get("v", "")}
 
     # what's coming to the floor; each part keeps its last good copy if anything goes wrong
     floor = dict(prev.get("floor") or {})

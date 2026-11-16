@@ -680,6 +680,66 @@ class RollCallAheadOfCongressGov(unittest.TestCase):
         t = self.run_main("2026-11-12")
         self.assertEqual((t.get("rcSeen") or {}).get("119-hr2102"), "2026-11-12")
 
+
+class CrsSummaries(unittest.TestCase):
+    CRS = ("<p><strong>Major Richard Star Act</strong></p> <p>This bill allows certain veterans with combat-related "
+           "disabilities to receive both military retired pay and veterans&#8217; disability compensation. Currently, "
+           "such veterans must forgo some retired pay. The bill also requires a report.</p>")
+
+    def test_first_two_sentences_plain_text_without_the_title_line(self):
+        self.assertEqual(F.summary_text(self.CRS),
+                         "This bill allows certain veterans with combat-related disabilities to receive both military retired pay "
+                         "and veterans\u2019 disability compensation. Currently, such veterans must forgo some retired pay.")
+
+    def test_long_text_is_cut_at_a_word(self):
+        t = F.summary_text("<p>This bill " + "does a thing " * 60 + ".</p>")
+        self.assertTrue(t.endswith("\u2026") and len(t) <= 321)
+
+    def test_latest_version_wins(self):
+        items = [{"actionDate": "2026-03-01", "text": "a"}, {"actionDate": "2026-11-12", "text": "b"}, {"actionDate": "2026-12-01", "text": ""}]
+        self.assertEqual(F.latest_summary(items)["text"], "b")
+        self.assertIsNone(F.latest_summary([]))
+
+    def bills(self):
+        return [{"id": "119-hr2102", "latest": {"actionDate": "2026-11-12"}}, {"id": "119-hr1", "latest": {"actionDate": "2025-07-04"}},
+                {"id": "119-s5", "latest": {"actionDate": "2026-11-10"}}]
+
+    def test_newest_action_first_and_checked_once(self):
+        seen = []
+        def fetch(c, t, n):
+            seen.append(f"{t}{n}")
+            return [{"actionDate": "2026-11-12", "actionDesc": "Passed House", "text": self.CRS}]
+        store = {}
+        self.assertTrue(F.refresh_summaries(self.bills(), store, "2026-11-16", fetch))
+        self.assertEqual(seen, ["hr2102", "s5", "hr1"])
+        self.assertEqual(store["119-hr2102"]["v"], "Passed House")
+        seen.clear()
+        self.assertFalse(F.refresh_summaries(self.bills(), store, "2026-11-16", fetch))
+        self.assertEqual(seen, [])  # nothing newer: no calls
+
+    def test_newer_action_checks_again(self):
+        store = {"119-hr2102": {"checked": "2026-11-10"}}
+        seen = []
+        F.refresh_summaries([self.bills()[0]], store, "2026-11-16", lambda c, t, n: seen.append(n) or [])
+        self.assertEqual((seen, store["119-hr2102"]), ([2102], {"checked": "2026-11-16"}))
+
+    def test_two_failures_in_a_row_stop_the_batch(self):
+        calls = []
+        def down(c, t, n):
+            calls.append(n)
+            raise TimeoutError("no route")
+        self.assertFalse(F.refresh_summaries(self.bills(), {}, "2026-11-16", down))
+        self.assertEqual(len(calls), 2)
+
+    def test_time_budget(self):
+        t = [0]
+        def slow(c, t_, n):
+            t[0] += 200
+            return []
+        store = {}
+        F.refresh_summaries(self.bills(), store, "2026-11-16", slow, clock=lambda: t[0])
+        self.assertEqual(len(store), 1)
+
 class OutageNote(unittest.TestCase):
     """The visitor note only for a sustained Congress.gov outage, never for a one-run blip."""
     import datetime as _dt
