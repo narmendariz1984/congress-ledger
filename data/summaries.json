@@ -77,6 +77,30 @@
  "119-hjres72": {
   "checked": "2026-11-17"
  },
+ "119-hjres87": {
+  "checked": "2026-11-17",
+  "d": "2025-06-12",
+  "t": "Specifically, the joint resolution nullifies the Environmental Protection Agency notice titled California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power…",
+  "v": "Public Law"
+ },
+ "119-hjres88": {
+  "checked": "2026-11-17",
+  "d": "2025-06-12",
+  "t": "Specifically, the joint resolution nullifies the Environmental Protection Agency notice titled California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision .",
+  "v": "Public Law"
+ },
+ "119-hjres89": {
+  "checked": "2026-11-17",
+  "d": "2025-06-12",
+  "t": "Specifically, the joint resolution nullifies the Environmental Protection Agency notice titled California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The ‘Omnibus’ Low NOX Regulation; Waiver of Preemption; Notice of Decision .",
+  "v": "Public Law"
+ },
+ "119-hr1": {
+  "checked": "2026-11-17",
+  "d": "2025-07-04",
+  "t": "This act reduces taxes, reduces or increases spending for various federal programs, increases the statutory debt limit, and otherwise addresses agencies and programs throughout the federal government.",
+  "v": "Public Law"
+ },
  "119-hr1005": {
   "checked": "2026-11-17",
   "d": "2025-02-05",
@@ -191,6 +215,12 @@
   "t": "This bill requires ticket sellers (including sellers on the secondary market) for concerts, performances, sporting events, and similar activities to clearly and prominently disclose the total ticket price for the event at the time the ticket is first displayed to an individual (and anytime thereafter during the…",
   "v": "Introduced in House"
  },
+ "119-hr1442": {
+  "checked": "2026-11-17",
+  "d": "2025-02-18",
+  "t": "This bill makes a consumer product with a concentration of sodium nitrite of 10% or greater a banned hazardous product. The restriction does not apply to specified drugs, medical devices, cosmetics, or food products.",
+  "v": "Introduced in House"
+ },
  "119-hr1491": {
   "checked": "2026-11-17",
   "d": "2025-12-26",
@@ -257,6 +287,18 @@
   "t": "This bill requires the Centers for Medicare & Medicaid Services (CMS) to establish specific billing codes under Medicare for certain materials used in ultralightweight manual wheelchairs.",
   "v": "Introduced in House"
  },
+ "119-hr1709": {
+  "checked": "2026-11-17",
+  "d": "2025-02-27",
+  "t": "This bill requires the National Telecommunications and Information Administration to examine and report on the cybersecurity of mobile service networks and the vulnerability of these networks and mobile devices to cyberattacks and surveillance conducted by adversaries.",
+  "v": "Introduced in House"
+ },
+ "119-hr1717": {
+  "checked": "2026-11-17",
+  "d": "2025-02-27",
+  "t": "This bill provides statutory authority for a council established by the Federal Communications Commission (FCC) to provide advice regarding the security, reliability, and interoperability of communications networks.",
+  "v": "Introduced in House"
+ },
  "119-hr1721": {
   "checked": "2026-11-16",
   "d": "2025-02-27",
@@ -268,6 +310,12 @@
   "d": "2026-11-03",
   "t": "This act reauthorizes the U.S. Commission on International Religious Freedom through 2028.",
   "v": "Public Law"
+ },
+ "119-hr1770": {
+  "checked": "2026-11-17",
+  "d": "2025-03-03",
+  "t": "This bill (1) establishes a pilot program to explore the use of artificial intelligence to support the Consumer Product Safety Commission (CPSC), and (2) requires reports related to blockchain technology and digital tokens.",
+  "v": "Introduced in House"
  },
  "119-hr1815": {
   "checked": "2026-11-17",
@@ -302,6 +350,18 @@
   "t": "This act modifies the procedures by which the Department of Veterans Affairs (VA) reissues misused benefits to a beneficiary, including by requiring the VA to establish methods and timing with respect to determining whether an instance of misuse by a fiduciary is the result of negligence by the VA.",
   "v": "Public Law"
  },
+ "119-hr1917": {
+  "checked": "2026-11-17",
+  "d": "2025-03-06",
+  "t": "This bill provides statutory authority for a program of the U.S. Fish and Wildlife Service (FWS) for the mass marking of hatchery-produced fish in the Great Lakes basin.",
+  "v": "Introduced in House"
+ },
+ "119-hr1919": {
+  "checked": "2026-11-17",
+  "d": "2025-03-06",
+  "t": "This bill prohibits a Federal Reserve bank from offering products or services directly to an individual, maintaining an account on behalf of an individual, or issuing a central bank digital currency (i.e., a digital dollar).",
+  "v": "Introduced in House"
+ },
  "119-hr1945": {
   "checked": "2026-11-16",
   "d": "2025-03-06",
@@ -326,6 +386,24 @@
   "t": "This bill directs the Department of the Treasury to mint and issue coins to commemorate the 25th anniversary of the September 11, 2001, terrorist attacks on the United States and the establishment of the National September 11 Memorial and Museum at the World Trade Center.",
   "v": "Introduced in House"
  },
+ "119-hr1998": {
+  "checked": "2026-11-17",
+  "d": "2025-03-10",
+  "t": "This bill requires the President to impose visa- and property-blocking sanctions on any foreign person (individual or entity) that the President determines knowingly engages in piracy.",
+  "v": "Introduced in House"
+ },
+ "119-hr2035": {
+  "checked": "2026-11-17",
+  "d": "2025-03-11",
+  "t": "This bill requires 100% of equipment, materials, and commodities procured, furnished, or financed by the Department of Transportation (DOT) and transported on ocean vessels to be transported on U.S.-flagged commercial vessels.",
+  "v": "Introduced in House"
+ },
+ "119-hr2056": {
+  "checked": "2026-11-17",
+  "d": "2025-03-11",
+  "t": "This bill prohibits the District of Columbia (DC) from limiting its cooperation with federal immigration enforcement activities, except for certain instances involving witnesses and victims of crime.",
+  "v": "Introduced in House"
+ },
  "119-hr2066": {
   "checked": "2026-11-17",
   "d": "2026-05-19",
@@ -342,6 +420,12 @@
   "checked": "2026-11-17",
   "d": "2025-03-11",
   "t": "This bill prohibits federal funds from being made available to international financial institutions (e.g., the International Monetary Fund) for financing activities related to foreign shrimp farms.",
+  "v": "Introduced in House"
+ },
+ "119-hr2096": {
+  "checked": "2026-11-17",
+  "d": "2025-03-14",
+  "t": "This bill rescinds certain changes that were made in 2023 to District of Columbia (DC) law governing discipline of Metropolitan Police Department (MPD) officers.",
   "v": "Introduced in House"
  },
  "119-hr2102": {
@@ -373,6 +457,12 @@
   "d": "2026-02-24",
   "t": "This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.",
   "v": "Reported to House"
+ },
+ "119-hr2215": {
+  "checked": "2026-11-17",
+  "d": "2025-07-15",
+  "t": "This act redesignates the Salem Maritime National Historic Site in Massachusetts as the Salem Maritime National Historical Park. In addition, the act directs the Department of the Interior to conduct and report on a boundary study.",
+  "v": "Public Law"
  },
  "119-hr224": {
   "checked": "2026-11-17",
@@ -501,6 +591,12 @@
   "t": "This bill requires the Department of Veterans Affairs (VA) to establish and implement a two-year pilot program to furnish, when requested, an appropriate headstone or burial marker to commemorate covered veterans.",
   "v": "Introduced in House"
  },
+ "119-hr275": {
+  "checked": "2026-11-17",
+  "d": "2025-01-09",
+  "t": "This bill requires the Department of Homeland Security (DHS) to report every month on non-U.S. nationals ( aliens under federal law) who attempt to unlawfully enter the United States and who potentially pose a national security risk.",
+  "v": "Introduced in House"
+ },
  "119-hr2808": {
   "checked": "2026-11-17",
   "d": "2025-09-05",
@@ -531,17 +627,35 @@
   "t": "This bill addresses the war between Russia and Ukraine by (1) providing assistance to Ukraine and certain European countries, and (2) establishing penalties for Russia and certain foreign persons (individuals and entities).",
   "v": "Introduced in House"
  },
+ "119-hr2931": {
+  "checked": "2026-11-17",
+  "d": "2025-04-17",
+  "t": "This bill requires the relocation of a regional, district, or local office of the Small Business Administration (SBA) if the SBA makes a public determination that the office is located in a sanctuary jurisdiction.",
+  "v": "Introduced in House"
+ },
  "119-hr2965": {
   "checked": "2026-11-17",
   "d": "2025-05-21",
   "t": "This bill requires the Small Business Administration (SBA) to ensure the annual small business regulatory budget for the SBA in each fiscal year is no greater than zero.",
   "v": "Reported to House"
  },
+ "119-hr2966": {
+  "checked": "2026-11-17",
+  "d": "2025-04-17",
+  "t": "This bill revises the application requirements for the Small Business Administration's 7(a) loan and 504 loan programs.",
+  "v": "Introduced in House"
+ },
  "119-hr2978": {
   "checked": "2026-11-17",
   "d": "2026-06-24",
   "t": "This bill allows state, local, and tribal law enforcement agencies and grantees that receive funds from certain law enforcement grant programs to use the funds to investigate general financial fraud, elder financial fraud, and pig butchering.",
   "v": "Reported to House"
+ },
+ "119-hr2987": {
+  "checked": "2026-11-17",
+  "d": "2025-04-24",
+  "t": "This bill limits the number of for-profit small business lending companies that are authorized make 7(a) loans to not more than 16 at any time.",
+  "v": "Introduced in House"
  },
  "119-hr2988": {
   "checked": "2026-11-17",
@@ -559,6 +673,12 @@
   "checked": "2026-11-17",
   "d": "2025-04-29",
   "t": "This bill establishes a new process for approving or revoking permits for the construction and operation of energy infrastructure across an international border of the United States. Thus, it replaces the existing process established under specified executive orders.",
+  "v": "Introduced in House"
+ },
+ "119-hr3095": {
+  "checked": "2026-11-17",
+  "d": "2025-04-30",
+  "t": "This bill requires the U.S Postal Service to designate a single, unique ZIP Code for each of the following 74 communities: Canyon Lake, California Eastvale, California Hidden Hills, California Industry, California North Tustin, California Tehachapi, California Castle Pines, Colorado Centennial, Colorado Cherry Hills…",
   "v": "Introduced in House"
  },
  "119-hr3106": {
@@ -597,6 +717,12 @@
   "t": "This bill provides statutory authority for the Urban Bird Treaty Program, which is administered by the U.S. Fish and Wildlife Service.",
   "v": "Reported to House"
  },
+ "119-hr3351": {
+  "checked": "2026-11-17",
+  "d": "2025-05-13",
+  "t": "This bill excludes from the Paperwork Reduction Act actions taken by the Office of the Advocate for Small Business Capital Formation within the Securities and Exchange Commission. Under the Paperwork Reduction Act, agencies must comply with specific procedures when gathering information from the public.",
+  "v": "Introduced in House"
+ },
  "119-hr3357": {
   "checked": "2026-11-17",
   "d": "2025-05-13",
@@ -609,10 +735,22 @@
   "t": "This bill allows a closed-end fund—a portfolio of pooled assets with a limited number of shares traded on an exchange—to increase its investment in private investment funds.",
   "v": "Reported to House"
  },
+ "119-hr3394": {
+  "checked": "2026-11-17",
+  "d": "2025-05-14",
+  "t": "This bill expands the eligibility criteria for an accredited investor for purposes of participating in private offerings of securities to include an individual determined by the Securities and Exchange Commission (SEC) to have qualifying professional knowledge through educational or professional experience.",
+  "v": "Introduced in House"
+ },
  "119-hr3400": {
   "checked": "2026-11-17",
   "d": "2025-05-14",
   "t": "This bill authorizes the Department of Veterans Affairs (VA) to assign a physician who has been appointed in the Veterans Health Administration to serve as a traveling physician for a period of not more than one year.",
+  "v": "Introduced in House"
+ },
+ "119-hr3422": {
+  "checked": "2026-11-17",
+  "d": "2025-05-15",
+  "t": "This bill expands the functions of the Securities and Exchange Commission's Office of the Advocate for Small Business Capital Formation.",
   "v": "Introduced in House"
  },
  "119-hr3424": {
@@ -735,6 +873,12 @@
   "t": "The following analysis is based on draft bill text that was made available by the House of Representatives and may differ from the bill text as introduced.",
   "v": "Introduced in House"
  },
+ "119-hr4": {
+  "checked": "2026-11-17",
+  "d": "2025-07-24",
+  "t": "This act rescinds specified unobligated funds that were provided to the Department of State, the U.S. Agency for International Development (USAID), various independent and related agencies, and the Corporation for Public Broadcasting.",
+  "v": "Public Law"
+ },
  "119-hr4016": {
   "checked": "2026-11-17",
   "d": "2025-06-16",
@@ -759,6 +903,12 @@
   "t": "This act extends for an additional five years the time period during which an eligible Alaska Native veteran may apply for a land allotment under the Alaska Native Vietnam Era Veterans Land Allotment Program.",
   "v": "Public Law"
  },
+ "119-hr42": {
+  "checked": "2026-11-17",
+  "d": "2025-07-07",
+  "t": "This act excludes certain settlement trust payments to an Alaska Native or descendant of an Alaska Native who is aged, blind, or disabled for purposes of determining the individual's eligibility for certain need-based federal programs (e.g., the Supplemental Nutrition Assistance Program).",
+  "v": "Public Law"
+ },
  "119-hr4216": {
   "checked": "2026-11-17",
   "d": "2025-06-27",
@@ -771,11 +921,20 @@
   "t": "This bill provides statutory authority for the Invasive Species Strike Team program carried out by the National Wildlife Refuge System within the U.S. Fish and Wildlife Service (FWS).",
   "v": "Reported to House"
  },
+ "119-hr4275": {
+  "checked": "2026-11-17"
+ },
  "119-hr4294": {
   "checked": "2026-11-17",
   "d": "2026-02-23",
   "t": "This bill requires the National Oceanic and Atmospheric Administration (NOAA) to establish a pilot program to facilitate the purchase of blue catfish caught within the Chesapeake Bay Watershed.",
   "v": "Reported to House"
+ },
+ "119-hr43": {
+  "checked": "2026-11-17",
+  "d": "2025-07-07",
+  "t": "This act removes the requirement that Alaska Native village corporations must convey lands to Alaska to be held in trust for future municipal governments.",
+  "v": "Public Law"
  },
  "119-hr4304": {
   "checked": "2026-11-17"
@@ -960,6 +1119,12 @@
   "t": "This bill repeals restrictions on the circumstances under which law enforcement officers in the District of Columbia (DC) may engage in vehicular pursuits (i.e., police chases) of suspects fleeing in motor vehicles, and instead generally requires such pursuits in the absence of other means of apprehension.",
   "v": "Introduced in House"
  },
+ "119-hr517": {
+  "checked": "2026-11-17",
+  "d": "2025-07-24",
+  "t": "This act authorizes the Internal Revenue Service (IRS) to postpone federal tax deadlines for taxpayers affected by a qualified state declared disaster, upon written request by the state governor. The act also increases the automatic extension of federal tax deadlines for certain taxpayers.",
+  "v": "Public Law"
+ },
  "119-hr5184": {
   "checked": "2026-11-17",
   "d": "2025-12-30",
@@ -1085,6 +1250,12 @@
   "d": "2026-04-02",
   "t": "This bill expands specified benefits programs for veterans and their survivors and establishes a supplemental monthly allowance for certain disabled veterans.",
   "v": "Reported to House"
+ },
+ "119-hr618": {
+  "checked": "2026-11-17",
+  "d": "2025-07-15",
+  "t": "This act directs the Department of the Interior to grant certain rights-of-way related to the Apex Project (an industrial park) to Clark County in Nevada, the city of North Las Vegas, and the Apex Industrial Park Owners Association.",
+  "v": "Public Law"
  },
  "119-hr6260": {
   "checked": "2026-11-17",
@@ -1410,6 +1581,12 @@
   "t": "This bill provides FY2027 appropriations for the Department of Agriculture (USDA), the Food and Drug Administration, and related agencies.",
   "v": "Passed House"
  },
+ "119-hr875": {
+  "checked": "2026-11-17",
+  "d": "2025-06-26",
+  "t": "This bill makes driving while intoxicated or impaired a ground for (1) barring a non-U.S. national ( alien under federal law) from admission into the United States, or (2) deporting the individual.",
+  "v": "Passed House"
+ },
  "119-hr8800": {
   "checked": "2026-11-17",
   "d": "2026-06-15",
@@ -1420,6 +1597,12 @@
   "checked": "2026-11-17",
   "d": "2026-05-14",
   "t": "This bill explicitly authorizes the Department of Labor to suspend payments under the federal workers’ compensation program to certain providers convicted of fraud.",
+  "v": "Introduced in House"
+ },
+ "119-hr884": {
+  "checked": "2026-11-17",
+  "d": "2025-01-31",
+  "t": "This bill prohibits a non-U.S. citizen from voting in a District of Columbia (DC) election and repeals relevant provisions of DC law.",
   "v": "Introduced in House"
  },
  "119-hr8884": {
@@ -1565,6 +1748,24 @@
   "d": "2026-02-11",
   "t": "This bill requires individuals to provide documentary proof of U.S. citizenship when registering to vote, and requires photo identification to vote, in federal elections.",
   "v": "Passed House"
+ },
+ "119-s1582": {
+  "checked": "2026-11-17",
+  "d": "2025-07-18",
+  "t": "This act establishes a regulatory framework for payment stablecoins (digital assets which an issuer must redeem for a fixed value). Under the act, only permitted issuers may issue a payment stablecoin for use by U.S. persons, subject to certain exceptions and safe harbors.",
+  "v": "Public Law"
+ },
+ "119-s1596": {
+  "checked": "2026-11-17",
+  "d": "2025-07-24",
+  "t": "This act renames the Anahuac National Wildlife Refuge located in Anahuac, Texas, as the Jocelyn Nungaray National Wildlife Refuge. The act provides statutory authority for Executive Order 14229 , which also renamed the refuge as the Jocelyn Nungaray National Wildlife Refuge.",
+  "v": "Public Law"
+ },
+ "119-s160": {
+  "checked": "2026-11-17",
+  "d": "2025-06-12",
+  "t": "This act reauthorizes the Department of Defense to sell its excess aircraft and aircraft parts that are acceptable for commercial sale for wildfire suppression purposes. Such authority begins June 12, 2025, and ends October 1, 2035.",
+  "v": "Public Law"
  },
  "119-s1884": {
   "checked": "2026-11-17",
@@ -1714,6 +1915,12 @@
   "checked": "2026-11-17",
   "d": "2026-09-16",
   "t": "This act adds College Station to the list of places where court must be held in the Galveston Division of the Southern District of Texas. Additionally, the act adds El Centro to the list of places where court must be held in the Southern District of California.",
+  "v": "Public Law"
+ },
+ "119-s331": {
+  "checked": "2026-11-17",
+  "d": "2025-07-17",
+  "t": "This act permanently places fentanyl-related substances as a class into schedule I of the Controlled Substances Act.",
   "v": "Public Law"
  },
  "119-s3385": {
@@ -1905,6 +2112,12 @@
   "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Cuba unless a declaration of war or authorization to use military force for such purpose has been enacted.",
   "v": "Introduced in Senate"
  },
+ "119-sjres13": {
+  "checked": "2026-11-17",
+  "d": "2025-06-20",
+  "t": "This joint resolution nullifies the final rule issued by the Department of the Treasury’s Office of the Comptroller of the Currency titled Business Combinations Under the Bank Merger Act and published on September 25, 2024.",
+  "v": "Public Law"
+ },
  "119-sjres130": {
   "checked": "2026-11-17"
  },
@@ -1983,6 +2196,12 @@
  "119-sjres199": {
   "checked": "2026-11-17"
  },
+ "119-sjres31": {
+  "checked": "2026-11-17",
+  "d": "2025-06-20",
+  "t": "This joint resolution removes the requirements for sources of persistent and bioaccumulative hazardous air pollutants to comply with certain major source emissions standards when those sources reclassify as area sources (which have less stringent standards).",
+  "v": "Public Law"
+ },
  "119-sjres32": {
   "checked": "2026-11-17",
   "d": "2025-03-10",
@@ -1999,6 +2218,24 @@
   "checked": "2026-11-17",
   "d": "2025-03-27",
   "t": "This joint resolution prohibits a proposed export of certain firearms, parts, and components to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres53": {
+  "checked": "2026-11-17",
+  "d": "2025-05-15",
+  "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Qatar.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres54": {
+  "checked": "2026-11-17",
+  "d": "2025-05-15",
+  "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to the United Arab Emirates.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres59": {
+  "checked": "2026-11-17",
+  "d": "2025-06-16",
+  "t": "This joint resolution directs the President to terminate the use of U.S. Armed Forces for hostilities against Iran unless explicitly authorized by a congressional declaration of war or a specific authorization for use of military force against Iran.",
   "v": "Introduced in Senate"
  },
  "119-sjres60": {

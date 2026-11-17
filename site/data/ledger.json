@@ -2984,6 +2984,11 @@
     "s": "MI-10"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-06-12",
+    "t": "Specifically, the joint resolution nullifies the Environmental Protection Agency notice titled California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power…",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3143,6 +3148,11 @@
     "s": "PA-13"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-06-12",
+    "t": "Specifically, the joint resolution nullifies the Environmental Protection Agency notice titled California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision .",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3302,6 +3312,11 @@
     "s": "CA-23"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-06-12",
+    "t": "Specifically, the joint resolution nullifies the Environmental Protection Agency notice titled California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The ‘Omnibus’ Low NOX Regulation; Waiver of Preemption; Notice of Decision .",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3423,7 +3438,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3499,6 +3514,11 @@
     "s": "TX-19"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-04",
+    "t": "This act reduces taxes, reduces or increases spending for various federal programs, increases the statutory debt limit, and otherwise addresses agencies and programs throughout the federal government.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -6599,6 +6619,11 @@
     "s": "MA-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-18",
+    "t": "This bill makes a consumer product with a concentration of sodium nitrite of 10% or greater a banned hazardous product. The restriction does not apply to specified drugs, medical devices, cosmetics, or food products.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -8568,6 +8593,11 @@
     "s": "OH-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-27",
+    "t": "This bill requires the National Telecommunications and Information Administration to examine and report on the cybersecurity of mobile service networks and the vulnerability of these networks and mobile devices to cyberattacks and surveillance conducted by adversaries.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -8657,6 +8687,11 @@
     "s": "NJ-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-27",
+    "t": "This bill provides statutory authority for a council established by the Federal Communications Commission (FCC) to provide advice regarding the security, reliability, and interoperability of communications networks.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -9028,6 +9063,11 @@
     "s": "FL-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-03",
+    "t": "This bill (1) establishes a pilot program to explore the use of artificial intelligence to support the Consumer Product Safety Commission (CPSC), and (2) requires reports related to blockchain technology and digital tokens.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -9909,6 +9949,11 @@
     "s": "MI-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-06",
+    "t": "This bill provides statutory authority for a program of the U.S. Fish and Wildlife Service (FWS) for the mass marking of hatchery-produced fish in the Great Lakes basin.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -10041,6 +10086,11 @@
     "s": "MN-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-06",
+    "t": "This bill prohibits a Federal Reserve bank from offering products or services directly to an individual, maintaining an account on behalf of an individual, or issuing a central bank digital currency (i.e., a digital dollar).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -10859,6 +10909,11 @@
     "s": "IL-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-10",
+    "t": "This bill requires the President to impose visa- and property-blocking sanctions on any foreign person (individual or entity) that the President determines knowingly engages in piracy.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -10941,6 +10996,11 @@
     "s": "CA-24"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-11",
+    "t": "This bill requires 100% of equipment, materials, and commodities procured, furnished, or financed by the Department of Transportation (DOT) and transported on ocean vessels to be transported on U.S.-flagged commercial vessels.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11036,6 +11096,11 @@
     "s": "LA-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-11",
+    "t": "This bill prohibits the District of Columbia (DC) from limiting its cooperation with federal immigration enforcement activities, except for certain instances involving witnesses and victims of crime.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11525,6 +11590,11 @@
     "s": "NY-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-14",
+    "t": "This bill rescinds certain changes that were made in 2023 to District of Columbia (DC) law governing discipline of Metropolitan Police Department (MPD) officers.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -12528,6 +12598,11 @@
     "s": "MA-6"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-15",
+    "t": "This act redesignates the Salem Maritime National Historic Site in Massachusetts as the Salem Maritime National Historical Park. In addition, the act directs the Department of the Interior to conduct and report on a boundary study.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13856,7 +13931,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15297,7 +15372,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15746,6 +15821,11 @@
     "s": "GA-14"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-09",
+    "t": "This bill requires the Department of Homeland Security (DHS) to report every month on non-U.S. nationals ( aliens under federal law) who attempt to unlawfully enter the United States and who potentially pose a national security risk.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -16836,6 +16916,11 @@
     "s": "MN-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-17",
+    "t": "This bill requires the relocation of a regional, district, or local office of the Small Business Administration (SBA) if the SBA makes a public determination that the office is located in a sanctuary jurisdiction.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17044,6 +17129,11 @@
     "s": "TX-24"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-17",
+    "t": "This bill revises the application requirements for the Small Business Administration's 7(a) loan and 504 loan programs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17260,6 +17350,11 @@
     "s": "PA-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-24",
+    "t": "This bill limits the number of for-profit small business lending companies that are authorized make 7(a) loans to not more than 16 at any time.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17826,6 +17921,11 @@
     "s": "CO-4"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-30",
+    "t": "This bill requires the U.S Postal Service to designate a single, unique ZIP Code for each of the following 74 communities: Canyon Lake, California Eastvale, California Hidden Hills, California Industry, California North Tustin, California Tehachapi, California Castle Pines, Colorado Centennial, Colorado Cherry Hills…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -18185,7 +18285,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18639,6 +18739,11 @@
     "s": "CA-40"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-13",
+    "t": "This bill excludes from the Paperwork Reduction Act actions taken by the Office of the Advocate for Small Business Capital Formation within the Securities and Exchange Commission. Under the Paperwork Reduction Act, agencies must comply with specific procedures when gathering information from the public.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -18945,6 +19050,11 @@
     "s": "AR-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-14",
+    "t": "This bill expands the eligibility criteria for an accredited investor for purposes of participating in private offerings of securities to include an individual determined by the Securities and Exchange Commission (SEC) to have qualifying professional knowledge through educational or professional experience.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -19144,6 +19254,11 @@
     "s": "CA-43"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-15",
+    "t": "This bill expands the functions of the Securities and Exchange Commission's Office of the Advocate for Small Business Capital Formation.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -21985,6 +22100,11 @@
     "s": "LA-1"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-24",
+    "t": "This act rescinds specified unobligated funds that were provided to the Department of State, the U.S. Agency for International Development (USAID), various independent and related agencies, and the Corporation for Public Broadcasting.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -22592,6 +22712,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-07",
+    "t": "This act excludes certain settlement trust payments to an Alaska Native or descendant of an Alaska Native who is aged, blind, or disabled for purposes of determining the individual's eligibility for certain need-based federal programs (e.g., the Supplemental Nutrition Assistance Program).",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -23104,6 +23229,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-07",
+    "t": "This act removes the requirement that Alaska Native village corporations must convey lands to Alaska to be held in trust for future municipal governments.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -23798,7 +23928,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -25894,7 +26024,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25993,7 +26123,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27008,6 +27138,11 @@
     "s": "TN-8"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-24",
+    "t": "This act authorizes the Internal Revenue Service (IRS) to postpone federal tax deadlines for taxpayers affected by a qualified state declared disaster, upon written request by the state governor. The act also increases the automatic extension of federal tax deadlines for certain taxpayers.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -28599,7 +28734,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -29734,6 +29869,11 @@
     "s": "NV-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-15",
+    "t": "This act directs the Department of the Interior to grant certain rights-of-way related to the Apex Project (an industrial park) to Clark County in Nevada, the city of North Las Vegas, and the Apex Industrial Park Owners Association.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -29926,7 +30066,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33300,7 +33440,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33982,7 +34122,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36696,7 +36836,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37218,6 +37358,11 @@
     "s": "AL-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-06-26",
+    "t": "This bill makes driving while intoxicated or impaired a ground for (1) barring a non-U.S. national ( alien under federal law) from admission into the United States, or (2) deporting the individual.",
+    "v": "Passed House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -37282,7 +37427,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37641,6 +37786,11 @@
     "s": "TX-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-31",
+    "t": "This bill prohibits a non-U.S. citizen from voting in a District of Columbia (DC) election and repeals relevant provisions of DC law.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -40944,6 +41094,11 @@
     "s": "TN"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-18",
+    "t": "This act establishes a regulatory framework for payment stablecoins (digital assets which an issuer must redeem for a fixed value). Under the act, only permitted issuers may issue a payment stablecoin for use by U.S. persons, subject to certain exceptions and safe harbors.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -41081,6 +41236,11 @@
     "s": "TX"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-24",
+    "t": "This act renames the Anahuac National Wildlife Refuge located in Anahuac, Texas, as the Jocelyn Nungaray National Wildlife Refuge. The act provides statutory authority for Executive Order 14229 , which also renamed the refuge as the Jocelyn Nungaray National Wildlife Refuge.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -41212,6 +41372,11 @@
     "s": "MT"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-06-12",
+    "t": "This act reauthorizes the Department of Defense to sell its excess aircraft and aircraft parts that are acceptable for commercial sale for wildfire suppression purposes. Such authority begins June 12, 2025, and ends October 1, 2035.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44704,6 +44869,11 @@
     "s": "LA"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-17",
+    "t": "This act permanently places fentanyl-related substances as a class into schedule I of the Controlled Substances Act.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44829,7 +44999,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -44925,7 +45095,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -47482,7 +47652,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T22:38:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -49145,6 +49315,11 @@
     "s": "LA"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-06-20",
+    "t": "This joint resolution nullifies the final rule issued by the Department of the Treasury’s Office of the Comptroller of the Currency titled Business Combinations Under the Bank Merger Act and published on September 25, 2024.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -50957,6 +51132,11 @@
     "s": "UT"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-06-20",
+    "t": "This joint resolution removes the requirements for sources of persistent and bioaccumulative hazardous air pollutants to comply with certain major source emissions standards when those sources reclassify as area sources (which have less stringent standards).",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51507,6 +51687,11 @@
     "s": "CT"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-05-15",
+    "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Qatar.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51573,6 +51758,11 @@
     "s": "CT"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-05-15",
+    "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to the United Arab Emirates.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51736,6 +51926,11 @@
     "s": "VA"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-06-16",
+    "t": "This joint resolution directs the President to terminate the use of U.S. Armed Forces for hostilities against Iran unless explicitly authorized by a congressional declaration of war or a specific authorization for use of military force against Iran.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -53213,7 +53408,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-17T16:11:06+00:00",
+ "generatedAt": "2026-11-17T22:38:47+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
