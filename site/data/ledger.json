@@ -293,6 +293,11 @@
     "s": "ND"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-10",
+    "t": "This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan (RMP) for the North Dakota Field Office and issued on January 8, 2025. By way of background, an RMP guides the management of lands administered by BLM.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -430,6 +435,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-14",
+    "t": "This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan (RMP) for Alaska’s Central Yukon planning area and issued on November 12, 2024.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -654,6 +664,11 @@
     "s": "WY"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-11-18",
+    "t": "This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) on November 20, 2024, which amended the 2015 resource management plan (RMP) for the Buffalo Field Office in Wyoming to make no federal coal available for future leasing.",
+    "v": "Passed House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -784,6 +799,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-11",
+    "t": "This joint resolution opens public land for oil and gas leasing in the Arctic National Wildlife Refuge.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -914,6 +934,11 @@
     "s": "AL-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-02",
+    "t": "This joint resolution requests the Department of the Interior to authorize the display of U.S. semiquincentennial materials and other significant artifacts, digital content, film footage, and associated audio and imagery in and around the vicinity of the National Mall during the period beginning on December 31, 2025…",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3398,7 +3423,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3553,6 +3578,11 @@
     "s": "OH-14"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-05",
+    "t": "This bill prohibits public elementary and secondary schools, as a condition of receiving federal elementary and secondary education funds, from accepting funds from or entering into a contract with the Chinese government, the Chinese Communist Party (CCP), or any individual or entity acting on behalf of the Chinese…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3722,7 +3752,7 @@
     ],
     "t": 24
    },
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4257,7 +4287,7 @@
     ],
     "t": 17
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4516,6 +4546,11 @@
     "s": "FL-4"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-06",
+    "t": "This bill requires each local educational agency (LEA), as a condition of receiving federal elementary and secondary education funds, to ensure that each elementary and secondary school served by the LEA notifies parents of their rights to request and receive information regarding foreign influence (e.g., influence by…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -4613,6 +4648,11 @@
     "s": "OK-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-06",
+    "t": "This bill prohibits federal education funding for any elementary or secondary school that directly or indirectly receives support from the Chinese government.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -6986,6 +7026,11 @@
     "s": "MO-2"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-21",
+    "t": "Current law requires the State Department to conduct a one-time review of its guidance governing relations with Taiwan and report to Congress on this review. Under this bill, the State Department must review that guidance and report to Congress every two years while the guidance is in effect.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7653,6 +7698,11 @@
     "s": "FL-28"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-26",
+    "t": "This bill directs the Department of Homeland Security (DHS) to submit a report to Congress on the department's efforts to prevent, deter, and respond to vehicular terrorism (i.e., an action that utilizes automotive transportation to commit terrorism).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -8064,6 +8114,11 @@
     "s": "FL-19"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-27",
+    "t": "This bill modifies the State Wildlife Grant Program (SWGP) to establish a deadline for the Department of the Interior to approve state wildlife conservation and restoration programs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -9480,6 +9535,11 @@
     "s": "UT-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill requires the authorized monument honoring Medal of Honor recipients to be located within the Reserve (the great cross-axis of the National Mall, which generally extends from the Capitol to the Lincoln Memorial and from the White House to the Jefferson Memorial).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -10291,6 +10351,11 @@
     "s": "TX-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-06",
+    "t": "This bill repeals certain restrictions on the import and export of natural gas under the Natural Gas Act, including requirements for Department of Energy (DOE) approval and related provisions that address free trade agreements.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11682,7 +11747,7 @@
     ],
     "t": 342
    },
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13411,6 +13476,123 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/23"
   },
   {
+   "area": "Native Americans",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-17T13:53:04+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/2302"
+    }
+   },
+   "id": "119-hr2302",
+   "introduced": "2025-03-24",
+   "latest": {
+    "actionDate": "2026-11-16",
+    "text": "Passed Senate without amendment by Unanimous Consent."
+   },
+   "num": "H.R. 2302",
+   "number": 2302,
+   "passed": {
+    "H": {
+     "d": "2025-12-09",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-11-16",
+     "how": "uc"
+    }
+   },
+   "reached": 4,
+   "sponsor": {
+    "n": "Tom McClintock",
+    "p": "R",
+    "s": "CA-5"
+   },
+   "status": "passed1",
+   "sum": {
+    "d": "2025-03-24",
+    "t": "This bill takes approximately 204.14 acres of specified lands in El Dorado County, California, into trust for the benefit of the Shingle Springs Band of Miwok Indians. The bill revokes a specified public land order and administratively transfers the land from the Forest Service to the Department of the Interior.",
+    "v": "Introduced in House"
+   },
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2025-07-23",
+     "e": "Ordered to be Reported (Amended) by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-07-23",
+     "e": "Subcommittee on Indian and Insular Affairs Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-09-15",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-286.",
+     "fn": "cg",
+     "v": "119–286"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-09",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-09",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5071)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2025-12-09",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5071)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-05-20",
+     "e": "Committee on Indian Affairs. Ordered to be reported without amendment favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-22",
+     "e": "Committee on Indian Affairs. Reported by Senator Murkowski without amendment. With written report No. 119-150.",
+     "fn": "cg",
+     "v": "119–150"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-16",
+     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-16",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Shingle Springs Band of Miwok Indians Land Transfer Act of 2025",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/2302"
+  },
+  {
    "area": "Labor & wages",
    "auto": true,
    "congress": 119,
@@ -13560,6 +13742,11 @@
     "s": "CO-3"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-11-25",
+    "t": "This act extends until FY2033 a requirement for the interest earned on certain funds held in the Federal Aid to Wildlife Restoration Fund to be distributed to states for carrying out certain wildlife conservation and restoration programs.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13643,7 +13830,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13659,8 +13846,8 @@
    "id": "119-hr2347",
    "introduced": "2025-03-25",
    "latest": {
-    "actionDate": "2026-11-11",
-    "text": "Cloture motion on the measure presented in Senate. (CR S5568)"
+    "actionDate": "2026-11-16",
+    "text": "Considered by Senate."
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -13683,13 +13870,6 @@
     "v": "Reported to House"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2026-04-09",
-     "e": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-599.",
-     "fn": "cg",
-     "v": "119–599"
-    },
     {
      "ch": "H",
      "d": "2026-04-27",
@@ -13744,6 +13924,12 @@
      "ch": "S",
      "d": "2026-11-11",
      "e": "Cloture motion on the measure presented in Senate. (CR S5568)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-16",
+     "e": "Motion by Senator Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) fell when clo",
      "fn": "cg"
     }
    ],
@@ -13904,7 +14090,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13915,8 +14101,8 @@
    "id": "119-hr2400",
    "introduced": "2025-03-27",
    "latest": {
-    "actionDate": "2026-09-30",
-    "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
+    "actionDate": "2026-11-16",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 2400",
    "number": 2400,
@@ -14321,6 +14507,11 @@
     "s": "KY-2"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-01",
+    "t": "This act reauthorizes and revises programs and activities relating to addressing substance use disorders, overdoses, and mental health.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -14437,6 +14628,11 @@
     "s": "NJ-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-09",
+    "t": "This bill renames a trail and a park within Paterson Great Falls National Historical Park located in Paterson, New Jersey, in honor of Congressman Bill Pascrell, Jr. Specifically, it renames the Great Falls Scenic Overlook Trail Bridge as the Bill Pascrell, Jr.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -15079,6 +15275,11 @@
     "s": "TN-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-08-15",
+    "t": "The bill creates a joint interagency task force to facilitate agency collaboration on efforts to respond to Chinese state-sponsored cyber actors, including Volt Typhoon.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -16679,6 +16880,11 @@
     "s": "TX-24"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-21",
+    "t": "This bill requires the Small Business Administration (SBA) to ensure the annual small business regulatory budget for the SBA in each fiscal year is no greater than zero.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17737,6 +17943,11 @@
     "s": "OH-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-30",
+    "t": "This bill requires the Department of Energy to direct the National Petroleum Council to publish a report on petrochemical refineries located in the United States.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -21782,6 +21993,11 @@
     "s": "CA-41"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-06-16",
+    "t": "This bill provides FY2026 appropriations to the Department of Defense (DOD) for military activities.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -21897,6 +22113,11 @@
     "s": "NY-10"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-15",
+    "t": "This bill requires the Federal Emergency Management Agency (FEMA) to provide outreach and support to stakeholders regarding grants for protecting communities from terrorist attacks.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -22942,6 +23163,11 @@
     "s": "WI-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-11-21",
+    "t": "This bill establishes a requirement for the Office of Advocacy of the Small Business Administration (SBA) to continue to operate and maintain the Red Tape Hotline, which receives notifications from small entities about the burden of complying with applicable rules, guidance, policy statements, or other activities of a…",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -23459,7 +23685,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23547,6 +23773,11 @@
     "s": "CA"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-11-19",
+    "t": "This act requires the Department of Justice (DOJ) to publish (in a searchable and downloadable format) all unclassified records, documents, communications, and investigative materials in DOJ's possession that relate to the investigation and prosecution of Jeffrey Epstein.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -23637,6 +23868,11 @@
     "s": "GA-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-08",
+    "t": "This bill requires the U.S. Executive Director at the International Bank for Reconstruction and Development (IBRD) to advocate and vote for a continued pause on IBRD disbursements and new financing commitments to Burma unless the Department of the Treasury determines this is not in the national interest.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -26239,6 +26475,11 @@
     "s": "GA-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-03",
+    "t": "This bill repeals the Comprehensive Policing and Justice Reform Amendment Act of 2022, enacted by the Council of the District of Columbia. Any provision of law amended or repealed by that act is restored or revived as if it had not been enacted.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -27035,6 +27276,11 @@
     "s": "NY-21"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-30",
+    "t": "This bill mandates, in the District of Columbia (DC), pretrial and post-conviction detention for crimes of violence and dangerous crimes and cash bail to obtain pretrial release for public safety or order crimes.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -27745,6 +27991,11 @@
     "s": "PA-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-15",
+    "t": "This bill directs the Social Security Administration to issue a new Social Security number to a child under the age of 14 if the child's Social Security card was lost or stolen while being mailed to the child.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -28210,7 +28461,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -28281,6 +28532,11 @@
     "s": "OK-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-11-12",
+    "t": "This act ends the government shutdown that began on October 1, 2025, by providing FY2026 continuing appropriations for most federal agencies through January 30, 2026, and providing appropriations through the end of FY2026 for agriculture, military construction and veterans affairs, and legislative branch programs.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -29129,6 +29385,11 @@
     "s": "GA-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-11-12",
+    "t": "This bill repeals the authority for a Senator to bring a civil action against the federal government if an internet service provider or the Senate Sergeant at Arms (SAA) accessed or disclosed, or accesses or discloses, data from the Senator's office to provide to a federal agency without following prescribed notice…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -31261,6 +31522,11 @@
     "s": "TX-22"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-01",
+    "t": "This act increases the monthly special pension for living Medal of Honor recipients. The act also prohibits the Department of Veterans Affairs from increasing the amount of the pension for inflation if the amount was already increased during such year.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33246,7 +33512,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34088,6 +34354,117 @@
    "title": "License to Drill Act",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/7831"
+  },
+  {
+   "area": "Courts & justice",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 2,
+    "i": 0,
+    "r": 3,
+    "st": [
+     "NC",
+     "PA",
+     "TN",
+     "VA",
+     "WY"
+    ],
+    "t": 5
+   },
+   "fetched": "2026-11-17T13:53:04+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/7834"
+    }
+   },
+   "id": "119-hr7834",
+   "introduced": "2026-03-05",
+   "latest": {
+    "actionDate": "2026-11-16",
+    "text": "Passed Senate without amendment by Unanimous Consent."
+   },
+   "num": "H.R. 7834",
+   "number": 7834,
+   "passed": {
+    "H": {
+     "d": "2026-09-16",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-11-16",
+     "how": "uc"
+    }
+   },
+   "reached": 4,
+   "sponsor": {
+    "n": "Laurel M. Lee",
+    "p": "R",
+    "s": "FL-15"
+   },
+   "status": "passed1",
+   "sum": {
+    "d": "2026-09-08",
+    "t": "This bill limits the civil and criminal liability of vendors that contract with law enforcement agencies to provide digital storage services (e.g., cloud-based storage) for storing, maintaining, and processing child sexual abuse material (CSAM) in investigations of online child sexual exploitation.",
+    "v": "Reported to House"
+   },
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-03-05",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-15",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 24 - 0.",
+     "fn": "cg",
+     "v": "24–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-08",
+     "e": "Reported (Amended) by the Committee on Judiciary. H. Rept. 119-804.",
+     "fn": "cg",
+     "v": "119–804"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5936-5937)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-16",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-16",
+     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-16",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Safe Cloud Storage Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/7834"
   },
   {
    "area": "Commerce",
@@ -36176,7 +36553,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39438,6 +39815,11 @@
     "s": "IA-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-11-25",
+    "t": "This act requires the Internal Revenue Service (IRS) to provide specific information on a notice related to a math or clerical error, send a notice related to an abatement of taxes assessed due to a math or clerical error, provide procedures for requesting such an abatement, and implement a pilot program for sending…",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -41765,6 +42147,11 @@
     "s": "MS"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-07-15",
+    "t": "This bill sets forth policies and authorities for FY2026 for Department of Defense (DOD) programs and activities, military construction, and the national security programs of the Department of Energy (DOE). It also authorizes the Defense Nuclear Facilities Safety Board for FY2026.",
+    "v": "Reported to Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -41868,7 +42255,7 @@
     ],
     "t": 22
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -41917,6 +42304,11 @@
     "s": "KS"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-25",
+    "t": "This act requires the Department of Veterans Affairs (VA) to increase the amounts payable for wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -42873,6 +43265,11 @@
     "s": "IL"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-01-27",
+    "t": "This bill directs the Transportation Security Administration to issue or update guidance to minimize the risk for contamination of breast milk, baby formula, purified deionized water for infants, juice, and related products that are subject to re-screening or additional screening, including by ensuring adherence to…",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44269,7 +44666,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -44312,6 +44709,11 @@
     "s": "NY"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-12-08",
+    "t": "This bill extends for three years, through 2028, temporary changes enacted by the American Rescue Plan Act of 2021 (ARPA) and the Inflation Reduction Act of 2022 (IRA) that generally expand eligibility for and increase the amount of the premium tax credit.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44360,7 +44762,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -44411,6 +44813,11 @@
     "s": "ID"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-12-08",
+    "t": "This bill allows certain individuals with health savings accounts (HSAs) to receive federal payments. It also restricts payments under Medicaid and the Children's Health Insurance Program (CHIP) regarding certain noncitizens and restricts coverage of gender-transition procedures.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -45768,7 +46175,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:33:11+00:00",
+   "fetched": "2026-11-17T13:53:04+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -51512,6 +51919,11 @@
     "s": "CA"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-09-04",
+    "t": "This joint resolution nullifies the rule issued by Environmental Protection Agency titled Extension of Deadlines in Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review Final Rule and published on July 31, 2025.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51693,6 +52105,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-05",
+    "t": "Specifically, the joint resolution nullifies a plan submitted by the Bureau of Land Management in a rule titled National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision and issued on April 25, 2022.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -52588,7 +53005,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-17T06:33:11+00:00",
+ "generatedAt": "2026-11-17T13:53:04+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",

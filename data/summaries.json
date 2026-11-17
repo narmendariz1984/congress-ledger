@@ -11,6 +11,36 @@
   "t": "This joint resolution opens certain land administered by the Bureau of Land Management (BLM) in eastern Montana to coal leasing.",
   "v": "Public Law"
  },
+ "119-hjres105": {
+  "checked": "2026-11-17",
+  "d": "2025-07-10",
+  "t": "This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan (RMP) for the North Dakota Field Office and issued on January 8, 2025. By way of background, an RMP guides the management of lands administered by BLM.",
+  "v": "Introduced in House"
+ },
+ "119-hjres106": {
+  "checked": "2026-11-17",
+  "d": "2025-07-14",
+  "t": "This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan (RMP) for Alaska’s Central Yukon planning area and issued on November 12, 2024.",
+  "v": "Introduced in House"
+ },
+ "119-hjres130": {
+  "checked": "2026-11-17",
+  "d": "2025-11-18",
+  "t": "This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) on November 20, 2024, which amended the 2015 resource management plan (RMP) for the Buffalo Field Office in Wyoming to make no federal coal available for future leasing.",
+  "v": "Passed House"
+ },
+ "119-hjres131": {
+  "checked": "2026-11-17",
+  "d": "2025-12-11",
+  "t": "This joint resolution opens public land for oil and gas leasing in the Arctic National Wildlife Refuge.",
+  "v": "Public Law"
+ },
+ "119-hjres133": {
+  "checked": "2026-11-17",
+  "d": "2025-12-02",
+  "t": "This joint resolution requests the Department of the Interior to authorize the display of U.S. semiquincentennial materials and other significant artifacts, digital content, film footage, and associated audio and imagery in and around the vicinity of the National Mall during the period beginning on December 31, 2025…",
+  "v": "Public Law"
+ },
  "119-hjres139": {
   "checked": "2026-11-17",
   "d": "2026-02-25",
@@ -44,6 +74,12 @@
  "119-hjres72": {
   "checked": "2026-11-17"
  },
+ "119-hr1005": {
+  "checked": "2026-11-17",
+  "d": "2025-02-05",
+  "t": "This bill prohibits public elementary and secondary schools, as a condition of receiving federal elementary and secondary education funds, from accepting funds from or entering into a contract with the Chinese government, the Chinese Communist Party (CCP), or any individual or entity acting on behalf of the Chinese…",
+  "v": "Introduced in House"
+ },
  "119-hr1011": {
   "checked": "2026-11-17",
   "d": "2025-02-05",
@@ -72,6 +108,18 @@
   "checked": "2026-11-17",
   "d": "2025-02-06",
   "t": "This bill prohibits the Department of Veterans Affairs (VA) from transmitting certain information to the National Instant Criminal Background Check System (NICS) utilized by licensed importers or dealers of firearms.",
+  "v": "Introduced in House"
+ },
+ "119-hr1049": {
+  "checked": "2026-11-17",
+  "d": "2025-02-06",
+  "t": "This bill requires each local educational agency (LEA), as a condition of receiving federal elementary and secondary education funds, to ensure that each elementary and secondary school served by the LEA notifies parents of their rights to request and receive information regarding foreign influence (e.g., influence by…",
+  "v": "Introduced in House"
+ },
+ "119-hr1069": {
+  "checked": "2026-11-17",
+  "d": "2025-02-06",
+  "t": "This bill prohibits federal education funding for any elementary or secondary school that directly or indirectly receives support from the Chinese government.",
   "v": "Introduced in House"
  },
  "119-hr1118": {
@@ -134,6 +182,12 @@
   "t": "This bill provides statutory authority for federal agencies to expedite the environmental review of certain mining infrastructure projects.",
   "v": "Introduced in House"
  },
+ "119-hr1512": {
+  "checked": "2026-11-17",
+  "d": "2025-02-21",
+  "t": "Current law requires the State Department to conduct a one-time review of its guidance governing relations with Taiwan and report to Congress on this review. Under this bill, the State Department must review that guidance and report to Congress every two years while the guidance is in effect.",
+  "v": "Introduced in House"
+ },
  "119-hr1531": {
   "checked": "2026-11-17",
   "d": "2025-11-25",
@@ -146,11 +200,23 @@
   "t": "This bill renames the Saratoga National Historical Park, located in Stillwater, New York, as Saratoga National Battlefield Park.",
   "v": "Introduced in House"
  },
+ "119-hr1608": {
+  "checked": "2026-11-17",
+  "d": "2025-02-26",
+  "t": "This bill directs the Department of Homeland Security (DHS) to submit a report to Congress on the department's efforts to prevent, deter, and respond to vehicular terrorism (i.e., an action that utilizes automotive transportation to commit terrorism).",
+  "v": "Introduced in House"
+ },
  "119-hr165": {
   "checked": "2026-11-17",
   "d": "2025-12-19",
   "t": "This act directs the Department of the Interior to complete all actions necessary to place approximately 40 acres of land in Oglala Lakota County, South Dakota, into restricted fee status for the Oglala Sioux Tribe and the Cheyenne River Sioux Tribe.",
   "v": "Public Law"
+ },
+ "119-hr1676": {
+  "checked": "2026-11-17",
+  "d": "2025-02-27",
+  "t": "This bill modifies the State Wildlife Grant Program (SWGP) to establish a deadline for the Department of the Interior to approve state wildlife conservation and restoration programs.",
+  "v": "Introduced in House"
  },
  "119-hr1681": {
   "checked": "2026-11-17",
@@ -191,6 +257,12 @@
  "119-hr1834": {
   "checked": "2026-11-17"
  },
+ "119-hr186": {
+  "checked": "2026-11-17",
+  "d": "2025-01-03",
+  "t": "This bill requires the authorized monument honoring Medal of Honor recipients to be located within the Reserve (the great cross-axis of the National Mall, which generally extends from the Capitol to the Lincoln Memorial and from the White House to the Jefferson Memorial).",
+  "v": "Introduced in House"
+ },
  "119-hr187": {
   "checked": "2026-11-17",
   "d": "2025-12-26",
@@ -207,6 +279,12 @@
   "checked": "2026-11-16",
   "d": "2025-03-06",
   "t": "This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark.",
+  "v": "Introduced in House"
+ },
+ "119-hr1949": {
+  "checked": "2026-11-17",
+  "d": "2025-03-06",
+  "t": "This bill repeals certain restrictions on the import and export of natural gas under the Natural Gas Act, including requirements for Department of Energy (DOE) approval and related provisions that address free trade agreements.",
   "v": "Introduced in House"
  },
  "119-hr1958": {
@@ -287,11 +365,23 @@
   "t": "This bill excludes the value of employer-funded child or dependent care from being used in calculating an eligible employee's overtime pay. Under current law, overtime hours must be paid at one and a half times an employee's regular rate of pay.",
   "v": "Reported to House"
  },
+ "119-hr2302": {
+  "checked": "2026-11-17",
+  "d": "2025-03-24",
+  "t": "This bill takes approximately 204.14 acres of specified lands in El Dorado County, California, into trust for the benefit of the Shingle Springs Band of Miwok Indians. The bill revokes a specified public land order and administratively transfers the land from the Forest Service to the Department of the Interior.",
+  "v": "Introduced in House"
+ },
  "119-hr2312": {
   "checked": "2026-11-17",
   "d": "2025-12-30",
   "t": "This bill modifies the definition of a tipped employee under the Fair Labor Standards Act of 1938 (FLSA) to exclude consideration of an employee's duties when determining if the employee is a tipped employee.",
   "v": "Reported to House"
+ },
+ "119-hr2316": {
+  "checked": "2026-11-17",
+  "d": "2025-11-25",
+  "t": "This act extends until FY2033 a requirement for the interest earned on certain funds held in the Federal Aid to Wildlife Restoration Fund to be distributed to states for carrying out certain wildlife conservation and restoration programs.",
+  "v": "Public Law"
  },
  "119-hr2347": {
   "checked": "2026-11-16",
@@ -323,6 +413,18 @@
   "t": "This act requires online dating service providers (i.e., mobile applications or websites) to provide users with a fraud ban notification if the user has established an account with the service and received a message through the service from a banned user of the service.",
   "v": "Public Law"
  },
+ "119-hr2483": {
+  "checked": "2026-11-17",
+  "d": "2025-12-01",
+  "t": "This act reauthorizes and revises programs and activities relating to addressing substance use disorders, overdoses, and mental health.",
+  "v": "Public Law"
+ },
+ "119-hr249": {
+  "checked": "2026-11-17",
+  "d": "2025-01-09",
+  "t": "This bill renames a trail and a park within Paterson Great Falls National Historical Park located in Paterson, New Jersey, in honor of Congressman Bill Pascrell, Jr. Specifically, it renames the Great Falls Scenic Overlook Trail Bridge as the Bill Pascrell, Jr.",
+  "v": "Introduced in House"
+ },
  "119-hr2493": {
   "checked": "2026-11-17",
   "d": "2025-03-31",
@@ -346,6 +448,12 @@
   "d": "2025-04-03",
   "t": "This bill requires public elementary and middle schools, as a condition of receiving certain federal funds for elementary and secondary education, to obtain parental consent before changing a student's gender on school forms or changing a student's sex-based accommodations.",
   "v": "Introduced in House"
+ },
+ "119-hr2659": {
+  "checked": "2026-11-17",
+  "d": "2025-08-15",
+  "t": "The bill creates a joint interagency task force to facilitate agency collaboration on efforts to respond to Chinese state-sponsored cyber actors, including Volt Typhoon.",
+  "v": "Reported to House"
  },
  "119-hr2683": {
   "checked": "2026-11-17",
@@ -377,6 +485,12 @@
   "t": "This bill addresses the war between Russia and Ukraine by (1) providing assistance to Ukraine and certain European countries, and (2) establishing penalties for Russia and certain foreign persons (individuals and entities).",
   "v": "Introduced in House"
  },
+ "119-hr2965": {
+  "checked": "2026-11-17",
+  "d": "2025-05-21",
+  "t": "This bill requires the Small Business Administration (SBA) to ensure the annual small business regulatory budget for the SBA in each fiscal year is no greater than zero.",
+  "v": "Reported to House"
+ },
  "119-hr2978": {
   "checked": "2026-11-17",
   "d": "2026-06-24",
@@ -393,6 +507,12 @@
   "checked": "2026-11-17",
   "d": "2025-04-30",
   "t": "This bill requires the Department of Homeland Security (DHS) to develop and conduct an exercise to enhance collective domestic preparedness for and response to a terrorist attack during an extreme cold weather event (e.g., an event caused by a polar vortex when Arctic air expands southward).",
+  "v": "Introduced in House"
+ },
+ "119-hr3109": {
+  "checked": "2026-11-17",
+  "d": "2025-04-30",
+  "t": "This bill requires the Department of Energy to direct the National Petroleum Council to publish a report on petrochemical refineries located in the United States.",
   "v": "Introduced in House"
  },
  "119-hr3123": {
@@ -515,6 +635,18 @@
   "t": "The following analysis is based on draft bill text that was made available by the House of Representatives and may differ from the bill text as introduced.",
   "v": "Introduced in House"
  },
+ "119-hr4016": {
+  "checked": "2026-11-17",
+  "d": "2025-06-16",
+  "t": "This bill provides FY2026 appropriations to the Department of Defense (DOD) for military activities.",
+  "v": "Introduced in House"
+ },
+ "119-hr4058": {
+  "checked": "2026-11-17",
+  "d": "2025-09-15",
+  "t": "This bill requires the Federal Emergency Management Agency (FEMA) to provide outreach and support to stakeholders regarding grants for protecting communities from terrorist attacks.",
+  "v": "Reported to House"
+ },
  "119-hr4090": {
   "checked": "2026-11-17",
   "d": "2025-11-25",
@@ -542,6 +674,12 @@
  "119-hr4304": {
   "checked": "2026-11-17"
  },
+ "119-hr4305": {
+  "checked": "2026-11-17",
+  "d": "2025-11-21",
+  "t": "This bill establishes a requirement for the Office of Advocacy of the Small Business Administration (SBA) to continue to operate and maintain the Red Tape Hotline, which receives notifications from small entities about the burden of complying with applicable rules, guidance, policy statements, or other activities of a…",
+  "v": "Reported to House"
+ },
  "119-hr4307": {
   "checked": "2026-11-16",
   "d": "2026-10-20",
@@ -559,6 +697,18 @@
   "d": "2025-07-14",
   "t": "This bill requires the Department of Health and Human Services (HHS) to consider additional information when it makes placement determinations for unaccompanied alien children in its custody.",
   "v": "Introduced in House"
+ },
+ "119-hr4405": {
+  "checked": "2026-11-17",
+  "d": "2025-11-19",
+  "t": "This act requires the Department of Justice (DOJ) to publish (in a searchable and downloadable format) all unclassified records, documents, communications, and investigative materials in DOJ's possession that relate to the investigation and prosecution of Jeffrey Epstein.",
+  "v": "Public Law"
+ },
+ "119-hr4423": {
+  "checked": "2026-11-17",
+  "d": "2025-09-08",
+  "t": "This bill requires the U.S. Executive Director at the International Bank for Reconstruction and Development (IBRD) to advocate and vote for a continued pause on IBRD disbursements and new financing commitments to Burma unless the Department of the Treasury determines this is not in the national interest.",
+  "v": "Reported to House"
  },
  "119-hr4446": {
   "checked": "2026-11-17",
@@ -668,6 +818,12 @@
   "t": "This bill establishes a commission in the executive branch to advise on certain criminal and immigration matters in the District of Columbia (DC). It also establishes a federal program to ensure that commonly visited areas in DC are cleaned and maintained.",
   "v": "Introduced in House"
  },
+ "119-hr5107": {
+  "checked": "2026-11-17",
+  "d": "2025-09-03",
+  "t": "This bill repeals the Comprehensive Policing and Justice Reform Amendment Act of 2022, enacted by the Council of the District of Columbia. Any provision of law amended or repealed by that act is restored or revived as if it had not been enacted.",
+  "v": "Introduced in House"
+ },
  "119-hr5184": {
   "checked": "2026-11-17",
   "d": "2025-12-30",
@@ -684,6 +840,12 @@
   "checked": "2026-11-17",
   "d": "2026-03-26",
   "t": "This bill requires the Federal Communications Commission (FCC) to publish a report on the enforcement of Kari’s Law, which requires multiline telephone systems to be preconfigured to allow users to dial 9-1-1 directly from any phone without dialing any additional code or prefix.",
+  "v": "Reported to House"
+ },
+ "119-hr5214": {
+  "checked": "2026-11-17",
+  "d": "2025-09-30",
+  "t": "This bill mandates, in the District of Columbia (DC), pretrial and post-conviction detention for crimes of violence and dangerous crimes and cash bail to obtain pretrial release for public safety or order crimes.",
   "v": "Reported to House"
  },
  "119-hr5284": {
@@ -710,6 +872,12 @@
   "t": "This act requires the Social Security Administration to provide a single point of contact for any individual whose Social Security number has been misused or whose Social Security card has been lost in transport.",
   "v": "Public Law"
  },
+ "119-hr5348": {
+  "checked": "2026-11-17",
+  "d": "2025-09-15",
+  "t": "This bill directs the Social Security Administration to issue a new Social Security number to a child under the age of 14 if the child's Social Security card was lost or stolen while being mailed to the child.",
+  "v": "Introduced in House"
+ },
  "119-hr5349": {
   "checked": "2026-11-16",
   "d": "2025-09-15",
@@ -726,6 +894,12 @@
   "checked": "2026-11-17",
   "d": "2026-09-11",
   "t": "This act extends the federal tax deduction for qualified disaster-related personal casualty losses and the exclusion from gross income of qualified wildfire relief payments.",
+  "v": "Public Law"
+ },
+ "119-hr5371": {
+  "checked": "2026-11-17",
+  "d": "2025-11-12",
+  "t": "This act ends the government shutdown that began on October 1, 2025, by providing FY2026 continuing appropriations for most federal agencies through January 30, 2026, and providing appropriations through the end of FY2026 for agriculture, military construction and veterans affairs, and legislative branch programs.",
   "v": "Public Law"
  },
  "119-hr5408": {
@@ -763,6 +937,12 @@
   "d": "2025-12-12",
   "t": "This bill requires Small Business Development Centers to assist small businesses in evaluating artificial intelligence, including by providing best practices for using artificial intelligence and guidance about using artificial intelligence to plan for unexpected circumstances.",
   "v": "Reported to House"
+ },
+ "119-hr6019": {
+  "checked": "2026-11-17",
+  "d": "2025-11-12",
+  "t": "This bill repeals the authority for a Senator to bring a civil action against the federal government if an internet service provider or the Senate Sergeant at Arms (SAA) accessed or disclosed, or accesses or discloses, data from the Senator's office to provide to a federal agency without following prescribed notice…",
+  "v": "Introduced in House"
  },
  "119-hr6047": {
   "checked": "2026-11-17",
@@ -856,6 +1036,12 @@
   "d": "2026-01-06",
   "t": "This bill provides statutory authority for states to use Temporary Assistance for Needy Families (TANF) funds for pregnancy centers that (1) support protecting the life of the mother and the unborn child; and (2) offer resources and services to mothers, fathers, and families, including relationship counseling…",
   "v": "Introduced in House"
+ },
+ "119-hr695": {
+  "checked": "2026-11-17",
+  "d": "2025-12-01",
+  "t": "This act increases the monthly special pension for living Medal of Honor recipients. The act also prohibits the Department of Veterans Affairs from increasing the amount of the pension for inflation if the amount was already increased during such year.",
+  "v": "Public Law"
  },
  "119-hr6955": {
   "checked": "2026-11-17",
@@ -970,6 +1156,12 @@
   "d": "2026-10-20",
   "t": "This act extends through FY2037 the Bureau of Land Management’s (BLM’s) authority to collect oil and gas permit processing fees. For each new permit application, BLM collects a fee that is transferred to the BLM Permit Processing Improvement Fund.",
   "v": "Public Law"
+ },
+ "119-hr7834": {
+  "checked": "2026-11-17",
+  "d": "2026-09-08",
+  "t": "This bill limits the civil and criminal liability of vendors that contract with law enforcement agencies to provide digital storage services (e.g., cloud-based storage) for storing, maintaining, and processing child sexual abuse material (CSAM) in investigations of online child sexual exploitation.",
+  "v": "Reported to House"
  },
  "119-hr7892": {
   "checked": "2026-11-17",
@@ -1196,6 +1388,12 @@
   "t": "This bill authorizes the National Taxpayer Advocate to appoint legal counsel within the Taxpayer Advocate Service (TAS) to report directly to the National Taxpayer Advocate.",
   "v": "Introduced in House"
  },
+ "119-hr998": {
+  "checked": "2026-11-17",
+  "d": "2025-11-25",
+  "t": "This act requires the Internal Revenue Service (IRS) to provide specific information on a notice related to a math or clerical error, send a notice related to an abatement of taxes assessed due to a math or clerical error, provide procedures for requesting such an abatement, and implement a pilot program for sending…",
+  "v": "Public Law"
+ },
  "119-s1003": {
   "checked": "2026-11-17",
   "d": "2026-06-26",
@@ -1262,6 +1460,18 @@
   "t": "This bill designates the facility of the United States Postal Service located at 201 West Oklahoma Avenue in Guthrie, Oklahoma, as the \"Oscar J. Upham Post Office\".",
   "v": "Introduced in Senate"
  },
+ "119-s2296": {
+  "checked": "2026-11-17",
+  "d": "2025-07-15",
+  "t": "This bill sets forth policies and authorities for FY2026 for Department of Defense (DOD) programs and activities, military construction, and the national security programs of the Department of Energy (DOE). It also authorizes the Defense Nuclear Facilities Safety Board for FY2026.",
+  "v": "Reported to Senate"
+ },
+ "119-s2392": {
+  "checked": "2026-11-17",
+  "d": "2025-12-25",
+  "t": "This act requires the Department of Veterans Affairs (VA) to increase the amounts payable for wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.",
+  "v": "Public Law"
+ },
  "119-s2393": {
   "checked": "2026-11-17",
   "d": "2026-06-09",
@@ -1298,6 +1508,12 @@
   "t": "This act prohibits states from imposing bans on marine mammal products produced by Alaska Natives.",
   "v": "Public Law"
  },
+ "119-s260": {
+  "checked": "2026-11-17",
+  "d": "2025-01-27",
+  "t": "This bill directs the Transportation Security Administration to issue or update guidance to minimize the risk for contamination of breast milk, baby formula, purified deionized water for infants, juice, and related products that are subject to re-screening or additional screening, including by ensuring adherence to…",
+  "v": "Introduced in Senate"
+ },
  "119-s269": {
   "checked": "2026-11-17",
   "d": "2026-02-10",
@@ -1333,6 +1549,18 @@
   "d": "2026-09-16",
   "t": "This act adds College Station to the list of places where court must be held in the Galveston Division of the Southern District of Texas. Additionally, the act adds El Centro to the list of places where court must be held in the Southern District of California.",
   "v": "Public Law"
+ },
+ "119-s3385": {
+  "checked": "2026-11-17",
+  "d": "2025-12-08",
+  "t": "This bill extends for three years, through 2028, temporary changes enacted by the American Rescue Plan Act of 2021 (ARPA) and the Inflation Reduction Act of 2022 (IRA) that generally expand eligibility for and increase the amount of the premium tax credit.",
+  "v": "Introduced in Senate"
+ },
+ "119-s3386": {
+  "checked": "2026-11-17",
+  "d": "2025-12-08",
+  "t": "This bill allows certain individuals with health savings accounts (HSAs) to receive federal payments. It also restricts payments under Medicaid and the Children's Health Insurance Program (CHIP) regarding certain noncitizens and restricts coverage of gender-transition procedures.",
+  "v": "Introduced in Senate"
  },
  "119-s3424": {
   "checked": "2026-11-17",
@@ -1588,6 +1816,18 @@
   "d": "2025-03-10",
   "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
   "v": "Introduced in Senate"
+ },
+ "119-sjres76": {
+  "checked": "2026-11-17",
+  "d": "2025-09-04",
+  "t": "This joint resolution nullifies the rule issued by Environmental Protection Agency titled Extension of Deadlines in Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review Final Rule and published on July 31, 2025.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres80": {
+  "checked": "2026-11-17",
+  "d": "2025-12-05",
+  "t": "Specifically, the joint resolution nullifies a plan submitted by the Bureau of Land Management in a rule titled National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision and issued on April 25, 2022.",
+  "v": "Public Law"
  },
  "119-sjres82": {
   "checked": "2026-11-17"
