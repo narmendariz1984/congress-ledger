@@ -448,12 +448,20 @@ def parse_member(s: dict) -> dict:
 
 # ---------------------------------------------------------------- bills
 
-def fetch_bill(congress: int, btype: str, number: int) -> dict:
+def fetch_bill(congress: int, btype: str, number: int, swap: str | None = None) -> dict:
+    """One bill from Congress.gov. `swap` (YYYY-MM-DD) marks a vehicle: its number started
+    carrying another bill's text that day, so status and passages count only actions from
+    then on, and what happened before is kept apart under "orig"."""
     path = f"bill/{congress}/{btype}/{number}"
     b = (api(path).get("bill")) or {}
     actions = api_all(f"{path}/actions", "actions")
-    cos = api_all(f"{path}/cosponsors", "cosponsors")
-    cos = [c for c in cos if not c.get("sponsorshipWithdrawnDate")]
+    return bill_from(congress, btype, number, b, actions, api_all(f"{path}/cosponsors", "cosponsors"), swap)
+
+
+def bill_from(congress: int, btype: str, number: int, b: dict, actions: list[dict], cos: list[dict], swap: str | None = None) -> dict:
+    pre = [a for a in actions if swap and (a.get("actionDate") or "") < swap]
+    post = [a for a in actions if not swap or (a.get("actionDate") or "") >= swap]
+    cos = [c for c in cos or [] if not c.get("sponsorshipWithdrawnDate")]
     split = {"t": len(cos), "d": 0, "r": 0, "i": 0}
     states = set()
     for c in cos:
@@ -480,15 +488,28 @@ def fetch_bill(congress: int, btype: str, number: int) -> dict:
         "latest": b.get("latestAction") or {},
         "url": congress_url(congress, btype, number),
         "timeline": timeline_from(actions),
-        **derive(actions, laws),
+        **derive(post, laws),
     }
+    if swap:
+        out["strong"] = derive(actions, laws)["strong"]
+        for ev in out["timeline"]:
+            if (ev.get("d") or "") < swap:
+                ev["pre"] = 1
+        # both chambers passing the new text counts even when the second one "agreed to the amendment"
+        pp = passages(post)
+        if "H" in pp and "S" in pp:
+            out["reached"] = max(out["reached"], 4)
+        out["orig"] = {"title": out["title"], "sponsor": out["sponsor"], "area": out["area"],
+                       "cosponsors": {k: v for k, v in split.items() if k != "st"}}
+        if passages(pre):
+            out["orig"]["passed"] = passages(pre)
     if laws:
         ln = laws[0].get("number")
         out["law"] = f"Pub. L. {ln}" if ln else "Public law"
-    passed = passages(actions)
+    passed = passages(post)
     if passed:
         out["passed"] = passed
-    outcome, fns = outcome_from(actions, laws, out["status"], out["url"])
+    outcome, fns = outcome_from(post, laws, out["status"], out["url"])
     if outcome:
         out["outcome"] = outcome
     if fns:
@@ -871,15 +892,18 @@ def split_cosponsors(bills: list[dict], path: Path) -> bool:
 def refresh_summaries(bills: list[dict], store: dict, today: str, fetch=None, clock=time.monotonic) -> bool:
     """Fill in or update summaries for bills that need one. True if anything changed."""
     fetch = fetch or (lambda c, t, n: api(f"bill/{c}/{t}/{n}/summaries", limit=50).get("summaries") or [])
+    # a vehicle's summary is the one for the bill it carries
+    src = lambda b: (b.get("vehicle") or {}).get("carries") if (b.get("vehicle") or {}).get("orig") else b["id"]  # noqa: E731
     def needs(b):
         have = store.get(b["id"]) or {}
-        return not have or have.get("checked", "") < str((b.get("latest") or {}).get("actionDate") or "")[:10]
+        return (not have or have.get("checked", "") < str((b.get("latest") or {}).get("actionDate") or "")[:10]
+                or have.get("of", b["id"]) != src(b))
     todo = sorted((b for b in bills if needs(b)), key=lambda b: str((b.get("latest") or {}).get("actionDate") or ""), reverse=True)
     changed, fails, start = False, 0, clock()
     for b in todo[:SUMMARY_PER_RUN]:
         if clock() - start > SUMMARY_BUDGET_S or fails >= 2:
             break
-        m = re.match(r"^(\d+)-([a-z]+)(\d+)$", b["id"])
+        m = re.match(r"^(\d+)-([a-z]+)(\d+)$", src(b) or "")
         if not m:
             continue
         try:
@@ -889,6 +913,8 @@ def refresh_summaries(bills: list[dict], store: dict, today: str, fetch=None, cl
             fails += 1
             continue
         rec = {"checked": today}
+        if src(b) != b["id"]:
+            rec["of"] = src(b)
         if s:
             rec.update(t=summary_text(s.get("text") or ""), d=(s.get("actionDate") or "")[:10], v=(s.get("actionDesc") or "").strip())
         if store.get(b["id"]) != rec:
@@ -1165,7 +1191,8 @@ def data_changed(new: str, old: str) -> bool:
 
 # --- vehicle swaps: a bill's number carrying a different bill's text ----------------------
 BILL_ID = re.compile(r"^(\d+)-([a-z]+)(\d+)$")
-SOURCE_NAMES = {"dailypress.senate.gov": "Senate Daily Press", "congress.gov": "Congress.gov",
+SOURCE_NAMES = {"dailypress.senate.gov": "Senate Daily Press", "periodicalpress.senate.gov": "Senate Periodical Press Gallery",
+                "congress.gov": "Congress.gov",
                 "senate.gov": "U.S. Senate", "clerk.house.gov": "Clerk of the House"}
 
 
@@ -1203,6 +1230,30 @@ def vehicle_note(e: dict) -> tuple[dict, dict]:
     v = {"carries": e["carries"], "num": num, "label": (e.get("label") or "").strip(), "since": e["since"], "fn": "veh"}
     fn = {"src": source_name(e["source"]), "t": f"vehicle for {num} since {d:%b} {d.day}, {d.year}", "u": e["source"]}
     return v, fn
+
+
+def carry(vehicle: dict, carried: dict, label: str = "") -> dict:
+    """The vehicle as the bill it now carries: the carried bill's title, authors and topic,
+    with the vehicle's own floor record (status, passages, timeline) and its old identity
+    under vehicle.orig. Votes and links still use the vehicle's number, which is what the
+    floor votes on."""
+    out = dict(vehicle)
+    orig = out.pop("orig", None) or {}
+    for k in ("sponsor", "cosponsors", "cosnames", "area", "introduced"):
+        if carried.get(k) is not None:
+            out[k] = carried[k]
+        else:
+            out.pop(k, None)
+    out["title"] = carried.get("title") or label or out.get("title", "")
+    orig.update(num=vehicle.get("num"), url=vehicle.get("url"), introduced=vehicle.get("introduced"))
+    out["vehicle"] = {"orig": orig, "url": carried.get("url")}
+    return out
+
+
+def keep_vehicle(new: dict, old: dict | None) -> dict:
+    """vehicle_note's fields plus what the last download added (the old identity, the carried bill's link)."""
+    old = old or {}
+    return {**new, **{k: old[k] for k in ("orig", "url") if old.get(k)}}
 
 
 def load_json(p: Path, default):
@@ -1388,6 +1439,10 @@ def main() -> int:
                 return float("inf")
         stale = sorted((b for b in wanted if age(b) > 7 * 86400), key=age, reverse=True)[:STALE_PER_RUN]
         refetch = curated_ids | updated | set(stale) | set(batch) | {b for b in wanted if b not in auto_by_id}
+        # vehicles every bill check: two bills, and what they carry can change under the same number
+        refetch |= set(vehicles)
+        # a bill just taken off the vehicle list still shows the bill it carried until it's read again
+        refetch |= {bid for bid, x in auto_by_id.items() if bid in wanted and (x.get("vehicle") or {}).get("orig") and bid not in vehicles}
         if tracked.get("rule") != KEEP_RULE:
             if RULE_ONLY_WIDENS and tracked.get("rule"):
                 again = tracked.pop("dropped", [])
@@ -1411,7 +1466,14 @@ def main() -> int:
                 breaker.skipped.add(bid)
                 continue
             try:
-                fresh = fetch_bill(c, t, n)
+                if bid in vehicles:
+                    # a vehicle is shown as the bill it carries: both downloads must work, or it keeps last run's data
+                    ve = vehicles[bid]
+                    fresh = fetch_bill(c, t, n, swap=ve["since"])
+                    cm = BILL_ID.match(ve["carries"])
+                    fresh = carry(fresh, fetch_bill(int(cm.group(1)), cm.group(2), int(cm.group(3))), ve.get("label") or "")
+                else:
+                    fresh = fetch_bill(c, t, n)
             except Exception as e:  # noqa: BLE001
                 warn(f"{bid}: {e}")
                 breaker.fail(bid)
@@ -1468,7 +1530,8 @@ def main() -> int:
         b = merge(auto, cur)
         b["id"] = bid
         if bid in vehicles:
-            b["vehicle"], b.setdefault("fns", {})["veh"] = vehicle_note(vehicles[bid])
+            v, b.setdefault("fns", {})["veh"] = vehicle_note(vehicles[bid])
+            b["vehicle"] = keep_vehicle(v, b.get("vehicle"))
         if b.get("congress") and b.get("congress") < congress and not b.get("reference") and b.get("auto"):
             b["reference"] = True
         bills.append(b)

@@ -210,6 +210,15 @@ details.bill[open]>summary{border-bottom:1px solid var(--rule)}
 .veh{grid-column:2/-1;font-size:14px;line-height:1.4;color:var(--soft);overflow-wrap:anywhere}
 .veh .vb{margin-right:4px;vertical-align:1px}
 .veh .bl-num{font-family:var(--f-mono);font-weight:600;color:var(--ink)}
+/* a vehicle's card: the bill number on the floor and the text it used to hold */
+.vbox{border:1px solid var(--rule);border-radius:6px;padding:10px 14px;font-size:13.5px}
+.vbox h4{margin:0 0 6px}
+.vbox dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 14px}
+.vbox dt{font-size:12.5px;color:var(--muted);font-weight:600}
+.vbox dd{margin:0;overflow-wrap:anywhere}
+.tl li.sep{display:block;padding:6px 0 4px 14px;font:600 11.5px var(--f-mono);letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+.tl li.sep::before{display:none}
+.tl li.pre{opacity:.62}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .bbody{padding:14px 18px 16px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;min-width:0}
 .bbody>*{min-width:0}
@@ -729,7 +738,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
       </div></div>
       <div><h3 class="kh">Tracked when</h3>
         <p style="margin:0;font-size:14.5px">A bill hits the floor: a recorded passage vote, a cloture or discharge fight, a veto or it becomes law. Hand-picked bills show at any stage.</p>
-        <div class="parties"><span><span class="pb" style="--c:var(--dem)">D</span> Democrat</span><span><span class="pb" style="--c:var(--rep)">R</span> Republican</span><span><span class="pb" style="--c:var(--ind)">I</span> Independent</span><span><span class="ref">119 REF</span> earlier Congress</span><span><span class="vb">VEHICLE</span> this bill's number is carrying a different bill's text</span></div>
+        <div class="parties"><span><span class="pb" style="--c:var(--dem)">D</span> Democrat</span><span><span class="pb" style="--c:var(--rep)">R</span> Republican</span><span><span class="pb" style="--c:var(--ind)">I</span> Independent</span><span><span class="ref">119 REF</span> earlier Congress</span><span><span class="vb">VEHICLE</span> moving under another bill's number</span></div>
       </div>
     </div>
   </div>
@@ -965,7 +974,7 @@ function matches(b){
   if(F.area!=="all"&&b.area!==F.area)return false;
   const sq=F.q&&stateQuery(F.q);
   if(sq){if(!stateHits(b,sq).length)return false}
-  else if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,nm(b),b.area,b.vehicle&&b.vehicle.num,b.vehicle&&b.vehicle.label,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
+  else if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,nm(b),b.area,b.vehicle&&b.vehicle.num,b.vehicle&&b.vehicle.label,vOrig(b)&&vOrig(b).title,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
   return true;
 }
 
@@ -1009,13 +1018,20 @@ document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches(
 function billCard(b){
   const sp=b.sponsor||{};
   const cs=b.cosponsors;
-  const tl=(b.timeline||[]).map(t=>`<li class="${t.k||""}"><span class="dt">${fmtD(t.d)}</span><span class="ch">${esc(t.ch||"")}</span><span>${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}${sup(b,t.fn)}</span></li>`).join("");
+  const vo=vOrig(b);
+  // a vehicle's timeline: what happened to the old text, then what's happened since the swap
+  let sepPre=false, sepPost=false;
+  const tl=(b.timeline||[]).map(t=>{
+    let s="";
+    if(vo&&t.pre&&!sepPre){sepPre=true;s=`<li class="sep">${esc(vo.num)} as the ${esc(vo.title)}</li>`}
+    if(vo&&!t.pre&&!sepPost){sepPost=true;s=`<li class="sep">${esc(vo.num)} carrying ${esc(b.vehicle.num)}</li>`}
+    return`${s}<li class="${[t.k||"",vo&&t.pre?"pre":""].join(" ").trim()}"><span class="dt">${fmtD(t.d)}</span><span class="ch">${esc(t.ch||"")}</span><span>${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}${sup(b,t.fn)}</span></li>`}).join("");
   const bl=(b.blockers||[]).length?`<div><h4>Blocked or slowed by</h4><div class="tbl"><table><thead><tr><th>Who</th><th>Role</th><th>Action</th><th>Kill point</th><th>Date</th><th>Attribution</th></tr></thead><tbody>${b.blockers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}</td><td>${esc(x.role||"")}</td><td>${esc(x.act||"")}${sup(b,x.fn)}</td><td>${esc((KIND[x.kind]||x.kind||"").split(" — ")[0])}</td><td class="n">${fmtD(x.d)}</td><td class="att">${esc(ATT[x.att]||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
   const cr=(b.crossovers||[]).length?`<div><h4>Crossed party lines</h4><div class="tbl"><table><thead><tr><th>Member</th><th>Vote</th><th>On</th></tr></thead><tbody>${b.crossovers.map(x=>`<tr><td>${pb(x.p)} ${esc(x.who)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}</td><td class="n">${esc(x.vote)}</td><td>${esc(x.on||"")}</td></tr>`).join("")}</tbody></table></div></div>`:"";
   const lead=(b.lead||[]).length?`<div><div class="k">Co-authors &amp; drivers</div>${b.lead.map(x=>`<div>${pb(x.p)} ${esc(x.n)}${x.s?` <span class="muted">(${esc(x.s)})</span>`:""}${x.r?` <span class="muted">· ${esc(x.r)}</span>`:""}</div>`).join("")}</div>`:"";
   return`<details class="bill" id="b-${esc(b.id)}">
   <summary>
-    <span class="bnum">${esc(b.num)}</span>
+    <span class="bnum">${esc(vo?b.vehicle.num:b.num)}</span>
     <span class="btitle" title="${esc(b.title)}">${esc(nm(b))}</span>
     <span>${chip(b.status)}</span>
     ${vehicleLine(b)}
@@ -1034,8 +1050,10 @@ function billCard(b){
       <div><div class="k">Introduced</div><div class="mono">${fmtD(b.introduced)}</div></div>
     </div>
     ${cs&&cs.t?`<div class="cos-list" id="cos-${esc(b.id)}" hidden></div>`:""}
+    ${vehicleBox(b)}
     ${nm(b)!==b.title?`<div class="offt"><div class="k">Official title</div><div>${esc(b.title)}</div></div>`:""}
-    ${b.url?`<div class="links"><a href="${esc(b.url)}" target="_blank" rel="noopener">Congress.gov</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`:""}
+    ${vo&&b.vehicle.url&&b.url?`<div class="links">Congress.gov: <a href="${esc(b.vehicle.url)}" target="_blank" rel="noopener">${esc(b.vehicle.num)} text and authors</a> · <a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.num)} floor action</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`
+      :b.url?`<div class="links"><a href="${esc(b.url)}" target="_blank" rel="noopener">Congress.gov</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`:""}
     ${tl?`<div><h4>Timeline</h4><ol class="tl">${tl}</ol></div>`:""}
     ${bl}${cr}
     ${srcList(b)}
@@ -1047,7 +1065,7 @@ function billCard(b){
 let COS=null, cosLoading=null;
 function loadCosponsors(){return cosLoading||(cosLoading=fetch("data/cosponsors.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({})).then(j=>COS=j&&typeof j==="object"?j:{}))}
 function cosList(b){
-  const names=(COS||{})[b.id], cg=b.url?`<a href="${esc(b.url)}/cosponsors" target="_blank" rel="noopener">Full list on Congress.gov</a>`:"";
+  const names=(COS||{})[b.id], cu=vOrig(b)&&b.vehicle.url||b.url, cg=cu?`<a href="${esc(cu)}/cosponsors" target="_blank" rel="noopener">Full list on Congress.gov</a>`:"";
   if(!Array.isArray(names))return`<p class="muted">Names show up after this bill's next check with Congress.gov. ${cg}</p>`;
   const grp={D:[],R:[],I:[]};
   for(const x of names){if(!Array.isArray(x)||!x[0])continue;(grp[x[1]]||grp.I).push(x)}
@@ -1067,8 +1085,33 @@ document.addEventListener("click",async e=>{
 });
 
 /* vehicle swap, from data/vehicles.json: the badge, the bill it carries (linked when it's on the site) and its source */
+const vOrig=b=>b&&b.vehicle&&b.vehicle.num&&b.vehicle.orig&&b.vehicle.orig.num?b.vehicle.orig:null;
+// what's left for the new text: the chamber doing the swap votes first, then the one that passed the old text
+function vehicleNext(b){
+  const o=vOrig(b);if(!o||["law","vetoed","killed"].includes(b.status))return"";
+  const name={H:"House",S:"Senate"}, did=Object.keys(o.passed||{}), p=b.passed||{};
+  const order=["H","S"].sort((x,y)=>did.includes(x)-did.includes(y)), left=order.filter(c=>!p[c]);
+  if(!left.length)return(b.reached||0)<5?"Sent to the President":"";
+  return left.length>1?`${name[left[0]]} vote, then ${name[left[1]]} vote on the new text`:`${name[left[0]]} vote on the new text`;
+}
+function vehicleBox(b){
+  const o=vOrig(b);if(!o)return"";
+  const sp=o.sponsor||{}, c=o.cosponsors||{};
+  const by=sp.n?`${pb(sp.p)} ${esc(sp.n)}${sp.s?` <span class="muted">(${esc(sp.s)})</span>`:""}${c.t?` · ${c.t} cosponsor${c.t===1?"":"s"} (${[c.d?`${c.d} D`:"",c.r?`${c.r} R`:"",c.i?`${c.i} I`:""].filter(Boolean).join(", ")})`:""}`:"—";
+  const name={H:"House",S:"Senate"}, how={voice:"by voice vote",uc:"by unanimous consent"};
+  const old=Object.entries(o.passed||{}).map(([ch,p])=>`${name[ch]||ch} ${p.how==="roll"&&p.v?esc(p.v):how[p.how]||""} · ${fmtD(p.d)}`.replace(/\s+·/," ·")).join("; ");
+  const next=vehicleNext(b);
+  return`<div class="vbox"><h4>On the floor as ${esc(o.num)}${sup(b,b.vehicle.fn)}</h4><dl>
+    <dt>Old text</dt><dd>${esc(o.title||"")}</dd>
+    <dt>Old sponsor</dt><dd>${by}</dd>
+    ${old?`<dt>Old text passed</dt><dd>${old}</dd>`:""}
+    ${next?`<dt>Still needs</dt><dd>${esc(next)}</dd>`:""}
+  </dl></div>`;
+}
 function vehicleLine(b){
   const v=b.vehicle;if(!v||!v.num)return"";
+  const o=vOrig(b);
+  if(o)return`<span class="veh"><span class="vb">VEHICLE</span> on the floor as <span class="bl-num">${esc(o.num)}</span>${o.title?`, formerly the ${esc(o.title)}`:""}${sup(b,v.fn)}</span>`;
   const on=bills.some(x=>x.id===v.carries);
   const num=on?`<a href="#b-${esc(v.carries)}" data-open="${esc(v.carries)}" class="bl"><span class="bl-num">${esc(v.num)}</span></a>`:`<span class="bl-num">${esc(v.num)}</span>`;
   return`<span class="veh"><span class="vb">VEHICLE</span><span aria-hidden="true">→</span><span class="sr">carrying the text of</span> ${num} ${esc(v.label||"")}${sup(b,v.fn)}</span>`;
@@ -1142,7 +1185,8 @@ function renderAgenda(){
 const PS={st:"",q:""};
 try{PS.st=localStorage.getItem("peopleState")||""}catch(e){}
 const stOf=x=>String((x&&x.s)||"").split("-")[0];
-const chamberOf=b=>/^S/i.test(b.type||String(b.num||""))?"Sen.":"Rep.";
+// a vehicle's sponsor is the carried bill's, so the title follows that bill's chamber
+const chamberOf=b=>/^S/i.test(vOrig(b)?b.vehicle.num:(b.type||String(b.num||"")))?"Sen.":"Rep.";
 function personOk(name,st){
   if(PS.st&&st!==PS.st)return false;
   if(PS.q&&!String(name||"").toLowerCase().includes(PS.q))return false;

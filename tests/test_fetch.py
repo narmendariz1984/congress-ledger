@@ -418,6 +418,95 @@ class Vehicles(unittest.TestCase):
         self.assertEqual(F.load_vehicles({}), {})
         self.assertEqual(F.load_vehicles(None), {})
 
+    # H.R. 2347's real actions, newest first as Congress.gov lists them
+    ACTIONS = [
+        {"actionDate": "2026-11-16", "text": "Cloture on the committee substitute amendment invoked in Senate by Yea-Nay Vote. 70 - 27. Record Vote Number: 264."},
+        {"actionDate": "2026-11-11", "text": "Cloture motion on the measure presented in Senate. (CR S5568)"},
+        {"actionDate": "2026-11-10", "text": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 62 - 21. Record Vote Number: 258."},
+        {"actionDate": "2026-11-09", "text": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257."},
+        {"actionDate": "2026-09-30", "text": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S5241)"},
+        {"actionDate": "2026-04-28", "text": "Received in the Senate."},
+        {"actionDate": "2026-04-27", "text": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote."},
+        {"actionDate": "2026-04-09", "text": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-599."},
+        {"actionDate": "2025-03-25", "text": "Introduced in House"},
+    ]
+    HR = {"title": "Survivor Justice Tax Prevention Act", "introducedDate": "2025-03-25", "policyArea": {"name": "Taxation"},
+          "sponsors": [{"fullName": "Rep. Smucker, Lloyd [R-PA-11]", "party": "R", "state": "PA", "district": 11}]}
+    HR_COS = [{"fullName": "Rep. Moore, Gwen [D-WI-4]", "party": "D", "state": "WI", "district": 4, "isOriginalCosponsor": True},
+              {"fullName": "Rep. Meeks, Gregory W. [D-NY-5]", "party": "D", "state": "NY", "district": 5},
+              {"fullName": "Rep. Tenney, Claudia [R-NY-24]", "party": "R", "state": "NY", "district": 24}]
+    S = {"title": "Bipartisan American Affordability and Jobs Act of 2026", "introducedDate": "2026-09-30",
+         "policyArea": {"name": "Energy"}, "sponsors": [{"fullName": "Sen. Capito, Shelley Moore [R-WV]", "party": "R", "state": "WV"}]}
+    S_COS = [{"fullName": f"Sen. {n}", "party": p, "state": s, "isOriginalCosponsor": True}
+             for n, p, s in (("Lee, Mike [R-UT]", "R", "UT"), ("Whitehouse, Sheldon [D-RI]", "D", "RI"), ("Heinrich, Martin [D-NM]", "D", "NM"))]
+
+    def swapped(self, actions=None):
+        hr = F.bill_from(119, "hr", 2347, self.HR, actions or self.ACTIONS, self.HR_COS, swap="2026-09-30")
+        s = F.bill_from(119, "s", 5653, self.S, [{"actionDate": "2026-09-30", "text": "Introduced in Senate"}], self.S_COS)
+        return F.carry(hr, s, "Bipartisan American Affordability and Jobs Act")
+
+    def test_vehicle_counts_only_what_happened_to_the_new_text(self):
+        b = self.swapped()
+        self.assertEqual(b["status"], "moving")  # the House voice vote was on the tax bill, not this text
+        self.assertNotIn("passed", b)
+        self.assertEqual(b["reached"], 2)  # on the floor; never in committee
+        self.assertTrue(b["strong"])
+
+    def test_vehicle_takes_the_carried_bills_authors(self):
+        b = self.swapped()
+        self.assertEqual(b["title"], "Bipartisan American Affordability and Jobs Act of 2026")
+        self.assertEqual(b["sponsor"], {"n": "Shelley Moore Capito", "p": "R", "s": "WV"})
+        self.assertEqual({k: b["cosponsors"][k] for k in "tdri"}, {"t": 3, "d": 2, "r": 1, "i": 0})
+        self.assertEqual(sorted(x[0] for x in b["cosnames"]), ["Martin Heinrich", "Mike Lee", "Sheldon Whitehouse"])
+        self.assertEqual((b["area"], b["introduced"]), ("Climate & energy", "2026-09-30"))
+        self.assertEqual((b["num"], b["url"]), ("H.R. 2347", "https://www.congress.gov/bill/119th-congress/house-bill/2347"))
+        self.assertEqual(b["vehicle"]["url"], "https://www.congress.gov/bill/119th-congress/senate-bill/5653")
+
+    def test_vehicle_keeps_its_old_identity_apart(self):
+        o = self.swapped()["vehicle"]["orig"]
+        self.assertEqual(o["title"], "Survivor Justice Tax Prevention Act")
+        self.assertEqual(o["sponsor"], {"n": "Lloyd Smucker", "p": "R", "s": "PA-11"})
+        self.assertEqual(o["cosponsors"], {"t": 3, "d": 2, "r": 1, "i": 0})
+        self.assertEqual(o["passed"], {"H": {"d": "2026-04-27", "how": "voice"}})
+        self.assertEqual((o["num"], o["introduced"], o["area"]), ("H.R. 2347", "2025-03-25", "Taxation"))
+
+    def test_timeline_marks_what_came_before_the_swap(self):
+        tl = self.swapped()["timeline"]
+        self.assertEqual([e["d"] for e in tl if e.get("pre")], ["2025-03-25", "2026-04-09", "2026-04-27"])
+        self.assertTrue(all(not e.get("pre") for e in tl if e["d"] >= "2026-09-30"))
+
+    def test_vehicle_passes_when_the_new_text_does(self):
+        later = [{"actionDate": "2026-12-08", "text": "Resolving differences -- House actions: On motion that the House agree to the Senate amendment Agreed to by the Yeas and Nays: 250 - 170 (Roll no. 401)."},
+                 {"actionDate": "2026-11-19", "text": "Passed Senate with an amendment by Yea-Nay Vote. 68 - 30. Record Vote Number: 266."}]
+        b = self.swapped(later + self.ACTIONS)
+        self.assertEqual(set(b["passed"]), {"H", "S"})
+        self.assertEqual(b["passed"]["H"]["d"], "2026-12-08")  # the House's vote on the new text, not April's
+        self.assertEqual(b["reached"], 4)
+        self.assertEqual(b["vehicle"]["orig"]["passed"]["H"]["how"], "voice")
+
+    def test_plain_bills_are_unchanged(self):
+        b = F.bill_from(119, "hr", 2347, self.HR, self.ACTIONS, self.HR_COS)
+        self.assertEqual((b["status"], b["passed"]["H"]["how"]), ("passed1", "voice"))
+        self.assertNotIn("orig", b)
+        self.assertFalse(any(e.get("pre") for e in b["timeline"]))
+
+    def test_note_keeps_what_the_download_added(self):
+        v, _ = F.vehicle_note(self.ENTRY)
+        self.assertEqual(F.keep_vehicle(v, self.swapped()["vehicle"])["orig"]["num"], "H.R. 2347")
+        self.assertEqual(F.keep_vehicle(v, None), v)
+
+    def test_vehicle_summary_comes_from_the_carried_bill(self):
+        asked = []
+        def fetch(c, t, n):
+            asked.append(f"{c}-{t}{n}")
+            return [{"text": "<p>Reforms federal permitting.</p>", "actionDate": "2026-10-01", "actionDesc": "Introduced in Senate"}]
+        b = {"id": "119-hr2347", "latest": {"actionDate": "2026-11-16"}, "vehicle": {"carries": "119-s5653", "orig": {"num": "H.R. 2347"}}}
+        store = {"119-hr2347": {"checked": "2026-11-17", "t": "This bill excludes from gross income certain damages."}}
+        self.assertTrue(F.refresh_summaries([b], store, "2026-11-17", fetch=fetch))
+        self.assertEqual(asked, ["119-s5653"])  # the tax bill's summary is replaced even though it was checked today
+        self.assertEqual((store["119-hr2347"]["of"], store["119-hr2347"]["t"]), ("119-s5653", "Reforms federal permitting."))
+        self.assertFalse(F.refresh_summaries([b], store, "2026-11-17", fetch=fetch))  # nothing to redo
+
 
 def clerk_xml(n, day="10-Nov-2026", legis="H RES 1601", q="On Motion to Table", desc="Impeaching Peter B. Hegseth, Secretary of Defense", y=220, no=205):
     return f"""<?xml version="1.0" encoding="UTF-8"?>
