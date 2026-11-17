@@ -1228,6 +1228,9 @@ def vehicle_note(e: dict) -> tuple[dict, dict]:
     d = dt.date.fromisoformat(e["since"])
     num = bill_num(e["carries"])
     v = {"carries": e["carries"], "num": num, "label": (e.get("label") or "").strip(), "since": e["since"], "fn": "veh"}
+    aka = [str(x).strip() for x in e.get("aka") or [] if str(x).strip()]
+    if aka:
+        v["aka"] = aka  # other names people search for it by
     fn = {"src": source_name(e["source"]), "t": f"vehicle for {num} since {d:%b} {d.day}, {d.year}", "u": e["source"]}
     return v, fn
 

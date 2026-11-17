@@ -213,6 +213,7 @@ details.bill[open]>summary{border-bottom:1px solid var(--rule)}
 /* a vehicle's card: the bill number on the floor and the text it used to hold */
 .vbox{border:1px solid var(--rule);border-radius:6px;padding:10px 14px;font-size:13.5px}
 .vbox h4{margin:0 0 6px}
+.vbox .vwhat{font:400 12.5px var(--f-body);margin-left:6px}
 .vbox dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 14px}
 .vbox dt{font-size:12.5px;color:var(--muted);font-weight:600}
 .vbox dd{margin:0;overflow-wrap:anywhere}
@@ -687,7 +688,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 </section>
 
 <section class="tab" data-tab="how" aria-label="How it works" hidden>
-<nav class="toc" id="how-contents" aria-label="On this page"><span class="toc-l">On this page</span><a href="#about">About</a><a href="#how-law">How a bill becomes law</a><a href="#key">Key</a><a href="#tracked">What's tracked</a><a href="#updates">Updates</a><a href="#paths">Paths to law</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a></nav>
+<nav class="toc" id="how-contents" aria-label="On this page"><span class="toc-l">On this page</span><a href="#about">About</a><a href="#how-law">How a bill becomes law</a><a href="#key">Key</a><a href="#tracked">What's tracked</a><a href="#vehicles">Vehicle bills</a><a href="#updates">Updates</a><a href="#paths">Paths to law</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a></nav>
 <details class="sec" id="about" open>
   <summary><h2>About this site</h2></summary>
   <div class="sec-body prose">
@@ -757,6 +758,20 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
     <p><span class="ref">AUTO</span> means a bill's facts come straight from Congress.gov and haven't been reviewed by hand yet. <span class="ref">119 REF</span> marks a bill from an earlier Congress kept for reference.</p>
   </div>
 </details>
+<details class="sec" id="vehicles" open>
+  <summary><h2>Vehicle bills</h2></summary>
+  <div class="sec-body prose">
+    <p>Sometimes Congress moves a bill by borrowing another bill's number. It takes a bill that already passed one chamber, deletes its text and puts a different bill inside. The borrowed bill is called the vehicle.</p>
+    <ul>
+      <li><b>Why it happens:</b> bills that raise money have to start in the House, so the Senate often borrows a House bill. It can also save time, because the borrowed bill is already lined up for a vote.</li>
+      <li><b>Why it's confusing:</b> on Congress.gov the vehicle keeps its old title, its old sponsor and cosponsors and any vote it got before the swap. Those people may have nothing to do with the new text.</li>
+      <li><b>How this site shows it:</b> by the bill it carries. You see that bill's real sponsor and cosponsors, and only votes on the new text count toward its progress. The old bill's details stay on the card under "On the floor as". If the carried bill has its own card, it's marked too and points to the vehicle, and the two count once in the totals.</li>
+      <li><b>Finding one:</b> search either number or either name. Floor votes are listed under the vehicle's number, because that's the number the chamber votes on.</li>
+      <li><b>What's left:</b> both chambers still have to pass the new text before it goes to the President, including the chamber that passed the old one.</li>
+    </ul>
+    <div id="veh-now"></div>
+  </div>
+</details>
 <details class="sec" id="updates" open>
   <summary><h2>How it updates</h2></summary>
   <div class="sec-body prose">
@@ -791,6 +806,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
   <div class="sec-body">
     <dl class="gloss">
       <dt>Roll call vote</dt><dd>Each member's yes or no is recorded by name. Also called a recorded vote.</dd>
+      <dt>Vehicle</dt><dd>A bill whose number is borrowed to carry a different bill's text. <a href="#vehicles">More</a></dd>
       <dt>Voice vote</dt><dd>Members answer aloud together; no names are recorded.</dd>
       <dt>Unanimous consent</dt><dd>Passes unless a single member objects. No vote is recorded.</dd>
       <dt>Cloture</dt><dd>The Senate's vote to end debate. Most bills need 60 of 100.</dd>
@@ -974,9 +990,30 @@ function matches(b){
   if(F.area!=="all"&&b.area!==F.area)return false;
   const sq=F.q&&stateQuery(F.q);
   if(sq){if(!stateHits(b,sq).length)return false}
-  else if(F.q){const q=F.q.toLowerCase();const hay=[b.num,b.title,nm(b),b.area,b.vehicle&&b.vehicle.num,b.vehicle&&b.vehicle.label,vOrig(b)&&vOrig(b).title,b.sponsor&&b.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].join(" ").toLowerCase();if(!hay.includes(q))return false}
+  else if(F.q&&!billMatch(b,F.q))return false;
   return true;
 }
+
+/* search: a bill matches on its words, its number in any spelling (HR2347, h.r. 2347),
+   a name's initials (BAAJA) and, for a vehicle, the bill it carries and its old title.
+   A vehicle and the bill it carries always come up together. */
+const SMALLW=/^(and|of|the|for|to|in|on|a|an|with|by|or)$/i;
+const acro=t=>String(t||"").split(/[^A-Za-z]+/).filter(w=>w&&!SMALLW.test(w)).map(w=>w[0]).join("").toLowerCase();
+function billWords(b){
+  const v=b.vehicle||{}, o=vOrig(b)||{};
+  return[b.num,b.title,nm(b),b.area,v.num,v.label,...(v.aka||[]),o.title,o.num,b.sponsor&&b.sponsor.n,o.sponsor&&o.sponsor.n,...(b.lead||[]).map(x=>x.n),...(b.blockers||[]).map(x=>x.who),...(b.crossovers||[]).map(x=>x.who)].filter(Boolean).join(" ").toLowerCase();
+}
+function oneMatch(b,q){
+  const t=String(q||"").trim().toLowerCase(), k=numKey(t);if(!t)return true;
+  if(billWords(b).includes(t))return true;
+  const v=b.vehicle||{}, o=vOrig(b)||{};
+  if(/^[a-z]+\d+$/.test(k)&&[b.num,v.num,o.num].some(n=>n&&numKey(n)===k))return true;
+  if(/^[a-z]{3,}$/.test(k)&&[b.title,nm(b),v.label,...(v.aka||[]),o.title].some(n=>n&&(acro(n)===k||numKey(n)===k)))return true;
+  return false;
+}
+// the vehicle and the bill it carries, when both are on the site
+const partners=b=>bills.filter(x=>x!==b&&((b.vehicle&&b.vehicle.carries===x.id)||(x.vehicle&&x.vehicle.carries===b.id)));
+const billMatch=(b,q)=>oneMatch(b,q)||partners(b).some(x=>oneMatch(x,q));
 
 /* one-line credit: who sponsored it, how each chamber passed it, who signed or vetoed it */
 const surname=n=>String(n||"").trim().split(/\s+/).pop();
@@ -1101,14 +1138,25 @@ function vehicleBox(b){
   const name={H:"House",S:"Senate"}, how={voice:"by voice vote",uc:"by unanimous consent"};
   const old=Object.entries(o.passed||{}).map(([ch,p])=>`${name[ch]||ch} ${p.how==="roll"&&p.v?esc(p.v):how[p.how]||""} · ${fmtD(p.d)}`.replace(/\s+·/," ·")).join("; ");
   const next=vehicleNext(b);
-  return`<div class="vbox"><h4>On the floor as ${esc(o.num)}${sup(b,b.vehicle.fn)}</h4><dl>
+  return`<div class="vbox"><h4>On the floor as ${esc(o.num)}${sup(b,b.vehicle.fn)} <a href="#vehicles" class="vwhat">What's this?</a></h4><dl>
     <dt>Old text</dt><dd>${esc(o.title||"")}</dd>
     <dt>Old sponsor</dt><dd>${by}</dd>
     ${old?`<dt>Old text passed</dt><dd>${old}</dd>`:""}
     ${next?`<dt>Still needs</dt><dd>${esc(next)}</dd>`:""}
   </dl></div>`;
 }
+// the vehicle carrying this bill, when both are on the site
+const carrierOf=b=>bills.find(x=>x!==b&&vOrig(x)&&x.vehicle.carries===b.id)||null;
+// counted once: a bill riding in a vehicle is tallied as the vehicle
+const counted=b=>!carrierOf(b);
+function numIndex(){
+  const m={};bills.forEach(b=>{m[numKey(b.num)]=b});
+  bills.forEach(b=>{if(vOrig(b)){const k=numKey(b.vehicle.num);if(!m[k])m[k]=b}});
+  return m;
+}
 function vehicleLine(b){
+  const c=carrierOf(b);
+  if(c)return`<span class="veh"><span class="vb">VEHICLE</span> now moving as <a href="#b-${esc(c.id)}" data-open="${esc(c.id)}" class="bl"><span class="bl-num">${esc(c.num)}</span></a>${vOrig(c).title?`, formerly the ${esc(vOrig(c).title)}`:""}. Floor votes are listed there</span>`;
   const v=b.vehicle;if(!v||!v.num)return"";
   const o=vOrig(b);
   if(o)return`<span class="veh"><span class="vb">VEHICLE</span> on the floor as <span class="bl-num">${esc(o.num)}</span>${o.title?`, formerly the ${esc(o.title)}`:""}${sup(b,v.fn)}</span>`;
@@ -1127,7 +1175,7 @@ function lastEv(b){const t=(b.timeline||[]).slice().sort((x,y)=>String(y.d||"").
 function lastAct(b){const t=lastEv(b)||(b.latest&&b.latest.text?{d:b.latest.actionDate,e:b.latest.text}:null);return t?`<span class="last"><span class="mono">${fmtD(t.d)}</span> ${esc(plain(t.e))}${t.v?` <span class="tally">${esc(t.v)}</span>`:""}</span>`:""}
 
 function renderGlance(){
-  const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
+  const pool=bills.filter(b=>(F.cong==="all"||String(b.congress)===F.cong)&&counted(b));
   const n=k=>pool.filter(b=>b.status===k).length;
   $("#g-score").innerHTML=["law","passed1","moving","stalled","killed","vetoed"].map(k=>{const c=n(k);const inner=`<span class="num mono" style="color:var(${STATUS[k].c})">${c}</span><span>${esc(STATUS[k].l)}</span>`;return c?`<button type="button" class="sc go" data-status="${k}" aria-label="Show ${c} ${esc(STATUS[k].l.toLowerCase())} bills">${inner}</button>`:`<div class="sc">${inner}</div>`}).join("");
   const ev=[];pool.forEach(b=>(b.timeline||[]).forEach(t=>ev.push({b,t})));
@@ -1167,7 +1215,7 @@ function mixBar(bs){
 }
 const agSlug=a=>"ag-"+a.toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 function renderAgenda(){
-  const pool=bills.filter(b=>F.cong==="all"||String(b.congress)===F.cong);
+  const pool=bills.filter(b=>(F.cong==="all"||String(b.congress)===F.cong)&&counted(b));
   const areas=AREAS.slice();pool.forEach(b=>{if(b.area&&!areas.includes(b.area))areas.push(b.area)});
   areas.sort((x,y)=>x.localeCompare(y,"en",{sensitivity:"base"}));
   $("#agenda-grid").innerHTML=areas.map(a=>{
@@ -1193,7 +1241,7 @@ function personOk(name,st){
   return true;
 }
 function renderNames(){
-  const pool=sortedAll().filter(b=>F.cong==="all"||String(b.congress)===F.cong);
+  const pool=sortedAll().filter(b=>(F.cong==="all"||String(b.congress)===F.cong)&&counted(b));
   const rowsB=[],rowsC=[],rowsS=[],rowsD=[];
   const full=!!RCD;  // member votes loaded: crossovers and votes on bills that died are complete
   const mst=(m,ch)=>ch==="H"&&m.d>0?`${m.s}-${m.d}`:m.s;
@@ -1263,7 +1311,7 @@ function renderNames(){
 }
 
 function renderOutcomes(){
-  const done=bills.filter(b=>["law","killed","vetoed"].includes(b.status)&&(F.cong==="all"||String(b.congress)===F.cong));
+  const done=bills.filter(b=>["law","killed","vetoed"].includes(b.status)&&(F.cong==="all"||String(b.congress)===F.cong)&&counted(b));
   const val=(b,k)=>k==="date"?(b.outcome&&b.outcome.d||""):k==="where"?(b.outcome&&b.outcome.where||""):k==="status"?(STATUS[b.status]||{}).l:String(b[k]||"");
   done.sort((a,b)=>{const r=String(val(a,sortK)).localeCompare(String(val(b,sortK)),undefined,{numeric:true});return sortDir==="asc"?r:-r});
   const law=done.filter(b=>b.status==="law").length;
@@ -1360,7 +1408,7 @@ let WALL=[];
 function autoWatch(today){
   const out=[];
   try{
-    const byNum={};bills.forEach(b=>{byNum[numKey(b.num)]=b});
+    const byNum=numIndex();
     const siteName=v=>{const b=byNum[numKey(v.measure)];if(!b)return"";return b.vehicle&&b.vehicle.label?`${b.vehicle.label} (in ${b.num})`:nm(b)};
     const fallback=v=>{const mi=measureInfo(v.measure,CONGRESS);let n="";try{n=nameOf(plain(v.title||""))}catch(e){}
       return n&&n.length<=70&&!/…|^(A|An) /.test(n)?n:(mi?mi.label:String(v.measure||""))};
@@ -1600,7 +1648,7 @@ $("#ag-jump").addEventListener("change",e=>{
 let VOTES={senate:[],house:[]}, LVOTES={senate:[],house:[]}, CONGRESS=null, LEDGER_FLOOR={};
 let BYNUM={};
 function renderVotes(){
-  BYNUM={};bills.forEach(b=>{BYNUM[numKey(b.num)]=b});
+  BYNUM=numIndex();
   const all=[...(VOTES.senate||[]),...(VOTES.house||[])].filter(v=>v&&v.d).sort((a,b)=>String(b.d).localeCompare(String(a.d))||((+b.n||0)-(+a.n||0)));
   const groups=[],byKey={};
   for(const v of all){const k=(v.ch||"")+"|"+(numKey(v.measure)||`${v.d}|${v.n}`);if(!byKey[k]){byKey[k]={k,ch:v.ch,measure:v.measure,votes:[]};groups.push(byKey[k])}byKey[k].votes.push(v)}
@@ -1612,7 +1660,7 @@ function renderVotes(){
   const vq=(V.q||"").toLowerCase();
   const hay=g=>{const tb=BYNUM[numKey(g.measure)], mi=measureInfo(g.measure,CONGRESS), v0=g.votes[0];
     return[g.measure,mi&&mi.label,tb&&tb.num,tb&&nm(tb),tb&&tb.title,v0.title,mi&&mi.type==="PN"?nomName(v0.title||""):"",...g.votes.map(v=>v.q)].join(" ").toLowerCase()};
-  const showG=inCh.filter(g=>(V.kind==="all"||kindOf(g)===V.kind)&&(!vq||hay(g).includes(vq)));
+  const showG=inCh.filter(g=>(V.kind==="all"||kindOf(g)===V.kind)&&(!vq||hay(g).includes(vq)||(BYNUM[numKey(g.measure)]&&billMatch(BYNUM[numKey(g.measure)],vq))));
   const rolls=showG.reduce((n,g)=>n+g.votes.length,0);
   $("#votes-count").textContent=all.length?`${rolls} roll calls on ${showG.length} measures`:"";
   const pageG=showG.slice(0,V.shown);
@@ -1739,6 +1787,8 @@ async function load(){
     out.hidden=!lines.length;
     if(lines.length)out.innerHTML=lines.join("<br>")+" Updates resume on their own once it's back.";
     if(L.warnings&&L.warnings.length)console.warn("ledger warnings",L.warnings);
+    // How it works: the vehicles on the site right now, from the data
+    try{const vs=bills.filter(vOrig);$("#veh-now").innerHTML=vs.length?`<p><b>On the floor now:</b></p><ul>${vs.map(b=>`<li><a href="#b-${esc(b.id)}" data-open="${esc(b.id)}" class="bl"><span class="bl-num">${esc(b.vehicle.num)}</span> <span class="bl-n">${esc(nm(b))}</span></a> on the floor as ${esc(vOrig(b).num)}, formerly the ${esc(vOrig(b).title||"")}</li>`).join("")}</ul>`:""}catch(e){}
   }catch(e){
     loaded=true;statusLine.textContent="Data couldn't load. Refresh to try again.";statusLine.classList.add("warn");
   }
