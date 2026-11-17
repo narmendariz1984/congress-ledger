@@ -3423,7 +3423,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -4318,6 +4318,11 @@
     "s": "OH-12"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-06",
+    "t": "This bill requires the Federal Energy Regulatory Commission (FERC) to issue and periodically review a rule that revises the approval process for interconnection requests of generating units that produce electricity to prioritize dispatchable power projects (e.g., certain fossil fuel projects).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5734,6 +5739,11 @@
     "s": "TX-13"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-08-19",
+    "t": "This act requires the Department of Commerce's Bureau of Industry and Security (BIS) to annually report to Congress on export control licensing.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -6418,6 +6428,11 @@
     "s": "FL-12"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-18",
+    "t": "This bill requires ticket sellers (including sellers on the secondary market) for concerts, performances, sporting events, and similar activities to clearly and prominently disclose the total ticket price for the event at the time the ticket is first displayed to an individual (and anytime thereafter during the…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -9208,6 +9223,11 @@
     "s": "WI-3"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-07-30",
+    "t": "This act authorizes the Department of Veterans Affairs (VA) to take certain actions in cases of default on home loans under the VA home loan program, establishes a partial claim program, and temporarily increases amounts authorized for transitional housing and supportive services for veterans who are experiencing…",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11967,6 +11987,11 @@
     "s": "NJ-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-09-05",
+    "t": "This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Toms River, New Jersey, as the Leonard G. “Bud” Lomell VA Clinic.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13486,7 +13511,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13498,7 +13523,7 @@
    "introduced": "2025-03-24",
    "latest": {
     "actionDate": "2026-11-16",
-    "text": "Passed Senate without amendment by Unanimous Consent."
+    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)"
    },
    "num": "H.R. 2302",
    "number": 2302,
@@ -13578,7 +13603,7 @@
     {
      "ch": "S",
      "d": "2026-11-16",
-     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)",
      "fn": "cg"
     },
     {
@@ -13817,7 +13842,7 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/2316"
   },
   {
-   "area": "Taxation",
+   "area": "Climate & energy",
    "auto": true,
    "congress": 119,
    "cosponsors": {
@@ -13825,12 +13850,13 @@
     "i": 0,
     "r": 1,
     "st": [
-     "NY",
-     "WI"
+     "NM",
+     "RI",
+     "UT"
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13838,55 +13864,52 @@
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
     },
     "veh": {
-     "src": "Senate Daily Press",
-     "t": "vehicle for S. 5653 since Nov 9, 2026",
-     "u": "https://www.dailypress.senate.gov/monday-november-9-2026/"
+     "src": "Senate Periodical Press Gallery",
+     "t": "vehicle for S. 5653 since Sep 30, 2026",
+     "u": "https://www.periodicalpress.senate.gov/wednesday-september-30-2026/"
     }
    },
    "id": "119-hr2347",
-   "introduced": "2025-03-25",
+   "introduced": "2026-09-30",
    "latest": {
     "actionDate": "2026-11-16",
-    "text": "Considered by Senate."
+    "text": "Considered by Senate. (consideration: CR S5679)"
    },
    "num": "H.R. 2347",
    "number": 2347,
-   "passed": {
-    "H": {
-     "d": "2026-04-27",
-     "how": "voice"
-    }
-   },
-   "reached": 3,
+   "reached": 2,
    "sponsor": {
-    "n": "Lloyd Smucker",
+    "n": "Shelley Moore Capito",
     "p": "R",
-    "s": "PA-11"
+    "s": "WV"
    },
-   "status": "passed1",
+   "status": "moving",
    "sum": {
-    "d": "2026-04-09",
-    "t": "This bill excludes from gross income certain damages received by an individual due to any sexual act or sexual contact and establishes the applicable burden of proof in court proceedings regarding the characterization of such damages for federal tax purposes.",
-    "v": "Reported to House"
+    "d": "2026-09-30",
+    "t": "This bill modifies federal permitting processes, including environmental reviews, to expedite a wide range of projects.",
+    "v": "Introduced in Senate"
    },
    "timeline": [
     {
      "ch": "H",
      "d": "2026-04-27",
      "e": "Motion to reconsider laid on the table Agreed to without objection.",
-     "fn": "cg"
+     "fn": "cg",
+     "pre": 1
     },
     {
      "ch": "H",
      "d": "2026-04-27",
      "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3110)",
-     "fn": "cg"
+     "fn": "cg",
+     "pre": 1
     },
     {
      "ch": "H",
      "d": "2026-04-27",
      "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3110)",
-     "fn": "cg"
+     "fn": "cg",
+     "pre": 1
     },
     {
      "ch": "S",
@@ -13933,15 +13956,45 @@
      "fn": "cg"
     }
    ],
-   "title": "Survivor Justice Tax Prevention Act",
+   "title": "Bipartisan American Affordability and Jobs Act of 2026",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347",
    "vehicle": {
+    "aka": [
+     "BAAJA",
+     "permitting reform",
+     "permitting bill"
+    ],
     "carries": "119-s5653",
     "fn": "veh",
     "label": "Bipartisan American Affordability and Jobs Act",
     "num": "S. 5653",
-    "since": "2026-11-09"
+    "orig": {
+     "area": "Taxation",
+     "cosponsors": {
+      "d": 2,
+      "i": 0,
+      "r": 1,
+      "t": 3
+     },
+     "introduced": "2025-03-25",
+     "num": "H.R. 2347",
+     "passed": {
+      "H": {
+       "d": "2026-04-27",
+       "how": "voice"
+      }
+     },
+     "sponsor": {
+      "n": "Lloyd Smucker",
+      "p": "R",
+      "s": "PA-11"
+     },
+     "title": "Survivor Justice Tax Prevention Act",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
+    },
+    "since": "2026-09-30",
+    "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5653"
    }
   },
   {
@@ -15588,6 +15641,11 @@
     "s": "NY-26"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-08",
+    "t": "This bill requires the Department of Veterans Affairs (VA) to establish and implement a two-year pilot program to furnish, when requested, an appropriate headstone or burial marker to commemorate covered veterans.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -16087,6 +16145,11 @@
     "s": "TN-6"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-09-05",
+    "t": "This act limits the circumstances in which credit reporting agencies may provide consumer credit reports to third parties in connection with residential mortgage transactions.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17525,6 +17588,11 @@
     "s": "OH-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-24",
+    "t": "This bill provides statutory authority for the National Coal Council and directs the Department of Energy to reestablish the council in accordance with the charter that was in effect on November 19, 2021. Established in 1984, the council made recommendations to DOE on matters relating to coal and the coal industry.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17622,6 +17690,11 @@
     "s": "ND"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-29",
+    "t": "This bill establishes a new process for approving or revoking permits for the construction and operation of energy infrastructure across an international border of the United States. Thus, it replaces the existing process established under specified executive orders.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -18660,6 +18733,11 @@
     "s": "NY-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-13",
+    "t": "This bill requires issuers of securities with multi-class share structures to disclose certain information in any proxy solicitation or consent solicitation material. A multi-class share structure occurs when a company issues two or more classes of shares that have different voting rights.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -18966,6 +19044,11 @@
     "s": "MP"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-14",
+    "t": "This bill authorizes the Department of Veterans Affairs (VA) to assign a physician who has been appointed in the Veterans Health Administration to serve as a traveling physician for a period of not more than one year.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -19152,6 +19235,11 @@
     "s": "MO-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-15",
+    "t": "This bill directs the General Services Administration (GSA) to collaborate with federal agencies regarding the use of shared-space arrangements in federally leased buildings.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -19247,6 +19335,11 @@
     "s": "UT-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-15",
+    "t": "The bill directs the Federal Protective Service (FPS) to improve the performance of security personnel contracted to protect federal buildings and to report on such efforts to Congress.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -19346,6 +19439,11 @@
     "s": "OK-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-19",
+    "t": "This bill establishes or increases criminal penalties for certain non-U.S. nationals ( aliens under federal law) who illegally enter the United States and then commit a felony or illegally reenter the United States.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -21285,6 +21383,11 @@
     "s": "AL-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-08-19",
+    "t": "This bill sets forth policies and authorities for FY2026 for Department of Defense (DOD) programs and activities, military construction, and the national security programs of the Department of Energy and the Maritime Administration.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -21633,6 +21736,11 @@
     "s": "TX-31"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-08-01",
+    "t": "This bill provides FY2026 appropriations to several federal departments and agencies for activities and programs related to military construction, veterans, agriculture, and the legislative branch.",
+    "v": "Passed Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -22588,6 +22696,11 @@
     "s": "SC-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-06-27",
+    "t": "This bill requires the Department of State to conduct an annual review to identify defense articles and services eligible to be sold only through Foreign Military Sales (FMS) (i.e., U.S. government to foreign government sales) that should also be eligible to be sold through Direct Commercial Sales (DCS) (i.e., U.S.…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -23685,7 +23798,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -24620,6 +24733,11 @@
     "s": "TN-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-07-21",
+    "t": "This bill provides FY2026 appropriations for U.S. Army Corps of Engineers civil works projects, the Department of the Interior's Bureau of Reclamation, the Department of Energy (DOE), and several independent agencies.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -25807,6 +25925,11 @@
     "s": "FL-19"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-08-08",
+    "t": "This bill limits the authority of the District of Columbia (DC) government over its criminal sentencing laws. The bill eliminates the DC government’s authority to enact any act, resolution, or rule to change any criminal liability sentence in effect on the date of the bill's enactment.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -26577,6 +26700,11 @@
     "s": "TX-17"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-04",
+    "t": "This bill terminates the District of Columbia (DC) Judicial Nomination Commission. Currently, the commission recommends to the President nominees for judges for DC's Superior Court and Court of Appeals, who must then be confirmed by the Senate.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -26671,6 +26799,11 @@
     "s": "TX-26"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-04",
+    "t": "This bill lowers the age at which an individual may be tried as an adult for certain criminal offenses in the District of Columbia (DC) to 14 years of age. Under current DC law, an individual who is under 18 years of age is tried as a juvenile in family court.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -26761,6 +26894,11 @@
     "s": "LA-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-04",
+    "t": "This bill repeals restrictions on the circumstances under which law enforcement officers in the District of Columbia (DC) may engage in vehicular pursuits (i.e., police chases) of suspects fleeing in motor vehicles, and instead generally requires such pursuits in the absence of other means of apprehension.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -28461,7 +28599,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -33094,6 +33232,11 @@
     "s": "KY-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-28",
+    "t": "This bill subjects certain Chinese entities and government officials to potential sanctions related to opioid trafficking and requires the President to conduct certain preliminary analyses before regulating economic transactions in the event of a national emergency related to international drug trafficking.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33839,7 +33982,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34372,7 +34515,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34384,7 +34527,7 @@
    "introduced": "2026-03-05",
    "latest": {
     "actionDate": "2026-11-16",
-    "text": "Passed Senate without amendment by Unanimous Consent."
+    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)"
    },
    "num": "H.R. 7834",
    "number": 7834,
@@ -34452,7 +34595,7 @@
     {
      "ch": "S",
      "d": "2026-11-16",
-     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)",
      "fn": "cg"
     },
     {
@@ -41631,6 +41774,11 @@
     "s": "AZ"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-08-14",
+    "t": "This act requires the Department of Veterans Affairs to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine to study and report on the prevalence and mortality of cancers among veterans who served on active duty as aircrew members and regularly flew in fixed-wing aircraft.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -43515,6 +43663,11 @@
     "s": "WI"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-09-15",
+    "t": "This bill provides continuing appropriations to prevent a government shutdown if the appropriations bills for a fiscal year have not been enacted before the fiscal year begins and continuing appropriations are not in effect.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44001,6 +44154,11 @@
     "s": "WA"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-09-18",
+    "t": "This bill provides continuing FY2026 appropriations for federal agencies, permanently extends the expanded premium tax credit for purchasing health insurance, provides additional funding for Medicaid and security for federal officials, and extends various expiring programs.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44120,6 +44278,11 @@
     "s": "WI"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-10-15",
+    "t": "This bill provides appropriations to pay federal employees who work during a government shutdown.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44666,7 +44829,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -44762,7 +44925,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-17T16:11:06+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -45651,6 +45814,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-08-14",
+    "t": "This bill requires the Department of Veterans Affairs (VA) to provide quarterly budget briefings to Congress, prohibits the VA from providing specified pay incentives to senior-level employees, and establishes an office to carry out customer service initiatives of the VA.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51021,6 +51189,11 @@
     "s": "VT"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-03-10",
+    "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51175,6 +51348,11 @@
     "s": "VT"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-03-27",
+    "t": "This joint resolution prohibits a proposed export of certain firearms, parts, and components to Israel.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51618,6 +51796,11 @@
     "s": "RI"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-06-27",
+    "t": "This joint resolution nullifies the Environmental Protection Agency interim final rule titled Emissions Budget and Allowance Allocations for Indiana Under the Revised Cross-State Air Pollution Rule Update published on May 20, 2025 ( 90 Federal Register 21423 ).",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51849,6 +52032,11 @@
     "s": "VA"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-07-31",
+    "t": "This joint resolution terminates the national emergency relating to energy declared by the President on January 20, 2025, in Executive Order 14156. The executive order states that the supply of and infrastructure for energy in the United States is insufficient to meet the country's needs.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -52007,6 +52195,11 @@
     "s": "VA"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-16",
+    "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on February 1, 2025, which imposed an additional 25% tariff on most imports from Canada (except for Canadian energy or energy resources, which have an additional 10% tariff).",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -52236,6 +52429,11 @@
     "s": "VA"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-18",
+    "t": "This joint resolution terminates the national emergency that was declared by President Donald J. Trump in an executive order on July 30, 2025, that also imposed an additional 40% tariff on certain imports from Brazil based on the emergency declaration.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -52645,6 +52843,11 @@
     "s": "OR"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-10-30",
+    "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on April 2, 2025, which imposed a 10% tariff on most imports to the United States and additional duties on specified trading partners.",
+    "v": "Passed Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -52724,6 +52927,11 @@
     "s": "VA"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-10-16",
+    "t": "This joint resolution directs the President to terminate the use of U.S. Armed Forces for hostilities within or against Venezuela unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -53005,7 +53213,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-17T14:29:35+00:00",
+ "generatedAt": "2026-11-17T16:11:06+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",

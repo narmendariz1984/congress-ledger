@@ -23,6 +23,9 @@
   "t": "This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan (RMP) for Alaska’s Central Yukon planning area and issued on November 12, 2024.",
   "v": "Introduced in House"
  },
+ "119-hjres117": {
+  "checked": "2026-11-17"
+ },
  "119-hjres130": {
   "checked": "2026-11-17",
   "d": "2025-11-18",
@@ -110,6 +113,12 @@
   "t": "This bill prohibits the Department of Veterans Affairs (VA) from transmitting certain information to the National Instant Criminal Background Check System (NICS) utilized by licensed importers or dealers of firearms.",
   "v": "Introduced in House"
  },
+ "119-hr1047": {
+  "checked": "2026-11-17",
+  "d": "2025-02-06",
+  "t": "This bill requires the Federal Energy Regulatory Commission (FERC) to issue and periodically review a rule that revises the approval process for interconnection requests of generating units that produce electricity to prioritize dispatchable power projects (e.g., certain fossil fuel projects).",
+  "v": "Introduced in House"
+ },
  "119-hr1049": {
   "checked": "2026-11-17",
   "d": "2025-02-06",
@@ -146,6 +155,12 @@
   "t": "This bill reduces payments that communities within the Arkansas River Valley must pay to the Bureau of Reclamation for the construction of the Arkansas Valley Conduit, a pipeline in Colorado for delivering water from the Pueblo Reservoir to such communities.",
   "v": "Introduced in House"
  },
+ "119-hr1316": {
+  "checked": "2026-11-17",
+  "d": "2025-08-19",
+  "t": "This act requires the Department of Commerce's Bureau of Industry and Security (BIS) to annually report to Congress on export control licensing.",
+  "v": "Public Law"
+ },
  "119-hr1329": {
   "checked": "2026-11-17",
   "d": "2026-04-23",
@@ -168,6 +183,12 @@
   "checked": "2026-11-17",
   "d": "2025-01-03",
   "t": "This bill makes daylight saving time the new, permanent standard time. States with areas exempt from daylight saving time may choose the standard time for those areas.",
+  "v": "Introduced in House"
+ },
+ "119-hr1402": {
+  "checked": "2026-11-17",
+  "d": "2025-02-18",
+  "t": "This bill requires ticket sellers (including sellers on the secondary market) for concerts, performances, sporting events, and similar activities to clearly and prominently disclose the total ticket price for the event at the time the ticket is first displayed to an individual (and anytime thereafter during the…",
   "v": "Introduced in House"
  },
  "119-hr1491": {
@@ -246,6 +267,12 @@
   "checked": "2026-11-16",
   "d": "2026-11-03",
   "t": "This act reauthorizes the U.S. Commission on International Religious Freedom through 2028.",
+  "v": "Public Law"
+ },
+ "119-hr1815": {
+  "checked": "2026-11-17",
+  "d": "2025-07-30",
+  "t": "This act authorizes the Department of Veterans Affairs (VA) to take certain actions in cases of default on home loans under the VA home loan program, establishes a partial claim program, and temporarily increases amounts authorized for transitional housing and supportive services for veterans who are experiencing…",
   "v": "Public Law"
  },
  "119-hr1823": {
@@ -329,6 +356,12 @@
   "t": "This bill reauthorizes through FY2029 a diesel emissions reduction program under which the Environmental Protection Agency provides grants, rebates, or loans for replacing diesel engines or retrofitting the engines with pollution control technologies.",
   "v": "Introduced in House"
  },
+ "119-hr2170": {
+  "checked": "2026-11-17",
+  "d": "2025-09-05",
+  "t": "This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Toms River, New Jersey, as the Leonard G. “Bud” Lomell VA Clinic.",
+  "v": "Public Law"
+ },
  "119-hr2189": {
   "checked": "2026-11-17",
   "d": "2026-01-30",
@@ -384,10 +417,11 @@
   "v": "Public Law"
  },
  "119-hr2347": {
-  "checked": "2026-11-16",
-  "d": "2026-04-09",
-  "t": "This bill excludes from gross income certain damages received by an individual due to any sexual act or sexual contact and establishes the applicable burden of proof in court proceedings regarding the characterization of such damages for federal tax purposes.",
-  "v": "Reported to House"
+  "checked": "2026-11-17",
+  "d": "2026-09-30",
+  "of": "119-s5653",
+  "t": "This bill modifies federal permitting processes, including environmental reviews, to expedite a wide range of projects.",
+  "v": "Introduced in Senate"
  },
  "119-hr2388": {
   "checked": "2026-11-16",
@@ -461,6 +495,18 @@
   "t": "This bill broadens the scope of the U.S. export control system to include remote access of items.",
   "v": "Introduced in House"
  },
+ "119-hr2721": {
+  "checked": "2026-11-17",
+  "d": "2025-04-08",
+  "t": "This bill requires the Department of Veterans Affairs (VA) to establish and implement a two-year pilot program to furnish, when requested, an appropriate headstone or burial marker to commemorate covered veterans.",
+  "v": "Introduced in House"
+ },
+ "119-hr2808": {
+  "checked": "2026-11-17",
+  "d": "2025-09-05",
+  "t": "This act limits the circumstances in which credit reporting agencies may provide consumer credit reports to third parties in connection with residential mortgage transactions.",
+  "v": "Public Law"
+ },
  "119-hr2815": {
   "checked": "2026-11-17",
   "d": "2026-05-19",
@@ -503,6 +549,18 @@
   "t": "This bill modifies the requirements for fiduciaries of employer-sponsored retirement plans.",
   "v": "Reported to House"
  },
+ "119-hr3015": {
+  "checked": "2026-11-17",
+  "d": "2025-04-24",
+  "t": "This bill provides statutory authority for the National Coal Council and directs the Department of Energy to reestablish the council in accordance with the charter that was in effect on November 19, 2021. Established in 1984, the council made recommendations to DOE on matters relating to coal and the coal industry.",
+  "v": "Introduced in House"
+ },
+ "119-hr3062": {
+  "checked": "2026-11-17",
+  "d": "2025-04-29",
+  "t": "This bill establishes a new process for approving or revoking permits for the construction and operation of energy infrastructure across an international border of the United States. Thus, it replaces the existing process established under specified executive orders.",
+  "v": "Introduced in House"
+ },
  "119-hr3106": {
   "checked": "2026-11-17",
   "d": "2025-04-30",
@@ -539,11 +597,41 @@
   "t": "This bill provides statutory authority for the Urban Bird Treaty Program, which is administered by the U.S. Fish and Wildlife Service.",
   "v": "Reported to House"
  },
+ "119-hr3357": {
+  "checked": "2026-11-17",
+  "d": "2025-05-13",
+  "t": "This bill requires issuers of securities with multi-class share structures to disclose certain information in any proxy solicitation or consent solicitation material. A multi-class share structure occurs when a company issues two or more classes of shares that have different voting rights.",
+  "v": "Introduced in House"
+ },
  "119-hr3383": {
   "checked": "2026-11-17",
   "d": "2025-06-25",
   "t": "This bill allows a closed-end fund—a portfolio of pooled assets with a limited number of shares traded on an exchange—to increase its investment in private investment funds.",
   "v": "Reported to House"
+ },
+ "119-hr3400": {
+  "checked": "2026-11-17",
+  "d": "2025-05-14",
+  "t": "This bill authorizes the Department of Veterans Affairs (VA) to assign a physician who has been appointed in the Veterans Health Administration to serve as a traveling physician for a period of not more than one year.",
+  "v": "Introduced in House"
+ },
+ "119-hr3424": {
+  "checked": "2026-11-17",
+  "d": "2025-05-15",
+  "t": "This bill directs the General Services Administration (GSA) to collaborate with federal agencies regarding the use of shared-space arrangements in federally leased buildings.",
+  "v": "Introduced in House"
+ },
+ "119-hr3425": {
+  "checked": "2026-11-17",
+  "d": "2025-05-15",
+  "t": "The bill directs the Federal Protective Service (FPS) to improve the performance of security personnel contracted to protect federal buildings and to report on such efforts to Congress.",
+  "v": "Introduced in House"
+ },
+ "119-hr3486": {
+  "checked": "2026-11-17",
+  "d": "2025-05-19",
+  "t": "This bill establishes or increases criminal penalties for certain non-U.S. nationals ( aliens under federal law) who illegally enter the United States and then commit a felony or illegally reenter the United States.",
+  "v": "Introduced in House"
  },
  "119-hr3490": {
   "checked": "2026-11-17",
@@ -617,6 +705,12 @@
   "t": "This bill expedites the environmental review of certain natural gas pipeline projects or liquefied natural gas (LNG) import or export terminals for authorizations under the Natural Gas Act.",
   "v": "Reported to House"
  },
+ "119-hr3838": {
+  "checked": "2026-11-17",
+  "d": "2025-08-19",
+  "t": "This bill sets forth policies and authorities for FY2026 for Department of Defense (DOD) programs and activities, military construction, and the national security programs of the Department of Energy and the Maritime Administration.",
+  "v": "Reported to House"
+ },
  "119-hr3898": {
   "checked": "2026-11-17",
   "d": "2025-06-11",
@@ -628,6 +722,12 @@
   "d": "2025-06-11",
   "t": "This bill requires the Forest Service to convey approximately 14 acres of federal land, including the mineral rights, in the Chequamegon-Nicolet National Forest, Wisconsin, to Tony's Wabeno Redi-Mix, LLC, upon receiving an offer to buy the land for market value.",
   "v": "Introduced in House"
+ },
+ "119-hr3944": {
+  "checked": "2026-11-17",
+  "d": "2025-08-01",
+  "t": "This bill provides FY2026 appropriations to several federal departments and agencies for activities and programs related to military construction, veterans, agriculture, and the legislative branch.",
+  "v": "Passed Senate"
  },
  "119-hr3978": {
   "checked": "2026-11-16",
@@ -658,6 +758,12 @@
   "d": "2025-12-26",
   "t": "This act extends for an additional five years the time period during which an eligible Alaska Native veteran may apply for a land allotment under the Alaska Native Vietnam Era Veterans Land Allotment Program.",
   "v": "Public Law"
+ },
+ "119-hr4216": {
+  "checked": "2026-11-17",
+  "d": "2025-06-27",
+  "t": "This bill requires the Department of State to conduct an annual review to identify defense articles and services eligible to be sold only through Foreign Military Sales (FMS) (i.e., U.S. government to foreign government sales) that should also be eligible to be sold through Direct Commercial Sales (DCS) (i.e., U.S.…",
+  "v": "Introduced in House"
  },
  "119-hr4219": {
   "checked": "2026-11-17",
@@ -740,6 +846,12 @@
   "t": "This bill requires federal financial regulators to review and streamline the application process for the formation of de novo, or new, depository institutions or credit unions.",
   "v": "Introduced in House"
  },
+ "119-hr4553": {
+  "checked": "2026-11-17",
+  "d": "2025-07-21",
+  "t": "This bill provides FY2026 appropriations for U.S. Army Corps of Engineers civil works projects, the Department of the Interior's Bureau of Reclamation, the Department of Energy (DOE), and several independent agencies.",
+  "v": "Reported to House"
+ },
  "119-hr4593": {
   "checked": "2026-11-17",
   "d": "2025-12-30",
@@ -794,6 +906,12 @@
   "t": "This bill prohibits a state where the congressional districts have been redistricted after a decennial census from carrying out another redistricting until after the next apportionment of Representatives following a decennial census, unless a court requires the state to conduct a subsequent redistricting to comply…",
   "v": "Introduced in House"
  },
+ "119-hr4922": {
+  "checked": "2026-11-17",
+  "d": "2025-08-08",
+  "t": "This bill limits the authority of the District of Columbia (DC) government over its criminal sentencing laws. The bill eliminates the DC government’s authority to enact any act, resolution, or rule to change any criminal liability sentence in effect on the date of the bill's enactment.",
+  "v": "Introduced in House"
+ },
  "119-hr4930": {
   "checked": "2026-11-16",
   "d": "2025-12-30",
@@ -822,6 +940,24 @@
   "checked": "2026-11-17",
   "d": "2025-09-03",
   "t": "This bill repeals the Comprehensive Policing and Justice Reform Amendment Act of 2022, enacted by the Council of the District of Columbia. Any provision of law amended or repealed by that act is restored or revived as if it had not been enacted.",
+  "v": "Introduced in House"
+ },
+ "119-hr5125": {
+  "checked": "2026-11-17",
+  "d": "2025-09-04",
+  "t": "This bill terminates the District of Columbia (DC) Judicial Nomination Commission. Currently, the commission recommends to the President nominees for judges for DC's Superior Court and Court of Appeals, who must then be confirmed by the Senate.",
+  "v": "Introduced in House"
+ },
+ "119-hr5140": {
+  "checked": "2026-11-17",
+  "d": "2025-09-04",
+  "t": "This bill lowers the age at which an individual may be tried as an adult for certain criminal offenses in the District of Columbia (DC) to 14 years of age. Under current DC law, an individual who is under 18 years of age is tried as a juvenile in family court.",
+  "v": "Introduced in House"
+ },
+ "119-hr5143": {
+  "checked": "2026-11-17",
+  "d": "2025-09-04",
+  "t": "This bill repeals restrictions on the circumstances under which law enforcement officers in the District of Columbia (DC) may engage in vehicular pursuits (i.e., police chases) of suspects fleeing in motor vehicles, and instead generally requires such pursuits in the absence of other means of apprehension.",
   "v": "Introduced in House"
  },
  "119-hr5184": {
@@ -1108,6 +1244,12 @@
   "d": "2026-02-20",
   "t": "This bill requires Small Business Administration (SBA) employees who participate in the origination, review, or approval of SBA loans to certify in writing prior to such participation that the employee does not have any conflict of interest with respect to the loan, will disclose any such conflict of interest arising…",
   "v": "Reported to House"
+ },
+ "119-hr747": {
+  "checked": "2026-11-17",
+  "d": "2025-01-28",
+  "t": "This bill subjects certain Chinese entities and government officials to potential sanctions related to opioid trafficking and requires the President to conduct certain preliminary analyses before regulating economic transactions in the event of a national emergency related to international drug trafficking.",
+  "v": "Introduced in House"
  },
  "119-hr7567": {
   "checked": "2026-11-17",
@@ -1442,6 +1584,12 @@
   "t": "This act provides $70 billion in funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S.",
   "v": "Public Law"
  },
+ "119-s201": {
+  "checked": "2026-11-17",
+  "d": "2025-08-14",
+  "t": "This act requires the Department of Veterans Affairs to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine to study and report on the prevalence and mortality of cancers among veterans who served on active duty as aircrew members and regularly flew in fixed-wing aircraft.",
+  "v": "Public Law"
+ },
  "119-s216": {
   "checked": "2026-11-17",
   "d": "2025-05-20",
@@ -1520,6 +1668,12 @@
   "t": "This act permanently allows the Department of the Treasury to access certain death records maintained by the Social Security Administration (SSA) to help prevent and recover improper payments (e.g., payments to deceased individuals).",
   "v": "Public Law"
  },
+ "119-s2806": {
+  "checked": "2026-11-17",
+  "d": "2025-09-15",
+  "t": "This bill provides continuing appropriations to prevent a government shutdown if the appropriations bills for a fiscal year have not been enacted before the fiscal year begins and continuing appropriations are not in effect.",
+  "v": "Introduced in Senate"
+ },
  "119-s283": {
   "checked": "2026-11-16",
   "d": "2026-10-15",
@@ -1537,6 +1691,18 @@
   "d": "2025-12-26",
   "t": "This act reauthorizes through FY2030 research and monitoring conducted by the U.S. Geological Survey in support of binational fisheries within the Great Lakes Basin.",
   "v": "Public Law"
+ },
+ "119-s2882": {
+  "checked": "2026-11-17",
+  "d": "2025-09-18",
+  "t": "This bill provides continuing FY2026 appropriations for federal agencies, permanently extends the expanded premium tax credit for purchasing health insurance, provides additional funding for Medicaid and security for federal officials, and extends various expiring programs.",
+  "v": "Introduced in Senate"
+ },
+ "119-s3012": {
+  "checked": "2026-11-17",
+  "d": "2025-10-15",
+  "t": "This bill provides appropriations to pay federal employees who work during a government shutdown.",
+  "v": "Introduced in Senate"
  },
  "119-s307": {
   "checked": "2026-11-17",
@@ -1596,6 +1762,12 @@
   "checked": "2026-11-17",
   "d": "2026-03-20",
   "t": "This act allows for the posthumous honorary promotion of Captain Cody Khork to the rank of major in the Army without the required 60-day notice to Congress.",
+  "v": "Public Law"
+ },
+ "119-s423": {
+  "checked": "2026-11-17",
+  "d": "2025-08-14",
+  "t": "This bill requires the Department of Veterans Affairs (VA) to provide quarterly budget briefings to Congress, prohibits the VA from providing specified pay incentives to senior-level employees, and establishes an office to carry out customer service initiatives of the VA.",
   "v": "Public Law"
  },
  "119-s4344": {
@@ -1817,10 +1989,43 @@
   "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
   "v": "Introduced in Senate"
  },
+ "119-sjres34": {
+  "checked": "2026-11-17",
+  "d": "2025-03-10",
+  "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres41": {
+  "checked": "2026-11-17",
+  "d": "2025-03-27",
+  "t": "This joint resolution prohibits a proposed export of certain firearms, parts, and components to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres60": {
+  "checked": "2026-11-17",
+  "d": "2025-06-27",
+  "t": "This joint resolution nullifies the Environmental Protection Agency interim final rule titled Emissions Budget and Allowance Allocations for Indiana Under the Revised Cross-State Air Pollution Rule Update published on May 20, 2025 ( 90 Federal Register 21423 ).",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres69": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres71": {
+  "checked": "2026-11-17",
+  "d": "2025-07-31",
+  "t": "This joint resolution terminates the national emergency relating to energy declared by the President on January 20, 2025, in Executive Order 14156. The executive order states that the supply of and infrastructure for energy in the United States is insufficient to meet the country's needs.",
+  "v": "Introduced in Senate"
+ },
  "119-sjres76": {
   "checked": "2026-11-17",
   "d": "2025-09-04",
   "t": "This joint resolution nullifies the rule issued by Environmental Protection Agency titled Extension of Deadlines in Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review Final Rule and published on July 31, 2025.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres77": {
+  "checked": "2026-11-17",
+  "d": "2025-09-16",
+  "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on February 1, 2025, which imposed an additional 25% tariff on most imports from Canada (except for Canadian energy or energy resources, which have an additional 10% tariff).",
   "v": "Introduced in Senate"
  },
  "119-sjres80": {
@@ -1829,7 +2034,16 @@
   "t": "Specifically, the joint resolution nullifies a plan submitted by the Bureau of Land Management in a rule titled National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision and issued on April 25, 2022.",
   "v": "Public Law"
  },
+ "119-sjres81": {
+  "checked": "2026-11-17",
+  "d": "2025-09-18",
+  "t": "This joint resolution terminates the national emergency that was declared by President Donald J. Trump in an executive order on July 30, 2025, that also imposed an additional 40% tariff on certain imports from Brazil based on the emergency declaration.",
+  "v": "Introduced in Senate"
+ },
  "119-sjres82": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres83": {
   "checked": "2026-11-17"
  },
  "119-sjres84": {
@@ -1842,6 +2056,18 @@
   "checked": "2026-11-17",
   "d": "2025-10-01",
   "t": "This joint resolution nullifies the Environmental Protection Agency (EPA) final rule titled Air Plan Approval; South Dakota; Regional Haze Plan for the Second Implementation Period (90 Fed. Reg. 41893) and published on August 28, 2025.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres88": {
+  "checked": "2026-11-17",
+  "d": "2025-10-30",
+  "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on April 2, 2025, which imposed a 10% tariff on most imports to the United States and additional duties on specified trading partners.",
+  "v": "Passed Senate"
+ },
+ "119-sjres90": {
+  "checked": "2026-11-17",
+  "d": "2025-10-16",
+  "t": "This joint resolution directs the President to terminate the use of U.S. Armed Forces for hostilities within or against Venezuela unless a declaration of war or authorization to use military force for such purpose has been enacted.",
   "v": "Introduced in Senate"
  },
  "119-sjres95": {

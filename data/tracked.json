@@ -480,7 +480,7 @@
   "119-hr2302",
   "119-hr7834"
  ],
- "lastDiscovery": "2026-11-17T13:53:04+00:00",
+ "lastDiscovery": "2026-11-17T16:11:06+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -900,7 +900,8 @@
   "119-s872",
   "119-hr3410",
   "119-hr8880",
-  "119-s3296"
+  "119-s3296",
+  "119-hr617"
  ],
  "statusRule": "killed-v2",
  "outcomeRule": "outcome-v2",
