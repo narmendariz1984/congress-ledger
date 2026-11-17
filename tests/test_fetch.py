@@ -400,6 +400,11 @@ class Vehicles(unittest.TestCase):
         self.assertEqual(fn, {"src": "Senate Daily Press", "t": "vehicle for S. 5653 since Nov 9, 2026",
                               "u": "https://www.dailypress.senate.gov/monday-november-9-2026/"})
 
+    def test_other_names_carry_through_for_search(self):
+        v, _ = F.vehicle_note({**self.ENTRY, "aka": ["BAAJA", " permitting reform ", ""]})
+        self.assertEqual(v["aka"], ["BAAJA", "permitting reform"])
+        self.assertNotIn("aka", F.vehicle_note(self.ENTRY)[0])
+
     def test_bill_numbers_read_naturally(self):
         self.assertEqual([F.bill_num(x) for x in ("119-s5653", "119-hr2347", "119-hjres104", "bad")],
                          ["S. 5653", "H.R. 2347", "H.J.Res. 104", "bad"])
