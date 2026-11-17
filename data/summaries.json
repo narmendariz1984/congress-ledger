@@ -1,4 +1,22 @@
 {
+ "119-hjres1": {
+  "checked": "2026-11-17",
+  "d": "2025-01-03",
+  "t": "This joint resolution proposes a constitutional amendment requiring the Supreme Court to be composed of nine Justices—one Chief Justice and eight Associate Justices.",
+  "v": "Introduced in House"
+ },
+ "119-hjres210": {
+  "checked": "2026-11-17",
+  "d": "2026-09-15",
+  "t": "Specifically, the joint resolution nullifies the EPA authorization decision titled California State Nonroad Engine Pollution Control Standards; Ocean-Going Vessels At-Berth; Notice of Decision .",
+  "v": "Passed House"
+ },
+ "119-hjres213": {
+  "checked": "2026-11-17",
+  "d": "2026-08-10",
+  "t": "Specifically, the joint resolution nullifies the EPA authorization decision titled California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision .",
+  "v": "Introduced in House"
+ },
  "119-hr1013": {
   "checked": "2026-11-16",
   "d": "2025-02-05",
@@ -9,6 +27,24 @@
   "checked": "2026-11-16",
   "d": "2026-08-27",
   "t": "This bill ends the production of the penny for general circulation, requires rounding to an amount divisible by five for the payment or transfer of cash, and allows the nickel to be composed of different material. The Department of the Treasury must stop producing the penny, except to meet collector needs.",
+  "v": "Introduced in House"
+ },
+ "119-hr10326": {
+  "checked": "2026-11-17",
+  "d": "2026-09-10",
+  "t": "This bill requires states to provide such information as the Department of Justice (DOJ) may require for the purpose of investigating or prosecuting alleged fraud committed with regard to certain federally funded programs.",
+  "v": "Introduced in House"
+ },
+ "119-hr1276": {
+  "checked": "2026-11-17",
+  "d": "2025-02-13",
+  "t": "This bill directs the Department of the Interior to remove all deed restrictions from approximately 3.62 acres located at 2956 Park Avenue, on the Paducah Memorial Army Reserve Center in Paducah, Kentucky.",
+  "v": "Introduced in House"
+ },
+ "119-hr1501": {
+  "checked": "2026-11-17",
+  "d": "2025-02-21",
+  "t": "This bill provides statutory authority for federal agencies to expedite the environmental review of certain mining infrastructure projects.",
   "v": "Introduced in House"
  },
  "119-hr1550": {
@@ -41,11 +77,29 @@
   "t": "This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark.",
   "v": "Introduced in House"
  },
+ "119-hr2069": {
+  "checked": "2026-11-17",
+  "d": "2025-03-11",
+  "t": "This bill expands a requirement for federal agencies to report expenditures on the USAspending.gov website to include other transaction agreement expenditures.",
+  "v": "Introduced in House"
+ },
  "119-hr2102": {
   "checked": "2026-11-16",
   "d": "2025-03-14",
   "t": "This bill allows a veteran with a combat-related disability to receive retirement pay, without reduction, concurrently with their disability compensation. This includes veterans with a combat-related disability and fewer than 20 years of creditable service.",
   "v": "Introduced in House"
+ },
+ "119-hr2140": {
+  "checked": "2026-11-17",
+  "d": "2025-03-14",
+  "t": "This bill reauthorizes through FY2029 a diesel emissions reduction program under which the Environmental Protection Agency provides grants, rebates, or loans for replacing diesel engines or retrofitting the engines with pollution control technologies.",
+  "v": "Introduced in House"
+ },
+ "119-hr2196": {
+  "checked": "2026-11-17",
+  "d": "2026-02-24",
+  "t": "This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.",
+  "v": "Reported to House"
  },
  "119-hr227": {
   "checked": "2026-11-16",
@@ -77,17 +131,47 @@
   "t": "This act requires online dating service providers (i.e., mobile applications or websites) to provide users with a fraud ban notification if the user has established an account with the service and received a message through the service from a banned user of the service.",
   "v": "Public Law"
  },
+ "119-hr2978": {
+  "checked": "2026-11-17",
+  "d": "2026-06-24",
+  "t": "This bill allows state, local, and tribal law enforcement agencies and grantees that receive funds from certain law enforcement grant programs to use the funds to investigate general financial fraud, elder financial fraud, and pig butchering.",
+  "v": "Reported to House"
+ },
+ "119-hr3276": {
+  "checked": "2026-11-17",
+  "d": "2026-08-20",
+  "t": "This bill provides statutory authority for the Urban Bird Treaty Program, which is administered by the U.S. Fish and Wildlife Service.",
+  "v": "Reported to House"
+ },
  "119-hr3620": {
   "checked": "2026-11-16",
   "d": "2025-12-09",
   "t": "This bill directs the Department of Health and Human Services (HHS) to convey approximately 3.4 acres in Anchorage, Alaska, to the Southcentral Foundation (SCF) for use in connection with health and social services programs. The conveyance must be made by warranty deed.",
   "v": "Reported to House"
  },
+ "119-hr3633": {
+  "checked": "2026-11-17",
+  "d": "2025-05-29",
+  "t": "This bill establishes a regulatory framework for digital commodities, defined by the bill as digital assets that rely upon a blockchain for their value. The Commodity Futures Trading Commission must generally regulate digital commodities transactions, including digital commodity exchanges, brokers, and dealers.",
+  "v": "Introduced in House"
+ },
+ "119-hr3657": {
+  "checked": "2026-11-17",
+  "d": "2025-05-29",
+  "t": "This bill directs the Federal Energy Regulatory Commission to report annually to Congress on the status of the relicensing process for each application for a renewed hydropower dam license.",
+  "v": "Introduced in House"
+ },
  "119-hr3978": {
   "checked": "2026-11-16",
   "d": "2025-06-12",
   "t": "The following analysis is based on draft bill text that was made available by the House of Representatives and may differ from the bill text as introduced.",
   "v": "Introduced in House"
+ },
+ "119-hr4219": {
+  "checked": "2026-11-17",
+  "d": "2026-08-27",
+  "t": "This bill provides statutory authority for the Invasive Species Strike Team program carried out by the National Wildlife Refuge System within the U.S. Fish and Wildlife Service (FWS).",
+  "v": "Reported to House"
  },
  "119-hr4307": {
   "checked": "2026-11-16",
@@ -99,6 +183,18 @@
   "checked": "2026-11-16",
   "d": "2026-01-14",
   "t": "This bill directs the Department of the Interior to convey approximately 7 acres of specified land (in two parcels) within the Vicksburg National Military Park to Mississippi for an interpretive center.",
+  "v": "Reported to House"
+ },
+ "119-hr4646": {
+  "checked": "2026-11-17",
+  "d": "2026-09-01",
+  "t": "This bill expands existing whistleblower protections for employees of federal contractors or grant recipients to apply to all contracts and grants funded by the Department of Housing and Urban Development (HUD) regardless of the date of execution.",
+  "v": "Reported to House"
+ },
+ "119-hr4795": {
+  "checked": "2026-11-17",
+  "d": "2026-08-27",
+  "t": "This bill prohibits institutions of higher education (IHEs) that participate in federal student aid programs from engaging in boycotts against Israel.",
   "v": "Reported to House"
  },
  "119-hr4930": {
@@ -113,6 +209,12 @@
   "t": "This bill changes certain terms that are used by the Social Security Administration (SSA) to describe the ages at which a worker may claim Social Security retirement benefits. First, the SSA must use minimum monthly benefit age instead of early eligibility age .",
   "v": "Introduced in House"
  },
+ "119-hr5334": {
+  "checked": "2026-11-17",
+  "d": "2026-08-07",
+  "t": "This bill imposes a variety of sanctions, tariffs, and prohibitions related to Russia, extends an Iran-related sanctions law, and expands a tax deduction for teacher expenses to include early childhood educators.",
+  "v": "Passed Senate"
+ },
  "119-hr5345": {
   "checked": "2026-11-16",
   "d": "2026-10-07",
@@ -125,16 +227,40 @@
   "t": "This bill expands the authority of the U.S. Tax Court to issue subpoenas, authorizes the Tax Court to extend certain petition deadlines, and makes other changes related to Tax Court procedures.",
   "v": "Introduced in House"
  },
+ "119-hr5366": {
+  "checked": "2026-11-17",
+  "d": "2026-09-11",
+  "t": "This act extends the federal tax deduction for qualified disaster-related personal casualty losses and the exclusion from gross income of qualified wildfire relief payments.",
+  "v": "Public Law"
+ },
  "119-hr6380": {
   "checked": "2026-11-16",
   "d": "2025-12-03",
   "t": "This bill redesignates the Chiricahua National Monument in Arizona as the Chiricahua National Park.",
   "v": "Introduced in House"
  },
+ "119-hr6500": {
+  "checked": "2026-11-17",
+  "d": "2026-09-02",
+  "t": "This act provides continuing FY2027 appropriations for federal agencies through December 11, 2026, and extends various expiring programs and authorities.",
+  "v": "Public Law"
+ },
+ "119-hr7008": {
+  "checked": "2026-11-17",
+  "d": "2026-02-03",
+  "t": "This bill generally prohibits Members of Congress and their spouses and dependent children from purchasing stocks and requires public notice before these individuals may sell stocks. Specifically, Members of Congress and the spouses and dependent children of Members of Congress may not purchase covered investments.",
+  "v": "Reported to House"
+ },
  "119-hr7022": {
   "checked": "2026-11-16",
   "d": "2026-01-12",
   "t": "This bill provides for wireless emergency alerts to be transmitted to mobile devices via satellite. (Currently, wireless emergency alerts are sent via terrestrial mobile networks to individual devices in geographically targeted areas.",
+  "v": "Introduced in House"
+ },
+ "119-hr7250": {
+  "checked": "2026-11-17",
+  "d": "2026-01-27",
+  "t": "This bill reauthorizes through FY2028 the planning, design, and construction of the Assiniboine and Sioux Rural Water System and the Dry Prairie Rural Water System, both located in Montana.",
   "v": "Introduced in House"
  },
  "119-hr7618": {
@@ -161,6 +287,12 @@
   "t": "This act reauthorizes through FY2031 and revises programs that support research and development of drugs and other therapies to address amyotrophic lateral sclerosis (also known as ALS or Lou Gehrig's disease) and other neurodegenerative diseases.",
   "v": "Public Law"
  },
+ "119-hr8278": {
+  "checked": "2026-11-17",
+  "d": "2026-06-24",
+  "t": "This bill requires specified federal financial agencies to assess their technological capabilities and procurement practices.",
+  "v": "Reported to House"
+ },
  "119-hr8352": {
   "checked": "2026-11-16",
   "d": "2026-05-04",
@@ -179,16 +311,52 @@
   "t": "This bill requires the Department of Veterans Affairs (VA) to increase the amounts payable for wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.",
   "v": "Introduced in House"
  },
+ "119-hr8800": {
+  "checked": "2026-11-17",
+  "d": "2026-06-15",
+  "t": "This bill sets forth policies and authorities for FY2027 for Department of Defense (DOD) programs, activities, and military construction as well as the national security programs of the Department of Energy (DOE).",
+  "v": "Reported to House"
+ },
  "119-hr9237": {
   "checked": "2026-11-16",
   "d": "2026-06-10",
   "t": "This bill addresses veterans’ benefits, health care, counseling, Department of Veterans Affairs (VA) personnel, VA infrastructure, and the Veterans Community Care Program (VCCP).",
   "v": "Introduced in House"
  },
+ "119-hr9340": {
+  "checked": "2026-11-17",
+  "d": "2026-09-10",
+  "t": "The bill requires state utility regulators and nonregulated utilities to consider implementing a standard to hold certain large-load customers responsible for the costs associated with any generation, transmission, or distribution upgrade of electric service necessary to serve such customers.",
+  "v": "Reported to House"
+ },
+ "119-hr9436": {
+  "checked": "2026-11-17",
+  "d": "2026-08-27",
+  "t": "This bill extends the deadline from 2028 to 2035 for the National Marine Fisheries Service to issue new regulations that protect the endangered Atlantic large whale from certain lobster and crab fishing gear.",
+  "v": "Reported to House"
+ },
+ "119-hr9497": {
+  "checked": "2026-11-17",
+  "d": "2026-09-03",
+  "t": "This bill authorizes and modifies certain water resource infrastructure projects and programs of the U.S. Army Corps of Engineers and makes related requirements.",
+  "v": "Reported to House"
+ },
+ "119-hr9500": {
+  "checked": "2026-11-17",
+  "d": "2026-06-29",
+  "t": "This bill expands the federal tax deduction for personal casualty and theft losses by eliminating certain limits, including the requirement that such losses arise from certain disasters. The bill also extends the tax refund deadline and modifies certain retirement plan rules related to certain fraud losses.",
+  "v": "Introduced in House"
+ },
  "119-hr952": {
   "checked": "2026-11-16",
   "d": "2025-02-04",
   "t": "This bill directs the Bureau of Land Management (BLM) to offer to sell the reversionary interest of the United States in approximately 8.43 acres of land in Sacramento, California, as generally depicted on a specified map dated November 7, 2022.",
+  "v": "Introduced in House"
+ },
+ "119-hr9576": {
+  "checked": "2026-11-17",
+  "d": "2026-07-02",
+  "t": "This bill provides statutory authority for the National Fraud Enforcement Division within the Department of Justice (DOJ). The division investigates and prosecutes fraud against taxpayer dollars and taxpayer-funded programs.",
   "v": "Introduced in House"
  },
  "119-hr9612": {
@@ -209,6 +377,12 @@
   "t": "This bill directs the National Travel and Tourism Office (NTTO) of the Department of Commerce to promote tourism to music-related and sports attractions.",
   "v": "Introduced in Senate"
  },
+ "119-s2398": {
+  "checked": "2026-11-17",
+  "d": "2026-09-30",
+  "t": "This act reauthorizes through FY2030 activities of the Centers for Disease Control and Prevention to address vector-borne diseases (e.g., diseases spread by bites from ticks or mosquitoes).",
+  "v": "Public Law"
+ },
  "119-s240": {
   "checked": "2026-11-16",
   "d": "2025-01-24",
@@ -227,16 +401,76 @@
   "t": "This act directs the National Oceanic and Atmospheric Administration (NOAA) and the National Institute of Standards and Technology (NIST) to jointly develop a standard methodology for identifying the country of origin of seafood to support enforcement against illegal, unreported, and unregulated fishing (IUU fishing)…",
   "v": "Public Law"
  },
+ "119-s307": {
+  "checked": "2026-11-17",
+  "d": "2026-09-16",
+  "t": "This act establishes requirements for the Department of Justice (DOJ) and component agencies to assess and respond to incidents of sexual harassment and sexual assault by incarcerated individuals against Bureau of Prisons (BOP) staff.",
+  "v": "Public Law"
+ },
+ "119-s32": {
+  "checked": "2026-11-17",
+  "d": "2026-09-16",
+  "t": "This act adds College Station to the list of places where court must be held in the Galveston Division of the Southern District of Texas. Additionally, the act adds El Centro to the list of places where court must be held in the Southern District of California.",
+  "v": "Public Law"
+ },
  "119-s4668": {
   "checked": "2026-11-16",
   "d": "2026-06-24",
   "t": "This bill establishes requirements for name, image, or likeness (NIL) agreements for college student athletes and provides a limited antitrust exemption for schools and conferences to pool and sell certain college sports media rights.",
   "v": "Reported to Senate"
  },
+ "119-s5271": {
+  "checked": "2026-11-17",
+  "d": "2026-08-05",
+  "t": "This bill establishes certain photo identification requirements for voting in federal elections. Specifically, the bill prohibits a state or local election official from providing a ballot for a federal election to an individual who does not present valid physical photo identification.",
+  "v": "Introduced in Senate"
+ },
+ "119-s550": {
+  "checked": "2026-11-17",
+  "d": "2025-02-12",
+  "t": "This bill confers jurisdiction to the U.S. Court of Federal Claims for the Miami Tribe of Oklahoma's land claim arising under the Treaty of Grouseland.",
+  "v": "Introduced in Senate"
+ },
+ "119-s603": {
+  "checked": "2026-11-17",
+  "d": "2026-05-20",
+  "t": "The bill designates the George C. Marshall International Center as the management entity for the affiliated area.",
+  "v": "Passed Senate"
+ },
+ "119-s759": {
+  "checked": "2026-11-17",
+  "d": "2026-09-25",
+  "t": "This act directs the National Oceanic and Atmospheric Administration (NOAA) to standardize and publish geospatial data related to public recreational use of federal waterways (e.g., boating and fishing).",
+  "v": "Public Law"
+ },
  "119-s766": {
   "checked": "2026-11-16",
   "d": "2026-10-07",
   "t": "This act requires the Office of Management and Budget (OMB) to collect information from federal agencies and report to Congress regarding projects that are behind schedule or have expenditures that have exceeded the original cost estimate.",
   "v": "Public Law"
+ },
+ "119-s790": {
+  "checked": "2026-11-17",
+  "d": "2025-02-27",
+  "t": "This bill renames the National Historic Trails Interpretive Center located in Casper, Wyoming, as the Barbara L. Cubin National Historic Trails Interpretive Center.",
+  "v": "Introduced in Senate"
+ },
+ "119-s858": {
+  "checked": "2026-11-17",
+  "d": "2025-03-05",
+  "t": "This bill requires the authorized monument honoring Medal of Honor recipients to be located within the Reserve (the great cross-axis of the National Mall, which generally extends from the Capitol to the Lincoln Memorial and from the White House to the Jefferson Memorial).",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres181": {
+  "checked": "2026-11-17",
+  "d": "2026-04-13",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres187": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres197": {
+  "checked": "2026-11-17"
  }
 }

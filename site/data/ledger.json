@@ -38,6 +38,11 @@
     "s": "AZ-5"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This joint resolution proposes a constitutional amendment requiring the Supreme Court to be composed of nine Justices—one Chief Justice and eight Associate Justices.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -1532,6 +1537,11 @@
     "s": "CA-20"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-09-15",
+    "t": "Specifically, the joint resolution nullifies the EPA authorization decision titled California State Nonroad Engine Pollution Control Standards; Ocean-Going Vessels At-Berth; Notice of Decision .",
+    "v": "Passed House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -1617,6 +1627,11 @@
     "s": "CA-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-08-10",
+    "t": "Specifically, the joint resolution nullifies the EPA authorization decision titled California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision .",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3363,7 +3378,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3713,6 +3728,11 @@
     "s": "OK-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-05",
+    "t": "This bill allows 403(b) retirement plans (i.e., retirement plans designed for certain employees of public schools, charities, and churches) to invest in collective investment trusts, which are a group of pooled investment assets held by a bank or trust company, and in insurance company separate accounts.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3817,6 +3837,11 @@
     "s": "MI-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-08-27",
+    "t": "This bill ends the production of the penny for general circulation, requires rounding to an amount divisible by five for the payment or transfer of cash, and allows the nickel to be composed of different material. The Department of the Treasury must stop producing the penny, except to meet collector needs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3913,6 +3938,11 @@
     "s": "NJ-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-09-10",
+    "t": "This bill requires states to provide such information as the Department of Justice (DOJ) may require for the purpose of investigating or prosecuting alleged fraud committed with regard to certain federally funded programs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5256,6 +5286,11 @@
     "s": "KY-1"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-13",
+    "t": "This bill directs the Department of the Interior to remove all deed restrictions from approximately 3.62 acres located at 2956 Park Avenue, on the Paducah Memorial Army Reserve Center in Paducah, Kentucky.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -6678,6 +6713,11 @@
     "s": "IN-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-21",
+    "t": "This bill provides statutory authority for federal agencies to expedite the environmental review of certain mining infrastructure projects.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7428,6 +7468,11 @@
     "s": "NY-21"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-25",
+    "t": "This bill renames the Saratoga National Historical Park, located in Stillwater, New York, as Saratoga National Battlefield Park.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -8242,6 +8287,11 @@
     "s": "PA-13"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-27",
+    "t": "This bill requires the Centers for Medicare & Medicaid Services (CMS) to establish specific billing codes under Medicare for certain materials used in ultralightweight manual wheelchairs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -8556,6 +8606,11 @@
     "s": "IA-1"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-27",
+    "t": "This bill requires the Department of Commerce to study and report on products that are in high demand across the critical infrastructure sectors.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -8693,6 +8748,11 @@
     "s": "NJ-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-11-03",
+    "t": "This act reauthorizes the U.S. Commission on International Religious Freedom through 2028.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -9988,6 +10048,11 @@
     "s": "MO-3"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-03-06",
+    "t": "This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11033,6 +11098,11 @@
     "s": "AL-1"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-03-11",
+    "t": "This bill expands a requirement for federal agencies to report expenditures on the USAspending.gov website to include other transaction agreement expenditures.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11487,7 +11557,7 @@
     ],
     "t": 342
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11518,6 +11588,11 @@
     "s": "FL-12"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-14",
+    "t": "This bill allows a veteran with a combat-related disability to receive retirement pay, without reduction, concurrently with their disability compensation. This includes veterans with a combat-related disability and fewer than 20 years of creditable service.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11596,6 +11671,11 @@
     "s": "CA-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-14",
+    "t": "This bill reauthorizes through FY2029 a diesel emissions reduction program under which the Environmental Protection Agency provides grants, rebates, or loans for replacing diesel engines or retrofitting the engines with pollution control technologies.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11960,6 +12040,11 @@
     "s": "NC-9"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-02-24",
+    "t": "This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -12907,6 +12992,11 @@
     "s": "CA-20"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-20",
+    "t": "This act establishes a two-year window for members of the clergy who have opted out of Social Security and Medicare taxes (and are thus ineligible for benefits under those programs) to opt back in.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13437,6 +13527,11 @@
     "s": "PA-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-09",
+    "t": "This bill excludes from gross income certain damages received by an individual due to any sexual act or sexual contact and establishes the applicable burden of proof in court proceedings regarding the characterization of such damages for federal tax purposes.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13573,6 +13668,11 @@
     "s": "WA-6"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-03-26",
+    "t": "This bill takes approximately 1,082.63 acres of specified lands in Washington into trust for the benefit of the Lower Elwha Klallam Tribe. Land taken into trust shall be part of the tribe's reservation.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13687,6 +13787,11 @@
     "s": "CA-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-10-01",
+    "t": "This bill takes approximately 557 acres of specified federal land in Shasta County, California, into trust for the benefit of the Pit River Tribe. The land, known as the Four Corners Property, is currently administered and managed by the Forest Service.",
+    "v": "Passed Senate"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13923,6 +14028,11 @@
     "s": "CA-22"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-20",
+    "t": "This act requires online dating service providers (i.e., mobile applications or websites) to provide users with a fraud ban notification if the user has established an account with the service and received a message through the service from a banned user of the service.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -16588,6 +16698,11 @@
     "s": "IA-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-06-24",
+    "t": "This bill allows state, local, and tribal law enforcement agencies and grantees that receive funds from certain law enforcement grant programs to use the funds to investigate general financial fraud, elder financial fraud, and pig butchering.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17810,6 +17925,11 @@
     "s": "MI-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-08-20",
+    "t": "This bill provides statutory authority for the Urban Bird Treaty Program, which is administered by the U.S. Fish and Wildlife Service.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -19798,6 +19918,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-09",
+    "t": "This bill directs the Department of Health and Human Services (HHS) to convey approximately 3.4 acres in Anchorage, Alaska, to the Southcentral Foundation (SCF) for use in connection with health and social services programs. The conveyance must be made by warranty deed.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -20127,6 +20252,11 @@
     "s": "AR-2"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-05-29",
+    "t": "This bill establishes a regulatory framework for digital commodities, defined by the bill as digital assets that rely upon a blockchain for their value. The Commodity Futures Trading Commission must generally regulate digital commodities transactions, including digital commodity exchanges, brokers, and dealers.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -20364,6 +20494,11 @@
     "s": "WA-8"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-29",
+    "t": "This bill directs the Federal Energy Regulatory Commission to report annually to Congress on the status of the relicensing process for each application for a renewed hydropower dam license.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -21134,6 +21269,11 @@
     "s": "OH-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-06-12",
+    "t": "The following analysis is based on draft bill text that was made available by the House of Representatives and may differ from the bill text as introduced.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -22015,6 +22155,11 @@
     "s": "HI-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-08-27",
+    "t": "This bill provides statutory authority for the Invasive Species Strike Team program carried out by the National Wildlife Refuge System within the U.S. Fish and Wildlife Service (FWS).",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -22619,6 +22764,11 @@
     "s": "MI-5"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-20",
+    "t": "This act requires the Department of Labor to provide training and education to its employees on how to effectively assist law enforcement in detecting human trafficking. The act directs Labor to determine which employees should receive the training and education based on their official duties.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -22999,7 +23149,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23418,6 +23568,11 @@
     "s": "MS-2"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-01-14",
+    "t": "This bill directs the Department of the Interior to convey approximately 7 acres of specified land (in two parcels) within the Vicksburg National Military Park to Mississippi for an interpretive center.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -24310,6 +24465,11 @@
     "s": "TX-15"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-09-01",
+    "t": "This bill expands existing whistleblower protections for employees of federal contractors or grant recipients to apply to all contracts and grants funded by the Department of Housing and Urban Development (HUD) regardless of the date of execution.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -24854,6 +25014,11 @@
     "s": "NC-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-08-27",
+    "t": "This bill prohibits institutions of higher education (IHEs) that participate in federal student aid programs from engaging in boycotts against Israel.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -25113,6 +25278,11 @@
     "s": "UT-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-12-30",
+    "t": "This bill expands the authority of U.S. Customs and Border Protection (CBP) to provide information to certain persons (e.g., trademark or copyright owners) regarding suspected violations of intellectual property rights in trade.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -25723,7 +25893,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25739,6 +25909,14 @@
    },
    "num": "H.R. 5125",
    "number": 5125,
+   "passed": {
+    "H": {
+     "d": "2025-09-17",
+     "how": "roll",
+     "roll": 274,
+     "v": "218–211"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Pete Sessions",
@@ -25809,7 +25987,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25825,6 +26003,14 @@
    },
    "num": "H.R. 5140",
    "number": 5140,
+   "passed": {
+    "H": {
+     "d": "2025-09-16",
+     "how": "roll",
+     "roll": 271,
+     "v": "225–203"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Brandon Gill",
@@ -25891,7 +26077,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25907,6 +26093,14 @@
    },
    "num": "H.R. 5143",
    "number": 5143,
+   "passed": {
+    "H": {
+     "d": "2025-09-17",
+     "how": "roll",
+     "roll": 275,
+     "v": "245–182"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Clay Higgins",
@@ -26111,7 +26305,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26127,6 +26321,14 @@
    },
    "num": "H.R. 5184",
    "number": 5184,
+   "passed": {
+    "H": {
+     "d": "2026-01-09",
+     "how": "roll",
+     "roll": 12,
+     "v": "263–147"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Erin Houchin",
@@ -26206,7 +26408,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26222,6 +26424,14 @@
    },
    "num": "H.R. 5200",
    "number": 5200,
+   "passed": {
+    "H": {
+     "d": "2026-04-20",
+     "how": "roll",
+     "roll": 126,
+     "v": "386–7"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Doris O. Matsui",
@@ -26282,7 +26492,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26298,6 +26508,14 @@
    },
    "num": "H.R. 5201",
    "number": 5201,
+   "passed": {
+    "H": {
+     "d": "2026-04-21",
+     "how": "roll",
+     "roll": 127,
+     "v": "405–5"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Doris O. Matsui",
@@ -26359,7 +26577,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26375,6 +26593,14 @@
    },
    "num": "H.R. 5214",
    "number": 5214,
+   "passed": {
+    "H": {
+     "d": "2025-11-19",
+     "how": "roll",
+     "roll": 298,
+     "v": "237–179"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Elise M. Stefanik",
@@ -26492,6 +26718,11 @@
     "s": "PA-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-10",
+    "t": "This bill changes certain terms that are used by the Social Security Administration (SSA) to describe the ages at which a worker may claim Social Security retirement benefits. First, the SSA must use minimum monthly benefit age instead of early eligibility age .",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -26591,7 +26822,7 @@
     ],
     "t": 35
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26607,6 +26838,14 @@
    },
    "num": "H.R. 530",
    "number": 530,
+   "passed": {
+    "H": {
+     "d": "2025-05-05",
+     "how": "roll",
+     "roll": 115,
+     "v": "376–5"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "August Pfluger",
@@ -26657,7 +26896,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26673,6 +26912,14 @@
    },
    "num": "H.R. 5317",
    "number": 5317,
+   "passed": {
+    "H": {
+     "d": "2026-05-20",
+     "how": "roll",
+     "roll": 179,
+     "v": "393–16"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "J. French Hill",
@@ -26806,6 +27053,11 @@
     "s": "CA-19"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-08-07",
+    "t": "This bill imposes a variety of sanctions, tariffs, and prohibitions related to Russia, extends an Iran-related sanctions law, and expands a tax deduction for teacher expenses to include early childhood educators.",
+    "v": "Passed Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -26942,6 +27194,11 @@
     "s": "TN-8"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-07",
+    "t": "This act requires the Social Security Administration to provide a single point of contact for any individual whose Social Security number has been misused or whose Social Security card has been lost in transport.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -27025,7 +27282,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27041,6 +27298,14 @@
    },
    "num": "H.R. 5348",
    "number": 5348,
+   "passed": {
+    "H": {
+     "d": "2025-12-01",
+     "how": "roll",
+     "roll": 306,
+     "v": "386–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Lloyd Smucker",
@@ -27107,7 +27372,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27123,6 +27388,16 @@
    },
    "num": "H.R. 5349",
    "number": 5349,
+   "passed": {
+    "H": {
+     "d": "2025-12-01",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-09-30",
+     "how": "uc"
+    }
+   },
    "reached": 4,
    "sponsor": {
     "n": "Nathaniel Moran",
@@ -27130,6 +27405,11 @@
     "s": "TX-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-09-15",
+    "t": "This bill expands the authority of the U.S. Tax Court to issue subpoenas, authorizes the Tax Court to extend certain petition deadlines, and makes other changes related to Tax Court procedures.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -27205,7 +27485,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27221,6 +27501,14 @@
    },
    "num": "H.R. 5362",
    "number": 5362,
+   "passed": {
+    "H": {
+     "d": "2026-07-16",
+     "how": "roll",
+     "roll": 248,
+     "v": "418–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Barry Loudermilk",
@@ -27329,6 +27617,11 @@
     "s": "FL-17"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-09-11",
+    "t": "This act extends the federal tax deduction for qualified disaster-related personal casualty losses and the exclusion from gross income of qualified wildfire relief payments.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -27480,7 +27773,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -27624,7 +27917,7 @@
     ],
     "t": 110
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27640,6 +27933,14 @@
    },
    "num": "H.R. 5408",
    "number": 5408,
+   "passed": {
+    "H": {
+     "d": "2026-06-09",
+     "how": "roll",
+     "roll": 216,
+     "v": "230–193"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Donald Norcross",
@@ -27722,7 +28023,7 @@
     ],
     "t": 83
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27738,6 +28039,14 @@
    },
    "num": "H.R. 556",
    "number": 556,
+   "passed": {
+    "H": {
+     "d": "2026-03-18",
+     "how": "roll",
+     "roll": 93,
+     "v": "215–202"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Robert J. Wittman",
@@ -27935,7 +28244,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27951,6 +28260,14 @@
    },
    "num": "H.R. 5625",
    "number": 5625,
+   "passed": {
+    "H": {
+     "d": "2026-05-14",
+     "how": "roll",
+     "roll": 171,
+     "v": "308–116"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mark Harris",
@@ -28024,7 +28341,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28040,6 +28357,14 @@
    },
    "num": "H.R. 5763",
    "number": 5763,
+   "passed": {
+    "H": {
+     "d": "2026-01-20",
+     "how": "roll",
+     "roll": 32,
+     "v": "383–8"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Roger Williams",
@@ -28108,7 +28433,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28124,6 +28449,14 @@
    },
    "num": "H.R. 5764",
    "number": 5764,
+   "passed": {
+    "H": {
+     "d": "2026-01-20",
+     "how": "roll",
+     "roll": 33,
+     "v": "395–14"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mark Alford",
@@ -28195,7 +28528,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28211,6 +28544,14 @@
    },
    "num": "H.R. 586",
    "number": 586,
+   "passed": {
+    "H": {
+     "d": "2025-04-07",
+     "how": "roll",
+     "roll": 89,
+     "v": "411–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Nick LaLota",
@@ -28282,7 +28623,7 @@
     ],
     "t": 39
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28298,6 +28639,14 @@
    },
    "num": "H.R. 6019",
    "number": 6019,
+   "passed": {
+    "H": {
+     "d": "2025-11-19",
+     "how": "roll",
+     "roll": 301,
+     "v": "426–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Austin Scott",
@@ -28361,7 +28710,7 @@
     ],
     "t": 14
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28377,6 +28726,14 @@
    },
    "num": "H.R. 6047",
    "number": 6047,
+   "passed": {
+    "H": {
+     "d": "2026-05-21",
+     "how": "roll",
+     "roll": 191,
+     "v": "235–179"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Tom Barrett",
@@ -28582,7 +28939,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28598,6 +28955,14 @@
    },
    "num": "H.R. 6260",
    "number": 6260,
+   "passed": {
+    "H": {
+     "d": "2026-05-14",
+     "how": "roll",
+     "roll": 169,
+     "v": "243–179"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Scott Fitzgerald",
@@ -28677,7 +29042,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28693,6 +29058,14 @@
    },
    "num": "H.R. 6329",
    "number": 6329,
+   "passed": {
+    "H": {
+     "d": "2026-02-24",
+     "how": "roll",
+     "roll": 71,
+     "v": "362–1"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Lisa C. McClain",
@@ -28754,7 +29127,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28770,6 +29143,14 @@
    },
    "num": "H.R. 6359",
    "number": 6359,
+   "passed": {
+    "H": {
+     "d": "2026-01-22",
+     "how": "roll",
+     "roll": 47,
+     "v": "217–211"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Ashley Hinson",
@@ -28898,6 +29279,11 @@
     "s": "AZ-6"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-12-03",
+    "t": "This bill redesignates the Chiricahua National Monument in Arizona as the Chiricahua National Park.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -28981,7 +29367,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28997,6 +29383,14 @@
    },
    "num": "H.R. 6387",
    "number": 6387,
+   "passed": {
+    "H": {
+     "d": "2026-04-22",
+     "how": "roll",
+     "roll": 136,
+     "v": "220–198"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Gabe Evans",
@@ -29492,6 +29886,11 @@
     "s": "MO-8"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-09-02",
+    "t": "This act provides continuing FY2027 appropriations for federal agencies through December 11, 2026, and extends various expiring programs and authorities.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -30591,6 +30990,11 @@
     "s": "WI-1"
    },
    "status": "killed",
+   "sum": {
+    "d": "2026-02-03",
+    "t": "This bill generally prohibits Members of Congress and their spouses and dependent children from purchasing stocks and requires public notice before these individuals may sell stocks. Specifically, Members of Congress and the spouses and dependent children of Members of Congress may not purchase covered investments.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -30727,6 +31131,11 @@
     "s": "TX-11"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-01-12",
+    "t": "This bill provides for wireless emergency alerts to be transmitted to mobile devices via satellite. (Currently, wireless emergency alerts are sent via terrestrial mobile networks to individual devices in geographically targeted areas.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -31435,6 +31844,11 @@
     "s": "MT-2"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-01-27",
+    "t": "This bill reauthorizes through FY2028 the planning, design, and construction of the Assiniboine and Sioux Rural Water System and the Dry Prairie Rural Water System, both located in Montana.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -32090,7 +32504,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-13T22:46:27+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32121,6 +32535,11 @@
     "s": "VA-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-05-20",
+    "t": "This bill extends through FY2036 three National Park Service (NPS) grant programs that preserve U.S. battlefields and requires the NPS to study additional sites for potential preservation.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -32448,6 +32867,11 @@
     "s": "VA-6"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-02-26",
+    "t": "This bill restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -32802,6 +33226,11 @@
     "s": "UT-3"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-20",
+    "t": "This act extends through FY2037 the Bureau of Land Management’s (BLM’s) authority to collect oil and gas permit processing fees. For each new permit application, BLM collects a fee that is transferred to the BLM Permit Processing Improvement Fund.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33436,6 +33865,11 @@
     "s": "IL-5"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-11-03",
+    "t": "This act reauthorizes through FY2031 and revises programs that support research and development of drugs and other therapies to address amyotrophic lateral sclerosis (also known as ALS or Lou Gehrig's disease) and other neurodegenerative diseases.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33612,6 +34046,11 @@
     "s": "IN-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-06-24",
+    "t": "This bill requires specified federal financial agencies to assess their technological capabilities and procurement practices.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33990,6 +34429,11 @@
     "s": "KS-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-05-04",
+    "t": "This bill authorizes a new type of entity—peace officer standards and training agencies—to access criminal history record information maintained by the Federal Bureau of Investigation.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -34213,6 +34657,11 @@
     "s": "AZ-2"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-01-31",
+    "t": "This bill directs the Forest Service to convey specified property to Gila County, Arizona, upon the county's submission of a written request for such conveyance.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -34793,6 +35242,11 @@
     "s": "TX-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-28",
+    "t": "This bill requires the Department of Veterans Affairs (VA) to increase the amounts payable for wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35314,6 +35768,11 @@
     "s": "AL-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-06-15",
+    "t": "This bill sets forth policies and authorities for FY2027 for Department of Defense (DOD) programs, activities, and military construction as well as the national security programs of the Department of Energy (DOE).",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36074,6 +36533,11 @@
     "s": "IL-12"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-06-10",
+    "t": "This bill addresses veterans’ benefits, health care, counseling, Department of Veterans Affairs (VA) personnel, VA infrastructure, and the Veterans Community Care Program (VCCP).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36248,6 +36712,11 @@
     "s": "CO-8"
    },
    "status": "killed",
+   "sum": {
+    "d": "2026-09-10",
+    "t": "The bill requires state utility regulators and nonregulated utilities to consider implementing a standard to hold certain large-load customers responsible for the costs associated with any generation, transmission, or distribution upgrade of electric service necessary to serve such customers.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36355,6 +36824,11 @@
     "s": "NY-17"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-08-27",
+    "t": "This bill extends the deadline from 2028 to 2035 for the National Marine Fisheries Service to issue new regulations that protect the endangered Atlantic large whale from certain lobster and crab fishing gear.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36452,6 +36926,11 @@
     "s": "MO-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-09-03",
+    "t": "This bill authorizes and modifies certain water resource infrastructure projects and programs of the U.S. Army Corps of Engineers and makes related requirements.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36541,6 +37020,11 @@
     "s": "OH-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-06-29",
+    "t": "This bill expands the federal tax deduction for personal casualty and theft losses by eliminating certain limits, including the requirement that such losses arise from certain disasters. The bill also extends the tax refund deadline and modifies certain retirement plan rules related to certain fraud losses.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36640,6 +37124,11 @@
     "s": "CA-7"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-04",
+    "t": "This bill directs the Bureau of Land Management (BLM) to offer to sell the reversionary interest of the United States in approximately 8.43 acres of land in Sacramento, California, as generally depicted on a specified map dated November 7, 2022.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36747,6 +37236,11 @@
     "s": "MN-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-07-02",
+    "t": "This bill provides statutory authority for the National Fraud Enforcement Division within the Department of Justice (DOJ). The division investigates and prosecutes fraud against taxpayer dollars and taxpayer-funded programs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36833,6 +37327,11 @@
     "s": "SC-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-07-09",
+    "t": "The following analysis is based on draft bill text that was made available by the House of Representatives and may differ from the bill text as introduced.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -37621,6 +38120,11 @@
     "s": "IA-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-05",
+    "t": "This bill authorizes the National Taxpayer Advocate to appoint legal counsel within the Taxpayer Advocate Service (TAS) to report directly to the National Taxpayer Advocate.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -39232,6 +39736,11 @@
     "s": "TN"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-01-22",
+    "t": "This bill directs the National Travel and Tourism Office (NTTO) of the Department of Commerce to promote tourism to music-related and sports attractions.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -40428,6 +40937,11 @@
     "s": "ME"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-09-30",
+    "t": "This act reauthorizes through FY2030 activities of the Centers for Disease Control and Prevention to address vector-borne diseases (e.g., diseases spread by bites from ticks or mosquitoes).",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -40558,6 +41072,11 @@
     "s": "MT"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-01-24",
+    "t": "This bill revises the water rights settlement agreement entered into by the Crow Tribe of Montana and Montana. The Crow Tribe Water Rights Settlement Act of 2010 ratified, authorized, and confirmed the water rights compact between the tribe and Montana.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -40691,6 +41210,11 @@
     "s": "KS"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-15",
+    "t": "This act allows the fiduciary of an Employee Stock Ownership Plan (ESOP) to rely on a valuation provided by an independent valuation expert or business appraiser in determining the fair market value of the plan's assets if the assets are not securities for which there is a generally recognized market and the expert or…",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -41415,6 +41939,11 @@
     "s": "TX"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-15",
+    "t": "This act directs the National Oceanic and Atmospheric Administration (NOAA) and the National Institute of Standards and Technology (NIST) to jointly develop a standard methodology for identifying the country of origin of seafood to support enforcement against illegal, unreported, and unregulated fishing (IUU fishing)…",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -42027,6 +42556,11 @@
     "s": "TN"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-09-16",
+    "t": "This act establishes requirements for the Department of Justice (DOJ) and component agencies to assess and respond to incidents of sexual harassment and sexual assault by incarcerated individuals against Bureau of Prisons (BOP) staff.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -42155,6 +42689,11 @@
     "s": "TX"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-09-16",
+    "t": "This act adds College Station to the list of places where court must be held in the Galveston Division of the Southern District of Texas. Additionally, the act adds El Centro to the list of places where court must be held in the Southern District of California.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -42433,7 +42972,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -42524,7 +43063,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:09:09+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -43797,6 +44336,11 @@
     "s": "TX"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-06-24",
+    "t": "This bill establishes requirements for name, image, or likeness (NIL) agreements for college student athletes and provides a limited antitrust exemption for schools and conferences to pool and sell certain college sports media rights.",
+    "v": "Reported to Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44175,6 +44719,11 @@
     "s": "OH"
    },
    "status": "killed",
+   "sum": {
+    "d": "2026-08-05",
+    "t": "This bill establishes certain photo identification requirements for voting in federal elections. Specifically, the bill prohibits a state or local election official from providing a ballot for a federal election to an individual who does not present valid physical photo identification.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44275,6 +44824,11 @@
     "s": "OK"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-12",
+    "t": "This bill confers jurisdiction to the U.S. Court of Federal Claims for the Miami Tribe of Oklahoma's land claim arising under the Treaty of Grouseland.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44518,6 +45072,11 @@
     "s": "VA"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-20",
+    "t": "The bill designates the George C. Marshall International Center as the management entity for the affiliated area.",
+    "v": "Passed Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -45032,6 +45591,11 @@
     "s": "TX"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-09-25",
+    "t": "This act directs the National Oceanic and Atmospheric Administration (NOAA) to standardize and publish geospatial data related to public recreational use of federal waterways (e.g., boating and fishing).",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -45165,6 +45729,11 @@
     "s": "IA"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-10-07",
+    "t": "This act requires the Office of Management and Budget (OMB) to collect information from federal agencies and report to Congress regarding projects that are behind schedule or have expenditures that have exceeded the original cost estimate.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -45295,6 +45864,11 @@
     "s": "WY"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-02-27",
+    "t": "This bill renames the National Historic Trails Interpretive Center located in Casper, Wyoming, as the Barbara L. Cubin National Historic Trails Interpretive Center.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -45435,6 +46009,11 @@
     "s": "WV"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-03-05",
+    "t": "This bill requires the authorized monument honoring Medal of Honor recipients to be located within the Reserve (the great cross-axis of the National Mall, which generally extends from the Capitol to the Lincoln Memorial and from the White House to the Jefferson Memorial).",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -47366,6 +47945,11 @@
     "s": "NY"
    },
    "status": "killed",
+   "sum": {
+    "d": "2026-04-13",
+    "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -50491,17 +51075,9 @@
    "u": "https://docs.house.gov/floor/Default.aspx?date=2026-11-16",
    "week": "2026-11-16"
   },
-  "senate": [
-   {
-    "expected": "2026-11-16",
-    "filed": "2026-11-11",
-    "id": "119-hr2347",
-    "num": "H.R. 2347",
-    "on": "the bill"
-   }
-  ]
+  "senate": []
  },
- "generatedAt": "2026-11-17T04:31:22+00:00",
+ "generatedAt": "2026-11-17T06:09:09+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
