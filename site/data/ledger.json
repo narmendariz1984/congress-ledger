@@ -13630,7 +13630,7 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/2316"
   },
   {
-   "area": "Taxation",
+   "area": "Other",
    "auto": true,
    "congress": 119,
    "cosponsors": {
@@ -13638,8 +13638,9 @@
     "i": 0,
     "r": 1,
     "st": [
-     "NY",
-     "WI"
+     "NM",
+     "RI",
+     "UT"
     ],
     "t": 3
    },
@@ -13651,61 +13652,60 @@
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
     },
     "veh": {
-     "src": "Senate Daily Press",
-     "t": "vehicle for S. 5653 since Nov 9, 2026",
-     "u": "https://www.dailypress.senate.gov/monday-november-9-2026/"
+     "src": "Senate Periodical Press Gallery",
+     "t": "vehicle for S. 5653 since Sep 30, 2026",
+     "u": "https://www.periodicalpress.senate.gov/wednesday-september-30-2026/"
     }
    },
    "id": "119-hr2347",
-   "introduced": "2025-03-25",
+   "introduced": "2026-09-30",
    "latest": {
     "actionDate": "2026-11-11",
     "text": "Cloture motion on the measure presented in Senate. (CR S5568)"
    },
    "num": "H.R. 2347",
    "number": 2347,
-   "passed": {
-    "H": {
-     "d": "2026-04-27",
-     "how": "voice"
-    }
-   },
-   "reached": 3,
+   "reached": 2,
    "sponsor": {
-    "n": "Lloyd Smucker",
+    "n": "Shelley Moore Capito",
     "p": "R",
-    "s": "PA-11"
+    "s": "WV"
    },
-   "status": "passed1",
-   "sum": {
-    "d": "2026-04-09",
-    "t": "This bill excludes from gross income certain damages received by an individual due to any sexual act or sexual contact and establishes the applicable burden of proof in court proceedings regarding the characterization of such damages for federal tax purposes.",
-    "v": "Reported to House"
-   },
+   "status": "moving",
    "timeline": [
     {
-     "ch": "H",
+     "ch": "—",
      "d": "2026-04-09",
      "e": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-599.",
      "fn": "cg",
+     "pre": 1,
      "v": "119–599"
     },
     {
      "ch": "H",
      "d": "2026-04-27",
-     "e": "Motion to reconsider laid on the table Agreed to without objection.",
-     "fn": "cg"
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3110)",
+     "fn": "cg",
+     "pre": 1
     },
     {
-     "ch": "H",
+     "ch": "—",
      "d": "2026-04-27",
      "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3110)",
-     "fn": "cg"
+     "fn": "cg",
+     "pre": 1
     },
     {
-     "ch": "H",
+     "ch": "—",
      "d": "2026-04-27",
-     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3110)",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg",
+     "pre": 1
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-30",
+     "e": "Motion to proceed to consideration of measure made in Senate. (CR S5241)",
      "fn": "cg"
     },
     {
@@ -13716,8 +13716,8 @@
     },
     {
      "ch": "S",
-     "d": "2026-09-30",
-     "e": "Motion to proceed to consideration of measure made in Senate. (CR S5241)",
+     "d": "2026-11-09",
+     "e": "Motion to proceed to measure considered in Senate. (CR S5337)",
      "fn": "cg"
     },
     {
@@ -13726,12 +13726,6 @@
      "e": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 73 - 25. Record Vote Number: 257. (CR S5343-5344)",
      "fn": "cg",
      "v": "73–25"
-    },
-    {
-     "ch": "S",
-     "d": "2026-11-09",
-     "e": "Motion to proceed to measure considered in Senate. (CR S5337)",
-     "fn": "cg"
     },
     {
      "ch": "S",
@@ -13747,7 +13741,7 @@
      "fn": "cg"
     }
    ],
-   "title": "Survivor Justice Tax Prevention Act",
+   "title": "Bipartisan American Affordability and Jobs Act of 2026",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347",
    "vehicle": {
@@ -13755,7 +13749,32 @@
     "fn": "veh",
     "label": "Bipartisan American Affordability and Jobs Act",
     "num": "S. 5653",
-    "since": "2026-11-09"
+    "orig": {
+     "area": "Taxation",
+     "cosponsors": {
+      "d": 2,
+      "i": 0,
+      "r": 1,
+      "t": 3
+     },
+     "introduced": "2025-03-25",
+     "num": "H.R. 2347",
+     "passed": {
+      "H": {
+       "d": "2026-04-27",
+       "how": "voice"
+      }
+     },
+     "sponsor": {
+      "n": "Lloyd Smucker",
+      "p": "R",
+      "s": "PA-11"
+     },
+     "title": "Survivor Justice Tax Prevention Act",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
+    },
+    "since": "2026-09-30",
+    "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5653"
    }
   },
   {
