@@ -746,11 +746,12 @@ class RollCallAheadOfCongressGov(unittest.TestCase):
     def run_main(self, latest_date):
         import datetime as dt, shutil, tempfile
         d = Path(tempfile.mkdtemp())
-        old = (F.OUT, F.TRACKED, F.ROOT, F.list_updated, F.fetch_bill, F.rollcall_bills, F.senate_with_backoff, F.house_with_fallback, F.house_floor)
+        old = (F.OUT, F.TRACKED, F.ROOT, F.SUMMARIES, F.COSPONSORS, F.list_updated, F.fetch_bill, F.rollcall_bills, F.senate_with_backoff, F.house_with_fallback, F.house_floor)
         try:
             (d / "ledger.json").write_text(json.dumps({"bills": [], "votes": {"house": [{"n": 323, "d": "2026-11-12", "measure": "HR 2102"}], "senate": []}, "meta": {}}))
             (d / "tracked.json").write_text(json.dumps({"bills": [], "lastDiscovery": "2026-11-12T00:00:00+00:00"}))
-            F.OUT, F.TRACKED, F.ROOT = d / "ledger.json", d / "tracked.json", d
+            # every file main() writes goes to the temp folder, never the real site
+            F.OUT, F.TRACKED, F.ROOT, F.SUMMARIES, F.COSPONSORS = d / "ledger.json", d / "tracked.json", d, d / "summaries.json", d / "cosponsors.json"
             F.list_updated = lambda *a, **k: []
             F.rollcall_bills = lambda c: set()
             F.fetch_bill = lambda c, t, n: {"num": "H.R. 2102", "title": "x", "strong": False, "latest": {"actionDate": latest_date}, "timeline": []}
@@ -762,7 +763,7 @@ class RollCallAheadOfCongressGov(unittest.TestCase):
             return json.loads(F.TRACKED.read_text())
         finally:
             os.environ.pop("MODE", None)
-            F.OUT, F.TRACKED, F.ROOT, F.list_updated, F.fetch_bill, F.rollcall_bills, F.senate_with_backoff, F.house_with_fallback, F.house_floor = old
+            F.OUT, F.TRACKED, F.ROOT, F.SUMMARIES, F.COSPONSORS, F.list_updated, F.fetch_bill, F.rollcall_bills, F.senate_with_backoff, F.house_with_fallback, F.house_floor = old
             shutil.rmtree(d, ignore_errors=True)
 
     def test_not_posted_yet_means_look_again(self):
@@ -983,3 +984,13 @@ class CosponsorNames(unittest.TestCase):
         p.write_text("{not json")
         self.assertTrue(F.split_cosponsors([{"id": "a", "cosnames": [["N", "I", "VT", 0]]}], p))
         self.assertEqual(json.loads(p.read_text()), {"a": [["N", "I", "VT", 0]]})
+
+
+class TestsNeverTouchRealData(unittest.TestCase):
+    """Every file the refresh writes must be one a test can point elsewhere, so a test run can't overwrite the site."""
+
+    def test_writers_are_module_paths(self):
+        src = (Path(F.__file__)).read_text(encoding="utf-8")
+        import re
+        targets = set(re.findall(r"^\s*([A-Z_]+)\.write_text\(", src, re.M))
+        self.assertEqual(targets, {"SUMMARIES", "OUT", "TRACKED"})  # split_cosponsors writes the path it's given (COSPONSORS)
