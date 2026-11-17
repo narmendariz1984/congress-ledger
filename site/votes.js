@@ -248,7 +248,24 @@
   }
 
   // Introduced ▸ House ▸ Senate ▸ President ▸ Law, in the bill's own order; each step done, now, todo or no
+  // A vehicle: a bill number one chamber already passed with its old text, reused to carry new text.
+  // The new text has to pass the other chamber, then go back to the first one.
+  function vehicleRoute(b) {
+    const v = b && b.vehicle, op = (v && v.orig && v.orig.passed) || {};
+    const first = op.H ? "H" : op.S ? "S" : "";
+    if (!first) return null;
+    const p = b.passed || {}, since = v.since || "", other = first === "H" ? "S" : "H";
+    const after = c => p[c] && (!p[c].d || p[c].d >= since);
+    return { first, other, when: (op[first] && op[first].d) || "", otherDone: !!after(other), backDone: !!after(first) };
+  }
+
   function track(b) {
+    const vr = vehicleRoute(b);
+    if (vr && b.status !== "law" && b.status !== "vetoed" && b.status !== "killed") {
+      const steps = [["Introduced", true], [CH[vr.other], vr.otherDone], [`${CH[vr.first]} again`, vr.backDone], ["President", false], ["Law", false]];
+      let now = false;
+      return steps.map(([k, done]) => done ? { k, s: "done" } : !now ? (now = true, { k, s: "now" }) : { k, s: "todo" });
+    }
     const origin = /^S/i.test(String(b.num || "").replace(/[^A-Za-z]/g, "")) ? "S" : "H";
     const p = b.passed || {}, o = b.outcome || {}, law = b.status === "law", veto = b.status === "vetoed";
     const steps = [["Introduced", true], [CH[origin], !!p[origin]], [CH[origin === "H" ? "S" : "H"], !!p[origin === "H" ? "S" : "H"]],
@@ -270,6 +287,13 @@
       : /over a veto/i.test(o.where || "") ? `Yes. Congress overrode the veto${when ? ` on ${when}` : ""}.` : `Yes. Signed${when ? ` ${when}` : ""} by ${who}.`;
     if (b.status === "vetoed") return `No. Vetoed${when ? ` ${when}` : ""} by ${who}.`;
     if (b.status === "killed") return "No. It failed on the floor.";
+    const vr = vehicleRoute(b);
+    if (vr) {
+      const mo = vr.when ? new Date(vr.when + "T12:00:00").toLocaleDateString("en-US", { month: "long", year: "numeric" }) : "";
+      if (vr.otherDone && vr.backDone) return "Not yet. Both chambers passed the new text; the President is next.";
+      if (vr.otherDone) return `Not yet. The ${CH[vr.other]} passed the new text; it goes back to the ${CH[vr.first]} next.`;
+      return `Not yet. The ${CH[vr.first]} passed this bill number with its old text${mo ? ` in ${mo}` : ""}. If the ${CH[vr.other]} passes the new text, it goes back to the ${CH[vr.first]}.`;
+    }
     const origin = /^S/i.test(String(b.num || "").replace(/[^A-Za-z]/g, "")) ? "S" : "H", other = origin === "H" ? "S" : "H";
     if (p[origin] && p[other]) return "Not yet. Both chambers passed it; the President is next.";
     if (p[origin]) return `Not yet. It passed the ${CH[origin]}; the ${CH[other]} is next.`;

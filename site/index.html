@@ -849,7 +849,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 <button type="button" class="totop" id="totop" hidden>Back to top</button>
 
 <script src="names.js?v=76c87de1"></script>
-<script src="votes.js?v=a56c8733"></script>
+<script src="votes.js?v=c482c8b5"></script>
 <script>
 (function(){
 const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
@@ -1548,7 +1548,7 @@ function tdCard(x,day){
   const sum=b.sum&&b.sum.t&&!(veh&&veh.since&&(b.sum.d||"")<veh.since)?b.sum:null;
   return`<article class="td-card" style="--c:var(${c})">
     <div class="td-kick">${esc(RC.moveText(m))}${rest.length?`<small>Also: ${esc(rest.map(RC.moveText).join(" · "))}</small>`:""}</div>
-    <h3>${billLink(b)}</h3>${veh?`<p class="td-veh">This bill number now carries the ${esc(veh.label)}.</p>`:""}
+    <h3>${billLink(b)}</h3>${veh?`<p class="td-veh">Moving under ${esc((veh.orig&&veh.orig.num)||b.num)}, a bill number reused to carry the text of ${esc(veh.num||veh.label)}.</p>`:""}
     <ol class="td-track" aria-label="Where it stands">${RC.track(b).map(s=>`<li class="${s.s}">${TD_S[s.k]?`<span class="tl-l">${esc(s.k)}</span><span class="tl-s">${TD_S[s.k]}</span>`:esc(s.k)}</li>`).join("")}</ol>
     <dl>
       <dt>What it does</dt><dd>${sum?`${esc(sum.t)}<span class="src">Congressional Research Service summary${sum.v?` (${esc(sum.v)})`:""}</span>`:`<span class="src">${veh?"No summary of the new text yet.":"The Congressional Research Service hasn't posted a summary yet."}</span>`}</dd>

@@ -257,3 +257,17 @@ test("today: works on the real ledger, when present", () => {
       assert.match(RC.lawLine(x.b), /^(Yes|No|Not yet)\. /);
     }
 });
+
+test("today: a vehicle bill's route and law line follow the new text", () => {
+  const veh = { num: "H.R. 2347", status: "moving", passed: null,
+    vehicle: { num: "S. 5653", since: "2026-09-30", orig: { num: "H.R. 2347", passed: { H: { d: "2026-04-27", how: "voice" } } } } };
+  assert.equal(RC.lawLine(veh), "Not yet. The House passed this bill number with its old text in April 2026. If the Senate passes the new text, it goes back to the House.");
+  assert.deepEqual(RC.track(veh).map(s => `${s.k}:${s.s}`), ["Introduced:done", "Senate:now", "House again:todo", "President:todo", "Law:todo"]);
+  const senatePassed = { ...veh, passed: { S: { d: "2026-11-20" } } };
+  assert.equal(RC.lawLine(senatePassed), "Not yet. The Senate passed the new text; it goes back to the House next.");
+  assert.deepEqual(RC.track(senatePassed).map(s => s.s), ["done", "done", "now", "todo", "todo"]);
+  // the old House passage doesn't count as passing the new text
+  assert.equal(RC.track({ ...veh, passed: { H: { d: "2026-04-27" } } })[2].s, "todo");
+  // a vehicle with no recorded old passage reads like any other bill
+  assert.equal(RC.lawLine({ num: "H.R. 1", vehicle: { num: "S. 1" } }), "Not yet. It hasn't passed either chamber.");
+});
