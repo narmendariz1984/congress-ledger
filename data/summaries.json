@@ -5,6 +5,12 @@
   "t": "This joint resolution proposes a constitutional amendment requiring the Supreme Court to be composed of nine Justices—one Chief Justice and eight Associate Justices.",
   "v": "Introduced in House"
  },
+ "119-hjres104": {
+  "checked": "2026-11-17",
+  "d": "2025-12-11",
+  "t": "This joint resolution opens certain land administered by the Bureau of Land Management (BLM) in eastern Montana to coal leasing.",
+  "v": "Public Law"
+ },
  "119-hjres139": {
   "checked": "2026-11-17",
   "d": "2026-02-25",
@@ -86,6 +92,12 @@
   "t": "This bill directs the Department of the Interior to remove all deed restrictions from approximately 3.62 acres located at 2956 Park Avenue, on the Paducah Memorial Army Reserve Center in Paducah, Kentucky.",
   "v": "Introduced in House"
  },
+ "119-hr131": {
+  "checked": "2026-11-17",
+  "d": "2025-01-03",
+  "t": "This bill reduces payments that communities within the Arkansas River Valley must pay to the Bureau of Reclamation for the construction of the Arkansas Valley Conduit, a pipeline in Colorado for delivering water from the Pueblo Reservoir to such communities.",
+  "v": "Introduced in House"
+ },
  "119-hr1329": {
   "checked": "2026-11-17",
   "d": "2026-04-23",
@@ -110,6 +122,12 @@
   "t": "This bill makes daylight saving time the new, permanent standard time. States with areas exempt from daylight saving time may choose the standard time for those areas.",
   "v": "Introduced in House"
  },
+ "119-hr1491": {
+  "checked": "2026-11-17",
+  "d": "2025-12-26",
+  "t": "This act requires the Internal Revenue Service (IRS) to treat the postponement of the federal tax return deadline due to a federally declared disaster or certain other events as an extension of such deadline for purposes of calculating the limit on a tax refund.",
+  "v": "Public Law"
+ },
  "119-hr1501": {
   "checked": "2026-11-17",
   "d": "2025-02-21",
@@ -127,6 +145,12 @@
   "d": "2025-02-25",
   "t": "This bill renames the Saratoga National Historical Park, located in Stillwater, New York, as Saratoga National Battlefield Park.",
   "v": "Introduced in House"
+ },
+ "119-hr165": {
+  "checked": "2026-11-17",
+  "d": "2025-12-19",
+  "t": "This act directs the Department of the Interior to complete all actions necessary to place approximately 40 acres of land in Oglala Lakota County, South Dakota, into restricted fee status for the Oglala Sioux Tribe and the Cheyenne River Sioux Tribe.",
+  "v": "Public Law"
  },
  "119-hr1681": {
   "checked": "2026-11-17",
@@ -166,6 +190,18 @@
  },
  "119-hr1834": {
   "checked": "2026-11-17"
+ },
+ "119-hr187": {
+  "checked": "2026-11-17",
+  "d": "2025-12-26",
+  "t": "This act directs the Forest Service and the Department of the Interior to standardize and publish data relating to the public's access to federal waterways for recreational use.",
+  "v": "Public Law"
+ },
+ "119-hr1912": {
+  "checked": "2026-11-17",
+  "d": "2025-12-12",
+  "t": "This act modifies the procedures by which the Department of Veterans Affairs (VA) reissues misused benefits to a beneficiary, including by requiring the VA to establish methods and timing with respect to determining whether an instance of misuse by a fiduciary is the result of negligence by the VA.",
+  "v": "Public Law"
  },
  "119-hr1945": {
   "checked": "2026-11-16",
@@ -251,6 +287,12 @@
   "t": "This bill excludes the value of employer-funded child or dependent care from being used in calculating an eligible employee's overtime pay. Under current law, overtime hours must be paid at one and a half times an employee's regular rate of pay.",
   "v": "Reported to House"
  },
+ "119-hr2312": {
+  "checked": "2026-11-17",
+  "d": "2025-12-30",
+  "t": "This bill modifies the definition of a tipped employee under the Fair Labor Standards Act of 1938 (FLSA) to exclude consideration of an employee's duties when determining if the employee is a tipped employee.",
+  "v": "Reported to House"
+ },
  "119-hr2347": {
   "checked": "2026-11-16",
   "d": "2026-04-09",
@@ -287,6 +329,12 @@
   "t": "This bill reauthorizes through FY2030 grant programs administered by the Health Resources and Services Administration (HRSA) that provide funding to health care service providers and related entities in rural areas.",
   "v": "Introduced in House"
  },
+ "119-hr2550": {
+  "checked": "2026-11-17",
+  "d": "2025-04-01",
+  "t": "This bill nullifies the Executive Order titled Exclusions from Federal Labor-Management Relations Programs (issued on March 27, 2025), which excludes specified executive agencies and subdivisions from the Federal Service Labor-Management Relations Statute.",
+  "v": "Introduced in House"
+ },
  "119-hr261": {
   "checked": "2026-11-17",
   "d": "2025-01-09",
@@ -297,6 +345,12 @@
   "checked": "2026-11-17",
   "d": "2025-04-03",
   "t": "This bill requires public elementary and middle schools, as a condition of receiving certain federal funds for elementary and secondary education, to obtain parental consent before changing a student's gender on school forms or changing a student's sex-based accommodations.",
+  "v": "Introduced in House"
+ },
+ "119-hr2683": {
+  "checked": "2026-11-17",
+  "d": "2025-04-07",
+  "t": "This bill broadens the scope of the U.S. export control system to include remote access of items.",
   "v": "Introduced in House"
  },
  "119-hr2815": {
@@ -347,6 +401,12 @@
   "t": "This bill establishes procedures for the Department of Veterans Affairs (VA) to issue a pension that was due but unpaid at the time of a veteran’s death.",
   "v": "Introduced in House"
  },
+ "119-hr3187": {
+  "checked": "2026-11-17",
+  "d": "2025-09-15",
+  "t": "This bill directs the Forest Service to convey approximately one acre of land to Perry County, Arkansas, upon the request of the county. The county must use the land for public purposes, such as supporting education and youth development.",
+  "v": "Reported to House"
+ },
  "119-hr3234": {
   "checked": "2026-11-17",
   "d": "2025-05-07",
@@ -359,10 +419,22 @@
   "t": "This bill provides statutory authority for the Urban Bird Treaty Program, which is administered by the U.S. Fish and Wildlife Service.",
   "v": "Reported to House"
  },
+ "119-hr3383": {
+  "checked": "2026-11-17",
+  "d": "2025-06-25",
+  "t": "This bill allows a closed-end fund—a portfolio of pooled assets with a limited number of shares traded on an exchange—to increase its investment in private investment funds.",
+  "v": "Reported to House"
+ },
  "119-hr3490": {
   "checked": "2026-11-17",
   "d": "2025-05-19",
   "t": "This bill requires the Government Accountability Office to report to Congress on (1) the impact of esophageal cancer-related health care spending under the Federal Employees Health Benefits Program (FEHBP) for federal employees and retirees diagnosed with esophageal cancer, and (2) how often FEHBP participants with a…",
+  "v": "Introduced in House"
+ },
+ "119-hr3492": {
+  "checked": "2026-11-17",
+  "d": "2025-05-19",
+  "t": "This bill establishes federal criminal offenses for providing gender-affirming care to minors. The bill also changes the existing federal criminal offense that prohibits female genital mutilation (FGM) and related conduct.",
   "v": "Introduced in House"
  },
  "119-hr3497": {
@@ -370,6 +442,12 @@
   "d": "2026-05-28",
   "t": "This act directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty. The act also directs the President to establish a commission on the medal of sacrifice and appoint its members.",
   "v": "Public Law"
+ },
+ "119-hr3616": {
+  "checked": "2026-11-17",
+  "d": "2025-09-17",
+  "t": "This bill directs the electric reliability organization (i.e., the North American Electric Reliability Corporation) to conduct annual long-term assessments of the reliability of electric power in the bulk-power system.",
+  "v": "Reported to House"
  },
  "119-hr3617": {
   "checked": "2026-11-17",
@@ -383,16 +461,46 @@
   "t": "This bill directs the Department of Health and Human Services (HHS) to convey approximately 3.4 acres in Anchorage, Alaska, to the Southcentral Foundation (SCF) for use in connection with health and social services programs. The conveyance must be made by warranty deed.",
   "v": "Reported to House"
  },
+ "119-hr3628": {
+  "checked": "2026-11-17",
+  "d": "2025-09-19",
+  "t": "This bill requires certain state authorities that regulate electric utilities to consider the establishment of measures regarding the reliable availability of electricity over specified time periods.",
+  "v": "Reported to House"
+ },
+ "119-hr3632": {
+  "checked": "2026-11-17",
+  "d": "2025-09-23",
+  "t": "This bill modifies the process that the Federal Energy Regulatory Commission (FERC) uses to determine, upon a complaint from a state commission, whether a public utility (i.e., power plant) must remain open because the retirement of the power plant will make the bulk power system unreliable, including by allowing…",
+  "v": "Reported to House"
+ },
  "119-hr3633": {
   "checked": "2026-11-17",
   "d": "2025-05-29",
   "t": "This bill establishes a regulatory framework for digital commodities, defined by the bill as digital assets that rely upon a blockchain for their value. The Commodity Futures Trading Commission must generally regulate digital commodities transactions, including digital commodity exchanges, brokers, and dealers.",
   "v": "Introduced in House"
  },
+ "119-hr3638": {
+  "checked": "2026-11-17",
+  "d": "2025-09-19",
+  "t": "This bill requires the Department of Energy (DOE) to periodically assess the supply chain that supports the generation and transmission of electricity and report on the assessment to the appropriate congressional committees.",
+  "v": "Reported to House"
+ },
  "119-hr3657": {
   "checked": "2026-11-17",
   "d": "2025-05-29",
   "t": "This bill directs the Federal Energy Regulatory Commission to report annually to Congress on the status of the relicensing process for each application for a renewed hydropower dam license.",
+  "v": "Introduced in House"
+ },
+ "119-hr3668": {
+  "checked": "2026-11-17",
+  "d": "2025-09-15",
+  "t": "This bill expedites the environmental review of certain natural gas pipeline projects or liquefied natural gas (LNG) import or export terminals for authorizations under the Natural Gas Act.",
+  "v": "Reported to House"
+ },
+ "119-hr3898": {
+  "checked": "2026-11-17",
+  "d": "2025-06-11",
+  "t": "This bill limits the scope of the Clean Water Act by redefining navigable waters to exclude (1) waste treatment systems, (2) ephemeral features that flow only in direct response to precipitation, (3) prior converted cropland, (4) groundwater, or (5) any other features determined to be excluded by the U.S.",
   "v": "Introduced in House"
  },
  "119-hr3937": {
@@ -412,6 +520,12 @@
   "d": "2025-11-25",
   "t": "This bill directs the Department of the Interior to address mineral supply chain vulnerabilities, including by accelerating and expanding mineral production on federal land (i.e., National Forest System land, public lands, and any land that may be leased for the exploration, development, or production of hardrock…",
   "v": "Reported to House"
+ },
+ "119-hr410": {
+  "checked": "2026-11-17",
+  "d": "2025-12-26",
+  "t": "This act extends for an additional five years the time period during which an eligible Alaska Native veteran may apply for a land allotment under the Alaska Native Vietnam Era Veterans Land Allotment Program.",
+  "v": "Public Law"
  },
  "119-hr4219": {
   "checked": "2026-11-17",
@@ -440,6 +554,12 @@
   "t": "This act establishes a process to vacate convictions and expunge arrest records for certain criminal offenses committed by victims of human trafficking that directly result from or relate to having been a trafficking victim.",
   "v": "Public Law"
  },
+ "119-hr4371": {
+  "checked": "2026-11-17",
+  "d": "2025-07-14",
+  "t": "This bill requires the Department of Health and Human Services (HHS) to consider additional information when it makes placement determinations for unaccompanied alien children in its custody.",
+  "v": "Introduced in House"
+ },
  "119-hr4446": {
   "checked": "2026-11-17",
   "d": "2026-01-20",
@@ -451,6 +571,12 @@
   "d": "2026-01-14",
   "t": "This bill directs the Department of the Interior to convey approximately 7 acres of specified land (in two parcels) within the Vicksburg National Military Park to Mississippi for an interpretive center.",
   "v": "Reported to House"
+ },
+ "119-hr452": {
+  "checked": "2026-11-17",
+  "d": "2025-12-12",
+  "t": "This act provides for the award of Congressional Gold Medals to the members of the 1980 U.S. Olympic men's ice hockey team in recognition of the team's achievement at the 1980 Winter Olympic Games.",
+  "v": "Public Law"
  },
  "119-hr4541": {
   "checked": "2026-11-17",
@@ -500,6 +626,12 @@
   "t": "This bill repeals the Department of Energy's (1) high-efficiency electric home rebate program for certain electrification projects in low- or moderate-income households, (2) state-based home energy efficiency contractor training grants, and (3) assistance for states and local governments to adopt specified building…",
   "v": "Reported to House"
  },
+ "119-hr4776": {
+  "checked": "2026-11-17",
+  "d": "2025-12-04",
+  "t": "This bill limits the scope of the National Environmental Policy Act of 1969 (NEPA) and modifies the environmental review of major federal actions under NEPA to generally limit the number of federal actions that trigger NEPA review and to expedite the review process.",
+  "v": "Reported to House"
+ },
  "119-hr4795": {
   "checked": "2026-11-17",
   "d": "2026-08-27",
@@ -518,11 +650,29 @@
   "t": "This bill expands the authority of U.S. Customs and Border Protection (CBP) to provide information to certain persons (e.g., trademark or copyright owners) regarding suspected violations of intellectual property rights in trade.",
   "v": "Reported to House"
  },
+ "119-hr498": {
+  "checked": "2026-11-17",
+  "d": "2025-01-16",
+  "t": "This bill prohibits federal Medicaid payment for specified gender transition procedures for individuals under the age of 18.",
+  "v": "Introduced in House"
+ },
+ "119-hr504": {
+  "checked": "2026-11-17",
+  "d": "2025-01-16",
+  "t": "This bill expands the Miccosukee Reserved Area to include a portion of Everglades National Park in Florida that is known as Osceola Camp. The Department of the Interior, in consultation with the Miccosukee Tribe of Indians, must take appropriate actions to protect structures within the Osceola Camp from flooding.",
+  "v": "Introduced in House"
+ },
  "119-hr5103": {
   "checked": "2026-11-17",
   "d": "2025-09-03",
   "t": "This bill establishes a commission in the executive branch to advise on certain criminal and immigration matters in the District of Columbia (DC). It also establishes a federal program to ensure that commonly visited areas in DC are cleaned and maintained.",
   "v": "Introduced in House"
+ },
+ "119-hr5184": {
+  "checked": "2026-11-17",
+  "d": "2025-12-30",
+  "t": "This bill rescinds Department of Energy (DOE) energy efficiency regulations applicable to manufactured housing and eliminates DOE’s authority to issue similar regulations.",
+  "v": "Reported to House"
  },
  "119-hr5200": {
   "checked": "2026-11-17",
@@ -680,11 +830,20 @@
   "t": "This act provides continuing FY2027 appropriations for federal agencies through December 11, 2026, and extends various expiring programs and authorities.",
   "v": "Public Law"
  },
+ "119-hr6504": {
+  "checked": "2026-11-17",
+  "d": "2025-12-30",
+  "t": "This bill extends through December 31, 2028, the special duty-free rules for various apparel products imported from Haiti, including the duty-free treatment provided for a limited amount (referred to as tariff preference levels) of certain apparel products assembled in and imported from Haiti.",
+  "v": "Reported to House"
+ },
  "119-hr6644": {
   "checked": "2026-11-17",
   "d": "2026-07-11",
   "t": "This act establishes and modifies various federal housing programs. TITLE I--OPPORTUNITIES FOR HOUSING (Sec. 101) This section requires the Department of Housing and Urban Development (HUD) to review the performance of organizations that receive grants to provide housing counseling services.",
   "v": "Public Law"
+ },
+ "119-hr6703": {
+  "checked": "2026-11-17"
  },
  "119-hr6938": {
   "checked": "2026-11-17",
@@ -875,6 +1034,12 @@
   "t": "This bill requires the Office of Management and Budget (OMB) and the Department of the Treasury to establish and maintain a mandatory antifraud and improper payment prevention training program for federal employees whose roles involve federal financial assistance or oversight of federal programs.",
   "v": "Introduced in House"
  },
+ "119-hr845": {
+  "checked": "2026-11-17",
+  "d": "2025-01-31",
+  "t": "This bill directs the Department of the Interior to remove protections for the gray wolf under the Endangered Species Act of 1973 (ESA).",
+  "v": "Introduced in House"
+ },
  "119-hr8464": {
   "checked": "2026-11-17",
   "d": "2026-06-03",
@@ -995,6 +1160,12 @@
   "t": "The following analysis is based on draft bill text that was made available by the House of Representatives and may differ from the bill text as introduced.",
   "v": "Introduced in House"
  },
+ "119-hr970": {
+  "checked": "2026-11-17",
+  "d": "2025-12-12",
+  "t": "This act requires the Department of Veterans Affairs (VA) to periodically review and report on the maximum coverage available under the Servicemembers' Group Life Insurance and Veterans' Group Life Insurance programs.",
+  "v": "Public Law"
+ },
  "119-hr972": {
   "checked": "2026-11-17",
   "d": "2026-05-19",
@@ -1013,6 +1184,12 @@
   "t": "This bill removes the requirement that educational and vocational counseling services provided by the Department of Veterans Affairs (VA) on campus at institutions of higher learning must be provided by VA counselors.",
   "v": "Introduced in House"
  },
+ "119-hr983": {
+  "checked": "2026-11-17",
+  "d": "2025-12-12",
+  "t": "This act requires that the Department of Veterans Affairs disapprove courses of education provided by educational institutions that charge higher than in-state tuition for individuals utilizing the Montgomery GI Bill-Selected Reserve education benefits while living in the state where the education is located…",
+  "v": "Public Law"
+ },
  "119-hr997": {
   "checked": "2026-11-16",
   "d": "2025-02-05",
@@ -1030,6 +1207,12 @@
   "d": "2026-05-11",
   "t": "This act authorizes the Federal Energy Regulatory Commission (FERC) to extend construction deadlines for hydropower projects that were issued a license before March 13, 2020.",
   "v": "Public Law"
+ },
+ "119-s1071": {
+  "checked": "2026-11-17",
+  "d": "2025-12-10",
+  "t": "This bill sets forth policies and authorities for FY2026 for Department of Defense (DOD) programs and activities, military construction, and the national security programs of the Department of Energy (DOE).",
+  "v": "Passed House"
  },
  "119-s1318": {
   "checked": "2026-11-17",
@@ -1061,11 +1244,23 @@
   "t": "This act provides $70 billion in funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S.",
   "v": "Public Law"
  },
+ "119-s216": {
+  "checked": "2026-11-17",
+  "d": "2025-05-20",
+  "t": "This bill reauthorizes and modifies administration of Marine Debris Program (MDP) activities and the Marine Debris Foundation.",
+  "v": "Passed Senate"
+ },
  "119-s222": {
   "checked": "2026-11-17",
   "d": "2026-01-14",
   "t": "This act revises requirements for milk provided by the National School Lunch Program of the Department of Agriculture (USDA) to allow schools to offer students whole and reduced-fat milk. The act also requires that local school food service personnel receive annual training and certification on food allergies.",
   "v": "Public Law"
+ },
+ "119-s2283": {
+  "checked": "2026-11-17",
+  "d": "2025-07-15",
+  "t": "This bill designates the facility of the United States Postal Service located at 201 West Oklahoma Avenue in Guthrie, Oklahoma, as the \"Oscar J. Upham Post Office\".",
+  "v": "Introduced in Senate"
  },
  "119-s2393": {
   "checked": "2026-11-17",
@@ -1115,6 +1310,18 @@
   "t": "This act directs the National Oceanic and Atmospheric Administration (NOAA) and the National Institute of Standards and Technology (NIST) to jointly develop a standard methodology for identifying the country of origin of seafood to support enforcement against illegal, unreported, and unregulated fishing (IUU fishing)…",
   "v": "Public Law"
  },
+ "119-s284": {
+  "checked": "2026-11-17",
+  "d": "2025-12-26",
+  "t": "This act reauthorizes through FY2028 the Congressional Award Board, the board that administers the Congressional Award Program, and modifies program medals. (The program, established by law in 1979, awards medals to youth ages 14 to 23 who satisfy standards of achievement set by the board.",
+  "v": "Public Law"
+ },
+ "119-s2878": {
+  "checked": "2026-11-17",
+  "d": "2025-12-26",
+  "t": "This act reauthorizes through FY2030 research and monitoring conducted by the U.S. Geological Survey in support of binational fisheries within the Great Lakes Basin.",
+  "v": "Public Law"
+ },
  "119-s307": {
   "checked": "2026-11-17",
   "d": "2026-09-16",
@@ -1131,6 +1338,12 @@
   "checked": "2026-11-17",
   "d": "2026-02-06",
   "t": "This act makes several changes to the administration of bankruptcy cases, particularly by increasing amounts received by certain trustees, extending the sunset date of various fees, and extending the term of specified bankruptcy judgeships.",
+  "v": "Public Law"
+ },
+ "119-s356": {
+  "checked": "2026-11-17",
+  "d": "2025-12-18",
+  "t": "This act extends and modifies the Secure Rural Schools (SRS) program, under which states and counties containing certain federal land may receive payments from the Forest Service or the Bureau of Land Management (BLM) for schools, roads, and certain other municipal services.",
   "v": "Public Law"
  },
  "119-s3627": {
@@ -1201,6 +1414,12 @@
   "d": "2026-05-20",
   "t": "The bill designates the George C. Marshall International Center as the management entity for the affiliated area.",
   "v": "Passed Senate"
+ },
+ "119-s616": {
+  "checked": "2026-11-17",
+  "d": "2025-12-12",
+  "t": "This act revises the federal charter for the Foundation of the Federal Bar Association to shift authority from the charter to the bylaws.",
+  "v": "Public Law"
  },
  "119-s629": {
   "checked": "2026-11-17",
@@ -1368,6 +1587,21 @@
   "checked": "2026-11-17",
   "d": "2025-03-10",
   "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres82": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres84": {
+  "checked": "2026-11-17",
+  "d": "2025-09-30",
+  "t": "This joint resolution nullifies the rule titled Patient Protection and Affordable Care Act; Marketplace Integrity and Affordability , which was issued by the Centers for Medicare & Medicaid Services on June 25, 2025.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres86": {
+  "checked": "2026-11-17",
+  "d": "2025-10-01",
+  "t": "This joint resolution nullifies the Environmental Protection Agency (EPA) final rule titled Air Plan Approval; South Dakota; Regional Haze Plan for the Second Implementation Period (90 Fed. Reg. 41893) and published on August 28, 2025.",
   "v": "Introduced in Senate"
  },
  "119-sjres95": {
