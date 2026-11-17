@@ -31,6 +31,12 @@ Edit `data/curated.json`. A bill needs only its key, `congress`, `type` and `num
 
 Anything else you add (`status`, `blockers`, `fns`, ...) overrides what the script fetched.
 
+## Vehicle bills
+
+When a bill's number is borrowed to carry another bill's text (H.R. 2347 carrying S. 5653, say), add an entry to `data/vehicles.json`: `bill`, `carries`, `label`, `since` (the day the swap started), a `source` that says so and optional `aka` names people search for it by. The site then shows the vehicle as the bill it carries, with the old bill's details on the card, and counts only votes on the new text.
+
+Congress.gov doesn't mark swaps. `scripts/vehicle_watch.py` reads the Senate press galleries' floor logs three times a day (`.github/workflows/vehicle-watch.yml`) and opens a `vehicle-watch` GitHub issue for each bill they call a "legislative vehicle" that the file doesn't list yet. It never edits the file or the site; close the issue if it isn't a swap.
+
 ## What to watch dates
 
 The What to watch tab and the calendar feed at `https://floorvotes.org/watch.ics` (not linked from the page for now) both come from `meta.watch` in `data/curated.json`. Each item has an `id`, a `title`, a `what`, sources in `src` and either a `date` (YYYY-MM-DD, with optional `end` and a `time` in Eastern) or a `when` such as "Early December" if no date is set yet. Undated items show on the page but stay off the calendar until they get a date.
