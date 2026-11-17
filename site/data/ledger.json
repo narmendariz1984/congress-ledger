@@ -13745,6 +13745,11 @@
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347",
    "vehicle": {
+    "aka": [
+     "BAAJA",
+     "permitting reform",
+     "permitting bill"
+    ],
     "carries": "119-s5653",
     "fn": "veh",
     "label": "Bipartisan American Affordability and Jobs Act",
