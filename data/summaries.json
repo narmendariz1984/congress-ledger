@@ -5,6 +5,18 @@
   "t": "This joint resolution proposes a constitutional amendment requiring the Supreme Court to be composed of nine Justices—one Chief Justice and eight Associate Justices.",
   "v": "Introduced in House"
  },
+ "119-hjres139": {
+  "checked": "2026-11-17",
+  "d": "2026-02-25",
+  "t": "This joint resolution proposes a constitutional amendment prohibiting total federal expenditures for a year from exceeding the average annual federal receipts collected in the three prior years, adjusted for changes in the population of U.S. citizens and inflation.",
+  "v": "Reported to House"
+ },
+ "119-hjres140": {
+  "checked": "2026-11-17",
+  "d": "2026-04-27",
+  "t": "This joint resolution opens approximately 225,504 acres of National Forest System lands in Cook, Lake, and Saint Louis Counties in Minnesota to mineral and geothermal leasing.",
+  "v": "Public Law"
+ },
  "119-hjres210": {
   "checked": "2026-11-17",
   "d": "2026-09-15",
@@ -15,6 +27,12 @@
   "checked": "2026-11-17",
   "d": "2026-08-10",
   "t": "Specifically, the joint resolution nullifies the EPA authorization decision titled California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision .",
+  "v": "Introduced in House"
+ },
+ "119-hr1011": {
+  "checked": "2026-11-17",
+  "d": "2025-02-05",
+  "t": "This bill revises the Emergency Conservation Program (ECP) and the Emergency Forest Restoration Program (EFRP) to expand eligibility for payments to agricultural producers and owners of forest land impacted by natural disasters.",
   "v": "Introduced in House"
  },
  "119-hr1013": {
@@ -89,6 +107,18 @@
   "t": "This bill renames the Saratoga National Historical Park, located in Stillwater, New York, as Saratoga National Battlefield Park.",
   "v": "Introduced in House"
  },
+ "119-hr1681": {
+  "checked": "2026-11-17",
+  "d": "2025-02-27",
+  "t": "This bill establishes an interagency strike force to support federal land management agencies' review of requests for communications use authorizations.",
+  "v": "Introduced in House"
+ },
+ "119-hr1689": {
+  "checked": "2026-11-17",
+  "d": "2025-02-27",
+  "t": "This bill directs the Department of Homeland Security to designate Haiti for temporary protected status (TPS) for 18 months beginning August 3, 2025.",
+  "v": "Introduced in House"
+ },
  "119-hr1703": {
   "checked": "2026-11-16",
   "d": "2025-02-27",
@@ -112,6 +142,12 @@
   "d": "2025-03-06",
   "t": "This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark.",
   "v": "Introduced in House"
+ },
+ "119-hr1958": {
+  "checked": "2026-11-17",
+  "d": "2026-01-27",
+  "t": "This bill makes certain acts related to public benefits fraud grounds for (1) barring a non-U.S. national ( alien under federal law) from admission into the United States, or (2) deporting the individual.",
+  "v": "Reported to House"
  },
  "119-hr1993": {
   "checked": "2026-11-17",
@@ -190,6 +226,12 @@
   "d": "2026-10-20",
   "t": "This act requires online dating service providers (i.e., mobile applications or websites) to provide users with a fraud ban notification if the user has established an account with the service and received a message through the service from a banned user of the service.",
   "v": "Public Law"
+ },
+ "119-hr2493": {
+  "checked": "2026-11-17",
+  "d": "2025-03-31",
+  "t": "This bill reauthorizes through FY2030 grant programs administered by the Health Resources and Services Administration (HRSA) that provide funding to health care service providers and related entities in rural areas.",
+  "v": "Introduced in House"
  },
  "119-hr2616": {
   "checked": "2026-11-17",
@@ -299,6 +341,12 @@
   "t": "This bill provides statutory authority for the Invasive Species Strike Team program carried out by the National Wildlife Refuge System within the U.S. Fish and Wildlife Service (FWS).",
   "v": "Reported to House"
  },
+ "119-hr4294": {
+  "checked": "2026-11-17",
+  "d": "2026-02-23",
+  "t": "This bill requires the National Oceanic and Atmospheric Administration (NOAA) to establish a pilot program to facilitate the purchase of blue catfish caught within the Chesapeake Bay Watershed.",
+  "v": "Reported to House"
+ },
  "119-hr4307": {
   "checked": "2026-11-16",
   "d": "2026-10-20",
@@ -323,10 +371,22 @@
   "t": "This bill requires federal financial regulators to review and streamline the application process for the formation of de novo, or new, depository institutions or credit unions.",
   "v": "Introduced in House"
  },
+ "119-hr4638": {
+  "checked": "2026-11-17",
+  "d": "2025-07-23",
+  "t": "This bill establishes that a non-U.S. national ( alien under federal law) convicted of, or who admits to having committed, an offense related to harming animals used in law enforcement is inadmissible and deportable.",
+  "v": "Introduced in House"
+ },
  "119-hr4646": {
   "checked": "2026-11-17",
   "d": "2026-09-01",
   "t": "This bill expands existing whistleblower protections for employees of federal contractors or grant recipients to apply to all contracts and grants funded by the Department of Housing and Urban Development (HUD) regardless of the date of execution.",
+  "v": "Reported to House"
+ },
+ "119-hr4690": {
+  "checked": "2026-11-17",
+  "d": "2026-02-04",
+  "t": "This bill repeals certain energy efficiency performance standards for new federal buildings and federal buildings undergoing major renovations. Specifically, the bill repeals the performance standards that phase out fossil fuel use in such buildings by FY2030.",
   "v": "Reported to House"
  },
  "119-hr4795": {
@@ -352,6 +412,18 @@
   "d": "2025-09-03",
   "t": "This bill establishes a commission in the executive branch to advise on certain criminal and immigration matters in the District of Columbia (DC). It also establishes a federal program to ensure that commonly visited areas in DC are cleaned and maintained.",
   "v": "Introduced in House"
+ },
+ "119-hr5200": {
+  "checked": "2026-11-17",
+  "d": "2026-04-09",
+  "t": "This bill requires the Federal Communications Commission (FCC) to investigate and report on emergency communications outages (e.g., 9-1-1 outages).",
+  "v": "Reported to House"
+ },
+ "119-hr5201": {
+  "checked": "2026-11-17",
+  "d": "2026-03-26",
+  "t": "This bill requires the Federal Communications Commission (FCC) to publish a report on the enforcement of Kari’s Law, which requires multiline telephone systems to be preconfigured to allow users to dial 9-1-1 directly from any phone without dialing any additional code or prefix.",
+  "v": "Reported to House"
  },
  "119-hr5284": {
   "checked": "2026-11-16",
@@ -401,6 +473,12 @@
   "t": "This bill establishes mandatory deadlines for parties negotiating an initial collective bargaining agreement (CBA) and provides for mediation and arbitration to finalize CBAs.",
   "v": "Passed House"
  },
+ "119-hr556": {
+  "checked": "2026-11-17",
+  "d": "2025-01-16",
+  "t": "This bill bars the Fish and Wildlife Service (FWS), the Bureau of Land Management (BLM), and the Forest Service from prohibiting or regulating the use of lead ammunition or tackle on federal land or water.",
+  "v": "Introduced in House"
+ },
  "119-hr5587": {
   "checked": "2026-11-17",
   "d": "2025-09-26",
@@ -429,6 +507,30 @@
   "checked": "2026-11-16",
   "d": "2025-12-03",
   "t": "This bill redesignates the Chiricahua National Monument in Arizona as the Chiricahua National Park.",
+  "v": "Introduced in House"
+ },
+ "119-hr6387": {
+  "checked": "2026-11-17",
+  "d": "2026-04-09",
+  "t": "This bill modifies the definition of exceptional events under the Clean Air Act and requires the Environmental Protection Agency (EPA) to revise its regulations regarding exceptional events or actions to mitigate wildfire risk.",
+  "v": "Reported to House"
+ },
+ "119-hr6398": {
+  "checked": "2026-11-17",
+  "d": "2025-12-03",
+  "t": "This bill removes the requirement under the Clean Air Act that the Environmental Protection Agency (EPA) review and comment on newly authorized federal construction projects and other major federal agency actions that already require review under the National Environmental Policy Act (NEPA) and proposed federal…",
+  "v": "Introduced in House"
+ },
+ "119-hr6409": {
+  "checked": "2026-11-17",
+  "d": "2026-04-09",
+  "t": "This bill modifies standards under the Clean Air Act to exempt states from penalties for emissions outside of the state’s control.",
+  "v": "Reported to House"
+ },
+ "119-hr6422": {
+  "checked": "2026-11-17",
+  "d": "2025-12-04",
+  "t": "This bill reauthorizes several water quality protection and restoration programs of the Environmental Protection Agency (EPA) and makes related requirements.",
   "v": "Introduced in House"
  },
  "119-hr6500": {
@@ -461,6 +563,12 @@
   "t": "This bill provides for wireless emergency alerts to be transmitted to mobile devices via satellite. (Currently, wireless emergency alerts are sent via terrestrial mobile networks to individual devices in geographically targeted areas.",
   "v": "Introduced in House"
  },
+ "119-hr7084": {
+  "checked": "2026-11-17",
+  "d": "2026-03-20",
+  "t": "This bill authorizes the President to prohibit the entry of a vessel into the United States if the vessel has transited any U.S. port, harbor, or marine terminal that has been nationalized or expropriated (e.g., seized) by a Western Hemisphere country that has a free trade agreement with the United States.",
+  "v": "Reported to House"
+ },
  "119-hr7128": {
   "checked": "2026-11-17",
   "d": "2026-03-19",
@@ -472,6 +580,12 @@
   "d": "2026-04-30",
   "t": "This act provides FY2026 appropriations for agencies and offices within the Department of Homeland Security (DHS) except for (1) U.S. Immigration and Customs Enforcement (ICE), and (2) the U.S.",
   "v": "Public Law"
+ },
+ "119-hr7211": {
+  "checked": "2026-11-17",
+  "d": "2026-03-03",
+  "t": "This bill authorizes the President to award the Medal of Honor to John W. Ripley for his acts of valor on April 2, 1972, as a member of the Marine Corps during the Vietnam War, for which he was previously awarded the Navy Cross.",
+  "v": "Passed Senate"
  },
  "119-hr7250": {
   "checked": "2026-11-17",
@@ -490,6 +604,12 @@
   "d": "2026-02-13",
   "t": "This bill (commonly known as the farm bill) reauthorizes through FY2031 and modifies Department of Agriculture programs that address commodity support, conservation, trade and international food aid, nutrition assistance, farm credit, rural development, research and extension activities, forestry, energy…",
   "v": "Introduced in House"
+ },
+ "119-hr7613": {
+  "checked": "2026-11-17",
+  "d": "2026-04-09",
+  "t": "This bill addresses aviation safety by increasing requirements for aircraft tracking and communication using Automatic Dependent Surveillance-Broadcast (ADS-B) technology and expanding oversight.",
+  "v": "Reported to House"
  },
  "119-hr7618": {
   "checked": "2026-11-16",
@@ -527,6 +647,18 @@
   "t": "This bill requires the Department of Education (ED) to establish an identity fraud detection system for the Free Application for Federal Student Aid (FAFSA).",
   "v": "Reported to House"
  },
+ "119-hr7959": {
+  "checked": "2026-11-17",
+  "d": "2026-03-17",
+  "t": "This bill modifies provisions of the Internal Revenue Code relating to whistleblower awards and protections.",
+  "v": "Introduced in House"
+ },
+ "119-hr8029": {
+  "checked": "2026-11-17",
+  "d": "2026-03-20",
+  "t": "This bill provides appropriations to the Department of Homeland Security (DHS) for the remainder of FY2026. It also ends the partial DHS shutdown that began on February 14, 2026, because the continuing resolution (CR) that was funding DHS expired and a regular FY2026 DHS appropriations bill had not been enacted.",
+  "v": "Introduced in House"
+ },
  "119-hr8205": {
   "checked": "2026-11-16",
   "d": "2026-11-03",
@@ -544,6 +676,9 @@
   "d": "2026-06-03",
   "t": "This bill (1) assigns financial integrity, improper payment prevention, and spending transparency functions to the Bureau of the Fiscal Service (BFS) within the Department of the Treasury; (2) establishes an Office of the Inspector General for Fraud, Accountability, and Recovery (OIGFAR) within Treasury; and (3)…",
   "v": "Reported to House"
+ },
+ "119-hr8322": {
+  "checked": "2026-11-17"
  },
  "119-hr8352": {
   "checked": "2026-11-16",
@@ -725,6 +860,18 @@
   "t": "This bill reauthorizes Title VII of the Foreign Intelligence Surveillance Act (FISA) until April 30, 2029, and expands protections related to surveillance under Section 702 of FISA.",
   "v": "Passed House"
  },
+ "119-s1383": {
+  "checked": "2026-11-17",
+  "d": "2026-02-11",
+  "t": "This bill requires individuals to provide documentary proof of U.S. citizenship when registering to vote, and requires photo identification to vote, in federal elections.",
+  "v": "Passed House"
+ },
+ "119-s1884": {
+  "checked": "2026-11-17",
+  "d": "2026-04-13",
+  "t": "This act permanently extends and expands judicial authority under the Holocaust Expropriated Art Recovery Act of 2016. The law allows and establishes procedures for civil claims and causes of action to recover artwork and other property lost between 1933 and 1945 because of Nazi persecution.",
+  "v": "Public Law"
+ },
  "119-s195": {
   "checked": "2026-11-16",
   "d": "2025-01-22",
@@ -785,8 +932,26 @@
   "t": "This act adds College Station to the list of places where court must be held in the Galveston Division of the Southern District of Texas. Additionally, the act adds El Centro to the list of places where court must be held in the Southern District of California.",
   "v": "Public Law"
  },
+ "119-s3971": {
+  "checked": "2026-11-17",
+  "d": "2026-04-13",
+  "t": "This act reauthorizes through FY2031 and modifies the Small Business Innovation Research (SBIR) program, the Small Business Technology Transfer (STTR) program, and related pilot programs.",
+  "v": "Public Law"
+ },
+ "119-s4138": {
+  "checked": "2026-11-17",
+  "d": "2026-03-20",
+  "t": "This act allows for the posthumous honorary promotion of Captain Cody Khork to the rank of major in the Army without the required 60-day notice to Congress.",
+  "v": "Public Law"
+ },
  "119-s4344": {
   "checked": "2026-11-17"
+ },
+ "119-s4465": {
+  "checked": "2026-11-17",
+  "d": "2026-04-30",
+  "t": "This act extends the authorities of Title VII of the Foreign Intelligence Surveillance Act (FISA) until June 12, 2026. Title VII of FISA generally addresses electronic surveillance and other methods of acquiring foreign intelligence information that are directed at targets outside the United States.",
+  "v": "Public Law"
  },
  "119-s4530": {
   "checked": "2026-11-17",
@@ -866,10 +1031,55 @@
   "t": "This act requires the Federal Communications Commission (FCC) to vet the qualifications of applicants for certain funding programs that support affordable broadband deployment in high-cost areas (e.g., rural communities).",
   "v": "Public Law"
  },
+ "119-sjres103": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres107": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres114": {
+  "checked": "2026-11-17",
+  "d": "2026-03-05",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres116": {
+  "checked": "2026-11-17",
+  "d": "2026-03-05",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres118": {
+  "checked": "2026-11-17",
+  "d": "2026-03-05",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres123": {
+  "checked": "2026-11-17",
+  "d": "2026-03-10",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres124": {
+  "checked": "2026-11-17",
+  "d": "2026-03-12",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Cuba unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
+ },
  "119-sjres130": {
   "checked": "2026-11-17"
  },
  "119-sjres132": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres138": {
+  "checked": "2026-11-17",
+  "d": "2026-03-19",
+  "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres139": {
   "checked": "2026-11-17"
  },
  "119-sjres141": {
@@ -896,6 +1106,12 @@
  "119-sjres181": {
   "checked": "2026-11-17",
   "d": "2026-04-13",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres184": {
+  "checked": "2026-11-17",
+  "d": "2026-04-16",
   "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
   "v": "Introduced in Senate"
  },
@@ -927,6 +1143,15 @@
   "v": "Introduced in Senate"
  },
  "119-sjres199": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres32": {
+  "checked": "2026-11-17",
+  "d": "2025-03-10",
+  "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres99": {
   "checked": "2026-11-17"
  }
 }
