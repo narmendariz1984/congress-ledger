@@ -155,18 +155,31 @@ def get(url: str) -> str:
         return r.read().decode("utf-8", "replace")
 
 
-def run(fetch=get, gh=None, vehicles=None, today=None, log=print) -> dict:
+def extra_source(url: str) -> dict:
+    """A one-off page to read as well (a run started by hand), only from the two floor-log sites."""
+    url = (url or "").strip()
+    for src, home in SOURCES.items():
+        if url.startswith(home):
+            return {src: url}
+    return {}
+
+
+def run(fetch=get, gh=None, vehicles=None, today=None, log=print, extra=None) -> dict:
     """One check. Returns what it did, for the job summary and tests."""
     today = today or datetime.now(timezone.utc).date()
     known = known_ids(vehicles)
-    hits, failed = [], []
-    for src, url in SOURCES.items():
+    hits, failed, home_failed = [], [], 0
+    pages = [(src, url, True) for src, url in SOURCES.items()] + [(src, url, False) for src, url in (extra or {}).items()]
+    for src, url, home in pages:
         try:
             for h in find(text_of(fetch(url)), today):
                 hits.append((h, src, url))
         except Exception as e:  # noqa: BLE001  one page failing never stops the other
             failed.append(f"{src}: {e}")
+            home_failed += home
             log(f"::warning::{src} couldn't be read: {e}")
+    # the same bill named on two pages is one hit
+    hits = list({h["id"]: (h, s, u) for h, s, u in reversed(hits)}.values())[::-1]
     new = [(h, s, u) for h, s, u in hits if h["id"] not in known]
     done = {"found": [h["num"] for h, _, _ in hits], "opened": [], "skipped": [], "failed": failed}
     if gh is None:
@@ -185,12 +198,12 @@ def run(fetch=get, gh=None, vehicles=None, today=None, log=print) -> dict:
         done["opened"].append(h["num"])
     # can't-reach note: one open issue while every page fails, closed once one works again
     outage = [i for i in existing if i.get("title") == OUTAGE_TITLE and i.get("state") == "open"]
-    if len(failed) == len(SOURCES) and not outage:
+    if home_failed == len(SOURCES) and not outage:
         gh.ensure_label()
         gh.open(OUTAGE_TITLE, "Neither Senate floor log could be read on this run:\n\n" + "\n".join(f"- {f}" for f in failed)
                 + "\n\nThe site isn't affected. This closes on its own once a later run reads one of them.")
         done["outage"] = "opened"
-    elif len(failed) < len(SOURCES) and outage:
+    elif home_failed < len(SOURCES) and outage:
         for i in outage:
             gh.close(i["number"], "A floor log was read again, so the watcher is working.")
         done["outage"] = "closed"
@@ -201,8 +214,13 @@ def main() -> int:
     vehicles = json.loads((ROOT / "data" / "vehicles.json").read_text(encoding="utf-8"))
     token, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
     gh = GitHub(repo, token) if token and repo else None
+    extra = extra_source(os.environ.get("WATCH_URL", ""))
+    if os.environ.get("WATCH_URL", "").strip() and not extra:
+        print("::warning::WATCH_URL ignored: only pages on the two Senate floor-log sites are read")
+    if os.environ.get("WATCH_DRY") == "true":
+        gh = None  # report only
     try:
-        done = run(gh=gh, vehicles=vehicles)
+        done = run(gh=gh, vehicles=vehicles, extra=extra)
     except Exception as e:  # noqa: BLE001  GitHub's API failing: report, don't fail the job
         print(f"::warning::vehicle watch stopped: {e}")
         return 0

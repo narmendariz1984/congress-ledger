@@ -10,6 +10,15 @@ on:
     - cron: "41 19 * * *"   # about 1:41 PM
     - cron: "41 1 * * *"    # about 7:41 PM
   workflow_dispatch:
+    inputs:
+      url:
+        description: "Also read this floor-log page (periodicalpress.senate.gov or dailypress.senate.gov), e.g. an older day"
+        type: string
+        default: ""
+      dry:
+        description: "Report only: don't open or close issues"
+        type: boolean
+        default: false
 
 # Read the repo, open and close issues. Nothing else.
 permissions:
@@ -29,4 +38,6 @@ jobs:
       - name: Check the Senate floor logs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WATCH_URL: ${{ inputs.url }}
+          WATCH_DRY: ${{ inputs.dry }}
         run: python3 -I scripts/vehicle_watch.py

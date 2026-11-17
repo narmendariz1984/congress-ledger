@@ -104,6 +104,32 @@ class Run(unittest.TestCase):
         self.assertEqual(W.run(fetch=self.pages, gh=gh3, vehicles=VEH, today=date(2026, 11, 17), log=lambda *_: None)["outage"], "closed")
         self.assertEqual(gh3.closed, [9])
 
+    def test_extra_page_only_from_the_floor_log_sites(self):
+        self.assertEqual(W.extra_source("https://www.periodicalpress.senate.gov/wednesday-september-30-2026/"),
+                         {"Senate Periodical Press Gallery": "https://www.periodicalpress.senate.gov/wednesday-september-30-2026/"})
+        self.assertEqual(W.extra_source("https://example.org/x"), {})
+        self.assertEqual(W.extra_source(""), {})
+
+    def test_extra_page_is_read_and_its_failure_isnt_an_outage(self):
+        old = "https://www.periodicalpress.senate.gov/old-day/"
+        def fetch(url):
+            if url == old:
+                return "<p>Monday, March 2, 2026</p><p>Cloture filed on H.R. 77, the legislative vehicle for the farm bill.</p>"
+            return "<p>nothing</p>"
+        gh = FakeGH()
+        done = W.run(fetch=fetch, gh=gh, vehicles=VEH, today=date(2026, 11, 17), log=lambda *_: None, extra={"Senate Periodical Press Gallery": old})
+        self.assertEqual(done["opened"], ["H.R. 77"])
+        def broken(url):
+            if url == old:
+                raise OSError("404")
+            return "<p>nothing</p>"
+        self.assertNotIn("outage", W.run(fetch=broken, gh=FakeGH(), vehicles=VEH, log=lambda *_: None, extra={"x": old}))
+
+    def test_same_bill_on_both_pages_is_one_issue(self):
+        gh = FakeGH()
+        W.run(fetch=lambda u: DAILY, gh=gh, vehicles={}, today=date(2026, 11, 17), log=lambda *_: None)
+        self.assertEqual(sorted(t for t, _ in gh.opened), ["Possible vehicle: H.J.Res. 140 (119th Congress)", "Possible vehicle: H.R. 2347 (119th Congress)"])
+
     def test_real_vehicles_file_is_known(self):
         import json
         v = json.loads((W.ROOT / "data" / "vehicles.json").read_text())
