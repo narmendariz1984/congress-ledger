@@ -3378,7 +3378,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3697,7 +3697,7 @@
     ],
     "t": 24
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -4137,6 +4137,11 @@
     "s": "IL-12"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-06",
+    "t": "This bill prohibits the Department of Veterans Affairs (VA) from transmitting certain information to the National Instant Criminal Background Check System (NICS) utilized by licensed importers or dealers of firearms.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5883,6 +5888,11 @@
     "s": "NY-11"
    },
    "status": "killed",
+   "sum": {
+    "d": "2026-04-23",
+    "t": "This bill authorizes the Smithsonian American Women's History Museum to be located on a particular site within the Reserve of the National Mall in Washington, DC.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -6018,6 +6028,11 @@
     "s": "NE-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-13",
+    "t": "This bill amends the Clean Air Act to address the limitations on Reid Vapor Pressure (a measure of gasoline's volatility) that are placed on gasoline during the summer ozone season.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -10597,6 +10612,11 @@
     "s": "NY-10"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-10",
+    "t": "This bill directs the Department of the Treasury to mint and issue coins to commemorate the 25th anniversary of the September 11, 2001, terrorist attacks on the United States and the establishment of the National September 11 Memorial and Museum at the World Trade Center.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -10979,6 +10999,11 @@
     "s": "PA-9"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-19",
+    "t": "This act modifies the limit on the amount of financing available to a Small Business Investment Company (SBIC) from the Small Business Administration (SBA). It also expands the definition of private capital with respect to SBICs.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11232,6 +11257,11 @@
     "s": "TX-22"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-11",
+    "t": "This bill prohibits federal funds from being made available to international financial institutions (e.g., the International Monetary Fund) for financing activities related to foreign shrimp farms.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -11299,7 +11329,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-14T19:12:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11435,7 +11465,7 @@
     ],
     "t": 163
    },
-   "fetched": "2026-11-14T19:12:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11572,7 +11602,7 @@
     ],
     "t": 342
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11655,7 +11685,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-14T19:12:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11743,7 +11773,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11901,7 +11931,7 @@
     ],
     "t": 95
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12006,7 +12036,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12173,7 +12203,7 @@
     ],
     "t": 110
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12272,7 +12302,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12407,7 +12437,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12543,7 +12573,7 @@
     ],
     "t": 22
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12648,7 +12678,7 @@
     ],
     "t": 18
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12742,7 +12772,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12845,7 +12875,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12956,7 +12986,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13104,7 +13134,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13197,7 +13227,7 @@
     ],
     "t": 38
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13298,7 +13328,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13376,7 +13406,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13508,7 +13538,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-14T19:12:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13634,7 +13664,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T06:53:29+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13769,7 +13799,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-13T01:51:46+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13897,7 +13927,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13999,7 +14029,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14135,7 +14165,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14271,7 +14301,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14364,7 +14394,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14495,7 +14525,7 @@
     ],
     "t": 226
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14581,7 +14611,7 @@
     ],
     "t": 18
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14669,7 +14699,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14787,7 +14817,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14818,6 +14848,11 @@
     "s": "MI-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-04-03",
+    "t": "This bill requires public elementary and middle schools, as a condition of receiving certain federal funds for elementary and secondary education, to obtain parental consent before changing a student's gender on school forms or changing a student's sex-based accommodations.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -14893,7 +14928,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14999,7 +15034,7 @@
     ],
     "t": 17
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15110,7 +15145,7 @@
     ],
     "t": 61
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15196,7 +15231,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15296,7 +15331,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15419,7 +15454,7 @@
     ],
     "t": 17
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15560,7 +15595,7 @@
     ],
     "t": 83
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15677,7 +15712,7 @@
     ],
     "t": 89
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15807,7 +15842,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15856,6 +15891,11 @@
     "s": "AK"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-19",
+    "t": "This act waives a statutory core township selection requirement for the Cape Fox Corporation and allows Cape Fox to receive other lands to fulfill its remaining land entitlement. Cape Fox is an Alaska Native village corporation for the Alaska Native village of Saxman, Alaska.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -15982,7 +16022,7 @@
     ],
     "t": 206
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16013,6 +16053,11 @@
     "s": "OH-14"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-01-30",
+    "t": "This bill expands federal enforcement of criminal offenses related to organized retail and supply chain crime.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -16071,7 +16116,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16102,6 +16147,11 @@
     "s": "WA-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-01-12",
+    "t": "This bill revises and reauthorizes for seven years the Northwest Straits Marine Conservation Initiative and its Northwest Straits Advisory Commission.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -16189,7 +16239,7 @@
     ],
     "t": 54
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16285,7 +16335,7 @@
     ],
     "t": 43
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16366,7 +16416,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16473,7 +16523,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16569,7 +16619,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16692,7 +16742,7 @@
     ],
     "t": 54
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16785,7 +16835,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -16892,7 +16942,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17021,7 +17071,7 @@
     ],
     "t": 60
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17108,7 +17158,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17205,7 +17255,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17336,7 +17386,7 @@
     ],
     "t": 33
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17419,7 +17469,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17526,7 +17576,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17623,7 +17673,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17716,7 +17766,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17820,7 +17870,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -17851,6 +17901,11 @@
     "s": "MN-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-07",
+    "t": "This bill increases the amount insured depository institutions may accept as reciprocal deposits.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17924,7 +17979,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18051,7 +18106,7 @@
     ],
     "t": 46
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18129,7 +18184,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18223,7 +18278,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18315,7 +18370,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18425,7 +18480,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18524,7 +18579,7 @@
     ],
     "t": 12
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18619,7 +18674,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T12:02:41+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18710,7 +18765,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18805,7 +18860,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -18904,7 +18959,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19006,7 +19061,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19055,6 +19110,11 @@
     "s": "VA-11"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-19",
+    "t": "This bill requires the Government Accountability Office to report to Congress on (1) the impact of esophageal cancer-related health care spending under the Federal Employees Health Benefits Program (FEHBP) for federal employees and retirees diagnosed with esophageal cancer, and (2) how often FEHBP participants with a…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -19161,7 +19221,7 @@
     ],
     "t": 44
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19286,7 +19346,7 @@
     ],
     "t": 36
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19335,6 +19395,11 @@
     "s": "FL-21"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-28",
+    "t": "This act directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty. The act also directs the President to establish a commission on the medal of sacrifice and appoint its members.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -19432,7 +19497,7 @@
     ],
     "t": 32
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19508,7 +19573,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19596,7 +19661,7 @@
     ],
     "t": 18
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19686,7 +19751,7 @@
     ],
     "t": 20
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19785,7 +19850,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19899,7 +19964,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20036,7 +20101,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20135,7 +20200,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20251,7 +20316,7 @@
     ],
     "t": 21
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20371,7 +20436,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20475,7 +20540,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20613,7 +20678,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20722,7 +20787,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20798,7 +20863,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20920,7 +20985,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21033,7 +21098,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-15T17:45:24+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21137,7 +21202,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21273,7 +21338,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-14T19:12:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21365,7 +21430,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21501,7 +21566,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21616,7 +21681,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21712,7 +21777,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-17T04:31:22+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21830,7 +21895,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -21959,7 +22024,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-08T07:52:36+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22081,7 +22146,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22164,7 +22229,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22267,7 +22332,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-16T22:10:05+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23189,7 +23254,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -23887,7 +23952,7 @@
     ],
     "t": 20
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -23903,6 +23968,14 @@
    },
    "num": "H.R. 4541",
    "number": 4541,
+   "passed": {
+    "H": {
+     "d": "2026-07-20",
+     "how": "roll",
+     "roll": 250,
+     "v": "394–6"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Debbie Wasserman Schultz",
@@ -24003,6 +24076,11 @@
     "s": "CA-43"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-07-17",
+    "t": "This bill requires federal financial regulators to review and streamline the application process for the formation of de novo, or new, depository institutions or credit unions.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -24060,7 +24138,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24076,6 +24154,14 @@
    },
    "num": "H.R. 4553",
    "number": 4553,
+   "passed": {
+    "H": {
+     "d": "2025-09-04",
+     "how": "roll",
+     "roll": 239,
+     "v": "214–213"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Charles J. \"Chuck\" Fleischmann",
@@ -24720,7 +24806,7 @@
     ],
     "t": 56
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24736,6 +24822,14 @@
    },
    "num": "H.R. 471",
    "number": 471,
+   "passed": {
+    "H": {
+     "d": "2025-01-23",
+     "how": "roll",
+     "roll": 25,
+     "v": "279–141"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Bruce Westerman",
@@ -25159,6 +25253,11 @@
     "s": "CA-3"
    },
    "status": "moving",
+   "sum": {
+    "d": "2025-08-05",
+    "t": "This bill prohibits a state where the congressional districts have been redistricted after a decennial census from carrying out another redistricting until after the next apportionment of Representatives following a decennial census, unless a court requires the state to conduct a subsequent redistricting to comply…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -25716,7 +25815,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25732,6 +25831,14 @@
    },
    "num": "H.R. 5103",
    "number": 5103,
+   "passed": {
+    "H": {
+     "d": "2026-03-25",
+     "how": "roll",
+     "roll": 101,
+     "v": "218–206"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "John J. McGuire",
@@ -26977,6 +27084,11 @@
     "s": "AR-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-11-04",
+    "t": "This bill changes the treatment of certain types of deposits so they are no longer classified as brokered deposits. Brokered deposits are funds placed by a broker on behalf of a client in a depository institution to maximize interest rates and for depository insurance purposes.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -27828,7 +27940,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -28193,7 +28305,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28209,6 +28321,14 @@
    },
    "num": "H.R. 5587",
    "number": 5587,
+   "passed": {
+    "H": {
+     "d": "2026-04-23",
+     "how": "roll",
+     "roll": 137,
+     "v": "231–186"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Young Kim",
@@ -28340,6 +28460,11 @@
     "s": "NC-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-09",
+    "t": "This bill requires the Department of Justice to publish annually a list of state and local governments that permit individuals who are charged with certain criminal offenses that pose a clear threat to public safety and order to be released pending trial on personal recognizance or upon execution of an unsecured…",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -28806,6 +28931,11 @@
     "s": "MI-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-02",
+    "t": "This bill expands specified benefits programs for veterans and their survivors and establishes a supplemental monthly allowance for certain disabled veterans.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -29035,6 +29165,11 @@
     "s": "WI-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-09",
+    "t": "This bill broadens the definition of the term business of insurance , for the purposes of federal crimes related to insurance fraud, to include the posting of monetary bail, criminal bail bonds, and federal immigration bail bonds.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -31637,6 +31772,11 @@
     "s": "OK-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-04-30",
+    "t": "This act provides FY2026 appropriations for agencies and offices within the Department of Homeland Security (DHS) except for (1) U.S. Immigration and Customs Enforcement (ICE), and (2) the U.S.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -32427,6 +32567,11 @@
     "s": "PA-15"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-02-13",
+    "t": "This bill (commonly known as the farm bill) reauthorizes through FY2031 and modifies Department of Agriculture programs that address commodity support, conservation, trade and international food aid, nutrition assistance, farm credit, rural development, research and extension activities, forestry, energy…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -32741,7 +32886,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -32987,6 +33132,11 @@
     "s": "IL-15"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-06",
+    "t": "This bill subjects states to additional sanctions for improperly using funds under the Child Care and Development Block Grant program. The program provides grants to states to support child care programs for low-income working families.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33589,7 +33739,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33605,6 +33755,14 @@
    },
    "num": "H.R. 788",
    "number": 788,
+   "passed": {
+    "H": {
+     "d": "2025-02-25",
+     "how": "roll",
+     "roll": 48,
+     "v": "427–3"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Nick LaLota",
@@ -33659,7 +33817,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33675,6 +33833,14 @@
    },
    "num": "H.R. 7892",
    "number": 7892,
+   "passed": {
+    "H": {
+     "d": "2026-06-10",
+     "how": "roll",
+     "roll": 217,
+     "v": "249–172"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Burgess Owens",
@@ -33756,7 +33922,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33772,6 +33938,14 @@
    },
    "num": "H.R. 7959",
    "number": 7959,
+   "passed": {
+    "H": {
+     "d": "2026-04-27",
+     "how": "roll",
+     "roll": 138,
+     "v": "346–10"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Mike Kelly",
@@ -33836,7 +34010,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33852,6 +34026,14 @@
    },
    "num": "H.R. 8029",
    "number": 8029,
+   "passed": {
+    "H": {
+     "d": "2026-03-26",
+     "how": "roll",
+     "roll": 104,
+     "v": "218–206"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Juan Ciscomani",
@@ -33919,7 +34101,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33935,6 +34117,14 @@
    },
    "num": "H.R. 804",
    "number": 804,
+   "passed": {
+    "H": {
+     "d": "2025-02-25",
+     "how": "roll",
+     "roll": 49,
+     "v": "415–8"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Kelly Morrison",
@@ -33991,7 +34181,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34007,6 +34197,14 @@
    },
    "num": "H.R. 818",
    "number": 818,
+   "passed": {
+    "H": {
+     "d": "2025-02-24",
+     "how": "roll",
+     "roll": 45,
+     "v": "384–25"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Pete Stauber",
@@ -34234,7 +34432,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34250,6 +34448,14 @@
    },
    "num": "H.R. 825",
    "number": 825,
+   "passed": {
+    "H": {
+     "d": "2025-02-24",
+     "how": "roll",
+     "roll": 43,
+     "v": "405–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Roger Williams",
@@ -34302,7 +34508,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:20:18+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34318,6 +34524,14 @@
    },
    "num": "H.R. 8278",
    "number": 8278,
+   "passed": {
+    "H": {
+     "d": "2026-09-15",
+     "how": "roll",
+     "roll": 302,
+     "v": "417–7"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Marlin A. Stutzman",
@@ -34389,7 +34603,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34405,6 +34619,14 @@
    },
    "num": "H.R. 8312",
    "number": 8312,
+   "passed": {
+    "H": {
+     "d": "2026-06-10",
+     "how": "roll",
+     "roll": 218,
+     "v": "240–181"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Pete Sessions",
@@ -34484,7 +34706,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34500,6 +34722,14 @@
    },
    "num": "H.R. 832",
    "number": 832,
+   "passed": {
+    "H": {
+     "d": "2025-02-24",
+     "how": "roll",
+     "roll": 44,
+     "v": "396–15"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Roger Williams",
@@ -34799,7 +35029,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34815,6 +35045,14 @@
    },
    "num": "H.R. 8365",
    "number": 8365,
+   "passed": {
+    "H": {
+     "d": "2026-05-14",
+     "how": "roll",
+     "roll": 173,
+     "v": "219–204"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Andy Biggs",
@@ -34822,6 +35060,11 @@
     "s": "AZ-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-05-04",
+    "t": "This bill requires the Administrative Office of the U.S. Courts to establish conditions on the appointment of monitors to oversee state and local governmental entities.",
+    "v": "Reported to House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35027,7 +35270,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35043,6 +35286,14 @@
    },
    "num": "H.R. 8428",
    "number": 8428,
+   "passed": {
+    "H": {
+     "d": "2026-06-08",
+     "how": "roll",
+     "roll": 209,
+     "v": "393–0"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Glenn Grothman",
@@ -35050,6 +35301,11 @@
     "s": "WI-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-22",
+    "t": "This bill requires the Office of Management and Budget (OMB) and the Department of the Treasury to establish and maintain a mandatory antifraud and improper payment prevention training program for federal employees whose roles involve federal financial assistance or oversight of federal programs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35127,7 +35383,7 @@
     ],
     "t": 37
    },
-   "fetched": "2026-11-05T18:22:19+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35143,6 +35399,14 @@
    },
    "num": "H.R. 845",
    "number": 845,
+   "passed": {
+    "H": {
+     "d": "2025-12-18",
+     "how": "roll",
+     "roll": 360,
+     "v": "211–204"
+    }
+   },
    "reached": 3,
    "sponsor": {
     "n": "Lauren Boebert",
@@ -35352,6 +35616,11 @@
     "s": "AZ-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-04-23",
+    "t": "This bill requires agencies to develop and implement plans for preventing fraud and improper payments relating to federal emergency spending (e.g., providing funding relating to disasters or pandemics).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35875,6 +36144,11 @@
     "s": "MD-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2026-06-04",
+    "t": "This bill provides FY2027 appropriations for the Department of Agriculture (USDA), the Food and Drug Administration, and related agencies.",
+    "v": "Passed House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -37880,6 +38154,11 @@
     "s": "NV-1"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-19",
+    "t": "This act expands the boundaries of the Sloan Canyon National Conservation Area in Clark County, Nevada, and grants rights-of-way through the conservation area and other land administered by the Bureau of Land Management (BLM) for the construction of a water transmission pipeline and related facilities.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -38872,6 +39151,11 @@
     "s": "MT"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-11",
+    "t": "This act authorizes the Federal Energy Regulatory Commission (FERC) to extend construction deadlines for hydropower projects that were issued a license before March 13, 2020.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -39128,6 +39412,11 @@
     "s": "KS"
    },
    "status": "killed",
+   "sum": {
+    "d": "2026-04-29",
+    "t": "This bill reauthorizes Title VII of the Foreign Intelligence Surveillance Act (FISA) until April 30, 2029, and expands protections related to surveillance under Section 702 of FISA.",
+    "v": "Passed House"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -40208,6 +40497,11 @@
     "s": "SC"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-06-10",
+    "t": "This act provides $70 billion in funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -41122,6 +41416,11 @@
     "s": "KS"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-06-09",
+    "t": "This act authorizes the Department of Veterans Affairs to carry out a major medical facility project in St. Louis, Missouri, during FY2026.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -43311,7 +43610,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -43402,7 +43701,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-17T06:22:30+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -44574,6 +44873,11 @@
     "s": "KY"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-29",
+    "t": "This act authorizes the Capitol Police Board to increase the mandatory retirement age for a member of the Capitol Police to up to age 62 when the board determines such waiver is in the public interest.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -45807,6 +46111,11 @@
     "s": "SD"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-04",
+    "t": "This act sets forth requirements for the processing of a proposed residential leasehold mortgage, business leasehold mortgage, land mortgage, or right-of-way document by the Bureau of Indian Affairs (BIA).",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -46601,6 +46910,11 @@
     "s": "WV"
    },
    "status": "law",
+   "sum": {
+    "d": "2026-05-11",
+    "t": "This act requires the Federal Communications Commission (FCC) to vet the qualifications of applicants for certain funding programs that support affordable broadband deployment in high-cost areas (e.g., rural communities).",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -47944,6 +48258,11 @@
     "s": "OR"
    },
    "status": "killed",
+   "sum": {
+    "d": "2026-04-13",
+    "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51446,7 +51765,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-17T06:18:57+00:00",
+ "generatedAt": "2026-11-17T06:22:30+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
