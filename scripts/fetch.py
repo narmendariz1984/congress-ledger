@@ -42,6 +42,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CURATED = ROOT / "data" / "curated.json"
 VEHICLES = ROOT / "data" / "vehicles.json"     # hand-edited vehicle swaps; nothing writes it
 SUMMARIES = ROOT / "data" / "summaries.json"   # CRS summaries, kept between runs
+COSPONSORS = ROOT / "site" / "data" / "cosponsors.json"  # cosponsor names per bill, loaded only when a reader asks
 TRACKED = ROOT / "data" / "tracked.json"          # bills found by discovery
 OUT = ROOT / "site" / "data" / "ledger.json"
 
@@ -461,6 +462,10 @@ def fetch_bill(congress: int, btype: str, number: int) -> dict:
         if c.get("state"):
             states.add(str(c["state"]).upper())
     split["st"] = sorted(states)  # cosponsors' states, for searching by state
+    names = []
+    for c in cos:
+        m = parse_member(c)
+        names.append([m["n"], m["p"], m["s"], 1 if c.get("isOriginalCosponsor") else 0])
     sponsors = b.get("sponsors") or []
     laws = b.get("laws") or []
     out = {
@@ -470,6 +475,7 @@ def fetch_bill(congress: int, btype: str, number: int) -> dict:
         "introduced": b.get("introducedDate"),
         "sponsor": parse_member(sponsors[0]) if sponsors else None,
         "cosponsors": split,
+        "cosnames": names,
         "area": AREA_MAP.get(((b.get("policyArea") or {}).get("name") or ""), (b.get("policyArea") or {}).get("name") or "Other"),
         "latest": b.get("latestAction") or {},
         "url": congress_url(congress, btype, number),
@@ -844,6 +850,22 @@ def summary_text(html_text: str, sentences: int = 2, cap: int = 320) -> str:
 def latest_summary(items: list[dict]) -> dict | None:
     items = [x for x in items or [] if (x or {}).get("text")]
     return max(items, key=lambda x: (x.get("actionDate") or "", x.get("updateDate") or "")) if items else None
+
+
+def split_cosponsors(bills: list[dict], path: Path) -> bool:
+    """Move each bill's cosponsor names out of the ledger into their own file. True if the file changed."""
+    old = load_json(path, {})
+    store = {}
+    for b in bills:
+        names = b.pop("cosnames", None)
+        if names is not None:
+            store[b["id"]] = names
+        elif b["id"] in old:
+            store[b["id"]] = old[b["id"]]
+    if store == old:
+        return False
+    path.write_text(json.dumps(store, separators=(",", ":"), ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
+    return True
 
 
 def refresh_summaries(bills: list[dict], store: dict, today: str, fetch=None, clock=time.monotonic) -> bool:
@@ -1231,12 +1253,19 @@ def main() -> int:
         q["since"], q["queued"] = since.date().isoformat(), now.isoformat(timespec="seconds")
         mode = "full"
 
+    if tracked.get("schema", 1) == 2:
+        q = tracked.setdefault("backfill", {"queue": []})
+        q["queue"] = sorted(set(q.get("queue") or []) | set(tracked["bills"]))
+        q["queued"], q["reason"] = now.isoformat(timespec="seconds"), "re-download for cosponsor names"
+        q.pop("finished", None)
+        tracked["schema"] = 3
+        print(f"schema 3: queued {len(q['queue'])} bills to re-download for cosponsor names")
     if tracked.get("schema", 1) < 2:
         q = tracked.setdefault("backfill", {"queue": []})
         q["queue"] = sorted(set(q.get("queue") or []) | set(tracked["bills"]))
         q["queued"], q["reason"] = now.isoformat(timespec="seconds"), "re-download for cosponsor states"
         q.pop("finished", None)
-        tracked["schema"] = 2
+        tracked["schema"] = 3
         print(f"schema 2: queued {len(q['queue'])} bills to re-download for cosponsor states")
 
     # Checked on every run, before the schedule decides what to update, so a rule
@@ -1457,6 +1486,15 @@ def main() -> int:
                 SUMMARIES.write_text(json.dumps(summaries, indent=1, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
         except Exception as e:  # noqa: BLE001
             warn(f"bill summaries skipped ({e.__class__.__name__})")
+    # cosponsor names go in their own file so the main ledger stays small; a bill that
+    # wasn't re-downloaded this run keeps the names from last time
+    try:
+        if split_cosponsors(bills, COSPONSORS):
+            print(f"cosponsor names updated ({COSPONSORS.name})")
+    except Exception as e:  # noqa: BLE001
+        for b in bills:
+            b.pop("cosnames", None)
+        warn(f"cosponsor names skipped ({e.__class__.__name__})")
     for b in bills:
         s = summaries.get(b["id"]) or {}
         if s.get("t"):

@@ -396,6 +396,19 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 .wres .dt{font:600 13px var(--f-mono);color:var(--red);padding-top:2px;white-space:nowrap}
 .wres a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--link-line)}
 .wres a:hover{border-bottom-color:currentColor}
+/* cosponsor names, opened from the count */
+.cos-btn{all:unset;cursor:pointer;display:inline-flex;flex-wrap:wrap;gap:0 4px;align-items:baseline;border-bottom:1px dashed var(--muted);padding-bottom:1px}
+.cos-btn:hover{border-bottom-color:var(--ink)}
+.cos-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cos-more{font:600 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-left:6px}
+.cos-more::after{content:" ▾"}
+.cos-btn[aria-expanded="true"] .cos-more::after{content:" ▴"}
+.cos-list{display:grid;gap:12px;padding:12px 14px;border:1px solid var(--rule);border-radius:6px;background:var(--wash);max-height:420px;overflow:auto}
+.cos-grp h5{margin:0 0 6px;font-size:13.5px;font-weight:700}
+.cos-grp ul{list-style:none;margin:0;padding:0;columns:3 210px;column-gap:20px;font-size:14px;line-height:1.55}
+.cos-grp li{break-inside:avoid}
+.cos-o{color:var(--accent);font-weight:700;margin-left:2px}
+.cos-foot{margin:0;font-size:13px}
 /* Today: one day's floor moves, biggest first */
 .today{display:grid;gap:14px}
 .td-head{display:flex;align-items:center;gap:10px}
@@ -1017,9 +1030,10 @@ function billCard(b){
     <div class="people">
       <div><div class="k">Sponsor</div><div>${pb(sp.p)} ${esc(sp.n||"—")}${sp.s?` <span class="muted">(${esc(sp.s)})</span>`:""}</div></div>
       ${lead}
-      <div><div class="k">Cosponsors</div>${cs&&cs.t!=null?`<div class="mono">${cs.t} · <span class="d">${cs.d||0} D</span> · <span class="r">${cs.r||0} R</span>${cs.i?` · <span class="i">${cs.i} I</span>`:""}</div>${splitBar(cs)}`:`<div class="muted">not recorded</div>`}</div>
+      <div><div class="k">Cosponsors</div>${cs&&cs.t!=null?`${cs.t?`<button type="button" class="cos-btn mono" data-cos="${esc(b.id)}" aria-expanded="false" aria-controls="cos-${esc(b.id)}" title="Show who cosponsored it">`:`<div class="mono">`}${cs.t} · <span class="d">${cs.d||0} D</span> · <span class="r">${cs.r||0} R</span>${cs.i?` · <span class="i">${cs.i} I</span>`:""}${cs.t?`<span class="cos-more">Names</span></button>`:`</div>`}${splitBar(cs)}`:`<div class="muted">not recorded</div>`}</div>
       <div><div class="k">Introduced</div><div class="mono">${fmtD(b.introduced)}</div></div>
     </div>
+    ${cs&&cs.t?`<div class="cos-list" id="cos-${esc(b.id)}" hidden></div>`:""}
     ${nm(b)!==b.title?`<div class="offt"><div class="k">Official title</div><div>${esc(b.title)}</div></div>`:""}
     ${b.url?`<div class="links"><a href="${esc(b.url)}" target="_blank" rel="noopener">Congress.gov</a>${b.law?` · <span class="mono">${esc(b.law)}</span>`:""}</div>`:""}
     ${tl?`<div><h4>Timeline</h4><ol class="tl">${tl}</ol></div>`:""}
@@ -1027,6 +1041,30 @@ function billCard(b){
     ${srcList(b)}
   </div></details>`;
 }
+
+/* cosponsor names: their own file, fetched the first time someone opens a list.
+   Each name is [name, party, seat, original]. Grouped by party, then by state. */
+let COS=null, cosLoading=null;
+function loadCosponsors(){return cosLoading||(cosLoading=fetch("data/cosponsors.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({})).then(j=>COS=j&&typeof j==="object"?j:{}))}
+function cosList(b){
+  const names=(COS||{})[b.id], cg=b.url?`<a href="${esc(b.url)}/cosponsors" target="_blank" rel="noopener">Full list on Congress.gov</a>`:"";
+  if(!Array.isArray(names))return`<p class="muted">Names show up after this bill's next check with Congress.gov. ${cg}</p>`;
+  const grp={D:[],R:[],I:[]};
+  for(const x of names){if(!Array.isArray(x)||!x[0])continue;(grp[x[1]]||grp.I).push(x)}
+  const lbl={D:"Democrats",R:"Republicans",I:"Independents"}, orig=names.some(x=>x&&x[3]);
+  const out=Object.entries(grp).filter(([,a])=>a.length).map(([p,a])=>{
+    a.sort((x,y)=>String(x[2]).localeCompare(String(y[2]),"en",{numeric:true})||String(x[0]).localeCompare(String(y[0])));
+    return`<div class="cos-grp"><h5>${pb(p)} ${lbl[p]} <span class="muted">${a.length}</span></h5><ul>${a.map(x=>`<li>${esc(x[0])} <span class="muted">${esc(x[2]||"")}</span>${x[3]?`<span class="cos-o" title="Signed on the day it was introduced">*</span>`:""}</li>`).join("")}</ul></div>`}).join("");
+  return`${out||`<p class="muted">No current cosponsors.</p>`}<p class="cos-foot muted">${orig?`* Signed on when it was introduced. `:""}${cg}</p>`;
+}
+document.addEventListener("click",async e=>{
+  const btn=e.target.closest&&e.target.closest(".cos-btn");if(!btn)return;
+  const b=bills.find(x=>x.id===btn.dataset.cos), box=document.getElementById("cos-"+btn.dataset.cos);if(!b||!box)return;
+  const open=btn.getAttribute("aria-expanded")!=="true";
+  btn.setAttribute("aria-expanded",String(open));box.hidden=!open;if(!open)return;
+  if(!COS){box.innerHTML=`<p class="muted">Loading…</p>`;await loadCosponsors()}
+  try{box.innerHTML=cosList(b)}catch(err){console.warn("cosponsor list skipped",err);box.innerHTML=`<p class="muted">Couldn't show the names.</p>`}
+});
 
 /* vehicle swap, from data/vehicles.json: the badge, the bill it carries (linked when it's on the site) and its source */
 function vehicleLine(b){

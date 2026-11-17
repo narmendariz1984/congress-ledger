@@ -851,3 +851,41 @@ class SenateVotes(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CosponsorNames(unittest.TestCase):
+    def _fetch(self, cos):
+        calls = {"bill/119/hr/5": {"bill": {"title": "T", "introducedDate": "2026-01-02", "sponsors": [], "laws": []}}}
+        orig_api, orig_all = F.api, F.api_all
+        F.api = lambda path, **k: calls.get(path, {})
+        F.api_all = lambda path, key: cos if key == "cosponsors" else []
+        try:
+            return F.fetch_bill(119, "hr", 5)
+        finally:
+            F.api, F.api_all = orig_api, orig_all
+
+    def test_names_party_seat_and_original_withdrawn_dropped(self):
+        b = self._fetch([
+            {"fullName": "Rep. Smith, Adam [D-WA-9]", "party": "D", "state": "WA", "district": 9, "isOriginalCosponsor": True},
+            {"fullName": "Sen. Collins, Susan M. [R-ME]", "party": "R", "state": "ME", "isOriginalCosponsor": False},
+            {"fullName": "Rep. Gone, Al [R-TX-1]", "party": "R", "state": "TX", "district": 1, "sponsorshipWithdrawnDate": "2026-02-01"},
+        ])
+        self.assertEqual(b["cosnames"], [["Adam Smith", "D", "WA-9", 1], ["Susan M. Collins", "R", "ME", 0]])
+        self.assertEqual((b["cosponsors"]["t"], b["cosponsors"]["d"], b["cosponsors"]["r"]), (2, 1, 1))
+
+    def test_split_keeps_old_names_for_bills_not_redownloaded_and_drops_untracked(self):
+        import tempfile
+        p = Path(tempfile.mkdtemp()) / "cosponsors.json"
+        p.write_text(json.dumps({"a": [["Old", "R", "TX", 0]], "gone": [["X", "D", "CA", 0]]}))
+        bills = [{"id": "a"}, {"id": "b", "cosnames": [["New", "D", "NY-3", 1]]}, {"id": "c", "cosnames": []}]
+        self.assertTrue(F.split_cosponsors(bills, p))
+        self.assertEqual(json.loads(p.read_text()), {"a": [["Old", "R", "TX", 0]], "b": [["New", "D", "NY-3", 1]], "c": []})
+        self.assertTrue(all("cosnames" not in b for b in bills))  # never in the main ledger
+        self.assertFalse(F.split_cosponsors([{"id": "a"}, {"id": "b"}, {"id": "c"}], p))  # unchanged: no write
+
+    def test_missing_or_broken_file_starts_fresh(self):
+        import tempfile
+        p = Path(tempfile.mkdtemp()) / "cosponsors.json"
+        p.write_text("{not json")
+        self.assertTrue(F.split_cosponsors([{"id": "a", "cosnames": [["N", "I", "VT", 0]]}], p))
+        self.assertEqual(json.loads(p.read_text()), {"a": [["N", "I", "VT", 0]]})
