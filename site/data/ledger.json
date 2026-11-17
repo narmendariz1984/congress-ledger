@@ -53005,7 +53005,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-17T13:53:04+00:00",
+ "generatedAt": "2026-11-17T14:29:35+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -54235,6 +54235,32 @@
   "senate": [
    {
     "ch": "S",
+    "d": "2026-11-16",
+    "issue": "HR2347",
+    "measure": "HR2347",
+    "n": 264,
+    "n_": "27",
+    "q": "On the Cloture Motion",
+    "result": "Cloture Motion Agreed to",
+    "title": "In the nature of a substitute.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm",
+    "y": "70"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-16",
+    "issue": "PN9992",
+    "measure": "PN9992",
+    "n": 263,
+    "n_": "46",
+    "q": "On the Nomination",
+    "result": "Nomination Confirmed",
+    "title": "Daniel Desmond Domenico, of Colorado, to be United States Circuit Judge for the Tenth Circuit",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00263.htm",
+    "y": "51"
+   },
+   {
+    "ch": "S",
     "d": "2026-11-12",
     "issue": "PN11817",
     "measure": "PN11817",
@@ -54986,32 +55012,6 @@
     "title": "Antonio M. Pozos, of Pennsylvania, to be United States District Judge for the Eastern District of Pennsylvania",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00205.htm",
     "y": "54"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-22",
-    "issue": "PN9993",
-    "measure": "PN9993",
-    "n": 204,
-    "n_": "36",
-    "q": "On the Nomination",
-    "result": "Nomination Confirmed",
-    "title": "Michael C. Martin, of Michigan, to be United States District Judge for the Eastern District of Michigan",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00204.htm",
-    "y": "62"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-22",
-    "issue": "PN9993",
-    "measure": "PN9993",
-    "n": 203,
-    "n_": "35",
-    "q": "On the Cloture Motion",
-    "result": "Cloture Motion Agreed to",
-    "title": "Michael C. Martin, of Michigan, to be United States District Judge for the Eastern District of Michigan",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00203.htm",
-    "y": "60"
    }
   ]
  },
