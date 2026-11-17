@@ -17,6 +17,12 @@
   "t": "This joint resolution opens approximately 225,504 acres of National Forest System lands in Cook, Lake, and Saint Louis Counties in Minnesota to mineral and geothermal leasing.",
   "v": "Public Law"
  },
+ "119-hjres142": {
+  "checked": "2026-11-17",
+  "d": "2026-02-18",
+  "t": "This joint resolution reinstates provisions of District of Columbia (DC) tax law to conform with federal tax law. As background, DC generally automatically adopts changes to federal tax law (known as rolling conformity).",
+  "v": "Public Law"
+ },
  "119-hjres210": {
   "checked": "2026-11-17",
   "d": "2026-09-15",
@@ -28,6 +34,9 @@
   "d": "2026-08-10",
   "t": "Specifically, the joint resolution nullifies the EPA authorization decision titled California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision .",
   "v": "Introduced in House"
+ },
+ "119-hjres72": {
+  "checked": "2026-11-17"
  },
  "119-hr1011": {
   "checked": "2026-11-17",
@@ -89,6 +98,12 @@
   "t": "This bill amends the Clean Air Act to address the limitations on Reid Vapor Pressure (a measure of gasoline's volatility) that are placed on gasoline during the summer ozone season.",
   "v": "Introduced in House"
  },
+ "119-hr1366": {
+  "checked": "2026-11-17",
+  "d": "2025-11-25",
+  "t": "This bill allows mining operators to use federal lands for activities ancillary to mining, such as waste disposal, regardless of whether those lands contain mineral deposits valuable enough to be mined (mineral validity). It also establishes the Abandoned Hardrock Mine Fund.",
+  "v": "Reported to House"
+ },
  "119-hr139": {
   "checked": "2026-11-17",
   "d": "2025-01-03",
@@ -100,6 +115,12 @@
   "d": "2025-02-21",
   "t": "This bill provides statutory authority for federal agencies to expedite the environmental review of certain mining infrastructure projects.",
   "v": "Introduced in House"
+ },
+ "119-hr1531": {
+  "checked": "2026-11-17",
+  "d": "2025-11-25",
+  "t": "This bill requires certain federal entities to seek to exclude China from six international financial organizations if the President informs Congress that China's actions threaten Taiwan and pose a danger to U.S. interests.",
+  "v": "Reported to House"
  },
  "119-hr1550": {
   "checked": "2026-11-16",
@@ -136,6 +157,15 @@
   "d": "2026-11-03",
   "t": "This act reauthorizes the U.S. Commission on International Religious Freedom through 2028.",
   "v": "Public Law"
+ },
+ "119-hr1823": {
+  "checked": "2026-11-17",
+  "d": "2026-01-20",
+  "t": "This act requires the Government Accountability Office (GAO) to review and report on the circumstances and causes of the shortfall in funding of the Veterans Benefits Administration for FY2024 and the expected shortfall in funding of the Veterans Health Administration in FY2025.",
+  "v": "Public Law"
+ },
+ "119-hr1834": {
+  "checked": "2026-11-17"
  },
  "119-hr1945": {
   "checked": "2026-11-16",
@@ -185,10 +215,28 @@
   "t": "This bill reauthorizes through FY2029 a diesel emissions reduction program under which the Environmental Protection Agency provides grants, rebates, or loans for replacing diesel engines or retrofitting the engines with pollution control technologies.",
   "v": "Introduced in House"
  },
+ "119-hr2189": {
+  "checked": "2026-11-17",
+  "d": "2026-01-30",
+  "t": "This bill removes less-than-lethal projectile devices (e.g., certain TASERs) from regulation under the Gun Control Act.",
+  "v": "Reported to House"
+ },
  "119-hr2196": {
   "checked": "2026-11-17",
   "d": "2026-02-24",
   "t": "This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.",
+  "v": "Reported to House"
+ },
+ "119-hr224": {
+  "checked": "2026-11-17",
+  "d": "2026-01-20",
+  "t": "This act excludes compensation received for a military service-connected disability from a veteran's income when determining eligibility for assistance under the Community Development Block Grant (CDBG) program.",
+  "v": "Public Law"
+ },
+ "119-hr2262": {
+  "checked": "2026-11-17",
+  "d": "2025-12-30",
+  "t": "This bill modifies the definition of hours worked under the Fair Labor Standards Act to exclude certain voluntary training that occurs outside an employee's regular working hours.",
   "v": "Reported to House"
  },
  "119-hr227": {
@@ -196,6 +244,12 @@
   "d": "2026-10-20",
   "t": "This act establishes a two-year window for members of the clergy who have opted out of Social Security and Medicare taxes (and are thus ineligible for benefits under those programs) to opt back in.",
   "v": "Public Law"
+ },
+ "119-hr2270": {
+  "checked": "2026-11-17",
+  "d": "2025-12-18",
+  "t": "This bill excludes the value of employer-funded child or dependent care from being used in calculating an eligible employee's overtime pay. Under current law, overtime hours must be paid at one and a half times an employee's regular rate of pay.",
+  "v": "Reported to House"
  },
  "119-hr2347": {
   "checked": "2026-11-16",
@@ -231,6 +285,12 @@
   "checked": "2026-11-17",
   "d": "2025-03-31",
   "t": "This bill reauthorizes through FY2030 grant programs administered by the Health Resources and Services Administration (HRSA) that provide funding to health care service providers and related entities in rural areas.",
+  "v": "Introduced in House"
+ },
+ "119-hr261": {
+  "checked": "2026-11-17",
+  "d": "2025-01-09",
+  "t": "This bill prohibits the Department of Commerce from enforcing certain permit requirements for activities related to undersea fiber optic cables in national marine sanctuaries.",
   "v": "Introduced in House"
  },
  "119-hr2616": {
@@ -269,10 +329,22 @@
   "t": "This bill allows state, local, and tribal law enforcement agencies and grantees that receive funds from certain law enforcement grant programs to use the funds to investigate general financial fraud, elder financial fraud, and pig butchering.",
   "v": "Reported to House"
  },
+ "119-hr2988": {
+  "checked": "2026-11-17",
+  "d": "2025-12-30",
+  "t": "This bill modifies the requirements for fiduciaries of employer-sponsored retirement plans.",
+  "v": "Reported to House"
+ },
  "119-hr3106": {
   "checked": "2026-11-17",
   "d": "2025-04-30",
   "t": "This bill requires the Department of Homeland Security (DHS) to develop and conduct an exercise to enhance collective domestic preparedness for and response to a terrorist attack during an extreme cold weather event (e.g., an event caused by a polar vortex when Arctic air expands southward).",
+  "v": "Introduced in House"
+ },
+ "119-hr3123": {
+  "checked": "2026-11-17",
+  "d": "2025-04-30",
+  "t": "This bill establishes procedures for the Department of Veterans Affairs (VA) to issue a pension that was due but unpaid at the time of a veteran’s death.",
   "v": "Introduced in House"
  },
  "119-hr3234": {
@@ -298,6 +370,12 @@
   "d": "2026-05-28",
   "t": "This act directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty. The act also directs the President to establish a commission on the medal of sacrifice and appoint its members.",
   "v": "Public Law"
+ },
+ "119-hr3617": {
+  "checked": "2026-11-17",
+  "d": "2025-09-11",
+  "t": "This bill requires the Department of Energy (DOE) to secure the supply of critical energy resources that are essential to the energy security of the United States.",
+  "v": "Reported to House"
  },
  "119-hr3620": {
   "checked": "2026-11-16",
@@ -347,10 +425,25 @@
   "t": "This bill requires the National Oceanic and Atmospheric Administration (NOAA) to establish a pilot program to facilitate the purchase of blue catfish caught within the Chesapeake Bay Watershed.",
   "v": "Reported to House"
  },
+ "119-hr4304": {
+  "checked": "2026-11-17"
+ },
  "119-hr4307": {
   "checked": "2026-11-16",
   "d": "2026-10-20",
   "t": "This act requires the Department of Labor to provide training and education to its employees on how to effectively assist law enforcement in detecting human trafficking. The act directs Labor to determine which employees should receive the training and education based on their official duties.",
+  "v": "Public Law"
+ },
+ "119-hr4323": {
+  "checked": "2026-11-17",
+  "d": "2026-01-23",
+  "t": "This act establishes a process to vacate convictions and expunge arrest records for certain criminal offenses committed by victims of human trafficking that directly result from or relate to having been a trafficking victim.",
+  "v": "Public Law"
+ },
+ "119-hr4446": {
+  "checked": "2026-11-17",
+  "d": "2026-01-20",
+  "t": "This act establishes conditions under which a veteran's individualized vocational rehabilitation plan (under the Veteran Readiness and Employment program) must be redeveloped. The program provides job training and employment-related services to veterans with service-connected disabilities.",
   "v": "Public Law"
  },
  "119-hr4467": {
@@ -371,6 +464,18 @@
   "t": "This bill requires federal financial regulators to review and streamline the application process for the formation of de novo, or new, depository institutions or credit unions.",
   "v": "Introduced in House"
  },
+ "119-hr4593": {
+  "checked": "2026-11-17",
+  "d": "2025-12-30",
+  "t": "This bill provides statutory authority for a revised definition of showerhead for the purpose of federal water efficiency regulations. Specifically, the bill adopts the definition of showerhead established by the American Society of Mechanical Engineers (ASME).",
+  "v": "Reported to House"
+ },
+ "119-hr4626": {
+  "checked": "2026-11-17",
+  "d": "2026-01-30",
+  "t": "This bill modifies the process by which the Department of Energy (DOE) issues or revises energy conservation standards for consumer products such as household appliances, including by requiring DOE to consider additional factors related to the cost and availability of such products.",
+  "v": "Reported to House"
+ },
  "119-hr4638": {
   "checked": "2026-11-17",
   "d": "2025-07-23",
@@ -387,6 +492,12 @@
   "checked": "2026-11-17",
   "d": "2026-02-04",
   "t": "This bill repeals certain energy efficiency performance standards for new federal buildings and federal buildings undergoing major renovations. Specifically, the bill repeals the performance standards that phase out fossil fuel use in such buildings by FY2030.",
+  "v": "Reported to House"
+ },
+ "119-hr4758": {
+  "checked": "2026-11-17",
+  "d": "2026-02-04",
+  "t": "This bill repeals the Department of Energy's (1) high-efficiency electric home rebate program for certain electrification projects in low- or moderate-income households, (2) state-based home energy efficiency contractor training grants, and (3) assistance for states and local governments to adopt specified building…",
   "v": "Reported to House"
  },
  "119-hr4795": {
@@ -491,6 +602,18 @@
   "t": "This bill requires the Department of Justice to publish annually a list of state and local governments that permit individuals who are charged with certain criminal offenses that pose a clear threat to public safety and order to be released pending trial on personal recognizance or upon execution of an unsecured…",
   "v": "Reported to House"
  },
+ "119-hr5763": {
+  "checked": "2026-11-17",
+  "d": "2025-12-12",
+  "t": "This bill lessens the financing requirements for certain Small Business Administration loans to small businesses for plant acquisition, construction, conversion, or expansion, including the acquisition of land.",
+  "v": "Reported to House"
+ },
+ "119-hr5764": {
+  "checked": "2026-11-17",
+  "d": "2025-12-12",
+  "t": "This bill requires Small Business Development Centers to assist small businesses in evaluating artificial intelligence, including by providing best practices for using artificial intelligence and guidance about using artificial intelligence to plan for unexpected circumstances.",
+  "v": "Reported to House"
+ },
  "119-hr6047": {
   "checked": "2026-11-17",
   "d": "2026-04-02",
@@ -502,6 +625,18 @@
   "d": "2026-04-09",
   "t": "This bill broadens the definition of the term business of insurance , for the purposes of federal crimes related to insurance fraud, to include the posting of monetary bail, criminal bail bonds, and federal immigration bail bonds.",
   "v": "Reported to House"
+ },
+ "119-hr6329": {
+  "checked": "2026-11-17",
+  "d": "2025-12-01",
+  "t": "This bill requires the Office of Management and Budget to revise the guidelines for federal agencies with respect to the dissemination or use of influential information or evidence , which means information or evidence about which an agency can reasonably determine that reliance on or dissemination of has, or will…",
+  "v": "Introduced in House"
+ },
+ "119-hr6359": {
+  "checked": "2026-11-17",
+  "d": "2025-12-02",
+  "t": "This bill requires each institution of higher education (IHE) that participates in federal student aid programs to provide certain information to prospective and enrolled students on the rights and resources for pregnant students to carry a baby to term or students who may become pregnant while enrolled at the IHE to…",
+  "v": "Introduced in House"
  },
  "119-hr6380": {
   "checked": "2026-11-16",
@@ -533,6 +668,12 @@
   "t": "This bill reauthorizes several water quality protection and restoration programs of the Environmental Protection Agency (EPA) and makes related requirements.",
   "v": "Introduced in House"
  },
+ "119-hr6472": {
+  "checked": "2026-11-17",
+  "d": "2026-02-11",
+  "t": "This bill requires public institutions of higher education that participate in federal student aid programs to charge no more than in-state tuition and fee rates to students who are residents of Guam, the Northern Mariana Islands, American Samoa, or the U.S. Virgin Islands, provided they are also U.S. nationals.",
+  "v": "Reported to House"
+ },
  "119-hr6500": {
   "checked": "2026-11-17",
   "d": "2026-09-02",
@@ -545,11 +686,29 @@
   "t": "This act establishes and modifies various federal housing programs. TITLE I--OPPORTUNITIES FOR HOUSING (Sec. 101) This section requires the Department of Housing and Urban Development (HUD) to review the performance of organizations that receive grants to provide housing counseling services.",
   "v": "Public Law"
  },
+ "119-hr6938": {
+  "checked": "2026-11-17",
+  "d": "2026-01-06",
+  "t": "This bill provides FY2026 appropriations to several federal departments and agencies for activities and programs related to commerce, law enforcement, science, energy and water development, public lands, and the environment.",
+  "v": "Introduced in House"
+ },
+ "119-hr6945": {
+  "checked": "2026-11-17",
+  "d": "2026-01-06",
+  "t": "This bill provides statutory authority for states to use Temporary Assistance for Needy Families (TANF) funds for pregnancy centers that (1) support protecting the life of the mother and the unborn child; and (2) offer resources and services to mothers, fathers, and families, including relationship counseling…",
+  "v": "Introduced in House"
+ },
  "119-hr6955": {
   "checked": "2026-11-17",
   "d": "2026-04-20",
   "t": "This bill lessens and otherwise modifies banking regulations, including those regarding institution formation, supervision by federal financial regulators, and bank merger requirements. Under the bill, new banks have a three-year phase-in period to meet certain capital requirements.",
   "v": "Reported to House"
+ },
+ "119-hr7006": {
+  "checked": "2026-11-17",
+  "d": "2026-01-12",
+  "t": "This bill provides FY2026 appropriations to several federal departments and agencies for activities and programs related to financial services, general government, national security, the administration of foreign affairs, and foreign assistance.",
+  "v": "Introduced in House"
  },
  "119-hr7008": {
   "checked": "2026-11-17",
@@ -580,6 +739,12 @@
   "d": "2026-04-30",
   "t": "This act provides FY2026 appropriations for agencies and offices within the Department of Homeland Security (DHS) except for (1) U.S. Immigration and Customs Enforcement (ICE), and (2) the U.S.",
   "v": "Public Law"
+ },
+ "119-hr7148": {
+  "checked": "2026-11-17",
+  "d": "2026-02-03",
+  "t": "This bill provides appropriations to several federal departments and agencies for the remainder of FY2026 and provides continuing FY2026 appropriations for the Department of Homeland Security (DHS) through February 13, 2026. It also extends various expiring programs and authorities.",
+  "v": "House agreed to Senate amendment"
  },
  "119-hr7211": {
   "checked": "2026-11-17",
@@ -627,6 +792,12 @@
   "checked": "2026-11-16",
   "d": "2026-02-26",
   "t": "This bill restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.",
+  "v": "Introduced in House"
+ },
+ "119-hr7744": {
+  "checked": "2026-11-17",
+  "d": "2026-03-02",
+  "t": "This bill provides appropriations to the Department of Homeland Security (DHS) for the remainder of FY2026. It also ends the partial DHS shutdown that began on February 14, 2026, because the continuing resolution (CR) that was funding DHS expired and a regular FY2026 DHS appropriations bill had not been enacted.",
   "v": "Introduced in House"
  },
  "119-hr7757": {
@@ -836,6 +1007,12 @@
   "t": "This bill provides continuing FY2027 appropriations for federal agencies and extends various expiring programs and authorities. Specifically, the bill provides continuing FY2027 appropriations to federal agencies through the earlier of December 4, 2026, or the enactment of the applicable appropriations act.",
   "v": "Passed House"
  },
+ "119-hr980": {
+  "checked": "2026-11-17",
+  "d": "2025-02-05",
+  "t": "This bill removes the requirement that educational and vocational counseling services provided by the Department of Veterans Affairs (VA) on campus at institutions of higher learning must be provided by VA counselors.",
+  "v": "Introduced in House"
+ },
  "119-hr997": {
   "checked": "2026-11-16",
   "d": "2025-02-05",
@@ -884,6 +1061,12 @@
   "t": "This act provides $70 billion in funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S.",
   "v": "Public Law"
  },
+ "119-s222": {
+  "checked": "2026-11-17",
+  "d": "2026-01-14",
+  "t": "This act revises requirements for milk provided by the National School Lunch Program of the Department of Agriculture (USDA) to allow schools to offer students whole and reduced-fat milk. The act also requires that local school food service personnel receive annual training and certification on food allergies.",
+  "v": "Public Law"
+ },
  "119-s2393": {
   "checked": "2026-11-17",
   "d": "2026-06-09",
@@ -908,10 +1091,22 @@
   "t": "This act allows the fiduciary of an Employee Stock Ownership Plan (ESOP) to rely on a valuation provided by an independent valuation expert or business appraiser in determining the fair market value of the plan's assets if the assets are not securities for which there is a generally recognized market and the expert or…",
   "v": "Public Law"
  },
+ "119-s2503": {
+  "checked": "2026-11-17",
+  "d": "2025-12-17",
+  "t": "This bill addresses aviation safety by increasing requirements for aircraft tracking and communication using Automatic Dependent Surveillance-Broadcast (ADS-B) technology and expanding oversight.",
+  "v": "Passed Senate"
+ },
  "119-s254": {
   "checked": "2026-11-17",
   "d": "2026-06-12",
   "t": "This act prohibits states from imposing bans on marine mammal products produced by Alaska Natives.",
+  "v": "Public Law"
+ },
+ "119-s269": {
+  "checked": "2026-11-17",
+  "d": "2026-02-10",
+  "t": "This act permanently allows the Department of the Treasury to access certain death records maintained by the Social Security Administration (SSA) to help prevent and recover improper payments (e.g., payments to deceased individuals).",
   "v": "Public Law"
  },
  "119-s283": {
@@ -930,6 +1125,24 @@
   "checked": "2026-11-17",
   "d": "2026-09-16",
   "t": "This act adds College Station to the list of places where court must be held in the Galveston Division of the Southern District of Texas. Additionally, the act adds El Centro to the list of places where court must be held in the Southern District of California.",
+  "v": "Public Law"
+ },
+ "119-s3424": {
+  "checked": "2026-11-17",
+  "d": "2026-02-06",
+  "t": "This act makes several changes to the administration of bankruptcy cases, particularly by increasing amounts received by certain trustees, extending the sunset date of various fees, and extending the term of specified bankruptcy judgeships.",
+  "v": "Public Law"
+ },
+ "119-s3627": {
+  "checked": "2026-11-17",
+  "d": "2026-01-13",
+  "t": "This bill requires each institution of higher education (IHE) that participates in federal student aid programs to provide certain information to prospective and enrolled students on the rights and resources for pregnant students to carry a baby to term or students who may become pregnant while enrolled at the IHE to…",
+  "v": "Introduced in Senate"
+ },
+ "119-s3705": {
+  "checked": "2026-11-17",
+  "d": "2026-02-18",
+  "t": "This act requires the Architect of the Capitol to create a congressional time capsule in honor of the 250 th anniversary of the Declaration of Independence to be buried in the Capitol Visitor Center on or before July 4, 2026.",
   "v": "Public Law"
  },
  "119-s3971": {
@@ -1033,6 +1246,12 @@
  },
  "119-sjres103": {
   "checked": "2026-11-17"
+ },
+ "119-sjres104": {
+  "checked": "2026-11-17",
+  "d": "2026-01-29",
+  "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
+  "v": "Introduced in Senate"
  },
  "119-sjres107": {
   "checked": "2026-11-17"
@@ -1149,6 +1368,15 @@
   "checked": "2026-11-17",
   "d": "2025-03-10",
   "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres95": {
+  "checked": "2026-11-17"
+ },
+ "119-sjres98": {
+  "checked": "2026-11-17",
+  "d": "2025-12-03",
+  "t": "This joint resolution directs the President to terminate the use of U.S. Armed Forces for hostilities within or against Venezuela unless a declaration of war or authorization to use military force for such purpose has been enacted.",
   "v": "Introduced in Senate"
  },
  "119-sjres99": {
