@@ -2106,6 +2106,11 @@
     "s": "TX-11"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-03-14",
+    "t": "This joint resolution eliminates an annual waste emissions charge on oil or gas facilities under the Methane Emissions Reduction Program.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3478,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-18T03:51:38+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -4934,6 +4939,11 @@
     "s": "MO-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-10",
+    "t": "This bill extends from 5 to 10 years the statute of limitations for federal criminal charges or civil enforcement actions for fraud related to several unemployment insurance programs that were established during the COVID-19 pandemic.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -10763,6 +10773,11 @@
     "s": "OK-4"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-03-15",
+    "t": "This act provides continuing FY2025 appropriations for federal agencies and extends various expiring programs and authorities.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -11831,6 +11846,11 @@
     "s": "MO-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill establishes requirements for the degree of care a health care practitioner must provide in the case of a child born alive following an abortion or attempted abortion.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13643,6 +13663,11 @@
     "s": "TX-21"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill imposes sanctions against foreign persons (individuals and entities) who assist the International Criminal Court (ICC) in investigating, arresting, detaining, or prosecuting certain individuals.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13706,7 +13731,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13717,8 +13742,8 @@
    "id": "119-hr2302",
    "introduced": "2025-03-24",
    "latest": {
-    "actionDate": "2026-11-16",
-    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)"
+    "actionDate": "2026-11-17",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 2302",
    "number": 2302,
@@ -14051,7 +14076,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-18T03:51:38+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14067,8 +14092,8 @@
    "id": "119-hr2347",
    "introduced": "2026-09-30",
    "latest": {
-    "actionDate": "2026-11-16",
-    "text": "Considered by Senate. (consideration: CR S5679)"
+    "actionDate": "2026-11-17",
+    "text": "Considered by Senate."
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -14338,7 +14363,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14349,14 +14374,15 @@
    "id": "119-hr2400",
    "introduced": "2025-03-27",
    "latest": {
-    "actionDate": "2026-11-16",
-    "text": "Message on Senate action sent to the House."
+    "actionDate": "2026-11-17",
+    "actionTime": "17:23:56",
+    "text": "Motion to reconsider laid on the table Agreed to without objection."
    },
    "num": "H.R. 2400",
    "number": 2400,
    "passed": {
     "H": {
-     "d": "2025-12-15",
+     "d": "2026-11-17",
      "how": "voice"
     },
     "S": {
@@ -14377,25 +14403,6 @@
     "v": "Passed Senate"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-07-23",
-     "e": "Ordered to be Reported (Amended) by Unanimous Consent.",
-     "fn": "cg"
-    },
-    {
-     "ch": "H",
-     "d": "2025-07-23",
-     "e": "Subcommittee on Indian and Insular Affairs Discharged",
-     "fn": "cg"
-    },
-    {
-     "ch": "H",
-     "d": "2025-09-15",
-     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-289.",
-     "fn": "cg",
-     "v": "119–289"
-    },
     {
      "ch": "H",
      "d": "2025-12-15",
@@ -14437,6 +14444,24 @@
      "ch": "S",
      "d": "2026-09-30",
      "e": "Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "On motion that the House suspend the rules and agree to the Senate amendment Agreed to by voice vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Resolving differences -- House actions: On motion that the House suspend the rules and agree to the Senate amendment Agreed to by voice vote.",
      "fn": "cg"
     }
    ],
@@ -15201,6 +15226,11 @@
     "s": "TX-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill prohibits the President from declaring a moratorium on the use of hydraulic fracturing unless Congress authorizes the moratorium.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -15750,6 +15780,11 @@
     "s": "VA-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill permanently places fentanyl-related substances as a class into schedule I of the Controlled Substances Act.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -16864,6 +16899,11 @@
     "s": "GA-10"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill requires the Department of Homeland Security (DHS) to detain certain non-U.S. nationals ( aliens under federal law) who have been arrested for burglary, theft, larceny, or shoplifting.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -17721,6 +17761,11 @@
     "s": "SC-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill establishes certain criminal grounds for making non-U.S. nationals ( aliens under federal law) inadmissible and expands the crimes for which a non-U.S. national is deportable.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -20227,6 +20272,11 @@
     "s": "AZ-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill establishes new federal criminal offenses for operating a motor vehicle within 100 miles of the U.S. border while fleeing from a U.S. Border Patrol agent or a federal, state, or local law enforcement officer who is actively assisting or under the command of the U.S.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -20303,6 +20353,11 @@
     "s": "CA-23"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-13",
+    "t": "This bill requires the Department of Energy (DOE) to report on the use of its authority to reduce or eliminate the nonfederal cost-sharing requirements for federally-funded projects regarding research, development, demonstration, and commercial application activities under the Energy Policy Act of 2005.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -21552,6 +21607,11 @@
     "s": "HI-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-13",
+    "t": "This bill establishes requirements to research and control Rapid Ohia Death, which is the disease caused by the fungal pathogen known as Ceratocystis fimbriata that affects the tree of the species Metrosideros polymorpha .",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -24058,7 +24118,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-18T03:51:38+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -25686,6 +25746,11 @@
     "s": "AR-4"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-16",
+    "t": "This bill establishes requirements for managing forests on federal land, including requirements concerning reducing wildfire threats, expediting the review of certain forest management projects, and implementing forest management projects and other activities.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -26253,7 +26318,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26264,8 +26329,8 @@
    "id": "119-hr4930",
    "introduced": "2025-08-08",
    "latest": {
-    "actionDate": "2026-11-12",
-    "text": "Message on Senate action sent to the House."
+    "actionDate": "2026-11-17",
+    "text": "Presented to President."
    },
    "num": "H.R. 4930",
    "number": 4930,
@@ -26279,7 +26344,7 @@
      "how": "uc"
     }
    },
-   "reached": 4,
+   "reached": 5,
    "sponsor": {
     "n": "Blake D. Moore",
     "p": "R",
@@ -26347,6 +26412,12 @@
      "d": "2026-11-10",
      "e": "Senate Committee on Finance discharged by Unanimous Consent.",
      "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Presented to President.",
+     "fn": "cg"
     }
    ],
    "title": "To expand the sharing of information with respect to suspected violations of intellectual property rights in trade.",
@@ -26403,6 +26474,11 @@
     "s": "AZ-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-16",
+    "t": "This bill requires recurring annual reporting by U.S. Customs and Border Protection (CBP) on the implementation of a strategic plan to counter illicit cross-border tunnel operations.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -27743,6 +27819,125 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/5214"
   },
   {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 1,
+    "i": 0,
+    "r": 1,
+    "st": [
+     "IL",
+     "MO"
+    ],
+    "t": 2
+   },
+   "fetched": "2026-11-18T13:26:18+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/5254"
+    }
+   },
+   "id": "119-hr5254",
+   "introduced": "2025-09-10",
+   "latest": {
+    "actionDate": "2026-11-17",
+    "text": "Passed Senate without amendment by Unanimous Consent."
+   },
+   "num": "H.R. 5254",
+   "number": 5254,
+   "passed": {
+    "H": {
+     "d": "2026-03-16",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-11-17",
+     "how": "uc"
+    }
+   },
+   "reached": 4,
+   "sponsor": {
+    "n": "Wesley Bell",
+    "p": "D",
+    "s": "MO-1"
+   },
+   "status": "passed1",
+   "sum": {
+    "d": "2026-03-02",
+    "t": "This bill authorizes the National Park Service (NPS) to enter into a one-time agreement with the Gateway Arch Park Foundation to host private events at the Gateway Arch National Park and its buildings for a period of up to five years. The NPS manages the park, located in St.",
+    "v": "Reported to House"
+   },
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-01-22",
+     "e": "Subcommittee on Federal Lands Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-02",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-536.",
+     "fn": "cg",
+     "v": "119–536"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-16",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-16",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H2519-2520)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-03-16",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H2519-2520)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-07-29",
+     "e": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-09-17",
+     "e": "Committee on Energy and Natural Resources. Reported by Senator Lee without amendment. Without written report.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-10",
+     "e": "Star Print ordered on the reported bill, by unanimous consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-17",
+     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-17",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "Gateway Partnership Act",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/5254"
+  },
+  {
    "area": "Child care",
    "auto": true,
    "congress": 119,
@@ -28869,7 +29064,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-18T03:51:38+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -31588,6 +31783,11 @@
     "s": "PA-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-23",
+    "t": "This bill requires the U.S. Executive Director at the International Monetary Fund (IMF) to use the voice and vote of the United States to advocate for increased exchange rate transparency from China.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33335,6 +33535,11 @@
     "s": "IA-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-24",
+    "t": "This bill extends the deadline for certain companies that are required to file beneficial ownership information with the Financial Crimes Enforcement Network (FinCEN).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -33733,6 +33938,11 @@
     "s": "VA-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-28",
+    "t": "This bill requires the U.S. Postal Service to issue regulations to mandate collecting, tracking, and publicly reporting information related to deaths and injuries resulting from traffic crashes involving vehicles transporting mail.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -34088,6 +34298,11 @@
     "s": "AZ-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-12",
+    "t": "This bill allows Congress to disapprove multiple regulations under one joint resolution of disapproval if the regulations were submitted for review during a portion of the final year of a President's term.",
+    "v": "Passed House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -34608,6 +34823,11 @@
     "s": "CA-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-28",
+    "t": "This bill reauthorizes through FY2030 the Nutria Eradication and Control Act of 2003, which allows the Department of the Interior to provide financial assistance to states for (1) eradicating or controlling nutria, and (2) restoring marshland damaged by nutria. Nutria are invasive, semi-aquatic rodents.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -34795,7 +35015,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T16:11:06+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -34806,8 +35026,8 @@
    "id": "119-hr7834",
    "introduced": "2026-03-05",
    "latest": {
-    "actionDate": "2026-11-16",
-    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)"
+    "actionDate": "2026-11-17",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 7834",
    "number": 7834,
@@ -34935,6 +35155,11 @@
     "s": "NY-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-28",
+    "t": "This bill requires the Department of Energy and the Small Business Administration to enter into an agreement to collaborate on research and development activities. These activities must include, as appropriate, small businesses.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35307,6 +35532,11 @@
     "s": "MN-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-28",
+    "t": "This bill requires the Small Business Administration's Office of Disaster Recovery and Resilience to take necessary actions to ensure that individuals located in rural areas where a disaster has been declared have full access to disaster assistance.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35387,6 +35617,11 @@
     "s": "MN-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-28",
+    "t": "This bill requires federal agencies to include on their annual scorecard for small business contracting the number of small businesses that receive a prime contract for the first time and are owned and controlled by service-disabled veterans, qualified HUBZone small business concerns, small business concerns owned and…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35638,6 +35873,11 @@
     "s": "TX-25"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-28",
+    "t": "This bill prohibits individuals convicted of certain financial crimes from receiving assistance from the Small Business Administration (SBA).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -35912,6 +36152,11 @@
     "s": "TX-25"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-31",
+    "t": "This bill expands the primary functions and additional duties of the Office of Advocacy of the Small Business Administration to include (1) examining the role of small businesses in the international economy, and (2) representing the views and interests of small businesses before foreign governments and international…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -36660,6 +36905,116 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/845"
   },
   {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-18T13:26:18+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8454"
+    }
+   },
+   "id": "119-hr8454",
+   "introduced": "2026-04-22",
+   "latest": {
+    "actionDate": "2026-11-17",
+    "text": "Passed Senate without amendment by Unanimous Consent."
+   },
+   "num": "H.R. 8454",
+   "number": 8454,
+   "passed": {
+    "H": {
+     "d": "2026-09-14",
+     "how": "voice"
+    },
+    "S": {
+     "d": "2026-11-17",
+     "how": "uc"
+    }
+   },
+   "reached": 4,
+   "sponsor": {
+    "n": "Tom McClintock",
+    "p": "R",
+    "s": "CA-5"
+   },
+   "status": "passed1",
+   "sum": {
+    "d": "2026-04-22",
+    "t": "This bill exchanges administrative jurisdiction over specified parcels of federal land between Yosemite National Park and Stanislaus National Forest in California. By way of background, cattle are grazing on the land currently managed by the National Park Service.",
+    "v": "Introduced in House"
+   },
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-22",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-22",
+     "e": "Ordered to be Reported in the Nature of a Substitute (Amended) by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-07-22",
+     "e": "Subcommittee on Federal Lands Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-08-27",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-777.",
+     "fn": "cg",
+     "v": "119–777"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5567)",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-14",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5567)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-17",
+     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-17",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    }
+   ],
+   "title": "To provide for the transfer of administrative jurisdiction over certain Federal land in the State of California, and for other purposes.",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8454"
+  },
+  {
    "area": "Accountability & oversight",
    "auto": true,
    "congress": 119,
@@ -36961,6 +37316,105 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/8469"
   },
   {
+   "area": "Native Americans",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 0,
+    "st": [],
+    "t": 0
+   },
+   "fetched": "2026-11-18T13:26:18+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8483"
+    }
+   },
+   "id": "119-hr8483",
+   "introduced": "2026-04-23",
+   "latest": {
+    "actionDate": "2026-11-17",
+    "actionTime": "18:56:40",
+    "text": "Motion to reconsider laid on the table Agreed to without objection."
+   },
+   "num": "H.R. 8483",
+   "number": 8483,
+   "passed": {
+    "H": {
+     "d": "2026-11-17",
+     "how": "roll",
+     "roll": 324,
+     "v": "398–0"
+    }
+   },
+   "reached": 3,
+   "sponsor": {
+    "n": "Darrell Issa",
+    "p": "R",
+    "s": "CA-48"
+   },
+   "status": "passed1",
+   "sum": {
+    "d": "2026-10-29",
+    "t": "This bill takes three parcels of specified federal land (approximately 847 acres) in San Diego County, California, into trust for the benefit of the Barona Group of Capitan Grande Band of Mission Indians of the Barona Reservation, California. The land taken into trust shall be part of the Tribe's reservation.",
+    "v": "Reported to House"
+   },
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-04-23",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Indian and Insular Affairs Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-858.",
+     "fn": "cg",
+     "v": "119–858"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 398 - 0 (Roll no. 324).",
+     "fn": "cg",
+     "v": "398–0"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 398 - 0 (Roll no. 324).",
+     "fn": "cg",
+     "v": "398–0"
+    }
+   ],
+   "title": "Barona Group of Capitan Grande Band of Mission Indians Land Transfer Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/8483"
+  },
+  {
    "area": "Armed Forces and National Security",
    "auto": true,
    "congress": 119,
@@ -36976,7 +37430,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36987,8 +37441,8 @@
    "id": "119-hr8552",
    "introduced": "2026-04-28",
    "latest": {
-    "actionDate": "2026-11-12",
-    "text": "Message on Senate action sent to the House."
+    "actionDate": "2026-11-17",
+    "text": "Presented to President."
    },
    "num": "H.R. 8552",
    "number": 8552,
@@ -37002,7 +37456,7 @@
      "how": "voice"
     }
    },
-   "reached": 4,
+   "reached": 5,
    "sponsor": {
     "n": "Morgan Luttrell",
     "p": "R",
@@ -37049,6 +37503,12 @@
      "ch": "S",
      "d": "2026-11-11",
      "e": "Passed/agreed to in Senate: Passed Senate without amendment by Voice Vote.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Presented to President.",
      "fn": "cg"
     }
    ],
@@ -37100,6 +37560,11 @@
     "s": "FL-19"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-31",
+    "t": "This bill requires the Office of Management and Budget (OMB) to evaluate the procurement activities of federal agencies to determine whether provisions of the Federal Acquisition Regulation related to the lowest price technically acceptable source selection process have created any national security risk and report to…",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -38247,6 +38712,11 @@
     "s": "AL-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-31",
+    "t": "This bill requires the Science and Technology Directorate in the Department of Homeland Security (DHS) to develop a department-wide policy for safeguarding research and development from unauthorized access or disclosures of sensitive information in related acquisitions.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -39222,6 +39692,107 @@
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/9576"
   },
   {
+   "area": "Public Lands and Natural Resources",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 0,
+    "i": 0,
+    "r": 1,
+    "st": [
+     "IN"
+    ],
+    "t": 1
+   },
+   "fetched": "2026-11-18T13:26:18+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9600"
+    }
+   },
+   "id": "119-hr9600",
+   "introduced": "2026-07-06",
+   "latest": {
+    "actionDate": "2026-11-17",
+    "actionTime": "19:05:38",
+    "text": "Motion to reconsider laid on the table Agreed to without objection."
+   },
+   "num": "H.R. 9600",
+   "number": 9600,
+   "passed": {
+    "H": {
+     "d": "2026-11-17",
+     "how": "roll",
+     "roll": 325,
+     "v": "365–36"
+    }
+   },
+   "reached": 3,
+   "sponsor": {
+    "n": "Jamie Raskin",
+    "p": "D",
+    "s": "MD-8"
+   },
+   "status": "passed1",
+   "sum": {
+    "d": "2026-10-29",
+    "t": "This bill requires the authorized monument honoring Thomas Paine to be located in Area 1 of the National Mall, which is reserved for commemorative works of preeminent historical and lasting significance to the United States.",
+    "v": "Reported to House"
+   },
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-07-06",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Federal Lands Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported by the Committee on Natural Resources. H. Rept. 119-860.",
+     "fn": "cg",
+     "v": "119–860"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 365 - 36 (Roll no. 325).",
+     "fn": "cg",
+     "v": "365–36"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-17",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 365 - 36 (Roll no. 325).",
+     "fn": "cg",
+     "v": "365–36"
+    }
+   ],
+   "title": "Common Sense 250 Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9600"
+  },
+  {
    "area": "Climate & energy",
    "auto": true,
    "congress": 119,
@@ -40028,6 +40599,11 @@
     "s": "CA-46"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-05",
+    "t": "This bill requires U.S. Customs and Border Protection (CBP) and the Science and Technology Directorate of the Department of Homeland Security to develop a plan to identify, integrate, and deploy emerging and innovative technologies to improve border security operations.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -45159,7 +45735,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-18T03:51:38+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -45255,7 +45831,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-18T03:51:38+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -46673,7 +47249,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T13:53:04+00:00",
+   "fetched": "2026-11-18T13:26:18+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -46864,6 +47440,11 @@
     "s": "AL"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-01-29",
+    "t": "This act requires the Department of Homeland Security (DHS) to detain certain non-U.S. nationals ( aliens under federal law) who have been arrested for burglary, theft, larceny, shoplifting, assault of a law enforcement officer, or any crime that results in death or serious bodily injury to another person.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -47215,6 +47796,11 @@
     "s": "OK"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-01-15",
+    "t": "This bill establishes requirements for the degree of care a health care practitioner must provide in the case of a child born alive following an abortion or attempted abortion.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -48413,6 +48999,11 @@
     "s": "AL"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-01-07",
+    "t": "This bill generally prohibits school athletic programs from allowing individuals whose biological sex at birth was male to participate in programs that are for women or girls.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -48640,6 +49231,11 @@
     "s": "VA"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-02-03",
+    "t": "This joint resolution terminates the national emergency relating to energy declared by the President on January 20, 2025, in Executive Order 14156. The executive order states that the supply of and infrastructure for energy in the United States is insufficient to meet the country's needs.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -48978,6 +49574,11 @@
     "s": "LA"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-03-14",
+    "t": "Specifically, the joint resolution nullifies BOEM's final rule titled Protection of Marine Archaeological Resources and published on September 3, 2024.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51199,6 +51800,11 @@
     "s": "TX"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-21",
+    "t": "This joint resolution nullifies the rule titled Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales and issued by the Internal Revenue Service (IRS) on December 30, 2024.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -53608,7 +54214,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-18T03:51:38+00:00",
+ "generatedAt": "2026-11-18T13:26:18+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
