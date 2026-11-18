@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -6627,6 +6627,11 @@
     "s": "TN-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill expands reporting requirements for the Tennessee Valley Authority (TVA). TVA is a government corporation that provides electricity in Tennessee and in portions of several surrounding states.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7268,6 +7273,11 @@
     "s": "MS-4"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill requires the Federal Emergency Management Agency (FEMA) to streamline disaster information collection, convene a working group on preliminary damage assessments, and provide a report to Congress.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7467,6 +7477,11 @@
     "s": "MS-4"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill establishes a centralized location to publish information on disaster assistance provided by federal agencies.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7944,6 +7959,11 @@
     "s": "OR-4"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill authorizes electric utilities receiving certain emergency assistance for the restoration of power to also carry out cost-effective hazard mitigation activities in combination with the power restoration activities.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -8528,7 +8548,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -10297,6 +10317,11 @@
     "s": "NC-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill requires Amtrak to publicly disclose the annual base pay and bonus compensation paid to an Amtrak executive in a required annual report to Congress. Specifically, Amtrak must incorporate into the annual report the annual base pay and any bonus compensation paid to a member of the executive leadership team.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -14076,7 +14101,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14093,7 +14118,7 @@
    "introduced": "2026-09-30",
    "latest": {
     "actionDate": "2026-11-17",
-    "text": "Considered by Senate."
+    "text": "Considered by Senate. (consideration: CR S5705)"
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -14363,7 +14388,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14455,7 +14480,7 @@
     {
      "ch": "H",
      "d": "2026-11-17",
-     "e": "On motion that the House suspend the rules and agree to the Senate amendment Agreed to by voice vote.",
+     "e": "On motion that the House suspend the rules and agree to the Senate amendment Agreed to by voice vote. (text: CR H6247-6248)",
      "fn": "cg"
     },
     {
@@ -16250,6 +16275,11 @@
     "s": "FL-17"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill generally prohibits school athletic programs from allowing individuals whose biological sex at birth was male to participate in programs that are for women or girls.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -24118,7 +24148,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -27832,7 +27862,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27844,7 +27874,7 @@
    "introduced": "2025-09-10",
    "latest": {
     "actionDate": "2026-11-17",
-    "text": "Passed Senate without amendment by Unanimous Consent."
+    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)"
    },
    "num": "H.R. 5254",
    "number": 5254,
@@ -27923,7 +27953,7 @@
     {
      "ch": "S",
      "d": "2026-11-17",
-     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)",
      "fn": "cg"
     },
     {
@@ -29064,7 +29094,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -34477,7 +34507,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36200,7 +36230,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36915,7 +36945,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36927,7 +36957,7 @@
    "introduced": "2026-04-22",
    "latest": {
     "actionDate": "2026-11-17",
-    "text": "Passed Senate without amendment by Unanimous Consent."
+    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)"
    },
    "num": "H.R. 8454",
    "number": 8454,
@@ -37000,7 +37030,7 @@
     {
      "ch": "S",
      "d": "2026-11-17",
-     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)",
      "fn": "cg"
     },
     {
@@ -37326,7 +37356,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37398,7 +37428,7 @@
     {
      "ch": "H",
      "d": "2026-11-17",
-     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 398 - 0 (Roll no. 324).",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 398 - 0 (Roll no. 324). (text: CR H6240-6241)",
      "fn": "cg",
      "v": "398–0"
     },
@@ -38037,7 +38067,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39704,7 +39734,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39776,7 +39806,7 @@
     {
      "ch": "H",
      "d": "2026-11-17",
-     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 365 - 36 (Roll no. 325).",
+     "e": "On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 365 - 36 (Roll no. 325). (text: CR H6242)",
      "fn": "cg",
      "v": "365–36"
     },
@@ -45735,7 +45765,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -45831,7 +45861,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-18T21:35:47+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54214,7 +54244,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-18T14:05:18+00:00",
+ "generatedAt": "2026-11-18T21:35:47+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -54520,6 +54550,39 @@
  "session": 2,
  "votes": {
   "house": [
+   {
+    "ch": "H",
+    "d": "2026-11-18",
+    "measure": "HR 9640",
+    "n": 326,
+    "n_": "14",
+    "p": {
+     "D": [
+      206,
+      0,
+      0,
+      8
+     ],
+     "I": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "R": [
+      190,
+      14,
+      0,
+      14
+     ]
+    },
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
+    "result": "Passed",
+    "title": "Earth MRI Reauthorization Act",
+    "type": "2/3 Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026326",
+    "y": "396"
+   },
    {
     "ch": "H",
     "d": "2026-11-17",
@@ -55466,19 +55529,6 @@
     "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202676",
     "y": "217"
-   },
-   {
-    "ch": "H",
-    "d": "2026-02-24",
-    "measure": "HR 4626",
-    "n": 75,
-    "n_": "208",
-    "q": "On Motion to Recommit",
-    "result": "Failed",
-    "title": "Home Appliance Protection and Affordability Act",
-    "type": "Yea-and-Nay",
-    "u": "https://clerk.house.gov/Votes/202675",
-    "y": "197"
    }
   ],
   "senate": [

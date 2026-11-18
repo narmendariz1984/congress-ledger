@@ -317,6 +317,12 @@
   "t": "This bill requires ticket sellers (including sellers on the secondary market) for concerts, performances, sporting events, and similar activities to clearly and prominently disclose the total ticket price for the event at the time the ticket is first displayed to an individual (and anytime thereafter during the…",
   "v": "Introduced in House"
  },
+ "119-hr144": {
+  "checked": "2026-11-18",
+  "d": "2025-01-03",
+  "t": "This bill expands reporting requirements for the Tennessee Valley Authority (TVA). TVA is a government corporation that provides electricity in Tennessee and in portions of several surrounding states.",
+  "v": "Introduced in House"
+ },
  "119-hr1442": {
   "checked": "2026-11-17",
   "d": "2025-02-18",
@@ -347,10 +353,22 @@
   "t": "Current law requires the State Department to conduct a one-time review of its guidance governing relations with Taiwan and report to Congress on this review. Under this bill, the State Department must review that guidance and report to Congress every two years while the guidance is in effect.",
   "v": "Introduced in House"
  },
+ "119-hr152": {
+  "checked": "2026-11-18",
+  "d": "2025-01-03",
+  "t": "This bill requires the Federal Emergency Management Agency (FEMA) to streamline disaster information collection, convene a working group on preliminary damage assessments, and provide a report to Congress.",
+  "v": "Introduced in House"
+ },
  "119-hr1526": {
   "checked": "2026-11-17",
   "d": "2025-02-24",
   "t": "This bill limits the authority of federal district courts to issue injunctions. Specifically, it prohibits a district court from issuing an injunction unless the injunction applies only to the parties of the particular case before the court.",
+  "v": "Introduced in House"
+ },
+ "119-hr153": {
+  "checked": "2026-11-18",
+  "d": "2025-01-03",
+  "t": "This bill establishes a centralized location to publish information on disaster assistance provided by federal agencies.",
   "v": "Introduced in House"
  },
  "119-hr1531": {
@@ -375,6 +393,12 @@
   "checked": "2026-11-17",
   "d": "2025-02-26",
   "t": "This bill directs the Department of Homeland Security (DHS) to submit a report to Congress on the department's efforts to prevent, deter, and respond to vehicular terrorism (i.e., an action that utilizes automotive transportation to commit terrorism).",
+  "v": "Introduced in House"
+ },
+ "119-hr164": {
+  "checked": "2026-11-18",
+  "d": "2025-01-03",
+  "t": "This bill authorizes electric utilities receiving certain emergency assistance for the restoration of power to also carry out cost-effective hazard mitigation activities in combination with the power restoration activities.",
   "v": "Introduced in House"
  },
  "119-hr1642": {
@@ -492,6 +516,12 @@
   "checked": "2026-11-17",
   "d": "2025-03-06",
   "t": "This bill prohibits a Federal Reserve bank from offering products or services directly to an individual, maintaining an account on behalf of an individual, or issuing a central bank digital currency (i.e., a digital dollar).",
+  "v": "Introduced in House"
+ },
+ "119-hr192": {
+  "checked": "2026-11-18",
+  "d": "2025-01-03",
+  "t": "This bill requires Amtrak to publicly disclose the annual base pay and bonus compensation paid to an Amtrak executive in a required annual report to Congress. Specifically, Amtrak must incorporate into the annual report the annual base pay and any bonus compensation paid to a member of the executive leadership team.",
   "v": "Introduced in House"
  },
  "119-hr1945": {
@@ -789,6 +819,12 @@
   "t": "This bill renames the Gulf of Mexico as the Gulf of America and directs federal agencies to update their documents and maps to incorporate the new name.",
   "v": "Introduced in House"
  },
+ "119-hr28": {
+  "checked": "2026-11-18",
+  "d": "2025-01-03",
+  "t": "This bill generally prohibits school athletic programs from allowing individuals whose biological sex at birth was male to participate in programs that are for women or girls.",
+  "v": "Introduced in House"
+ },
  "119-hr2808": {
   "checked": "2026-11-17",
   "d": "2025-09-05",
@@ -920,6 +956,9 @@
   "d": "2026-08-20",
   "t": "This bill provides statutory authority for the Urban Bird Treaty Program, which is administered by the U.S. Fish and Wildlife Service.",
   "v": "Reported to House"
+ },
+ "119-hr33": {
+  "checked": "2026-11-18"
  },
  "119-hr3351": {
   "checked": "2026-11-17",

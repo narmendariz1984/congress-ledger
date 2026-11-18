@@ -484,7 +484,7 @@
   "119-hr9600",
   "119-hr8483"
  ],
- "lastDiscovery": "2026-11-18T13:26:18+00:00",
+ "lastDiscovery": "2026-11-18T21:35:47+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -498,7 +498,7 @@
  },
  "rule": "recorded-vote-v3",
  "schema": 3,
- "voteDiscovery": "2026-11-17T22:38:47+00:00",
+ "voteDiscovery": "2026-11-18T21:35:47+00:00",
  "houseVotes": {
   "119-2-74": {
    "q": "On Agreeing to the Resolution",
@@ -918,7 +918,8 @@
   "119-hr7954",
   "119-hr8195",
   "119-hr9269",
-  "119-hr9785"
+  "119-hr9785",
+  "119-s433"
  ],
  "statusRule": "killed-v2",
  "outcomeRule": "outcome-v2",
@@ -1443,19 +1444,6 @@
    "u": "https://clerk.house.gov/Votes/202676",
    "y": "217"
   },
-  "2026-75": {
-   "ch": "H",
-   "d": "2026-02-24",
-   "measure": "HR 4626",
-   "n": 75,
-   "n_": "208",
-   "q": "On Motion to Recommit",
-   "result": "Failed",
-   "title": "Home Appliance Protection and Affordability Act",
-   "type": "Yea-and-Nay",
-   "u": "https://clerk.house.gov/Votes/202675",
-   "y": "197"
-  },
   "2026-307": {
    "ch": "H",
    "n": 307,
@@ -1882,6 +1870,39 @@
    "y": "365",
    "n_": "36",
    "u": "https://clerk.house.gov/Votes/2026325"
+  },
+  "2026-326": {
+   "ch": "H",
+   "n": 326,
+   "p": {
+    "R": [
+     190,
+     14,
+     0,
+     14
+    ],
+    "D": [
+     206,
+     0,
+     0,
+     8
+    ],
+    "I": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "d": "2026-11-18",
+   "type": "2/3 Yea-And-Nay",
+   "q": "On Motion to Suspend the Rules and Pass, as Amended",
+   "measure": "HR 9640",
+   "title": "Earth MRI Reauthorization Act",
+   "result": "Passed",
+   "y": "396",
+   "n_": "14",
+   "u": "https://clerk.house.gov/Votes/2026326"
   }
  },
  "rcSeen": {}
