@@ -62,6 +62,12 @@
   "t": "This joint resolution reinstates provisions of District of Columbia (DC) tax law to conform with federal tax law. As background, DC generally automatically adopts changes to federal tax law (known as rolling conformity).",
   "v": "Public Law"
  },
+ "119-hjres20": {
+  "checked": "2026-11-17",
+  "d": "2025-05-09",
+  "t": "This joint resolution nullifies the rule titled Energy Conservation Program: Energy Conservation Standards for Consumer Gas-fired Instantaneous Water Heaters and submitted by the Department of Energy (DOE) on December 26, 2024.",
+  "v": "Public Law"
+ },
  "119-hjres210": {
   "checked": "2026-11-17",
   "d": "2026-09-15",
@@ -74,8 +80,50 @@
   "t": "Specifically, the joint resolution nullifies the EPA authorization decision titled California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision .",
   "v": "Introduced in House"
  },
+ "119-hjres24": {
+  "checked": "2026-11-17",
+  "d": "2025-05-09",
+  "t": "This joint resolution eliminates new, more stringent energy conservation standards for certain walk-in coolers and freezers, including the new limits on maximum daily energy consumption for walk-in non-display doors.",
+  "v": "Public Law"
+ },
+ "119-hjres25": {
+  "checked": "2026-11-17",
+  "d": "2025-04-10",
+  "t": "This joint resolution nullifies requirements for persons effectuating decentralized financial (DeFi) transactions to report certain information regarding digital asset sales to the Internal Revenue Service (IRS).",
+  "v": "Public Law"
+ },
+ "119-hjres42": {
+  "checked": "2026-11-17",
+  "d": "2025-05-09",
+  "t": "This joint resolution eliminates new, more stringent certification, labeling, and enforcement requirements related to energy conservation standards for specific types of appliances.",
+  "v": "Public Law"
+ },
+ "119-hjres60": {
+  "checked": "2026-11-17",
+  "d": "2025-05-23",
+  "t": "This joint resolution allows off-road vehicles to be used in certain areas of the Glen Canyon National Recreation Area, which is in northern Arizona and southeastern Utah and contains Lake Powell.",
+  "v": "Public Law"
+ },
+ "119-hjres61": {
+  "checked": "2026-11-17",
+  "d": "2025-05-23",
+  "t": "This joint resolution removes emission regulations on hazardous air pollutants under the rubber tire manufacturing source category, specifically from the rubber processing subcategory.",
+  "v": "Public Law"
+ },
  "119-hjres72": {
   "checked": "2026-11-17"
+ },
+ "119-hjres75": {
+  "checked": "2026-11-17",
+  "d": "2025-05-09",
+  "t": "This joint resolution eliminates new, more stringent energy conservation standards for commercial refrigerators, freezers, and refrigerator-freezers. Under the joint resolution, such equipment is no longer required to comply with the new standards.",
+  "v": "Public Law"
+ },
+ "119-hjres78": {
+  "checked": "2026-11-17",
+  "d": "2025-03-21",
+  "t": "This joint resolution nullifies the rule issued by the U.S. Fish and Wildlife Service titled Endangered and Threatened Wildlife and Plants; Endangered Species Status for the San Francisco Bay-Delta Distinct Population Segment of the Longfin Smelt and published on July 30, 2024.",
+  "v": "Introduced in House"
  },
  "119-hjres87": {
   "checked": "2026-11-17",
@@ -131,6 +179,12 @@
   "t": "This bill requires states to provide such information as the Department of Justice (DOJ) may require for the purpose of investigating or prosecuting alleged fraud committed with regard to certain federally funded programs.",
   "v": "Introduced in House"
  },
+ "119-hr1039": {
+  "checked": "2026-11-17",
+  "d": "2025-02-06",
+  "t": "This bill requires the Department of Veterans Affairs (VA) to seek to enter into an agreement with a federally funded research and development center to assess notices that the VA sends to claimants applying for or submitting claims for VA benefits.",
+  "v": "Introduced in House"
+ },
  "119-hr1041": {
   "checked": "2026-11-17",
   "d": "2025-02-06",
@@ -141,6 +195,12 @@
   "checked": "2026-11-17",
   "d": "2025-02-06",
   "t": "This bill requires the Federal Energy Regulatory Commission (FERC) to issue and periodically review a rule that revises the approval process for interconnection requests of generating units that produce electricity to prioritize dispatchable power projects (e.g., certain fossil fuel projects).",
+  "v": "Introduced in House"
+ },
+ "119-hr1048": {
+  "checked": "2026-11-17",
+  "d": "2025-02-06",
+  "t": "This bill expands oversight and disclosure requirements related to foreign sources and institutions of higher education (IHEs).",
   "v": "Introduced in House"
  },
  "119-hr1049": {
@@ -167,10 +227,34 @@
   "t": "This bill prohibits payment card networks from using merchant codes that distinguish firearms retailers from general-merchandise retailers or sporting-goods retailers. The Department of Justice must enforce this bill and report annually on the resulting investigations and cases.",
   "v": "Introduced in House"
  },
+ "119-hr1223": {
+  "checked": "2026-11-17",
+  "d": "2025-02-12",
+  "t": "This bill requires the National Science Foundation (NSF) to develop a plan to improve the cybersecurity and telecommunications capabilities of the U.S. Academic Research Fleet (ARF).",
+  "v": "Introduced in House"
+ },
+ "119-hr1228": {
+  "checked": "2026-11-17",
+  "d": "2025-02-12",
+  "t": "This bill provides that the Office of Survivors Assistance (OSA) must operate within the Office of the Secretary of the Department of Veterans Affairs. (Currently, OSA operates within the Pension and Fiduciary Service of the Veterans Benefits Administration.)",
+  "v": "Introduced in House"
+ },
+ "119-hr1263": {
+  "checked": "2026-11-17",
+  "d": "2025-02-12",
+  "t": "This bill directs the Department of State to seek to establish a working group with Japan, Australia, and India to facilitate closer cooperation on shared interests and values.",
+  "v": "Introduced in House"
+ },
  "119-hr1276": {
   "checked": "2026-11-17",
   "d": "2025-02-13",
   "t": "This bill directs the Department of the Interior to remove all deed restrictions from approximately 3.62 acres located at 2956 Park Avenue, on the Paducah Memorial Army Reserve Center in Paducah, Kentucky.",
+  "v": "Introduced in House"
+ },
+ "119-hr1286": {
+  "checked": "2026-11-17",
+  "d": "2025-02-13",
+  "t": "This bill requires the Department of Veterans Affairs (VA) to seek to enter an agreement with a federally funded research and development center to assess the forms that the VA sends to claimants.",
   "v": "Introduced in House"
  },
  "119-hr131": {
@@ -184,6 +268,12 @@
   "d": "2025-08-19",
   "t": "This act requires the Department of Commerce's Bureau of Industry and Security (BIS) to annually report to Congress on export control licensing.",
   "v": "Public Law"
+ },
+ "119-hr1326": {
+  "checked": "2026-11-17",
+  "d": "2025-02-13",
+  "t": "This bill requires the Department of Energy and Department of Agriculture to carry out cross-cutting and collaborative research and development activities through the establishment of an interagency agreement.",
+  "v": "Introduced in House"
  },
  "119-hr1329": {
   "checked": "2026-11-17",
@@ -233,10 +323,22 @@
   "t": "This bill provides statutory authority for federal agencies to expedite the environmental review of certain mining infrastructure projects.",
   "v": "Introduced in House"
  },
+ "119-hr1503": {
+  "checked": "2026-11-17",
+  "d": "2025-02-21",
+  "t": "This bill requires the President to impose sanctions on persons (individuals and entities) involved in forced organ trafficking and authorizes the Department of State to deny or revoke the passports of individuals convicted of certain crimes related to organ trafficking.",
+  "v": "Introduced in House"
+ },
  "119-hr1512": {
   "checked": "2026-11-17",
   "d": "2025-02-21",
   "t": "Current law requires the State Department to conduct a one-time review of its guidance governing relations with Taiwan and report to Congress on this review. Under this bill, the State Department must review that guidance and report to Congress every two years while the guidance is in effect.",
+  "v": "Introduced in House"
+ },
+ "119-hr1526": {
+  "checked": "2026-11-17",
+  "d": "2025-02-24",
+  "t": "This bill limits the authority of federal district courts to issue injunctions. Specifically, it prohibits a district court from issuing an injunction unless the injunction applies only to the parties of the particular case before the court.",
   "v": "Introduced in House"
  },
  "119-hr1531": {
@@ -244,6 +346,12 @@
   "d": "2025-11-25",
   "t": "This bill requires certain federal entities to seek to exclude China from six international financial organizations if the President informs Congress that China's actions threaten Taiwan and pose a danger to U.S. interests.",
   "v": "Reported to House"
+ },
+ "119-hr1534": {
+  "checked": "2026-11-17",
+  "d": "2025-02-24",
+  "t": "This bill requires the Department of Energy (DOE) to establish a temporary program that supports advanced production of low-emissions cement, concrete, and asphalt.",
+  "v": "Introduced in House"
  },
  "119-hr1550": {
   "checked": "2026-11-16",
@@ -255,6 +363,12 @@
   "checked": "2026-11-17",
   "d": "2025-02-26",
   "t": "This bill directs the Department of Homeland Security (DHS) to submit a report to Congress on the department's efforts to prevent, deter, and respond to vehicular terrorism (i.e., an action that utilizes automotive transportation to commit terrorism).",
+  "v": "Introduced in House"
+ },
+ "119-hr1642": {
+  "checked": "2026-11-17",
+  "d": "2025-02-26",
+  "t": "This bill requires Small Business Development Centers and Women's Business Centers to provide educational information to small businesses about hiring graduates of career and technical education programs.",
   "v": "Introduced in House"
  },
  "119-hr165": {
@@ -315,6 +429,12 @@
   "checked": "2026-11-17",
   "d": "2025-03-03",
   "t": "This bill (1) establishes a pilot program to explore the use of artificial intelligence to support the Consumer Product Safety Commission (CPSC), and (2) requires reports related to blockchain technology and digital tokens.",
+  "v": "Introduced in House"
+ },
+ "119-hr1804": {
+  "checked": "2026-11-17",
+  "d": "2025-03-03",
+  "t": "This bill requires the Small Business Administration (SBA) to submit an annual report containing specified information related to 7(a) loan agents. These agents provide fee-based referral and loan application services related to the SBA's 7(a) Program.",
   "v": "Introduced in House"
  },
  "119-hr1815": {
@@ -458,6 +578,12 @@
   "t": "This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.",
   "v": "Reported to House"
  },
+ "119-hr22": {
+  "checked": "2026-11-17",
+  "d": "2025-01-03",
+  "t": "This bill requires individuals to provide documentary proof of U.S. citizenship when registering to vote in federal elections.",
+  "v": "Introduced in House"
+ },
  "119-hr2215": {
   "checked": "2026-11-17",
   "d": "2025-07-15",
@@ -469,6 +595,24 @@
   "d": "2026-01-20",
   "t": "This act excludes compensation received for a military service-connected disability from a veteran's income when determining eligibility for assistance under the Community Development Block Grant (CDBG) program.",
   "v": "Public Law"
+ },
+ "119-hr2240": {
+  "checked": "2026-11-17",
+  "d": "2025-03-21",
+  "t": "This bill requires the Department of Justice to report on (1) targeted attacks on law enforcement officers, (2) the feasibility of incorporating such attacks into existing crime reporting systems, and (3) the mental health resources that are available to law enforcement officers.",
+  "v": "Introduced in House"
+ },
+ "119-hr2243": {
+  "checked": "2026-11-17",
+  "d": "2025-03-21",
+  "t": "This bill broadens the authority for certain law enforcement officers to carry concealed firearms across state lines.",
+  "v": "Introduced in House"
+ },
+ "119-hr2255": {
+  "checked": "2026-11-17",
+  "d": "2025-03-21",
+  "t": "This bill directs the General Services Administration to establish a program under which a federal law enforcement officer may purchase a retired firearm from the agency that issued the firearm to the officer.",
+  "v": "Introduced in House"
  },
  "119-hr2262": {
   "checked": "2026-11-17",
@@ -595,6 +739,12 @@
   "checked": "2026-11-17",
   "d": "2025-01-09",
   "t": "This bill requires the Department of Homeland Security (DHS) to report every month on non-U.S. nationals ( aliens under federal law) who attempt to unlawfully enter the United States and who potentially pose a national security risk.",
+  "v": "Introduced in House"
+ },
+ "119-hr276": {
+  "checked": "2026-11-17",
+  "d": "2025-01-09",
+  "t": "This bill renames the Gulf of Mexico as the Gulf of America and directs federal agencies to update their documents and maps to incorporate the new name.",
   "v": "Introduced in House"
  },
  "119-hr2808": {
@@ -788,6 +938,12 @@
   "d": "2026-05-28",
   "t": "This act directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty. The act also directs the President to establish a commission on the medal of sacrifice and appoint its members.",
   "v": "Public Law"
+ },
+ "119-hr36": {
+  "checked": "2026-11-17",
+  "d": "2025-01-03",
+  "t": "This bill requires the President to impose sanctions on certain foreign persons, including Georgian government officials, who are undermining Georgia's security or stability.",
+  "v": "Introduced in House"
  },
  "119-hr3616": {
   "checked": "2026-11-17",
@@ -1155,6 +1311,12 @@
   "t": "This bill changes certain terms that are used by the Social Security Administration (SSA) to describe the ages at which a worker may claim Social Security retirement benefits. First, the SSA must use minimum monthly benefit age instead of early eligibility age .",
   "v": "Introduced in House"
  },
+ "119-hr530": {
+  "checked": "2026-11-17",
+  "d": "2025-01-16",
+  "t": "This bill requires the Department of Veterans Affairs to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine to study and report on the prevalence and mortality of cancers among veterans who served on active duty as aircrew members and regularly flew in fixed-wing aircraft.",
+  "v": "Introduced in House"
+ },
  "119-hr5317": {
   "checked": "2026-11-17",
   "d": "2025-11-04",
@@ -1238,6 +1400,12 @@
   "d": "2025-12-12",
   "t": "This bill requires Small Business Development Centers to assist small businesses in evaluating artificial intelligence, including by providing best practices for using artificial intelligence and guidance about using artificial intelligence to plan for unexpected circumstances.",
   "v": "Reported to House"
+ },
+ "119-hr586": {
+  "checked": "2026-11-17",
+  "d": "2025-01-21",
+  "t": "This bill requires the Department of Veterans Affairs (VA) to conduct an epidemiological study and report on the prevalence of cholangiocarcinoma (bile duct cancer) in veterans who served in the Vietnam theater of operations during the Vietnam era.",
+  "v": "Introduced in House"
  },
  "119-hr6019": {
   "checked": "2026-11-17",
@@ -1569,6 +1737,12 @@
   "t": "This bill requires the Department of Veterans Affairs (VA) to increase the amounts payable for wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.",
   "v": "Introduced in House"
  },
+ "119-hr859": {
+  "checked": "2026-11-17",
+  "d": "2025-01-31",
+  "t": "This bill requires manufacturers of internet-connected devices (e.g., smart appliances) that are equipped with a camera or microphone to disclose to consumers prior to purchase that a camera or microphone is part of the device.",
+  "v": "Introduced in House"
+ },
  "119-hr8595": {
   "checked": "2026-11-17",
   "d": "2026-04-30",
@@ -1592,6 +1766,12 @@
   "d": "2026-06-15",
   "t": "This bill sets forth policies and authorities for FY2027 for Department of Defense (DOD) programs, activities, and military construction as well as the national security programs of the Department of Energy (DOE).",
   "v": "Reported to House"
+ },
+ "119-hr881": {
+  "checked": "2026-11-17",
+  "d": "2025-01-31",
+  "t": "This bill restricts funding to an institution of higher education (IHE) that has a relationship with a Confucius Institute, Thousand Talents Program, or Chinese entity of concern.",
+  "v": "Introduced in House"
  },
  "119-hr8823": {
   "checked": "2026-11-17",
@@ -1689,6 +1869,12 @@
   "t": "This act expands the boundaries of the Sloan Canyon National Conservation Area in Clark County, Nevada, and grants rights-of-way through the conservation area and other land administered by the Bureau of Land Management (BLM) for the construction of a water transmission pipeline and related facilities.",
   "v": "Public Law"
  },
+ "119-hr973": {
+  "checked": "2026-11-17",
+  "d": "2025-02-04",
+  "t": "This bill requires the Consumer Product Safety Commission to issue a final consumer product safety rule for rechargeable lithium-ion batteries used in micromobility devices, such as electric bikes and electric scooters.",
+  "v": "Introduced in House"
+ },
  "119-hr9770": {
   "checked": "2026-11-17",
   "d": "2026-07-21",
@@ -1748,6 +1934,12 @@
   "d": "2026-02-11",
   "t": "This bill requires individuals to provide documentary proof of U.S. citizenship when registering to vote, and requires photo identification to vote, in federal elections.",
   "v": "Passed House"
+ },
+ "119-s146": {
+  "checked": "2026-11-17",
+  "d": "2025-05-19",
+  "t": "This act generally prohibits the nonconsensual online publication of intimate visual depictions of individuals, both authentic and computer-generated, and requires certain online platforms (e.g., social media platforms) to promptly remove such depictions upon receiving notice of their existence.",
+  "v": "Public Law"
  },
  "119-s1582": {
   "checked": "2026-11-17",
@@ -2148,6 +2340,12 @@
   "t": "This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.",
   "v": "Introduced in Senate"
  },
+ "119-sjres18": {
+  "checked": "2026-11-17",
+  "d": "2025-05-09",
+  "t": "This joint resolution nullifies the final rule issued by the Consumer Financial Protection Bureau titled Overdraft Lending: Very Large Financial Institutions and published on December 30, 2024.",
+  "v": "Public Law"
+ },
  "119-sjres180": {
   "checked": "2026-11-17",
   "d": "2026-04-13",
@@ -2196,6 +2394,18 @@
  "119-sjres199": {
   "checked": "2026-11-17"
  },
+ "119-sjres26": {
+  "checked": "2026-11-17",
+  "d": "2025-02-25",
+  "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres28": {
+  "checked": "2026-11-17",
+  "d": "2025-05-09",
+  "t": "This joint resolution nullifies the final rule issued by the Consumer Financial Protection Bureau (CFPB) titled Defining Larger Participants of a Market for General-Use Digital Consumer Payment Applications and published on December 10, 2024.",
+  "v": "Public Law"
+ },
  "119-sjres31": {
   "checked": "2026-11-17",
   "d": "2025-06-20",
@@ -2208,16 +2418,34 @@
   "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
   "v": "Introduced in Senate"
  },
+ "119-sjres33": {
+  "checked": "2026-11-17",
+  "d": "2025-03-10",
+  "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+  "v": "Introduced in Senate"
+ },
  "119-sjres34": {
   "checked": "2026-11-17",
   "d": "2025-03-10",
   "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
   "v": "Introduced in Senate"
  },
+ "119-sjres37": {
+  "checked": "2026-11-17",
+  "d": "2025-03-11",
+  "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on February 1, 2025, which imposed an additional 25% tariff on most imports from Canada (except for Canadian energy or energy resources, which have an additional 10% tariff).",
+  "v": "Introduced in Senate"
+ },
  "119-sjres41": {
   "checked": "2026-11-17",
   "d": "2025-03-27",
   "t": "This joint resolution prohibits a proposed export of certain firearms, parts, and components to Israel.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres49": {
+  "checked": "2026-11-17",
+  "d": "2025-04-10",
+  "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on April 2, 2025, which imposed a 10% tariff on most imports to the United States and additional duties on specified trading partners.",
   "v": "Introduced in Senate"
  },
  "119-sjres53": {
@@ -2230,6 +2458,12 @@
   "checked": "2026-11-17",
   "d": "2025-05-15",
   "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to the United Arab Emirates.",
+  "v": "Introduced in Senate"
+ },
+ "119-sjres55": {
+  "checked": "2026-11-17",
+  "d": "2025-05-19",
+  "t": "This joint resolution nullifies the final rule issued by the National Highway Traffic Safety Administration titled Federal Motor Vehicle Safety Standards; Fuel System Integrity of Hydrogen Vehicles; Compressed Hydrogen Storage System Integrity; Incorporation by Reference and published on January 17, 2025.",
   "v": "Introduced in Senate"
  },
  "119-sjres59": {
@@ -2246,6 +2480,12 @@
  },
  "119-sjres69": {
   "checked": "2026-11-17"
+ },
+ "119-sjres7": {
+  "checked": "2026-11-17",
+  "d": "2025-01-27",
+  "t": "This joint resolution nullifies the final rule issued by the Federal Communications Commission titled Addressing the Homework Gap Through the E-Rate Program and published on August 20, 2024.",
+  "v": "Introduced in Senate"
  },
  "119-sjres71": {
   "checked": "2026-11-17",

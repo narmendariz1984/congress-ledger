@@ -1462,6 +1462,11 @@
     "s": "AL-6"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-09",
+    "t": "This joint resolution nullifies the rule titled Energy Conservation Program: Energy Conservation Standards for Consumer Gas-fired Instantaneous Water Heaters and submitted by the Department of Energy (DOE) on December 26, 2024.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -1793,6 +1798,11 @@
     "s": "OK-5"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-09",
+    "t": "This joint resolution eliminates new, more stringent energy conservation standards for certain walk-in coolers and freezers, including the new limits on maximum daily energy consumption for walk-in non-display doors.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -1940,6 +1950,11 @@
     "s": "OH-15"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-04-10",
+    "t": "This joint resolution nullifies requirements for persons effectuating decentralized financial (DeFi) transactions to report certain information regarding digital asset sales to the Internal Revenue Service (IRS).",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -2227,6 +2242,11 @@
     "s": "GA-9"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-09",
+    "t": "This joint resolution eliminates new, more stringent certification, labeling, and enforcement requirements related to energy conservation standards for specific types of appliances.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -2366,6 +2386,11 @@
     "s": "UT-2"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-23",
+    "t": "This joint resolution allows off-road vehicles to be used in certain areas of the Glen Canyon National Recreation Area, which is in northern Arizona and southeastern Utah and contains Lake Powell.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -2518,6 +2543,11 @@
     "s": "VA-9"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-23",
+    "t": "This joint resolution removes emission regulations on hazardous air pollutants under the rubber tire manufacturing source category, specifically from the rubber processing subcategory.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -2748,6 +2778,11 @@
     "s": "TX-12"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-09",
+    "t": "This joint resolution eliminates new, more stringent energy conservation standards for commercial refrigerators, freezers, and refrigerator-freezers. Under the joint resolution, such equipment is no longer required to comply with the new standards.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -2865,6 +2900,11 @@
     "s": "CA-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-21",
+    "t": "This joint resolution nullifies the rule issued by the U.S. Fish and Wildlife Service titled Endangered and Threatened Wildlife and Plants; Endangered Species Status for the San Francisco Bay-Delta Distinct Population Segment of the Longfin Smelt and published on July 30, 2024.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -3438,7 +3478,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -4106,6 +4146,11 @@
     "s": "MI-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-06",
+    "t": "This bill requires the Department of Veterans Affairs (VA) to seek to enter into an agreement with a federally funded research and development center to assess notices that the VA sends to claimants applying for or submitting claims for VA benefits.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -4455,6 +4500,11 @@
     "s": "WA-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-06",
+    "t": "This bill expands oversight and disclosure requirements related to foreign sources and institutions of higher education (IHEs).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5139,6 +5189,11 @@
     "s": "CA-20"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-12",
+    "t": "This bill requires the National Science Foundation (NSF) to develop a plan to improve the cybersecurity and telecommunications capabilities of the U.S. Academic Research Fleet (ARF).",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5221,6 +5276,11 @@
     "s": "AZ-6"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-12",
+    "t": "This bill provides that the Office of Survivors Assistance (OSA) must operate within the Office of the Secretary of the Department of Veterans Affairs. (Currently, OSA operates within the Pension and Fiduciary Service of the Veterans Benefits Administration.)",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5299,6 +5359,11 @@
     "s": "NY-5"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-12",
+    "t": "This bill directs the Department of State to seek to establish a working group with Japan, Australia, and India to facilitate closer cooperation on shared interests and values.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5517,6 +5582,11 @@
     "s": "PA-8"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-13",
+    "t": "This bill requires the Department of Veterans Affairs (VA) to seek to enter an agreement with a federally funded research and development center to assess the forms that the VA sends to claimants.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -5871,6 +5941,11 @@
     "s": "OK-3"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-13",
+    "t": "This bill requires the Department of Energy and Department of Agriculture to carry out cross-cutting and collaborative research and development activities through the establishment of an interagency agreement.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -6970,6 +7045,11 @@
     "s": "NJ-4"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-21",
+    "t": "This bill requires the President to impose sanctions on persons (individuals and entities) involved in forced organ trafficking and authorizes the Department of State to deny or revoke the passports of individuals convicted of certain crimes related to organ trafficking.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7262,6 +7342,11 @@
     "s": "CA-48"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-24",
+    "t": "This bill limits the authority of federal district courts to issue injunctions. Specifically, it prohibits a district court from issuing an injunction unless the injunction applies only to the parties of the particular case before the court.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7550,6 +7635,11 @@
     "s": "OH-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-24",
+    "t": "This bill requires the Department of Energy (DOE) to establish a temporary program that supports advanced production of low-emissions cement, concrete, and asphalt.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -7924,6 +8014,11 @@
     "s": "TX-25"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-26",
+    "t": "This bill requires Small Business Development Centers and Women's Business Centers to provide educational information to small businesses about hiring graduates of career and technical education programs.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -9157,6 +9252,11 @@
     "s": "PA-9"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-03",
+    "t": "This bill requires the Small Business Administration (SBA) to submit an annual report containing specified information related to 7(a) loan agents. These agents provide fee-based referral and loan application services related to the SBA's 7(a) Program.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -12479,6 +12579,11 @@
     "s": "TX-21"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill requires individuals to provide documentary proof of U.S. citizenship when registering to vote in federal elections.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -12859,6 +12964,11 @@
     "s": "NC-14"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-21",
+    "t": "This bill requires the Department of Justice to report on (1) targeted attacks on law enforcement officers, (2) the feasibility of incorporating such attacks into existing crime reporting systems, and (3) the mental health resources that are available to law enforcement officers.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -12964,6 +13074,11 @@
     "s": "NE-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-21",
+    "t": "This bill broadens the authority for certain law enforcement officers to carry concealed firearms across state lines.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13058,6 +13173,11 @@
     "s": "SC-7"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-21",
+    "t": "This bill directs the General Services Administration to establish a program under which a federal law enforcement officer may purchase a retired firearm from the agency that issued the firearm to the officer.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -13931,7 +14051,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -15949,6 +16069,11 @@
     "s": "GA-14"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-09",
+    "t": "This bill renames the Gulf of Mexico as the Gulf of America and directs federal agencies to update their documents and maps to incorporate the new name.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -18285,7 +18410,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -20266,6 +20391,11 @@
     "s": "SC-2"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-03",
+    "t": "This bill requires the President to impose sanctions on certain foreign persons, including Georgian government officials, who are undermining Georgia's security or stability.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -23928,7 +24058,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -27799,6 +27929,11 @@
     "s": "TX-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-16",
+    "t": "This bill requires the Department of Veterans Affairs to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine to study and report on the prevalence and mortality of cancers among veterans who served on active duty as aircrew members and regularly flew in fixed-wing aircraft.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -28734,7 +28869,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -29563,6 +29698,11 @@
     "s": "NY-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-21",
+    "t": "This bill requires the Department of Veterans Affairs (VA) to conduct an epidemiological study and report on the prevalence of cholangiocarcinoma (bile duct cancer) in veterans who served in the Vietnam theater of operations during the Vietnam era.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -30066,7 +30206,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37036,6 +37176,11 @@
     "s": "ID-1"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-31",
+    "t": "This bill requires manufacturers of internet-connected devices (e.g., smart appliances) that are equipped with a camera or microphone to disclose to consumers prior to purchase that a camera or microphone is part of the device.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -37581,6 +37726,11 @@
     "s": "TX-11"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-31",
+    "t": "This bill restricts funding to an institution of higher education (IHE) that has a relationship with a Confucius Institute, Thousand Talents Program, or Chinese entity of concern.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -39479,6 +39629,11 @@
     "s": "NY-15"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-02-04",
+    "t": "This bill requires the Consumer Product Safety Commission to issue a final consumer product safety rule for rechargeable lithium-ion batteries used in micromobility devices, such as electric bikes and electric scooters.",
+    "v": "Introduced in House"
+   },
    "timeline": [
     {
      "ch": "H",
@@ -40960,6 +41115,11 @@
     "s": "TX"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-19",
+    "t": "This act generally prohibits the nonconsensual online publication of intimate visual depictions of individuals, both authentic and computer-generated, and requires certain online platforms (e.g., social media platforms) to promptly remove such depictions upon receiving notice of their existence.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -44999,7 +45159,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -45095,7 +45255,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-18T03:51:38+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -49927,6 +50087,11 @@
     "s": "SC"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-09",
+    "t": "This joint resolution nullifies the final rule issued by the Consumer Financial Protection Bureau titled Overdraft Lending: Very Large Financial Institutions and published on December 30, 2024.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -50808,6 +50973,11 @@
     "s": "VT"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-02-25",
+    "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -50898,6 +51068,11 @@
     "s": "NE"
    },
    "status": "law",
+   "sum": {
+    "d": "2025-05-09",
+    "t": "This joint resolution nullifies the final rule issued by the Consumer Financial Protection Bureau (CFPB) titled Defining Larger Participants of a Market for General-Use Digital Consumer Payment Applications and published on December 10, 2024.",
+    "v": "Public Law"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51312,6 +51487,11 @@
     "s": "VT"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-03-10",
+    "t": "This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51453,6 +51633,11 @@
     "s": "VA"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-03-11",
+    "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on February 1, 2025, which imposed an additional 25% tariff on most imports from Canada (except for Canadian energy or energy resources, which have an additional 10% tariff).",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51600,6 +51785,11 @@
     "s": "OR"
    },
    "status": "killed",
+   "sum": {
+    "d": "2025-04-10",
+    "t": "This joint resolution terminates the national emergency declared by President Donald J. Trump on April 2, 2025, which imposed a 10% tariff on most imports to the United States and additional duties on specified trading partners.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -51832,6 +52022,11 @@
     "s": "WV"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-05-19",
+    "t": "This joint resolution nullifies the final rule issued by the National Highway Traffic Safety Administration titled Federal Motor Vehicle Safety Standards; Fuel System Integrity of Hydrogen Vehicles; Compressed Hydrogen Storage System Integrity; Incorporation by Reference and published on January 17, 2025.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -52146,6 +52341,11 @@
     "s": "TX"
    },
    "status": "passed1",
+   "sum": {
+    "d": "2025-01-27",
+    "t": "This joint resolution nullifies the final rule issued by the Federal Communications Commission titled Addressing the Homework Gap Through the E-Rate Program and published on August 20, 2024.",
+    "v": "Introduced in Senate"
+   },
    "timeline": [
     {
      "ch": "S",
@@ -53408,7 +53608,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-17T22:38:47+00:00",
+ "generatedAt": "2026-11-18T03:51:38+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -53714,6 +53914,72 @@
  "session": 2,
  "votes": {
   "house": [
+   {
+    "ch": "H",
+    "d": "2026-11-17",
+    "measure": "HR 9600",
+    "n": 325,
+    "n_": "36",
+    "p": {
+     "D": [
+      202,
+      0,
+      0,
+      12
+     ],
+     "I": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "R": [
+      163,
+      36,
+      0,
+      19
+     ]
+    },
+    "q": "On Motion to Suspend the Rules and Pass",
+    "result": "Passed",
+    "title": "Common Sense 250 Act",
+    "type": "2/3 Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026325",
+    "y": "365"
+   },
+   {
+    "ch": "H",
+    "d": "2026-11-17",
+    "measure": "HR 8483",
+    "n": 324,
+    "n_": "0",
+    "p": {
+     "D": [
+      199,
+      0,
+      0,
+      15
+     ],
+     "I": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "R": [
+      199,
+      0,
+      0,
+      19
+     ]
+    },
+    "q": "On Motion to Suspend the Rules and Pass, as Amended",
+    "result": "Passed",
+    "title": "Barona Group of Capitan Grande Band of Mission Indians Land Transfer Act",
+    "type": "2/3 Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026324",
+    "y": "398"
+   },
    {
     "ch": "H",
     "d": "2026-11-12",
@@ -54607,32 +54873,6 @@
     "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202675",
     "y": "197"
-   },
-   {
-    "ch": "H",
-    "d": "2026-02-24",
-    "measure": "HRES 1075",
-    "n": 74,
-    "n_": "187",
-    "q": "On Agreeing to the Resolution",
-    "result": "Passed",
-    "title": "Providing for consideration of the bill (H.R. 4626) to amend the Energy Policy and Conservation Act to prohibit the Secretary of Energy from prescribing any new or amended energy conservation standard for a product that is not technologically feasible and economically justified, and for other purposes, and providing for consideration of the bill (H.R. 4758) to repeal provisions of Public Law 117–169 relating to taxpayer subsidies for home electrification, and for other purposes.",
-    "type": "Recorded Vote",
-    "u": "https://clerk.house.gov/Votes/202674",
-    "y": "208"
-   },
-   {
-    "ch": "H",
-    "d": "2026-02-24",
-    "measure": "HRES 1075",
-    "n": 73,
-    "n_": "189",
-    "q": "On Ordering the Previous Question",
-    "result": "Passed",
-    "title": "Providing for consideration of the bill (H.R. 4626) to amend the Energy Policy and Conservation Act to prohibit the Secretary of Energy from prescribing any new or amended energy conservation standard for a product that is not technologically feasible and economically justified, and for other purposes, and providing for consideration of the bill (H.R. 4758) to repeal provisions of Public Law 117–169 relating to taxpayer subsidies for home electrification, and for other purposes.",
-    "type": "Yea-and-Nay",
-    "u": "https://clerk.house.gov/Votes/202673",
-    "y": "208"
    }
   ],
   "senate": [
