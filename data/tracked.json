@@ -484,7 +484,7 @@
   "119-hr9600",
   "119-hr8483"
  ],
- "lastDiscovery": "2026-11-18T21:35:47+00:00",
+ "lastDiscovery": "2026-11-19T02:48:41+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -494,7 +494,7 @@
   "since": "2025-01-03",
   "queued": "2026-11-17T06:18:57+00:00",
   "reason": "re-download for cosponsor names",
-  "finished": "2026-11-17T06:33:11+00:00"
+  "finished": "2026-11-19T02:48:41+00:00"
  },
  "rule": "recorded-vote-v3",
  "schema": 3,
@@ -919,7 +919,8 @@
   "119-hr8195",
   "119-hr9269",
   "119-hr9785",
-  "119-s433"
+  "119-s433",
+  "119-hr9640"
  ],
  "statusRule": "killed-v2",
  "outcomeRule": "outcome-v2",
