@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -6182,7 +6182,7 @@
     ],
     "t": 55
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14108,7 +14108,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14124,8 +14124,8 @@
    "id": "119-hr2347",
    "introduced": "2026-09-30",
    "latest": {
-    "actionDate": "2026-11-17",
-    "text": "Considered by Senate. (consideration: CR S5705)"
+    "actionDate": "2026-11-18",
+    "text": "Cloture on the measure invoked in Senate by Yea-Nay Vote. 65 - 31. Record Vote Number: 268. (CR S5736)"
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -14142,20 +14142,6 @@
     "v": "Introduced in Senate"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2026-04-27",
-     "e": "Motion to reconsider laid on the table Agreed to without objection.",
-     "fn": "cg",
-     "pre": 1
-    },
-    {
-     "ch": "H",
-     "d": "2026-04-27",
-     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H3110)",
-     "fn": "cg",
-     "pre": 1
-    },
     {
      "ch": "H",
      "d": "2026-04-27",
@@ -14206,6 +14192,20 @@
      "d": "2026-11-16",
      "e": "Motion by Senator Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) fell when clo",
      "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-18",
+     "e": "Cloture on the measure invoked in Senate by Yea-Nay Vote. 65 - 31. Record Vote Number: 268. (CR S5736)",
+     "fn": "cg",
+     "v": "65–31"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-18",
+     "e": "Motion to waive all applicable budgetary discipline with respect to H.R. 2347 agreed to in Senate by Yea-Nay Vote. 70 - 26. Record Vote Number: 266. (CR S5735-5",
+     "fn": "cg",
+     "v": "70–26"
     }
    ],
    "title": "Bipartisan American Affordability and Jobs Act of 2026",
@@ -14523,7 +14523,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14534,8 +14534,8 @@
    "id": "119-hr2478",
    "introduced": "2025-03-27",
    "latest": {
-    "actionDate": "2026-07-13",
-    "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+    "actionDate": "2026-11-18",
+    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5777-5778)"
    },
    "num": "H.R. 2478",
    "number": 2478,
@@ -14545,9 +14545,13 @@
      "how": "roll",
      "roll": 227,
      "v": "414–2"
+    },
+    "S": {
+     "d": "2026-11-18",
+     "how": "uc"
     }
    },
-   "reached": 3,
+   "reached": 4,
    "sponsor": {
     "n": "Ann Wagner",
     "p": "R",
@@ -14599,6 +14603,24 @@
      "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 414 - 2 (Roll no. 227).",
      "fn": "cg",
      "v": "414–2"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-18",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5777-5778)",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-18",
+     "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "S",
+     "d": "2026-11-18",
+     "e": "Senate Committee on Banking, Housing, and Urban Affairs discharged by Unanimous Consent.",
+     "fn": "cg"
     }
    ],
    "title": "Financial Exploitation Prevention Act of 2025",
@@ -24162,7 +24184,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -27876,7 +27898,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -27887,8 +27909,8 @@
    "id": "119-hr5254",
    "introduced": "2025-09-10",
    "latest": {
-    "actionDate": "2026-11-17",
-    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)"
+    "actionDate": "2026-11-18",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 5254",
    "number": 5254,
@@ -29108,7 +29130,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -33829,7 +33851,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T22:38:47+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36959,7 +36981,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36970,8 +36992,8 @@
    "id": "119-hr8454",
    "introduced": "2026-04-22",
    "latest": {
-    "actionDate": "2026-11-17",
-    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)"
+    "actionDate": "2026-11-18",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 8454",
    "number": 8454,
@@ -37370,7 +37392,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37381,9 +37403,8 @@
    "id": "119-hr8483",
    "introduced": "2026-04-23",
    "latest": {
-    "actionDate": "2026-11-17",
-    "actionTime": "18:56:40",
-    "text": "Motion to reconsider laid on the table Agreed to without objection."
+    "actionDate": "2026-11-18",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Indian Affairs."
    },
    "num": "H.R. 8483",
    "number": 8483,
@@ -38922,7 +38943,7 @@
     ],
     "t": 30
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38933,9 +38954,8 @@
    "id": "119-hr9237",
    "introduced": "2026-06-10",
    "latest": {
-    "actionDate": "2026-11-11",
-    "actionTime": "14:46:12",
-    "text": "Motion to reconsider laid on the table Agreed to without objection."
+    "actionDate": "2026-11-18",
+    "text": "Received in the Senate."
    },
    "num": "H.R. 9237",
    "number": 9237,
@@ -39748,7 +39768,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39953,7 +39973,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -45892,7 +45912,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -45988,7 +46008,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-19T20:58:09+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54371,7 +54391,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-19T12:08:40+00:00",
+ "generatedAt": "2026-11-19T20:58:09+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -54677,6 +54697,39 @@
  "session": 2,
  "votes": {
   "house": [
+   {
+    "ch": "H",
+    "d": "2026-11-19",
+    "measure": "HR 4464",
+    "n": 327,
+    "n_": "0",
+    "p": {
+     "D": [
+      204,
+      0,
+      0,
+      10
+     ],
+     "I": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "R": [
+      197,
+      0,
+      0,
+      21
+     ]
+    },
+    "q": "On Motion to Suspend the Rules and Pass",
+    "result": "Passed",
+    "title": "Preventive Health Savings Act",
+    "type": "2/3 Yea-And-Nay",
+    "u": "https://clerk.house.gov/Votes/2026327",
+    "y": "401"
+   },
    {
     "ch": "H",
     "d": "2026-11-18",
@@ -55643,22 +55696,48 @@
     "type": "Yea-and-Nay",
     "u": "https://clerk.house.gov/Votes/202677",
     "y": "198"
-   },
-   {
-    "ch": "H",
-    "d": "2026-02-24",
-    "measure": "HR 4626",
-    "n": 76,
-    "n_": "190",
-    "q": "On Passage",
-    "result": "Passed",
-    "title": "Home Appliance Protection and Affordability Act",
-    "type": "Yea-and-Nay",
-    "u": "https://clerk.house.gov/Votes/202676",
-    "y": "217"
    }
   ],
   "senate": [
+   {
+    "ch": "S",
+    "d": "2026-11-18",
+    "issue": "HR2347",
+    "measure": "HR2347",
+    "n": 268,
+    "n_": "31",
+    "q": "On the Cloture Motion",
+    "result": "Cloture Motion Agreed to",
+    "title": "A bill to amend the Internal Revenue Code of 1986 to exclude from gross income any damages, other than punitive damages, received on account of any sexual acts or sexual contact.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm",
+    "y": "65"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-18",
+    "issue": "HR2347",
+    "measure": "HR2347",
+    "n": 267,
+    "n_": "27",
+    "q": "On the Amendment",
+    "result": "Amendment Agreed to",
+    "title": "In the nature of a substitute.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm",
+    "y": "69"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-18",
+    "issue": "HR2347",
+    "measure": "HR2347",
+    "n": 266,
+    "n_": "26",
+    "q": "On the Motion",
+    "result": "Motion Agreed to",
+    "title": "A bill to amend the Internal Revenue Code of 1986 to exclude from gross income any damages, other than punitive damages, received on account of any sexual acts or sexual contact.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00266.htm",
+    "y": "70"
+   },
    {
     "ch": "S",
     "d": "2026-11-17",
@@ -56399,45 +56478,6 @@
     "title": "Antonio M. Pozos, of Pennsylvania, to be United States District Judge for the Eastern District of Pennsylvania",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00209.htm",
     "y": "49"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-23",
-    "issue": "PN9996",
-    "measure": "PN9996",
-    "n": 208,
-    "n_": "47",
-    "q": "On the Nomination",
-    "result": "Nomination Confirmed",
-    "title": "Daniel Mack Traynor, of North Dakota, to be United States Circuit Judge for the Eighth Circuit",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00208.htm",
-    "y": "48"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-23",
-    "issue": "SJRES180",
-    "measure": "SJRES180",
-    "n": 207,
-    "n_": "49",
-    "q": "On the Motion to Discharge",
-    "result": "Motion to Discharge Rejected",
-    "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00207.htm",
-    "y": "47"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-22",
-    "issue": "PN9996",
-    "measure": "PN9996",
-    "n": 206,
-    "n_": "46",
-    "q": "On the Cloture Motion",
-    "result": "Cloture Motion Agreed to",
-    "title": "Daniel Mack Traynor, of North Dakota, to be United States Circuit Judge for the Eighth Circuit",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00206.htm",
-    "y": "51"
    }
   ]
  },

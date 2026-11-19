@@ -485,7 +485,7 @@
   "119-hr8483",
   "119-hr9640"
  ],
- "lastDiscovery": "2026-11-19T12:08:40+00:00",
+ "lastDiscovery": "2026-11-19T20:58:09+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -499,7 +499,7 @@
  },
  "rule": "recorded-vote-v3",
  "schema": 3,
- "voteDiscovery": "2026-11-18T21:35:47+00:00",
+ "voteDiscovery": "2026-11-19T20:58:09+00:00",
  "houseVotes": {
   "119-2-74": {
    "q": "On Agreeing to the Resolution",
@@ -924,7 +924,8 @@
   "119-hr5490",
   "119-hr7934",
   "119-hr9615",
-  "119-s4445"
+  "119-s4445",
+  "119-s1872"
  ],
  "statusRule": "killed-v2",
  "outcomeRule": "outcome-v2",
@@ -1436,19 +1437,6 @@
    "u": "https://clerk.house.gov/Votes/202677",
    "y": "198"
   },
-  "2026-76": {
-   "ch": "H",
-   "d": "2026-02-24",
-   "measure": "HR 4626",
-   "n": 76,
-   "n_": "190",
-   "q": "On Passage",
-   "result": "Passed",
-   "title": "Home Appliance Protection and Affordability Act",
-   "type": "Yea-and-Nay",
-   "u": "https://clerk.house.gov/Votes/202676",
-   "y": "217"
-  },
   "2026-307": {
    "ch": "H",
    "n": 307,
@@ -1908,6 +1896,39 @@
    "y": "396",
    "n_": "14",
    "u": "https://clerk.house.gov/Votes/2026326"
+  },
+  "2026-327": {
+   "ch": "H",
+   "n": 327,
+   "p": {
+    "R": [
+     197,
+     0,
+     0,
+     21
+    ],
+    "D": [
+     204,
+     0,
+     0,
+     10
+    ],
+    "I": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "d": "2026-11-19",
+   "type": "2/3 Yea-And-Nay",
+   "q": "On Motion to Suspend the Rules and Pass",
+   "measure": "HR 4464",
+   "title": "Preventive Health Savings Act",
+   "result": "Passed",
+   "y": "401",
+   "n_": "0",
+   "u": "https://clerk.house.gov/Votes/2026327"
   }
  },
  "rcSeen": {}
