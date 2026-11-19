@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-19T02:48:41+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -12065,7 +12065,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12110,6 +12110,13 @@
     },
     {
      "ch": "H",
+     "d": "2026-09-02",
+     "e": "Ordered to be Reported by the Yeas and Nays: 43 - 0.",
+     "fn": "cg",
+     "v": "43–0"
+    },
+    {
+     "ch": "H",
      "d": "2026-09-14",
      "e": "Reported by the Committee on Energy and Commerce. H. Rept. 119-819.",
      "fn": "cg",
@@ -12131,7 +12138,7 @@
     {
      "ch": "H",
      "d": "2026-09-15",
-     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 343 - 79 (Roll no. 304).",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 343 - 79 (Roll no. 304). (text: CR H",
      "fn": "cg",
      "v": "343–79"
     }
@@ -13756,7 +13763,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14101,7 +14108,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-19T02:48:41+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14388,7 +14395,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-18T21:35:47+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14486,7 +14493,7 @@
     {
      "ch": "H",
      "d": "2026-11-17",
-     "e": "Resolving differences -- House actions: On motion that the House suspend the rules and agree to the Senate amendment Agreed to by voice vote.",
+     "e": "Resolving differences -- House actions: On motion that the House suspend the rules and agree to the Senate amendment Agreed to by voice vote. (text: CR H6247-62",
      "fn": "cg"
     }
    ],
@@ -14516,7 +14523,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22177,7 +22184,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22219,6 +22226,13 @@
      "d": "2025-06-12",
      "e": "Introduced in House",
      "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-02",
+     "e": "Ordered to be Reported by the Yeas and Nays: 44 - 0.",
+     "fn": "cg",
+     "v": "44–0"
     },
     {
      "ch": "H",
@@ -24148,7 +24162,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-19T02:48:41+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -27862,7 +27876,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-18T21:35:47+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29094,7 +29108,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-19T02:48:41+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -35045,7 +35059,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36945,7 +36959,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-18T21:35:47+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37356,7 +37370,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-18T21:35:47+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37435,7 +37449,7 @@
     {
      "ch": "H",
      "d": "2026-11-17",
-     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 398 - 0 (Roll no. 324).",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 398 - 0 (Roll no. 324). ",
      "fn": "cg",
      "v": "398–0"
     }
@@ -38908,7 +38922,7 @@
     ],
     "t": 30
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -38988,7 +39002,7 @@
      "fn": "cg"
     }
    ],
-   "title": "Take Care of America’s Veterans Act",
+   "title": "Take Care of America's Veterans Act",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/9237"
   },
@@ -39734,7 +39748,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-18T21:35:47+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39745,9 +39759,8 @@
    "id": "119-hr9600",
    "introduced": "2026-07-06",
    "latest": {
-    "actionDate": "2026-11-17",
-    "actionTime": "19:05:38",
-    "text": "Motion to reconsider laid on the table Agreed to without objection."
+    "actionDate": "2026-11-18",
+    "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
    },
    "num": "H.R. 9600",
    "number": 9600,
@@ -39813,7 +39826,7 @@
     {
      "ch": "H",
      "d": "2026-11-17",
-     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 365 - 36 (Roll no. 325).",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 365 - 36 (Roll no. 325). (text: CR H",
      "fn": "cg",
      "v": "365–36"
     }
@@ -39839,7 +39852,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39884,6 +39897,13 @@
     },
     {
      "ch": "H",
+     "d": "2026-09-02",
+     "e": "Ordered to be Reported (Amended) by the Yeas and Nays: 43 - 0.",
+     "fn": "cg",
+     "v": "43–0"
+    },
+    {
+     "ch": "H",
      "d": "2026-11-05",
      "e": "Reported (Amended) by the Committee on Energy and Commerce. H. Rept. 119-875.",
      "fn": "cg",
@@ -39913,6 +39933,113 @@
    "title": "American Enrichment Deployment Act",
    "type": "hr",
    "url": "https://www.congress.gov/bill/119th-congress/house-bill/9612"
+  },
+  {
+   "area": "Climate & energy",
+   "auto": true,
+   "congress": 119,
+   "cosponsors": {
+    "d": 4,
+    "i": 0,
+    "r": 4,
+    "st": [
+     "CO",
+     "MD",
+     "MI",
+     "NM",
+     "NV",
+     "OK",
+     "TN"
+    ],
+    "t": 8
+   },
+   "fetched": "2026-11-19T12:08:40+00:00",
+   "fns": {
+    "cg": {
+     "src": "Congress.gov",
+     "t": "Bill text, actions and cosponsors.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/9640"
+    }
+   },
+   "id": "119-hr9640",
+   "introduced": "2026-07-09",
+   "latest": {
+    "actionDate": "2026-11-18",
+    "actionTime": "12:54:39",
+    "text": "Motion to reconsider laid on the table Agreed to without objection."
+   },
+   "num": "H.R. 9640",
+   "number": 9640,
+   "passed": {
+    "H": {
+     "d": "2026-11-18",
+     "how": "roll",
+     "roll": 326,
+     "v": "396–14"
+    }
+   },
+   "reached": 3,
+   "sponsor": {
+    "n": "Robert J. Wittman",
+    "p": "R",
+    "s": "VA-1"
+   },
+   "status": "passed1",
+   "sum": {
+    "d": "2026-10-29",
+    "t": "This bill reauthorizes through FY2031 the Earth Mapping Resources Initiative, a U.S. Geological Survey (USGS) program charged with integrating and modernizing the mapping of U.S. natural resources, with a focus on critical mineral resources such as lithium and titanium.",
+    "v": "Reported to House"
+   },
+   "timeline": [
+    {
+     "ch": "H",
+     "d": "2026-07-09",
+     "e": "Introduced in House",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Ordered to be Reported in the Nature of a Substitute by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-09-15",
+     "e": "Subcommittee on Energy and Mineral Resources Discharged",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-10-29",
+     "e": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-862.",
+     "fn": "cg",
+     "v": "119–862"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-18",
+     "e": "Motion to reconsider laid on the table Agreed to without objection.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-18",
+     "e": "On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 396 - 14 (Roll no. 326).",
+     "fn": "cg",
+     "v": "396–14"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-18",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by the Yeas and Nays: (2/3 required): 396 - 14 (Roll no. 326).",
+     "fn": "cg",
+     "v": "396–14"
+    }
+   ],
+   "title": "Earth MRI Reauthorization Act of 2026",
+   "type": "hr",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/9640"
   },
   {
    "area": "Armed Forces and National Security",
@@ -45765,7 +45892,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-19T02:48:41+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -45861,7 +45988,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-19T02:48:41+00:00",
+   "fetched": "2026-11-19T12:08:40+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54244,7 +54371,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-19T02:48:41+00:00",
+ "generatedAt": "2026-11-19T12:08:40+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
