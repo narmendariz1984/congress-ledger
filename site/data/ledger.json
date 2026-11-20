@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -7341,7 +7341,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7353,7 +7353,7 @@
    "introduced": "2025-02-24",
    "latest": {
     "actionDate": "2026-11-19",
-    "text": "Passed Senate with an amendment by Unanimous Consent."
+    "text": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S5788-5789)"
    },
    "num": "H.R. 1520",
    "number": 1520,
@@ -7421,7 +7421,7 @@
     {
      "ch": "S",
      "d": "2026-11-19",
-     "e": "Passed Senate with an amendment by Unanimous Consent.",
+     "e": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S5788-5789)",
      "fn": "cg"
     },
     {
@@ -9008,7 +9008,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -9382,7 +9382,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13894,7 +13894,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14239,7 +14239,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14400,7 +14400,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14535,7 +14535,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -19592,7 +19592,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24324,7 +24324,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -24726,7 +24726,7 @@
     ],
     "t": 25
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25562,7 +25562,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26490,7 +26490,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29508,7 +29508,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -35568,7 +35568,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35945,7 +35945,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36030,7 +36030,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36286,7 +36286,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36565,7 +36565,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37359,7 +37359,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39733,7 +39733,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40351,7 +40351,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40723,7 +40723,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40735,7 +40735,7 @@
    "introduced": "2025-02-04",
    "latest": {
     "actionDate": "2026-11-19",
-    "text": "Passed Senate without amendment by Unanimous Consent."
+    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5793-5794)"
    },
    "num": "H.R. 973",
    "number": 973,
@@ -40806,7 +40806,7 @@
     {
      "ch": "S",
      "d": "2026-11-19",
-     "e": "Passed Senate without amendment by Unanimous Consent.",
+     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5793-5794)",
      "fn": "cg"
     },
     {
@@ -46305,7 +46305,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -46401,7 +46401,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-20T18:49:10+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54784,7 +54784,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-20T12:58:24+00:00",
+ "generatedAt": "2026-11-20T18:49:10+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -56094,6 +56094,45 @@
   "senate": [
    {
     "ch": "S",
+    "d": "2026-11-19",
+    "issue": "PN12724",
+    "measure": "PN12724",
+    "n": 271,
+    "n_": "46",
+    "q": "On the Cloture Motion",
+    "result": "Cloture Motion Agreed to",
+    "title": "Richard Wesley Bennett, of Texas, to be United States District Judge for the Southern District of Texas",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00271.htm",
+    "y": "48"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-19",
+    "issue": "HR2347",
+    "measure": "HR2347",
+    "n": 270,
+    "n_": "33",
+    "q": "On Passage of the Bill",
+    "result": "Bill Passed",
+    "title": "A bill to amend the Internal Revenue Code of 1986 to exclude from gross income any damages, other than punitive damages, received on account of any sexual acts or sexual contact.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm",
+    "y": "62"
+   },
+   {
+    "ch": "S",
+    "d": "2026-11-19",
+    "issue": "HCONRES93",
+    "measure": "HCONRES93",
+    "n": 269,
+    "n_": "51",
+    "q": "On the Concurrent Resolution",
+    "result": "Concurrent Resolution Rejected",
+    "title": "A concurrent resolution directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities with Iran.",
+    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00269.htm",
+    "y": "48"
+   },
+   {
+    "ch": "S",
     "d": "2026-11-18",
     "issue": "HR2347",
     "measure": "HR2347",
@@ -56832,45 +56871,6 @@
     "title": "A bill to amend the Internal Revenue Code of 1986 to allow early childhood educators to take the educator expense deduction, and for other purposes.",
     "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00212.htm",
     "y": "86"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-28",
-    "issue": "PN1092",
-    "measure": "PN1092",
-    "n": 211,
-    "n_": "47",
-    "q": "On the Nomination",
-    "result": "Nomination Confirmed",
-    "title": "Walter Clayton, of New York, to be Director of National Intelligence",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00211.htm",
-    "y": "51"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-27",
-    "issue": "PN1092",
-    "measure": "PN1092",
-    "n": 210,
-    "n_": "43",
-    "q": "On the Cloture Motion",
-    "result": "Cloture Motion Agreed to",
-    "title": "Walter Clayton, of New York, to be Director of National Intelligence",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00210.htm",
-    "y": "51"
-   },
-   {
-    "ch": "S",
-    "d": "2026-07-23",
-    "issue": "PN9995",
-    "measure": "PN9995",
-    "n": 209,
-    "n_": "44",
-    "q": "On the Nomination",
-    "result": "Nomination Confirmed",
-    "title": "Antonio M. Pozos, of Pennsylvania, to be United States District Judge for the Eastern District of Pennsylvania",
-    "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00209.htm",
-    "y": "49"
    }
   ]
  },
