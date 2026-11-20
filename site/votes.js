@@ -290,8 +290,8 @@
     const vr = vehicleRoute(b);
     if (vr) {
       const mo = vr.when ? new Date(vr.when + "T12:00:00").toLocaleDateString("en-US", { month: "long", year: "numeric" }) : "";
-      if (vr.otherDone && vr.backDone) return "Not yet. Both chambers passed the new text; the President is next.";
-      if (vr.otherDone) return `Not yet. The ${CH[vr.other]} passed the new text; it goes back to the ${CH[vr.first]} next.`;
+      if (vr.otherDone && vr.backDone) return "Not yet. Both chambers passed the same text; the President is next.";
+      if (vr.otherDone) return `Not yet. The ${CH[vr.other]} passed its version; the ${CH[vr.first]} has to vote to accept it next.`;
       return `Not yet. The ${CH[vr.first]} passed this bill number with its old text${mo ? ` in ${mo}` : ""}. If the ${CH[vr.other]} passes the new text, it goes back to the ${CH[vr.first]}.`;
     }
     const origin = /^S/i.test(String(b.num || "").replace(/[^A-Za-z]/g, "")) ? "S" : "H", other = origin === "H" ? "S" : "H";

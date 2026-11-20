@@ -865,7 +865,7 @@ details.wpast .wi.has-out .wd,details.wpast .wi.has-out .wb>p{opacity:.75}
 <button type="button" class="totop" id="totop" hidden>Back to top</button>
 
 <script src="names.js?v=76c87de1"></script>
-<script src="votes.js?v=c482c8b5"></script>
+<script src="votes.js?v=14ca15bf"></script>
 <script>
 (function(){
 const STAGES=["Intro","Cmte","Floor","Ch. 1","Ch. 2","Pres.","Law"];
@@ -1139,13 +1139,14 @@ document.addEventListener("click",async e=>{
 
 /* vehicle swap, from data/vehicles.json: the badge, the bill it carries (linked when it's on the site) and its source */
 const vOrig=b=>b&&b.vehicle&&b.vehicle.num&&b.vehicle.orig&&b.vehicle.orig.num?b.vehicle.orig:null;
-// what's left for the new text: the chamber doing the swap votes first, then the one that passed the old text
+// what's left for the new text: the chamber doing the swap votes first, then the other one votes to accept that version
 function vehicleNext(b){
   const o=vOrig(b);if(!o||["law","vetoed","killed"].includes(b.status))return"";
   const name={H:"House",S:"Senate"}, did=Object.keys(o.passed||{}), p=b.passed||{};
   const order=["H","S"].sort((x,y)=>did.includes(x)-did.includes(y)), left=order.filter(c=>!p[c]);
-  if(!left.length)return(b.reached||0)<5?"Sent to the President":"";
-  return left.length>1?`${name[left[0]]} vote, then ${name[left[1]]} vote on the new text`:`${name[left[0]]} vote on the new text`;
+  if(!left.length)return(b.reached||0)<5?"Delivery to the President for a signature or veto":"";
+  const other=c=>c==="H"?"S":"H";
+  return left.length>1?`${name[left[0]]} vote, then ${name[left[1]]} vote to accept the ${name[left[0]]}'s version`:`${name[left[0]]} vote to accept the ${name[other(left[0])]}'s version`;
 }
 function vehicleBox(b){
   const o=vOrig(b);if(!o)return"";
