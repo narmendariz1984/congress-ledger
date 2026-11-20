@@ -287,6 +287,22 @@ details.vg>.tbl{margin:0 16px 14px}
 .vrow{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
 .vrow .search{flex:1 1 260px}
 .psplit{font-size:13.5px}
+.vn-btn{all:unset;cursor:pointer;display:inline-block;margin-left:6px;font:600 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.vn-btn::after{content:" ▾"}
+.vn-btn[aria-expanded="true"]::after{content:" ▴"}
+.vn-btn:hover{text-decoration:underline}
+.vn-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.vn-wait{display:inline-block;margin-left:6px;font-size:12.5px;color:var(--muted);white-space:nowrap}
+.vn-wait a{color:inherit}
+tr.vnames[hidden]{display:none!important}
+tr.vnames>td{background:var(--wash)}
+.vn-box{display:grid;gap:12px;padding:6px 2px;max-height:460px;overflow:auto}
+.vn-grp h5{margin:0 0 6px;font-size:13.5px;font-weight:700}
+.vn-grp ul{list-style:none;margin:0;padding:0;columns:4 180px;column-gap:20px;font-size:14px;line-height:1.55}
+.vn-grp li{break-inside:avoid}
+.vn-grp .d{color:var(--dem)} .vn-grp .r{color:var(--rep)} .vn-grp .i{color:var(--ind)}
+.vn-grp li span{font:600 12px var(--f-mono)}
+.vn-foot{margin:0;font-size:13px}
 .psplit .d,.psplit .r,.psplit .i{font-weight:600;white-space:nowrap}
 .ppanel{grid-template-columns:minmax(0,220px) minmax(0,1fr);align-items:center}
 .pst{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--muted)}
@@ -1647,6 +1663,32 @@ $("#ag-jump").addEventListener("change",e=>{
 
 let VOTES={senate:[],house:[]}, LVOTES={senate:[],house:[]}, CONGRESS=null, LEDGER_FLOOR={};
 let BYNUM={};
+/* who voted how on one roll call, from Voteview's member-by-member record.
+   Voteview posts about a day after the vote; until then the row says so and links the official list. */
+const vnKey=v=>`${v.ch||""}-${String(v.d||"").slice(0,4)}-${v.n}`;
+function vnCell(v){
+  if(v.v)return` <button type="button" class="vn-btn" data-vn="${esc(vnKey(v))}" aria-expanded="false" title="Show how each member voted">Names</button>`;
+  return` <span class="vn-wait">Names in about a day${v.u?` · <a href="${esc(v.u)}" target="_blank" rel="noopener">official list</a>`:""}</span>`;
+}
+function vnList(v){
+  const ms=(RCD&&RCD.members&&RCD.members[v.ch])||[], g={Y:[],N:[],P:[],X:[]};
+  for(let i=0;i<v.v.length;i++){const c=v.v[i]==="."?"X":v.v[i];if(!g[c]||!ms[i])continue;g[c].push(ms[i])}
+  const lbl={Y:"Yea",N:"Nay",P:"Present",X:"Didn't vote"};
+  const cls=p=>p==="D"?"d":p==="R"?"r":"i";
+  const out=Object.entries(g).filter(([,a])=>a.length).map(([k,a])=>{
+    a.sort((x,y)=>String(x.s).localeCompare(String(y.s))||String(x.n).localeCompare(String(y.n)));
+    return`<div class="vn-grp"><h5>${lbl[k]} <span class="muted">${a.length}</span></h5><ul>${a.map(m=>`<li>${esc(m.n)} <span class="${cls(m.p)}">${esc(m.p||"I")}-${esc(m.s||"")}</span></li>`).join("")}</ul></div>`}).join("");
+  return`${out||`<p class="muted">No names recorded for this vote.</p>`}<p class="vn-foot muted">Member votes: Voteview (UCLA).${v.u?` <a href="${esc(v.u)}" target="_blank" rel="noopener">Official roll call</a>`:""}</p>`;
+}
+document.addEventListener("click",e=>{
+  const btn=e.target.closest&&e.target.closest(".vn-btn");if(!btn)return;
+  const box=document.getElementById("vn-"+btn.dataset.vn), row=box&&box.closest("tr");if(!row)return;
+  const v=[...(VOTES.senate||[]),...(VOTES.house||[])].find(x=>x&&x.v&&vnKey(x)===btn.dataset.vn);if(!v)return;
+  const open=btn.getAttribute("aria-expanded")!=="true";
+  btn.setAttribute("aria-expanded",String(open));row.hidden=!open;
+  if(open)try{box.innerHTML=vnList(v)}catch(err){console.warn("vote names skipped",err);box.innerHTML=`<p class="muted">Couldn't show the names.</p>`}
+});
+
 function renderVotes(){
   BYNUM=numIndex();
   const all=[...(VOTES.senate||[]),...(VOTES.house||[])].filter(v=>v&&v.d).sort((a,b)=>String(b.d).localeCompare(String(a.d))||((+b.n||0)-(+a.n||0)));
@@ -1682,7 +1724,7 @@ function renderVotes(){
     const mi=measureInfo(g.measure,CONGRESS);
     const nmTxt=mi&&mi.type==="PN"?"Nomination: "+nomName(v0.title||""):v0.title?nameOf(plain(v0.title)):(mi?mi.label:(plain(v0.q)||"Vote without a measure"));
     const label=tb?billLink(tb):mi?`<a class="bl" href="${esc(mi.url)}" target="_blank" rel="noopener" title="${esc(decodeEnt(plain(v0.title||"")))}"><span class="bl-n">${esc(nmTxt)}</span> <span class="bl-num">${esc(mi.label)}</span></a>`:`<span class="vg-m">${esc(nmTxt)}</span>`;
-    const rows=g.votes.map(v=>`<tr><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">Roll ${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(plain(v.q||""))}</td><td>${resChip(String(v.result||""))}</td><td class="n">${tally(v)}</td><td>${psplit(v)}</td></tr>`).join("");
+    const rows=g.votes.map(v=>`<tr><td class="n">${fmtD(v.d)}</td><td class="n">${v.u?`<a href="${esc(v.u)}" target="_blank" rel="noopener">Roll ${esc(v.n)}</a>`:esc(v.n)}</td><td>${esc(plain(v.q||""))}</td><td>${resChip(String(v.result||""))}</td><td class="n">${tally(v)}</td><td>${psplit(v)}${vnCell(v)}</td></tr>${v.v?`<tr class="vnames" hidden><td colspan="6"><div class="vn-box" id="vn-${esc(vnKey(v))}"></div></td></tr>`:""}`).join("");
     return`<details class="vg"><summary><span class="vg-ch">${g.ch==="S"?"Senate":"House"}</span><span class="vg-name">${label}</span><span class="vg-meta"><span class="mono">${fmtD(v0.d)}</span>${g.votes.length>1?` <span class="vg-n">${g.votes.length} roll calls</span>`:""}</span><span class="vg-res">${sideChip(String(v0.q||""),String(v0.result||""))}</span></summary><div class="tbl"><table><thead><tr><th>Date</th><th>Roll</th><th>Question</th><th>Result</th><th>Tally</th><th>By party</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
   }).join("")||`<p class="muted">${!loaded?"Loading…":!all.length?"No recorded votes yet this session":V.kind==="nom"&&V.ch==="H"?"Only the Senate votes on nominations.":vq?`No votes match “${esc(V.q)}”.`:"No votes of this kind in this chamber."}</p>`;
 }
