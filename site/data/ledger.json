@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3924,7 +3924,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3935,8 +3935,8 @@
    "id": "119-hr10167",
    "introduced": "2026-08-27",
    "latest": {
-    "actionDate": "2026-11-12",
-    "text": "Presented to President."
+    "actionDate": "2026-11-20",
+    "text": "Signed by President."
    },
    "num": "H.R. 10167",
    "number": 10167,
@@ -3950,13 +3950,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Lisa C. McClain",
     "p": "R",
     "s": "MI-9"
    },
-   "status": "passed1",
+   "status": "law",
    "sum": {
     "d": "2026-08-27",
     "t": "This bill ends the production of the penny for general circulation, requires rounding to an amount divisible by five for the payment or transfer of cash, and allows the nickel to be composed of different material. The Department of the Treasury must stop producing the penny, except to meet collector needs.",
@@ -7341,7 +7341,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -7353,7 +7353,7 @@
    "introduced": "2025-02-24",
    "latest": {
     "actionDate": "2026-11-19",
-    "text": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S5788-5789)"
+    "text": "Passed Senate with an amendment by Unanimous Consent."
    },
    "num": "H.R. 1520",
    "number": 1520,
@@ -7421,7 +7421,7 @@
     {
      "ch": "S",
      "d": "2026-11-19",
-     "e": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S5788-5789)",
+     "e": "Passed Senate with an amendment by Unanimous Consent.",
      "fn": "cg"
     },
     {
@@ -13894,7 +13894,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14239,7 +14239,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14400,7 +14400,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14535,7 +14535,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24324,7 +24324,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -24726,7 +24726,7 @@
     ],
     "t": 25
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -25562,7 +25562,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26490,7 +26490,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -29508,7 +29508,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -37359,7 +37359,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -39733,7 +39733,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40351,7 +40351,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40723,7 +40723,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40735,7 +40735,7 @@
    "introduced": "2025-02-04",
    "latest": {
     "actionDate": "2026-11-19",
-    "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5793-5794)"
+    "text": "Passed Senate without amendment by Unanimous Consent."
    },
    "num": "H.R. 973",
    "number": 973,
@@ -40806,7 +40806,7 @@
     {
      "ch": "S",
      "d": "2026-11-19",
-     "e": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5793-5794)",
+     "e": "Passed Senate without amendment by Unanimous Consent.",
      "fn": "cg"
     },
     {
@@ -46305,7 +46305,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -46401,7 +46401,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-20T18:49:10+00:00",
+   "fetched": "2026-11-21T00:57:11+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54784,7 +54784,7 @@
   },
   "senate": []
  },
- "generatedAt": "2026-11-20T18:49:10+00:00",
+ "generatedAt": "2026-11-21T00:57:11+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
