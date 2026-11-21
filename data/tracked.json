@@ -486,9 +486,10 @@
   "119-hr9640",
   "119-hr1520",
   "119-hr4624",
-  "119-hr4464"
+  "119-hr4464",
+  "119-hr10159"
  ],
- "lastDiscovery": "2026-11-21T00:57:11+00:00",
+ "lastDiscovery": "2026-11-21T21:53:05+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -502,7 +503,7 @@
  },
  "rule": "recorded-vote-v3",
  "schema": 3,
- "voteDiscovery": "2026-11-20T18:49:10+00:00",
+ "voteDiscovery": "2026-11-21T21:53:05+00:00",
  "houseVotes": {
   "119-2-74": {
    "q": "On Agreeing to the Resolution",
@@ -970,7 +971,8 @@
   "119-s3258",
   "119-s850",
   "119-hr1849",
-  "119-s1092"
+  "119-s1092",
+  "119-s4822"
  ],
  "statusRule": "killed-v2",
  "outcomeRule": "outcome-v2",
@@ -1976,5 +1978,8 @@
    "u": "https://clerk.house.gov/Votes/2026327"
   }
  },
- "rcSeen": {}
+ "rcSeen": {},
+ "down": {
+  "hfloor": "2026-11-21T21:53:05+00:00"
+ }
 }
