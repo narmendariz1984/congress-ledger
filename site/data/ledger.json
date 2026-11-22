@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -14344,7 +14344,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24429,7 +24429,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -29613,7 +29613,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -33501,7 +33501,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -33634,7 +33634,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -46416,7 +46416,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -46512,7 +46512,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-22T18:02:02+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54877,7 +54877,7 @@
  "floor": {
   "senate": []
  },
- "generatedAt": "2026-11-21T21:53:05+00:00",
+ "generatedAt": "2026-11-22T18:02:02+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
@@ -55179,6 +55179,12 @@
    }
   ],
   "watchUpdated": "2026-11-05"
+ },
+ "outage": {
+  "since": "2026-11-21T21:53:05+00:00",
+  "sources": {
+   "hfloor": "2026-11-21T21:53:05+00:00"
+  }
  },
  "session": 2,
  "votes": {
