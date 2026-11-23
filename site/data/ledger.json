@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-22T18:02:02+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3924,7 +3924,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3936,7 +3936,7 @@
    "introduced": "2026-08-27",
    "latest": {
     "actionDate": "2026-11-20",
-    "text": "Presented to President."
+    "text": "Signed by President."
    },
    "num": "H.R. 10159",
    "number": 10159,
@@ -3950,13 +3950,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Richard Hudson",
     "p": "R",
     "s": "NC-9"
    },
-   "status": "passed1",
+   "status": "law",
    "sum": {
     "d": "2026-08-27",
     "t": "Specifically, the bill authorizes the conveyance of a 20-acre parcel of land situated on the Fort Bragg Training Area in Harnett County, North Carolina, that is commonly referred to as Parcel 3B. The State of North Carolina must cover all costs to carry out the conveyance.",
@@ -8585,7 +8585,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -8923,7 +8923,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -9017,7 +9017,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14344,7 +14344,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-22T18:02:02+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14467,7 +14467,7 @@
     "label": "Bipartisan American Affordability and Jobs Act",
     "num": "S. 5653",
     "orig": {
-     "area": "Taxation",
+     "area": "Climate & energy",
      "cosponsors": {
       "d": 2,
       "i": 0,
@@ -24429,7 +24429,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-22T18:02:02+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -24831,7 +24831,7 @@
     ],
     "t": 25
    },
-   "fetched": "2026-11-21T00:57:11+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28505,7 +28505,7 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28516,8 +28516,8 @@
    "id": "119-hr5284",
    "introduced": "2025-09-10",
    "latest": {
-    "actionDate": "2026-11-12",
-    "text": "Presented to President."
+    "actionDate": "2026-11-20",
+    "text": "Signed by President."
    },
    "num": "H.R. 5284",
    "number": 5284,
@@ -28531,13 +28531,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Lloyd Smucker",
     "p": "R",
     "s": "PA-11"
    },
-   "status": "passed1",
+   "status": "law",
    "sum": {
     "d": "2025-09-10",
     "t": "This bill changes certain terms that are used by the Social Security Administration (SSA) to describe the ages at which a worker may claim Social Security retirement benefits. First, the SSA must use minimum monthly benefit age instead of early eligibility age .",
@@ -29613,7 +29613,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-22T18:02:02+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -36879,7 +36879,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -36890,8 +36890,8 @@
    "id": "119-hr8352",
    "introduced": "2026-04-16",
    "latest": {
-    "actionDate": "2026-11-12",
-    "text": "Presented to President."
+    "actionDate": "2026-11-20",
+    "text": "Signed by President."
    },
    "num": "H.R. 8352",
    "number": 8352,
@@ -36905,13 +36905,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Derek Schmidt",
     "p": "R",
     "s": "KS-2"
    },
-   "status": "passed1",
+   "status": "law",
    "sum": {
     "d": "2026-05-04",
     "t": "This bill authorizes a new type of entity—peace officer standards and training agencies—to access criminal history record information maintained by the Federal Bureau of Investigation.",
@@ -41891,7 +41891,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:30:16+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -46416,7 +46416,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-22T18:02:02+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -46512,7 +46512,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-22T18:02:02+00:00",
+   "fetched": "2026-11-23T20:33:10+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54877,7 +54877,7 @@
  "floor": {
   "senate": []
  },
- "generatedAt": "2026-11-22T18:02:02+00:00",
+ "generatedAt": "2026-11-23T20:33:10+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
