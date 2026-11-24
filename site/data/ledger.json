@@ -14,7 +14,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -98,7 +98,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -240,7 +240,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -382,7 +382,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -530,7 +530,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -611,7 +611,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -746,7 +746,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -885,7 +885,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1021,7 +1021,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1108,7 +1108,7 @@
     ],
     "t": 4
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -3924,22 +3924,38 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/10159"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-20: Signed by President.; 2026-11-20: Became Public Law No: 119-146.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10159/all-actions"
     }
    },
    "id": "119-hr10159",
    "introduced": "2026-08-27",
    "latest": {
     "actionDate": "2026-11-20",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-146."
    },
+   "law": "Pub. L. 119-146",
    "num": "H.R. 10159",
    "number": 10159,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-20",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-09-14",
@@ -4006,6 +4022,14 @@
      "fn": "cg"
     },
     {
+     "ch": "—",
+     "d": "2026-11-20",
+     "e": "Became Public Law No: 119-146.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–146"
+    },
+    {
      "ch": "H",
      "d": "2026-11-20",
      "e": "Presented to President.",
@@ -4029,22 +4053,38 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-21T00:57:11+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/10167"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-20: Signed by President.; 2026-11-20: Became Public Law No: 119-143.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/10167/all-actions"
     }
    },
    "id": "119-hr10167",
    "introduced": "2026-08-27",
    "latest": {
     "actionDate": "2026-11-20",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-143."
    },
+   "law": "Pub. L. 119-143",
    "num": "H.R. 10167",
    "number": 10167,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-20",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-09-14",
@@ -4115,6 +4155,14 @@
      "d": "2026-11-12",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-20",
+     "e": "Became Public Law No: 119-143.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–143"
     }
    ],
    "title": "Common Cents Act",
@@ -14344,7 +14392,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14768,7 +14816,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -22451,7 +22499,7 @@
     ],
     "t": 28
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24429,7 +24477,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -24831,7 +24879,7 @@
     ],
     "t": 25
    },
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28505,22 +28553,38 @@
     ],
     "t": 9
    },
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/5284"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-20: Signed by President.; 2026-11-20: Became Public Law No: 119-144.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/5284/all-actions"
     }
    },
    "id": "119-hr5284",
    "introduced": "2025-09-10",
    "latest": {
     "actionDate": "2026-11-20",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-144."
    },
+   "law": "Pub. L. 119-144",
    "num": "H.R. 5284",
    "number": 5284,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-20",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2025-12-01",
@@ -28544,12 +28608,6 @@
     "v": "Introduced in House"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-09-10",
-     "e": "Introduced in House",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2025-09-17",
@@ -28605,6 +28663,14 @@
      "d": "2026-11-12",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-20",
+     "e": "Became Public Law No: 119-144.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–144"
     }
    ],
    "title": "Claiming Age Clarity Act",
@@ -29613,7 +29679,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -36879,22 +36945,38 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/8352"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-20: Signed by President.; 2026-11-20: Became Public Law No: 119-145.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8352/all-actions"
     }
    },
    "id": "119-hr8352",
    "introduced": "2026-04-16",
    "latest": {
     "actionDate": "2026-11-20",
-    "text": "Signed by President."
+    "text": "Became Public Law No: 119-145."
    },
+   "law": "Pub. L. 119-145",
    "num": "H.R. 8352",
    "number": 8352,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-20",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-05-12",
@@ -36918,12 +37000,6 @@
     "v": "Reported to House"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2026-04-16",
-     "e": "Introduced in House",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2026-04-22",
@@ -36978,6 +37054,14 @@
      "d": "2026-11-12",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-20",
+     "e": "Became Public Law No: 119-145.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–145"
     }
    ],
    "title": "Criminal History Access Act of 2026",
@@ -37771,7 +37855,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37783,7 +37867,7 @@
    "introduced": "2026-04-23",
    "latest": {
     "actionDate": "2026-11-20",
-    "text": "Motion to proceed to consideration of measure made in Senate."
+    "text": "Motion to proceed to consideration of measure made in Senate. (consideration: CR S5847)"
    },
    "num": "H.R. 8469",
    "number": 8469,
@@ -37862,7 +37946,7 @@
     {
      "ch": "S",
      "d": "2026-11-20",
-     "e": "Motion to proceed to consideration of measure made in Senate.",
+     "e": "Motion to proceed to consideration of measure made in Senate. (consideration: CR S5847)",
      "fn": "cg"
     }
    ],
@@ -40462,7 +40546,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-21T00:57:11+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -40834,7 +40918,7 @@
     ],
     "t": 23
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -46416,7 +46500,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -46512,7 +46596,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-23T20:33:10+00:00",
+   "fetched": "2026-11-24T21:16:23+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54877,7 +54961,7 @@
  "floor": {
   "senate": []
  },
- "generatedAt": "2026-11-23T20:33:10+00:00",
+ "generatedAt": "2026-11-24T21:16:23+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
