@@ -489,7 +489,7 @@
   "119-hr4464",
   "119-hr10159"
  ],
- "lastDiscovery": "2026-11-24T21:16:23+00:00",
+ "lastDiscovery": "2026-11-25T20:10:59+00:00",
  "senateBackoff": {
   "failures": 0,
   "nextTry": null
@@ -503,7 +503,7 @@
  },
  "rule": "recorded-vote-v3",
  "schema": 3,
- "voteDiscovery": "2026-11-24T21:16:23+00:00",
+ "voteDiscovery": "2026-11-25T20:10:59+00:00",
  "houseVotes": {
   "119-2-74": {
    "q": "On Agreeing to the Resolution",
@@ -978,7 +978,23 @@
   "119-hr1737",
   "119-hr1765",
   "119-hr1766",
-  "119-s5600"
+  "119-s5600",
+  "119-hr1600",
+  "119-hr1601",
+  "119-hr1618",
+  "119-hr167",
+  "119-hr1724",
+  "119-hr2037",
+  "119-hr2247",
+  "119-hr2252",
+  "119-hr2399",
+  "119-hr2416",
+  "119-hr2449",
+  "119-hr5663",
+  "119-s1157",
+  "119-s4631",
+  "119-s494",
+  "119-s921"
  ],
  "statusRule": "killed-v2",
  "outcomeRule": "outcome-v2",

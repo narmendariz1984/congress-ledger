@@ -1253,7 +1253,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1409,7 +1409,7 @@
     ],
     "t": 29
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1556,7 +1556,7 @@
     ],
     "t": 7
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1646,7 +1646,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -1745,7 +1745,7 @@
     ],
     "t": 10
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -2053,7 +2053,7 @@
     ],
     "t": 19
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -3483,7 +3483,7 @@
      "who": "Susan Collins"
     }
    ],
-   "fetched": "2026-11-24T21:16:23+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "a": {
      "src": "House Budget Committee",
@@ -7994,22 +7994,38 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/1550"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-23: Signed by President.; 2026-11-23: Became Public Law No: 119-147.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/1550/all-actions"
     }
    },
    "id": "119-hr1550",
    "introduced": "2025-02-25",
    "latest": {
-    "actionDate": "2026-11-12",
-    "text": "Presented to President."
+    "actionDate": "2026-11-23",
+    "text": "Became Public Law No: 119-147."
    },
+   "law": "Pub. L. 119-147",
    "num": "H.R. 1550",
    "number": 1550,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-23",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2025-05-13",
@@ -8020,13 +8036,13 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Elise M. Stefanik",
     "p": "R",
     "s": "NY-21"
    },
-   "status": "passed1",
+   "status": "law",
    "sum": {
     "d": "2025-02-25",
     "t": "This bill renames the Saratoga National Historical Park, located in Stillwater, New York, as Saratoga National Battlefield Park.",
@@ -8086,6 +8102,14 @@
      "d": "2026-11-12",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-23",
+     "e": "Became Public Law No: 119-147.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–147"
     }
    ],
    "title": "Strengthening America’s Turning Point Act",
@@ -10332,7 +10356,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -10809,7 +10833,7 @@
     ],
     "t": 43
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11743,7 +11767,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:18:57+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -11983,7 +12007,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -12988,7 +13012,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13269,7 +13293,7 @@
     ],
     "t": 22
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13379,7 +13403,7 @@
     ],
     "t": 18
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13478,7 +13502,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -13850,7 +13874,7 @@
     ],
     "t": 8
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14047,7 +14071,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14058,8 +14082,8 @@
    "id": "119-hr2302",
    "introduced": "2025-03-24",
    "latest": {
-    "actionDate": "2026-11-17",
-    "text": "Message on Senate action sent to the House."
+    "actionDate": "2026-11-24",
+    "text": "Presented to President."
    },
    "num": "H.R. 2302",
    "number": 2302,
@@ -14073,7 +14097,7 @@
      "how": "uc"
     }
    },
-   "reached": 4,
+   "reached": 5,
    "sponsor": {
     "n": "Tom McClintock",
     "p": "R",
@@ -14086,12 +14110,6 @@
     "v": "Introduced in House"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-07-23",
-     "e": "Ordered to be Reported (Amended) by Unanimous Consent.",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2025-07-23",
@@ -14147,6 +14165,12 @@
      "d": "2026-11-16",
      "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
      "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-24",
+     "e": "Presented to President.",
+     "fn": "cg"
     }
    ],
    "title": "Shingle Springs Band of Miwok Indians Land Transfer Act of 2025",
@@ -14171,7 +14195,7 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14392,7 +14416,7 @@
     ],
     "t": 3
    },
-   "fetched": "2026-11-24T21:16:23+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14408,8 +14432,8 @@
    "id": "119-hr2347",
    "introduced": "2026-09-30",
    "latest": {
-    "actionDate": "2026-11-19",
-    "text": "Passed Senate with an amendment by Yea-Nay Vote. 62 - 33. Record Vote Number: 270."
+    "actionDate": "2026-11-24",
+    "text": "Message on Senate action sent to the House."
    },
    "num": "H.R. 2347",
    "number": 2347,
@@ -14688,7 +14712,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -14699,9 +14723,8 @@
    "id": "119-hr2400",
    "introduced": "2025-03-27",
    "latest": {
-    "actionDate": "2026-11-17",
-    "actionTime": "17:23:56",
-    "text": "Motion to reconsider laid on the table Agreed to without objection."
+    "actionDate": "2026-11-24",
+    "text": "Presented to President."
    },
    "num": "H.R. 2400",
    "number": 2400,
@@ -14715,7 +14738,7 @@
      "how": "uc"
     }
    },
-   "reached": 4,
+   "reached": 5,
    "sponsor": {
     "n": "Doug LaMalfa",
     "p": "R",
@@ -14728,12 +14751,6 @@
     "v": "Passed Senate"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-12-15",
-     "e": "Motion to reconsider laid on the table Agreed to without objection.",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2025-12-15",
@@ -14787,6 +14804,12 @@
      "ch": "H",
      "d": "2026-11-17",
      "e": "Resolving differences -- House actions: On motion that the House suspend the rules and agree to the Senate amendment Agreed to by voice vote. (text: CR H6247-62",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-24",
+     "e": "Presented to President.",
      "fn": "cg"
     }
    ],
@@ -15217,7 +15240,7 @@
     ],
     "t": 11
    },
-   "fetched": "2026-11-17T06:22:30+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -24477,7 +24500,7 @@
      "who": "Clay Higgins"
     }
    ],
-   "fetched": "2026-11-24T21:16:23+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "a": {
      "src": "Wikipedia",
@@ -25715,7 +25738,7 @@
     ],
     "t": 13
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -26915,22 +26938,38 @@
     ],
     "t": 6
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/4930"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-23: Signed by President.; 2026-11-23: Became Public Law No: 119-148.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/4930/all-actions"
     }
    },
    "id": "119-hr4930",
    "introduced": "2025-08-08",
    "latest": {
-    "actionDate": "2026-11-17",
-    "text": "Presented to President."
+    "actionDate": "2026-11-23",
+    "text": "Became Public Law No: 119-148."
    },
+   "law": "Pub. L. 119-148",
    "num": "H.R. 4930",
    "number": 4930,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-23",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-04-27",
@@ -26941,25 +26980,19 @@
      "how": "uc"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Blake D. Moore",
     "p": "R",
     "s": "UT-1"
    },
-   "status": "passed1",
+   "status": "law",
    "sum": {
     "d": "2025-12-30",
     "t": "This bill expands the authority of U.S. Customs and Border Protection (CBP) to provide information to certain persons (e.g., trademark or copyright owners) regarding suspected violations of intellectual property rights in trade.",
     "v": "Reported to House"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2025-08-08",
-     "e": "Introduced in House",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2025-12-10",
@@ -27015,6 +27048,14 @@
      "d": "2026-11-17",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-23",
+     "e": "Became Public Law No: 119-148.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–148"
     }
    ],
    "title": "To expand the sharing of information with respect to suspected violations of intellectual property rights in trade.",
@@ -28429,7 +28470,7 @@
     ],
     "t": 2
    },
-   "fetched": "2026-11-20T12:58:24+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -28440,8 +28481,8 @@
    "id": "119-hr5254",
    "introduced": "2025-09-10",
    "latest": {
-    "actionDate": "2026-11-18",
-    "text": "Message on Senate action sent to the House."
+    "actionDate": "2026-11-24",
+    "text": "Presented to President."
    },
    "num": "H.R. 5254",
    "number": 5254,
@@ -28455,7 +28496,7 @@
      "how": "uc"
     }
    },
-   "reached": 4,
+   "reached": 5,
    "sponsor": {
     "n": "Wesley Bell",
     "p": "D",
@@ -28468,12 +28509,6 @@
     "v": "Reported to House"
    },
    "timeline": [
-    {
-     "ch": "H",
-     "d": "2026-01-22",
-     "e": "Subcommittee on Federal Lands Discharged",
-     "fn": "cg"
-    },
     {
      "ch": "H",
      "d": "2026-03-02",
@@ -28527,6 +28562,12 @@
      "ch": "S",
      "d": "2026-11-17",
      "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-24",
+     "e": "Presented to President.",
      "fn": "cg"
     }
    ],
@@ -29679,7 +29720,7 @@
      "who": "Angus King"
     }
    ],
-   "fetched": "2026-11-24T21:16:23+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "a": {
      "src": "Washington Times",
@@ -33096,7 +33137,7 @@
     ],
     "t": 93
    },
-   "fetched": "2026-11-17T06:26:39+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35630,7 +35671,7 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-19T12:08:40+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -35641,8 +35682,8 @@
    "id": "119-hr7834",
    "introduced": "2026-03-05",
    "latest": {
-    "actionDate": "2026-11-17",
-    "text": "Message on Senate action sent to the House."
+    "actionDate": "2026-11-24",
+    "text": "Presented to President."
    },
    "num": "H.R. 7834",
    "number": 7834,
@@ -35656,7 +35697,7 @@
      "how": "uc"
     }
    },
-   "reached": 4,
+   "reached": 5,
    "sponsor": {
     "n": "Laurel M. Lee",
     "p": "R",
@@ -35704,7 +35745,7 @@
     {
      "ch": "H",
      "d": "2026-09-16",
-     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+     "e": "Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H5936-5937)",
      "fn": "cg"
     },
     {
@@ -35717,6 +35758,12 @@
      "ch": "S",
      "d": "2026-11-16",
      "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-24",
+     "e": "Presented to President.",
      "fn": "cg"
     }
    ],
@@ -36945,7 +36992,7 @@
     ],
     "t": 1
    },
-   "fetched": "2026-11-24T21:16:23+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37548,7 +37595,7 @@
     "st": [],
     "t": 0
    },
-   "fetched": "2026-11-21T21:53:05+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
@@ -37559,8 +37606,8 @@
    "id": "119-hr8454",
    "introduced": "2026-04-22",
    "latest": {
-    "actionDate": "2026-11-18",
-    "text": "Message on Senate action sent to the House."
+    "actionDate": "2026-11-24",
+    "text": "Presented to President."
    },
    "num": "H.R. 8454",
    "number": 8454,
@@ -37574,7 +37621,7 @@
      "how": "uc"
     }
    },
-   "reached": 4,
+   "reached": 5,
    "sponsor": {
     "n": "Tom McClintock",
     "p": "R",
@@ -37640,6 +37687,12 @@
      "ch": "S",
      "d": "2026-11-17",
      "e": "Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.",
+     "fn": "cg"
+    },
+    {
+     "ch": "H",
+     "d": "2026-11-24",
+     "e": "Presented to President.",
      "fn": "cg"
     }
    ],
@@ -38068,22 +38121,38 @@
     ],
     "t": 5
    },
-   "fetched": "2026-11-18T13:26:18+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "cg": {
      "src": "Congress.gov",
      "t": "Bill text, actions and cosponsors.",
      "u": "https://www.congress.gov/bill/119th-congress/house-bill/8552"
+    },
+    "sig": {
+     "src": "Congress.gov, all actions",
+     "t": "2026-11-23: Signed by President.; 2026-11-23: Became Public Law No: 119-149.",
+     "u": "https://www.congress.gov/bill/119th-congress/house-bill/8552/all-actions"
     }
    },
    "id": "119-hr8552",
    "introduced": "2026-04-28",
    "latest": {
-    "actionDate": "2026-11-17",
-    "text": "Presented to President."
+    "actionDate": "2026-11-23",
+    "text": "Became Public Law No: 119-149."
    },
+   "law": "Pub. L. 119-149",
    "num": "H.R. 8552",
    "number": 8552,
+   "outcome": {
+    "by": "Donald Trump",
+    "d": "2026-11-23",
+    "fn": "sig",
+    "how": "signed",
+    "pp": "R",
+    "pres": "Donald Trump",
+    "v": "",
+    "where": "Signed into law"
+   },
    "passed": {
     "H": {
      "d": "2026-11-09",
@@ -38094,13 +38163,13 @@
      "how": "voice"
     }
    },
-   "reached": 5,
+   "reached": 6,
    "sponsor": {
     "n": "Morgan Luttrell",
     "p": "R",
     "s": "TX-8"
    },
-   "status": "passed1",
+   "status": "law",
    "sum": {
     "d": "2026-04-28",
     "t": "This bill requires the Department of Veterans Affairs (VA) to increase the amounts payable for wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.",
@@ -38148,6 +38217,14 @@
      "d": "2026-11-17",
      "e": "Presented to President.",
      "fn": "cg"
+    },
+    {
+     "ch": "—",
+     "d": "2026-11-23",
+     "e": "Became Public Law No: 119-149.",
+     "fn": "cg",
+     "k": "win",
+     "v": "119–149"
     }
    ],
    "title": "Veterans’ Compensation Cost-of-Living Adjustment Act of 2026",
@@ -46500,7 +46577,7 @@
      "who": "Dan Sullivan"
     }
    ],
-   "fetched": "2026-11-24T21:16:23+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -46596,7 +46673,7 @@
      "who": "Rand Paul"
     }
    ],
-   "fetched": "2026-11-24T21:16:23+00:00",
+   "fetched": "2026-11-25T20:10:59+00:00",
    "fns": {
     "a": {
      "src": "Senate Democrats floor wrap-up",
@@ -54961,7 +55038,7 @@
  "floor": {
   "senate": []
  },
- "generatedAt": "2026-11-24T21:16:23+00:00",
+ "generatedAt": "2026-11-25T20:10:59+00:00",
  "meta": {
   "calendar": {
    "after": "2027 schedule not posted",
